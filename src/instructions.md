@@ -8,12 +8,16 @@
 
 ## Folder Structure
 
-- App.jsx - (Parent Component)
+- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
 - Album.jsx - (Child Component of App.jsx)
 - AlbumName.jsx - (Child Component of Album.jsx)
 - ArtistName.jsx - (Child Component of Album.jsx)
 - CoverImage.jsx - (Child Component of Album.jsx)
 - Header.jsx - (Child Component of Album.jsx)
+
+### Extra Files
+
+- data.json - JSON file containing 1 key called `"albums"` containing keys mimiquing a Spotify API object endpoint.
 
 ## You should display the following for each album:
 
