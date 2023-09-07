@@ -41,9 +41,10 @@ This is just a suggestion - how you decide to structure your components is compl
 - When you hover over the play button, it should grow (see the design sketch)
 - Hovering an artist name or an album name should match the design sketch
 
-### When you click on the album, it should link to the album's external URL in the data
+## External Routing:
 
-### When you click on an artist, it should link to the artist's external URL in the data
+- When you click on the album, it should link to the album's external URL in the data
+- When you click on an artist, it should link to the artist's external URL in the data
 
 ### Your page should be responsive:
 
