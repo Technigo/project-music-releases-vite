@@ -10,10 +10,10 @@
 
 - App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
 - Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-- AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-- ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-- CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-- Header.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+  - Header.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
 
 ### Extra Files
 
