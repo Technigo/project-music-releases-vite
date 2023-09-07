@@ -1,10 +1,20 @@
 # Instructions
 
-✓ Your app should have components
+## 🎶 Music releases
 
-✓ Your page should look as close as possible to the design provided.
+Since the focus of this assignment is to practice with React, we've downloaded a response from the Spotify API which you can use, rather than calling the API yourself.
 
-✓ You should pass down the information received within the parent component `App.jsx` to its children components.
+## 🎶 How to use the Spotify data & construct your components 🤓
+
+In the `/src/data.json`, we've included an API response from Spotify which contains data for 50 recent releases. You can `import` this JSON file into a component using `import data from './data.json'` (which we've already done for you in the App component).
+
+The result of importing the JSON is a variable called `data` which includes the full JSON response. Your task is to use this, along with `.map()` to mount an 'Album' component for each album. Within those components, you could then break things up further. For example, your app could have a structure like this:
+
+- `App` component which has the `data`
+  - `Album` component which is rendered using `.map()` and which you pass the album data into using props.
+    - `ArtistName` component which is rendered using `.map()` using each item in the `artists` array. The `Album` component to show the artist name and a link.
+
+This is just a suggestion - how you decide to structure your components is completely up to you.
 
 ## Folder Structure
 
@@ -40,3 +50,10 @@
 - showing 4 albums per row on desktop
 - 2 per row on tablet
 - 1 per row on mobile.
+
+## Design
+
+🎶 You should follow the design screenshots as closely as possible. We've provided icons for the play, heart and more info icons when hovering on an album. Use the following for fonts:
+
+- Album title - 14px Helvetica #ffffff
+- Artist name - 14px Helvetica #a0a0a0
