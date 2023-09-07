@@ -4,7 +4,7 @@
 
 ✓ Your page should look as close as possible to the design provided.
 
-✓ You should pass down the information received within the parent component `App.js` to its children components.
+✓ You should pass down the information received within the parent component `App.jsx` to its children components.
 
 ## Folder Structure
 
