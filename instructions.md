@@ -4,34 +4,6 @@
 
 Since the focus of this assignment is to practice with React, we've downloaded a response from the Spotify API which you can use, rather than calling the API yourself.
 
-## Requirements
-
-✓ Your app should have components
-
-✓ Your page should look as close as possible to the design provided.
-
-✓ You should display the following for each album:
-
--   album cover image
--   album name
--   the name of each artist involved with a comma between
-
-✓ Hover effects:
-
--   When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
--   When you hover over the play button, it should grow (see the design sketch)
--   Hovering an artist name or an album name should match the design sketch
-
-✓ When you click on the album, it should link to the album's external url in the data
-
-✓ When you click on an artist, it should link to the artist's external url in the data
-
-✓ Your page should be responsive:
-
--   showing 4 albums per row on desktop
--   2 per row on tablet
--   1 per row on mobile.
-
 ## 🎶 How to use the Spotify data & construct your components 🤓
 
 In the `/src/data.json`, we've included an API response from Spotify which contains data for 50 recent releases. You can `import` this JSON file into a component using `import data from './data.json'` (which we've already done for you in the App component).
@@ -89,3 +61,30 @@ This is just a suggestion - how you decide to structure your components is compl
 
   When hovering over album covers or artist names, you should implement the following hover styles:
    <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/hover-styles.png" alt="Project Banner Image">
+
+## Requirements
+- Your app should have components
+- Your page should look as close as possible to the design provided.
+- You should display the following for each album:
+  -   album cover image
+  -   album name
+  -   the name of each artist involved with a comma between
+- Hover effects:
+  - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
+  - When you hover over the play button, it should grow (see the design sketch)
+  - Hovering an artist name or an album name should match the design sketch
+- When you click on the album, it should link to the album's external url in the data
+- When you click on an artist, it should link to the artist's external url in the data
+- Your page should be responsive:
+  - showing 4 albums per row on desktop
+  - 2 per row on tablet
+  - 1 per row on mobile.
+
+## Stretch goals
+So you’ve completed the requirements? Great job! Make sure you've committed and pushed a version of your project before starting on the stretch goals. Remember that the stretch goals are optional.
+
+### Intermediate stretch goals
+- Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&":
+  - *Teyana Taylor & Kehlani*
+  - *Y2K, bbno$ & Enrique Iglesias*
+- Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity
