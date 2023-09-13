@@ -86,3 +86,6 @@ This is just a suggestion - how you decide to structure your components is compl
 
 - Album title - 14px Helvetica #ffffff
 - Artist name - 14px Helvetica #a0a0a0
+
+  When hovering over album covers or artist names, you should implement the following hover styles:
+   <img src="/src/assets/boiler.svg" alt="Project Banner Image">
