@@ -88,3 +88,8 @@ So you’ve completed the requirements? Great job! Make sure you've committed an
   - *Teyana Taylor & Kehlani*
   - *Y2K, bbno$ & Enrique Iglesias*
 - Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity
+
+### Advanced stretch goals
+- We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.
+- Sort the albums from the singles and create two different sections on your site
+- Incorporate more information from the API response to make your site richer
