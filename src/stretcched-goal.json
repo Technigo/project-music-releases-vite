@@ -1,0 +1,372 @@
+  "message": "Editor's picks",
+  "playlists": {
+    "href": "https://api.spotify.com/v1/browse/featured-playlists?country=CH&timestamp=2023-02-22T14%3A42%3A20&offset=0&limit=20",
+    "items": [
+      {
+        "collaborative": false,
+        "description": "New music off the beaten track. Cover: The Blaze",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX07Bg0Q5GozA"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX07Bg0Q5GozA",
+        "id": "37i9dQZF1DX07Bg0Q5GozA",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003b018e1b439adbde87600046d",
+            "width": null
+          }
+        ],
+        "name": "OFF POP",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NjU4ODQwMCwwMDAwMDAwMDZmYTM5M2FjODM0YjY4ODg2MWI1YWZmNTdlZjJjZWUy",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX07Bg0Q5GozA/tracks",
+          "total": 75
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX07Bg0Q5GozA"
+      },
+      {
+        "collaborative": false,
+        "description": "Switzerland's biggest hits right now. Cover: \nMarco Mengoni",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0MD19TXm0aV"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0MD19TXm0aV",
+        "id": "37i9dQZF1DX0MD19TXm0aV",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000035b0e9da51a1af49edf3b52af",
+            "width": null
+          }
+        ],
+        "name": "Hot Hits Switzerland",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NzA1ODU3OSwwMDAwMDAwMDg3YWVmZTNkZDZiM2ZkYzljNjZiZGVjZTI5YmRmOGM0",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0MD19TXm0aV/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX0MD19TXm0aV"
+      },
+      {
+        "collaborative": false,
+        "description": "Höre hier den besten Mundart-Pop aus der Schweiz. ",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYspS7xLpVQQ"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYspS7xLpVQQ",
+        "id": "37i9dQZF1DWYspS7xLpVQQ",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003d75ac29ec5576bbbe3bf841c",
+            "width": null
+          }
+        ],
+        "name": "Schweizer Mundart",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NDgxMzkwNywwMDAwMDAwMGFiNGEyNmUyNzFkYmQwZTIwNmE0NTA4ZWI0ODRjOGY4",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYspS7xLpVQQ/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWYspS7xLpVQQ"
+      },
+      {
+        "collaborative": false,
+        "description": "Relaxing piano to help you find calm and stillness within. ",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1s9knjP51Oa"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1s9knjP51Oa",
+        "id": "37i9dQZF1DX1s9knjP51Oa",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f0000000389c12201e4c7f5c86749d8bc",
+            "width": null
+          }
+        ],
+        "name": "calm vibes",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3Njg5MDIzMCwwMDAwMDAwMGQ0YWIzMGE3MTM0NzJjMzNkYWQ1MGJiYjUzZWU0YWM4",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1s9knjP51Oa/tracks",
+          "total": 322
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX1s9knjP51Oa"
+      },
+      {
+        "collaborative": false,
+        "description": "Diese Songs zaubern dir ein Grinsen ins Gesicht.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWM6GBnxtToT"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWM6GBnxtToT",
+        "id": "37i9dQZF1DWWM6GBnxtToT",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f0000000390794016d698b0bc9560186f",
+            "width": null
+          }
+        ],
+        "name": "Feelgood Indie",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3MzUzNjIyNiwwMDAwMDAwMDU1OTJhOWM2YjZlYjU3YWY1ZWY5YjU3YmM3Y2JhOTBm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWM6GBnxtToT/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWWM6GBnxtToT"
+      },
+      {
+        "collaborative": false,
+        "description": "Les 50 hits de variété française du moment. Photo : Orelsan & Angèle",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcSPhLAnCjoM"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcSPhLAnCjoM",
+        "id": "37i9dQZF1DXcSPhLAnCjoM",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003e5073f2c9d1a48154b8f2076",
+            "width": null
+          }
+        ],
+        "name": "Grand Hit",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NjU4ODQwMCwwMDAwMDAwMDZlODgzNTQ0Njk0ZDcyNDZhZjFkZTIxMWFiZDVkZThm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcSPhLAnCjoM/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DXcSPhLAnCjoM"
+      },
+      {
+        "collaborative": false,
+        "description": "Ein abstrakter Soundtrack, eher Kunstwerk als Blockbuster.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVgfADJapICT"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVgfADJapICT",
+        "id": "37i9dQZF1DWVgfADJapICT",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000036ddff157d362ddcdfbf2b277",
+            "width": null
+          }
+        ],
+        "name": "Kopfkino",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NjY0NjAwMCwwMDAwMDAwMGQwZTYxN2ZhNzk2NzgyOTNjY2ZkOTEzNGNmZDgxYzFj",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVgfADJapICT/tracks",
+          "total": 60
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWVgfADJapICT"
+      },
+      {
+        "collaborative": false,
+        "description": "Rapmusig uf Schwiizerdütsch. Cover: Mc Hero, Drini",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1axYuQ4oR2e"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1axYuQ4oR2e",
+        "id": "37i9dQZF1DX1axYuQ4oR2e",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000036b5bc0f18a513769c107876b",
+            "width": null
+          }
+        ],
+        "name": "Schwiizrap",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NjU4ODQwMCwwMDAwMDAwMGMyNTY3MGZmMjM4MGQ1YzhjNzk0OTZlMTMyMGJmYThh",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1axYuQ4oR2e/tracks",
+          "total": 70
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX1axYuQ4oR2e"
+      },
+      {
+        "collaborative": false,
+        "description": "Hol dir dein Lieblingscafé nach Hause.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6KItbiYYmAv"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6KItbiYYmAv",
+        "id": "37i9dQZF1DX6KItbiYYmAv",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000034026edc29a0f1355573252c5",
+            "width": null
+          }
+        ],
+        "name": "Kaffeehausmusik",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NDc0NDU3NywwMDAwMDAwMDk2ZTI4Y2UwMzQ0ZTRkYmZlZmE4ZjdhZjk4OWY2MTNi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6KItbiYYmAv/tracks",
+          "total": 150
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX6KItbiYYmAv"
+      },
+      {
+        "collaborative": false,
+        "description": "Mixtape #039 featuring Jay Wheeler 🔥. Find a new mixtape every Thursday.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8sljIJzI0oo"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8sljIJzI0oo",
+        "id": "37i9dQZF1DX8sljIJzI0oo",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003ff45f4295b78065483b73e0c",
+            "width": null
+          }
+        ],
+        "name": "Fuego",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTY3NzAwMDAzOCwwMDAwMDAwMGZhODhhZmFjMzM0NDJhNTM2YzEyZGJkMTkzZTIzZGM2",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8sljIJzI0oo/tracks",
+          "total": 25
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX8sljIJzI0oo"
+      }
+    ],
+    "limit": 20,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 10
+  }
+}
