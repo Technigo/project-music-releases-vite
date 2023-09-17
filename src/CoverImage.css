@@ -1,0 +1,19 @@
+.cover-image-wrapper {
+    position: relative;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
+  /* Hover effects: */
+  .cover-image-wrapper:hover > .icon-wrapper {
+    opacity: 1;
+    transition: 0.4s;
+  }
+  
+  .cover-image-wrapper:hover > img {
+    opacity: 0.4;
+    transition: 0.4s;
+  }
+  
