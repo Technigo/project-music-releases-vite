@@ -1,0 +1,59 @@
+.icon-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+  }
+  
+  .icon {
+    width: 35px;
+    background: transparent;
+  }
+
+  .play {
+    width: 45px;
+  }
+  
+  button {
+    border: none;
+  }
+  
+  svg {
+    fill: white;
+  }
+  
+  .icon:hover {
+    scale: 1.3;
+  }
+  
+
+  @media (min-width: 667px) {
+
+    .icon-wrapper {
+      gap: 20px;
+    }
+
+    .icon {
+      width: 40px;
+    }
+  
+    .play {
+      width: 50px;
+    }
+
+  }
+  
+  @media (min-width: 1025px) {
+  
+  
+    .icon-wrapper {
+      gap: 8px;
+    }
+
+
+  
+  }

@@ -1,4 +1,4 @@
-// import { Buttons } from "./Buttons/Buttons";
+import { Buttons } from "./Buttons";
 import "./CoverImage.css";
 
 export const CoverImage = ({ singleCoverItem }) => {
@@ -11,7 +11,7 @@ export const CoverImage = ({ singleCoverItem }) => {
   return (
     <div className="cover-image-wrapper">
       <img src={imgObject.imgSrc} alt={imgObject.imgAlt} />
-      {/* <Buttons /> */}
+      <Buttons />
     </div>
   );
 };
