@@ -1,7 +1,11 @@
 import data from "./data.json";
-
+import { Albums } from "./Albums.jsx";
 console.log(data);
 
-export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+export const App = (data) => {
+  return (
+    <div>
+      <Albums data={data}/>
+    </div>
+  );
 };
