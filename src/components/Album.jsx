@@ -3,23 +3,18 @@ import AlbumName from './AlbumName';
 import ArtistName from './ArtistName';
 import CoverImage from './CoverImage';
 import Header from './Header';
-import './styles.css'; 
 
-const Album = ({ albumData }) => {
-  const { name, artists, images, external_urls } = albumData;
-
+const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
   return (
     <div className="album">
-      <CoverImage images={images} />
-      <Header albumName={name}/>
+      <CoverImage images={coverImages} />
+      <Header albumName={albumName} />
       <div className="artists">
-        {artists.map((artist, index) => (
-          <ArtistName key={index} artistData={artist} />
-        ))}
+        <ArtistName artistData={{ name: artistNames, external_urls: externalUrls.artist }} />
       </div>
-      <AlbumName albumName={name} />
+      <AlbumName albumName={albumName} />
       <a
-        href={external_urls.spotify}
+        href={externalUrls.spotify}
         target="_blank"
         rel="noopener noreferrer"
         className="album-link"
@@ -31,3 +26,9 @@ const Album = ({ albumData }) => {
 };
 
 export default Album;
+
+
+
+
+
+
