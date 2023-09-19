@@ -31,18 +31,27 @@ grid-template-columns: reapeat(1,1fr);
   margin:10px;
 }
 
-@media (min-width: 670px){
-  main{
-    grid-template-columns: repeat(2,1fr);
-  
-    }
+.single_wrapper,
+.albums_wrapper{
+  display: grid;
+  gap:25px;
+  grid-template-columns: reapeat(1,1fr);
+  margin-bottom: 50px;
+}
+
+
+
+@media (min-width: 670px){   
+.single_wrapper,
+.albums_wrapper{
+  grid-template-columns: repeat(2,1fr);
+}
   
 }
 
 @media (min-width: 992px){
-  main{
-    grid-template-columns: repeat(4,1fr);
-
-    }
-
+  .single_wrapper,
+  .albums_wrapper{
+  grid-template-columns: repeat(4,1fr);
+}
 }

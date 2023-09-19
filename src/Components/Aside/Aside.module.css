@@ -1,0 +1,22 @@
+.player_wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.message{
+ font-size: 14px;
+ margin: 0;
+}
+
+.title{
+ margin: 0 0 10px;
+}
+
+
+.message,
+.title{
+text-align: center;
+}
