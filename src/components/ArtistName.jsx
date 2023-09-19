@@ -1,11 +1,9 @@
 import React from 'react';
 
-const ArtistName = ({ artistData }) => {
-  const { name, external_urls } = artistData;
-
-  // Check if external_urls is defined
-  if (!external_urls || !external_urls.spotify) {
-    // Handle the case where spotify URL is not available
+const ArtistName = ({ name, externalUrls }) => {
+  // Check if externalUrls is defined
+  if (!externalUrls || !externalUrls.spotify) {
+    // Handle the case where Spotify URL is not available
     return (
       <div className="artist">
         <p>{name}</p>
@@ -17,7 +15,7 @@ const ArtistName = ({ artistData }) => {
   return (
     <div className="artist">
       <a
-        href={external_urls.spotify}
+        href={externalUrls.spotify}
         target="_blank"
         rel="noopener noreferrer"
         className="artist-link"
@@ -29,4 +27,3 @@ const ArtistName = ({ artistData }) => {
 };
 
 export default ArtistName;
-

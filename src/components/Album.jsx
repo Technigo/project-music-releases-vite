@@ -10,9 +10,8 @@ const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
       <CoverImage images={coverImages} />
       <Header albumName={albumName} />
       <div className="artists">
-        <ArtistName artistData={{ name: artistNames, external_urls: externalUrls.artist }} />
+        <ArtistName name={artistNames} externalUrls={externalUrls} />
       </div>
-      <AlbumName albumName={albumName} />
       <a
         href={externalUrls.spotify}
         target="_blank"
@@ -26,9 +25,5 @@ const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
 };
 
 export default Album;
-
-
-
-
 
 
