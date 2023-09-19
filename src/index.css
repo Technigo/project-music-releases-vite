@@ -1,13 +1,133 @@
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+/* APP Component CSS */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.album-title,
+.album p {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff; /* Set the default color to white */
 }
+.artist p {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+.album h2 {
+  /* Styles for album name */
+  color: #ffffff;
+}
+
+
+.album h2:hover, .album p:hover {
+  color: grey;
+  text-decoration: underline; /* Add underline on hover */
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.album {
+  /* Define styles for the album container */
+  position: relative;
+  transition: filter 0.3s; /* Add a transition for the hover effect */
+}
+
+.album:hover {
+  /* Apply hover styles when the album is hovered */
+  filter: brightness(0.8); /* Darken the album */
+}
+
+/* Play Button CSS */
+.album::before {
+  /* Create a pseudo-element for the play button */
+  content: '\25B6'; /* Unicode character for a play button */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2); /* Initial scale is 1.2 (visible) */
+  font-size: 24px;
+  color: white;
+  border: 2px solid white; /* Add a white border around the play button */
+  border-radius: 50%; /* Make it circular */
+  padding: 6px; /* Add some padding to control the size of the ring */
+  transition: transform 0.25s, border-color 0.25s; /* Add transitions for transform and border color */
+}
+
+.album:hover::before {
+  /* Show the play button when the album is hovered */
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(2); /* Grow the play button on hover */
+  border-color: white;
+}
+
+/* Favorite Button CSS */
+.album::after {
+  /* Create a pseudo-element for the favorite button */
+  content: '\2665'; /* Unicode character for a heart (favorite) */
+  /* Adjust the positioning to place it to the left of the play button with padding */
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 24px - 40px); /* Position it to the left of the play button with 10px padding */
+  transform: translate(-50%, -50%); /* Center it vertically */
+  font-size: 24px;
+  color: white;
+}
+
+.album:hover::after {
+  /* Show the favorite button when the album is hovered */
+  opacity: 1;
+}
+
+/* Ellipsis Button CSS */
+.album .ellipsis {
+  /* Define styles for the ellipsis button */
+  position: absolute;
+  top: 50%;
+  right: calc(50% - 24px - 40px); /* Adjust the right property to position it to the right of the favorite button */
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+}
+
+.album:hover .ellipsis {
+  /* Show the ellipsis button when the album is hovered */
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

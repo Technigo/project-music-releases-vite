@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/App'; // Adjust the path to your App component
+import './index.css'; // Import your CSS file here
+import App from './components/App';
 
 const root = document.getElementById('root');
 

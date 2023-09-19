@@ -8,9 +8,9 @@ const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
   return (
     <div className="album">
       <CoverImage images={coverImages} />
-      <Header albumName={albumName} />
+      <Header albumName={albumName} externalUrl={externalUrls.spotify} />
       <div className="artists">
-        <ArtistName name={artistNames} externalUrls={externalUrls} />
+        <ArtistName name={artistNames} externalUrl={externalUrls.artist} />
       </div>
       <a
         href={externalUrls.spotify}
@@ -25,5 +25,4 @@ const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
 };
 
 export default Album;
-
 

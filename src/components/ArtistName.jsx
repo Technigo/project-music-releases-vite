@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ArtistName = ({ name, externalUrls }) => {
-  // Check if externalUrls is defined
-  if (!externalUrls || !externalUrls.spotify) {
-    // Handle the case where Spotify URL is not available
+const ArtistName = ({ name, externalUrl }) => {
+  // Check if externalUrl is defined
+  if (!externalUrl) {
+    // Handle the case where the external URL is not available
     return (
       <div className="artist">
         <p>{name}</p>
-        <p>Spotify URL not available</p>
+        <p>External URL not available</p>
       </div>
     );
   }
@@ -15,7 +15,7 @@ const ArtistName = ({ name, externalUrls }) => {
   return (
     <div className="artist">
       <a
-        href={externalUrls.spotify}
+        href={externalUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="artist-link"

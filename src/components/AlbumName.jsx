@@ -1,10 +1,12 @@
 import React from 'react';
 
-const AlbumName = ({ albumName }) => {
+const AlbumName = ({ albumName, albumExternalUrl }) => {
   return (
-    <div className="album-name">
-      <h2>{albumName}</h2>
-    </div>
+    <a href={albumExternalUrl} target="_blank" rel="noopener noreferrer">
+      <div className="album-name">
+        <h2>{albumName}</h2>
+      </div>
+    </a>
   );
 };
 
