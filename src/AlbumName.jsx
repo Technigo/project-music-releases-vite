@@ -15,10 +15,10 @@ export const AlbumName = () => {
                         alt={`album cover for ${album.name}`}
                     />
 
-                    <h2><a href={album.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+                    <p className="AlbumName"><a href={album.external_urls.spotify} target="_blank" rel="noopener noreferrer">
                         {album.name}
-                    </a></h2>
-                    <p><a href={album.artists[0].external_urls.spotify} target="_blank" rel="noopener noreferrer">
+                    </a></p>
+                    <p className="ArtistName"><a href={album.artists[0].external_urls.spotify} target="_blank" rel="noopener noreferrer">
                         {album.artists[0].name}
                     </a></p>
 

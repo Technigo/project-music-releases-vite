@@ -20,6 +20,7 @@
 
 
 .Album img {
+  margin-top: 50px;
   height: 300px;
   width: auto;
   transition: all 0.5s ease-in-out;
@@ -35,20 +36,29 @@ img:hover {
   text-align: center;
 }
 
-h2 a {
+.AlbumName a {
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(229, 224, 224);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.AlbumName a:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
 
-p a {
+.ArtistName a {
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(110, 109, 109);
+  font-size: 15px;
+  font-weight: 700;
+
 }
 
-p {
-  margin-bottom: 100px;
-
+.ArtistName a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 code {
