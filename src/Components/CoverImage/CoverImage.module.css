@@ -1,0 +1,57 @@
+.image_container{
+    width: 100%;
+    position: relative;
+
+}
+
+.coverImage{
+    width: 100%;
+}
+
+.icon_wrapper{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.icon_like,
+.icon_play,
+.icon_more{
+    width: 34px;
+    transition: all .3 ease;
+    display: none;
+
+}
+
+.icon_like:hover,
+.icon_play:hover,
+.icon_more:hover{
+    transform: scale(1.2);
+}
+
+.scaleIcon{
+  transform: scale(1.6);
+}
+
+
+.visible{
+    display:inline-block;
+}
+
+.dark{
+    filter: brightness(.5); 
+}
+
+@media (min-width: 768px){
+ 
+}
+@media (min-width: 992px){
+
+}
