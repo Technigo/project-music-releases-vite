@@ -1,14 +1,28 @@
-import { CoverImage } from "./CoverImage"
-import { AlbumName } from "./AlbumName"
-import { ArtistName } from "./ArtistName"
+import { CoverImage } from "./AlbumInfo/CoverImage"
+import { Icons } from "./Icons" 
+import { AlbumName } from "./AlbumInfo/AlbumName"
+import { ArtistName } from "./AlbumInfo/ArtistName"
+
 
 export const Albums = (data) => {
-    const { coverImage, albumName, artistName } = album;
+    const { coverImage, albumName, albumURL, artistName, artistURL } = album;
+    data.
     return (
-        <div>
-            <CoverImage coverImage={coverImage} />
-            <p><AlbumName albumName={albumName} /></p>
-            <p><ArtistName artistName ={artistName} /></p>
-        </div>
-    )
+        <div className="site-wrapper">
+            <div className="albumCover">
+                <img src={coverImage} />
+                <Icons />
+            </div>
+            <a href={albumURL}>
+                <p>
+                    <span>{albumName}</span>
+                </p>
+            </a>
+            <a href={artistURL}>
+                <p>
+                    <span>{artistName}</span>
+                </p>
+            </a>
+        </div> 
+    );
 }
