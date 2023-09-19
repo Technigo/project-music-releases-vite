@@ -3,6 +3,7 @@ import AlbumName from './AlbumName';
 import ArtistName from './ArtistName';
 import CoverImage from './CoverImage';
 import Header from './Header';
+import '../index.css';
 
 const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
   return (
@@ -11,14 +12,15 @@ const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
       <Header albumName={albumName} externalUrl={externalUrls.spotify} />
       <div className="artists">
         <ArtistName name={artistNames} externalUrl={externalUrls.artist} />
-      </div>
+        </div>
+      {/* Apply the ellipsis class to the ellipsis pseudo-element */}
+      <div className="ellipsis">...</div>
       <a
         href={externalUrls.spotify}
         target="_blank"
         rel="noopener noreferrer"
         className="album-link"
       >
-        Listen on Spotify
       </a>
     </div>
   );
