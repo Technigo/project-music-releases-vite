@@ -1,13 +1,208 @@
-:root {
-  margin: 0;
+body{
+  box-sizing: border-box;
+  background-color: rgba(19, 18, 18, 0.895);
+  margin:0;
+  padding:0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: Helvetica;
+}
+
+
+/* Header part */
+.header-container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid rgba(110, 110, 110, 0.784);
+  margin:20px 30px 20px 30px;
+}
+.header-container img{
+  width:130px;
+  height:40px;
+  margin:0 10px 0px 10px;
+
+}
+
+.header-container h1{
+  font-size: 26px;
+  color:#ffffff;
+}
+/* display album part  */
+
+.albumSection{
+  display:grid;
+  grid-template-columns:repeat(4,20%);  
+}
+
+
+.album-section{
+  margin:30px 0 10px 30px;
+  line-height: 10px;
+ }
+/* album name */
+.album-name h2{
+  font-size: 14px;
+  color:#ffffff;
+}
+
+.album-name a{
+  text-decoration: none;
+}
+/* album image */
+.albumContainer{
+  position: relative;
+}
+.coverImage img{
+  width:250px;
+}
+
+/* album name and artist name hover */
+.album-name h2:hover, .artistName a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* album icon styling here */
+.icons{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top:40%;
+  left:10%;
+  opacity: 0;
+
+}
+.icons img{
+  width:45px;
+  padding:10px;
+  
+}
+
+ .overplay:hover{
+  opacity: 0.7;
+  background-color: rgba(0,0,0,0.65);
+  height:250px;
+  position: absolute;
+  top:0%;
+  left:0%;
+  width: 250px;
+} 
+
+.icons:hover{
+  opacity: 1;
+  filter: brightness(300%) contrast(100%);
+}
+.icons img:hover{
+  transform: scale(1.4);
+  opacity: 1;
+} 
+/* artist name */
+.artistName a{
+  font-size: 14px;
+  color:#a0a0a0;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight:800;
+}
+
+/* playlist part here */
+.playList{
+  width: 15%;
+  padding-left: 2rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(41, 40, 40, 0.895);;
+  overflow-x: hidden;
+  padding-top: 20px;
+  z-index: 1;
+  
+}
+.playList h2{
+  margin-top: 80px;
+  font-size: 20px;
+  color:#ffffff
+}
+.playlists-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 30px;
+  margin-bottom: 20px;
+  width:200px;
+}
+.playlists-container img{
+  width:60px;
+  border-radius: 50%;
+}
+.playlists-container h3{
+  font-size: 14px;
+  color:#a0a0a0;
+}
+.playlists-container a{
+  text-decoration: none;
+}
+.playlists-container a:hover{
+  text-decoration: underline;
+  color:white
+}
+
+/* footer */
+.footer{
+  border-top: 2px solid rgba(110, 110, 110, 0.784);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:20px 30px 10px 30px;
+}
+.footer h3{
+  font-size: 18px;
+  color:#ffffff;
+}
+.footer img{
+  width: 90px;
+}
+
+@media (max-width:768px) {
+  /* album section */
+.albumSection{
+  display:grid;
+  grid-template-columns: 1fr;
+  margin:10px 0px 0px 30px;
+}
+.header-container h1{
+  font-size: 18px;
+  color:#ffffff;
+}
+.header-container img{
+  width:100px;
+  height:30px;
+  margin:0 10px 0px 10px;
+}
+.playList{
+  display: none;
+}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* album section */
+.albumSection{
+  display:grid;
+  grid-template-columns: repeat(2,50%);
+  align-items: center;
+  margin:10px 0px 0px 40px;
+
+}
+.playList{
+  display: none;
+}
 }
