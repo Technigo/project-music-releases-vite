@@ -1,17 +1,23 @@
 const Album = ({
     name,
+    externalUrl,
     coverImage,
     artists,
 }) => {
     return (
         <div>
             <img src={coverImage} alt="Album cover image" />
-            <h6>{name}</h6>
+            <a
+                target="_blank"
+                href={externalUrl}
+            >
+                {name}
+            </a>
             {artists.map((artist) => (
                 <a
                     key={artist.id}
                     target="_blank"
-                    href={artist.external_urls.spotify}
+                    href={artist.externalUrl}
                 >
                     {artist.name}
                 </a>
