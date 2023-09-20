@@ -1,12 +1,9 @@
-export const AlbumName = ({
-    name
-    }) => {
-    
-        return (
-            <div className="album">
-                <p>
-                    <span>Album name:</span> {name}
-                </p>
-            </div>
-        )
-    }
+export const AlbumName = ({ albumName }) => {
+    return (
+      <div className="album-name">
+        <p>
+          <span></span> {albumName}
+        </p>
+      </div>
+    );
+  };

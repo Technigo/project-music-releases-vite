@@ -2,7 +2,7 @@ export const Header = () => {
     const headertext = "New Albums & Singles"
 
     return (
-        <header>
+        <header className="header">
             <p>{headertext}</p>
         </header>
     )
