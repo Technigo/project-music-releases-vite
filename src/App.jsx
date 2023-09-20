@@ -14,10 +14,13 @@ export const App = () => {
   //Function to map over data array 
   const newAlbumsArray = () => {
     return albums.map(
-      ({ id, name }) => (
+      ({ id, name, album_type, images, artists }) => (
         <Album
           key={id}
           name={name}
+          albumType={album_type}
+          albumImages={images}
+          artists={artists}
         />
       )
     );
