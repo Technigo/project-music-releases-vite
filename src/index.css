@@ -24,8 +24,6 @@ h2 {
 
 .Album {
   flex: calc(20% - 20px);
-  /* Five columns, 20% width with 20px gap */
-  text-align: center;
   padding: 10px;
   border-radius: 5px;
 }
@@ -38,17 +36,12 @@ h2 {
   text-align: center;
 }
 
-.AlbumInfo {
-  text-align: left;
-  margin-top: 10px;
-}
-
 .AlbumName a {
   text-decoration: none;
   color: rgb(229, 224, 224);
   font-size: 15px;
   font-weight: 700;
-
+  text-align: left;
 }
 
 .AlbumName a:hover {
@@ -61,6 +54,7 @@ h2 {
   color: rgb(110, 109, 109);
   font-size: 15px;
   font-weight: 700;
+  text-align: left;
 }
 
 .ArtistName a:hover {

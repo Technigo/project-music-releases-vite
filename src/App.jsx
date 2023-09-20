@@ -1,14 +1,15 @@
+// App
 import React from "react";
 import data from "./data.json";
 import { HeaderText } from "./Header.jsx";
-import { Album } from "./Album.jsx"; // Ensure the import matches your component name
+import Album from "./Album";
 import "./index.css";
+import "./AlbumStyle.css";
 
 export const App = () => {
   const albums = data.albums.items;
 
   const renderAlbums = () => {
-    console.log(albums);
     return albums.map((album) => (
       <Album
         key={album.id}
@@ -23,10 +24,9 @@ export const App = () => {
   return (
     <div id="root" className="root">
       <HeaderText />
-      <div className="FlexContainer"> {/* Add the FlexContainer class here */}
+      <div className="FlexContainer">
         {renderAlbums()}
       </div>
     </div>
   );
 };
-
