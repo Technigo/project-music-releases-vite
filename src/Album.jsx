@@ -1,6 +1,7 @@
 import { CoverImage } from "./CoverImage.jsx";
 import { ArtistName } from "./ArtistName.jsx";
 import { AlbumName } from "./AlbumName.jsx";
+import './Album.css';
 
 export const Album = ({ items }) => {
   console.log(items.albums.items);
@@ -9,6 +10,7 @@ export const Album = ({ items }) => {
   console.log(albums);
   return (
     <section className="album-wrapper">
+      <div className="album-grid">
       {albums.map((singleItem) => {
         console.log("log singleItem:", singleItem);
         return (
@@ -19,6 +21,7 @@ export const Album = ({ items }) => {
           </div>
         );
       })}
+      </div>
     </section>
   );
 };
