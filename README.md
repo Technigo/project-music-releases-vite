@@ -4,34 +4,21 @@
   </a>
 </h1>
 
-# Music Releases
+# Spotify Music Releases --React Vite📚
+A React application powered by Vite that allows users to interact with the data from Spotify. To build a page which shows new album and single releases.  
 
-Replace this readme with your own information about your project.
+## Feature⛳️
+- Display album cover image and album name
+- Design: when hovering over album cover or artist name, the image go darker, one underline pop up. 
+- Intermediate strech goals & advance goals: create JS logic and add one new component to render a list of playlists in a sidebar. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
-## Getting Started with the Project
+### How I built it and what I have learned💻
+- Technology Stack: I built this project using React and Vite for a fast development experience. It was truly enjoyable, and creating a small component to build a larger one feels like playing with Lego blocks.
+- Styling:To achieve the hover effect and underlines on album covers and artist names, I used CSS and JavaScript to add interactivity to the UI. The challenging aspect was styling the darkened cover image while ensuring the play button remained clearly visible. To address this, I introduced an additional div element with an RGBA background.
+- Deployment issue: When I deployed the project, the images didn't appear on the screen. I double-checked the image paths multiple times. Eventually, I noticed that the terminal mentioned the root should only be '/icons' instead of '/public/icons'. In the future, I will ensure that images, stylesheets, and JavaScript files use relative paths.
 
-### Dependency Installation & Startup Development Server
+### View it live🖱
+[Music-Spotify-React]https://sportify-music-react.netlify.app/
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>

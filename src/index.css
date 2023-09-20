@@ -193,7 +193,7 @@ code {
 }
 
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     /* album section */
 .albumSection{
   display:grid;
@@ -205,4 +205,5 @@ code {
 .playList{
   display: none;
 }
+
 }
