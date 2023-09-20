@@ -1,25 +1,32 @@
 import React from "react";
 import data from "./data.json";
 import { HeaderText } from "./Header.jsx";
-import { AlbumName } from "./AlbumName.jsx";
-
-
+import { Album } from "./Album.jsx"; // Ensure the import matches your component name
 import "./index.css";
-console.log(data);
-
 
 export const App = () => {
-  // Access the "items" array within "albums"
+  const albums = data.albums.items;
+
+  const renderAlbums = () => {
+    console.log(albums);
+    return albums.map((album) => (
+      <Album
+        key={album.id}
+        album={album.name}
+        artists={album.artists}
+        images={album.images}
+        externalUrl={album.external_urls.spotify}
+      />
+    ));
+  };
+
   return (
     <div id="root" className="root">
       <HeaderText />
-      <AlbumName />
-
+      <div className="FlexContainer"> {/* Add the FlexContainer class here */}
+        {renderAlbums()}
+      </div>
     </div>
   );
-}
-
-
-
-
+};
 
