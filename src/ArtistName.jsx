@@ -12,7 +12,7 @@ const ArtistName = ({ artists, externalUrl }) => {
                             rel="noopener noreferrer">
                             {artist.name}{" "}
                         </a>
-                        {index < artists.length - 1 ? ", " : ""}
+                        {index < artists.length - 1 ? "& " : ""}
                     </span>
                 ))
             ) : (

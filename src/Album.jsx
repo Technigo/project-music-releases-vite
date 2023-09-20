@@ -1,4 +1,4 @@
-// Album.jsx
+// Album
 import React from "react";
 import CoverImage from "./CoverImage";
 import AlbumInfo from "./AlbumInfo";
