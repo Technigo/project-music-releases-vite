@@ -1,25 +1,23 @@
 import data from "./data.json";
 import { Header } from "./Components/Header";
 import { Album } from "./Components/Album";
-// import { AlbumName } from "./Components/AlbumName";
-// import { ArtistName } from "./Components/ArtistName";
-// import { CoverImage } from "./Components/CoverImage";
+import { Footer } from "./Components/Footer";
+import { ArtistName } from "./Components/ArtistName";
 
-// console.log(data.albums.items);
+const albumsArray = data.albums.items;
 
 export const App = () => {
   const albums = data.albums;
   console.log(albums);
 
-  // Function map over Album array and get each album object to display to the UI
   return (
     <>
       <Header />
       <section>
-      <Album albumName="Isaac"/>
-
-
+        <Album albumsArray={albumsArray} />
+        <ArtistName albumsArray={albumsArray} />
       </section>
+      <Footer />
     </>
   );
 };
