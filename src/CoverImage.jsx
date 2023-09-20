@@ -5,9 +5,9 @@ const CoverImage = ({ imageUrl, altText }) => {
         <div className="container">
             <img className="AlbumImage" src={imageUrl} alt={altText} />
             <div className="middle">
-                <img src="./src/assets/icons/heartbtn.png" alt="Heart Symbol" />
-                <img src="./src/assets/icons/playbtn.png" alt="Play Symbol" />
-                <img src="./src/assets/icons/dotsbtn.png" alt="Dots Symbol" />
+                <img src="https://img.icons8.com/ios/50/000000/like--v1.png" alt="like--v1" />
+                <img src="https://img.icons8.com/ios/50/000000/play--v1.png" alt="play--v1" />
+                <img src="https://img.icons8.com/ios-glyphs/30/ellipsis.png" alt="ellipsis" />
             </div>
         </div>
     );

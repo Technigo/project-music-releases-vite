@@ -91,6 +91,8 @@
     width: 100%;
     height: auto;
     transition: transform .2s;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .middle img:last-child {
