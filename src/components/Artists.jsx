@@ -1,14 +1,16 @@
-import { Album } from "./Album";
 
 
-export const Artists = ({ artists }) => {
+
+export const Artists = ({ name, artistUrl }) => {
+    console.log(typeof name)
+
     return (
-        <p>artists go here</p>
-    );
-};
-
+        <span>{name}</span>
+    )
+}
 Artists.defaultProps = {
-    artists: "No name information available"
+    name: "No name information available",
+    artistUrl: "No link available"
 };
 
 

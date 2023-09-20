@@ -14,18 +14,25 @@ export const Album = ({ name, albumType, image, artists, link }) => {
                 {<AlbumImage image={image} />}
             </div>
             <p>
-                <span>Album Name:</span> {name}
+                <span>Name:</span> {name}
             </p>
             <p>
                 <span>Album Type:</span> {albumType}
             </p>
             <p>
-                <span>Artists:</span> {
-                    <Artists artists={artists} />}
+                <span>
+                    {artists.map((artist) => {
+                        return (
+                            <Artists key={artist.id}
+                                name={artist.name}
+                                artistURL={artist.external_urls.spotify} />
+                        );
+                    })}
+                </span>
             </p>
             {/* Separation of child components */}
 
-        </div>
+        </div >
     )
 }
 

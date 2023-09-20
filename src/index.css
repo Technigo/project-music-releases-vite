@@ -39,6 +39,12 @@ header img {
   padding: 2em;
 }
 
+.albumCover img {
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
+}
+
 /* Grid parent CSS */
 .Album-outer {
   display: grid;
