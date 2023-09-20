@@ -5,6 +5,8 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
@@ -12,3 +14,19 @@ code {
     monospace;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+}

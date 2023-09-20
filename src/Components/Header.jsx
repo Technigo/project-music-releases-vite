@@ -2,7 +2,7 @@ export const Header = () => {
     const headerText = "New releases and singles";
     return (
         <header>
-            <p>{headerText}</p>
+            <h2>{headerText}</h2>
         </header>
     );
 }
