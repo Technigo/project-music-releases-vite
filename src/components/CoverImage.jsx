@@ -6,9 +6,9 @@ const CoverImage = ({ image }) => {
       </div>
       <div className="overplay">
         <div className="icons">
-          <img src="../public/heart.svg" alt="heart icon" />
-          <img src="../public/play.svg" alt="play icon" />
-          <img src="../public/dots.svg" alt="dots icon" />
+          <img src="./heart.svg" alt="heart icon" />
+          <img src="./play.svg" alt="play icon" />
+          <img src="./dots.svg" alt="dots icon" />
         </div>
       </div>
     </article>

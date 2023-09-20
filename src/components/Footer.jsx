@@ -6,7 +6,7 @@ const Footer = () => {
         href="https://github.com/MikoZhu/project-music-releases-vite"
         target="_blank"
       >
-        <img src="../public/github.svg" alt="github icon" />
+        <img src="./github.svg" alt="github icon" />
       </a>
 
       <h3>Huadan Zhu</h3>
