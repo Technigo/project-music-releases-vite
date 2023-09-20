@@ -6,9 +6,8 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to use React to create components containing information about albums from spotify, with links to artist page and album page. 
+The page 
 
 ## Getting Started with the Project
 
