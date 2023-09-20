@@ -1,0 +1,40 @@
+/* ---------------- Styling the cards ---------------- */
+.album-card {
+    display: grid; /* Using grid to correctly position the cards on eaach device width */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cover-image {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.cover-image:hover {
+    filter: brightness(40%); /* Lowers the brightness for a dark hover effect */
+    transition: all 0.35s ease-in-out; /* Makes the transition easier */
+    -webkit-filter: brightness(40%); /* For browser compatibility */
+    -webkit-transition: all 0.35s ease-in-out; /* For browser compatibility */
+}
+
+/* ---------------- Styling for the text in each album ---------------- */
+.album-title, .artist-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.names {
+    margin: 1rem 0;
+    max-width: 100%; /* To make sure the titles don't take up more space than the max width of the container */
+}
+
+.album-title {
+    color: #ffffff;
+}
+
+.artist-name {
+    display: inline-block;
+    color: #a0a0a0;
+    margin-top: 1rem;
+}

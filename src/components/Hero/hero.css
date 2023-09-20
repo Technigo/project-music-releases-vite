@@ -1,0 +1,15 @@
+/* ---------------- Hero styling ---------------- */
+/* .hero {
+    background-image: url("./assets/music-releases.svg");
+    height: 343px;
+    position: relative;
+} */
+
+.hero-text {
+    text-align: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    color: #ffffff;
+}

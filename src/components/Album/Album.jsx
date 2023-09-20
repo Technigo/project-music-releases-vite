@@ -1,3 +1,4 @@
+import "./album.css";
 import { AlbumName } from "./AlbumName.jsx";
 import { ArtistName } from "./ArtistName.jsx";
 import { CoverImage } from "./CoverImage.jsx";
@@ -8,12 +9,14 @@ import PropTypes from "prop-types";
 export const Album = ({ fullAlbum }) => {
     const { images, name, artists } = fullAlbum;
 
-    return ( // I'm using the React fragment here to get rid of some of the divs from the HTML structure.
-        <>
+    return (
+        <div className="card-content">
             <CoverImage image={images[0]} />
-            <AlbumName name={name} /> 
-            <ArtistName artists={artists}/>
-        </>
+            <div className="names">
+                <AlbumName name={name} /> 
+                <ArtistName artists={artists}/>
+            </div>
+        </div>
     );
 }
 

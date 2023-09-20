@@ -1,21 +1,21 @@
-import data from "./data.json";
-import { Album } from "./components/Album.jsx";
-import { Header } from "./components/Header.jsx";
+import data from "../data.json";
+import "./app.css";
+import { Album } from "./Album/Album.jsx";
+import { Header } from "./Hero/Header.jsx";
 
 export const App = () => {
   const albumData = data.albums.items;
+  console.log(albumData);
 
   // The contents that are actually rendered via Main.jsx onto the Virtual Dom. The map-method is used here to go through each object in the array. The component Albums takes in the data and adds in the correct value into the propNames image, name and artist. Header is appended first, since I don't want this to render more than once.
   return (
     <>
-      <div className="card">
-        <Header />
-        <div className="card-content">
-          {albumData.map((album) => (
-            <Album fullAlbum={album} key={album.id} />
-          ))}
+      <Header />
+        <div className="album-card">
+            {albumData.map((album) => (
+              <Album fullAlbum={album} key={album.id} />
+            ))}
         </div>
-      </div>
     </>
   );
 };
