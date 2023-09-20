@@ -1,0 +1,17 @@
+.album-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    .album-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    .album-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
