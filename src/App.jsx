@@ -9,6 +9,7 @@ import Playlist from "./components/Playlist";
 // console.log(data);
 // console.log(playlistData);
 export const App = () => {
+  // map albums data
   const albums = data.albums.items;
   const albumsData = () => {
     return albums.map((album) => {
@@ -23,6 +24,7 @@ export const App = () => {
       );
     });
   };
+  // map playlists data
   const playlists = playlistData.playlists.items;
 
   const playlistsData = () => {
@@ -41,6 +43,7 @@ export const App = () => {
     <div>
       {/* header part */}
       <Header />
+
       {/* body part */}
 
       <section className="albumSection">{albumsData()}</section>
