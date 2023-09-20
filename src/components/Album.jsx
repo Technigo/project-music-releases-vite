@@ -1,13 +1,14 @@
-//import { AlbumName } from "./components/AlbumName"
-//import { ArtistName } from "./components/AlbumName"
-//import { CoverImage } from "./components/CoverImage"
-//import { Header } from "./components/Header"
+//import { AlbumName } from "./AlbumName";
+//import { ArtistName } from "./AlbumName";
+//import { AlbumImages } from "./AlbumImages";
+//import { Header } from "./components/Header";
 
-export const Album = ({ id, images, name, albumType, artists }) => {
+export const Album = ({ id, albumImages, name, albumType, artists }) => {
     return (
         <div className="album-info">
+
             <div>
-                <span>Cover Image:</span> {images}
+                {/* <AlbumImages images={albumImages} /> */}
             </div>
             <p>
                 <span>Album Name:</span> {name}
@@ -16,15 +17,17 @@ export const Album = ({ id, images, name, albumType, artists }) => {
                 <span>Album Type:</span> {albumType}
             </p>
             <p>
-                <span>Albumn ID:</span> {id}
+                <span>Artists:</span> { }
             </p>
             {/* Separation of child components */}
 
-
-
-
-            Album</div>
+        </div>
     )
 }
+
+Album.defaultProps = {
+    name: "No name information available",
+    albumType: "No albumn type available",
+};
 
 

@@ -15,7 +15,6 @@ code {
 /* General Styles */
 span {
   font-weight: bold;
-  display: block;
 }
 
 /* Header CSS */
@@ -38,13 +37,40 @@ header img {
   padding: 2em;
 }
 
-/* Pokemon Component CSS */
-.album-outer {
-  padding: 2em;
+/* Grid parent CSS */
+.Album-outer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1em;
+  border: solid red 1px;
 }
 
+/* Grid child CSS */
 .album-info {
   border: solid red 1px;
+  padding: 4px;
+  margin: 5px;
+  text-align: center;
   padding: 1em;
-  margin-bottom: 1em;
+}
+
+/*media query for mobile - 1 columns .*/
+@media screen and (max-width: 667px) {
+  .album-info {
+    grid-column: span 1;
+  }
+}
+
+/*media query for tablet- 2 columns .*/
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  .album-info {
+    grid-column: span 2;
+  }
+}
+
+/*media query for desktop - 4 columns .*/
+@media screen and (min-width: 1025px) {
+  .album-info {
+    grid-column: span 4;
+  }
 }
