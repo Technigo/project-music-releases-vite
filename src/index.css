@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(26, 17, 17);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Oxygen" , "sans-serif";
+
+}
+.header{
+  color: whitesmoke;
+  text-shadow: 2px 3px 3px rgba(275, 275, 275, 0.4);
+  margin-top: 20px;
+  
+}
+.header h1{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
