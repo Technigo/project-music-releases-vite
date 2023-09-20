@@ -9,6 +9,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  margin-bottom: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .FlexContainer {
   display: flex;
   flex-wrap: wrap;
@@ -27,11 +32,6 @@
 
 .Album img {
   height: 300px;
-  transition: all 0.5s ease-in-out;
-}
-
-.Album img:hover {
-  filter: brightness(50%);
 }
 
 .HeaderText {
@@ -39,7 +39,7 @@
 }
 
 .AlbumInfo {
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
 }
 
@@ -48,6 +48,7 @@
   color: rgb(229, 224, 224);
   font-size: 15px;
   font-weight: 700;
+
 }
 
 .AlbumName a:hover {
@@ -69,4 +70,45 @@
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.AlbumImage {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .AlbumImage {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.middle img {
+  height: 35px;
+  padding: 8px;
+  transition: transform .2s;
+}
+
+.middle img:hover {
+  transform: scale(1.5);
 }
