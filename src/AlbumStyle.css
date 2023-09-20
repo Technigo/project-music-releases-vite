@@ -44,7 +44,7 @@
     text-align: left;
     display: inline;
     /* Ensure the entire card area is clickable */
-    color: rgb(150, 150, 150);
+    color: rgb(110, 109, 109);
 }
 
 .AlbumName a:hover,
