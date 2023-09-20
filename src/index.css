@@ -30,9 +30,45 @@ body{
   color: whitesmoke;
   text-shadow: 2px 3px 3px rgba(275, 275, 275, 0.4);
   margin-top: 20px;
+ 
   
 }
 .header h1{
   font-size: 25px;
   margin-bottom: 10px;
+}
+
+.album-wrapper{
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.artist-name a{
+  color: whitesmoke;
+  text-decoration: none;
+
+}
+.artist-name a:hover{
+  text-decoration: underline;
+
+}
+.album{
+  margin-bottom: 30px;
+  
+}
+.album-name a{
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+.album-name a:hover{
+  text-decoration: underline;
+}
+
+.cover-img{
+  transition: all 0.5s;
+
+}
+.cover-img:hover{
+  opacity: 0.3;
 }
