@@ -1,10 +1,12 @@
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
@@ -19,11 +21,11 @@ span {
 
 /* Header CSS */
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: blue;
+  background: #121212;
   padding: 1em 0em;
   color: white;
 }
@@ -42,12 +44,14 @@ header img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 1em;
-  border: solid red 1px;
+  border: solid white 1px;
+  background-color: black;
 }
 
 /* Grid child CSS */
 .album-info {
-  border: solid red 1px;
+  border: solid white 1px;
+  background-color: #242424;
   padding: 4px;
   margin: 5px;
   text-align: center;
@@ -57,7 +61,7 @@ header img {
 /*media query for mobile - 1 columns .*/
 @media screen and (max-width: 667px) {
   .album-info {
-    grid-column: span 1;
+    grid-column: span 4;
   }
 }
 
@@ -71,6 +75,6 @@ header img {
 /*media query for desktop - 4 columns .*/
 @media screen and (min-width: 1025px) {
   .album-info {
-    grid-column: span 4;
+    grid-column: span 1;
   }
 }

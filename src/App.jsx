@@ -1,8 +1,9 @@
 import data from "./data.json";
+import React from 'react';
 import { Header } from "./components/Header"
 import { Album } from "./components/Album"
 //import { AlbumName } from "./components/AlbumName"
-//import { ArtistName } from "./components/AlbumName"
+//import { Artists } from "./components/Artists"
 //import { CoverImage } from "./components/CoverImage"
 //import { Header } from "./components/Header"
 
@@ -14,14 +15,14 @@ export const App = () => {
   //Function to map over data array 
   const newAlbumsArray = () => {
     return albums.map(
-      ({ id, name, album_type, images, artists }) => (
+      ({ id, name, album_type, images, artists, external_urls }) => (
         <Album
           key={id}
           name={name}
           albumType={album_type}
-          albumImages={images}
+          image={images[0]}
           artists={artists}
-        />
+          link={external_urls.spotify} />
       )
     );
   };
