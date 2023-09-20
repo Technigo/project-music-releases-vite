@@ -7,14 +7,15 @@ import PropTypes from "prop-types";
 
 // Functional component that destructures image, name and artist to the component props image, album and artist.
 export const Album = ({ fullAlbum }) => {
-    const { images, name, artists } = fullAlbum;
+    const { images, name, artists, external_urls } = fullAlbum;
+    console.log(fullAlbum);
 
     return (
         <div className="card-content">
             <CoverImage image={images[0]} />
             <div className="names">
-                <AlbumName name={name} /> 
-                <ArtistName artists={artists}/>
+                <AlbumName name={name} albumUrl={external_urls} /> 
+                <ArtistName artists={artists} artistUrl={external_urls} />
             </div>
         </div>
     );
@@ -26,5 +27,6 @@ Album.propTypes = {
         images: PropTypes.array.isRequired,
         name: PropTypes.string.isRequired,
         artists: PropTypes.array.isRequired,
+        external_urls: PropTypes.object.isRequired,
     }).isRequired,
 };

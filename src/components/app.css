@@ -4,20 +4,3 @@ body {
     background: #000000;
     margin: 2rem;
 }
-
-/* ---------------- Media queries ---------------- */
-/* Tablet styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .album-card {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
-    }
-}
-  
-/* Desktop styles */
-@media (min-width: 1025px) {
-    .album-card {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on tablet */
-        gap: 2rem;
-    }
-} 
-

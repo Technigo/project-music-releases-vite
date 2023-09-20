@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <div className="hero">
             <h1 className="hero-text">New albums & singles</h1>
-            <h4 className="hero-text">Project by Laura Lyckholm</h4>
+            <p className="hero-text">Project by Laura Lyckholm</p>
         </div>
     );
 }
