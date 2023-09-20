@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body{
+  background-color: black;
+  color: #ffffff;
+}
+
+.header {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  }
+
+.header h1{
+  font-size: 20px;
+  }
+
+
+  .album-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+  
+  .album {
+    margin: 10px;
+  }
+  
+  /* Styles for tablets and below */
+@media only screen and (max-width: 768px) {
+  .album-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 769px) {
+  body {
+    padding: 0 20px;
+  }
+  .album-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
