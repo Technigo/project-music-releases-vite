@@ -15,7 +15,9 @@ export const Album = ({ fullAlbum }) => {
             <CoverImage image={images[0]} />
             <div className="names">
                 <AlbumName name={name} albumUrl={external_urls} /> 
-                <ArtistName artists={artists} artistUrl={external_urls} />
+                    <span className="artist-name">
+                        <ArtistName artists={artists} />
+                    </span>
             </div>
         </div>
     );

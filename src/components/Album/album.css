@@ -79,9 +79,10 @@
     max-width: 100%; /* To make sure the titles don't take up more space than the max width of the container */
 }
 
-/* Removes default text-decoration added in by the browser */
+/* Removes default styling added in by the browser */
 a {
     text-decoration: none;
+    color: #a0a0a0;
 }
 
 /* Adds styling on hover on the links */
