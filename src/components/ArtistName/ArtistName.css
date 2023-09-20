@@ -1,2 +1,13 @@
 /* Artist name H3 - 14px Helvetica #a0a0a0 */
 /* a:hover - #a0a0a0 td: underline */
+
+.artist-name h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  margin: 1em 0;
+}
+
+.artist-name a:hover {
+  text-decoration: #a0a0a0 underline;
+}

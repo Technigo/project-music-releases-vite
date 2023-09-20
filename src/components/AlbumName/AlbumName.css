@@ -1,2 +1,12 @@
 /* Album title H2 - 14px Helvetica #ffffff */
 /* a:hover - #a0a0a0 td: underline */
+
+.album-name h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 1em 0;
+}
+
+.album-name a:hover {
+  text-decoration: #a0a0a0 underline;
+}

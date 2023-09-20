@@ -2,6 +2,9 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <header>
+      <h1>New albums & singles</h1>
+      <hr></hr>
+    </header>
+  );
+};
