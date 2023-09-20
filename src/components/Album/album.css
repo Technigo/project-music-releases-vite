@@ -40,6 +40,7 @@
 
 .icon-container img {
     margin: 0.5rem;
+    opacity: 50%; /* Lowers opacity on icons before hover */
 }
 
 /* Changes size of icons */
@@ -62,6 +63,7 @@
 /* Changes size of icons on hover */
 .icon-container img:hover {
     transform: scale(1.2);
+    opacity: 100%; /* Raises opacity during hover */
 }
 
 
