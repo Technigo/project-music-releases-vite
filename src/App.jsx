@@ -4,10 +4,9 @@ import { CoverImage } from "./Components/AlbumInfo/CoverImage";
 import { Album } from "./Components/AlbumInfo/Album.jsx";
 import { Artist } from "./Components/AlbumInfo/Artist.jsx";
 
-console.log(data);
-
 export const App = () => {
   const albumList = data.albums.items;
+  console.log(albumList);
   return (
     <>
       <Header />
@@ -15,9 +14,9 @@ export const App = () => {
         {albumList.map((album) => {
           return (
             <div key={album.id} className="album-container">
-              <CoverImage className="albumCover" cover={album} />
-              <Album className="album" albumName={album} />
-              <Artist className="artist" artistName={album} />
+              <CoverImage className="album-cover" album={album} />         
+              <Album className="album" album={album} />
+              <Artist className="artist" album={album} />
             </div>
           )
         })}

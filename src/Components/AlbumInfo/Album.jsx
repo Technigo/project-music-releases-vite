@@ -1,4 +1,4 @@
-export const Album = (album) => {
+export const Album = ({album}) => {
     return (
         <div className="album">
             <a 
