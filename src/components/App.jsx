@@ -1,6 +1,6 @@
 import data from "../data.json";
 import "./app.css";
-import { Album } from "./Album/Album.jsx";
+import { Album } from "./Card/AlbumCard/Album.jsx";
 import { Header } from "./Hero/Header.jsx";
 
 export const App = () => {

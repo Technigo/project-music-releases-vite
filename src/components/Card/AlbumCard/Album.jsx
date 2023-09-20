@@ -1,6 +1,6 @@
-import "./album.css";
+import "../card.css";
 import { AlbumName } from "./AlbumName.jsx";
-import { ArtistName } from "./ArtistName.jsx";
+import { ArtistName } from "./Artists/ArtistName.jsx";
 import { CoverImage } from "./CoverImage.jsx";
 // Importing PropTypes to get rid of error saying props missing in validation.
 import PropTypes from "prop-types";
