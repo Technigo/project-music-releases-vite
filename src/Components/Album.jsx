@@ -4,12 +4,12 @@ import { ArtistName } from "./ArtistName"
 import { CoverImage } from "./CoverImage"
 
 
-export const Album = ({name , artists , images}) => {
+export const Album = ({name , artists , images, href , hrefName}) => {
   return (
     <div className="album">
         <CoverImage images={images}/>
-        <AlbumName name={name}/>
-        <ArtistName artists={artists}/>
+        <AlbumName name={name} hrefName={hrefName}/>
+        <ArtistName artists={artists} href={href}/>
 
     </div>
    

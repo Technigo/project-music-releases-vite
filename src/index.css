@@ -53,7 +53,7 @@ body{
 
 }
 .album{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   
 }
 .album-name a{
@@ -67,8 +67,25 @@ body{
 
 .cover-img{
   transition: all 0.5s;
+  position: relative;
 
 }
 .cover-img:hover{
   opacity: 0.3;
+}
+.icon-wrapper{
+  position: absolute;
+  bottom: 150px;
+ left: 120px;
+}
+button{
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
 }

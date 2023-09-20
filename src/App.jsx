@@ -15,7 +15,10 @@ export const App = () => {
           <Album key={album.id}
            name={album.name}
             artists={album.artists[0].name}
-             images={album.images[1].url}/>
+             images={album.images[1].url}
+             href={album.artists[0].external_urls.spotify}
+             hrefName={album.external_urls.spotify}
+             />
         )
       
     

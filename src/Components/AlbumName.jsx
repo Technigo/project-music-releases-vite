@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 
 
-export const AlbumName = ({name}) => {
+export const AlbumName = ({name , hrefName}) => {
   return (
     <div className="album-name">
-        <a href={name}>{name}</a>
+        <a href={hrefName}>{name}</a>
     </div>
   )
 }
