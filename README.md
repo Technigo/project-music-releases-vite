@@ -18,7 +18,7 @@ A React application powered by Vite that allows users to interact with the data 
 - Styling:To achieve the hover effect and underlines on album covers and artist names, I used CSS and JavaScript to add interactivity to the UI. The challenging aspect was styling the darkened cover image while ensuring the play button remained clearly visible. To address this, I introduced an additional div element with an RGBA background.
 - Deployment issue: When I deployed the project, the images didn't appear on the screen. I double-checked the image paths multiple times. Eventually, I noticed that the terminal mentioned the root should only be '/icons' instead of '/public/icons'. In the future, I will ensure that images, stylesheets, and JavaScript files use relative paths.
 
-### View it live🖱
+## View it live🖱
 [Music-Spotify-React]https://sportify-music-react.netlify.app/
 
 
