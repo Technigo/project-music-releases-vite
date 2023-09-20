@@ -9,8 +9,7 @@ const ArtistName = ({ artists, externalUrl }) => {
                         <a
                             href={artist.external_urls.spotify}
                             target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                            rel="noopener noreferrer">
                             {artist.name}{" "}
                         </a>
                         {index < artists.length - 1 ? ", " : ""}

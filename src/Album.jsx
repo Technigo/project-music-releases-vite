@@ -8,7 +8,7 @@ const Album = ({ album, artists, images, externalUrl }) => {
     return (
         <div className="Album">
             <CoverImage imageUrl={images[0].url} altText={`album cover for ${album}`} />
-            <AlbumInfo album={album} artists={artists} externalUrl={externalUrl} />
+            <AlbumInfo album={album} externalUrl={externalUrl} />
             <ArtistName artists={artists} />
         </div>
     );
