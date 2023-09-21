@@ -5,8 +5,8 @@
 export const CoverImage = ({images}) => {
   return (
     <div>
-        <div className="cover-img">
-            <img src={images} alt="cover-image" />
+        <div className="image-wrapper">
+            <img src={images} alt="cover-image"  className="cover-img" />
             <div className="icon-wrapper">
                 <button className="like-icon"><i className="fa-sharp fa-regular fa-heart" style={{color: "#ffffff"}}></i></button>
                 <button className="play-icon"><i className="fa-regular fa-circle-play" style={{color: "#ffffff"}}></i></button>

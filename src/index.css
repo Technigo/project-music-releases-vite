@@ -17,7 +17,7 @@ code {
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(26, 17, 17);
+  background-color: rgb(0, 0, 0);
   display: flex;
   width: 100%;
   justify-content: center;
@@ -44,8 +44,12 @@ body{
   grid-template-columns: 1fr;
 }
 .artist-name a{
-  color: whitesmoke;
+  color: rgb(136, 133, 133);
   text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display:block;
+  
 
 }
 .artist-name a:hover{
@@ -60,24 +64,34 @@ body{
   color: whitesmoke;
   text-decoration: none;
   cursor: pointer;
+  display:block;
+  margin-top: 10px;
 }
 .album-name a:hover{
   text-decoration: underline;
 }
 
+.image-wrapper{
+  position: relative;
+}
 .cover-img{
   transition: all 0.5s;
-  position: relative;
-
 }
-.cover-img:hover{
+.image-wrapper:hover > .cover-img{
   opacity: 0.3;
 }
 .icon-wrapper{
   position: absolute;
   bottom: 150px;
  left: 120px;
+ transition: all 0.5s;
+ opacity: 0;
 }
+
+.image-wrapper:hover > .icon-wrapper{
+ opacity: 1;
+}
+
 button{
   background-color: transparent;
   width: 30px;
@@ -87,5 +101,15 @@ button{
   font-size: 30px;
   margin-right: 30px;
   cursor: pointer;
-  display: none;
+
+
 }
+.like-icon:hover{
+ transform: scale(1.5);
+}
+.play-icon:hover{
+  transform: scale(1.5);
+ }
+ .dott-icon:hover{
+  transform: scale(1.5);
+ }
