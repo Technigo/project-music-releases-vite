@@ -2,7 +2,8 @@ import "./ArtistName.css";
 
 export const ArtistName = ({ singleArtistItem }) => {
   const { artists } = singleArtistItem;
-  let artistNames = "";
+  let artistNames = ""; // This is the only declaration of artistNames
+
 
   if (artists.length === 1) {
     artistNames = artists[0].name;
