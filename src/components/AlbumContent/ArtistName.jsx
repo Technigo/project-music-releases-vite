@@ -1,16 +1,21 @@
 
 //ArtistName is a functional componant that accepts a single prop called artistName
-export const ArtistName = ({ artistName }) => {
-
+export const ArtistName = ({ artistName, artistURL }) => {
+console.log(artistURL)
     return (
         <div className ="artist-names">
             {artistName.map((name, index) => (
-                <span key={index}>
-                {name}
-                {index < artistName.length -1 && " & "}
-                </span>
+                <a 
+                    href={artistURL[index]} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="artist-link" 
+                    key={index}>
+                        
+                <h3 key={index}>{name}{index < artistName.length -1 && " & "}</h3> 
+                
+                </a>
             ))}
-    
         </div>
     )    
 }

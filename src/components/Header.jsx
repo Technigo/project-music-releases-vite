@@ -3,7 +3,8 @@ export const Header = () => {
 
     return (
         <header className="header">
-            <p>{headertext}</p>
+            <h1>{headertext}</h1>
+            <h3>By Emmy D</h3>
         </header>
     )
 }

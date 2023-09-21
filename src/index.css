@@ -12,16 +12,127 @@ code {
     monospace;
 }
 
+/* .icon-button {
+  background-image: url('./components/AlbumContent/dots.svg'); 
+  background-color: transparent; 
+  width: 100px; 
+  height: 100px; 
+}
 
+.icon-button svg {
+  fill: white;
+} */
 
 body{
-  background-color: lightseagreen;
+  background-color: black;
+  margin-left: 40px; 
+  margin-right: 40px; 
 }
+
 
 .header {
-  font-size: 50px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  color: white; 
+  font-size: 12px; 
 }
 
-.album-name {
-  color: white; 
+.header h3{
+ font-weight: 200;
+}
+
+
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 18px; /* Adds spacing between grid items */
+  /* Add any other desired styles */
+}
+
+.album h2 {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.album h3 {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.cover-image img {
+  
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+
+}
+
+/*---------HOVER EFFECTS FOR ALBUM -----------*/
+
+
+
+/* .cover-image:hover{
+  filter: brightness(50%); 
+}  */
+
+.cover-image:hover > img {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.cover-image:hover > .icon-wrapper {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.cover-image {
+  position: relative;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image:hover .icon-wrapper {
+  display:block; 
+}
+
+
+
+/*-------------STYLING TO LINKS-------------*/
+
+.album-link {
+  text-decoration: none; /* Remove default underline */
+  transition: text-decoration 0.2s ease-in-out; /* Add a smooth transition */
+}
+
+.album-link:hover {
+  text-decoration: underline; /* Underline the text on hover */
+  text-decoration-color: #ffffff;
+}
+
+.artist-link {
+  text-decoration: none; /* Remove default underline */
+  transition: text-decoration 0.2s ease-in-out; /* Add a smooth transition */
+}
+
+.artist-link:hover {
+  text-decoration: underline; /* Underline the text on hover */
+  text-decoration-color: #a0a0a0; 
+}
+
+/* For tablets and larger screens */
+@media screen and (min-width: 481px) {
+  .album-wrapper {
+    grid-template-columns: repeat(2, 1fr); /* Display two albums in a row for tablets */
+  }
+}
+
+/* For desktop screens */
+@media screen and (min-width: 769px) {
+  .album-wrapper {
+    grid-template-columns: repeat(4, 1fr); /* Display four albums in a row for desktop */
+  }
+
+
 }
