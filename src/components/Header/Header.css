@@ -1,3 +1,13 @@
+.header {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-text {
     color: white;
+    font-size: 20px;
 }
+

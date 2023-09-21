@@ -12,6 +12,7 @@ export const CoverImage = ({ singleCoverItem }) => {
   return (
     <div className="cover-image">
       <img src={imgObjects.imgSrc} alt={imgObjects.imgAlt} />
+     
       <div className="button-wrapper">
           <button className="icon heart">
             <svg xmlns="http://www.w3.org/2000/svg" 
@@ -27,7 +28,6 @@ export const CoverImage = ({ singleCoverItem }) => {
               </svg>
           </button>
           
-
       <button className="icon play">
       <svg xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 100 100">
@@ -60,7 +60,6 @@ export const CoverImage = ({ singleCoverItem }) => {
         />
         </g>
         </svg>
-
       </button>
       </div>
     </div>

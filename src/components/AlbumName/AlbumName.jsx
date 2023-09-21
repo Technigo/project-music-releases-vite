@@ -20,8 +20,7 @@ export const AlbumName = ({ singleAlbumItem }) => {
           {singleItemObject.albumName}
         </h2>
       </a>
-    
-    
+
     </div>
   )
 }
