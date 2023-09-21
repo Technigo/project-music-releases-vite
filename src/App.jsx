@@ -1,15 +1,17 @@
 import data from "./data.json";
 import { Album } from "./components/Album.jsx";
-import { Header } from "./components/Header.jsx"
+import { Header } from "./components/Header.jsx";
+import "./index.css";
 
-console.log(data);
- 
+console.log("This is the JSON-data",data);
+
+// component to render structure of App
+//passing the data from JSON into the items prop
 export const App = () => {
   return (
-  <div className="App">
+  <div className="app">
     <Header />
-    <Album items={data} />
-    <div>Find me in src/app.jsx!</div>;
+    <Album items={data} /> 
   </div>
   );
 };

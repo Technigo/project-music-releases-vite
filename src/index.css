@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+/* MY CODE STARTS HERE*/
+
+body {
+  background-color: rgb(21, 21, 21);
+  display: block;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+h2 {
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+h3 {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+}
+
+
+

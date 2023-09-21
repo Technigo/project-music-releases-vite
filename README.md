@@ -7,7 +7,7 @@
 # Music Releases
 
 The assignment was to use React to create components containing information about albums from spotify, with links to artist page and album page. 
-The page 
+Each album should have a hover effect with buttons, and be placed in a grid that is responsive to screen.
 
 ## Getting Started with the Project
 
