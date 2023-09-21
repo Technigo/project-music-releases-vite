@@ -14,7 +14,7 @@ export const App = () => {
   const renderAlbums = () => {
 
     return (
-      <div>
+      <>
         {albums.map((album) => (
           <Album
             key={album.id}
@@ -24,14 +24,14 @@ export const App = () => {
             albumHttpLink={album.external_urls.spotify}
           />
         ))}
-      </div>
+      </>
     )
   };
 
   return (
     <>
       <Header />
-      <section className="albums-container">
+      <section className="album-container">
         {renderAlbums()}
       </section>
     </>

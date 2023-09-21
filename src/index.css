@@ -26,12 +26,97 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 25px 50px;
+  place-items: center;
+  justify-content: center;
+}
+
+/* -----------HEADER ------------ */
+.header {
+  text-align: center;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.header>h1 {
+  margin-bottom: 25px;
+}
+
+/* --------ALBUM CONTAINER -------- */
+.album-container {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: repeat(1, minmax(320px, 1fr));
+  place-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.album {
+  margin: 10px;
+}
+
+/* ------Cover Image --------*/
+.cover-image-container {
+  position: relative;
+}
+
+img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+/* ----Icons svg ----- */
+.icon-container {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  opacity: 0;
+}
+
+button {
+  border: none;
+}
+
+.icon {
+  width: 35px;
+  background: transparent;
+}
+
+.svg {
+  fill: #fff;
+}
+
+/* ------Hover effects ------ */
+
+.icon:hover {
+  scale: 1.35;
+}
+
+.cover-image-container:hover>.icon-container {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.cover-image-container:hover>img {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 .album-name a {
   color: #ffffff;
 }
 
-.artist-name a {
+.artist-inline {
   display: inline;
+}
+
+.artist-name a {
   color: #a0a0a0;
 }
 
@@ -47,4 +132,21 @@ html {
 .album-name a:hover,
 .artist-name a:hover {
   text-decoration: underline;
+}
+
+
+/* ------------- MEDIA QUERIES ------------ */
+
+@media screen and (min-width:668px) and (max-width:1023px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .album-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
 }
