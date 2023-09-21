@@ -1,12 +1,14 @@
 
 export const Artists = ({ name, artistURL, id }) => {
     console.log(`the url for the artist is this: ${artistURL}`);
+    console.log(typeof artistURL);
     return (
         <a
             target="_blank"
             className="artists-names"
-            href="{artistURL}"
+            href={artistURL}
             key={id}
+            rel="noreferrer noopener"
         >
             <p className="artist-name">
             </p>

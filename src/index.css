@@ -70,25 +70,15 @@ header img {
 .button-heart,
 .button-play,
 .button-dots {
-
   gap: 1em;
   cursor: pointer;
   filter: invert();
-
-  /*opacity: 0;
-  transition: opacity 0.2s ease-in-out; */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.button-heart:hover {
-  transform: scale(1.6);
-  opacity: 1;
-}
-
-.button-play:hover {
-  transform: scale(1.6);
-  opacity: 1;
-}
-
+.button-heart:hover,
+.button-play:hover,
 .button-dots:hover {
   transform: scale(1.6);
   opacity: 1;
