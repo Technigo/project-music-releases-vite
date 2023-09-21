@@ -153,5 +153,13 @@ button{
     font-size: 32px;
     margin-right: 19px;
   }
-  
+  .header p{
+    font-size: 20px;
+  }
+  .artist-name a{
+    font-size: 18px;
+  }
+  .album-name a{
+    font-size: 20px;
+  }
  }
