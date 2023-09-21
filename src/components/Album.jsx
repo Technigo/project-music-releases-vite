@@ -5,14 +5,16 @@ import CoverImage from './CoverImage';
 import Header from './Header';
 import '../index.css';
 
+
 const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
   return (
     <div className="album">
+      <Header /> {/* Include the Header component here */}
       <CoverImage images={coverImages} />
-      <Header albumName={albumName} externalUrl={externalUrls.spotify} />
+      <AlbumName albumName={albumName} externalUrl={externalUrls.spotify} />
       <div className="artists">
         <ArtistName name={artistNames} externalUrl={externalUrls.artist} />
-        </div>
+      </div>
       {/* Apply the ellipsis class to the ellipsis pseudo-element */}
       <div className="ellipsis">...</div>
       <a
@@ -27,4 +29,3 @@ const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
 };
 
 export default Album;
-
