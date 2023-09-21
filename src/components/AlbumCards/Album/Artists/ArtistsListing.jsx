@@ -1,6 +1,3 @@
-// Importing PropTypes to get rid of error saying props missing in validation.
-import React from "react";
-import PropTypes from "prop-types";
 import { ArtistSeparator } from "./ArtistSeparator";
 import { ArtistName } from "./ArtistName";
 
@@ -9,27 +6,12 @@ export const ArtistsListing = ({ artists }) => {
     return (
         <>
             {artists.map((artist, index) => ( // Maps over the artist array and adds the correct url and name for each condition. 
-                // Using React.Fragment here instead of a div or span, to get the elements to line up properly
                 // Checking first to see if index is greater than 0, so that the separators aren't being added in before any artistnames.
-                <React.Fragment key={artist.id}>
+                <span key={artist.id}>
                   {index > 0 && <ArtistSeparator index={index} length={artists.length} />  }
                   <ArtistName artist={artist} />
-                </React.Fragment>
+                </span>
             ))}
         </>
     );
 }
-
-
-// Defining propTypes for the ArtistName component.
-ArtistsListing.propTypes = {
-  artists: PropTypes.arrayOf(
-      PropTypes.shape({
-          id: PropTypes.string.isRequired,
-          name: PropTypes.string.isRequired,
-          external_urls: PropTypes.shape({
-              spotify: PropTypes.string.isRequired,
-          }).isRequired,
-      })
-  ).isRequired,
-};

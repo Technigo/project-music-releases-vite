@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 // Functional component that destructures the props index and length from ArtistName.jsx.
 export const ArtistSeparator = ({ index, length }) => {
     if(length === 2 && index === length - 1) { 
@@ -10,10 +8,3 @@ export const ArtistSeparator = ({ index, length }) => {
     }
     return ', ';// Otherwise put a comma between the names.
 }
-
-// Defining propTypes for the ArtistSeparator component.
-ArtistSeparator.propTypes = {
-    index: PropTypes.number.isRequired,
-    length: PropTypes.number.isRequired,
-};
-
