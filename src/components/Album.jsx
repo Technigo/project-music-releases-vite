@@ -9,6 +9,7 @@ export const Album = ({ name, albumType, image, artists, link }) => {
     console.log('albumn', name, artists);
 
     return (
+        //do I need a key attribute in the first div for this return?
         <div className="album-info">
             <div>
                 {<AlbumImage image={image} />}
@@ -31,14 +32,10 @@ export const Album = ({ name, albumType, image, artists, link }) => {
                 </span>
             </p>
             {/* Separation of child components */}
-
         </div >
     )
 }
-
 Album.defaultProps = {
     name: "No name information available",
     albumType: "No albumn type available",
 };
-
-

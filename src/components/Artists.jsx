@@ -1,17 +1,26 @@
 
-
-
-export const Artists = ({ name, artistUrl }) => {
-    console.log(typeof name)
-
+export const Artists = ({ name, artistURL }) => {
+    console.log(`the url for the artist is this: ${artistURL}`);
     return (
-        <span>{name}</span>
+        <a className="artists-names" href="{artistURL}">
+            {name}</a>
     )
 }
 Artists.defaultProps = {
     name: "No name information available",
-    artistUrl: "No link available"
+    artistUrl: "No Url available",
 };
 
 
-// @react-refresh:278 Uncaught Error: Objects are not valid as a React child (found: object with keys {external_urls, href, id, name, type, uri}). If you meant to render a collection of children, use an array instead.
+// const Artists = (props) => {
+
+//     return (
+//         props.artistsURL.map((item, index) => {
+//           return (
+//             <a className="card-artists" href={item} key={props.name[index]}>
+//               {props.name[index]}
+//             </a>
+//           )
+//         })
+//     )
+//   }
