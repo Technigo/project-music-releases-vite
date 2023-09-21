@@ -10,35 +10,9 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: greyscale;
   -webkit-text-size-adjust: 100%;
 }
-
-.album-title,
-.album p {
-  font-size: 14px;
-  font-family: Helvetica, sans-serif;
-  color: #ffffff; /* Set the default color to white */
-  text-decoration: none; /* Remove underline by default */
-  padding: 10px;
-}
-.artist {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #a0a0a0;
-  font-size: 14px;
-  padding: 20px;
-} 
-/* Remove underline by default for all links within album and its descendants */
-.album a {
-  text-decoration: none;
-}
-
-/* Add underline when hovering on album title and artist */
-.album-title:hover,
-.artist:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
-
 
 body {
   margin: 0;
@@ -56,9 +30,36 @@ body {
   padding: 2rem;
   text-align: center;
 }
+.album-title,
+.album p {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff !important; /* Set the default color to white */
+  text-decoration: none; /* Remove underline by default */
+  padding: 10px;
+}
+
+.artist {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a0a0a0 !important; /* Set the artist text color to white */
+  font-size: 14px;
+  padding: 20px;
+}
+
+
+/* Remove underline by default for all links within album and its descendants */
+.album a {
+  text-decoration: none;
+}
+
+/* Add underline when hovering on album title and artist */
+.album-title:hover,
+.artist:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 
 /* CSS for Album Container */
-.album {
+.album a{
   position: relative;
   transition: filter 0.3s; /* Add a transition for the hover effect */
 }
@@ -123,3 +124,47 @@ body {
   /* Show the ellipsis when the album is hovered */
   opacity: 1;
 }
+/* CSS for Album Container */
+.album-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust column width */
+}
+
+.album {
+  position: relative;
+  transition: filter 0.3s; /* Add a transition for the hover effect */
+}
+/* Default styles for the album container */
+.album-container {
+  display: grid;
+  grid-gap: 20px; /* Adjust the gap as needed */
+}
+/* Media Query for Desktop - 4 rows of albums */
+@media screen and (min-width: 769px) {
+  .album-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  }
+}
+/* Media Query for Tablet - 2 rows of albums */
+@media screen and (max-width: 768px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+  
+  .album {
+    grid-column: span 2; /* 2 columns on tablet */
+  }
+}
+
+/* Media Query for Mobile - 1 row of albums */
+@media screen and (max-width: 480px) {
+  .album {
+    grid-column: span 1; /* 1 column on mobile */
+  }
+}
+
+
+
+
+
