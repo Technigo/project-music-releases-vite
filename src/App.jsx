@@ -68,24 +68,62 @@
 // export default App;
 
 // import React from 'react';
+// import './App.css';
+// import data from './data.json';
+// import Album from './components/Album';
+// // import './App.css';
+
+// function App() {
+//   return (
+//     <React.Fragment>
+//     <div className="app">
+//       <h1 className="header">New albums & singles</h1>
+//       {/* {Array.isArray(data.albums) && data.albums.map((album, index) => (
+//         <Album key={index} album={album} />
+//       ))} */}
+//       {Array.isArray(data.albums.items) && data.albums.items.map((album, index) => (
+//         <Album key={index} album={album} />
+//       ))}
+      
+//     </div>
+//     </React.Fragment>
+//   );
+// }
+
+// export default App;
+
+import React from 'react';
+import './App.css';
 import data from './data.json';
 import Album from './components/Album';
 
 function App() {
+  // Filter the albums to get only the first image for each album
+  const filteredAlbums = data.albums.items.map((album) => ({
+    ...album,
+    images: [album.images[0]], // Get only the first image
+  }));
+
   return (
-    <div className="app">
-      <h1>New albums & singles</h1>
-      {Array.isArray(data.albums) && data.albums.map((album, index) => (
-        <Album key={index} album={album} />
-      ))}
-      {Array.isArray(data.albums.items) && data.albums.items.map((album, index) => (
-        <Album key={index} album={album} />
-      ))}
-    </div>
+    <React.Fragment>
+      <h1 className="header">New albums & singles</h1>
+      <div className="app">
+        {/* <h1 className="header">New albums & singles</h1> */}
+        {filteredAlbums.map((album, index) => (
+          <Album key={index} album={album} />
+        ))}
+      </div>
+    </React.Fragment>
   );
 }
 
 export default App;
+
+
+
+
+
+
 
 
 
