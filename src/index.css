@@ -5,8 +5,6 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --albumWidth: 300px;
 }
 
 code {
@@ -16,13 +14,11 @@ code {
 
 body {
   background-color: black;
+  box-sizing: border-box;
 }
 
 .app {
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .header {
@@ -39,7 +35,7 @@ body {
 }
 
 .anAlbum {
-  /* padding: 0 4px; */
+  padding: 0 4px;
 }
 
 img {
@@ -51,14 +47,14 @@ img {
 /* Design for tablet */
 @media (min-width: 668px) and (max-width: 1024px) {
   .anAlbum {
-    flex: 50%;
+    flex: 45%;
     max-width: 50%;
   }
 }
 /* Design for desktop */
 @media (min-width: 1025px) {
   .anAlbum {
-    flex: 25%;
+    flex: 20%;
     max-width: 25%;
   }
 }
