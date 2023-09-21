@@ -145,5 +145,12 @@ button{
   body{
     padding: 0 40px 30px 40px;
   }
+  img{
+    width: 240px;
+    height: 240px;
+  }
+  button{
+    font-size: 32px;
+  }
   
  }
