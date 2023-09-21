@@ -2,5 +2,5 @@
 
 export const AlbumName = ({ name }) => {
   //console.log('Album Name:', name);
-    return <div>{name}</div>;
+    return <div className="album-name">{name}</div>;
 };

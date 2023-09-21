@@ -1,0 +1,103 @@
+body {
+background-color: black;
+color: white; /*Default color on text*/
+}
+
+.artist-name {
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.albumComponent {
+    margin: 10px;
+}
+
+.album-name {
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.albumGrid {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.albumGrid > div { /* directly target the child divs (Album components) of .albumGrid */
+    max-width: 400px; /* or whatever fixed width you prefer */
+    margin: 0 auto;  /* centers the album in its grid cell */
+  }
+  
+  .albumGrid img {
+    width: 100%;
+    height: auto;  /* maintain the aspect ratio */
+    display: block;  /* removes any default spacing */
+  }
+  
+  .albumGrid > div {
+    overflow: hidden;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;  /* Adds padding at the top and bottom for some spacing */
+    width: 100%;
+}
+
+.coverImageWrapper {
+    position: relative;/* ensures the :before pseudo-element won't overflow */
+    /*overflow: hidden;*/
+   /* width: 100%;
+    padding-bottom: 100%;
+    background-color: red;*/
+}
+.coverImage {
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+   /* position: absolute;
+   /* display: block; /* removes any default spacing */
+   /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s; /* ensures smooth transitions */
+}
+
+.coverImageWrapper:hover .coverImage {
+    filter: brightness(70%); /* optional, if you want the image itself to also darken a bit */
+}
+
+.coverImageWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* this is a black overlay with 30% opacity */
+    opacity: 0;
+    transition: 0.3s; /* ensures smooth transitions */
+}
+
+div.albumGrid .coverImageWrapper:hover:before {
+    opacity: 1; /* when hovered, the black overlay becomes fully visible */
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .albumGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile */
+@media (max-width: 767px) {
+    .albumGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
