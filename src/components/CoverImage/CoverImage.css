@@ -1,3 +1,32 @@
 .cover-image {
     color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.cover-image img {
+    width: 250px;
+    height: 250px;
+
+}
+button {
+    border: none;
+}
+
+.icon {
+    width: 45px;
+    background-color: transparent;
+}
+
+svg {
+    fill:white;
+}
+
+.button-wrapper {
+    position: absolute;
+    justify-items: center;
+    align-items: center;
 }

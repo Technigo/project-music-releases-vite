@@ -9,11 +9,11 @@ if (artists.length === 1) {
 } else if (artists === 2) {
   artistNames = `${artists[0].name} & ${artists[1].name}`;
 } else if (artists.length > 2) {
-  artists.map((artist, index) => {
-    if (index < artist.length - 2) {
-      return (artistNames += `${artist.name}, `);
-    } else if (index === artists.lengt - 2) {
-      return (artistNames += `${artist.name} & `);
+  artists.map((artist, index) => { //If there are more than two artists, it iterates through the artists array using the map function
+    if (index < artist.length - 2) { //The condition is used to identify all artists except the last two in the array.
+      return (artistNames += `${artist.name}, `); // puts out the two first artists with a comma and space between
+    } else if (index === artists.lengt - 2) { 
+      return (artistNames += `${artist.name} & `); // If the condition is met (meaning it's the second-to-last artist), it appends the current artist's name followed by " & "
     } else {
       return (artistNames += artist.name);
     }
