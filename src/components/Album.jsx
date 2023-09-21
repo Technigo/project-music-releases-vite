@@ -3,6 +3,7 @@ import { AlbumName } from "./AlbumName.jsx";
 import { ArtistName } from "./ArtistName.jsx";
 import { CoverImage } from "./CoverImage.jsx";
 
+
 //Export 
 export const Album = ({ album }) => { //Defining album component
     const { name, artists, images } = album; //Destructuring

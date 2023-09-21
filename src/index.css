@@ -33,14 +33,52 @@ body {
   grid-gap: 25px;
 }
 
+.cover-image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
 .cover-image img {
   width: 100%;
   height: auto;
-  max-width: 500px;
+  display: block;
 }
 
 .cover-image img:hover {
   opacity: .5;
+}
+
+.cover-image::before,
+.cover-image::after,
+.cover-image::before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  /* Adjust the size as needed */
+  height: 20px;
+  /* Adjust the size as needed */
+  z-index: 1;
+}
+
+.cover-image::before {
+  left: 0;
+  background-image: url('src/icons/heart.svg');
+}
+
+.cover-image::after {
+  left: 30px;
+  /* Adjust the spacing between images */
+  background-image: url('src/icons/dots.svg');
+}
+
+.cover-image::before::before {
+  left: 60px;
+  /* Adjust the spacing between images */
+  background-image: url('src/icons/play.svg');
 }
 
 .album-title {
@@ -61,6 +99,15 @@ body {
 .artist-name:hover {
   text-decoration: underline;
 }
+
+/*This lays in the ArtistName component*/
+.artist-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+
 
 /* Tablet*/
 @media (min-width: 667px) {
