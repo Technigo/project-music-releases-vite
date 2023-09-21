@@ -1,9 +1,17 @@
 
-export const Artists = ({ name, artistURL }) => {
+export const Artists = ({ name, artistURL, id }) => {
     console.log(`the url for the artist is this: ${artistURL}`);
     return (
-        <a className="artists-names" href="{artistURL}">
-            {name}</a>
+        <a
+            target="_blank"
+            className="artists-names"
+            href="{artistURL}"
+            key={id}
+        >
+            <p className="artist-name">
+            </p>
+            {name}
+        </a>
     )
 }
 Artists.defaultProps = {

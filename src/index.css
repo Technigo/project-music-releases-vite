@@ -64,6 +64,12 @@ header img {
   padding: 1em;
 }
 
+/*this doesn't work*/
+.artists-names:not(:first-child, :last-child)::before {
+  color: white;
+  content: ", ";
+}
+
 /*media query for mobile - 1 columns .*/
 @media screen and (max-width: 667px) {
   .album-info {
