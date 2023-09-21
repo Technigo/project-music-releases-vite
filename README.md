@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A React app template to display albums. Features include a structured component hierarchy, design fidelity, hover effects, and responsive layouts. Clicking on albums or artists links to external URLs. Components provided; focus on data flow and UI interactions.
 
 ## Getting Started with the Project
 
