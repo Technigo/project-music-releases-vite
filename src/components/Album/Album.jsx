@@ -1,32 +1,18 @@
 // Album component which is rendered using .map() and which you pass the album data into using props.
 
-//export const Album = ({ albums }) => {
-  //  return (
-    //    <div ClassName="Album-info">
-      //      {data.albums.map(albums => {
-        //        return (
-          //          <div key={items.artists.id}>
-            //            <Cover Image={items.images} />
-              //          <Album name={items.name} />
-                //        <Artist name={items.artists.name} />
-                  //  </div>
-               // )
-            //})
-            //}
-        //</div>;
-    //)
-//} 
-
-
-
+// Imports the necessary information from the other files
+//Put in {  } and remove export default on the other files? And write export const...
 //??
 import PropTypes from 'prop-types';
-import AlbumName from './AlbumName/AlbumName';
-import ArtistNames from './ArtistName/ArtistName';
-import CoverImage from './CoverImage/CoverImage';
+import AlbumName from './AlbumName/AlbumName.jsx';
+import ArtistNames from './ArtistName/ArtistName.jsx';
+import CoverImage from './CoverImage/CoverImage.jsx';
 
+//HUR IMPORTERAR MAN????
 import "./Album.css"
-//Semikolon eller ej?
+//Semikolon eller ej? '' eller ""??
+
+// This component takes a prop called 'albumsArray', which is expected to be an array of album objects. It then detructures 'albumsArray' from the props object and maps over the array. Then it renders each album's information, creating a list of album cards including the album cover, name, and artists.
 //Ta bort paranteser runt albumsArray precis nedanför?
 export const Album = ({ albumsArray }) => {
     console.log( albumsArray)
@@ -43,6 +29,7 @@ export const Album = ({ albumsArray }) => {
   );
 };
 
+// Explains that the type of props that is expected to the component is an array
 Album.propTypes = {
     albumsArray: PropTypes.array.isRequired
   }

@@ -1,17 +1,10 @@
-.album-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 25px;
+.album-card {
+    /*position: relative;*/ /*TA BORT????*/
+    margin: 10px;
 }
 
-@media (min-width: 667px) and (max-width: 1024px) {
-    .album-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 1025px) {
-    .album-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
 }
