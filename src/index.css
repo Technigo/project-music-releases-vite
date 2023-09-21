@@ -34,19 +34,73 @@ header img {
   width: 20%;
 }
 
+/*AlbumImage.js CSS - to display Albumn image, 3 icons, hover effects */
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.album-cover {
+  position: relative;
+  width: 100%;
+}
+
+.album-cover img {
+  width: 100%;
+}
+
+.album-cover:hover {
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.three-hover-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  margin: 45%;
+}
+
+.button-heart,
+.button-play,
+.button-dots {
+
+  gap: 1em;
+  cursor: pointer;
+  filter: invert();
+
+  /*opacity: 0;
+  transition: opacity 0.2s ease-in-out; */
+}
+
+.button-heart:hover {
+  transform: scale(1.6);
+  opacity: 1;
+}
+
+.button-play:hover {
+  transform: scale(1.6);
+  opacity: 1;
+}
+
+.button-dots:hover {
+  transform: scale(1.6);
+  opacity: 1;
+}
+
 /* Explanation CSS */
 .explanation {
   padding: 2em;
 }
 
-.albumCover img {
-  width: 100%;
-  height: 100%;
-  object-fit: fit;
-}
-
 /* Grid parent CSS */
-.Album-outer {
+.album-outer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 1em;
@@ -58,8 +112,8 @@ header img {
 .album-info {
   border: solid white 1px;
   background-color: #242424;
-  padding: 4px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
   text-align: center;
   padding: 1em;
 }

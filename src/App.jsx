@@ -10,6 +10,7 @@ export const App = () => {
   console.log(albums);
   console.log("test");
 
+
   //----- Function to map over data array and pass album data to Album.jsx ------//
   const newAlbumsArray = () => {
     return albums.map(
@@ -24,12 +25,12 @@ export const App = () => {
       )
     );
   };
-  //----- Render Header and  to map over data array ------//
+  //----- Render Header and to map over data array ------//
   return (
     //we need React Fragment <> as we are returing more than one root element below
     <>
       <Header />
-      <section className="Album-outer">
+      <section className="album-outer">
         {newAlbumsArray()}
       </section>
     </>

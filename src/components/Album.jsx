@@ -6,32 +6,25 @@ import { AlbumImage } from './AlbumImage';
 
 export const Album = ({ name, albumType, image, artists, link }) => {
 
-    console.log('albumn', name, artists);
-
     return (
         //do I need a key attribute in the first div for this return?
         <div className="album-info">
-            <div>
-                {<AlbumImage image={image} />}
-            </div>
+            {<AlbumImage image={image} />}
             <p>
-                <span>Name:</span> {name}
+                <span><strong>{name}</strong></span>
             </p>
+            <span>
+                {artists.map((artist) => {
+                    return (
+                        <Artists key={artist.id}
+                            name={artist.name}
+                            artistURL={artist.external_urls.spotify} />
+                    );
+                })}
+            </span>
             <p>
                 <span>Album Type:</span> {albumType}
             </p>
-            <p>
-                <span>
-                    {artists.map((artist) => {
-                        return (
-                            <Artists key={artist.id}
-                                name={artist.name}
-                                artistURL={artist.external_urls.spotify} />
-                        );
-                    })}
-                </span>
-            </p>
-            {/* Separation of child components */}
         </div >
     )
 }
