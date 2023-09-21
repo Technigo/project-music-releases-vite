@@ -1,70 +1,28 @@
-import { Fragment } from "react";
+import { Header } from "./components/Header.jsx";
+import { MusicCard } from "./components/MusicCard.jsx";
 import data from "./data.json";
 
 console.log(data);
 
-export const App = () => {
-  return (
-    <Fragment>
-      <Header />
-      {albumList()}
-    </Fragment>);
-};
-
 
 const albumList = () => {
   const albumData = data.albums.items;
-
-  return albumData.map(
-    ({ id, name, artists, images }) => {
-  <MusicCard 
-  key = {id}
-  albumCover = {images}
-  albumName = {name}
-  artist = {artists}
-  />
-}
-);
+  return albumData.map((album) => (
+    <MusicCard
+      key={album.id}
+      artistName={album.artists.name}
+      externalUrl={album.external_urls.spotify}  //When you click on the album name and artist it should take you tp the spotify page
+      imageUrl={album.images[0].url}
+      albumName={album.name}
+    />
+  ));
 };
 
-
-
-
-// Header
-const Header = () => {
+export const App = () => {
   return (
-    <div className="headerWrapper">
-      <h1 className="headerText">New Albums & Singles</h1>
-    </div>
-  );
-}
-
-
-// Parent component
-const MusicCard = () => {
-  return (
-    <div className="musicCard">
-      < AlbumCover />
-      <AlbumInfo />
-    </div >
-  );
+    <>
+      <Header />
+      {albumList()}
+    </>);
 };
 
-// Child component
-const AlbumInfo = () => {
-  return (
-    <div>
-      <p className="albumName">Album name</p>
-      <p className="artistName">artist name</p>
-    </div>
-  )
-};
-
-// Child component
-const AlbumCover = () => {
-  return (
-    <div>
-      Album cover image and alt text
-    </div>
-  );
-};
