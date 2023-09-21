@@ -17,22 +17,7 @@ body{
   color: #ffffff;
 }
 
-.header {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
-  }
-
-.header h1{
-  font-size: 20px;
-  }
-
-
-  .album-wrapper {
+ .album-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 25px;
@@ -41,10 +26,10 @@ body{
   .album {
     margin: 10px;
   }
-  
+
   /* Styles for tablets and below */
 @media only screen and (max-width: 768px) {
-  .album-wrapper {
+  .album-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -54,7 +39,7 @@ body{
   body {
     padding: 0 20px;
   }
-  .album-wrapper {
+  .album-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

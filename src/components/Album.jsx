@@ -1,16 +1,27 @@
 
-import { AlbumName } from './components/AlbumName';
-import { ArtistName } from './components/ArtistName';
-import { CoverImage } from './components/CoverImage';
+import { AlbumName } from './components/AlbumName/AlbumName';
+import { ArtistName } from './components/ArtistName/ArtistName';
+import { CoverImage } from './components/CoverImage/CoverImage';
 
-export const Album = () => {
+export const Album = (props) => {
   
-    const {name, artist, image} =
-    console.log(data.albums.items);
+    let coverImage = props.items.images
+    let albumName = props.items.name
+    let artistName = props.items.artists[0].name
+    
+    
     return (
-    <div>Album</div>
+
+    <div className="album">
+        <p>
+           <CoverImage {coverImage} />
+        </p>
+        <p>
+           {artists}
+        </p>
+    </div>
   )
 }
 
-.map()
+
 

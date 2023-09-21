@@ -1,0 +1,14 @@
+
+.header {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    }
+  
+  .header h1{
+    font-size: 20px;
+    }
