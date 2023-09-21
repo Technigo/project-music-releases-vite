@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.album-name a {
+  color: #ffffff;
+}
+
+.artist-name a {
+  display: inline;
+  color: #a0a0a0;
+}
+
+.album-name a,
+.artist-name a {
+  text-decoration: none;
+  margin: auto;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+.album-name a:hover,
+.artist-name a:hover {
+  text-decoration: underline;
+}

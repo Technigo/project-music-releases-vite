@@ -2,6 +2,8 @@ import { Album } from "./components/album/Album";
 import { Header } from "./components/Header";
 import data from "./data.json";
 
+import "./index.css";
+
 console.log(data);
 
 export const App = () => {
