@@ -5,9 +5,60 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --albumWidth: 300px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  background-color: black;
+}
+
+.app {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.allAlbums {
+  display: flex;
+  flex: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.anAlbum {
+  /* padding: 0 4px; */
+}
+
+img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Design for tablet */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .anAlbum {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Design for desktop */
+@media (min-width: 1025px) {
+  .anAlbum {
+    flex: 25%;
+    max-width: 25%;
+  }
 }
