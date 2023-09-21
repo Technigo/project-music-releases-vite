@@ -1,9 +1,11 @@
+import "./Icons.css";
+
 export const Icons = () => {
     return (
         <div className="icon-container">
-            <img className="heart-icon" src="./src/assets/heart-64.png" alt="A heart icon" />
-            <img className="play-icon" src="./src/assets/play-icon.png" alt="A play icon" />
-            <img className="dots-icon" src="./src/assets/dots.png" alt="Three dots icon" />
+            <img className="icon heart" src="./src/assets/heart.svg" alt="A heart icon" />
+            <img className="icon play" src="./src/assets/play.svg" alt="A play icon" />
+            <img className="icon dots" src="./src/assets/dots.svg" alt="Three dots icon" />
         </div>
     )
 }

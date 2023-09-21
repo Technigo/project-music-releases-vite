@@ -1,0 +1,24 @@
+.artist h3 {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+}
+  
+/* If more than one artist names in one album, add "," before each artist name, except for the first and the last one, and "&" before the last one */
+.artist a:not(:first-child, :last-child)::before {
+    color: #a0a0a0;
+    content: ", ";
+}
+
+.artist a:last-child::before {
+    content: " & ";
+    color: #a0a0a0;
+}
+
+/* If only one artist, add nothing before the artist name */
+.artist a:only-child::before {
+    content: "";
+}
+
+
+  

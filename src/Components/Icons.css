@@ -1,0 +1,49 @@
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    gap: 20px;
+    opacity: 0;
+}
+  
+.icon {
+    filter: invert(1);
+    padding: 1 6 1 6;
+}
+  
+.heart, .dots {
+    width: 35px;
+}
+  
+.play {
+    width: 45px;
+}
+
+.album-cover:hover>.icon-container {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.icon:hover {
+    scale: 1.4;
+}
+
+@media (min-width: 1024px) {
+    .icon-container {
+        left: 25%;
+    }
+
+    .heart, .dots {
+        width: 20px;
+    }
+      
+    .play {
+        width: 30px;
+    }
+
+    .icon:hover {
+        scale: 1.6;
+    }
+}

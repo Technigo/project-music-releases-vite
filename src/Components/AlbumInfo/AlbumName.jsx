@@ -1,4 +1,6 @@
-export const Album = ({album}) => {
+import "./AlbumName.css";
+
+export const AlbumName = ({album}) => {
     return (
         <div className="album">
             <a 
@@ -6,7 +8,7 @@ export const Album = ({album}) => {
             href={album.external_urls.spotify}
             target="_blank"
             rel="noreferrer">
-                <span>{album.name}</span>
+                <h2>{album.name}</h2>
             </a>
         </div>
     );
