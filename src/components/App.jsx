@@ -1,6 +1,6 @@
 import data from "../data.json";
 import "./app.css";
-import { Album } from "./Card/AlbumCard/Album.jsx";
+import { AlbumCard } from "./AlbumCards/Album/AlbumCard.jsx";
 import { Header } from "./Hero/Header.jsx";
 
 export const App = () => {
@@ -13,7 +13,7 @@ export const App = () => {
       <Header />
         <div className="album-card">
             {albumData.map((album) => (
-              <Album fullAlbum={album} key={album.id} />
+              <AlbumCard fullAlbum={album} key={album.id} />
             ))}
         </div>
     </>

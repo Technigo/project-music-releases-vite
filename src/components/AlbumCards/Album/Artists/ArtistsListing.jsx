@@ -2,10 +2,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { ArtistSeparator } from "./ArtistSeparator";
-import { Artist } from "./Artist";
+import { ArtistName } from "./ArtistName";
 
 // Functional component that destructures the prop artists. The mapping is done here, and index, length and artist is passed on to child components Artist and ArtistSeparator
-export const ArtistName = ({ artists }) => {
+export const ArtistsListing = ({ artists }) => {
     return (
         <>
             {artists.map((artist, index) => ( // Maps over the artist array and adds the correct url and name for each condition. 
@@ -13,7 +13,7 @@ export const ArtistName = ({ artists }) => {
                 // Checking first to see if index is greater than 0, so that the separators aren't being added in before any artistnames.
                 <React.Fragment key={artist.id}>
                   {index > 0 && <ArtistSeparator index={index} length={artists.length} />  }
-                  <Artist artist={artist} />
+                  <ArtistName artist={artist} />
                 </React.Fragment>
             ))}
         </>
@@ -22,7 +22,7 @@ export const ArtistName = ({ artists }) => {
 
 
 // Defining propTypes for the ArtistName component.
-ArtistName.propTypes = {
+ArtistsListing.propTypes = {
   artists: PropTypes.arrayOf(
       PropTypes.shape({
           id: PropTypes.string.isRequired,
