@@ -1,4 +1,5 @@
 import data from "./data.json";
+import "./App.css";
 
 console.log(data);
 
