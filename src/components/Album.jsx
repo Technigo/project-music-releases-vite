@@ -6,13 +6,14 @@ import { CoverImage } from "./CoverImage.jsx";
 
 //Export 
 export const Album = ({ album }) => { //Defining album component
-    const { name, artists, images } = album; //Destructuring
+    console.log(album)
+    const { name, external_urls, artists, images } = album; //Destructuring
 
     //Rendering JSX. Creating structure of how the album information should be displayed/order.
     return (
         <div className="album-all">
             <CoverImage image={images[0]} />
-            <AlbumName name={name} />
+            <AlbumName name={name} albumURL={external_urls.spotify} />
             <ArtistName artists={artists} />
         </div>
     );

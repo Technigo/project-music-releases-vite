@@ -29,12 +29,16 @@ body {
 
 .album-wrapper {
   display: grid;
+  place-items: center;
   grid-template-columns: 1fr;
-  grid-gap: 25px;
+  grid-gap: 15px;
 }
 
 .cover-image {
+  display: flex;
+  justify-content: center;
   position: relative;
+  align-items: center;
   width: 100%;
   max-width: 500px;
 }
@@ -43,42 +47,52 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  transition: opacity 0.3s ease;
 }
 
-.cover-image img:hover {
-  opacity: .5;
+.cover-image:hover img {
+  opacity: 0.7;
+  /* Reduce opacity when hovering */
 }
 
-.cover-image::before,
-.cover-image::after,
-.cover-image::before::before {
-  content: "";
+.icon-buttons {
   position: absolute;
-  top: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
-  /* Adjust the size as needed */
-  height: 20px;
-  /* Adjust the size as needed */
-  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /*Allows hover events to pass through, but now the play-button hover doesn't work.....*/
 }
 
-.cover-image::before {
-  left: 0;
-  background-image: url('src/icons/heart.svg');
+.cover-image:hover .icon-buttons {
+  opacity: 1;
 }
 
-.cover-image::after {
-  left: 30px;
-  /* Adjust the spacing between images */
-  background-image: url('src/icons/dots.svg');
+.heart-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
 }
 
-.cover-image::before::before {
-  left: 60px;
-  /* Adjust the spacing between images */
-  background-image: url('src/icons/play.svg');
+.play-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.play-button:hover {
+  transform: scale(1.2)
+}
+
+.dots-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+svg {
+  fill: white;
 }
 
 .album-title {
@@ -86,12 +100,25 @@ body {
   font-family: "Helvetica";
 }
 
+.album-title a {
+  text-decoration: none;
+  font-family: "Helvetica";
+  color: #ffffff;
+}
+
 .album-title:hover {
   text-decoration: underline;
 }
 
+
 .artist-name {
   font-size: 14px;
+  font-family: "Helvetica";
+  color: #a0a0a0;
+}
+
+.artist-name a {
+  text-decoration: none;
   font-family: "Helvetica";
   color: #a0a0a0;
 }
@@ -100,7 +127,8 @@ body {
   text-decoration: underline;
 }
 
-/*This lays in the ArtistName component*/
+
+/*This is found in the ArtistName component*/
 .artist-container {
   display: flex;
   flex-direction: row;
@@ -113,7 +141,6 @@ body {
 @media (min-width: 667px) {
   .album-wrapper {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
   }
 }
 
@@ -121,6 +148,5 @@ body {
 @media (min-width: 1025px) {
   .album-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 25px;
   }
 }

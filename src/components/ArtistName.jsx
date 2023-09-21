@@ -8,7 +8,11 @@ export const ArtistName = ({ artists }) => {
         <div className="artist-container">
             {artists.map((artist, index) => (
                 <div key={artist.id}>
-                    <p className="artist-name">{artist.name} <ArtistComma index={index} length={artists.length} />
+                    <p className="artist-name">
+                        <a href={artist.external_urls.spotify} target="_blank" rel="noopener norefferer">
+                            {artist.name}
+                        </a>
+                        <ArtistComma index={index} length={artists.length} />
                     </p>
                 </div>
             ))}
