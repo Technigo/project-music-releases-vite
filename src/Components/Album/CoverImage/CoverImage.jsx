@@ -1,21 +1,10 @@
 import PropTypes from 'prop-types'
-
-// const CoverImage = ({imagesArray}) => {
-//   return (
-//     <div className="image-wrapper">
-//         {imagesArray.map((mappedOutImage) => (
-//             <div className="cover-image" key={mappedOutImage.images}>
-//                 <img src={mappedOutImage.url} alt={mappedOutImage.alt} />
-//             </div>
-//         ))}
-//     </div>
-//   )
-// }
+import "./CoverImage.css"
 
 const CoverImage = ({coverImage}) => {
     return (
-         <div className="cover-images">
-            <img src={coverImage} className="album-cover" alt="Cover" />
+         <div className="coverImage-wrapper">
+            <img src={coverImage} alt="Cover" />
         </div>
         )
 }

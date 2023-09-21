@@ -7,6 +7,7 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+  margin: 25px 50px;
 }
 
 code {
@@ -18,20 +19,17 @@ code {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-}
+} 
 
-.cover-images {
-  
-}
 
 @media (min-width: 667px) {
-  .album-wrapper {
+  .album-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1025px) {
-  .album-wrapper {
+  .album-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -1,11 +1,10 @@
-
-//Album component which is rendered using .map() and which you pass the album data into using props.
-
 import PropTypes from 'prop-types'
+
+import "./AlbumName.css";
 
 const AlbumName = ({albumName}) => {
   return (
-    <div>{albumName}</div>
+    <h2>{albumName}</h2>
   ) 
 }
 

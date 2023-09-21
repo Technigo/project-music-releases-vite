@@ -4,9 +4,9 @@ const ArtistNames = ({artistsArray}) => {
   return (
     <div className="artist-wrapper"> 
         {artistsArray.map((mappedOutArtist) => (
-            <span className="artist-name" key={mappedOutArtist.id}>
+            <h3 className="artist-name" key={mappedOutArtist.id}>
                 {mappedOutArtist.name}
-            </span>
+            </h3>
         ))}
     </div>
   ) 

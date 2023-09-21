@@ -4,7 +4,7 @@ import AlbumName from './AlbumName/AlbumName';
 import ArtistNames from './ArtistName/ArtistName';
 import CoverImage from './CoverImage/CoverImage';
 
-
+import "./Album.css";
 
 export const Album = ({albumsArray}) => {
     //console.log( albumsArray)
@@ -17,7 +17,6 @@ export const Album = ({albumsArray}) => {
                 <ArtistNames artistsArray = {mappedOutItem.artists} />
              </div>
         ))}
-
     </section>
   )
 };
