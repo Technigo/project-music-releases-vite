@@ -13,10 +13,7 @@ export const App = () => {
   const albums = data.albums.items;
   const renderAlbums = () => {
     return albums.map((album) => (
-      <Album
-        key={album.id}
-        // artistName={album.artists[0].name}
-      />
+      <Album key={album.id} artistNames={album.artists.name} />
     ));
   };
 
