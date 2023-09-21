@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.albumWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+}
+
+.albumCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.album_cover:hover {
+  filter: brightness(60%);
+  transition: .2s;
+}
