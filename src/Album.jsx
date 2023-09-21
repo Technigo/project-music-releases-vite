@@ -2,12 +2,12 @@ import { AlbumName } from "./AlbumComp/AlbumName";
 import { ArtistName } from "./AlbumComp/ArtistName";
 import { CoverImage } from "./AlbumComp/CoverImage";
 
-export const Album = ({ coverImages, albumNames, artistNames }) => {
+export const Album = ({ images, albumNames, artists }) => {
   return (
     <div>
-      <CoverImage coverImages={coverImages} />
+      <CoverImage images={images} />
       <AlbumName albumNames={albumNames} />
-      <ArtistName artistNames={artistNames} />
+      <ArtistName artists={artists} />
     </div>
   );
 };
