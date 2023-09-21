@@ -2,7 +2,7 @@ import { CoverImage } from "./album-child-component/CoverImage"
 import { AlbumName } from "./album-child-component/AlbumName"
 import { ArtistName } from "./album-child-component/ArtistName"
 
-import "../../index.css"
+// import "../../index.css"
 
 export const Album = ({ name, artists, imageUrl, albumHttpLink }) => {
     return (

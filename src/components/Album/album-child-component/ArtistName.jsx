@@ -1,4 +1,4 @@
-import "../../../index.css";
+// import "../../../index.css";
 
 //Generate a comma and space separater
 const generateSeparater = (index, length) => {
