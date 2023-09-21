@@ -127,7 +127,7 @@ body {
 /* CSS for Album Container */
 .album-container {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust column width */
 }
 
@@ -135,36 +135,184 @@ body {
   position: relative;
   transition: filter 0.3s; /* Add a transition for the hover effect */
 }
-/* Default styles for the album container */
-.album-container {
-  display: grid;
-  grid-gap: 20px; /* Adjust the gap as needed */
-}
-/* Media Query for Desktop - 4 rows of albums */
-@media screen and (min-width: 769px) {
+/* Media Query for Desktop Devices */
+@media (min-width: 769px) {
   .album-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; /* Add some gap between albums */
+  }
+
+  .album {
+    width: 100%; /* Make each album container take up the full width of its grid cell */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .album img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  /* Common styles for ellipsis, heart, and play button */
+  .album::before,
+  .album::after,
+  .album .ellipsis {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.25s, border-color 0.25s;
+  }
+
+  .album::before {
+    left: 50%;
+    top: 50%;
+    border: 2px solid white;
+  }
+
+  .album::after {
+    content: '\2665';
+    top: 50%;
+    left: calc(50% - 40px);
+  }
+
+  .album .ellipsis {
+    bottom: 10px;
+    right: 80px; 
+  }
+
+  /* Adjust the font size for desktop screens */
+  .album:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+    border-color: white;
   }
 }
-/* Media Query for Tablet - 2 rows of albums */
-@media screen and (max-width: 768px) {
-  .album-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
-  }
+
+/*For tablet devices*/
+  @media (max-width: 768px) {
+    .album {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
   
+    .album img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  
+    /* Common styles for ellipsis, heart, and play button */
+    .album::before,
+    .album::after,
+    .album .ellipsis {
+      position: absolute;
+      font-size: 24px;
+      color: white;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+  
+    .album::before {
+      left: 50%;
+      top: 50%;
+      border: 2px solid white;
+    }
+  
+    .album::after {
+      top: 50%;
+      left: calc(50% - 40px);
+    }
+  
+    .album .ellipsis {
+      bottom: 10px;
+      right: 80px; 
+    }
+  
+ 
+    .album:hover::before {
+      transform: translate(-50%, -50%) scale(1.2);
+      border-color: white;
+    }
+  
+  }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
   .album {
-    grid-column: span 2; /* 2 columns on tablet */
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .album img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  /* Common styles for ellipsis, heart, and play button */
+  .album::before,
+  .album::after,
+  .album .ellipsis {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.25s, border-color 0.25s;
+  }
+
+  .album::before {
+    left: 50%;
+    top: 50%;
+    border: 2px solid white;
+  }
+
+  .album::after {
+    top: 50%;
+    left: calc(50% - 40px);
+  }
+
+  .album .ellipsis {
+    bottom: 10px;
+    right: 120px; /* Adjust the left position here */
+  }
+
+  /* Adjust the font size for mobile screens */
+  .album:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+    border-color: white;
   }
 }
-
-/* Media Query for Mobile - 1 row of albums */
-@media screen and (max-width: 480px) {
-  .album {
-    grid-column: span 1; /* 1 column on mobile */
-  }
-}
-
-
-
-
-
