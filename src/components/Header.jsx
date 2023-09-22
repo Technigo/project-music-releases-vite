@@ -3,7 +3,7 @@ export const Header = () => {
 
   return (
     <header>
-      <p> {headertext} </p>
+      <h1 className="header"> {headertext} </h1>
     </header>
   );
 };

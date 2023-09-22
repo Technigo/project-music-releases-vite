@@ -1,8 +1,9 @@
-export const ArtistName = () => {
-  console.log(ArtistName);
+const ArtistName = ({ name }) => {
   return (
-    <div>
-      <h3>Artist name: </h3>
+    <div className="artistName">
+      <h3>{name}</h3>
     </div>
   );
 };
+
+export default ArtistName;

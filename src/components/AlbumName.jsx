@@ -1,7 +1,11 @@
-export const AlbumName = () => {
+const AlbumName = ({ name, external_urls }) => {
   return (
-    <div>
-      <h2>Album Name:</h2>
+    <div className="albumName">
+      <a href={external_urls} target="_blank" rel="noopener noreferrer">
+        <h2>{name}</h2>
+      </a>
     </div>
   );
 };
+
+export default AlbumName;

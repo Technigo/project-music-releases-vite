@@ -1,9 +1,8 @@
 import data from "./data.json";
-console.log(data);
-import { Header } from "./components/Header";
-import { Album } from "./components/Album";
 
-console.log(data);
+import { Header } from "./components/Header";
+import Album from "./components/Album";
+import "./index.css";
 
 export const App = () => {
   const albumsData = data.albums.items;
@@ -12,7 +11,11 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Album />
+      <div className="album-wrapper">
+        {albumsData.map((albumData) => (
+          <Album key={albumData.id} albumData={albumData} />
+        ))}
+      </div>
     </>
   );
 };
