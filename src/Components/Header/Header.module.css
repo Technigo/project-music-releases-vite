@@ -1,0 +1,10 @@
+/*no need to export css*/
+
+.header {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*display: flex;*/
+    /*put header in section and section in grids. need to change*/
+}
