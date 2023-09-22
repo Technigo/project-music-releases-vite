@@ -30,22 +30,21 @@ body {
   padding: 2rem;
   text-align: center;
 }
-.album-title,
-.album p {
+
+.album a {
   font-size: 14px;
   font-family: Helvetica, sans-serif;
-  color: #ffffff !important; /* Set the default color to white */
+  color: #ffffff;
   text-decoration: none; /* Remove underline by default */
   padding: 10px;
 }
 
-.artist {
+.artists a{
   font-family: Arial, Helvetica, sans-serif;
-  color: #a0a0a0 !important; /* Set the artist text color to white */
+  color: #a0a0a0; /* Set the artist text color to white */
   font-size: 14px;
   padding: 20px;
 }
-
 
 /* Remove underline by default for all links within album and its descendants */
 .album a {
@@ -91,12 +90,9 @@ body {
   left: 50%;
   top: 50%; /* Adjust top property to center vertically */
   border: 2px solid white;
-}
-.album:hover::before {
-  /* Show the play button when the album is hovered */
   content: '\25B6'; /* Unicode character for a play button */
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.2);
+  opacity: 1; /* Make the play button always visible */
+  transform: translate(-50%, -50%) scale(1); /* Initial scale */
   border-color: white;
 }
 
