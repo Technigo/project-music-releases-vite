@@ -1,128 +1,157 @@
+/* This makes the page's background black and the text white */
 body {
-background-color: black;
-color: white; /*Default color on text*/
+    background-color: black;
+    color: white;
 }
 
-.artist-name {
-    color: grey;
-    padding: 5px;
-    font-weight: bold;
+/* This styles the top header section of the page */
+.header {
+    text-align: center; /* Puts the text in the center */
+    margin: 0 auto; /* Centers things in the middle */
+    padding: 20px 0; /* Gives space above and below the header */
+    width: 100%; /* Makes it stretch across the whole page */
 }
 
-.albumComponent {
-    margin: 10px;
-}
+/* ALBUM STYLES */
 
-.album-name {
-    padding: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-}
+/* This sets up our grid where albums will show */
 .albumGrid {
-    padding: 25px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    row-gap: 25px;
-    column-gap: 25px;
+    padding: 25px; /* Gives some space around the grid */
+    display: grid; /* Makes it into a grid */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 25px; /* Puts space between the grid items */
 }
 
-.albumGrid > div { /* directly target the child divs (Album components) of .albumGrid */
-    max-width: 400px; /* or whatever fixed width you prefer */
-    margin: 0 auto;  /* centers the album in its grid cell */
-  }
-  
-  .albumGrid img {
-    width: 100%;
-    height: auto;  /* maintain the aspect ratio */
-    display: block;  /* removes any default spacing */
-  }
-  
-  .albumGrid > div {
-    overflow: hidden;
-  }
-  
-  .header {
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px 0;  /* Adds padding at the top and bottom for some spacing */
-    width: 100%;
+/* This is a style for the box each album sits in */
+.albumComponent {
+    margin: 10px; /* Puts space around the album box */
 }
 
+/* This styles the individual album boxes in the grid */
+.albumGrid > div { 
+    max-width: 400px; /* Makes sure it's not wider than 400 pixels */
+    margin: 0 auto; /* Centers the album in its space */
+    overflow: hidden; /* Makes sure nothing spills out of the box */
+}
+
+/* This styles the pictures (covers) of the albums */
+.albumGrid img {
+    width: 100%; /* Makes the picture use all the available space */
+    height: auto; /* Lets the picture adjust its height */
+    display: block; /* Makes sure the picture fills its space */
+}
+
+/* This styles the album and artist names */
+.album-name, .artist-name {
+    font-family: 'Helvetica', sans-serif; /* Sets the font type */
+    font-size: 14px; /* Makes the font size 14 pixels big */
+    padding: 5px; /* Gives some space around the text */
+    font-weight: bold; /* Makes the text bold (thicker) */
+    text-decoration: none; /* Removes any underlines */
+}
+
+/* More specific style for the album name */
+.album-name {
+    margin-top: 10px; /* Gives extra space at the top */
+    color: #ffffff; /* Makes the text white */
+}
+
+/* More specific style for the artist name */
+.artist-name {
+    color: grey; /* Makes the text grey */
+}
+
+/* These styles change the text colors when you've clicked on them or hover over them */
+.album-name:link, .album-name:visited {
+    color: #ffffff; /* Keeps the text white */
+}
+.artist-name:link, .artist-name:visited {
+    color: #a0a0a0; /* Keeps the text a light grey */
+}
+.artist-name:hover, .album-name:hover {
+    text-decoration: underline; /* Adds an underline when you hover over it */
+}
+
+/* ALBUM COVER AND ICONS */
+
+/* This styles the box holding the album cover */
 .coverImageWrapper {
-    position: relative;/* ensures the :before pseudo-element won't overflow */
-   
+    position: relative; /* Lets us put things on top of the picture */
 }
 
+/* This styles the actual album cover image */
+.coverImage {
+    height: auto; /* Lets the picture adjust its height */
+    max-width: 600px; /* Makes sure it's not wider than 600 pixels */
+    width: 100%; /* Makes the picture use all the available space */
+}
+
+/* This makes a dark layer on top of the album cover when hovered */
+.coverImageWrapper::before {
+    content: ""; /* This is just a way to create an element without HTML */
+    position: absolute; /* Makes it sit on top of the picture */
+    top: 0; left: 0; right: 0; bottom: 0; /* Fills the whole space */
+    background: rgba(0, 0, 0, 0.8); /* A dark, semi-transparent color */
+    opacity: 0; /* Makes it invisible to start with */
+    transition: 0.3s; /* Makes any changes smooth */
+}
+
+/* When you hover over the album cover, the dark layer becomes visible */
+.coverImageWrapper:hover::before {
+    opacity: 1; /* Makes it fully visible */
+}
+
+/* These styles are for the play buttons and other icons on top of the album cover */
 .iconGroup {
-    display: flex;           /* Line up the icons */
-    justify-content: center; /* Center icons horizontally */
-    align-items: center;     /* Center icons vertically */
-    position: absolute;      /* Position icons over the image */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;              /* Hide the icons initially */
-    transition: 0.3s;        /* For smooth transition */
+    width: 40px;
+    display: flex; /* Lines up the icons next to each other */
+   justify-content: flex-start; /* Puts the icons in the middle */
+   align-items: center; /* conters vertically*/
+    position: absolute; /* Makes them sit on top of the picture */
+    top: 0; right: 0; bottom: 0; left: 0; /* Fills the whole space */
+    opacity: 0; /* Makes them invisible to start with */
+   transition: 0.3s; /* Makes any changes smooth */
+
 }
 
+/* This styles each individual icon */
 .icon {
-    margin: 0 5px; 
+    margin: 0 5px; /* Puts space on the left and right sides */
     
 }
 
-.iconGroup img.icon {
-    width: 40px;
-    transition: transform 0,3s;
+/* This styles the play buttons */
+ .play-icon, .firstplay-icon {
+    display: none; /* Makes them invisible to start with */
+}
+.coverImageWrapper:hover .firstplay-icon {
+    display: block; /* Shows the first play button when you hover over the cover */
+}
+.coverImageWrapper .firstplay-icon:hover {
+    display: none; /* Hides the first play button when you hover over it */
+}
+.coverImageWrapper .firstplay-icon:hover + .play-icon {
+    display: block; /* Shows the main play button when you hover over the first one */
 }
 
+/* Makes the icons bigger when you hover over them */
 .iconGroup img.icon:hover {
-    transform: scale(1.5); /* Increase size by 50% when hovered */
+    transform: scale(1.5);
 }
 
+/* Shows the icons when you hover over the album cover */
 .coverImageWrapper:hover .iconGroup {
-    opacity: 1;              /* Show icons on hover */
+    opacity: 1; 
 }
 
-.coverImage {
-    height: auto;
-    max-width: 600px;
-    width: 100%;
-}
-
-.coverImageWrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* this is a black overlay with 80% opacity */
-    opacity: 0;
-    transition: 0.3s; /* ensures smooth transitions */
-}
-
-div.albumGrid .coverImageWrapper:hover::before {
-    opacity: 1 !important; /* when hovered, the black overlay becomes fully visible */
-}
-
-.artist-name:hover, .album-name:hover {
-    text-decoration: underline;
-}
-
-/* For tablets */
+/* These styles change how things look on tablets and phones */
 @media (min-width: 768px) and (max-width: 1024px) {
     .albumGrid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Only 2 albums per row */
     }
 }
-
-/* For mobile */
 @media (max-width: 767px) {
     .albumGrid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); /* Only 1 album per row */
     }
 }
