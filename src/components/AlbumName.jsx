@@ -2,7 +2,7 @@ const AlbumName = ({ name, external_urls }) => {
   const openAlbumUrl = () => {
     window.open(external_urls && external_urls.spotify);
   };
-
+  /* console.log(external_urls.spotify, "spotify");*/
   return (
     <div
       className="albumName"

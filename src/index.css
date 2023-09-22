@@ -81,6 +81,10 @@ img {
   transition: opacity 0.3s ease;
 }
 
+.album-name:hover {
+  text-decoration: underline;
+}
+
 /*------ responsive design--------*/
 
 @media (min-width: 667px) {
