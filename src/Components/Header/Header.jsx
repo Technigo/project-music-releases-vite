@@ -4,7 +4,8 @@ import styling from './Header.module.css';
 const Header = () => {
     return (
         <header className={styling.header}>
-            <h1>hello</h1>
+            <span className={styling.h1}>New Albums & Singles</span>
+            <span className={styling.p}>Elbine</span>
         </header>
     );
 }
