@@ -5,7 +5,7 @@ import { CoverImage } from "./CoverImage.jsx";
 
 
 //Export 
-export const Album = ({ album }) => { //Defining album component
+export const Album = ({ album }) => { //Defining a functional React component, using album as prop (object containing information about an album)
     console.log(album)
     const { name, external_urls, artists, images } = album; //Destructuring
 

@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-/* Added styling*/
+/* ----- Main styling ----- */
 body {
   background-color: black;
   color: white;
@@ -23,6 +23,7 @@ body {
   font-size: 20px;
 }
 
+/* ----- Styling for album, cover and buttons -----*/
 .album-all {
   margin: 10px;
 }
@@ -34,6 +35,7 @@ body {
   grid-gap: 15px;
 }
 
+/* ----- Class for image for cover and buttons ----- */
 .cover-image {
   display: flex;
   justify-content: center;
@@ -43,6 +45,7 @@ body {
   max-width: 500px;
 }
 
+/* Big image for cover */
 .cover-image img {
   width: 100%;
   height: auto;
@@ -55,11 +58,11 @@ body {
   /* Reduce opacity when hovering */
 }
 
+/* Buttons and hovering of play-button*/
 .icon-buttons {
   position: absolute;
   opacity: 0;
   transition: opacity 0.3s ease;
-  /*Allows hover events to pass through, but now the play-button hover doesn't work.....*/
 }
 
 .cover-image:hover .icon-buttons {
@@ -91,10 +94,12 @@ body {
   border: none;
 }
 
+/* Makes the icons white */
 svg {
   fill: white;
 }
 
+/* ----- Album title and artist names ----- */
 .album-title {
   font-size: 14px;
   font-family: "Helvetica";
@@ -109,7 +114,6 @@ svg {
 .album-title:hover {
   text-decoration: underline;
 }
-
 
 .artist-name {
   font-size: 14px;
@@ -134,9 +138,8 @@ svg {
   flex-direction: row;
 }
 
-/*
 
-
+/* ----- Making the content responsive ----- */
 /* Tablet*/
 @media (min-width: 667px) {
   .album-wrapper {

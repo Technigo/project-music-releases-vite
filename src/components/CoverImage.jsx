@@ -1,9 +1,10 @@
+//Export
 export const CoverImage = ({ image }) => {
 
+    //Rendering jsx. Cover image and buttons usign SVG path data.
     return (
         <div className="cover-image">
             <img src={image.url} alt="Image of Cover" />
-
             <div className="icon-buttons">
                 <button className="heart-button">
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -34,5 +35,3 @@ export const CoverImage = ({ image }) => {
         </div>
     )
 }
-
-// image.url is missing a prop here

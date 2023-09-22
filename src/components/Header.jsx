@@ -1,5 +1,3 @@
-//Se code session för ev info här ca 35 min in i lektionen
-
 //Export
 export const Header = () => {
     return (
