@@ -1,35 +1,62 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+// import Header from './Header';
+// import AlbumCard from './AlbumCard';
+// import data from './data.json';
+// import './index.css';
+
+// class Album extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       albums: [],
+//     };
+//   }
+
+//   componentDidMount() {
+//     this.setState({ albums: data.albums.items });
+//   }
+
+//   render() {
+//     const { albums } = this.state;
+
+//     return (
+//       <div>
+//         <Header />
+//         <div className="album-grid">
+//           {albums.map((album) => (
+//             <AlbumCard key={album.id} album={album} />
+//           ))}
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Album;
+
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import AlbumCard from './AlbumCard';
 import data from './data.json';
 import './index.css';
 
-class Album extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      albums: [],
-    };
-  }
+function Album() {
+  const [albums, setAlbums] = useState([]);
 
-  componentDidMount() {
-    this.setState({ albums: data.albums.items });
-  }
+  useEffect(() => {
+    setAlbums(data.albums.items);
+  }, []);
 
-  render() {
-    const { albums } = this.state;
-
-    return (
-      <div>
-        <Header />
-        <div className="album-grid">
-          {albums.map((album) => (
-            <AlbumCard key={album.id} album={album} />
-          ))}
-        </div>
+  return (
+    <div>
+      <Header />
+      <div className="album-grid">
+        {albums.map((album) => (
+          <AlbumCard key={album.id} album={album} />
+        ))}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Album;

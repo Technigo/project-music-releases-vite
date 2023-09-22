@@ -4,33 +4,12 @@
   box-sizing: border-box;
 }
 
-.album-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 10px;
-}
-
 .album-card {
-  flex-basis: calc(25% - 20px);
   margin: 0 10px 30px 10px;
-  background-color: #3498db;
   color: #fff;
   padding: 0;
   text-align: left;
   box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .album-card {
-    flex-basis: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .album-card {
-    flex-basis: calc(100% - 20px);
-  }
 }
 
 :root {
@@ -51,7 +30,8 @@
 
 header {
   text-align: center;
-  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
 }
 
@@ -68,6 +48,8 @@ h1 {
   color: white;
   font-size: 14px;
   font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .album-name a {
@@ -123,10 +105,11 @@ h1 {
 }
 
 .custom-button {
-  max-width: 44px;
+  max-width: 62px;
+  min-width: 36px;
   height: auto;
   margin: 0 18px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .custom-button:hover {
@@ -142,4 +125,25 @@ code {
 .cover-image img {
   max-width: 100%;
   max-height: 100%;
+}
+
+/* Common styles for all screen sizes */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Tablet layout */
+@media screen and (max-width: 1024px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  .album-grid {
+    grid-template-columns: 1fr;
+  }
 }

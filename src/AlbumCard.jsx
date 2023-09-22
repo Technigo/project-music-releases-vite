@@ -50,23 +50,23 @@ function AlbumCard(props) {
   );
 }
 
-AlbumCard.propTypes = {
-  album: PropTypes.shape({
-    images: PropTypes.array.isRequired,
-    external_urls: PropTypes.shape({
-      spotify: PropTypes.string.isRequired,
-    }).isRequired,
-    name: PropTypes.string.isRequired,
-    artists: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        external_urls: PropTypes.shape({
-          spotify: PropTypes.string.isRequired,
-        }).isRequired,
-        name: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-  }).isRequired,
-};
+// AlbumCard.propTypes = {
+//   album: PropTypes.shape({
+//     images: PropTypes.array.isRequired,
+//     external_urls: PropTypes.shape({
+//       spotify: PropTypes.string.isRequired,
+//     }).isRequired,
+//     name: PropTypes.string.isRequired,
+//     artists: PropTypes.arrayOf(
+//       PropTypes.shape({
+//         id: PropTypes.string.isRequired,
+//         external_urls: PropTypes.shape({
+//           spotify: PropTypes.string.isRequired,
+//         }).isRequired,
+//         name: PropTypes.string.isRequired,
+//       })
+//     ).isRequired,
+//   }).isRequired,
+// };
 
 export default AlbumCard;
