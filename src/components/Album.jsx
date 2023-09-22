@@ -1,7 +1,14 @@
-import React from 'react'
+
+
+
+import { ArtistName } from './ArtistName.jsx'
 
 export const Album = () => {
     return (
-        <div>Album</div>
+        <>
+            <ArtistName />
+            <div>Album</div>
+        </>
+
     )
 }

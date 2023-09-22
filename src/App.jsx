@@ -5,7 +5,9 @@ console.log(data);
 
 export const App = () => {
   return (
-    //<Album/>
-    <div>Find me in src/app.jsx!</div>
+    <>
+      <Album />
+      <div>Find me in src/app.jsx!</div>
+    </>
   );
 };
