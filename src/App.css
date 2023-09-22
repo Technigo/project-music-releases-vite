@@ -51,26 +51,44 @@ color: white; /*Default color on text*/
 
 .coverImageWrapper {
     position: relative;/* ensures the :before pseudo-element won't overflow */
-    /*overflow: hidden;*/
-   /* width: 100%;
-    padding-bottom: 100%;
-    background-color: red;*/
+   
 }
+
+.iconGroup {
+    display: flex;           /* Line up the icons */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center;     /* Center icons vertically */
+    position: absolute;      /* Position icons over the image */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;              /* Hide the icons initially */
+    transition: 0.3s;        /* For smooth transition */
+}
+
+.icon {
+    margin: 0 5px; 
+    
+}
+
+.iconGroup img.icon {
+    width: 40px;
+    transition: transform 0,3s;
+}
+
+.iconGroup img.icon:hover {
+    transform: scale(1.5); /* Increase size by 50% when hovered */
+}
+
+.coverImageWrapper:hover .iconGroup {
+    opacity: 1;              /* Show icons on hover */
+}
+
 .coverImage {
     height: auto;
     max-width: 600px;
     width: 100%;
-   /* position: absolute;
-   /* display: block; /* removes any default spacing */
-   /* top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s; /* ensures smooth transitions */
-}
-
-.coverImageWrapper:hover .coverImage {
-    filter: brightness(70%); /* optional, if you want the image itself to also darken a bit */
 }
 
 .coverImageWrapper::before {
@@ -78,14 +96,21 @@ color: white; /*Default color on text*/
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* this is a black overlay with 30% opacity */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* this is a black overlay with 80% opacity */
     opacity: 0;
     transition: 0.3s; /* ensures smooth transitions */
 }
 
-div.albumGrid .coverImageWrapper:hover:before {
-    opacity: 1; /* when hovered, the black overlay becomes fully visible */
+div.albumGrid .coverImageWrapper:hover::before {
+    opacity: 1 !important; /* when hovered, the black overlay becomes fully visible */
+}
+
+.artist-name:hover, .album-name:hover {
+    text-decoration: underline;
 }
 
 /* For tablets */

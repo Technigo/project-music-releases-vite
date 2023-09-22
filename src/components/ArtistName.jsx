@@ -1,4 +1,6 @@
-export const ArtistName = ({ name }) => {
+export const ArtistName = ({ name, spotifyUrl }) => {
     //console.log('Artist name:', name);
-    return <div className="artist-name">{name}</div>;
+    return (
+    <a href={spotifyUrl} target="_blank" rel="noopener noreferrer" className="artist-name">{name}</a>
+    );
   };
