@@ -4914,16 +4914,6 @@
             "name": "21 Savage",
             "type": "artist",
             "uri": "spotify:artist:1URnnhqYAYcrqrcwql10ft"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/1URn2nhqYAYcrqrcwql10ft"
-            },
-            "href": "https://api.spotify.com/v1/artists/1URnnh2qYAYcrqrcwql10ft",
-            "id": "1URnnhqYAYcrq1rcwql10ft",
-            "name": "Fucker",
-            "type": "artist",
-            "uri": "spotify:artist:1URnnhqYAYcrqrcwwql10ft"
           }
         ],
         "available_markets": [
