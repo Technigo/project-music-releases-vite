@@ -1,0 +1,23 @@
+.Header{
+  text-align: center;
+  color: wheat;
+}
+body{
+  background-color: black;
+}
+.allAlbums{
+  color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px;
+}
+.eachAlbum{
+  padding: 25px;
+}
+img{
+  max-width: 100%;
+}
+img :hover {
+  opacity: .4;
+  transition: .4s;
+}

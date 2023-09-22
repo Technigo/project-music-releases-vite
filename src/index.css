@@ -11,24 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.Header{
-  text-align: center;
-  color: wheat;
-}
-body{
-  background-color: black;
-}
-.allAlbums{
-  color: antiquewhite;
-  border: 1px solid red ;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 10px;
-}
-.eachAlbum{
-  border: 1px solid pink ;
-  padding: 10px;
-}
-img{
-  max-width: 100%;
-}

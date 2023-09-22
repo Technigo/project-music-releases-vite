@@ -2,7 +2,7 @@
 import { AlbumName } from "./AlbumName";
 import { ArtistName } from "./ArtistName";
 import { CoverImage } from "./CoverImage";
-
+import "./album.css"; 
 export const Album = (props) => {
   
   let albumName = props.album.name
@@ -14,8 +14,7 @@ export const Album = (props) => {
     <> 
       <div className="eachAlbum">
       <CoverImage images={coverImage} />
-        <AlbumName name={albumName} />
-
+      <AlbumName name={albumName} />
       <ArtistName name={artistName} />
       </div>
     </>
