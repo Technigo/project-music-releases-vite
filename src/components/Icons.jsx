@@ -1,9 +1,15 @@
-import PlayIcon from "../icons/play.svg";
-import HeartIcon from "../icons/heart.svg";
-import DotIcon from "../icons/dot.svg";
+import playIcon from "../../public/icons/play.svg";
+import heartIcon from "./heart.svg";
+import dotIcon from "./dot.svg";
 
-export const Icons = {
-  play: <PlayIcon />,
-  heart: <HeartIcon />,
-  dot: <DotIcon />,
+export const PlayIcons = () => {
+  return <img src={playIcon} alt="Play" />;
+};
+
+export const HeartIcon = () => {
+  return <img src={heartIcon} alt="Heart" />;
+};
+
+export const DotIcon = () => {
+  return <img src={dotIcon} alt="Dot" />;
 };

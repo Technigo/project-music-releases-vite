@@ -1,6 +1,7 @@
-const AlbumName = ({ name, external_urls }) => {
+const AlbumName = ({ name }) => {
+  console.log(name);
   const openAlbumUrl = () => {
-    window.open(external_urls && external_urls.spotify);
+    window.open(name[1]);
   };
   /* console.log(external_urls.spotify, "spotify");*/
   return (
@@ -9,7 +10,7 @@ const AlbumName = ({ name, external_urls }) => {
       onClick={openAlbumUrl}
       style={{ cursor: "pointer" }}
     >
-      <h2>{name}</h2>
+      <h2>{name[0]}</h2>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AlbumName from "./AlbumName";
 import ArtistName from "./ArtistName";
 import CoverImage from "./CoverImage";
-//import Icons from "./Icons";
+//import { PlayIcon, HeartIcon, DotIcon } from "./Icons";
 
 const Album = ({ albumData }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,22 +26,22 @@ const Album = ({ albumData }) => {
         <CoverImage imageUrl={albumData.images[0].url} />
         {isHovered && (
           <div className="buttons">
-            <button className="play-button"></button>
-            <button className="heart-button"></button>
-            <button className="dot-button"></button>
+            {/* <PlayIcon />
+            <HeartIcon />
+            <DotIcon /> */}
           </div>
         )}
       </div>
       <div className="album-name">
         <AlbumName
-          name={albumData.name}
-          externalUrl={albumData.external_urls}
+          name={[albumData.name, albumData.external_urls.spotify]}
+          // externalUrl={albumData.external_urls}
         />
       </div>
       <div className="artists">
         {albumData.artists.map((artist, index) => (
           <React.Fragment key={artist.id}>
-            <ArtistName name={artist.name} />
+            <ArtistName name={[artist.name]} />
             {index < albumData.artists.length - 1 && <span>, </span>}
           </React.Fragment>
         ))}
