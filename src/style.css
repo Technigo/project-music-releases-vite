@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  display: block;
+}
+
+.container {
+  display: block;
+  flex-wrap: wrap;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+.album-name {
+  color: white;
+}
+
+.artist-name {
+  color: gainsboro;
+}

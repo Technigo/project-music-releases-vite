@@ -1,10 +1,9 @@
-export const AlbumName = ({ albumNames }) => {
-  return;
-  <div>
-    Album Name:
-    {albumNames.map((AlbumName) => (
-      <span key={album.id}>{album.name}</span>
-    ))}
-  </div>;
+import "../style.css";
+export const AlbumName = ({ albums, albumUrl }) => {
+  return (
+    <div>
+      <a></a>
+    </div>
+  );
 };
 export default AlbumName;
