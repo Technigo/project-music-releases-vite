@@ -1,0 +1,10 @@
+.ArtistName {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #a0a0a0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
