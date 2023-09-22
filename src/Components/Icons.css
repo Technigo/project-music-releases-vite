@@ -22,13 +22,14 @@
 
 .icon:hover {
     scale: 1.4;
+    cursor: pointer;
 }
 
 @media (min-width: 1024px) {
     .icon-container {
         gap: 10px;
     }
-    
+
     .icon {
         width: 30px;
     }
