@@ -15,6 +15,9 @@ export const Album = (mappedOutItem) => {
           <div className="image-container">
             {/* Display the album image using the URL from the first image in the 'images' array */}
             <img src={mappedOutItem.images[0].url} className="album-image" alt="Cover" />
+            <div className="albums">
+            <a href={mappedOutItem.external_urls.spotify} target="_blank" className="album-name" rel="noreferrer"> {mappedOutItem.name}</a>
+            </div>
           </div>
         </div>
       ))}
