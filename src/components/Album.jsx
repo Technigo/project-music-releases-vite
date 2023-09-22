@@ -5,14 +5,14 @@ import { Header } from './Header';
 
 
 export const Album = ({ album }) => {
-    //console.log(album);
+    console.log(album);
     return (
         <div className="albumComponent">
             <CoverImage imageUrl={album.images[0].url} />
-            <AlbumName name={album.name} />
+            <AlbumName name={album.name} spotifyUrl={album.external_urls.spotify}/>
             <div>
                 {album.artists.map((artist, index) => (
-                    <ArtistName key={index} name={artist.name} />
+                    <ArtistName key={index} name={artist.name} spotifyUrl={album.external_urls.spotify}/>
                 ))}
             </div>
            
