@@ -6,6 +6,7 @@ import { Artist } from "./Components/AlbumInfo/Artist.jsx";
 
 export const App = () => {
   const albumList = data.albums.items;
+  console.log(albumList);
   return (
     <>
       <Header />
