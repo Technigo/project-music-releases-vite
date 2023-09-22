@@ -16,7 +16,6 @@ export const Buttons = ()=> {
     />
   </svg>
 
-          {/* <img src="./src/assets/icons/heart.svg" alt="heart" /> */}
         </button>
 
         <button type="button"className="icon-play">
@@ -29,7 +28,6 @@ export const Buttons = ()=> {
       color="#000"
     />
     </svg>
-          {/* <img src="./src/assets/icons/play.svg" alt="play" /> */}
         </button>
 
         <button type="button"className="icon-dots">
@@ -38,7 +36,6 @@ export const Buttons = ()=> {
           <circle cx="12" cy="12.5" r="2.5" fill="white" />
           <circle cx="21.5" cy="12.5" r="2.5" fill="white" />
         </svg>
-            {/* <img src="./src/assets/icons/dots.svg" alt="dots"/> */}
         </button>
      
       </div>

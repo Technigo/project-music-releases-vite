@@ -12,17 +12,6 @@ code {
     monospace;
 }
 
-/* .icon-button {
-  background-image: url('./components/AlbumContent/dots.svg'); 
-  background-color: transparent; 
-  width: 100px; 
-  height: 100px; 
-}
-
-.icon-button svg {
-  fill: white;
-} */
-
 body{
   background-color: black;
   margin-left: 40px; 
