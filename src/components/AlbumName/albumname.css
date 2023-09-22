@@ -2,4 +2,10 @@
   color: #ffffff;
   font-size: 14px;
   font-family: Helvetica;
+  width: max-content;
+  cursor: pointer;
+}
+
+.albumName:hover {
+  text-decoration: underline;
 }

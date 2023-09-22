@@ -13,7 +13,7 @@ export const App = () => {
           return (
             <div className="album" key={album.id}>
               <Album
-                albumName={album.name}
+                albumInfo={[album.name, album.external_urls.spotify]}
                 albumCover={album.images[0].url}
                 artists={album.artists}
               />

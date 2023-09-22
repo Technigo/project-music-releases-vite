@@ -2,4 +2,10 @@
   font-size: 14px;
   font-family: Helvetica;
   color: #a0a0a0;
+  cursor: pointer;
+  width: max-content;
+}
+
+.artistNames:hover {
+  text-decoration: underline;
 }

@@ -1,3 +1,9 @@
 .album-cover img {
   max-width: 100%;
+  filter: brightness(100%);
+}
+
+.album-cover img:hover {
+  max-width: 100%;
+  filter: brightness(50%);
 }
