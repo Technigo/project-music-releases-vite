@@ -6,6 +6,7 @@
 
 /* Styling the a element in both album name and artist name */
 a {
+    display: block;
     text-decoration: none;
     color: inherit;
 }

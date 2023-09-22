@@ -1,10 +1,11 @@
 .album-cover {
     position: relative;
 }
-  
-.album-image {
+
+/* Target the image directly, instead of .album-cover img, otherwise the rules max-width will apply to the whole cover */
+img {
     width: 100%;
-    max-width: 600px;
+    max-width: 550px;
     height: auto;
 }
 
