@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 
 const ArtistNames = ({artistsArray}) => {
   return (
@@ -10,10 +9,6 @@ const ArtistNames = ({artistsArray}) => {
         ))}
     </div>
   ) 
-}
-
-ArtistNames.propTypes = {
-    artistsArray:PropTypes.array.isRequired
 }
 
 export default ArtistNames

@@ -15,12 +15,45 @@ code {
     monospace;
 }
 
+.header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+
+.album-card {
+  margin: 10px;
+}
+
+.album-card img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
 .album-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
 } 
 
+.album-name {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+
+
+
+.artist-name {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+}
 
 @media (min-width: 667px) {
   .album-container {

@@ -1,12 +1,8 @@
-//The Album component to show the artist name and a link.
-import PropTypes from 'prop-types';
-import AlbumName from './AlbumName/AlbumName';
-import ArtistNames from './ArtistName/ArtistName';
-import CoverImage from './CoverImage/CoverImage';
+import AlbumName from './AlbumName';
+import ArtistNames from './ArtistName';
+import CoverImage from './CoverImage';
 
-import "./Album.css";
-
-export const Album = ({albumsArray}) => {
+const Album = ({albumsArray}) => {
     //console.log( albumsArray)
   return (
     <section className="album-container">
@@ -21,6 +17,4 @@ export const Album = ({albumsArray}) => {
   )
 };
 
-Album.propTypes = {
-    albumsArray: PropTypes.array.isRequired
-  }
+export default Album

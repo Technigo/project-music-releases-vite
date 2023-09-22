@@ -1,6 +1,6 @@
 import data from "./data.json";
-import { Header } from "./Components/Header/Header";
-import { Album } from "./Components/Album/Album";
+import Header from "./Components/Header";
+import Album from "./Components/Album";
 
 console.log(data);
 
