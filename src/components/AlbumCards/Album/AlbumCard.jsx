@@ -6,7 +6,6 @@ import { CoverImage } from "./CoverImage.jsx";
 // Functional component that destructures image, name and artist to the component props image, album and artist.
 export const AlbumCard = ({ fullAlbum }) => {
     const { images, name, artists, external_urls } = fullAlbum;
-    console.log(fullAlbum);
 
     return (
         <div className="card-content">

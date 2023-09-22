@@ -3,4 +3,42 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background: #000000;
     margin: 2rem;
+    color: white;
 }
+
+/* ---------------- Grid layout ---------------- */
+.body-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header {
+    grid-column: 1 / 5;
+}
+
+.playlist-sidebar {
+    grid-column: 1;
+}
+
+.album-cards {
+    grid-column: 2 / 5;
+    display: grid; /* Using grid to correctly position the cards on each device width */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* ---------------- Media queries for grid layout ---------------- */
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .album-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    }
+}
+  
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .album-cards {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on tablet */
+        gap: 2rem;
+    }
+} 

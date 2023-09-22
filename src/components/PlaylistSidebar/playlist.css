@@ -1,0 +1,18 @@
+.playlist-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.playlists {
+    margin: 1rem 0;
+}
+
+.playlist-heading {
+    margin-top: 0;
+}
+
+.playlist-name {
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,10 +1,4 @@
 /* ---------------- Styling the cards ---------------- */
-.album-card {
-    display: grid; /* Using grid to correctly position the cards on eaach device width */
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
 .cover-image {
     width: 100%; /* Make the image take up the full width of the container */
     height: auto; /* Maintain the image's aspect ratio */
@@ -102,19 +96,3 @@ a:hover {
     color: #a0a0a0;
     margin-top: 1rem;
 }
-
-/* ---------------- Media queries for cards ---------------- */
-/* Tablet styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .album-card {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
-    }
-}
-  
-/* Desktop styles */
-@media (min-width: 1025px) {
-    .album-card {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on tablet */
-        gap: 2rem;
-    }
-} 
