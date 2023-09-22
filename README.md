@@ -1,37 +1,14 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+Technico boot-camp project week 5. Album and single releases. Using React, creating components that are using data from Spotify.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The project was divided into smaller pieces to get a better understanding. Problems were solved by helping each other out in our team. Stack overflow, course material, google and chatGpt were used when problems occured. Decided to have one file for all the css as the project wasn't that big this time, added extra comments to make it easy for others to follow. The explanatory comments also helps me to better understand the code and learn more. 
+
+With more time I would've first of all worked on the structure (eg. move some parts from App- to Album- component) and made the code more clean.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://music-releases-project-idah-collin.netlify.app/
