@@ -84,7 +84,7 @@ body {
   border-radius: 50%;
   transition: transform 0.25s, border-color 0.25s;
 }
-
+/* I only got it to hover when I hover the whole album, and the heart and ellipse not at all */
 .album::before {
   /* Styles for the play button pseudo-element */
   left: 50%;
