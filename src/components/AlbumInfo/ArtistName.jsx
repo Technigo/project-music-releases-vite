@@ -3,6 +3,8 @@
 export const ArtistName = ({ singleArtistItem }) => {
     // extracts artist property array from singleArtistItem
     const { artists } = singleArtistItem;
+    console.log("SINGLE ARTIST ITEM", singleArtistItem)
+    console.log("ARTIST", artists )
     
     //how to display artists names, if multiple.
     //if the array lenght is 1, artistNames just takes the first name
@@ -10,11 +12,14 @@ export const ArtistName = ({ singleArtistItem }) => {
     //if more than 2, it maps the array, the "length - 2" calculates a value that is two less than the array length.
     //so first case, index of the current artistname is before than the second last, it get a comma. if it is the second last, it gets a &, if it's last it get nothing.
     let artistNames = "";
+    let artistLinks = "";
 
     if (artists.length === 1) {
         artistNames = artists[0].name;
+        artistLinks = artists[0].external_urls.spotify;
     } else if (artists.length === 2) {
         artistNames = `${artists[0].name} & ${artists[1].name}`;
+        artistLinks = artists[0].external_urls.spotify, artists[1].external_urls.spotify;
     } else if (artists.length > 2) {
         artists.map((artist, index) => {
             if (index < artists.length - 2) {
@@ -27,10 +32,13 @@ export const ArtistName = ({ singleArtistItem }) => {
         });
     }
 
+    
+
+
     //creating object! containg name, link and link-properties/attributes, and a class for CSS.
     let artistObject = {
         headingThree: artistNames,
-        aHref: singleArtistItem.external_urls.spotify,
+        aHref: artistLinks,
         target: "_blank",
         rel: "noreferrer noopener",
         class: "artistName" 

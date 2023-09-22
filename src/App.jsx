@@ -1,7 +1,7 @@
 import data from "./data.json";
 import { Album } from "./components/Album.jsx";
 import { Header } from "./components/Header.jsx";
-import "./index.css";
+
 
 console.log("This is the JSON-data",data);
 
