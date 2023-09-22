@@ -11,3 +11,172 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: black;
+  color: white;
+  margin: 25px 50px;
+}
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* App.css */
+
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* One column by default (mobile-first) */
+  gap: 25px;
+  /* Add spacing between album covers */
+}
+
+/* Header */
+.header {
+  display: flex;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+/* Album */
+.album-cover {
+  margin: 10px;
+}
+
+/* AlbumName */
+.album-name a {
+  text-decoration: none;
+}
+
+.album-name h2 {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* AlbumName */
+.artist-name a {
+  text-decoration: none;
+}
+
+.artist-name h3 {
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+
+  /* Add underline when the h3 is hovered */
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+/* CoverImage.css */
+.cover-image-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cover-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+  /* Add transition for filter property */
+}
+
+.cover-image-wrapper:hover .cover-image {
+  filter: brightness(0.4);
+}
+
+/* Button container */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  gap: 20px;
+}
+
+
+/* Show the icons when the wrapper is hovered */
+.cover-image-wrapper:hover .icon-container {
+  opacity: 1;
+}
+
+/* Button styling */
+.icon-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 35px;
+}
+
+/* Icon styling */
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  filter: invert(1);
+}
+
+/* Increase the size of the icon on hover */
+.icon:hover {
+  transform: scale(1.3);
+}
+
+/* Increase the size of the heart and dots icons without affecting the gap */
+.icon-container .heart-icon img,
+.icon-container .dots-icon img {
+  width: 24px; /* Adjust the width as needed */
+  height: 24px; /* Adjust the height as needed */
+}
+
+/* Icon styling for play icon (if needed) */
+.icon-container .play-icon img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  /* You can customize the size of the play icon separately */
+}
+
+
+/**** TABLET ****/
+@media (min-width: 768px) {
+
+  /* Two columns on tablet */
+  .album-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/**** DESKTOP ****/
+@media (min-width: 1024px) {
+
+  /* Four columns on desktop */
+  .album-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
