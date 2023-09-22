@@ -2,7 +2,7 @@ import { AlbumName } from "./AlbumName";
 import { ArtistName } from "./ArtistName";
 import { CoverImage } from "./CoverImage";
 import { Header } from './Header';
-import "./Album.css";
+
 
 export const Album = ({ album }) => {
     //console.log(album);
