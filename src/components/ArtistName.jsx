@@ -1,29 +1,27 @@
 const ArtistName = ({ artists }) => {
-  const formatArtist = (name) => {
-    if (name.length === 2) {
-      return `${name[0]} & ${name[1]}`;
-    } else if (name.length > 2) {
-      const lastTwoArtists = name.slice(-2).join(" & ");
-      const remainingArtists = name.slice(0, -2).join(", ");
-      return `${remainingArtists}, ${lastTwoArtists}`;
-    } else {
-      return name.join(" ");
+  console.log({ artists });
+  const generateDelimiter = (index, length) => {
+    if (index === length - 2) {
+      return " & ";
+    } else if (index < length - 2) {
+      return ", ";
     }
+    return;
   };
 
   return (
     <div className="artistName">
-      {artists.map((artist) => {
-        const name = artist.name.split(" ");
-        const formattedName = formatArtist(name);
-
+      {artists.map((artist, index) => {
         return (
           <a
             key={artist.id}
             href={artist.external_urls.spotify}
             target="_blank"
           >
-            <span>{formattedName}</span>
+            <span>
+              {artist.name}
+              {generateDelimiter(index, artists.length)}
+            </span>
           </a>
         );
       })}

@@ -11,6 +11,7 @@ import Playlist from "./components/Playlist";
 export const App = () => {
   // map albums data
   const albums = data.albums.items;
+  console.log(albums.artists);
   const albumsData = () => {
     return albums.map((album) => {
       return (
