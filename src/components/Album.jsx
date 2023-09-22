@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AlbumName from "./AlbumName";
 import ArtistName from "./ArtistName";
 import CoverImage from "./CoverImage";
+//import Icons from "./Icons";
 
 const Album = ({ albumData }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,9 +26,9 @@ const Album = ({ albumData }) => {
         <CoverImage imageUrl={albumData.images[0].url} />
         {isHovered && (
           <div className="buttons">
-            <button className="play-button">Play</button>
-            <button className="favorite-button">Favorite</button>
-            <button className="ellipsis-button">...</button>
+            <button className="play-button"></button>
+            <button className="heart-button"></button>
+            <button className="dot-button"></button>
           </div>
         )}
       </div>
