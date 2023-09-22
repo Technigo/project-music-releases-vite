@@ -17,9 +17,11 @@ A page will be built to show new album and single releases.
 
 **Parent component:**
 - App.jsx
+
 **Child components of App.jsx:**
 - Album.jsx
 - Header.jsx
+
 **Child components of Album.jsx:**
 - AlbumName.jsx
 - ArtistName.jsx
@@ -44,16 +46,18 @@ npm run dev
 ### The Problem
 
 **Used:**
+
 - Notion course material and Technigo code session
 - Chat GPT
 - Stack overflow
 - Team members' help
 
-Using artist id as the unique key was the simplest way to proceed.
-A lot of error messages arose from the linter that was disabled after tips from code session and team members.
-Avoid using Uppercase when naming folders that have same name as a jsx file as React can get confused- but I was not allowed by React to change it afterwards, AND the code is not broken.
-When starting CSS styling, no expected response.  Had to write down all the sections/divs created in the components to get a better insight of which to get rid of.
-Had a hard time to change the colour of svg icons - through the code at source file, when integrated into the component's function (all kebab-case attributes then needed to be changed to camelCase), with css using `fill` attribute.  Got the tips from Hang during demo- `filter:inverted(1)`.
+* Using artist id as the unique key was the simplest way to proceed.
+* A lot of error messages arose from the linter that was disabled after tips from code session and team members.
+* Avoid using Uppercase when naming folders, first thing, and avoid using same name (not case-sensitive) for folder and jsx file as React can get confused 
+- when I was not allowed by React to change it afterwards, I had to stop the server from running with ^C and make the necessary changes as the site would not deploy on netlify, even though the code was not broken on local host.
+* When starting CSS styling, no expected response.  Had to write down all the sections/divs created in the components to get a better insight of which to get rid of.
+* Had a hard time to change the colour of svg icons - through the code at source file, when integrated into the component's function (all kebab-case attributes then needed to be changed to camelCase), with css using `fill` attribute.  Got the tips from Hang during demo- `filter:inverted(1)`.
 
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? 
@@ -63,7 +67,8 @@ Would have liked to give the stretched goals a try.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link to the deployed project so that the viewer can click around and see what it's all about:
+https://palmier-music-releases-vite.netlify.app/
 
 ## Instructions
 
