@@ -3,22 +3,34 @@ import ArtistName from "./Components/ArtistName/ArtistName";
 import AlbumName from "./Components/AlbumName/AlbumName";
 import CoverImage from "./Components/CoverImage/CoverImage";
 //import { Header } from "./Components/Header/Header";
+import data from "./data.json"; //im really not sure where i need to add data.json
 
-export const Album = (data) => {
-    const albums = data.data;
-
+//{album.images[0].url} change [0] if i want another image that is different size
+const Album = ({ data }) => {
     return (
-        <main>
-            <h2>Albums</h2>
-            <div className="albums_wrapper">
-                {albums.map((album) => (
-                    <div key={album.id} className="album">
-                        <div> <p>artist: <ArtistName name={album.artists[0].name} /></p></div>
-                        <div><p>album: <AlbumName name={album.name} /></p> </div>
+        <section>
+            {data.map((album, index) => (
+                <div key={index}>
+                    <div>
                         <CoverImage url={album.images[0].url} alt={album.name} />
                     </div>
-                ))}
-            </div>
-        </main>
+                    <br />
+                    <div>
+                        <strong>Album Name:</strong> <AlbumName name={album.name} /></div>
+                    <br />
+                    <div>
+                        <strong>Artist Name:</strong> <ArtistName name={album.artists[0].name} />
+                    </div>
+                </div>
+            ))}
+        </section>
     );
 };
+//changed from ul and li to section and div. not sure whats best. Might need to add more than one artist later. 
+export default Album;
+
+
+
+
+
+//PREVIOUS COMMENT First I passed everything from the parent. I think I managed to change it, and its now passed trough the child componants. 
