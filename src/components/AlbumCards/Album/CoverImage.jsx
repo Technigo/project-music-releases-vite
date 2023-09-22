@@ -4,9 +4,9 @@ export const CoverImage = ({ image }) => {
       <div className="cover-container">
         <img className="cover-image" src={image.url} alt="Album Cover"/>
         <div className="icon-container hidden">
-          <img id="favorite-icon" src="src/assets/icons/heart.svg" alt="Favorite Icon" />
-          <img id="play-icon" src="src/assets/icons/play.svg" alt="Play Icon" />
-          <img id="more-info-icon" src="src/assets/icons/dots.svg" alt="More Info Icon" />
+          <img id="favorite-icon" src="public/icons/heart.svg" alt="Favorite Icon" />
+          <img id="play-icon" src="public/icons/play.svg" alt="Play Icon" />
+          <img id="more-info-icon" src="public/icons/dots.svg" alt="More Info Icon" />
         </div>
       </div>
       )
