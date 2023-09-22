@@ -1,13 +1,13 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Technico boot-camp project week 5. Album and single releases. Using React, creating components that are using data from Spotify.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The project was divided into smaller pieces to get a better understanding. Problems were solved by helping each other out in our team. Stack overflow, course material, google and chatGpt were used when problems occured. Decided to have one file for all the css as the project wasn't that big this time, added extra comments to make it easy for others to follow. The explanatory comments also helps me to better understand the code and learn more. 
+
+With more time I would've first of all worked on the structure (eg. move some parts from App- to Album- component) and made the code more clean.
 
 ### View it live
 
