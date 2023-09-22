@@ -1,27 +1,25 @@
+import { ArtistName } from "./ArtistName/ArtistName";
+import { AlbumName } from "./AlbumName/AlbumName";
+import { CoverImage } from "./CoverImage/CoverImage";
 
-import { AlbumName } from './components/AlbumName/AlbumName';
-import { ArtistName } from './components/ArtistName/ArtistName';
-import { CoverImage } from './components/CoverImage/CoverImage';
+export const Album = ({ albumInfo }) => {
+  console.log(albumInfo);
 
-export const Album = (props) => {
-  
-    let coverImage = props.items.images
-    let albumName = props.items.name
-    let artistName = props.items.artists[0].name
-    
-    
-    return (
+  const artistNameParent = albumInfo.artists[0].name;
+  const albumNameParent = albumInfo.name;
+  const externalAlbumHref = albumInfo.external_urls.spotify;
+  const imageRefParent = {
+    urlLinkFromApi: albumInfo.images[0].url,
+    altText: albumInfo.name,
+  };
 
-    <div className="album">
-        <p>
-           <CoverImage {coverImage} />
-        </p>
-        <p>
-           {artists}
-        </p>
+  return (
+    <div>
+      <a href={externalAlbumHref} target="_blank" rel="noopener noreferrer">
+        <AlbumName albumNameProp={albumNameParent} />
+        <ArtistName artistNameProp={artistNameParent} />
+        <CoverImage imageRefProp={imageRefParent} />
+      </a>
     </div>
-  )
-}
-
-
-
+  );
+};

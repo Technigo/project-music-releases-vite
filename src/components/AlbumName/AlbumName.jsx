@@ -1,9 +1,7 @@
-
-
-export const AlbumName = ({name}) => {
+export const AlbumName = ({ albumNameProp }) => {
   return (
-      <p>
-        {name}
-      </p> 
-  )
-}
+    <div>
+      <h3>AlbumName - {albumNameProp}</h3>
+    </div>
+  );
+};

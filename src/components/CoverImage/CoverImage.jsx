@@ -1,12 +1,11 @@
 import "./CoverImage.css";
 
-export const CoverImage = ({infoArray}) => {
-  
-  let coverImage = infoArray[0].url
-  
+export const CoverImage = ({ imageRefProp }) => {
+  let imageRef = `cover Image for the album - ${imageRefProp.altText}`;
+
   return (
-    <div>
-     <img src={coverImage} className="coverImage" alt="Album image" />
-    </div>
-  )
-}
+    <>
+      <img src={imageRefProp.urlLinkFromApi} alt={imageRef} />
+    </>
+  );
+};

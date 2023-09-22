@@ -1,37 +1,23 @@
-
-// Importing necessary components and context providers
-import { Header } from './components/Header';
-import { Album } from './components/Album';
-
-import data from './data.json';
-
-console.log(data)
-
-let album = data.album.items
+import data from "./data.json";
+import { Album } from "./components/Album";
 
 export const App = () => {
-  
+  //function map over album array
+  const renderAlbums = () => {
+    // data.albums.items === the chained object reference that contains the info from the albums
+    const albumInfo = data.albums.items;
+    return albumInfo.map((album) => {
+      console.log(album);
 
-//function map over album array
-const renderAlbums = () => {
-  return album.map((album) => {
-    <Album 
-      key={album.id}
-      name={album.name}
-      artists={album.artists}
-    />;
-  });
-}
+      let albumObject = album;
+      return <Album key={album.id} albumInfo={albumObject} />;
+    });
+  };
 
   return (
     <>
-    <Header/>
-    <section className="album-grid">
-     {renderAlbums()}
-    </section>
+      {/* <Header /> */}
+      <section className="album-wrapper">{renderAlbums()}</section>
     </>
   );
 };
-
-
-

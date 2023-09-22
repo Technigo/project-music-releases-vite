@@ -1,14 +1,3 @@
-
-
-
-export const ArtistName = ({artists}) => {
-  return (
-    <div>
-      <p>
-        {artists}
-      </p>
-    </div>
-  )
-}
-
-
+export const ArtistName = ({ artistNameProp }) => {
+  return <div>ArtistName - {artistNameProp}</div>;
+};
