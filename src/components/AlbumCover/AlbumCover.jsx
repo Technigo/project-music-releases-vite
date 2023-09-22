@@ -1,3 +1,5 @@
+import "./albumcover.css";
+
 export const AlbumCover = ({ image }) => {
   return (
     <div className="album-cover">

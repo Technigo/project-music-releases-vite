@@ -5,25 +5,12 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(46, 46, 46);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.album {
-  border: 2px solid purple;
-  width: 400px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.album img {
-  width: 300px;
-  height: auto;
 }
 
 .container {
@@ -32,17 +19,13 @@ code {
   grid-template-columns: 1fr;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 900px) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1008px) {
   .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

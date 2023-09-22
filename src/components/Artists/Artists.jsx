@@ -1,16 +1,13 @@
-export const Artists = (artists) => {
-  const artistNames = artists.artists.map((artist) => artist.name).join(", ");
+import "./artists.css";
 
+export const Artists = ({ artists }) => {
+  let artistNames;
+  artists.length < 3
+    ? (artistNames = artists.map((artist) => artist.name).join(" & "))
+    : (artistNames = artists.map((artist) => artist.name).join(", "));
   return (
     <>
-      <p>{artistNames}</p>
+      <p className="artistNames">{artistNames}</p>
     </>
   );
-  // return artists.artists.map((artist) => {
-  //   return (
-  //     <div className="artists" key={artist.id}>
-  //       {artist.name}
-  //     </div>
-  //   );
-  // });
 };
