@@ -24,6 +24,16 @@ code {
   margin-bottom: 2em;
 }
 
+.header-p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+
+
 .album-card {
   margin: 10px;
 }
