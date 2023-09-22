@@ -9,7 +9,9 @@ export const Album = ({ name, artists, imageUrl, albumHttpLink }) => {
 
         <div className="album">
             <CoverImage url={imageUrl} />
-            <AlbumName name={name} httplink={albumHttpLink} />
+            <AlbumName
+                name={name}
+                httplink={albumHttpLink} />
             <ArtistName artists={artists} />
         </div>
 
