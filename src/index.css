@@ -14,14 +14,19 @@ code {
 
 body {
   background-color: black;
+  place-items: center;
+  box-sizing: border-box;
+  margin: 25px 50px;
 }
+
 
 .album-wrapper {
   display: grid;
-  gap: 25px;
+  grid-gap: 25px;
   grid-template-columns: repeat(1, 1fr);
   margin-bottom: 50px;
   color: white;
+
 }
 
 @media (min-width: 670px) {
