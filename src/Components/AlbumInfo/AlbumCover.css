@@ -1,8 +1,9 @@
+/* Set position of .album-cover to relative and then set position of its child element - icon container - to absolute - that way the icon container stays within the cover image */
 .album-cover {
     position: relative;
 }
 
-/* Target the image directly, instead of .album-cover img, otherwise the rules max-width will apply to the whole cover */
+/* Target the image directly, instead of .album-cover img, otherwise the rule on max-width will apply to the whole cover */
 img {
     width: 100%;
     max-width: 550px;
