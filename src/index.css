@@ -5,7 +5,8 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(46, 46, 46);
+  background-color: #000000;
+  margin: 25px 50px;
 }
 
 code {
@@ -15,7 +16,7 @@ code {
 
 .container {
   display: grid;
-  gap: 1rem;
+  gap: 2.5rem;
   grid-template-columns: 1fr;
 }
 

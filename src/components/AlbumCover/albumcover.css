@@ -4,5 +4,6 @@
 }
 
 .album-cover img:hover {
-  filter: brightness(30%);
+  filter: brightness(50%);
+  transition: 0.3s ease-out;
 }
