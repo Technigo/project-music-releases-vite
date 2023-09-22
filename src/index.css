@@ -88,8 +88,8 @@ button {
   background: transparent;
 }
 
-.svg {
-  fill: #fff;
+.icon img {
+  filter: invert(1);
 }
 
 /* ------Hover effects ------ */
