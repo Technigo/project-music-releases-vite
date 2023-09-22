@@ -7,21 +7,21 @@ export const CoverImage = ({ url }) => {
                     type="button"
                     className="icon heart">
                     <img
-                        src="public/heart.svg"
+                        src="./heart.svg"
                         alt="icon dots" />
                 </button>
                 <button
                     type="button"
                     className="icon play">
                     <img
-                        src="public/play.svg"
+                        src="./play.svg"
                         alt="icon dots" />
                 </button>
                 <button
                     type="button"
                     className="icon ellipsis">
                     <img
-                        src="public/dots.svg"
+                        src="./dots.svg"
                         alt="icon dots" />
                 </button>
             </span>
