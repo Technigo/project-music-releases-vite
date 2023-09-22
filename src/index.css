@@ -7,9 +7,20 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+  padding: 3rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.grid {
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.album-cover {
+  max-width: 100%;
 }

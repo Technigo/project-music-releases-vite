@@ -5,7 +5,7 @@ console.log(data);
 
 export const App = () => {
     return (
-        <div>
+        <div className="grid">
             {data.albums.items.map((album) => (
                 // Render each album as a component
                 <Album

@@ -6,7 +6,7 @@ const Album = ({
 }) => {
     return (
         <div>
-            <img src={coverImage} alt="Album cover image" />
+            <img src={coverImage} alt="Album cover image" className="album-cover" />
             <a
                 target="_blank"
                 href={externalUrl}
