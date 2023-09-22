@@ -16,7 +16,7 @@
   margin: 0 10px 30px 10px;
   background-color: #3498db;
   color: #fff;
-  padding: 20px;
+  padding: 0;
   text-align: left;
   box-sizing: border-box;
 }
@@ -139,6 +139,7 @@ code {
   font-family: var(--code-font-family);
 }
 
-
-
-
+.cover-image img {
+  max-width: 100%;
+  max-height: 100%;
+}

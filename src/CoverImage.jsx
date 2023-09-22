@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types';
-import './index.css';
 
 function CoverImage(props) {
   const { coverImage } = props;
-  const imageStyle = {
-    width: '100',
-  };
 
   return (
     <div className="cover-image">
