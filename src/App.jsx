@@ -11,13 +11,12 @@ export const App = () => {
       <section className="container">
         {data.albums.items.map((album) => {
           return (
-            <div className="album" key={album.id}>
-              <Album
-                albumInfo={[album.name, album.external_urls.spotify]}
-                albumCover={album.images[0].url}
-                artists={album.artists}
-              />
-            </div>
+            <Album
+              key={album.id}
+              albumInfo={[album.name, album.external_urls.spotify]}
+              albumCover={album.images[0].url}
+              artists={album.artists}
+            />
           );
         })}
       </section>

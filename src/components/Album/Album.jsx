@@ -5,10 +5,12 @@ import "./album.css";
 
 export const Album = ({ albumInfo, albumCover, artists }) => {
   return (
-    <div>
+    <div className="album">
       <AlbumCover image={albumCover} />
       <AlbumName albumInfo={albumInfo} />
-      <Artists artists={artists} />
+      <span>
+        <Artists artists={artists} />
+      </span>
     </div>
   );
 };

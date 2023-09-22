@@ -4,6 +4,5 @@
 }
 
 .album-cover img:hover {
-  max-width: 100%;
-  filter: brightness(50%);
+  filter: brightness(30%);
 }
