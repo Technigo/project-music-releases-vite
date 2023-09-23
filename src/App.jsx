@@ -1,6 +1,7 @@
 import data from "./data.json";
-import {Album} from "./Album"
+import {Album} from "./Components/Album/Album"
 import { Header } from "./Components/Header/Header"
+import "./index.css"
 
 
 

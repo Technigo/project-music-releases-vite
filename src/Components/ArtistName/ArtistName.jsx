@@ -8,7 +8,7 @@ export const ArtistName=(artist)=>{
 
     return (
         <p className={style.artistName}> 
-       {artists.map((el,index)=> {return (<span key={index}><a href={el.external_urls.spotify} target="_blank" rel="noreferrer">{(index? "& ":"") +el.name}</a></span>)})}
+       {artists.map((el,index)=> {return (<span key={index}><a href={el.external_urls.spotify} target="_blank" rel="noopener noreferrer">{(index? "& ":"") +el.name}</a></span>)})}
         </p>
     )
 }

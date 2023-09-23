@@ -1,9 +1,34 @@
 .player_wrapper{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
 
+@media (min-width: 500px){
+    .player_wrapper{
+        grid-template-columns: repeat(5,1fr);
+    } 
+}
+
+@media (min-width: 768px){
+    .player_wrapper{
+        grid-template-columns: repeat(7,1fr);
+    } 
+}
+
+@media (min-width: 1000px){
+    .player_wrapper{
+        grid-template-columns: repeat(10,1fr);
+    } 
+}
+
+@media (min-width: 1150px){
+    .player_wrapper{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    } 
 }
 
 .message{
