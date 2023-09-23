@@ -1,6 +1,6 @@
 export const ArtistName = ({ artists, artistUrl }) => {
   return (
-    <div className={`{artists} ${artists.length > 1 ? "artist-list" : ""}`}>
+    <div className={`{artists} ${artists.length > 1 ? "," : ""}`}>
       {artists.map((artist) => (
         <p key={artist.id}>
           <a
