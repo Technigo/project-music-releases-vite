@@ -1,9 +1,16 @@
+import ".././css_Components/AlbumCover.css";
+// import icons as well
 
+export const AlbumCover = ({ albumCoverItem }) => {
 
-export const AlbumCover = ({ imageUrl, altText }) => {
+let albumCoverObject = {
+coverImgUrl: albumCoverItem.images[0].url,
+coverImageAltText: albumCoverItem.name,
+};
+
   return (
-    <div className="album_cover">
-      <img src={imageUrl} alt={altText} />
+    <div className="albumCover">
+      <img src={albumCoverObject.coverImgUrl} alt={`This is the cover image for the album ${albumCoverObject.coverImageAltText}`} />
       <span className="icon-wrapper">
             <button type="button" className="icon heartIcon">
                 <img src="./assets/heart.svg" alt="heart icon" />
@@ -17,10 +24,4 @@ export const AlbumCover = ({ imageUrl, altText }) => {
         </span>
     </div>
   );
-};
-
-// This is a feature in React that allows me to specify default values for props in case they are not provided or are passed as undefined.
-AlbumCover.defaultProps = {
-  imageUrl: "Album cover is missing",
-  altText: "Album name is missing"
 };

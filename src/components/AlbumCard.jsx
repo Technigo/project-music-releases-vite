@@ -6,7 +6,7 @@ export const AlbumCard = ({ musicData }) => {
     let albumData = musicData.albums.items;
 
     return (
-        <article className="albumCard">
+        <>
             {/* In React, when you use {} to wrap code inside JSX (like {albumData.map()...), it signifies that you're inserting JavaScript logic or expressions within the JSX. Everything inside these braces is treated as JavaScript code, allowing you to perform computations, access variables, or call functions. If you want to perform multiple operations or return multiple statements, you would use curly braces to define a block of code: */}
             {albumData.map((album) => {
                 return (
@@ -19,7 +19,7 @@ export const AlbumCard = ({ musicData }) => {
                     </div>
                 );
             })}
-        </article>
+        </>
     );
 };
 

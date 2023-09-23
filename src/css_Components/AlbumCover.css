@@ -1,0 +1,22 @@
+/* Styling rules: 
+When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (three dots).
+*/
+
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+/* An opacity of 1.0 is fully visible, while 0.0 is completely transparent. */
+.albumCover:hover>.icon-wrapper {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+
+.albumCover:hover>img {
+    filter: brightness(50%);
+    transition: 0.4s;
+}

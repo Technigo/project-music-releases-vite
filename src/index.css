@@ -20,25 +20,34 @@ code {
   box-sizing: border-box;
 }
 
-main {
-background-color: black;
+body {
+  background-color: black;
+  margin: 2rem;
 }
 
 .albumWrapper {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 50px;
+  gap: 2rem;
 }
 
-.albumCard {
+.albumCardWrapper {
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
 
-.album_cover:hover {
-  filter: brightness(60%);
-  transition: .2s;
+
+
+@media (min-width: 667px) {
+  .albumWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
-
+@media (min-width: 1025px) {
+  .albumWrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

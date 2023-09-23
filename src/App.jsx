@@ -9,10 +9,10 @@ export const App = () => {
     <>
       <main>
         <Header />
-        <div className="albumWrapper">
+        <section className="albumWrapper">
           {/* Passing the whole data object as a prop which allows the AlbumCard component to have access to the data object and use its properties or values as needed. */}
           <AlbumCard musicData={data} />
-        </div>
+        </section>
       </main>
     </>
   );

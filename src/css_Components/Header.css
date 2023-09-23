@@ -6,10 +6,10 @@
   }
   
   h1.header {
-    font-size: calc(24px + 3vw);
+    font-size: calc(18px + 2vw);
     margin-bottom: 0.5em;
   }
 
   p.header {
-    font-size: calc(16px + 1vw);
+    font-size: calc(18px + 0.5vw);
   }
