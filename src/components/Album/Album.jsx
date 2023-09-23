@@ -23,7 +23,7 @@ export const Album = ({ albumsArray }) => {
                 <AlbumName albumName={mappedOutItem.name} albumURL={mappedOutItem.external_urls.spotify} />
                 <ArtistNames artistsArray={mappedOutItem.artists} artistURL={mappedOutItem.external_urls.spotify} />
              </div>
-        ))};
+        ))}
     </section>
-  );
-};
+  )
+}

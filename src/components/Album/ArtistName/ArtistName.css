@@ -1,8 +1,13 @@
+.artist-name-link h3 {
+    margin: 0;
+}
+
 .artist-name-link a {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
     color: #a0a0a0;
     text-decoration: none;
+    margin: 0;
 }
 
 .artist-name-link a:hover {
