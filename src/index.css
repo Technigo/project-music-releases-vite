@@ -24,3 +24,36 @@ code {
 .album-cover {
   max-width: 100%;
 }
+
+.album-name {
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.header-top {
+  margin-bottom: 1rem;
+}
+
+.header-bottom {
+  margin-bottom: 3rem;
+}

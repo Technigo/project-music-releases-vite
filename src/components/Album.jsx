@@ -7,14 +7,14 @@ const Album = ({
     return (
         <div>
             <img src={coverImage} alt="Album cover image" className="album-cover" />
-            <a
+            <a className="album-name"
                 target="_blank"
                 href={externalUrl}
             >
                 {name}
             </a>
             {artists.map((artist) => (
-                <a
+                <a className="artist-name"
                     key={artist.id}
                     target="_blank"
                     href={artist.externalUrl}
