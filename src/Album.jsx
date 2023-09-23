@@ -8,8 +8,10 @@ function Album() {
 
   return (
     <div>
+      {/* Render Header component */}
       <Header />
       <div className="album-grid">
+        {/* Map array and render AlbumCard components */}
         {albums.map((album) => (
           <AlbumCard key={album.id} album={album} />
         ))}
