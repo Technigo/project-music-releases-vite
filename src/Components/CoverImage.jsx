@@ -2,7 +2,7 @@
 const CoverImage = ({coverImage}) => {
     return (
          <div className="coverImage-wrapper">
-            <img src={coverImage} alt="Cover" />
+            <img src={coverImage} alt="Cover image" />
         </div>
         )
 }

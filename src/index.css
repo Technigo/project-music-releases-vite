@@ -50,14 +50,16 @@ code {
   grid-gap: 20px;
 } 
 
-.album-name {
+.album-name a {
+  text-decoration: none;
+  color: #ffffff;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
-  color: #ffffff;
 }
 
-
-
+.album-name a:hover {
+  text-decoration: underline;
+ }
 
 .artist-name {
   font-family: Helvetica, sans-serif;

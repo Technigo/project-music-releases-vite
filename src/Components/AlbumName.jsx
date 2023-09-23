@@ -1,9 +1,13 @@
 
-const AlbumName = ({albumName}) => {
+const AlbumName = ({albumName, externalUrl}) => {
   return (
-    <>
-    <h2 className="album-name">{albumName}</h2>
-    </>
+    <div className="album-name">
+        <h2>
+          <a href={externalUrl} target="_blank" rel="noopener noreferrer">
+          {albumName}
+          </a>
+        </h2>
+      </div>
   ) 
 }
 

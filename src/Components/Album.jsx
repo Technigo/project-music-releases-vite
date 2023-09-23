@@ -9,7 +9,7 @@ const Album = ({albumsArray}) => {
          {albumsArray.map((mappedOutItem) => (
              <div className="album-card" key={mappedOutItem.id}>
                 <CoverImage coverImage = {mappedOutItem.images[0].url} />
-                <AlbumName albumName = {mappedOutItem.name} />
+                <AlbumName albumName = {mappedOutItem.name} externalUrl={mappedOutItem.external_urls.spotify} />
                 <ArtistNames artistsArray = {mappedOutItem.artists} />
              </div>
         ))}
