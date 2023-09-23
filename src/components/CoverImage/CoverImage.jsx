@@ -5,7 +5,9 @@ export const CoverImage = ({ imageRefProp }) => {
 
   return (
     <>
-      <img src={imageRefProp.urlLinkFromApi} alt={imageRef} />
+      <div className="cover-image-wrapper">
+        <img src={imageRefProp.urlLinkFromApi} alt={imageRef} />
+      </div>
     </>
   );
 };

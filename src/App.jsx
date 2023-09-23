@@ -1,4 +1,5 @@
 import data from "./data.json";
+import "./index.css";
 import { Header } from "./components/Header";
 import { Album } from "./components/Album";
 

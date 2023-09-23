@@ -16,6 +16,7 @@ body {
   margin: 0;
   background-color: black;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .header {
@@ -59,15 +60,19 @@ body {
   }
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 .albumName h2 {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #ffffff;
 }
 
-.albumName a {
+/* .albumName a {
   text-decoration: none;
-}
+} */
 
 .albumName a:hover {
   color: #a0a0a0;
@@ -79,9 +84,10 @@ body {
   font-size: 14px;
   color: #a0a0a0;
 }
-.artistName a {
-  text-decoration: none;
-}
+
+/* .artistName a {
+  text-decoration-line: none;
+} */
 
 .artistName a:hover {
   text-decoration: underline;
