@@ -1,11 +1,6 @@
-.playlist-sidebar {
+.playlist-section {
     display: flex;
     flex-direction: column;
-    margin-right: 4rem;
-}
-
-.playlists {
-    margin: 1rem 0;
 }
 
 .playlist-heading {
@@ -15,4 +10,9 @@
 .playlist-name {
     font-size: 14px;
     font-weight: bold;
+    color: white;
+}
+
+.cover-container {
+    margin: 2rem 0 0.5rem 0;
 }

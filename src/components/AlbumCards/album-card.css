@@ -75,6 +75,10 @@
     max-width: 100%; /* To make sure the titles don't take up more space than the max width of the container */
 }
 
+.random-album h2 {
+    margin: 0;
+}
+
 /* Removes default styling added in by the browser */
 a {
     text-decoration: none;

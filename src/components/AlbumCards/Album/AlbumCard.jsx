@@ -8,14 +8,14 @@ export const AlbumCard = ({ fullAlbum }) => {
     const { images, name, artists, external_urls } = fullAlbum;
 
     return (
-        <div className="card-content">
-            <CoverImage image={images[0]} />
+        <section className="card-content">
+            <CoverImage albumUrl={external_urls} image={images[0]} />
             <div className="names">
                 <AlbumName name={name} albumUrl={external_urls} /> 
                     <span className="artist-name">
                         <ArtistsListing artists={artists} />
                     </span>
             </div>
-        </div>
+        </section>
     );
 }

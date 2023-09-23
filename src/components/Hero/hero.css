@@ -1,13 +1,21 @@
 /* ---------------- Hero styling ---------------- */
 .header {
-    height: 250px;
+    background-position: 50% 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .hero-text {
     color: #ffffff;
     margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-image: url("../../assets/header-background.jpg");
+    }
 }

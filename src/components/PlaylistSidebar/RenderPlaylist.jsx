@@ -1,15 +1,13 @@
-import playlistData from "../../stretched-goal.json";
-import { EditorPicks } from "./Playlists/EditorPicks.jsx";
 import { Playlists } from "./Playlists/Playlists.jsx";
 import "./playlist.css";
 
-export const RenderPlaylist = () => {
-  const playlists = playlistData.playlists.items;
+export const RenderPlaylist = ({ playlistData }) => {
 
   return (
-    <aside className="playlist-sidebar">
-            <EditorPicks playlistName={playlistData.message} />
-            <Playlists playlists={playlists}/>
-    </aside>
+    <>
+        <section className="playlist-section">
+            <Playlists playlists={playlistData}/>
+        </section>
+    </>
   )
 }
