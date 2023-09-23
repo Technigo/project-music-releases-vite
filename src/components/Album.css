@@ -1,4 +1,4 @@
-.wrapper {
+.releases-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 40px;
@@ -8,14 +8,14 @@
 
 /* TABLET */
 @media (min-width: 667px) {
-  .wrapper {
+  .releases-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-  .wrapper {
+  .releases-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
 }

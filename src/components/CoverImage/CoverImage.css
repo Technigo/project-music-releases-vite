@@ -1,0 +1,12 @@
+.album-cover {
+  position: relative; /* Parent container needs to be relative so the children (button icons) can be displayed on top of it. */
+  overflow: hidden; /* So overlay won't spill outside the div */
+}
+
+.album-cover img {
+  transition: filter 0.3s ease; /* Adds smooth transition effect */
+}
+
+.album-cover:hover img {
+  filter: brightness(50%);
+}

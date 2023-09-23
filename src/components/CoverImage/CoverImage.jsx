@@ -1,15 +1,17 @@
 import "./CoverImage.css";
+import { BtnIcons } from "./BtnIcons/BtnIcons.jsx";
 
 export const CoverImage = ({ albumCover }) => {
-  const index = 0;
-  const image = {
-    url: albumCover.images[index].url,
+  const albumIndex = 0;
+  const albumImage = {
+    src: albumCover.images[albumIndex].url,
     alt: albumCover.name,
   };
 
   return (
-    <div className="cover-image">
-      <img src={image.url} alt={image.alt} />
+    <div className="album-cover">
+      <img src={albumImage.src} alt={albumImage.alt} />
+      <BtnIcons />
     </div>
   );
 };
