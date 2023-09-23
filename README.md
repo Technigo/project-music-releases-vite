@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A responsive page built with React showing 50 albums.
 
 ## Getting Started with the Project
 
@@ -24,7 +22,8 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+It was very difficult in the beginning to find the flow of building component even I understand
+the concept. It was very easy to make mistake when I have too many variables in different places.
 
 ### View it live
 
