@@ -16,7 +16,7 @@ body {
 
 /* This sets up our grid where albums will show */
 .albumGrid {
-    padding: 25px; /* Gives some space around the grid */
+    padding: 40px; /* Gives some space around the grid */
     display: grid; /* Makes it into a grid */
     grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
     gap: 25px; /* Puts space between the grid items */
@@ -88,6 +88,7 @@ body {
 
 /* This makes a dark layer on top of the album cover when hovered */
 .coverImageWrapper::before {
+   /* display: none; */
     content: ""; /* This is just a way to create an element without HTML */
     position: absolute; /* Makes it sit on top of the picture */
     top: 0; left: 0; right: 0; bottom: 0; /* Fills the whole space */
@@ -103,9 +104,10 @@ body {
 
 /* These styles are for the play buttons and other icons on top of the album cover */
 .iconGroup {
-    width: 40px;
-    display: flex; /* Lines up the icons next to each other */
-   justify-content: flex-start; /* Puts the icons in the middle */
+ /*  width: 40px; */
+ 
+   display: flex; /* Lines up the icons next to each other */
+   justify-content: center; /* Puts the icons in the middle */
    align-items: center; /* conters vertically*/
     position: absolute; /* Makes them sit on top of the picture */
     top: 0; right: 0; bottom: 0; left: 0; /* Fills the whole space */
@@ -116,27 +118,15 @@ body {
 
 /* This styles each individual icon */
 .icon {
-    margin: 0 5px; /* Puts space on the left and right sides */
+  max-width: 25px;
+    max-height: 25px; 
+   margin: 0 15px; /* Puts space on the left and right sides */
     
-}
-
-/* This styles the play buttons */
- .play-icon, .firstplay-icon {
-    display: none; /* Makes them invisible to start with */
-}
-.coverImageWrapper:hover .firstplay-icon {
-    display: block; /* Shows the first play button when you hover over the cover */
-}
-.coverImageWrapper .firstplay-icon:hover {
-    display: none; /* Hides the first play button when you hover over it */
-}
-.coverImageWrapper .firstplay-icon:hover + .play-icon {
-    display: block; /* Shows the main play button when you hover over the first one */
 }
 
 /* Makes the icons bigger when you hover over them */
 .iconGroup img.icon:hover {
-    transform: scale(1.5);
+    transform: scale(1.7);
 }
 
 /* Shows the icons when you hover over the album cover */

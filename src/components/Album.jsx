@@ -4,18 +4,16 @@ import { CoverImage } from "./CoverImage";
 import { Header } from './Header';
 
 
-export const Album = ({ album }) => {
-    console.log(album);
+export const Album = ({ album: { images, name, external_urls, artists, id } }) => {
     return (
         <div className="albumComponent">
-            <CoverImage imageUrl={album.images[0].url} />
-            <AlbumName name={album.name} spotifyUrl={album.external_urls.spotify}/>
+            <CoverImage imageUrl={images[0].url} />
+            <AlbumName name={name} spotifyUrl={external_urls.spotify} />
             <div>
-                {album.artists.map((artist, index) => (
-                    <ArtistName key={index} name={artist.name} spotifyUrl={artist.external_urls.spotify}/>
+                {artists.map(artist => (
+                    <ArtistName key={id} name={artist.name} spotifyUrl={artist.external_urls.spotify} />
                 ))}
             </div>
-           
         </div>
     );
 };
