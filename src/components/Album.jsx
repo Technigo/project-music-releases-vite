@@ -8,7 +8,8 @@ export const Album = (props) => {
   let albumName = props.album.name
   let artistName = props.album.artists[0].name
   let coverImage = props.album.images[0].url
-  let MusicUrl = props.album.external_urls
+  let MusicUrl = props.album.external_urls.spotify
+
 
 
   return (
