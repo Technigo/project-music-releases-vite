@@ -6,32 +6,18 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The objetive was to create an application showing recent album and singles releases using React, to get familiar with components and props. 
 
 ## Getting Started with the Project
 
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+I had to spendmore time than usual to study the material on Technigo as well as other videos on Frontend Masters and Youtube to get going. It was har du grasp the props/data flow, and components, but once I figured out how it worked everything went fairly smooth, and felt easier. 
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I planned the project based on the requirments of different components and designs provided, but other than that no sketch of my own. After going on to doing the stretch goals I wished I would have had an other sketch. It was har to jsut do it out of my mind. Next time I'll prep a sketch!
+
+I went through an entire course called Javascript Intro (https://react-v8.holt.courses/). I had to look up a lot of resources on styling, even though I usually feel comfortable with styling. There where some complext parts here to figure out, like how to "stack" items, create transition effects etc. W3schools and ChatGpt where used a lot.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://music-releases-laura-lyckholm.netlify.app/

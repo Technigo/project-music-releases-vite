@@ -1,0 +1,104 @@
+/* ---------------- Styling the cards ---------------- */
+.cover-image {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    z-index: 1; /* Places the cover image behind the icon-container which has a higher z-index */
+}
+
+.cover-container:hover .cover-image {
+    filter: brightness(40%); /* Lowers the brightness for a dark hover effect */
+    transition: all 0.35s ease-in-out; /* Makes the transition easier */
+    -webkit-filter: brightness(40%); /* For browser compatibility */
+    -webkit-transition: all 0.35s ease-in-out; /* For browser compatibility */
+}
+
+/* ---------------- Icon related styling ---------------- */
+/* Makes the entire container containing the icons and cover image a grid with one row and one column, placing items in center */
+.cover-container {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
+}
+
+/* Makes everything within cover-container place on grid-column & grid-row 1 / 1 */
+.cover-container > * {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.icon-container img {
+    margin: 0.5rem;
+    opacity: 50%; /* Lowers opacity on icons before hover */
+}
+
+/* Changes size of icons */
+#favorite-icon, #more-info-icon {
+    width: 33px;
+}
+
+#play-icon {
+    width: 43px;
+}
+
+/* Makes the icons hidden on default */
+.hidden {
+    display: none;
+}
+
+/* Makes the appear on hover of cover-container */
+.cover-container:hover .hidden {
+    display: flex;
+}
+
+/* Changes size of icons on hover */
+.icon-container img:hover {
+    transform: scale(1.2);
+    opacity: 100%; /* Raises opacity during hover */
+}
+
+
+/* ---------------- Styling for the text in each album ---------------- */
+.album-title, .artist-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    max-width: 100%; /* To make sure the titles don't take up more space than the max width of the container */
+}
+
+.random-album h2 {
+    margin: 0;
+}
+
+/* Removes default styling added in by the browser */
+a {
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+/* Adds styling on hover on the links */
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.album-title {
+    color: #ffffff;
+}
+
+.artist-name {
+    display: inline-block;
+    color: #a0a0a0;
+    margin-top: 1rem;
+}

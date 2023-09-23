@@ -1,0 +1,171 @@
+/* ---------------- Overall styling ---------------- */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #000000;
+    margin: 2rem;
+    color: white;
+}
+
+.albums-heading {
+    margin: 0;
+}
+
+/* ---------------- Grid layout ---------------- */
+.body-container {
+    grid-template-rows: repeat(6, auto); /* Six rows for mobile layout */
+}
+
+.header {
+    grid-row: 1;
+}
+
+.random-album {
+    grid-row: 2;
+}
+
+.albums-heading {
+    grid-row: 3;
+}
+
+.album-cards {
+    grid-row: 4;
+}
+
+.singles-heading {
+    grid-row: 5;
+}
+
+.singles-cards {
+    grid-row: 6;
+}
+
+.playlist-heading {
+    grid-row: 7;
+}
+
+.playlist-section {
+    grid-row: 8;
+}
+
+/* Using grid to correctly position the cards on each device width */
+/* ---------------- Media queries for grid layout ---------------- */
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .body-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+        grid-template-rows: repeat(7, auto); /* 7 rows for tablet layout */
+        gap: 2rem;
+    }
+
+    .header {
+        grid-column: 2;
+        grid-row: 1; /* Adjust the row as needed */
+    }
+    
+    .random-album {
+        grid-column: 1;
+        grid-row: 1; /* Adjust the row as needed */
+        margin: 0;
+    }
+    
+    .albums-heading {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .singles-cards {
+        grid-column: 1 / span 2;
+        grid-row: 5; /* Adjust the row as needed */
+    }
+
+    .singles-heading {
+        grid-column: 1 / 2;
+        grid-row: 4;
+    }
+
+    .album-cards, .singles-cards {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        overflow: scroll;
+    }
+    
+    .album-cards {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+        display: grid; /* Using grid to correctly position the cards on each device width */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .playlist-heading {
+        grid-column: 1 / 2; /* Adjust to make room for album-cards */
+        grid-row: 6; /* Adjust the number of rows as needed */
+    }
+    
+    .playlist-section {
+        grid-column: 1 / span 2; /* Adjust to make room for album-cards */
+        grid-row: 7; /* Adjust the number of rows as needed */
+        text-align: center;
+    }
+}
+  
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .body-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 0.5rem 3rem;
+    }
+    
+    .header {
+        grid-column: 2 / 5;
+        grid-row: 1;
+    }
+    
+    .random-album {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .albums-heading {
+        grid-column: 2 / 5;
+        grid-row: 2;
+    }
+
+    .album-cards {
+        grid-column: 2 / 5;
+        grid-row: 3;
+    }
+
+    .singles-cards {
+        grid-column: 2 / 5;
+        grid-row: 5;
+    }
+
+    .singles-heading {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .album-cards, .singles-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        overflow: scroll;
+    }
+    
+    .playlist-heading {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .playlist-section {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
