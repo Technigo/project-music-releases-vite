@@ -32,14 +32,11 @@ code {
   margin-bottom: 2em;
 }
 
-.coverImage-wrapper {
-  margin-bottom: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.coverImage-wrapper:hover {
-  filter: brightness(45%);
-}
+.album-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+} 
 
 .album-card {
   margin: 10px;
@@ -51,11 +48,61 @@ code {
   max-width: 600px;
 }
 
-.album-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-} 
+.coverimage-wrapper {
+  position: relative;
+}
+
+.coverimage-wrapper img:hover{
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.white-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* .coverImage-wrapper {
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* .coverImage-wrapper:hover {
+  filter: brightness(45%);
+} */
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 0;
+}
+
+.icon-container img {
+  width: 35px;
+}
+
+.icon-container button {
+  border: none;
+  background: transparent;
+  overflow: visible;
+  color: white;
+  gap: 20px;
+}
+
+/* .iconContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  top: 40%;
+  left: 0;
+} */
+
+
 
 .album-name h2 {
   margin: 0 0 0.4em 0;
@@ -106,6 +153,11 @@ code {
   .album-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .icon-wrapper {
+    gap: 20px;
+}
+
 }
 
 @media (min-width: 1025px) {
