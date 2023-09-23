@@ -5,7 +5,7 @@ import IconDots from './assets/icons/dots.svg';
 import AlbumName from './AlbumName';
 import './index.css';
 
-function AlbumCard(props) {
+const AlbumCard = (props) => {
   const { album } = props;
   const { images, external_urls, name, artists } = album;
   const coverImage = images[0]?.url;
@@ -48,25 +48,25 @@ function AlbumCard(props) {
       </div>
     </div>
   );
-}
+};
 
-// AlbumCard.propTypes = {
-//   album: PropTypes.shape({
-//     images: PropTypes.array.isRequired,
-//     external_urls: PropTypes.shape({
-//       spotify: PropTypes.string.isRequired,
-//     }).isRequired,
-//     name: PropTypes.string.isRequired,
-//     artists: PropTypes.arrayOf(
-//       PropTypes.shape({
-//         id: PropTypes.string.isRequired,
-//         external_urls: PropTypes.shape({
-//           spotify: PropTypes.string.isRequired,
-//         }).isRequired,
-//         name: PropTypes.string.isRequired,
-//       })
-//     ).isRequired,
-//   }).isRequired,
-// };
+AlbumCard.propTypes = {
+  album: PropTypes.shape({
+    images: PropTypes.array.isRequired,
+    external_urls: PropTypes.shape({
+      spotify: PropTypes.string.isRequired,
+    }).isRequired,
+    name: PropTypes.string.isRequired,
+    artists: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        external_urls: PropTypes.shape({
+          spotify: PropTypes.string.isRequired,
+        }).isRequired,
+        name: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  }).isRequired,
+};
 
 export default AlbumCard;

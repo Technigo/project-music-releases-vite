@@ -34,18 +34,14 @@
 
 // export default Album;
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Header from './Header';
 import AlbumCard from './AlbumCard';
 import data from './data.json';
 import './index.css';
 
 function Album() {
-  const [albums, setAlbums] = useState([]);
-
-  useEffect(() => {
-    setAlbums(data.albums.items);
-  }, []);
+  const albums = data.albums.items;
 
   return (
     <div>
@@ -60,3 +56,4 @@ function Album() {
 }
 
 export default Album;
+
