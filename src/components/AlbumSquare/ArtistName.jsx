@@ -1,4 +1,6 @@
-const ArtistName = ({ artists, albumURL }) => {
+import { ArtistNameSeparator } from "./ArtistNameSeparator.jsx";
+
+export const ArtistName = ({ artists, albumURL }) => {
     return (
         <p className="ArtistName">
             {artists.length > 0 ? (
