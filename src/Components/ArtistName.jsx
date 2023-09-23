@@ -1,6 +1,7 @@
 export const ArtistName = (mappedOutItem) => {
 const { albumsArray } = mappedOutItem;
 
+console.log(albumsArray)
 return (
     <section className="artist-name">
       {albumsArray.map((mappedOutItem) => (

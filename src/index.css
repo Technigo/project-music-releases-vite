@@ -15,7 +15,152 @@ code {
 body {
   background-color: black;
 }
+
+/* Header */
+.spotify-logo {
+  display: flex;
+  justify-content: flex-start;
+}
 .header-container {
-display: flex;
-justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+  flex-wrap: wrap;
+}
+.header-title {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 24px;
+  font-family: Helvetica,sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.header-line {
+  width:100%;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+/* Album Container */
+.album-container {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+.album-card {
+  width: 90%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+}
+.album-image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5%;
+}
+.album-name{
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding-top: 10px;
+  text-transform: uppercase;
+ }
+ .album-name:hover{
+  color: var(--secondary);
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+ }
+
+/* Artist */
+.artists > a:link {
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  color:  grey;
+  opacity: 0.8;
+  text-decoration: none;
+  padding-top: 5px;
+}
+.artists a:visited {
+ color:  var(--primary);
+ opacity: 0.6;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+.artists > a:hover {
+ color: var(--third);
+ opacity: 1;
+ border-bottom: 1px solid;
+}
+
+.artists > :not(:last-child):not(:first-child):before {
+ content: ", ";
+ white-space: pre;
+ color: var(--primary);
+}
+
+.artists > :last-child:before {
+ content: " & ";
+ white-space: pre;
+ color: var(--primary);
+}
+
+.artists > :only-child:before {
+ content: "";
+}
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+/* Image-container */
+.image-overlay {
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.image-container:hover .image-overlay {
+  background: rgba(83, 82, 82, 0.8);
+  transition: 0.4s ease;
+}
+
+.image-overlay .play-icon{
+ transform: scale(1.8);
+ transition: 0.3s ease;
+}
+
+
+.icons-container {
+  position: absolute;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+
+.image-container:hover .icons-container {
+  display: flex;
+}
+
+/* Footer */
+.footer {
+  color: #fff;
 }

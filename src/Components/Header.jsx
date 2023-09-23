@@ -3,14 +3,18 @@ export const Header = () => {
       imgUrl: "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png",
       imgAlt: "An image of Spotify Logo"
     };
-    const headerText = "";
-  
     return (
-      <header>
+      <header>          
+      <div className="spotify-logo">
+      <img src={imageObject.imgUrl}
+        width={100}
+        height={32}
+      alt={imageObject.imgAlt}/>
+      </div> 
         <div className="header-container">
-        <img src={imageObject.imgUrl} width={1000} height={300} alt={imageObject.imgAlt} />
-        <p>{headerText}</p>
-        </div>
+          <h1 className="header-title">New Albums & Singels</h1>
+          <h2 className="header-line">Technigo Lemon Isaac</h2>   
+        </div>    
       </header>
     );
   };
