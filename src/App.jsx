@@ -10,7 +10,7 @@ const albumList = () => {
   return albumData.map((album) => (
     <AlbumCard
       key={album.id}
-      artistName={album.artists.name} 
+      artistName={album.artists.name}
       externalUrl={album.external_urls.spotify}  //When you click on the album name and artist it should take you to the spotify page
       imageUrl={album.images[0].url}
       albumName={album.name}
@@ -21,10 +21,13 @@ const albumList = () => {
 export const App = () => {
   return (
     <>
-      <Header />
-      <div className="albumWrapper">
-        {albumList()}
-      </div>
-    </>);
+      <main>
+        <Header />
+        <div className="albumWrapper">
+          {albumList()}
+        </div>
+      </main>
+    </>
+    );
 };
 

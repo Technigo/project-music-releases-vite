@@ -3,6 +3,7 @@ export const AlbumName = ({ albumName }) => {
     return (
       <div>
         <p className="albumName">{albumName}</p>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
       </div>
     )
   };

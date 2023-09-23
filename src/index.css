@@ -12,6 +12,17 @@ code {
     monospace;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+background-color: black;
+}
 
 .albumWrapper {
   display: grid;
@@ -28,3 +39,6 @@ code {
   filter: brightness(60%);
   transition: .2s;
 }
+
+
+

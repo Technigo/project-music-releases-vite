@@ -1,6 +1,6 @@
-import { AlbumCover } from "./CoverImage/AlbumCover.jsx";
+import { AlbumCover } from "./AlbumCover.jsx";
 import { AlbumName } from "./AlbumName.jsx";
-import { ArtistName } from "./ArtistName.jsx"
+import { ArtistName } from "./ArtistName.jsx";
 
 // Parent component
 export const AlbumCard= ({ imageUrl, albumName, artistName, externalUrl }) => {
