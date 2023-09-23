@@ -1,14 +1,21 @@
-// Child component
-export const AlbumName = ({ albumName }) => {
-    return (
-      <div>
-        <p className="albumName">{albumName}</p>
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-      </div>
-    )
+import ".././css_Components/AlbumName.css"
+
+
+// Album name component
+export const AlbumName = ({ albumNameItem }) => {
+
+  let albumNameObject = {
+    singleAlbumName: albumNameItem.name,
+    aHref: albumNameItem.external_urls.spotify,
   };
-  
-  // This is a feature in React that allows me to specify default values for props in case they are not provided or are passed as undefined.
-  AlbumName.defaultProps = {
-    name: "Album info is missing",
-  };
+
+  return (
+    <div className="albumNameWrapper">
+      <a href={albumNameObject.aHref} target="_blank" rel="noopener noreferrer">
+        <h2>
+          {albumNameObject.singleAlbumName}
+        </h2>
+      </a>
+    </div>
+  )
+};

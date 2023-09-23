@@ -1,0 +1,15 @@
+.header {
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1.header {
+    font-size: calc(24px + 3vw);
+    margin-bottom: 0.5em;
+  }
+
+  p.header {
+    font-size: calc(16px + 1vw);
+  }

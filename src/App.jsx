@@ -4,30 +4,17 @@ import data from "./data.json";
 
 console.log(data);
 
-
-const albumList = () => {
-  const albumData = data.albums.items;
-  return albumData.map((album) => (
-    <AlbumCard
-      key={album.id}
-      artistName={album.artists.name}
-      externalUrl={album.external_urls.spotify}  //When you click on the album name and artist it should take you to the spotify page
-      imageUrl={album.images[0].url}
-      albumName={album.name}
-    />
-  ));
-};
-
 export const App = () => {
   return (
     <>
       <main>
         <Header />
         <div className="albumWrapper">
-          {albumList()}
+          {/* Passing the whole data object as a prop which allows the AlbumCard component to have access to the data object and use its properties or values as needed. */}
+          <AlbumCard musicData={data} />
         </div>
       </main>
     </>
-    );
+  );
 };
 
