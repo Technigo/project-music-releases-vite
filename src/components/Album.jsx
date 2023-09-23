@@ -6,6 +6,7 @@ export const Album = ({ albumInfo }) => {
   console.log(albumInfo);
 
   const artistNameParent = albumInfo.artists[0].name;
+  const externalArtistHref = albumInfo.artists[0].external_urls.spotify;
   const albumNameParent = albumInfo.name;
   const externalAlbumHref = albumInfo.external_urls.spotify;
   const imageRefParent = {
@@ -16,9 +17,12 @@ export const Album = ({ albumInfo }) => {
   return (
     <div>
       <a href={externalAlbumHref} target="_blank" rel="noopener noreferrer">
-        <AlbumName albumNameProp={albumNameParent} />
-        <ArtistName artistNameProp={artistNameParent} />
         <CoverImage imageRefProp={imageRefParent} />
+
+        <AlbumName albumNameProp={albumNameParent} />
+      </a>
+      <a href={externalArtistHref} target="_blank" rel="noopener noreferrer">
+        <ArtistName artistNameProp={artistNameParent} />
       </a>
     </div>
   );

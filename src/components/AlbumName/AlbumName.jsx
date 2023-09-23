@@ -1,7 +1,9 @@
 export const AlbumName = ({ albumNameProp }) => {
   return (
-    <div>
-      <h3>AlbumName - {albumNameProp}</h3>
+    <div className="albumName">
+      <a>
+        <h2>AlbumName - {albumNameProp}</h2>
+      </a>
     </div>
   );
 };

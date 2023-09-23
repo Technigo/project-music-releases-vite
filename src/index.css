@@ -12,7 +12,8 @@ code {
     monospace;
 }
 
-body{
+body {
+  margin: 0;
   background-color: black;
   color: #ffffff;
 }
@@ -25,23 +26,23 @@ body{
   align-items: center;
   flex-direction: column;
   margin: 0;
-  }
+}
 
-.header h1{
+.header h1 {
   font-size: 20px;
-  }
+}
 
- .album-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 25px;
-  }
-  
-  .album {
-    margin: 10px;
-  }
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+}
 
-  /* Styles for tablets and below */
+.album {
+  margin: 10px;
+}
+
+/* Styles for tablets and below */
 @media only screen and (max-width: 768px) {
   .album-wrapper {
     grid-template-columns: 1fr 1fr;
@@ -56,4 +57,34 @@ body{
   .album-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.albumName h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.albumName a {
+  text-decoration: none;
+}
+
+.albumName a:hover {
+  color: #a0a0a0;
+  text-decoration: underline;
+}
+
+.artistName h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+.artistName a {
+  text-decoration: none;
+}
+
+.artistName a:hover {
+  text-decoration: underline;
+  text-decoration-color: #a0a0a0;
+  color: #a0a0a0;
 }
