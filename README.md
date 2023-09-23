@@ -27,7 +27,7 @@ the concept. It was very easy to make mistake when I have too many variables in 
 
 ### View it live
 
-https://unrivaled-mandazi-3af2a7.netlify.app/
+https://superb-sherbet-828f31.netlify.app/
 
 ## Instructions
 
