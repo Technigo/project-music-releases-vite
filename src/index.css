@@ -1,5 +1,4 @@
 :root {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -50,6 +49,10 @@ code {
   grid-gap: 20px;
 } 
 
+.album-name h2 {
+  margin: 0 0 0.4em 0;
+}
+
 .album-name a {
   text-decoration: none;
   color: #ffffff;
@@ -59,6 +62,14 @@ code {
 
 .album-name a:hover {
   text-decoration: underline;
+ }
+
+ .artist-name {
+  display: flex;
+ }
+
+ .artist-name h3 {
+  margin: 0 0 0.75em 0;
  }
 
 .artist-name a {
@@ -72,6 +83,16 @@ code {
   text-decoration: underline;
   color: #a0a0a0;
 } 
+
+.ampersand-space::before {
+  content: "\00a0"; /* Non-breaking space before the ampersand */
+}
+.ampersand-space::after {
+  content: "\00a0"; /* Non-breaking space after the ampersand */
+}
+.comma-space::after {
+  content: "\00a0"; /* Non-breaking space after the comma */
+}
 
 @media (min-width: 667px) {
   .album-container {

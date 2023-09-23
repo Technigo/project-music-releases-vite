@@ -2,11 +2,11 @@
 
 const ArtistDevider = ({ index, length }) => {
     if (index === length - 2) {
-        return " & ";
+        return <span className="ampersand-space"> &amp; </span>;
     } else if (index < length - 2) {
-        return ", ";
+        return <span className="comma-space">, </span>
     }
-    return;
+    return null; // Default case returns null to render nothing;
 }
 
 export default ArtistDevider
