@@ -2,7 +2,7 @@ import React from "react";
 import data from "./data.json";
 import "./app.css";
 import { Header } from "./components/Header/Header.jsx";
-import { Album } from "./components/Albumsqaure/Album.jsx";
+import { Album } from "./components/AlbumSquare/Album.jsx";
 
 export const App = () => {
   const albums = data.albums.items;
