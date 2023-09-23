@@ -3,10 +3,9 @@
 // Imports the necessary information from the other files
 //Put in {  } and remove export default on the other files? And write export const...
 //??
-import PropTypes from 'prop-types';
-import AlbumName from './AlbumName/AlbumName.jsx';
-import ArtistNames from './ArtistName/ArtistName.jsx';
-import CoverImage from './CoverImage/CoverImage.jsx';
+import { AlbumName } from './AlbumName/AlbumName.jsx';
+import { ArtistNames } from './ArtistName/ArtistName.jsx';
+import { CoverImage } from './CoverImage/CoverImage.jsx';
 
 //HUR IMPORTERAR MAN????
 import "./Album.css"
@@ -28,8 +27,3 @@ export const Album = ({ albumsArray }) => {
     </section>
   );
 };
-
-// Explains that the type of props that is expected to the component is an array
-Album.propTypes = {
-    albumsArray: PropTypes.array.isRequired
-  }
