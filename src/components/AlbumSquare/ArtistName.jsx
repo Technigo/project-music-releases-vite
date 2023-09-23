@@ -1,25 +1,21 @@
-import { ArtistNameSeparator } from "./ArtistNameSeparator.jsx";
+import React from 'react';
+import { ArtistNameSeparator } from './ArtistNameSeparator';
 
 export const ArtistName = ({ artists, albumURL }) => {
     return (
-        <p className="ArtistName">
-            {artists.length > 0 ? (
-                artists.map((artist, index) => (
-                    <span key={artist.id}>
-                        <a
-                            href={artist.external_urls.spotify}
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            {artist.name}{" "}
-                        </a>
-                        {index < artists.length - 1 ? "& " : ""}
-                    </span>
-                ))
-            ) : (
-                "No artist information available"
-            )}
-        </p>
+        <div className="ArtistName">
+        {artists.map((artist, index) => ( //map method to iterate over the 'artists' array and render artist names.
+            <div key={artist.id}>
+                <p className="artist-name">
+                    <a href={artist.external_urls.spotify} target="_blank" rel="noopener norefferer">
+                        {artist.name}
+                    </a>
+                    {index < artists.length - 1 && <ArtistNameSeparator />}
+                    </p>
+                    </div>
+        ))}
+        </div>
     );
-};
-
+}
 export default ArtistName;
+      

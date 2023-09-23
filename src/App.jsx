@@ -8,6 +8,7 @@ export const App = () => {
   const albums = data.albums.items;
   console.log(albums);
 
+
   const renderAlbums = () => {
     return albums.map((album) => (
       <Album
@@ -21,12 +22,14 @@ export const App = () => {
   };
 
     return (
+      <>
       <div id="root" className="root">
       <Header />
       <div className="FlexContainer">
         {renderAlbums()}
       </div>
     </div>
+    </>
   );
 };
 
