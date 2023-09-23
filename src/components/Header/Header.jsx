@@ -1,6 +1,6 @@
 import "./Header.css"
 
-const Header = () => {
+export const Header = () => {
     return (
         <div>
             <h1 className="header">New Albums & Singles</h1>
@@ -9,4 +9,4 @@ const Header = () => {
     )
 }
 
-export default Header
+//export default Header

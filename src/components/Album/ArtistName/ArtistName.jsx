@@ -7,8 +7,8 @@ export const ArtistNames = ({ artistsArray }) => {
   return (
     <div className="artist-names">
         {artistsArray.map((mappedOutArtist) => (
-            <h3 className="artist-name" key={mappedOutArtist.id}>{mappedOutArtist.name}
-            </h3>
+            <h3 className="artist-name-link" key={mappedOutArtist.id}>
+            <a href={mappedOutArtist.external_urls.spotify} target="_blank" rel="noopener noreferrer">{mappedOutArtist.name}</a></h3>
         ))}
     </div>
   )

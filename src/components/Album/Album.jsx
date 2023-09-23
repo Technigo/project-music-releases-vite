@@ -20,8 +20,8 @@ export const Album = ({ albumsArray }) => {
          {albumsArray.map((mappedOutItem) => (
              <div className="album-card" key={mappedOutItem.id}>
                 <CoverImage coverImage={mappedOutItem.images[0].url} />
-                <AlbumName albumName={mappedOutItem.name} />
-                <ArtistNames artistsArray={mappedOutItem.artists} />
+                <AlbumName albumName={mappedOutItem.name} albumURL={mappedOutItem.external_urls.spotify} />
+                <ArtistNames artistsArray={mappedOutItem.artists} artistURL={mappedOutItem.external_urls.spotify} />
              </div>
         ))};
     </section>

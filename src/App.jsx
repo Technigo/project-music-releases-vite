@@ -1,6 +1,6 @@
 // Imports the necessary information from the other files
 import data from "./data.json";
-import Header from "./components/Header/Header";
+import { Header } from "./components/Header/Header";
 import { Album } from "./components/Album/Album";
 
 console.log(data);

@@ -1,4 +1,10 @@
-.album-title-link h2 {
+.album-title-link a {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
 }
+
+.album-title-link a:hover {
+    text-decoration: underline;
+  }

@@ -1,5 +1,10 @@
-.artist-name {
+.artist-name-link a {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
     color: #a0a0a0;
+    text-decoration: none;
 }
+
+.artist-name-link a:hover {
+    text-decoration: underline;
+  }
