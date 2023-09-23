@@ -2,6 +2,7 @@ import React from "react";
 import CoverImage from "./CoverImage";
 import AlbumName from "./AlbumName";
 import ArtistName from "./ArtistName";
+import "./albumsquare.css"
 
 export const Album = ({ name, artists, images, albumURL }) => {
     return (
