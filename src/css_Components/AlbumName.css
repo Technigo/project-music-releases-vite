@@ -1,0 +1,19 @@
+/* Styling rules: Album title - 14px Helvetica #ffffff
+Album link should be underlined when hovering
+*/
+
+.albumNameWrapper h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .albumNameWrapper a {
+    text-decoration: none;
+  }
+  
+  /* Add an underline when hovering over the album name. Change color to match the grey of the artist name */
+  .albumNameWrapper a:hover {
+    text-decoration: underline;
+    color: #a0a0a0;
+  }
