@@ -2,6 +2,7 @@ import React from "react";
 import data from "./data.json";
 import { Album } from "./components/Album.jsx";
 import { Header } from "./components/Header.jsx";
+import "./components/App.css";
 
 export const App = () => {
   const albums = data.albums.items;
@@ -15,7 +16,8 @@ export const App = () => {
             <Album 
               key={album.id} 
               name={album.name}
-              artist={album.artists.map((artist) => artist.name)} 
+              artistName={album.artists.map((artist) => artist.name)} 
+              artistLink={album.artists.map((artist) => artist.external_urls.spotify)}
               cover={album.images} />
           )
         })}

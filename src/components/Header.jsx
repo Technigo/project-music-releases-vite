@@ -1,5 +1,7 @@
+import "./Header.css";
+
 export const Header = () => {
     return (
-        <div><h1>Latest releases</h1></div>
+        <div><h3>New albums & singles</h3></div>
     )
 };

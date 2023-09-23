@@ -1,0 +1,25 @@
+.album-card {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.album-name {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.artist-name {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.artist-name a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.artist-name a:visited {
+    color: #777777;
+    text-decoration: none;
+} 

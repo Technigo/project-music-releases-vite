@@ -1,3 +1,5 @@
+import "./Album.css";
+
 export const AlbumName = ({ name }) => {
     return (
         <div className="album-name">
