@@ -1,8 +1,12 @@
-.artist-name-link h3 {
-    margin: 0;
+.artist-name-link {
+    display: flex;
 }
 
-.artist-name-link a {
+.artist-name-link h3 {
+margin: 0 0 0.75em 0;
+}
+
+.artist-names a {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
     color: #a0a0a0;
@@ -10,6 +14,6 @@
     margin: 0;
 }
 
-.artist-name-link a:hover {
+.artist-names a:hover {
     text-decoration: underline;
   }

@@ -1,3 +1,7 @@
+.album-title-link h2 {
+    margin: 0 0 4px 0;
+}
+
 .album-title-link a {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
