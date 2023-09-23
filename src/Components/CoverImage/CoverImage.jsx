@@ -14,9 +14,9 @@ const [isShown,setIsShown]=useState(false)
     <img className={`${style.coverImage} ${isShown ? style.dark : ""}`} src={imageUrl}  />
     <div className={style.icon_wrapper}  onMouseOver={() => setIsShown(true)}  onMouseLeave={() => setIsShown(false)}>
 
-    <img className={`${style.icon_like}  ${isShown ? style.visible : ""}`} src="src/assets/icons/like.png"/>
-    <img className={`${style.icon_play}  ${isShown ? style.opacity : ""} ${isShown ? style.visible : ""}`} src="src/assets/icons/play.png"/>
-    <img className={`${style.icon_more}  ${isShown ? style.visible : ""}`} src="src/assets/icons/more.png"/>
+    <img className={`${style.icon_like}  ${isShown ? style.visible : ""}`} src="/assets/icons/like.png"/>
+    <img className={`${style.icon_play}  ${isShown ? style.opacity : ""} ${isShown ? style.visible : ""}`} src="/assets/icons/play.png"/>
+    <img className={`${style.icon_more}  ${isShown ? style.visible : ""}`} src="/assets/icons/more.png"/>
     </div>
           
     </div>)}
