@@ -4,8 +4,9 @@ import { ArtistsListing } from "./Artists/ArtistsListing.jsx";
 import { CoverImage } from "./CoverImage.jsx";
 
 // Functional component that destructures image, name and artist to the component props image, album and artist.
+// One of the most important components that displays the entire album information
 export const AlbumCard = ({ fullAlbum }) => {
-    const { images, name, artists, external_urls } = fullAlbum;
+    const { images, name, artists, external_urls } = fullAlbum; // Destructuring fullAlbum to only get the parts I need from the long object
 
     return (
         <section className="card-content">

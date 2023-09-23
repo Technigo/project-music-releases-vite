@@ -46,10 +46,12 @@
     width: 43px;
 }
 
+/* Makes the icons hidden on default */
 .hidden {
     display: none;
 }
 
+/* Makes the appear on hover of cover-container */
 .cover-container:hover .hidden {
     display: flex;
 }

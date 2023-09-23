@@ -1,3 +1,4 @@
+// Component for adding in buttons, bu making a component here I could easily add in the buttons on other components too.
 export const IconButtons = () => {
   return (
     <div className="icon-container hidden">

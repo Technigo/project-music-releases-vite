@@ -1,6 +1,7 @@
 import "../../AlbumCards/album-card.css";
 import { IconButtons } from "../../AlbumCards/Album/IconButtons/IconButtons";
 
+// Components to show the playlist/Editor's picks from stretched-goals.json
 export const Playlists = ({ playlists }) => {
   return (
     <>

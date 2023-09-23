@@ -7,6 +7,7 @@ import { RenderPlaylist } from "./PlaylistSidebar/RenderPlaylist.jsx"
 import { RandomAlbum } from "./AlbumCards/RandomAlbum.jsx";
 import { EditorPicks } from "./PlaylistSidebar/Playlists/EditorPicks";
 
+// Main component that renders all components
 export const App = () => {
   const albumData = data.albums.items;
 
@@ -19,21 +20,22 @@ export const App = () => {
   // The contents that are actually rendered via Main.jsx onto the Virtual Dom. The map-method is used here to go through each object in the array. The component Albums takes in the data and adds in the correct value into the propNames image, name and artist. Header is appended first, since I don't want this to render more than once.
   return (
     <div className="body-container">
+        {/* Generates header */}
         <header className="header">
             <Header />
         </header>
         <h2 className="albums-heading">New albums</h2>
         <div className="album-cards">
-          {/* Generates albums */}
+        {/* Generates albums */}
         {albums.map((album) => (
-          <AlbumCard fullAlbum={album} key={album.id} />
+            <AlbumCard fullAlbum={album} key={album.id} />
         ))}
         </div>
         <h2 className="singles-heading">New singles</h2>
         <div className="singles-cards">
-          {/* Generates singles */}
+        {/* Generates singles */}
         {singles.map((single) => (
-          <AlbumCard fullAlbum={single} key={single.id} />
+            <AlbumCard fullAlbum={single} key={single.id} />
         ))}
         </div>
         {/* Generates random album on each reload */}
