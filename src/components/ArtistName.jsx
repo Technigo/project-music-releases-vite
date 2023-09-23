@@ -1,13 +1,21 @@
-// Child component
-export const ArtistName = ({ artistName }) => {
-    return (
-      <div>
-        <p className="artistName">{artistName}</p>
-      </div>
-    )
-  };
-  
-  // This is a feature in React that allows me to specify default values for props in case they are not provided or are passed as undefined.
-  ArtistName.defaultProps = {
-    artists: "Artist name is missing"
-  };
+import ".././css_Components/ArtistName.css"
+
+
+export const ArtistName = ({ artistNameItem }) => {
+  const { artists } = artistNameItem;
+
+  let artistNames = artists.map((artist, index) => (
+    <span key={artist.id} class="artistList">
+      <a href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+        {artist.name}
+      </a>
+      {index < artists.length - 1 && (index === artists.length - 2 ? ' & ' : ', ')}
+    </span>
+  ));
+
+  return (
+    <div className="artistNameWrapper">
+      <h3>{artistNames}</h3>
+    </div>
+  );
+};
