@@ -8,7 +8,7 @@ body{
 .allAlbums{
   color: antiquewhite;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr ;
   padding: 30px;
 }
 .eachAlbum{
@@ -20,4 +20,60 @@ img{
 img :hover {
   opacity: .4;
   transition: .4s;
+}
+
+
+.cover-container {
+display: grid;
+place-items: center;
+grid-template: 1fr / 1fr;
+
+}
+
+/* Makes everything within cover-container place on grid-column & grid-row 1 / 1 */
+.cover-container > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.icon-container img {
+  margin: 0.5rem;
+  opacity: 80%; /* Lowers opacity on icons before hover */
+}
+
+.music-link{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.music-link a{
+  color: white;
+  text-decoration: none;
+}
+.album-link{
+  margin-top: 20px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px){
+
+  .allAlbums{
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+@media (min-width: 1025px){
+  .allAlbums{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+
+
 }

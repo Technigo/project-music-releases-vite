@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-export const AlbumName = ({ name }) => {
+export const AlbumName = ({ name, musicUrl }) => {
   return (
-    <p>
-      {name}
-    </p>
+    <a className="album-link" href={musicUrl}>{name}
+    </a>
+   
   );
 };

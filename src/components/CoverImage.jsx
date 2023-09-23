@@ -5,8 +5,10 @@ export const CoverImage = ({ images }) => {
 
   return (
     <>
-  <img src={imageUrl} alt="Album Cover" className="coverImage" />
-  <IconsButtons />
+      <div className="cover-container">
+      <img src={imageUrl} alt="Album Cover" className="coverImage" />
+      <IconsButtons />
+      </div>
   </>
   )
 }
