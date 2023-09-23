@@ -55,17 +55,24 @@ code {
   color: #ffffff;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 .album-name a:hover {
   text-decoration: underline;
  }
 
-.artist-name {
+.artist-name a {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
+  text-decoration: none;
 }
+
+.artist-name h3:hover {
+  text-decoration: underline;
+  color: #a0a0a0;
+} 
 
 @media (min-width: 667px) {
   .album-container {
