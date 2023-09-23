@@ -27,7 +27,7 @@ the concept. It was very easy to make mistake when I have too many variables in 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://unrivaled-mandazi-3af2a7.netlify.app/
 
 ## Instructions
 
