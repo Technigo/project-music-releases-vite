@@ -32,6 +32,14 @@ code {
   margin-bottom: 2em;
 }
 
+.coverImage-wrapper {
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.coverImage-wrapper:hover {
+  filter: brightness(45%);
+}
 
 .album-card {
   margin: 10px;
