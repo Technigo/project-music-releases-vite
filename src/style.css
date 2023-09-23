@@ -19,11 +19,13 @@ body {
   filter: brightness(50%);
 }
 
-.iHeart,
-.iPlay,
-.iMore {
+.icon {
   filter: invert(1);
   width: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.5);
 }
 
 .coverImage {
