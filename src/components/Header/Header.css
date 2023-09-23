@@ -1,12 +1,14 @@
 /* H1 - 20px Helvetica #fff */
-header h1 {
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
+header {
+  width: 100%;
 }
 
-hr {
-  height: 2px;
-  border-width: 0;
-  background-color: #252525;
-  margin: 5px 0;
+header h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+header img {
+  width: 10rem;
+  margin-bottom: 1rem;
 }

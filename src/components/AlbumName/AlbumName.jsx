@@ -9,9 +9,11 @@ export const AlbumName = ({ albumName }) => {
   };
   return (
     <div className="album-name">
-      <a href={track.href} target={track.target}>
-        <h2>{track.album}</h2>
-      </a>
+      <h2>
+        <a href={track.href} target={track.target}>
+          {track.album}
+        </a>
+      </h2>
     </div>
   );
 };

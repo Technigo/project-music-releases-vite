@@ -6,26 +6,40 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 
-button {
+.cover-btn svg {
+  fill: white;
+}
+
+.cover-btn {
   background-color: transparent;
   border-width: 0;
+  opacity: 0.6;
+  transition: 0.3s ease;
 }
 
+.cover-btn:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+/* Width on each button */
 .heart-btn {
   width: 2rem;
 }
 
 .play-btn {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
 }
 
 .dots-btn {
-  width: 2rem;
+  width: 1.5rem;
 }
 
-button svg {
-  fill: white;
+/* Hover effects shows the buttons */
+.album-cover:hover > .btn-container {
+  opacity: 1;
 }
