@@ -23,6 +23,7 @@ body {
 
 .app {
   display: flex;
+  padding: 0 20px;
 }
 
 /* The container for all albums is a flex-container. It is itself a flex-child which takes up 80% of the page's width */
