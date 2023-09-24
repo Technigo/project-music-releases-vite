@@ -1,3 +1,4 @@
+/* Reset default margins and paddings applied by browsers. */
 * {
   margin: 0;
   padding: 0;
@@ -38,16 +39,19 @@ code {
   margin-bottom: 2em;
 }
 
+/* The layout for how the albums are displayed */
 .album-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 25px;
 } 
 
+/* Giving each album som margin */
 .album-card {
   margin: 10px;
 }
 
+/* Making sure the image take the full width of the album card */
 .album-card img {
   width: 100%;
   height: auto;
@@ -58,6 +62,7 @@ code {
   position: relative;
 }
 
+/* When hovering on the album the icons apperas  */
 .coverimage-wrapper:hover .icon-container {
   transition: all 0.3s ease-in-out;
   opacity: 1;
@@ -65,7 +70,7 @@ code {
 
 /* Makes the background image darker, fading out. */
 .coverimage-wrapper:hover img {
-  opacity: 0.5;
+  opacity: 0.4;
   transition: all 0.3s ease-in-out;
 } 
 
@@ -83,6 +88,7 @@ code {
 /* Set the size of  the buttons */
 .icon-container img {
   width: 30px;
+  
 }
 
 .icon-container button {
@@ -91,13 +97,17 @@ code {
   overflow: visible;
 }
 
+/* Reverting the button color from black to white */
 .white-icon {
   filter: brightness(1) invert(1);
 } 
 
-.white-icon:hover {
-  transform: scale(1.4);
-  
+.custom-play-button img {
+  width: 45px;
+}
+
+.custom-play-button:hover {
+  transform: scale(1.2);
 }
 
 .album-name h2 {
