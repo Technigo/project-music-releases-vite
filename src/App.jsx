@@ -11,12 +11,16 @@ export const App = () => {
   return (
     <div className="page-wrapper">
       <Header />
-      <main>
-        <Album data={data} />
-      </main>
-      <aside>
+      <aside className="big-wrapper">
         <Playlist playlistData={playlistData} />
       </aside>
+      <main className="big-wrapper">
+        <Album data={data} />
+      </main>
+      <footer className="big-wrapper">
+        Technigo | Web Development Bootcamp Fall 2023 | Project: Music Releases
+        Vite @ Julia Holm
+      </footer>
     </div>
   );
 };

@@ -1,5 +1,7 @@
-/* H1 - 20px Helvetica #fff */
 header {
+  background-color: #121212;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -26,12 +28,18 @@ header {
   opacity: 1;
 }
 
-.github-link svg {
+.github-icon {
   scale: 0.6;
 }
 
 @media (max-width: 667px) {
   .my-name {
     display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0 0.5rem;
   }
 }

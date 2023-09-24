@@ -1,0 +1,12 @@
+.preview-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .preview-text {
+    -webkit-line-clamp: 2;
+  }
+}

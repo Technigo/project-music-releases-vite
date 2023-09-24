@@ -1,8 +1,5 @@
-.artist-name h3 {
+.artist-name p {
   display: inline;
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  color: #a0a0a0;
 }
 
 .artist-name a:hover {

@@ -1,4 +1,3 @@
-import "./CoverImage.css";
 import { BtnIcons } from "./BtnIcons/BtnIcons.jsx";
 
 export const CoverImage = ({ albumCover }) => {
@@ -9,7 +8,7 @@ export const CoverImage = ({ albumCover }) => {
   };
 
   return (
-    <div className="album-cover">
+    <div className="album-cover cover">
       <img src={albumImage.src} alt={albumImage.alt} />
       <BtnIcons />
     </div>

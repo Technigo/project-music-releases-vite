@@ -40,6 +40,6 @@
 }
 
 /* Hover effects shows the buttons */
-.album-cover:hover > .btn-container {
+.cover:hover > .btn-container {
   opacity: 1;
 }

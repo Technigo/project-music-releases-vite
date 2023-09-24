@@ -9,12 +9,15 @@ export const Album = ({ data }) => {
 
   return (
     <section className="new-releases">
-      <h1>New albums & singles</h1>
+      <h2>New albums & singles</h2>
       <div className="releases-wrapper">
         {albumsItems.map((albumInfo) => {
           //console.log(`Individual album info`, albumInfo);
           return (
-            <div className="album-container" key={albumInfo.id}>
+            <div
+              className="album-container small-card-wrapper"
+              key={albumInfo.id}
+            >
               <CoverImage albumCover={albumInfo} />
               <AlbumName albumName={albumInfo} />
               <ArtistName artistInfo={albumInfo.artists} />

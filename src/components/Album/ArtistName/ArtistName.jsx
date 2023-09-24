@@ -10,14 +10,14 @@ export const ArtistName = ({ artistInfo }) => {
   return (
     <div className="artist-name">
       {artistInfo.map((artist, index) => (
-        <h3 key={artist.id}>
+        <p className="p-card" key={artist.id}>
           <a href={artist.external_urls.spotify} target="_blank">
             {artist.name}
           </a>
           {/* Add a comma or ampersand if there are multiple artists */}
           {index < artistInfo.length - 2 && (multipleArtists ? ", " : "")}
           {index === artistInfo.length - 2 && (multipleArtists ? " & " : "")}
-        </h3>
+        </p>
       ))}
     </div>
   );

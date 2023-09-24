@@ -1,5 +1,3 @@
-import "./AlbumName.css";
-
 export const AlbumName = ({ albumName }) => {
   // console.log(albumName);
   const track = {
@@ -9,11 +7,11 @@ export const AlbumName = ({ albumName }) => {
   };
   return (
     <div className="album-name">
-      <h2>
+      <h3 className="title-card">
         <a href={track.href} target={track.target}>
           {track.album}
         </a>
-      </h2>
+      </h3>
     </div>
   );
 };

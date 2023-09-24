@@ -1,7 +1,9 @@
 import "./Description.css";
 
-export const Description = () => {
+export const Description = ({ playlistDescription }) => {
   return (
-    <div>Description</div>
-  )
-}
+    <div className="description">
+      <p className="p-card preview-text">{playlistDescription.description}</p>
+    </div>
+  );
+};

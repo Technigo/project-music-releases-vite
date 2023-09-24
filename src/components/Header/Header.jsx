@@ -7,8 +7,10 @@ export const Header = () => {
       <header>
         <img src={SpotifyLogo} alt="Spotify" className="spotify-logo" />
         <div className="github-link">
-          <a href="https://github.com/JuliaHolm" className="my-name">Julia Holm</a>
-          <a href="https://github.com/JuliaHolm">
+          <a href="https://github.com/JuliaHolm" className="my-name">
+            Julia Holm
+          </a>
+          <a href="https://github.com/JuliaHolm" className="github-icon">
             <svg width="98" height="96" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill-rule="evenodd"
