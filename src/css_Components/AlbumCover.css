@@ -58,9 +58,9 @@ img {
   transition: 0.4s;
 }
 
-.icon:hover {
+.playIcon:hover {
   scale: 1.3;
-  /* Increase icon size when hovering over the icon */
+  /* Increase icon size of the play button when hovering over the icon. The instructions didn't mention the other icons. */
 }
 
 /* stretch goal: Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity */

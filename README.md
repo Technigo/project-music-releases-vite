@@ -4,34 +4,80 @@
   </a>
 </h1>
 
-# Music Releases
+# Music Releases React App
 
-Replace this readme with your own information about your project.
+This repository showcases a React application focusing on utilizing Spotify API data to display music releases. The project demonstrates essential React concepts and component structuring.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+## Project Challenges
 
-## Getting Started with the Project
+During the development of this project, I encountered several challenges:
 
-### Dependency Installation & Startup Development Server
+1. **Learning React and Component Structuring:**
+   - As my first time working with React, adapting to a component-based approach was quite challenging. I did a bit of experimentation with different component structures and prop passing mechanisms to grasp this new way of thinking.
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+2. **Artist Component and Formatting:**
+   - Creating the artist component and ensuring correct formatting with commas and ampersands posed a challenge. The current approach, utilizing ternary operators, was a new technique for me but something I think will be useful in other contexts as well.
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+3. **Icon Image Display Issue:**
+   - Initially, I faced challenges with the proper display of icon images. Moving them to the public folder resolved this issue, allowing the images to display correctly.
 
-```bash
-npm i && code . && npm run dev
-```
+## Files Overview
 
-### The Problem
+### `App.jsx`
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+- Initializes the main component of the app.
+- Utilizes components like `Header` and `AlbumCard`.
+- Passes Spotify API data as props to `AlbumCard`.
 
-### View it live
+### `AlbumCard.jsx`
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+- Renders album details using data from Spotify API.
+- Uses `map` to create components for each album.
+- Components created: `AlbumCover`, `AlbumName`, and `ArtistName`.
 
-## Instructions
+### `Header.jsx`
 
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+- Displays the header of the app.
+- Contains the title and project information.
+
+### `AlbumCover.jsx`
+
+- Renders the album cover, play button, heart icon, and more.
+- Utilizes data from Spotify API.
+
+### `AlbumName.jsx`
+
+- Displays the album name.
+- Links to the Spotify page for the album.
+
+### `ArtistName.jsx`
+
+- Renders artist names for each album.
+- Handles comma and ampersand formatting.
+
+## Additional Information
+
+- **Data Source:**
+  - The application fetches music release data from a pre-downloaded response mimicking the Spotify API.
+
+- **Responsive Design:**
+  - The page layout adjusts dynamically based on the user's device, displaying albums in the following layouts:
+    - Desktop: 4 albums per row
+    - Tablet: 2 albums per row
+    - Mobile: 1 album per row
+
+- **Hover Effects:**
+  - **Album Hover Effect:**
+    - When hovering over an album, it darkens and reveals interactive icons such as a play button, a favorite button, and an ellipsis.
+  - **Play Button Hover Effect:**
+    - The play button enlarges when hovered over, providing visual feedback to the user.
+  - **Artist and Album Name Hover Effect:**
+    - Hovering over artist and album names underlines the text, enhancing user interaction.
+
+- **External Routing:**
+  - Clicking on an album directs the user to the album's external URL as provided in the data.
+  - Clicking on an artist's name redirects the user to the respective artist's external URL sourced from the data.
+
+## View it live
+
+You can view the live version of the project [here](https://music-releases-veronica-astrom.netlify.app/).
