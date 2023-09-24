@@ -14,7 +14,7 @@ code {
 
 /* MY CODE STARTS HERE*/
 body {
-  background-color: rgb(21, 21, 21);
+  background-color: #000000;
   margin: 25px 50px; 
 }
 
@@ -41,7 +41,12 @@ h2 {
   font-size: 14px;
 }
 
-h3 {
+.artistName {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.artistName a {
   color: #a0a0a0;
   font-size: 14px;
 }
@@ -97,16 +102,17 @@ button svg {
   color: #fff;
 }
 
-.artistName h3:hover {
+.artistName a:hover {
   text-decoration: underline;
   color: #fff;
 }
 
-.cover-image-wrapper img {
-  transition: filter 0.3s ease;
+.cover-image-wrapper:hover > .btn-container {
+  opacity: 1;
+  transition: filter 0.4s ease;
 }
 
-.cover-image-wrapper img:hover {
+.cover-image-wrapper:hover > img {
   filter: brightness(50%);
 }
 
