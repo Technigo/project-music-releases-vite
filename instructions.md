@@ -12,18 +12,30 @@ The result of importing the JSON is a variable called `data` which includes the 
 
 - `App` component which has the `data`
   - `Album` component which is rendered using `.map()` and which you pass the album data into using props.
-    - `ArtistName` component which is rendered using `.map()` using each item in the `artists` array. The `Album` component to show the artist name and a link.
+  - `ArtistName` component which is rendered using `.map()` using each item in the `artists` array. The `Album` component to show the artist name and a link.
 
 This is just a suggestion - how you decide to structure your components is completely up to you.
+
+## Getting Started with the Project
+
+### Dependency Installation & Startup Development Server
+
+Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+
+The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+
+```bash
+npm i && code . && npm run dev
+```
 
 ## Folder Structure
 
 - App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
 - Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - Header.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+- AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+- ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+- CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+- Header.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
 
 ### Extra Files
 
@@ -48,9 +60,9 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ### Your page should be responsive:
 
-- showing 4 albums per row on desktop
-- 2 per row on tablet
 - 1 per row on mobile.
+- 2 per row on tablet
+- showing 4 albums per row on desktop
 
 ## Design
 
@@ -60,15 +72,16 @@ This is just a suggestion - how you decide to structure your components is compl
 - Artist name - 14px Helvetica #a0a0a0
 
   When hovering over album covers or artist names, you should implement the following hover styles:
-   <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/hover-styles.png" alt="Project Banner Image">
+  <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/hover-styles.png" alt="Project Banner Image">
 
 ## Requirements
+
 - Your app should have components
 - Your page should look as close as possible to the design provided.
 - You should display the following for each album:
-  -   album cover image
-  -   album name
-  -   the name of each artist involved with a comma between
+  - album cover image
+  - album name
+  - the name of each artist involved with a comma between
 - Hover effects:
   - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
   - When you hover over the play button, it should grow (see the design sketch)
@@ -81,15 +94,18 @@ This is just a suggestion - how you decide to structure your components is compl
   - 1 per row on mobile.
 
 ## Stretch goals
+
 So you’ve completed the requirements? Great job! Make sure you've committed and pushed a version of your project before starting on the stretch goals. Remember that the stretch goals are optional.
 
 ### Intermediate stretch goals
+
 - Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&":
-  - *Teyana Taylor & Kehlani*
-  - *Y2K, bbno$ & Enrique Iglesias*
+  - _Teyana Taylor & Kehlani_
+  - _Y2K, bbno$ & Enrique Iglesias_
 - Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity
 
 ### Advanced stretch goals
+
 - We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.
 - Sort the albums from the singles and create two different sections on your site
 - Incorporate more information from the API response to make your site richer

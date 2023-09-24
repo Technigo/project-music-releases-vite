@@ -1,0 +1,30 @@
+.anAlbum {
+    flex: 100%;
+    padding: 0 20px;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Sets the styling for the coverimages so they fit within the anAlbum-container */
+  img {
+    object-fit: contain;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Design for tablet */
+  @media (min-width: 668px) and (max-width: 1024px) {
+    .anAlbum {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  /* Design for desktop */
+  @media (min-width: 1025px) {
+    .anAlbum {
+      flex: 25%;
+      max-width: 25%;
+    }
+  }

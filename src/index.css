@@ -7,7 +7,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.app {
+  display: flex;
+  padding: 0 20px;
+}
+
+/* The container for all albums is a flex-container. It is itself a flex-child which takes up 80% of the page's width */
+.allAlbums {
+  flex: 80%;
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+/* Sets a container for the Editor's pick playlists, it's a flexchild of the app which takes up 20% of the page's width */
+.allPlaylists {
+  flex: 20%;
+  height: 100%;
+  margin-top: 160px;
 }
