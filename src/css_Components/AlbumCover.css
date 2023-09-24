@@ -14,11 +14,6 @@ img {
   max-width: 600px;
 }
 
-.albumCover:hover>.icon-wrapper {
-  opacity: 1;
-  /* Opacity 1 is fully visible */
-  transition: 0.4s;
-}
 
 /* Makes the image darker when hovering over it */
 .albumCover:hover>img {
@@ -53,7 +48,24 @@ img {
   /* to make sure there are no borders around the buttons. Some browsers might apply their own default styling to buttons which might include a border */
 }
 
+.albumCover:hover>.icon-wrapper {
+  opacity: 1;
+  /* Opacity 1 is fully visible */
+  transition: 0.4s;
+}
 .icon:hover {
   scale: 1.3;
   /* Increase icon size when hovering over the icon */
+}
+
+/* stretch goal: Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity */
+
+/* Adjust opacity of play icon */
+.playIcon img {
+  opacity: 0.8;
+}
+
+/* Set full opacity when hovering over the play icon */
+.playIcon:hover img {
+  opacity: 1;
 }
