@@ -1,8 +1,12 @@
-import playIcon from "../../public/icons/play.svg";
-import heartIcon from "./heart.svg";
-import dotIcon from "./dot.svg";
+/*Can't change the color or scale of the icons in css
 
-export const PlayIcons = () => {
+*/
+
+import playIcon from "../../public/icons/play.svg";
+import heartIcon from "../../public/icons/heart.svg";
+import dotIcon from "../../public/icons/dots.svg";
+
+export const PlayIcon = () => {
   return <img src={playIcon} alt="Play" />;
 };
 
