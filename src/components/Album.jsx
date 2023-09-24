@@ -2,7 +2,7 @@
 import { AlbumName } from "./AlbumName";
 import { ArtistName } from "./ArtistName";
 import { CoverImage } from "./CoverImage";
-import "./album.css"; 
+import "./Album.css"; 
 export const Album = (props) => {
   
   let albumName = props.album.name
@@ -24,5 +24,6 @@ export const Album = (props) => {
     </>
   );
 };
+
 
 

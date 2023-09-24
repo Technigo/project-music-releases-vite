@@ -27,10 +27,7 @@ body{
 position: relative;
 display: grid;
 place-items: center;
-
 }
-
-
 .cover-image{
   height: auto;
   max-width: 600px;
@@ -55,7 +52,6 @@ place-items: center;
 .icon-play:hover{
   width: 50px;
 }
-
 
 .icon-container {
   position:absolute;
