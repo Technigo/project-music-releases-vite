@@ -4,14 +4,32 @@ import { AlbumImage } from './AlbumImage';
 //import { Header } from "./components/Header";
 
 
-export const Album = ({ name, albumType, image, artists, link }) => {
+export const Album = ({ id, name, albumType, image, artists, link }) => {
+    console.log(typeof artists);
 
     return (
         //do I need a key attribute in the first div for this return?
         <div className="album-info">
-            {<AlbumImage image={image} />}
+            <a
+                target="_blank"
+                className="album-names"
+                href={link}
+                key={id}
+                rel="noreferrer noopener"
+            >
+                {<AlbumImage image={image} />}
+            </a>
             <p>
-                <span><strong>{name}</strong></span>
+                <span>
+                    <a
+                        target="_blank"
+                        className="album-names"
+                        href={link}
+                        key={id}
+                        rel="noreferrer noopener"
+                    >
+                        <strong>{name}</strong>
+                    </a></span>
             </p>
             <span>
                 {artists.map((artist) => {
@@ -23,7 +41,7 @@ export const Album = ({ name, albumType, image, artists, link }) => {
                 })}
             </span>
             <p>
-                <span>Album Type:</span> {albumType}
+                <span className="single-or-album">{albumType}</span>
             </p>
         </div >
     )

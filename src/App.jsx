@@ -1,5 +1,6 @@
 import data from "./data.json";
 import React from 'react';
+
 import { Header } from "./components/Header"
 import { Album } from "./components/Album"
 

@@ -1,5 +1,5 @@
 
-export const AlbumImage = ({ image, name, link }) => {
+export const AlbumImage = ({ image }) => {
     return (
         <div className="image-wrapper">
             <div className="album-cover">
@@ -13,3 +13,5 @@ export const AlbumImage = ({ image, name, link }) => {
         </div >
     )
 }
+
+//to do - link album image to the URL for the album

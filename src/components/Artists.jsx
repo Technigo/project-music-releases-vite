@@ -1,7 +1,9 @@
 
-export const Artists = ({ name, artistURL, id }) => {
-    console.log(`the url for the artist is this: ${artistURL}`);
-    console.log(typeof artistURL);
+export const Artists = ({ name, artistURL, id, album }) => {
+
+    // I think the fact that name is a string is why I can't work our how to add a comma
+    console.log(typeof name);
+    console.log(name);
     return (
         <a
             target="_blank"

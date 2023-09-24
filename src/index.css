@@ -27,7 +27,10 @@ span {
   align-items: center;
   background: #121212;
   padding: 1em 0em;
-  color: white;
+  color: #1dd05d;
+  font-size: 24px;
+  font-weight: 700;
+  ;
 }
 
 header img {
@@ -54,6 +57,12 @@ header img {
   transition: opacity 0.3s ease-in-out;
 }
 
+/* this doesn't work*/
+.album-cover:hover+.three-hover-buttons {
+  display: flex;
+  opacity: 1;
+}
+
 .three-hover-buttons {
   position: absolute;
   display: flex;
@@ -73,7 +82,6 @@ header img {
   gap: 1em;
   cursor: pointer;
   filter: invert();
-  opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -81,7 +89,6 @@ header img {
 .button-play:hover,
 .button-dots:hover {
   transform: scale(1.6);
-  opacity: 1;
 }
 
 /* Explanation CSS */
@@ -94,13 +101,11 @@ header img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 1em;
-  border: solid white 1px;
   background-color: black;
 }
 
 /* Grid child CSS */
 .album-info {
-  border: solid white 1px;
   background-color: #242424;
   padding: 2px;
   margin: 2px;
@@ -108,7 +113,18 @@ header img {
   padding: 1em;
 }
 
-/*this doesn't work*/
+.artists-names,
+.single-or-album {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.artists-names:hover {
+  text-decoration: underline;
+}
+
+/*this doesn't work, one way I tried to solve the comma problem*/
 .artists-names:not(:first-child, :last-child)::before {
   color: white;
   content: ", ";
