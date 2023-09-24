@@ -1,13 +1,172 @@
-:root {
+/* Reset default margins and paddings applied by browsers. */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+  margin: 25px 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+
+.header-p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+
+/* The layout for how the albums are displayed */
+.album-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+} 
+
+/* Giving each album som margin */
+.album-card {
+  margin: 10px;
+}
+
+/* Making sure the image take the full width of the album card */
+.album-card img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+.coverimage-wrapper {
+  position: relative;
+}
+
+/* When hovering on the album the icons apperas  */
+.coverimage-wrapper:hover .icon-container {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+} 
+
+/* Makes the background image darker, fading out and the icons bright white. */
+.coverimage-wrapper:hover > img {
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+} 
+
+.icon-container {
+  display: flex;
+  justify-content:center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 0;
+  gap: 10px;
+}
+
+/* Set the size of  the buttons */
+.icon-container img {
+  width: 30px;
+}
+
+.icon-container button {
+  border: none;
+  background: transparent;
+  overflow: visible;
+}
+
+/* Reverting the button color from black to white */
+.white-icon {
+  filter: brightness(1) invert(1);
+} 
+
+.custom-play-button img {
+  width: 45px;
+}
+
+.custom-play-button:hover {
+  transform: scale(1.2);
+}
+
+.album-name h2 {
+  margin: 0 0 0.4em 0;
+}
+
+.album-name a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.album-name a:hover {
+  text-decoration: underline;
+ }
+
+ .artist-name {
+  display: flex;
+ }
+
+ .artist-name h3 {
+  margin: 0 0 0.75em 0;
+ }
+
+.artist-name a {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artist-name h3:hover {
+  text-decoration: underline;
+  color: #a0a0a0;
+} 
+
+.ampersand-space::before {
+  content: "\00a0"; /* Non-breaking space before the ampersand */
+}
+.ampersand-space::after {
+  content: "\00a0"; /* Non-breaking space after the ampersand */
+}
+.comma-space::after {
+  content: "\00a0"; /* Non-breaking space after the comma */
+}
+
+@media (min-width: 667px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icon-wrapper {
+    gap: 20px;
+}
+
+}
+
+@media (min-width: 1025px) {
+  .album-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

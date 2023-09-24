@@ -6,32 +6,19 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+Ths weeks project is about using data from Spotify with React to build a page which shows new album and single releases.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Structure
+Main.jsx > App.jsx > Album.jsx. Album.jsx has 4 children: AlbumName.jsx, ArtistName.jsx, CoverImage.jsx, Header.jsx
+
+I started the project by trying to understand the concepts of how React works. Then I build the folder structure and created components from the design. I started with the top component and created props to pass data to child components. Finally I focused on the CSS to try to make the site look as much as possible to the design request provided.
+
+Main problem: My main problem was getting the icons to display in 'full white'. They were behaving in the way that they should, but they were pale. I tried different strategies to fix this (e.g. changing opacity, filter on brightness, played around with the hover effects, changing to the raw svg-files). Finally found the solution - just added a tag >.
+
+Had issues with the icons not showing on the deployed site, moved them to different folder before they finally showed up.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://project-music-release-susanne.netlify.app/
