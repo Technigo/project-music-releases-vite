@@ -1,14 +1,19 @@
-.Header{
-  text-align: center;
-  color: #a0a0a0;
-  font-family: Helvetica,sans-serif;
-}
 body{
   background-color: black;
-  font-family: Helvetica, sans-serif;;
+  font-family: Helvetica, sans-serif;
 }
+/* ----------- Style for header ------------  */
+.header{
+  text-align: center;
+  color: #fff;
+}
+.header h1{
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+/* ----------- Style for all albums ------------  */
 .allAlbums{
-  color: antiquewhite;
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr ;
   padding: 30px;
@@ -16,44 +21,56 @@ body{
 .eachAlbum{
   padding: 25px;
 }
-img{
+
+/* ----------- Style for pictures and icons ---------- */
+.cover-container {
+position: relative;
+display: grid;
+place-items: center;
+
+}
+
+
+.cover-image{
   height: auto;
   max-width: 600px;
   width: 100%;
 }
+.cover-container:hover .cover-image {
+  opacity: 0.5;
+  transition: all 0.35s ease-in-out; /* Makes the transition easier */
+
+}
+
 .icon{
   width: 35px;
 }
-/* .hidden{
-  display: none;
-} */
-
-.cover-container {
-display: grid;
-place-items: center;
-grid-template: 1fr / 1fr;
-
-}
-.cover-container :hover{
-opacity: 0.5;
+.icon-play{
+  width: 45px;
 }
 
-/* Makes everything within cover-container place on grid-column & grid-row 1 / 1 */
-.cover-container > * {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
+.icon:hover{
+  width: 40px;
 }
+.icon-play:hover{
+  width: 50px;
+}
+
 
 .icon-container {
+  position:absolute;
   display: flex;
   align-items: center;
-  z-index: 2;
+  gap:20px;
+  z-index: 1;
+  opacity: 0 ;
+}
+.cover-container:hover .icon-container {
+  opacity: 1; 
 }
 
-.icon-container img {
-  margin: 0.5rem;
-  opacity: 80%; /* Lowers opacity on icons before hover */
-}
+
+/* ----------- Style for text ---------- */
 
 .music-link{
   display: flex;
