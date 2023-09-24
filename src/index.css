@@ -21,10 +21,23 @@ body {
   color: white;
 }
 
-/* The container for all albums is a flex-container */
+.app {
+  display: flex;
+}
+
+/* The container for all albums is a flex-container. It is itself a flex-child which takes up 80% of the page's width */
 .allAlbums {
+  flex: 80%;
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  max-width: 80%;
   flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+/* Sets a container for the Editor's pick playlists, it's a flexchild of the app which takes up 20% of the page's width */
+.allPlaylists {
+  flex: 20%;
+  height: 100%;
+  margin-top: 160px;
 }
