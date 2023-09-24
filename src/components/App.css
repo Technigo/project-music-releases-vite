@@ -2,3 +2,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+@media screen and (max-width: 667px) {
+    .album-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .album-name a, .artist-name a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    .album-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .album-name a, .artist-name a {
+        font-size: 16px;
+    }
+}

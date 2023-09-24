@@ -15,7 +15,8 @@ export const App = () => {
           return (
             <Album 
               key={album.id} 
-              name={album.name}
+              albumName={album.name}
+              albumLink={album.external_urls.spotify}
               artistName={album.artists.map((artist) => artist.name)} 
               artistLink={album.artists.map((artist) => artist.external_urls.spotify)}
               cover={album.images} />

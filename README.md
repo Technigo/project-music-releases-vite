@@ -6,25 +6,14 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
+Music releases assignment to practice the basics of React, mainly components and props. The task was to display images and details of latest music releases from the Spotify API and style the site as close as possible to the provided design.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started the project by creating all the needed componenets. Next up was trying to get the props to pass to the right components - this I had probably the most issues with, so many errors kept occurring. I still clearly have some difficulties in understanding JS methods and writing the correct syntaxes for example for the .map(). But eventually I made it work!
+
+Unfortunately on this Sunday that I'm handing this in, I ran out of time and decided to deploy an incomplete version. The only thing that doesn't work in my site (looking at the requirements, that is) is the comma separation between the artists. It currently displays the same artist twice with the comma instead of showing the other artist(s) as well. Here I think my lack of knowledge with iterating over arrays comes in - I'm really not sure how to target both of the artists and how to display them. I tried a few different options but this was the only one that at least somehow made the idea work. But still, it's not as it should be and I'll come back to the project later.
 
 ### View it live
 
