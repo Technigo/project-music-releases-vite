@@ -1,0 +1,52 @@
+.icon-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+}
+
+.heart,
+.play,
+.dots {
+  border: none;
+  width: 35px;
+  background: transparent;
+}
+
+.play {
+  width: 45px;
+}
+
+img {
+  fill: white;
+}
+
+.icon:hover {
+  scale: 1.3;
+}
+
+@media (min-width: 667px) {
+  .icon-wrapper {
+    gap: 20px;
+  }
+
+  .heart,
+  .play,
+  .dots {
+    width: 40px;
+  }
+
+  .play {
+    width: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .icon-wrapper {
+    gap: 8px;
+  }
+}

@@ -1,21 +1,18 @@
+// import "./Buttons.css";
 
-
-export const Buttons = () => {
-   const Buttons(props) {
-        return <button onClick={props.onClick}>{props.children}</button>;
-      }
-  
-    return (
-    <section>
-        <button className="heart">
-
-        </button>
-        <button className="play">
-
-        </button>
-        <button class="dots">
-
-        </button>
-    </section>
-  )
-}
+export const Buttons = ({ buttonIconProp }) => {
+  return (
+    <div className="icon-wrapper">
+      {buttonIconProp}
+      <button type="button" className="heart">
+        <img src="/path/to/public/icons/heart.svg" alt="Favourite" />
+      </button>
+      <button type="button" className="play">
+        <img src="/path/to/public/icons/play.svg" alt="Play" />
+      </button>
+      <button type="button" className="dots">
+        <img src="/path/to/public/icons/dots.svg" alt="Ellipsis" />
+      </button>
+    </div>
+  );
+};

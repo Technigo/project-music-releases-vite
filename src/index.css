@@ -39,10 +39,6 @@ body {
   grid-gap: 25px;
 }
 
-.album {
-  margin: 10px;
-}
-
 /* Styles for tablets and below */
 @media only screen and (max-width: 768px) {
   .album-wrapper {
@@ -70,10 +66,6 @@ a:-webkit-any-link {
   color: #ffffff;
 }
 
-/* .albumName a {
-  text-decoration: none;
-} */
-
 .albumName a:hover {
   color: #a0a0a0;
   text-decoration: underline;
@@ -84,10 +76,6 @@ a:-webkit-any-link {
   font-size: 14px;
   color: #a0a0a0;
 }
-
-/* .artistName a {
-  text-decoration-line: none;
-} */
 
 .artistName a:hover {
   text-decoration: underline;
