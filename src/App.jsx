@@ -11,8 +11,6 @@ export const App = () => {
 
   //Saves the editor's pick-playlists in an array from the stretched-goal json-file
   let playlistArray = playlistData.playlists.items
-  console.log(playlistArray)
-
 
   return (
     <>
