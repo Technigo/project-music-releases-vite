@@ -1,14 +1,22 @@
 import data from "./data.json";
-import { Album } from "./components/Album.jsx";
+import playlistData from "./stretched-goal.json";
 import { Header } from "./components/Header/Header.jsx";
+import { Album } from "./components/Album/Album.jsx";
+import { Playlist } from "./components/Playlist/Playlist.jsx";
 
-//console.log(data);
+// console.log(data);
+// console.log(dataTwo);
 
 export const App = () => {
   return (
     <div className="page-wrapper">
       <Header />
-      <Album data={data} />
+      <main>
+        <Album data={data} />
+      </main>
+      <aside>
+        <Playlist playlistData={playlistData} />
+      </aside>
     </div>
   );
 };

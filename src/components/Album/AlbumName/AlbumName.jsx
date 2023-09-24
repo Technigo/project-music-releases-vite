@@ -1,7 +1,7 @@
 import "./AlbumName.css";
 
 export const AlbumName = ({ albumName }) => {
-  //console.log(albumName);
+  // console.log(albumName);
   const track = {
     album: albumName.name,
     href: albumName.external_urls.spotify,

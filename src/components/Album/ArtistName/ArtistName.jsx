@@ -1,7 +1,7 @@
 import "./ArtistName.css";
 
 export const ArtistName = ({ artistInfo }) => {
-  console.log(`Artist information`, artistInfo);
+  // console.log(`Artist information`, artistInfo);
 
   // Check if there is more than 1 artist
   const multipleArtists = artistInfo.length > 1;

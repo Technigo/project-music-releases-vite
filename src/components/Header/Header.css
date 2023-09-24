@@ -1,14 +1,37 @@
 /* H1 - 20px Helvetica #fff */
 header {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header h1 {
-  font-family: Helvetica, sans-serif;
-  font-size: 22px;
-}
-
-header img {
+.spotify-logo {
   width: 10rem;
-  margin-bottom: 1rem;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+}
+
+.github-link a {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.github-link a:hover {
+  opacity: 1;
+}
+
+.github-link svg {
+  scale: 0.6;
+}
+
+@media (max-width: 667px) {
+  .my-name {
+    display: none;
+  }
 }
