@@ -22,7 +22,14 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Structure
+Main.jsx > App.jsx > Album.jsx. Album.jsx has 3 children: AlbumImage.jsx, Artists.jsx, Header.jsx
+
+Main problem: My main problem was getting a comma to separate artists, when an album has multiple artists. I tried several approaches, even tried to restructure my code, but was not successful. At this time, artists are listed on separate lines and artist name is passed to the module from its parent (Album.jsx) as a string (I think this needs to be an array, but I wasnt able to fix it.
+
+I think if I was to do this project again I would rethink my module hierachy, I need a separate module for Album name and need to pass different props to my Artist module as this is probably the issue regarding my comma problem.
+
+If I had more time: I would fix the comma problem and restructure all modules. My project works but I can see the structure and what props I have chosen to pass on are not done efficiently.
 
 ### View it live
 
