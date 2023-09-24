@@ -3,11 +3,11 @@ const CoverImage = ({coverImage}) => {
       <div className="coverimage-wrapper"><img src={coverImage} alt="Album cover" />
         <span className="icon-container">
             <button type="button" />
-                <img src="public/Icons/heart.svg" alt="Heart Icon" className="white-icon"/>
+                <img src="public/heart.svg" alt="Heart Icon" className="white-icon"/>
             <button type="button" />
-                <img src="public/Icons/play.svg" alt="Play Icon" className="white-icon"/>
+                <img src="public/play.svg" alt="Play Icon" className="white-icon"/>
             <button type="button" />
-                <img src="public/Icons/dots.svg" alt="Dots Icon" className="white-icon"/>
+                <img src="public/dots.svg" alt="Dots Icon" className="white-icon"/>
         </span>
       </div>
     )
