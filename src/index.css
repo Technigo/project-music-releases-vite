@@ -40,7 +40,7 @@ body {
 
 
 
-@media (min-width: 667px) {
+@media (min-width: 667px) and (max-width: 1024px)  {
   .albumWrapper {
     grid-template-columns: repeat(2, 1fr);
   }
