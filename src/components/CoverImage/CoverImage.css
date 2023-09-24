@@ -38,7 +38,7 @@ svg {
     width: 50px;
 }
 
-.cover-image:hover {
+.cover-image:hover > img {
     opacity: 0.5;
     transition: 0.4s;
 }
@@ -47,3 +47,4 @@ svg {
     display: block;
     transition: 0.4s;
 }
+

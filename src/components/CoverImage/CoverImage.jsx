@@ -11,8 +11,9 @@ export const CoverImage = ({ singleCoverItem }) => {
 
   return (
     <div className="cover-image">
+
       <img src={imgObjects.imgSrc} alt={imgObjects.imgAlt} />
-     
+
       <div className="button-wrapper">
           <button className="icon heart">
             <svg xmlns="http://www.w3.org/2000/svg" 
