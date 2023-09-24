@@ -61,7 +61,6 @@ code {
 .coverimage-wrapper:hover .icon-container {
   transition: all 0.3s ease-in-out;
   opacity: 1;
-
 } 
 
 /* Makes the background image darker, fading out. */
@@ -72,7 +71,7 @@ code {
 
 .icon-container {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -93,8 +92,8 @@ code {
 }
 
 .white-icon {
-  filter: brightness(0) invert(1);
-}
+  filter: brightness(1) invert(1);
+} 
 
 .white-icon:hover {
   /* transform: scale(1.3); */
