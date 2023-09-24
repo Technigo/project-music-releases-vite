@@ -44,7 +44,7 @@ const Album = ({ data }) => {
                     </div>
                 ))}
             </section>
-        </div>
+        </div >
     )
 }
 

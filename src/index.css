@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* General Style */
+
+body {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Oxygen", "sans-serif";
+}
+
+header {
+  color: whitesmoke;
+  text-shadow: 2px 3px 3px rgba(275, 275, 275, 0.4);
+  margin-top: 28px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.album-wrapper {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  padding: 1em 0em;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  ;
+}
+
+/*AlbumImage.js CSS - to display Albumn image, 3 icons, hover effects */
+.album-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.coverImage {
+  position: relative;
+  width: 100%;
+}
+
+.album-cover img {
+  width: 100%;
+}
+
+.album-cover:hover {
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.album-cover:hover>.three-hover-buttons {
+  display: flex;
+  opacity: 1;
+}
+
+
+.three-hover-buttons {
+  background-color: white
+}

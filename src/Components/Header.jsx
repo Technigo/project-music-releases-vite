@@ -2,7 +2,7 @@
 const Header = () => {
     return (
         <header>
-            <div>Top Singles & Albums Today</div>
+            <div className='header'>Top Singles & Albums Today - on Spotify</div>
         </header>
     )
 }
