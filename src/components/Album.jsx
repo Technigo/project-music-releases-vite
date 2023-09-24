@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import AlbumName from "./AlbumName";
 import ArtistName from "./ArtistName";
 import CoverImage from "./CoverImage";
-import {
-  PlayIcon,
-  HeartIcon,
-  DotIcon,
-} from "../components/Icons"; /*having trouble with import Icon.jsx. I just get errors*/
+import { PlayIcon, HeartIcon, DotIcon } from "../components/Icons";
 
 const Album = ({ albumData }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -51,6 +47,7 @@ const Album = ({ albumData }) => {
             <ArtistName name={[artist.name]} />
             {/* name={[artist[0].external_urls.spotify]} ------tried with this as path, dosen't work */}
             {index < albumData.artists.length - 1 && <span>, </span>}
+            {/* the comma is in it's own line and the artists are in seperate lines - this is wrong */}
           </React.Fragment>
         ))}
       </div>
