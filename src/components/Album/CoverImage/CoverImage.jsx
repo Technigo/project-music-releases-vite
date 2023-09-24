@@ -1,7 +1,8 @@
+import heart from '../../../../public/heart.svg'
+import play from '../../../../public/play.svg'
+import dots from '../../../../public/dots.svg'
+
 import "./CoverImage.css";
-import heart from 'src/assets/icons/heart.svg'
-import play from 'src/assets/icons/play.svg'
-import dots from 'src/assets/icons/dots.svg'
 
 // This component takes a prop named 'coverImage', which is expected to be a URL to the album cover image. It uses destructuring to directly extract the 'coverImage' prop from the props object. It will render an 'img' element displaying the album cover image.
 export const CoverImage = ({ coverImage }) => {
