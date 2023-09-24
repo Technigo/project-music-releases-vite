@@ -1,8 +1,8 @@
 .styling.CoverImage {
-    opacity: 0.5;
+    max-width: 100%;
     height: auto;
-    max-width: 600px;
-    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 /*OBS; FIX SIZE REACTIVE*/
