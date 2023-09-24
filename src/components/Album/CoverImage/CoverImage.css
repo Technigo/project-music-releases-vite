@@ -16,7 +16,6 @@
 
 .icon-wrapper button {
   background: transparent;
-  overflow: visible;
   border: none;
   gap: 20px;
 }
@@ -25,7 +24,7 @@
   width: 35px;
 }
   
-/* Adjust the opacity and visibility when hovering over .cover-image */
+/* Adjust the opacity when hovering over .cover-image */
 .cover-image:hover img {
   opacity: 0.5;
   transition: all 0.4s ease-in-out;
@@ -44,8 +43,9 @@
   width: 45px;
 }
   
-/* Adjust the scale of the play button image when hovering */
+/* Adjust the scale and opacity of the play button image when hovering */
 .custom-play-button:hover img {
-  transform: scale(1.2);
+  scale: 1.2;
   opacity: 1;
+  transition: 0.1s;
 }
