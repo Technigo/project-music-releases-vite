@@ -7,5 +7,5 @@ const Header = () => {
     </div>
   );
 };
-
+//Exporting the component to be reused
 export default Header

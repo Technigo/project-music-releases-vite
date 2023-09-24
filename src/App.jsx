@@ -1,6 +1,6 @@
-import data from "./data.json";
-import Header from "./Components/Header";
-import Album from "./Components/Album";
+import data from "./data.json"
+import Header from "./Components/Header"
+import Album from "./Components/Album"
 
 console.log(data);
 
@@ -10,5 +10,5 @@ export const App = () => {
       <Header />
       <Album albumsArray={data.albums.items} />
     </div>
-  );
-};
+  )
+}
