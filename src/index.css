@@ -33,14 +33,11 @@ body {
 }
 
 .albumCardWrapper {
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
 
-
-
-@media (min-width: 667px) and (max-width: 1024px)  {
+@media (min-width: 667px) and (max-width: 1024px) {
   .albumWrapper {
     grid-template-columns: repeat(2, 1fr);
   }
