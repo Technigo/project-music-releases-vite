@@ -1,0 +1,87 @@
+/* Styling rules: 
+When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (three dots).
+*/
+
+.albumCover {
+  position: relative;
+  /* establishes a positioning context for the children (the icon-wrapper element) inside this parent. */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  /* allows the height of the image to adjust automatically in proportion to the width, maintaining the aspect ratio. */
+  max-width: 600px;
+}
+
+
+/* Makes the image darker when hovering over it */
+.albumCover:hover>img {
+  filter: brightness(30%);
+  transition: 0.4s;
+}
+
+/* Icon buttons */
+
+.icon-wrapper {
+  position: absolute;
+  /* Positioned relative to the parent (albumCover div) */
+  top: 40%;
+  /* position offset from top */
+  left: 50%;
+  /* This sets the left edge of the element to be 50% from the left edge of its containing block. */
+  transform: translateX(-50%);
+  /* translates (moves) the element horizontally by -50% of its own width. If the element is 100 pixels wide, it will be moved back by 50 pixels to the left.*/
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  /* makes the icons not appear (0 in visibility) */
+}
+
+.icon {
+  width: 35px;
+  background: transparent;
+  filter: invert(1);
+  /* makes the icon white by inverting the colors */
+  border: none;
+  /* to make sure there are no borders around the buttons. Some browsers might apply their own default styling to buttons which might include a border */
+}
+
+.playIcon {
+  width: 45px;
+}
+
+.albumCover:hover>.icon-wrapper {
+  opacity: 1;
+  /* Opacity 1 is fully visible */
+  transition: 0.4s;
+}
+
+.playIcon:hover {
+  scale: 1.3;
+  /* Increase icon size of the play button when hovering over the icon. The instructions didn't mention the other icons. */
+}
+
+/* stretch goal: Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity */
+
+/* Adjust opacity of play icon */
+.playIcon img {
+  opacity: 0.8;
+}
+
+/* Set full opacity when hovering over the play icon */
+.playIcon:hover img {
+  opacity: 1;
+}
+
+@media (min-width: 667px) {
+
+  .icon {
+    width: 40px;
+  }
+
+  .playIcon {
+    width: 50px;
+  }
+}

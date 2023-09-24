@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 2rem;
+}
+
+.albumWrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.albumCardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .albumWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .albumWrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

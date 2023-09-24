@@ -1,0 +1,23 @@
+/* Styling rules:
+Artist name - 14px Helvetica #a0a0a0
+Underline when hovering over artist name
+*/
+
+.artistNameWrapper h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  margin-block: 1em;
+  margin-inline: 0;
+  color: #a0a0a0;
+}
+
+
+.artistList a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.artistList a:hover {
+  text-decoration: underline;
+  color: #a0a0a0;
+}

@@ -1,0 +1,16 @@
+.headerWrapper {
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.header {
+  font-size: calc(18px + 1.5vw);
+  margin-bottom: 0.5em;
+}
+
+p.header {
+  font-size: calc(16px + 0.5vw);
+}
