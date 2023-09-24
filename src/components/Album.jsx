@@ -1,42 +1,35 @@
-import Heart from '../assets/icons/heart.svg?react';
-import Play from '../assets/icons/play.svg?react';
-import Dots from '../assets/icons/dots.svg?react';
+import AlbumName from './AlbumName';
+import CoverImage from './CoverImage';
+import Artist from './Artist';
 
+// Component that renders a cover image, album name and a list of artist that are featured on the album.
 const Album = ({
+    // The album name.
     name,
+    // External url for the album. When clicking this url you will be taken to Spotify.
     externalUrl,
+    // The album image.
     coverImage,
+    // An array of artists containing an object with artist name and external url link.
     artists,
 }) => {
     return (
         <div>
-            <div className="album-wrapper">
-                <img src={coverImage} alt="Album cover image" className="album-cover" />
-                <span className="icon-wrapper">
-                    <Heart className="icon heart-icon" />
-                    <Play className="icon play-icon" />
-                    <Dots className="icon dots-icon" />
-                </span>
-            </div>
+            <CoverImage
+                coverImage={coverImage}
+            />
 
-            <a
-                className="album-name"
-                target="_blank"
-                href={externalUrl}
-                rel="noreferrer"
-            >
-                {name}
-            </a>
+            <AlbumName
+                name={name}
+                externalUrl={externalUrl}
+            />
+            {/* For each artist display the artist component. */}
             {artists.map((artist) => (
-                <a
-                    className="artist-name"
+                <Artist
                     key={artist.id}
-                    target="_blank"
-                    href={artist.externalUrl}
-                    rel="noreferrer"
-                >
-                    {artist.name}
-                </a>
+                    name={artist.name}
+                    externalUrl={artist.externalUrl}
+                />
             ))}
         </div>
     );

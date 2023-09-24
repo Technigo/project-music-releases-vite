@@ -18,14 +18,14 @@ code {
 .grid {
   gap: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .album-cover {
   max-width: 100%;
 }
 
-.album-cover:hover {
+.album-wrapper:hover>.album-cover {
   opacity: 0.5;
   transition: 0.4s;
 }
@@ -48,11 +48,17 @@ code {
   font-size: 0.8rem;
 }
 
+.artist-name:hover,
+.album-name:hover {
+  text-decoration: underline;
+}
+
 .header {
   color: #fff;
   display: flex;
   font-size: 20px;
   justify-content: center;
+  text-align: center;
 }
 
 .header-top {
@@ -69,7 +75,7 @@ code {
 
 .icon-wrapper {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   top: 50%;
@@ -78,19 +84,31 @@ code {
   width: 100%;
 }
 
+.album-wrapper:hover>.icon-wrapper {
+  display: flex;
+}
+
 .icon {
   margin: 0 0.5rem;
   fill: white;
   height: 40px;
 }
 
-.icon-button {
-  background: none;
-  border: none;
-}
-
 .play-icon:hover,
 .dots-icon:hover,
 .heart-icon:hover {
   scale: 1.3;
+}
+
+
+@media only screen and (min-width: 668px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

@@ -1,18 +1,11 @@
 import data from "./data.json";
 import Album from "./components/Album";
-
-console.log(data);
+import Header from "./components/Header";
 
 export const App = () => {
     return (
         <>
-            <h1 className="header header-top">
-                New Albums & Singles
-            </h1>
-
-            <p className="header header-bottom">
-                Project by Amanda Rambert Hammarström
-            </p>
+            <Header />
 
             <div className="grid">
                 {data.albums.items.map((album) => (
