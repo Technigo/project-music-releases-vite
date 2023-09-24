@@ -84,11 +84,13 @@ img {
 button {
   background-color: transparent;
   border-width: 0;
-  width: 3rem;
+  width: 2.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .btnPlay {
-  width: 5rem; 
+  width: 4rem; 
 }
 
 button svg {
@@ -107,13 +109,13 @@ button svg {
   color: #fff;
 }
 
-.cover-image-wrapper:hover > .btn-container {
+.cover-image-wrapper:hover > .btn-container button {
   opacity: 1;
   transition: filter 0.4s ease;
 }
 
 .cover-image-wrapper:hover > img {
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 
 .btnPlay:hover, .btnHeart:hover, .btnDots:hover {
