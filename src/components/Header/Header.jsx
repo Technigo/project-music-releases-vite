@@ -1,3 +1,4 @@
+import "./header.css";
 export const Header = () => {
-  return <div>New albums & singles</div>;
+  return <div className="title">New albums & singles</div>;
 };

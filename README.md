@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A project meant to simulate receiving a response from a version of Spotify's API and displaying it as a playlist
 
 ## Getting Started with the Project
 
@@ -25,6 +23,10 @@ npm i && code . && npm run dev
 ### The Problem
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+
+Data is extracted from the data.json file using mapping and then formatted and displayed using child-components.
+My plan was to attempt to separate as much functionality as possible into different components to get more practice.
+If I had had more time I would have delved deeper into svg manipulation.
 
 ### View it live
 
