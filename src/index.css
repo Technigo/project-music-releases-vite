@@ -25,6 +25,10 @@ code {
   max-width: 100%;
 }
 
+.album-cover:hover {
+  background-color: rgba(red, green, blue, alpha);
+}
+
 .album-name {
   color: white;
   font-weight: bold;
@@ -56,4 +60,36 @@ code {
 
 .header-bottom {
   margin-bottom: 3rem;
+}
+
+.album-wrapper {
+  position: relative;
+}
+
+.icon-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+}
+
+.icon {
+  margin: 0 0.5rem;
+  fill: white;
+  height: 40px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+}
+
+.play-icon:hover,
+.dots-icon:hover,
+.heart-icon:hover {
+  scale: 1.3;
 }

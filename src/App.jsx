@@ -11,7 +11,7 @@ export const App = () => {
             </h1>
 
             <p className="header header-bottom">
-                Technigo Education Team
+                Project by Amanda Rambert Hammarström
             </p>
 
             <div className="grid">
