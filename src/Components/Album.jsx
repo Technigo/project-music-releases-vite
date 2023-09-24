@@ -1,6 +1,6 @@
-import AlbumName from './AlbumName';
-import ArtistNames from './ArtistName';
-import CoverImage from './CoverImage';
+import AlbumName from './AlbumComponents/AlbumName';
+import ArtistNames from './AlbumComponents/ArtistName';
+import CoverImage from './AlbumComponents/CoverImage';
 
 const Album = ({albumsArray}) => { //Defining a functional React component using albumsArray as property.
 

@@ -1,8 +1,6 @@
 import data from "./data.json"
-import Header from "./Components/Header"
+import Header from "./Components/AlbumComponents/Header"
 import Album from "./Components/Album"
-
-console.log(data);
 
 export const App = () => {
   return (
