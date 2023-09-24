@@ -1,3 +1,5 @@
+/* The CSS styles provided in the comments are applied to this structure to format the album name as a clickable link with specific styling,
+including a hover effect. */
 .album-title-link h2 {
     margin: 0 0 0.25em 0;
 }
@@ -11,4 +13,4 @@
 
 .album-title-link a:hover {
     text-decoration: underline;
-  }
+}
