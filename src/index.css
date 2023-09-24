@@ -26,7 +26,8 @@ code {
 }
 
 .album-cover:hover {
-  background-color: rgba(red, green, blue, alpha);
+  opacity: 0.5;
+  transition: 0.4s;
 }
 
 .album-name {
