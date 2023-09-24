@@ -1,36 +1,15 @@
-import React from "react";
 import data from "./data.json";
-import "./app.css";
-import { Header } from "./components/Header/Header.jsx";
-import { Album } from "./components/AlbumSquare/Album.jsx";
+import { Album } from "./components/Album";
+import { Header } from "./components/Header/Header";
 
+//here we pass the components from children album and header.
 export const App = () => {
-  const albums = data.albums.items;
-  console.log(albums);
-
-
-  const renderAlbums = () => {
-    return albums.map((album) => (
-      <Album
-        key={album.id}
-        name={album.name}
-        artists={album.artists}
-        images={album.images}
-        albumURL={album.external_urls.spotify}
-      />
-    ));
-  };
-
-    return (
-      <>
-      <div id="root" className="root">
+  return (
+    <div>
       <Header />
-      <div className="FlexContainer">
-        {renderAlbums()}
-      </div>
+      <Album data={data} />
     </div>
-    </>
   );
-};
+  };
 
  
