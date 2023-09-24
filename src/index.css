@@ -68,8 +68,8 @@ code {
   opacity: 1;
 } 
 
-/* Makes the background image darker, fading out. */
-.coverimage-wrapper:hover img {
+/* Makes the background image darker, fading out and the icons bright white. */
+.coverimage-wrapper:hover > img {
   opacity: 0.4;
   transition: all 0.3s ease-in-out;
 } 
@@ -88,7 +88,6 @@ code {
 /* Set the size of  the buttons */
 .icon-container img {
   width: 30px;
-  
 }
 
 .icon-container button {
