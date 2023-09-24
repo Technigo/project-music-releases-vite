@@ -10,41 +10,46 @@
 }
 
 .heart,
-.play,
 .dots {
   border: none;
-  width: 35px;
+  width: 40px;
   background: transparent;
 }
 
 .play {
-  width: 45px;
+  border: none;
+  width: 50px;
+  background: transparent;
 }
 
-img {
-  fill: white;
+.icon-wrapper img {
+  filter: invert(1); /* Invert colors of the images (e.g., black to white) */
+  opacity: 1 !important; /* Force full opacity */
 }
 
-.icon:hover {
-  scale: 1.3;
+.heart:hover,
+.play:hover,
+.dots:hover {
+  transform: scale(1.3);
 }
 
+/* Media query for tablets (landscape mode) */
 @media (min-width: 667px) {
   .icon-wrapper {
     gap: 20px;
   }
 
   .heart,
-  .play,
   .dots {
-    width: 40px;
+    width: 45px;
   }
 
   .play {
-    width: 50px;
+    width: 55px;
   }
 }
 
+/* Media query for desktop screens */
 @media (min-width: 1025px) {
   .icon-wrapper {
     gap: 8px;
