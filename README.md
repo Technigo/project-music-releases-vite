@@ -28,6 +28,8 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
+https://isaac-kamran-music-release.netlify.app/
+
 ## Instructions
 
 <a href="instructions.md">
