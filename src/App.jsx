@@ -1,16 +1,18 @@
+import React from "react";
 import data from "./data.json";
-//import { Header } from ./Album ?????
-//import { Album } from "./Components/Album";
+import { Header } from "./Components/Header";
+import { extractedAlbums } from "./Components/Album";
+import { ArtistName } from "./Components/ArtistName";
 
 //console.log(data);
 
-const albums = data.albums.items
+export const Albums = data.albums.items
 //console.log(albums);
 
 //const artists = data.albums.artists
 //console.log(artists);
 
-const extractedAlbums = albums.map((album) => {
+/*const extractedAlbums = albums.map((album) => {
 
   const artistName = album.artists[0].name;
   const albumName = album.name;
@@ -22,14 +24,21 @@ const extractedAlbums = albums.map((album) => {
     coverImage,
   };
 
-});
+});*/
 
-console.log(extractedAlbums);
+//console.log(extractedAlbums);
 
+//-------------------Extracted albums finished?--------------------//
 
-//header to export? Make one?
+//What shows in the browser?
 export const App = () => {
-  return <div>
-    Hallo!
-  </div>;
+  const albums = data.albums.items
+
+  return (
+    <>
+      <Header />
+      <div>
+        <ArtistName />
+      </div>
+    </>)
 };

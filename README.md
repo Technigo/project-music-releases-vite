@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a project where I was supposed to make a page that displayed newly released music albums.
 
 ## Getting Started with the Project
 
@@ -24,7 +22,14 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I found this project super hard! It took me a lot of time to understand how it all worked, with the parent- and child components. 
+I've used the videos provided by Technigo, slack, talked to team mates, googled, used chatGPT, youtube, looked at others project on GitHub.. You name it. Still didn't get it. 
+So my site doesnt work, it doesn't display anything. And the code is basically just a mess. If i had more time I hope I'd be able to figure it out and make the site work..
+
+I hope next week will be better for me. 
+
+The non-existing site is deployed here:
+https://musicreleasesw5.netlify.app/
 
 ### View it live
 
