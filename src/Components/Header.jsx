@@ -12,7 +12,7 @@ export const Header = () => {
       alt={imageObject.imgAlt}/>
       </div> 
         <div className="header-container">
-          <h1 className="header-title">New Albums & Singels</h1>
+          <h1 className="header-title">New Albums & Singles</h1>
           <h2 className="header-line">Technigo Lemon Isaac</h2>   
         </div>    
       </header>
