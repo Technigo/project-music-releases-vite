@@ -1,48 +1,51 @@
+/* The CSS styles are applied to format the cover image with specific styling, including hover effects. */
 .cover-image {
- position: relative;
- padding: 0; 
-  }
+  position: relative;
+  padding: 0; 
+}
 
 .icon-wrapper {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    left: 0;
-    opacity: 0;
-  }
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 0;
+  opacity: 0;
+}
 
 .icon-wrapper button {
-    background: transparent;
-    overflow: visible;
-    border: none;
-    gap: 20px;
+  background: transparent;
+  overflow: visible;
+  border: none;
+  gap: 20px;
 }
 
 .icon-wrapper img {
-    width: 35px;
+  width: 35px;
 }
   
-  /* Adjust the opacity and visibility when hovering over .cover-image */
-  .cover-image:hover img {
-    opacity: 0.5;
-    transition: all 0.4s ease-in-out;
-  }
+/* Adjust the opacity and visibility when hovering over .cover-image */
+.cover-image:hover img {
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+}
   
-  .cover-image:hover .icon-wrapper {
-    opacity: 1;
-  }
+.cover-image:hover .icon-wrapper {
+  opacity: 1;
+}
 
-    /* Turns the svg icons from black to white by inverting their colors */
-    .white-icon {
-      filter: brightness(0) invert(1);
-    }
+/* Turns the svg icons from black to white by inverting their colors */
+.white-icon {
+  filter: brightness(0) invert(1);
+}
   
-    .custom-play-button img {
-      width: 45px;
-    }
+.custom-play-button img {
+  width: 45px;
+}
   
-    .custom-play-button:hover img {
-      transform: scale(1.2);
-    }
+/* Adjust the scale of the play button image when hovering */
+.custom-play-button:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}

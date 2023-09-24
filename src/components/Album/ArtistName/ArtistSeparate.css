@@ -1,13 +1,16 @@
 /* Styling to get the correct spacing before and after the comma and ampersand that separates the artist names */
 
+/* Non-breaking space before the ampersand */
 .ampersand-space::before {
-  content: "\00a0"; /* Non-breaking space before the ampersand */
+  content: "\00a0"; 
 }
-  
+
+/* Non-breaking space after the ampersand */  
 .ampersand-space::after {
-  content: "\00a0"; /* Non-breaking space after the ampersand */
+  content: "\00a0"; 
 }
   
+/* Non-breaking space after the comma */
 .comma-space::after {
-  content: "\00a0"; /* Non-breaking space after the comma */
+  content: "\00a0"; 
 }

@@ -4,36 +4,16 @@
   </a>
 </h1>
 
-# Music Releases
+# Project Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This week we practiced React and creating components that used data from Spotify, and transfered the data to its children components using props. We built a page which shows new album and single releases.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This project is the first we have done in React and it's been challenging working with props but also figuring out where to put everything since it's much more split up now with different components. Also connecting everything together accordingly and organizing it in different folders took some effort. At deployment it turned out that the icons only showed as a broken image, therefore the icon svg files had to be moved and can now be found in the public folder. For this project there have been a lot of team discussions and problem solving, since there were a lot of "new" problems for us. I have used chatGPT, for example with clarifying things in the code that needed adjusting or help with descriptive comments for the code. I have also watched some YouTube clips about React, video and reading material provided from Technigo. If I had more time I would try to make the icons appear whiter when you hover over them, now they fade a bit just like the cover image.
 
-<a target="_blank" href="https://icons8.com/icon/54xeFL61aFhv/music-record">Music Record</a> favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
+Music Record favicon by Icons8 "https://icons8.com"
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+Please visit: https://project-music-release-anna-robertsson.netlify.app/

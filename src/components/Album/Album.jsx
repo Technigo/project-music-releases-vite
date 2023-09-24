@@ -1,29 +1,21 @@
-// Album component which is rendered using .map() and which you pass the album data into using props.
+// Imports the necessary components from the other files as well as the CSS file for this component to apply styles.
+import { AlbumName } from "./AlbumName/AlbumName.jsx"
+import { ArtistNames } from "./ArtistName/ArtistName.jsx"
+import { CoverImage } from "./CoverImage/CoverImage.jsx"
 
-// Imports the necessary information from the other files
-//Put in {  } and remove export default on the other files? And write export const...
-//??
-import { AlbumName } from './AlbumName/AlbumName.jsx';
-import { ArtistNames } from './ArtistName/ArtistName.jsx';
-import { CoverImage } from './CoverImage/CoverImage.jsx';
-
-//HUR IMPORTERAR MAN????
 import "./Album.css"
-//Semikolon eller ej? '' eller ""??
 
-// This component takes a prop called 'albumsArray', which is expected to be an array of album objects. It then detructures 'albumsArray' from the props object and maps over the array. Then it renders each album's information, creating a list of album cards including the album cover, name, and artists.
-//Ta bort paranteser runt albumsArray precis nedanför?
+// This component takes a prop called 'albumsArray', which is expected to be an array of album objects. It uses destructuring to extract the 'albumsArray' prop from the props object. It then maps over the array and renders each album's information, creating a list of album cards. Render a section with the class "album-container" to contain the album cards. Each album card consists of a CoverImage, AlbumName, and ArtistNames component, which are passed the relevant information as props.
 export const Album = ({ albumsArray }) => {
-    console.log( albumsArray)
   return (
     <section className="album-container">
-         {albumsArray.map((mappedOutItem) => (
-             <div className="album-card" key={mappedOutItem.id}>
-                <CoverImage coverImage={mappedOutItem.images[0].url} />
-                <AlbumName albumName={mappedOutItem.name} albumURL={mappedOutItem.external_urls.spotify} />
-                <ArtistNames artistsArray={mappedOutItem.artists} artistURL={mappedOutItem.external_urls.spotify} />
-             </div>
-        ))}
+      {albumsArray.map((mappedOutItem) => (
+        <div className="album-card" key={mappedOutItem.id}>
+          <CoverImage coverImage={mappedOutItem.images[0].url} />
+          <AlbumName albumName={mappedOutItem.name} albumURL={mappedOutItem.external_urls.spotify} />
+          <ArtistNames artistsArray={mappedOutItem.artists} artistURL={mappedOutItem.external_urls.spotify} />
+        </div>
+      ))}
     </section>
   )
 }
