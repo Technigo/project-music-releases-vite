@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -14,47 +18,13 @@ code {
 
 body {
   background-color: black;
-  box-sizing: border-box;
-}
-
-.app {
   color: white;
 }
 
-.header {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
+/* The container for all albums is a flex-container */
 .allAlbums {
   display: flex;
-  flex: 100%;
+  justify-content: center;
   max-width: 100%;
   flex-wrap: wrap;
-}
-
-.anAlbum {
-  padding: 0 4px;
-}
-
-img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Design for tablet */
-@media (min-width: 668px) and (max-width: 1024px) {
-  .anAlbum {
-    flex: 45%;
-    max-width: 50%;
-  }
-}
-/* Design for desktop */
-@media (min-width: 1025px) {
-  .anAlbum {
-    flex: 20%;
-    max-width: 25%;
-  }
 }

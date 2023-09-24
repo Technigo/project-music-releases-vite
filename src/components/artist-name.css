@@ -1,0 +1,24 @@
+/* Styles both the artistName and the albumName (both are anchor elements). The &- and comma-signs are not a-elements and therefore I set them to be the samt colors and font-properties as the anchor-element */
+a {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    display: inline;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+p {
+    color: #a0a0a0;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    display: inline;
+}

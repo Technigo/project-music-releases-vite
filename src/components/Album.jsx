@@ -4,18 +4,23 @@ import { AlbumName } from "./AlbumName"
 import { ArtistName } from "./ArtistName"
 import { CoverImage } from "./CoverImage"
 
-export const Album = (props) => {
+import "./album.css"
 
-    let albumName = props.album.name
-    let artistName = props.album.artists[0].name
-    let imageArray = props.album.images
+export const Album = ({album}) => {
+
+    //Sets all elements of the album as variables to be sent as props. ArtistNames and artistURLs are arrays as some albums have multiple artists
+    let albumName = album.name
+    let albumURL = album.external_urls.spotify
+    let artistNames = album.artists.map((artist) => (artist.name))
+    let artistURL = album.artists.map((artist) => (artist.external_urls.spotify))
+    let imageURL = album.images[0].url
 
     return (
         <>
             <div className="anAlbum">
-                <CoverImage infoArray={imageArray} />
-                <AlbumName name={albumName} />
-                <ArtistName name={artistName} />
+                <CoverImage imageURL={imageURL} />
+                <AlbumName name={albumName} albumURL={albumURL} />
+                <ArtistName name={artistNames} artistURL={artistURL} />
             </div>
         </>
     )

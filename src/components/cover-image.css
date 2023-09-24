@@ -1,0 +1,49 @@
+.coverImageAndButtons {
+    position: relative;
+    width: 100%;
+  }
+
+/* The icon wrapper is in the middle of the coverImage and is a flexbox with the icons as its flex children. The gap between the icons is set to 20px and the opacity is 0. The opacity is changed when the container is hovered */
+.coverImageAndButtons .iconWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+  }
+
+
+  /* The size of the icons is set to 24px. Their position is relative within the flexbox */
+.coverImageAndButtons #favorite-icon, #play-icon, #more-info-icon {
+    position: relative;
+    width: 24px;
+ }
+
+ /* Two icons are coded as black, now i invert the color to white */
+ #play-icon, #more-info-icon {
+    filter: invert(1);
+ }
+
+ /* Change the size of the "dots"-icon as I think it was too big compared to the other two */
+ #more-info-icon {
+    width: 20px;
+ }
+  
+/* Hover effects, the coverimage fades and the icons become visible. The play-icon increases in size when it's hovered */
+.coverImageAndButtons:hover > .iconWrapper {
+    opacity: 1;
+    transition: 0.4s;
+  }
+  
+.coverImageAndButtons:hover > .coverImage {
+    opacity: 0.4;
+    transition: 0.5s;
+  }
+
+#play-icon:hover {
+    width: 50px;
+    transition: 0.4s;
+  }

@@ -1,0 +1,5 @@
+/* Changes the albumname to a bolder font and displays block so the artist name isn't on the same line */
+.albumA {
+    font-weight: 600;
+    display: block;
+}
