@@ -8,11 +8,11 @@ export const CoverImage = ({ imageUrl }) => {
    
   return (
     <div className="coverImageWrapper">
-      
-       {/* Displaying the album cover image */}
+
+       
   <img className="coverImage" src={imageUrl} alt="Album cover" />
   
-  {/* Icons (like heart, play, etc.) overlayed on the album cover */}
+  
   <div className="iconGroup">
                 <img src={heart} alt="Heart Icon" className="icon" />
                 <img src={play} alt="Play Icon" className="icon play-icon" />
