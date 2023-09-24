@@ -13,5 +13,6 @@ export const AlbumImage = ({ image }) => {
         </div >
     )
 }
-
-//to do - link album image to the URL for the album
+AlbumImage.defaultProps = {
+    image: "Cover album image not available",
+};

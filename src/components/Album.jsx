@@ -1,18 +1,13 @@
 import { Artists } from './Artists';
 import { AlbumImage } from './AlbumImage';
-//import { AlbumImages } from "./AlbumImages";
-//import { Header } from "./components/Header";
-
 
 export const Album = ({ id, name, albumType, image, artists, link }) => {
-    console.log(typeof artists);
 
     return (
-        //do I need a key attribute in the first div for this return?
         <div className="album-info">
             <a
                 target="_blank"
-                className="album-names"
+                className="album-image"
                 href={link}
                 key={id}
                 rel="noreferrer noopener"

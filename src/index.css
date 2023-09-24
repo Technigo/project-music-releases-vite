@@ -25,7 +25,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #121212;
+  background: black;
   padding: 1em 0em;
   color: #1dd05d;
   font-size: 24px;
@@ -57,8 +57,7 @@ header img {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* this doesn't work*/
-.album-cover:hover+.three-hover-buttons {
+.album-cover:hover>.three-hover-buttons {
   display: flex;
   opacity: 1;
 }
@@ -74,6 +73,7 @@ header img {
   top: 0;
   left: 0;
   margin: 45%;
+  opacity: 0;
 }
 
 .button-heart,
@@ -111,10 +111,12 @@ header img {
   margin: 2px;
   text-align: center;
   padding: 1em;
+  border-radius: 10px;
 }
 
 .artists-names,
-.single-or-album {
+.single-or-album,
+.album-names {
   color: white;
   text-decoration: none;
   font-weight: 400;
@@ -124,8 +126,12 @@ header img {
   text-decoration: underline;
 }
 
+.album-names:hover {
+  text-decoration: underline;
+}
+
 /*this doesn't work, one way I tried to solve the comma problem*/
-.artists-names:not(:first-child, :last-child)::before {
+.artist-name:not(:first-child, :last-child)::before {
   color: white;
   content: ", ";
 }
