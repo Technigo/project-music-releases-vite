@@ -1,12 +1,12 @@
-export const ArtistName = (mappedOutItem) => {
-const { albumsArray } = mappedOutItem;
+export const ArtistName = (mappedoutArtistName) => {
+const { albumsArray } = mappedoutArtistName;
 
 return (
     <section className="artist-name">
-      {albumsArray.map((mappedOutItem) => (
-        <div className="artist" key={mappedOutItem.id}>
+      {albumsArray.map((mappedoutArtistName) => (
+        <div className="artist" key={mappedoutArtistName.id}>
           <div className="artists">
-            {mappedOutItem.artists.map((mappedOutArtist) => (
+            {mappedoutArtistName.artists.map((mappedOutArtist) => (
               // For each artist, create a link to the artist's Spotify page with a unique key based on the artist's 'id'
               <a
                 href={mappedOutArtist.external_urls.spotify}
