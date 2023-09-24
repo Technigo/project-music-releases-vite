@@ -9,7 +9,7 @@ const App = () => {
     <div className="app">
       <Header /> {/* This should include the header */}
       <div className="album-container">
-        {jsonData.albums.items.map((album) => (
+        {data.albums.items.map((album) => (
           <Album
             key={album.id}
             albumName={album.name}
