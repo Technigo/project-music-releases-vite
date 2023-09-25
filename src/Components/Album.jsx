@@ -12,7 +12,7 @@ const Album = ({ data }) => {
     return (
         <div>
             <Header />
-            <section className="album-wrapper">
+            <section className='albumWrapper'>
                 {data.map((album, index) => (
                     <div key={index}>
                         <div>

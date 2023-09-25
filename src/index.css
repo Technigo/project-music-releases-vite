@@ -13,69 +13,72 @@ code {
 }
 
 /* General Style */
-
 body {
   background-color: rgb(0, 0, 0);
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
   text-align: center;
-  font-family: "Oxygen", "sans-serif";
+}
+
+.albumWrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 50px;
 }
 
 header {
   color: whitesmoke;
-  text-shadow: 2px 3px 3px rgba(275, 275, 275, 0.4);
   margin-top: 28px;
   font-size: 25px;
   margin-bottom: 10px;
-}
-
-.album-wrapper {
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: black;
   padding: 1em 0em;
-  color: #ffffff;
-  font-size: 24px;
   font-weight: 700;
-  ;
-}
-
-/*AlbumImage.js CSS - to display Albumn image, 3 icons, hover effects */
-.album-wrapper {
-  display: flex;
-  justify-content: center;
 }
 
 .coverImage {
-  position: relative;
-  width: 100%;
+  max-width: 50px;
 }
 
-.album-cover img {
-  width: 100%;
-}
-
-.album-cover:hover {
-  opacity: 0.2;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.album-cover:hover>.three-hover-buttons {
+.ikonButtons {
+  margin: 15px;
   display: flex;
-  opacity: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100;
+  filter: invert();
+  /*; pointer-events: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;*/
 }
 
 
-.three-hover-buttons {
-  background-color: white
+/*background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: opacity 0.3s ease, background-color 0.3s ease;*/
+
+
+/*RESPONSIVE DESIGN - TABLET AND PC*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  .albumWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .albumWrapper {
+    grid-template-columns: repeat(4, 1fr)
+  }
 }

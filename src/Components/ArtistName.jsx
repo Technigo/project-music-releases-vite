@@ -12,7 +12,7 @@ const ArtistName = ({ name, index, totalArtists }) => {
 
     //The component renders the artist's name followed by the delimiter (if needed) wrapped in a span element.
     return (
-        <span>
+        <span className='artistName'>
             {name}
             {generateDelimiter(index, totalArtists)}
         </span>
