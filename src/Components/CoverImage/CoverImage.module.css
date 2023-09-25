@@ -1,8 +1,67 @@
-.styling.CoverImage {
+.CoverImage {
+    position: relative;
     max-width: 100%;
     height: auto;
     display: inline-block;
     margin: 0 auto;
 }
 
-/*OBS; FIX SIZE REACTIVE*/
+.coverIcons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.icon {
+
+    margin: 0 15px;
+    filter: invert();
+}
+
+.iconPlay {
+    width: 38px;
+}
+
+.iconHeart,
+.iconDots {
+    width: 25px;
+}
+
+@media (min-width: 670px) {
+    .icon {
+
+        margin: 0 8px;
+    }
+
+    .iconPlay {
+        width: 40px;
+    }
+
+    .iconHeart,
+    .iconDots {
+        width: 29px;
+    }
+}
+
+/*
+@media (min-width: 1025px) {
+    .icon {
+
+        margin: 0 8px;
+    }
+
+    .iconPlay {
+        width: 40px;
+    }
+
+    .iconHeart,
+    .iconDots {
+        width: 29px;
+    }
+}*/
