@@ -65,14 +65,14 @@ x Album.jsx - (Child Component of App.jsx) - ðŸ¤“ Not Provided, to be created ðŸ
 ## Requirements
 X- Your app should have components
 - Your page should look as close as possible to the design provided. 
-- You should display the following for each album:
+X You should display the following for each album:
   X-   album cover image 
   X-   album name 
-  -   the name of each artist involved with a comma between
-- Hover effects:
-  - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
-  - When you hover over the play button, it should grow (see the design sketch)
-  - Hovering an artist name or an album name should match the design sketch
+  X-  the name of each artist involved with a comma between
+ X- Hover effects:
+  X- When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
+  X When you hover over the play button, it should grow (see the design sketch)
+  X- Hovering an artist name or an album name should match the design sketch
 X- When you click on the album, it should link to the album's external url in the data
 X- When you click on an artist, it should link to the artist's external url in the data
 X- Your page should be responsive:

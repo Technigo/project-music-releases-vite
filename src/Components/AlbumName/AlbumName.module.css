@@ -5,6 +5,11 @@
     font-weight: bold;
 }
 
+.AlbumName:hover {
+    text-decoration: underline;
+}
+
+
 a {
     text-decoration: none;
 }
