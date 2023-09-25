@@ -14,6 +14,7 @@ const CoverImage = ({ url, alt }) => {
         </span>
     )
 }
+// ICONS were a real issue - they did not show, and when I moved them to other folders (tips from others) they moved by themseleves agian.
 
 //Export component
 export default CoverImage
