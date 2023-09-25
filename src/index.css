@@ -35,8 +35,8 @@ body{
 .album-wrapper {
   display: grid;
   grid-template-columns: 1fr; 
-  gap: 18px; /* Adds spacing between grid items */
-  /* Add any other desired styles */
+  gap: 18px; 
+  
 }
 
 .album h2 {
@@ -50,7 +50,6 @@ body{
 }
 
 .cover-image img {
-  
     height: auto;
     max-width: 600px;
     width: 100%;
@@ -59,11 +58,6 @@ body{
 
 /*---------HOVER EFFECTS FOR ALBUM -----------*/
 
-
-
-/* .cover-image:hover{
-  filter: brightness(50%); 
-}  */
 
 .cover-image:hover > img {
   opacity: 0.4;
@@ -91,36 +85,38 @@ body{
 /*-------------STYLING TO LINKS-------------*/
 
 .album-link {
-  text-decoration: none; /* Remove default underline */
-  transition: text-decoration 0.2s ease-in-out; /* Add a smooth transition */
+  text-decoration: none; 
+  transition: text-decoration 0.2s ease-in-out; 
 }
 
 .album-link:hover {
-  text-decoration: underline; /* Underline the text on hover */
+  text-decoration: underline; 
   text-decoration-color: #ffffff;
 }
 
 .artist-link {
-  text-decoration: none; /* Remove default underline */
-  transition: text-decoration 0.2s ease-in-out; /* Add a smooth transition */
+  text-decoration: none; 
+  transition: text-decoration 0.2s ease-in-out; 
 }
 
 .artist-link:hover {
-  text-decoration: underline; /* Underline the text on hover */
+  text-decoration: underline; 
   text-decoration-color: #a0a0a0; 
 }
 
-/* For tablets and larger screens */
-@media screen and (min-width: 481px) {
+/*-------MEDIA QUERIES---------------*/
+
+/*For tablets*/
+@media (min-width: 667px) {
   .album-wrapper {
-    grid-template-columns: repeat(2, 1fr); /* Display two albums in a row for tablets */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
-/* For desktop screens */
-@media screen and (min-width: 769px) {
+/*For desktops*/
+@media (min-width: 1025px) {
   .album-wrapper {
-    grid-template-columns: repeat(4, 1fr); /* Display four albums in a row for desktop */
+    grid-template-columns: repeat(4, 1fr); 
   }
 
 
