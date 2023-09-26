@@ -7,9 +7,9 @@ const CoverImage = ({ url, alt }) => {
         <span className='coverImage'>
             <img src={url} alt={alt} />
             <div className='ikonButtons'>
-                <img className='buttonHeart' src="./public/icons/heart.svg" alt="Heart button" />
-                <img className='buttonPlay' src="./public/icons/play.svg" alt="Play button" />
-                <img className='buttonDots' src="./public/icons/dots.svg" alt="Dots button" />
+                <img className='buttonHeart' src="./heart.svg" alt="Heart button" />
+                <img className='buttonPlay' src="./play.svg" alt="Play button" />
+                <img className='buttonDots' src="./dots.svg" alt="Dots button" />
             </div>
         </span>
     )
