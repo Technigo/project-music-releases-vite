@@ -4,7 +4,7 @@ export const Artists = ({ artists }) => {
   const totalArtists = artists.length;
 
   return (
-    <>
+    <div className="artistWrapper">
       {/* The artist info is inside a span so it only take up space equal to the length of the artist(s) name */}
       {artists.map((artist, index) => (
         <span key={artist.id}>
@@ -22,6 +22,6 @@ export const Artists = ({ artists }) => {
           </a>
         </span>
       ))}
-    </>
+    </div>
   );
 };

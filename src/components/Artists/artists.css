@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+.artitstWrapper {
+  display: flex;
+}
+
 p,
 a,
 span {
