@@ -24,12 +24,18 @@ const Album = ({
                 externalUrl={externalUrl}
             />
             {/* For each artist display the artist component. */}
-            {artists.map((artist) => (
-                <Artist
-                    key={artist.id}
-                    name={artist.name}
-                    externalUrl={artist.externalUrl}
-                />
+            {artists.map((artist, index) => (
+                <>
+                    <Artist
+                        key={artist.id}
+                        name={artist.name}
+                        externalUrl={artist.externalUrl}
+                    />
+                    {/* Adding a comma if it is more than one artist. */}
+                    {index < artists.length - 1 && (
+                        <span>, </span>
+                    )}
+                </>
             ))}
         </div>
     );
