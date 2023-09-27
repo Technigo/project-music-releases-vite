@@ -1,0 +1,67 @@
+.CoverImage {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    transition: 0.3s ease;
+}
+
+.coverIcons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.CoverImage:hover .coverIcons {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.CoverImage:hover {
+    filter: brightness(1);
+}
+
+.icon {
+    margin: 0 15px;
+    filter: invert();
+    pointer-events: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+}
+
+.iconPlay {
+    width: 38px;
+}
+
+.iconHeart,
+.iconDots {
+    width: 25px;
+}
+
+@media (min-width: 670px) {
+    .icon {
+        margin: 0 8px;
+    }
+
+    .iconPlay {
+        width: 40px;
+    }
+
+    .iconHeart,
+    .iconDots {
+        width: 29px;
+    }
+}

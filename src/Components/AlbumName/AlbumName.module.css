@@ -1,0 +1,15 @@
+.AlbumName {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.AlbumName:hover {
+    text-decoration: underline;
+}
+
+
+a {
+    text-decoration: none;
+}
