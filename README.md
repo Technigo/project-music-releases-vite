@@ -9,6 +9,6 @@ If I had more time I would try out the more advanced goals.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-music-releases-jennylarsen.netlify.app/
 
 

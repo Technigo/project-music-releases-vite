@@ -7,11 +7,11 @@
 
 /* styling for anchor (<a>) elements inside elements with the class .artist-name */
 .artist-name a {
-    text-decoration: none; /*this removes the default underline decoration for links */
+    text-decoration: none; /* Removes the default underline decoration for links */
+    color: #a0a0a0; /* Set the default link color */
 }
 
 /* styling for anchor elements when artist name(s) is hovered over */
-.artist-name a:hover{
-    color: #a0a0a0;
-    text-decoration: underline; /* adding an underline decoration on hover */
+.artist-name a:hover {
+    text-decoration: underline; /* Adding an underline decoration on hover */
 }

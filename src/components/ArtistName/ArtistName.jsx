@@ -1,34 +1,36 @@
-import "./artistname.css";
+import React from 'react';
+import "./artistname.css";  
 
+// Define the functional component "ArtistName" that takes a single artist item as a prop
 export const ArtistName = ({ singleArtistItem }) => {
+  // Extract the list of artists from the singleArtistItem object
   const { artists } = singleArtistItem;
 
-  // change how the artist name(s) is presented based of number of artists
-  const artistName = artists.length === 1
-    ? artists[0].name // this display a single artist's name
-    : artists.length === 2
-      ? `${artists[0].name} & ${artists[1].name}` // this display two artists with " & " between them
-      : artists.slice(0, -1).map(artist => `${artist.name}, `).join('') + `& ${artists.slice(-1)[0].name}`; // this display multiple artists with commas and the last artist with " & "
 
-  // create an object to hold artist information
-  const artistObjects = {
-    artistName, // formatted artist name
-    aHref: singleArtistItem.artists[0].external_urls.spotify, // link to artist's Spotify page
-    target: "_blank", // opens the link in a new tab
-    rel: "noreferrer noopener", // security measure for links that open in new tabs
-  };
+   // Create an array of <a> elements for each artist, with links to their Spotify profiles
+  const artistLinks = artists.map((artist, index) => (
+    <a
+      key={index}
+      href={artist.external_urls.spotify}
+      target="_blank" // Open links in a new tab
+      rel="noreferrer noopener" //// Recommended for security
+    >
+      {artist.name}
+    </a>
+  ));
 
   return (
-    <div className="artist-name">
-      <a 
-        href={artistObjects.aHref}
-        target={artistObjects.target}
-        rel={artistObjects.rel} 
-      >
-        <p>{artistObjects.artistName}</p> 
-      </a>
+    <div className="artist-name"> {/* Assign the "artist-name" CSS class to a wrapping div */}
+      {artistLinks.length > 0 && ( // Render artist names only if there are artists to display
+        <p>
+          {artistLinks.map((link, index) => (
+            <React.Fragment key={index}>
+              {index > 0 && ', '} {/* Add a comma and space if not the first artist */}
+              {link}
+            </React.Fragment>
+          ))}
+        </p>
+      )}
     </div>
   );
 };
-
-      
