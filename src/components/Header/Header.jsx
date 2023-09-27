@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <div>
       <h1 className="header">New Albums & Singles</h1>
-      <p className="header">Technigo Web Development Programme</p>
+      <p className="header">Technigo Web Development Boot Camp</p>
     </div>
   )
 }
