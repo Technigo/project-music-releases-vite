@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We where asked to create a music website with React.
 
 ## Getting Started with the Project
 
@@ -24,11 +22,11 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This week have we learned to use React, JSX, it was hard to wrok with so many files and folders and connect them with each other. I ask a coach that help me understand better how to work with react. I ask my team and the chatGPT to get some answers, I looked at questions asked on StakOverflow. I had the problem that the albumNAme and artistName was underline from a default style in the browser, I solved it by copying  the css style from the the browser and pasting it into my code on VSCode, it work perfectly. 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://iridescent-semolina-991be5.netlify.app
 
 ## Instructions
 
