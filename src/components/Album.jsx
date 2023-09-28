@@ -9,9 +9,11 @@ export const Album = ({ albumInfo }) => {
 
   // Variables for each component prop, extracting necessary information from the passed albumInfo
   const buttonIconParent = "";
-  const artistNameParent = albumInfo.artists[0].name;
   const externalArtistHref = albumInfo.artists[0].external_urls.spotify;
   const albumNameParent = albumInfo.name;
+  const artistNameParent = albumInfo.artists
+    .map((artist) => artist.name)
+    .join(", ");
   const externalAlbumHref = albumInfo.external_urls.spotify;
   const imageRefParent = {
     urlLinkFromApi: albumInfo.images[0].url,
