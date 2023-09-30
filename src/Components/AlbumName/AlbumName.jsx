@@ -1,7 +1,11 @@
-import style from './AlbumName.module.css'
+import style from './AlbumName.module.css';
 
-export const AlbumName = () => {
+export const AlbumName = ({ name, url }) => {
   return (
-    <div>AlbumName</div>
-  )
-}
+    <p className={style.title}>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {name}
+      </a>
+    </p>
+  );
+};

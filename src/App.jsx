@@ -1,13 +1,13 @@
-import { Header } from "./Components/Header";
-import { Album } from "./Album";
-
 import data from "./data.json";
 
-console.log("data", data);
+import { Header } from "./Components/Header/Header";
+import { Album } from "./Components/Album/Album";
+
+console.log(data);
 
 export const App = () => {
   return <div>
     <Header />
-    <Album />
+    <Album data={data} />
   </div>;
 };
