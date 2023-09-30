@@ -1,14 +1,43 @@
+import React, { useEffect, useState } from 'react';
 import data from "./data.json";
-import { Header } from "./Components/Header";
-import {Album} from "./Album"
-
-console.log(data); // data is an object, not an array
-
+import { Header } from "./Components/Header/Header";
+import { Album } from "./Components/Album/Album";
+import style from "./index.css";
 
 export const App = () => {
-  return ( // JSX
-  <div>   
- <Header/> 
-  <Album data={data.albums.items}/> 
-  </div>);// data.albums.items is an array
+  const [uniqueAlbums, setUniqueAlbums] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Add loading state
+  console.log(data); // Log the data to the console
+  useEffect(() => {
+    // Simulate an asynchronous data fetch (replace with actual data fetching)
+    setTimeout(() => {
+      const filteredAlbums = data.albums.items.slice(0, 50); // Filter the first 50 albums
+      setUniqueAlbums(filteredAlbums);
+      setIsLoading(false); // Set loading state to false when data is available
+    }, 1000); // Simulated delay for fetching data
+  }, []);
+
+
+  return (
+    <div>
+      <Header />
+
+      {/* Conditional rendering based on loading state */}
+      {isLoading ? (
+        <p>Loading...</p> // Display a loading indicator
+      ) : (
+        <div className="album-list">
+          {uniqueAlbums.map((album) => (
+            <div className="album-container" key={album.id}>
+              <h3>{album.artists[0].name}</h3>
+              <h2>{album.song}</h2>
+              <p>{album.name}</p>
+              <img src={album.images[1].url} alt="Album Cover" />
+              {/* Add other album details here */}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 };

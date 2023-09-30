@@ -1,13 +1,9 @@
-import artist from '../../data/artist.json';
+import style from './ArtistName.module.css'
 
-export const ArtistName = (artist) => {
-    console.log(artist);
-    const { artist } = artist;
-    }    
-
-    return (
-        <div>
-            <h1>{artist}</h1>
-        </div>
-    );
+export const ArtistName = () => {
+  console.log('ArtistName')
+  return (
+    <div>ArtistName</div>
+  )
+}
 

@@ -1,10 +1,13 @@
-// first, import "name" from data.json for each artist name
-import data from "../../data.json";
-import name from "../../data/name.json";
+import style from './AlbumName.module.css';
 
-// then, export AlbumName function
-export const AlbumName = () => {
+export const AlbumName = ({ name, url }) => {
+  console.log('AlbumName');
   return (
-    <div>AlbumName</div>
-  )
-}
+    <p className={style.title}>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {name}
+      </a>
+    </p>
+  );
+};
+
