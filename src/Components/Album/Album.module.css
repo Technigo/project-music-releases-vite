@@ -1,0 +1,34 @@
+main {
+  display: grid;
+  grid-template-columns: reapeat(1, 1fr);
+}
+
+.album {
+  margin: 25px;
+}
+
+.single_wrapper,
+.albums_wrapper {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: reapeat(1, 1fr);
+  margin-bottom: 50px;
+}
+
+.heading {
+  margin-left: 25px;
+}
+
+@media (min-width: 670px) {
+  .single_wrapper,
+  .albums_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .single_wrapper,
+  .albums_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

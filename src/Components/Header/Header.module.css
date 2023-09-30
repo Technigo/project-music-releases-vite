@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  background-color: black;
+}
+
+.primaryHeading {
+  padding: 50px 0 30px;
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}

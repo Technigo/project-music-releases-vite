@@ -1,14 +1,7 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a week 5 project at Technigo boot camp. This is a first week of React, and this project is careted using React and static data from spotify.
 
 ## Getting Started with the Project
 
@@ -24,12 +17,12 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The problem was to create eventlistener with React, as I am a beginner with React. I did reserach and took some courses about React to find out how to work with React. 
+Placing eventListner right middle of JSX is so much easier than doing the same thing in JS files, and I found it very interesting. 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
+Link to the deployed version: https://music-releases2222.netlify.app/
 ## Instructions
 
 <a href="instructions.md">
