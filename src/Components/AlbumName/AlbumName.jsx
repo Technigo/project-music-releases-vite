@@ -10,3 +10,4 @@ export const AlbumName = ({ name, url }) => {
     </p>
   );
 };
+

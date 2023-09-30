@@ -6,3 +6,4 @@ export const ArtistName = () => {
     <div>ArtistName</div>
   )
 }
+
