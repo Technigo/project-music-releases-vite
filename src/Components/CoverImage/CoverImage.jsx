@@ -3,6 +3,8 @@ import style from "./CoverImage.module.css";
 export const CoverImagage = (url) => {
   const imageUrl = url.url[0].url;
 
+  // This checks if a mouse enters or leaves an image, and depends on this state,
+  // isVisible class is applyed and icons appear or disappear.
   const [isShown, setIsShown] = useState(false);
 
   return (
