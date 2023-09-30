@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import data from "./data.json";
 import { Header } from "./Components/Header/Header";
 import { Album } from "./Components/Album/Album";
+import style from "./index.css";
 
 export const App = () => {
   const [uniqueAlbums, setUniqueAlbums] = useState([]);
@@ -16,6 +17,7 @@ export const App = () => {
     }, 1000); // Simulated delay for fetching data
   }, []);
 
+
   return (
     <div>
       <Header />
@@ -24,67 +26,18 @@ export const App = () => {
       {isLoading ? (
         <p>Loading...</p> // Display a loading indicator
       ) : (
-        <Album data={uniqueAlbums} />
-
+        <div className="album-list">
+          {uniqueAlbums.map((album) => (
+            <div className="album-container" key={album.id}>
+              <h3>{album.artists[0].name}</h3>
+              <h2>{album.song}</h2>
+              <p>{album.name}</p>
+              <img src={album.images[1].url} alt="Album Cover" />
+              {/* Add other album details here */}
+            </div>
+          ))}
+        </div>
       )}
     </div>
   );
 };
-
-// function filterUniqueAlbums (data) {
-//   // Your filterUniqueAlbums function logic here
-// }
-
-
-
-// import data from "./data.json";
-
-// import { Header } from "./Components/Header/Header";
-// import { Album } from "./Components/Album/Album";
-
-// console.log(data);
-
-// export const App = () => {
-//   return <div>
-//     <Header />
-//     <Album data={data} />
-//   </div>;
-// };
-
-// import React, { useEffect, useState } from 'react';
-// import data from "./data.json";
-
-// import { Header } from "./Components/Header/Header";
-// import { Album } from "./Components/Album/Album";
-
-// export const App = () => {
-//   // State to store the unique albums/songs
-//   const [uniqueAlbums, setUniqueAlbums] = useState([]);
-
-//   useEffect(() => {
-//     console.log(data); // to see the data structure
-//     // Filter and set unique albums/songs here
-//     const uniqueAlbums = filterUniqueAlbums(data); // Implement this function
-//     setUniqueAlbums(uniqueAlbums);
-//   }, []);
-
-//   return (
-//     <div>
-//       <Header />
-//       {/* Pass the unique albums/songs data to the Album component */}
-//       <Album data={uniqueAlbums} />
-//     </div>
-//   );
-// };
-
-// // Function to filter unique albums/songs
-// function filterUniqueAlbums(data) {
-//   const uniqueAlbums = new Set();
-
-//   data.forEach((item) => {
-//     uniqueAlbums.add(item.albumName);
-//   });
-
-//   return Array.from(uniqueAlbums);
-// }
-
