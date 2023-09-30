@@ -12,6 +12,7 @@ import { useState } from "react";
 import style from "./CoverImage.module.css";
 
 export const CoverImage = ({ imageUrl }) => {
+  console.log("CoverImage");
   const [isShown, setIsShown] = useState(false);
 
   return (

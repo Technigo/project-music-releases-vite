@@ -13,24 +13,27 @@ export const Album = (data) => {
   const createAlbumSection = (arr) => {
     return arr.map((obj) => {
       return (
-        <div key={obj.name} className={style.album}>
+        <div className={style.album} key={obj.id}>
           {/* Pass the imageUrl prop to the CoverImage component */}
-          <CoverImage imageUrl="https://i.scdn.co/image/ab67616d0000b273ec65553ce98439bcf0595e60" />
+          <CoverImage imageUrl={obj.images[1].url} />
 
           <AlbumName name={obj.name} url={obj.external_urls.spotify} />
-          <ArtistName artist={obj.artists} />
+          <ArtistName artist={obj.artists[0].name} />
         </div>
       );
     });
   };
 
+
+
+
   return (
     <main>
       {/* Single albums section */}
-      <h2 className={style.heading}>Singles</h2>
+      {/* <h2 className={style.heading}>Singles</h2>
       <div className={style.single_wrapper}>
         {createAlbumSection(singlesArr)}
-      </div>
+      </div> */}
       {/* Playlist */}
       {/* <Aside /> */}
       {/* Albums section */}
