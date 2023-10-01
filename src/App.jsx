@@ -30,7 +30,7 @@ export const App = () => {
           {uniqueAlbums.map((album) => (
             <div className="album-container" key={album.id}>
               
-              <img src={album.images[1].url} alt="Album Cover" />
+              <img src={album.images[1].url} alt="Album Cover" /> 
               <a href={album.external_urls.spotify}>
               <h3>{album.artists[0].name}</h3>
               </a>
