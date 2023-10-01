@@ -17,10 +17,10 @@ export const Album = (data) => {
         <div className={style.album} key={obj.id}>
           {/* Pass the imageUrl prop to the CoverImage component */}
           <CoverImage imageUrl={obj.images[1].url} />
-
-          <AlbumName name={obj.name} url={obj.external_urls.spotify} />
+          {/* Pass the name and url props to the AlbumName component */}
+          <AlbumName name={obj.name} url={obj.external_urls.spotify} /> 
           <PlayIcon />
-          
+          {/* Pass the artist prop to the ArtistName component */}
           <ArtistName artist={obj.artists[0].name} />
         </div>
       );

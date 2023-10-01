@@ -1,9 +1,9 @@
 # Music Releases
 
-In this project I built a spotify top-50 almbum list with react. 
+In this project I built a spotify top-50 album list with react. 
 ### The Problem
 
-The challenge was to pass and display the album data correctly to the album component. 
+The challenge was to fetch data.json data and pass the props correctly to get the components to communicate.
 
 The rest was styling and structure, which in the first submission will be missing play-icon and other CSS design requirements. 
 
