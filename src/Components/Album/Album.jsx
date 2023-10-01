@@ -1,13 +1,14 @@
 import { AlbumName } from "../AlbumName/AlbumName";
 import { ArtistName } from "../ArtistName/ArtistName";
 import { CoverImage } from "../CoverImage/CoverImage";
+import { PlayIcon } from "../PlayIcon/PlayIcon";
 // import { Aside } from "../Aside/Aside";
 import style from "./Album.module.css";
 
 export const Album = (data) => {
   const albums = Array.isArray(data.data) ? data.data : [];
   //const albums = data.data;
-  const singlesArr = albums.filter((el) => el.album_type === "single");
+  // const singlesArr = albums.filter((el) => el.album_type === "single");
   const albumsArr = albums.filter((el) => el.album_type !== "single");
 
   const createAlbumSection = (arr) => {
@@ -18,6 +19,8 @@ export const Album = (data) => {
           <CoverImage imageUrl={obj.images[1].url} />
 
           <AlbumName name={obj.name} url={obj.external_urls.spotify} />
+          <PlayIcon />
+          
           <ArtistName artist={obj.artists[0].name} />
         </div>
       );

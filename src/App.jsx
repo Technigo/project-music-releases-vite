@@ -14,7 +14,7 @@ export const App = () => {
       const filteredAlbums = data.albums.items.slice(0, 50); // Filter the first 50 albums
       setUniqueAlbums(filteredAlbums);
       setIsLoading(false); // Set loading state to false when data is available
-    }, 1000); // Simulated delay for fetching data
+    }, 100); // Simulated delay for fetching data
   }, []);
 
 
@@ -24,15 +24,21 @@ export const App = () => {
 
       {/* Conditional rendering based on loading state */}
       {isLoading ? (
-        <p>Loading...</p> // Display a loading indicator
+        <p></p> // Display a loading indicator
       ) : (
         <div className="album-list">
           {uniqueAlbums.map((album) => (
             <div className="album-container" key={album.id}>
-              <h3>{album.artists[0].name}</h3>
-              <h2>{album.song}</h2>
-              <p>{album.name}</p>
+              
               <img src={album.images[1].url} alt="Album Cover" />
+              <a href={album.external_urls.spotify}>
+              <h3>{album.artists[0].name}</h3>
+              </a>
+              <h2>{album.song}</h2>
+              
+              <a href = {album.external_urls.spotify}>
+              <p>{album.name}</p>
+              </a>
               {/* Add other album details here */}
             </div>
           ))}
