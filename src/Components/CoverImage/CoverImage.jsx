@@ -24,6 +24,7 @@ export const CoverImage = ({ imageUrl }) => {
       {isShown ? (
         <img src={imageUrl} alt="Album Cover" />
       ) : (
+        
         <div className={style.placeholder}>Hover to view</div>
       )}
     </div>
