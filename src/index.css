@@ -112,13 +112,15 @@ p {
 .icon-container {
   display: flex;
   justify-content: center;
+  /* Center the icons with equal space between them */
   left: 0;
   opacity: 0;
   position: absolute;
   top: 40%;
   width: 100%;
   transition: opacity 0.3s ease;
-  gap: 20px;
+  gap: 30px;
+  /* This gap will be used between icons */
 }
 
 
@@ -138,8 +140,6 @@ p {
 
 /* Icon styling */
 .icon {
-  font-size: 24px;
-  margin: 0 10px;
   transition: transform 0.3s ease;
   filter: invert(1);
 }
@@ -152,16 +152,30 @@ p {
 /* Increase the size of the heart and dots icons without affecting the gap */
 .icon-container .heart-icon img,
 .icon-container .dots-icon img {
-  width: 24px; /* Adjust the width as needed */
-  height: 24px; /* Adjust the height as needed */
+  width: 35px;
+  /* Adjust the width as needed */
+  height: 35px;
+  /* Adjust the height as needed */
+  /* Set the initial opacity */
+  opacity: 0.6;
+  margin: 0;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 /* Icon styling for play icon (if needed) */
 .icon-container .play-icon img {
-  width: 35px;
-  height: 35px;
-  margin-left: 5px;
-  /* You can customize the size of the play icon separately */
+  width: 45px;
+  height: 45px;
+  /* Set the initial opacity */
+  opacity: 0.6;
+  margin: 0px;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 
@@ -173,6 +187,23 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .icon-container {
+    gap: 20px;
+  }
+
+  /* Increase the size of the heart and dots icons without affecting the gap */
+  .icon-container .heart-icon img,
+  .icon-container .dots-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Icon styling for play icon (if needed) */
+  .icon-container .play-icon img {
+    width: 35px;
+    height: 35px;
+  }
+
 }
 
 
@@ -182,6 +213,10 @@ p {
   /* Four columns on desktop */
   .album-wrapper {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .icon-container {
+    gap: 10px;
   }
 
 }
