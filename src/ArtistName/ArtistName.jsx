@@ -11,7 +11,7 @@ export const ArtistNames = ({ artistsArray }) => {
             rel="noopener noreferrer"
           >
             {mappedOutArtist.name}
-            <ArtistSeparate index={index} length={artistsArray.length} />
+            {/* <ArtistSeparate index={index} length={artistsArray.length} /> */}
           </a>
         </h3>
       ))}

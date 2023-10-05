@@ -4,7 +4,7 @@ export const AlbumName = ({ albumName, albumURL }) => {
   return (
     <div className="album-title-link">
       <h2>
-        <a href={albumURL} target="_blank" rel="">
+        <a href={albumURL} target="_blank" rel="noreferrer noopener">
           {albumName}
         </a>
       </h2>

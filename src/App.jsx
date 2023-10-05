@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <div className="App">
       <Header />
-      <Album albumsAray={data.albums.items} />
+      <Album albumsArray={data.albums.items} />
       <Footer />
     </div>
   );
