@@ -1,7 +1,7 @@
 import "./Album.css";
 
-import { ArtistNames } from "../ArtistName/ArtistName.jsx";
-import { AlbumName } from "../AlbumName/AlbumName.jsx";
+import { ArtistNames } from "../ArtistName/ArtistName";
+import { AlbumName } from "../AlbumName/AlbumName";
 import { CoverImage } from "../Album/CoverImage/coverImage";
 
 export const Album = ({ albumsArray }) => {
