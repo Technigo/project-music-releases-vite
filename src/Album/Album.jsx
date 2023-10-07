@@ -9,15 +9,15 @@ export const Album = ({ albumsArray }) => {
     <section className="album-container">
       {albumsArray.map((MappedOutItem) => (
         <div className="album-card" key={MappedOutItem.id}>
+          <CoverImage coverImage={MappedOutItem.images[0].url} />
           <AlbumName
-            AlbumName={MappedOutItem.name}
+            albumName={MappedOutItem.name}
             albumURL={MappedOutItem.external_urls.spotify}
           />
           <ArtistNames
             artistsArray={MappedOutItem.artists}
             artistURL={MappedOutItem.external_urls.spotify}
           />
-          <CoverImage coverImage={MappedOutItem.images[0].url} />
         </div>
       ))}
     </section>
