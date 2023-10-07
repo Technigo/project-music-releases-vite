@@ -1,0 +1,11 @@
+.ampersand-space::before {
+  content: "\00a0";
+}
+
+.ampersand-space::after {
+  content: "\00a0";
+}
+
+.comma-space::after {
+  content: "\00a0";
+}

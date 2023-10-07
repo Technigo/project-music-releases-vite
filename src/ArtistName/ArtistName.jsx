@@ -1,5 +1,7 @@
 import "./ArtistName.css";
 
+import { PluralArtists } from "./PluralArtists";
+
 export const ArtistNames = ({ artistsArray }) => {
   return (
     <div className="artist-name-link">
@@ -11,7 +13,7 @@ export const ArtistNames = ({ artistsArray }) => {
             rel="noopener noreferrer"
           >
             {mappedOutArtist.name}
-            {/* <ArtistSeparate index={index} length={artistsArray.length} /> */}
+            <PluralArtists index={index} length={artistsArray.length} />
           </a>
         </h3>
       ))}
