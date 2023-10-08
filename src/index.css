@@ -1,20 +1,30 @@
-body{
-  background-color: #1a1a1a;
+body {
+  background-color: black;
+  color: white;
+  margin: 25px 50px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#fff;
 }
 
-.header {
-  font-family: Helvetica, sans-serif;
+.app {
+  display: block;
+}
+
+.albumContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+}
+
+header {
   color: #fff;
-  background-color: #1a1a1a
+  display: flex;
+  font-family: Helvetica,sans-serif;
   font-size: 20px;
   justify-content: center;
-  
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 
@@ -24,34 +34,113 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.albumname {
+  display: block;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.albumname h3 {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  
+  &:hover {
+    text-decoration: underline;
   }
-  a:hover {
-    color: #747bff;
+}
+
+.artists {
+  display: block;
+}
+
+.artists h3 {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  
+  &:hover {
+    text-decoration: underline;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+.coverImage {
+position: relative;
+}
+
+.coverImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0; 
+  transition: opacity 0.4s ease; 
+}
+
+.coverImage:hover::before {
+  opacity: 1;
+}
+
+.coverImage:hover>.iconContainer {
+ visibility: visible;
+}
+
+
+.albumContainer .cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; 
+  transition: visibility 0.4s ease;
+}
+.coverImage .iconContainer button {
+  background: transparent;
+  border: none;
+  color: white; 
+}
+
+.heart img,
+.play img,
+.more img {
+  width: 80%;
+  height: 80%; 
+  filter: invert(100%);
+}
+
+.heart:hover img,
+.play:hover img,
+.more:hover img {
+  width: 100%; 
+  height: 100%; 
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .albumContainer {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .albumContainer .cover {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .albumContainer {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+  .albumContainer .cover {
+    width: 40%;
   }
 }
