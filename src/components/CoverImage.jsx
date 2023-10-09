@@ -8,17 +8,17 @@ export const CoverImage = ({ images }) => {
    
 
     return (
-        <div className="coverImage">
+        <div className="coverimagewrapper">
             <img className="img" src={images} alt="coverimage"/>
            <span className="iconContainer">
-            <button type="button" className="heart">
+            <button type="button" className="icon heart">
                 <img src={Heart} alt="heart" className='heart'/>
             </button>
-            <button type="button" className="play">
+            <button type="button" className="icon play">
                 <img src={Play} alt="play" className='play'/>
             </button>
-            <button type="button" className="more">
-                <img src={Dots} alt="more" className='more' />
+            <button type="button" className="icon more">
+                <img src={Dots} alt="dots" className='dots' />
             </button>
             </span> 
         </div>
