@@ -1,37 +1,17 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
+# React + Vite
 
-# Music Releases
+ #Music Releases
+ The assignment was to create a site with new music album and singles, the design should be close enough to the example, the site should be responsive and have different components. 
 
-Replace this readme with your own information about your project.
+ #The problem
+ I  started with different components and linking them togehter, connecting all the data. I used props and import and export from and to different jsx-files. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+ #View it live
+ malin-lunde-project-music-releases.netlify.app
 
-## Getting Started with the Project
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Dependency Installation & Startup Development Server
+Currently, two official plugins are available:
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
