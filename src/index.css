@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
 }
 
-
 /* APP Component CSS */
 #root {
   max-width: 1280px;
@@ -39,7 +38,7 @@ body {
   padding: 10px;
 }
 
-.artists a{
+.artists a {
   font-family: Arial, Helvetica, sans-serif;
   color: #a0a0a0; /* Set the artist text color to white */
   font-size: 14px;
@@ -58,19 +57,18 @@ body {
 }
 
 /* CSS for Album Container */
-.album a{
+.album a {
   position: relative;
   transition: filter 0.3s; /* Add a transition for the hover effect */
 }
 
 .album:hover {
-  filter: brightness(0.8); /* Darken the album on hover */
+  filter: brightness(0.5); /* Darken the album on hover */
 }
 
-/* Play Button CSS */
 .album::before,
+.album::after,
 .album .ellipsis {
-  /* Create a pseudo-element for both the play button and ellipsis */
   content: ''; /* No content for now */
   position: absolute;
   font-size: 24px;
@@ -82,57 +80,46 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: transform 0.25s, border-color 0.25s;
-}
-/* I only got it to hover when I hover the whole album, and the heart and ellipse not at all */
-.album::before {
-  /* Styles for the play button pseudo-element */
-  left: 50%;
-  top: 50%; /* Adjust top property to center vertically */
-  border: 2px solid white;
-  content: '\25B6'; /* Unicode character for a play button */
-  opacity: 1; /* Make the play button always visible */
-  transform: translate(-50%, -50%) scale(1); /* Initial scale */
-  border-color: white;
-}
-
-/* Favorite Button CSS */
-.album::after {
-  content: '\2665'; /* Unicode character for a heart (favorite) */
-  position: absolute;
+  transition: transform 0.25s, opacity 0.25s; /* Add opacity transition */
+  opacity: 0; /* Initially hidden */
   top: 50%;
-  left: calc(48% - 40px); /* Adjust the left property to align with play button */
-  transform: translate(-50%, -50%); /* Center it vertically */
-  font-size: 24px;
-  color: white;
-}
-.album .ellipsis {
-  /* Additional styles for the ellipsis */
-  position: absolute;
-  top: 49%;
-  right: calc(44% - 40px); /* Adjust the right property to align with play button */
-  transform: translate(-50%, -50%); /* Center it vertically */
-  font-size: 24px;
-  color: white;
 }
 
-.album:hover .ellipsis {
-  /* Show the ellipsis when the album is hovered */
-  opacity: 1;
+.album::before {
+  left: 50%;
+  border: 2px solid white;
+  content: '\25B6';
 }
-/* CSS for Album Container */
+
+.album::after {
+  content: '\2665';
+  left: calc(50% - 40px);
+}
+
+.album .ellipsis {
+  left: calc(50% + 40px);
+}
+
 .album-container {
   display: grid;
   grid-gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust column width */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .album {
   position: relative;
-  transition: filter 0.3s; /* Add a transition for the hover effect */
+  transition: filter 1s;
 }
+
+/* Show the icons when the album is hovered */
+.album:hover::before,
+.album:hover::after,
+.album:hover .ellipsis {
+  opacity: 1;
+}
+
 /* Media Query for Desktop Devices */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .album-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
