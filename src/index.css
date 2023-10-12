@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
 }
 
-
 /* APP Component CSS */
 #root {
   max-width: 1280px;
@@ -46,36 +45,30 @@ body {
   padding: 20px;
 }
 
-/* Remove underline by default for all links within album and its descendants */
 .album a {
   text-decoration: none;
 }
 
-/* Add underline when hovering on album title and artist */
 .album-title:hover,
 .artist:hover {
   text-decoration: underline;
-  /* Add underline on hover */
 }
 
 /* CSS for Album Container */
 .album a {
   position: relative;
   transition: filter 0.3s;
-  /* Add a transition for the hover effect */
 }
 
 .album:hover {
-  filter: brightness(0.8);
+  filter: brightness(0.5);
   /* Darken the album on hover */
 }
 
-/* Play Button CSS */
 .album::before,
+.album::after,
 .album .ellipsis {
-  /* Create a pseudo-element for both the play button and ellipsis */
   content: '';
-  /* No content for now */
   position: absolute;
   font-size: 24px;
   color: white;
@@ -86,69 +79,47 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: transform 0.25s, border-color 0.25s;
+  transition: transform 0.25s, opacity 0.25s;
+  opacity: 0;
+  /* Changed opacity here so they are not shown once you hover */
+  top: 50%;
 }
-
 
 .album::before {
-  /* Styles for the play button */
   left: 50%;
-  top: 50%;
-  /* Adjust top property to center vertically */
   border: 2px solid white;
   content: '\25B6';
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  border-color: white;
 }
 
-/* Favorite Button CSS */
 .album::after {
   content: '\2665';
-  /* Unicode character for a heart (favorite) */
-  position: absolute;
-  top: 50%;
-  left: calc(48% - 40px);
-  /* Adjust the left property to align with play button */
-  transform: translate(-50%, -50%);
-  /* Center it vertically */
-  font-size: 24px;
-  color: white;
+  left: calc(50% - 40px);
 }
 
 .album .ellipsis {
-  /* Additional styles for the ellipsis */
-  position: absolute;
-  top: 49%;
-  right: calc(44% - 40px);
-  /* Adjust the right property to align with play button */
-  transform: translate(-50%, -50%);
-  /* Center it vertically */
-  font-size: 24px;
-  color: white;
+  left: calc(50% + 40px);
 }
 
-.album:hover .ellipsis {
-  /* Show the ellipsis when the album is hovered */
-  opacity: 1;
-}
-
-/* CSS for Album Container */
 .album-container {
   display: grid;
   grid-gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* Automatically adjust column width */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .album {
   position: relative;
-  transition: filter 0.3s;
-  /* Add a transition for the hover effect */
+  transition: filter 1s;
+}
+
+/* Show the icons when the album is hovered */
+.album:hover::before,
+.album:hover::after,
+.album:hover .ellipsis {
+  opacity: 1;
 }
 
 /* Media Query for Desktop Devices */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .album-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
