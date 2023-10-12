@@ -1,30 +1,23 @@
 import React from 'react';
-import '../index.css';
 
-const ArtistName = ({ name, externalUrl }) => {
-  // Check if externalUrl is defined
-  if (!externalUrl) {
-    // Handle the case where the external URL is not available
-    return (
-      <div className="artist">
-        <p>{name}</p>
-        <p>External URL not available</p>
-      </div>
-    );
-  }
-
+const ArtistName = ({ artists }) => {
   return (
-    <div className="artist">
-      <a
-        href={externalUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="artist-link"
-      >
-        {name}
-      </a>
+    <div className="artists">
+      {artists.map((artist, index) => (
+        <div className="artist" key={index}>
+          <a
+            href={artist.externalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="artist-link"
+          >
+            {artist.name}
+          </a>
+        </div>
+      ))}
     </div>
   );
 };
 
 export default ArtistName;
+
