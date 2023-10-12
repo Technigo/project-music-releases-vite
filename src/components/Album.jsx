@@ -10,7 +10,9 @@ const Album = ({ albumName, artistNames, coverImages, externalUrls }) => {
             <CoverImage images={coverImages} />
             <AlbumName albumName={albumName} externalUrl={externalUrls.spotify} />
             <div className="artists">
-                <ArtistName name={artistNames} externalUrl={externalUrls.artist} />
+                {artistNames.map((artist, index) => (
+                    <ArtistName key={index} name={artist.name} externalUrl={artist.externalUrl} />
+                ))}
             </div>
             {/* Apply the ellipsis class to the ellipsis pseudo-element */}
             <div className="ellipsis">...</div>

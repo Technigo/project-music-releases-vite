@@ -4,7 +4,7 @@ import '../index.css';
 const ArtistName = ({ name, externalUrl }) => {
     // Check if externalUrl is defined
     if (!externalUrl) {
-        // Handle the case where the external URL is not available
+        // Handle the case where the external URL is not available for a specific artist
         return (
             <div className="artist">
                 <p>{name}</p>
