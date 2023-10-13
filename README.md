@@ -26,7 +26,7 @@ This week have we learned to use React, JSX, it was hard to wrok with so many fi
 
 ### View it live
 
-https://iridescent-semolina-991be5.netlify.app
+
 
 ## Instructions
 
