@@ -6,8 +6,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  background-color: black;
+  margin: 25px 50px 25px 50px;
+}
+
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
 }

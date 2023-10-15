@@ -1,0 +1,49 @@
+.cover-image {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-image img {
+    width: 100%;
+}
+
+button {
+    border: none;
+}
+
+.icon {
+    width: 45px;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.icon:hover {
+    scale: 1.3;
+}
+
+svg {
+    fill:white;
+}
+
+.button-wrapper {
+    position: absolute;
+    display: none;
+    opacity: 1;
+}
+
+.play {
+    width: 50px;
+}
+
+.cover-image:hover > img {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.cover-image:hover .button-wrapper {
+    display: block;
+    transition: 0.4s;
+}
