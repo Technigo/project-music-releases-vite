@@ -1,6 +1,3 @@
-import "./CoverImage.css";
-
-
 export const CoverImage = ({ singleCoverItem }) => {
   const imageIndex = 0;
   let imgObjects = {

@@ -1,5 +1,3 @@
-import "./ArtistName.css";
-
 export const ArtistName = ({ singleArtistItem }) => {
   const { artists } = singleArtistItem;
   let artistNames = "";

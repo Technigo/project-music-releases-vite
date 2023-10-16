@@ -1,5 +1,3 @@
-import "./AlbumName.css";
-
 export const AlbumName = ({ singleAlbumItem }) => {
   let singleItemObject = {
     albumName: singleAlbumItem.name, 
