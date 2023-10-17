@@ -16,12 +16,13 @@ export const App = () => {
 
   const renderMusicInfo = () => 
     data.albums.items.map(
-      ({id, name, artists, images}) => (
+      ({id, name, artists, images, external_urls}) => (
         <Album 
           key={id}
           name={name}
           artists={artists}
           images={images}
+          albumUrl={external_urls.spotify}
         />
       )
     );
@@ -32,7 +33,7 @@ export const App = () => {
   return (
     <div className="App">
       <Header />
-      <section className="musicOuter">{renderContent}</section>
+        <section className="musicOuter">{renderContent}</section>
     </div>
   );
 };
