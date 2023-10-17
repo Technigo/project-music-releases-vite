@@ -3,25 +3,19 @@ import { ArtistName } from "./child components/ArtistName";
 import { CoverImage } from "./child components/CoverImage";
 import { Header } from "./child components/Header";
 
-export const Album = ({
-    album,
-    artist,
-    cover,
-    header,
-}) => {
+export const Album = ({name, artists, images, header}) => {
+    
     return (
-        <div>
-            <AlbumName album={album} />
-            <ArtistName artist={artist} />
-            <CoverImage cover={cover} />
-            <Header header={header} />
+        <div className="album">
+            <CoverImage images={images} /> 
+            <AlbumName name={name} />
+            <ArtistName artists={artists} />  
         </div>
     );
 };
 
 Album.defaultProps = {
-    album: "Album is missing",
-    artist: "Artist is missing",
-    cover: "Cover image is missing",
-    header: "Header is missing",
+    name: "Album is missing",
+    artists: "Artist is missing",
+    images: "Cover image is missing",
 };

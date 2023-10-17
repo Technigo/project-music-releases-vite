@@ -1,12 +1,11 @@
-export const AlbumName = ({ album }) => {
+export const AlbumName = ({ name }) => {
     return (
-        <p>
-            <span>Album:</span>
-            {album}
+        <p className="albumName">  
+            {name}
         </p>
     );
 };
 
 AlbumName.defaultProps = {
-    album: "No album name",
+    name: "No album name",
 };
