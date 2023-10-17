@@ -1,7 +1,27 @@
 import data from "./data.json";
+import { Album } from "./components/Album";
 
 console.log(data);
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  const albums = data.albums;
+
+  const renderMusicInfo = () => 
+    albums.map(
+      ({id, name}) => (
+        <Album 
+          key={id}
+          name={name}
+        />
+      )
+    );
+
+
+  const renderContent = renderMusicInfo()
+
+  return (
+    <div className="App">
+      <section className="musicOuter">{renderContent}</section>
+    </div>
+  );
 };
