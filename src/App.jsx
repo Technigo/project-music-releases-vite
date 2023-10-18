@@ -14,7 +14,7 @@ export const App = () => {
           name={name}
           artists={artists}
           external_urls={external_urls.spotify}
-          images={images[1]}
+          images={images[0]}
         />
       );
     });
@@ -26,9 +26,7 @@ export const App = () => {
       <header>
         <Header />
       </header>
-      <section className="albumOuter">
-        <div className="album-item">{renderContent}</div>
-      </section>
+      <section className="albumOuter">{renderContent}</section>
     </>
   );
 };
