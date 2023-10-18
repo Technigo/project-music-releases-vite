@@ -1,13 +1,34 @@
 import "./index.css";
 import { Header } from "./components/Header";
+import { Album } from "./components/Album/Album";
 import data from "./data.json";
 
-console.log(data);
-
 export const App = () => {
+  const albums = data.albums.items;
+
+  const renderAlbums = () =>
+    albums.map(({ id, name, artists, external_urls, images }) => {
+      return (
+        <Album
+          key={id}
+          name={name}
+          artists={artists}
+          external_urls={external_urls.spotify}
+          images={images[1]}
+        />
+      );
+    });
+
+  const renderContent = renderAlbums();
+
   return (
-    <header>
-      <Header />
-    </header>
+    <>
+      <header>
+        <Header />
+      </header>
+      <section className="albumOuter">
+        <div className="album-item">{renderContent}</div>
+      </section>
+    </>
   );
 };
