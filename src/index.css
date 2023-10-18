@@ -1,8 +1,13 @@
-:root {
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  border: 0;
+  padding: 0;
+  background: #090a25;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +15,39 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.colors {
+  /* MAIN */
+  background: #090a25;
+
+  /* SIDEBAR */
+  background: #0a0a24;
+
+  /* CARD BACKGROUND */
+  background: #eb5f70;
+
+  /* COLOR TEXT */
+  color: #fff;
+  color: #706f90;
+}
+
+/* 🎶 You should follow the design screenshots as closely as possible.
+ We've provided icons for the play, heart and more info icons when 
+ hovering on an album. Use the following for fonts:
+
+Album title - 14px Helvetica #ffffff
+
+Artist name - 14px Helvetica #a0a0a0When 
+hovering over album covers or artist names, you should implement the following hover styles: */
+
+/* HEADER */
+
+header {
+  background: #06061b;
+  display: flex;
+}
+
+header h1 {
+  color: white;
 }
