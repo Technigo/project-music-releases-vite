@@ -4,6 +4,7 @@ body {
   padding: 0;
   background: #090a25;
   box-sizing: border-box;
+  color: #fff;
 }
 
 :root {
@@ -51,3 +52,9 @@ header {
 header h1 {
   color: white;
 }
+
+a,
+p {
+  color: white;
+}
+/* MAIN APP */
