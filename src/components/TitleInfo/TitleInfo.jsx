@@ -10,3 +10,7 @@ export const TitleInfo = ({ name, artists, external_urls }) => {
     </>
   );
 };
+
+TitleInfo.defaultProps = {
+  name: "Album title is missing",
+};

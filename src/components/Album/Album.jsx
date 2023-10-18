@@ -10,7 +10,6 @@ export const Album = ({ name, artists, external_urls, images }) => {
   );
 };
 
-// Album.defaultProps = {
-//   name: "Image is missing",
-// };
-/* <img src={name} alt="" /> */
+Album.defaultProps = {
+  image: "Album image is missing",
+};
