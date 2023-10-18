@@ -1,3 +1,4 @@
+/* // RESET */
 body {
   margin: 0;
   border: 0;
@@ -5,18 +6,69 @@ body {
   background: #090a25;
   box-sizing: border-box;
   color: #fff;
+  max-width: 100vw;
+  min-height: 100vh;
 }
 
+img {
+  /* removes the small padding */
+  display: block;
+  /* will make the images responsive */
+  max-width: 100%;
+  height: auto;
+}
+
+/* || GENERAL STYLE */
 :root {
   font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+a,
+p {
+  color: white;
 }
 
-code {
+/* HEADER */
+header {
+  background: #06061b;
+  display: flex;
+}
+
+header h1 {
+  color: white;
+}
+
+/* MAIN */
+
+.albumOuter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.album-item {
+  flex-basis: 20%;
+  position: relative;
+}
+
+.albumCoverImage {
+  width: 100%;
+  height: auto;
+}
+
+.playcontroll__flex_container {
+  position: absolute;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 .colors {
   /* MAIN */
@@ -41,20 +93,3 @@ Album title - 14px Helvetica #ffffff
 
 Artist name - 14px Helvetica #a0a0a0When 
 hovering over album covers or artist names, you should implement the following hover styles: */
-
-/* HEADER */
-
-header {
-  background: #06061b;
-  display: flex;
-}
-
-header h1 {
-  color: white;
-}
-
-a,
-p {
-  color: white;
-}
-/* MAIN APP */
