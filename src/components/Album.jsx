@@ -1,16 +1,20 @@
 import { AlbumName } from "./child components/AlbumName";
 import { ArtistName } from "./child components/ArtistName";
 import { CoverImage } from "./child components/CoverImage";
-import { Header } from "./child components/Header";
 
-export const Album = ({name, artists, images, albumUrl, header}) => {
+
+export const Album = ({name, artists, images, albumUrl}) => {
     
     return (
         <div className="album">
             <CoverImage images={images} albumUrl={albumUrl} /> 
             <AlbumName name={name} />
-            <ArtistName artists={artists} />  
+            <ArtistName artists={artists} /> 
+             
         </div>
+        //<div className="singles">
+
+        //</div>
     );
 };
 

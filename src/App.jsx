@@ -1,6 +1,10 @@
 import data from "./data.json";
+import moreData from "./stretched-goal.json";
 import { Album } from "./components/Album";
-import { Header } from "./components/child components/Header";
+import { Header } from "./components/Header";
+import { Playlists } from "./components/playlists";
+import { SinglesOnly } from "./components/SinglesOnly";
+import { AlbumsOnly } from "./components/AlbumsOnly";
 
 console.log(data);
 
@@ -30,10 +34,67 @@ export const App = () => {
 
   const renderContent = renderMusicInfo();
 
+
+  const renderPlaylistInfo = () => 
+    moreData.playlists.items.map(
+      ({id, description, external_urls, images}) => (
+        <Playlists 
+          key={id}
+          description={description}
+          images={images}
+          playlistUrl={external_urls.spotify}
+        />
+      )
+    );
+
+  const renderPlaylists = renderPlaylistInfo();
+
+  const renderSinglesInfo = () => 
+    data.albums.items.map(
+      ({id, name, album_type, artists, images, external_urls}) => (
+        <SinglesOnly 
+          key={id}
+          name={name}
+          artists={artists}
+          images={images}
+          albumUrl={external_urls.spotify}
+          album_type={album_type}
+        />
+      )
+    );
+      const renderSingles = renderSinglesInfo();
+
+    const renderAlbumsInfo = () => 
+      data.albums.items.map(
+        ({id, name, album_type, artists, images, external_urls}) => (
+          <AlbumsOnly 
+            key={id}
+            name={name}
+            artists={artists}
+            images={images}
+            albumUrl={external_urls.spotify}
+            album_type={album_type}
+          />
+        )
+      );
+        const renderAlbums = renderAlbumsInfo();
+  
+
   return (
     <div className="App">
-      <Header />
-        <section className="musicOuter">{renderContent}</section>
+      <div><Header /></div>
+      <div className="singles">
+        <h2>Singles</h2>
+          {renderSingles}
+      </div>
+      <div className="albums">
+        <h2>Albums</h2>
+          {renderAlbums}
+      </div>
+      <section className="musicOuter">{renderContent}</section>
+      <div className="playlists">
+        {renderPlaylists}
+      </div> 
     </div>
   );
 };
