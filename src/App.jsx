@@ -4,6 +4,7 @@ import { Album } from "./components/Album";
 import { Header } from "./components/Header";
 import { Playlists } from "./components/playlists";
 import { SinglesOnly } from "./components/SinglesOnly";
+import { AlbumsOnly } from "./components/AlbumsOnly";
 
 console.log(data);
 
@@ -46,7 +47,6 @@ export const App = () => {
       )
     );
 
-
   const renderPlaylists = renderPlaylistInfo();
 
   const renderSinglesInfo = () => 
@@ -64,16 +64,37 @@ export const App = () => {
     );
       const renderSingles = renderSinglesInfo();
 
+    const renderAlbumsInfo = () => 
+      data.albums.items.map(
+        ({id, name, album_type, artists, images, external_urls}) => (
+          <AlbumsOnly 
+            key={id}
+            name={name}
+            artists={artists}
+            images={images}
+            albumUrl={external_urls.spotify}
+            album_type={album_type}
+          />
+        )
+      );
+        const renderAlbums = renderAlbumsInfo();
+  
+
   return (
-    
     <div className="App">
       <div><Header /></div>
       <div className="singles">
         <h2>Singles</h2>
           {renderSingles}
-        </div>
-        <section className="musicOuter">{renderContent}</section>
-       <div className="playlists">{renderPlaylists}</div> 
+      </div>
+      <div className="albums">
+        <h2>Albums</h2>
+          {renderAlbums}
+      </div>
+      <section className="musicOuter">{renderContent}</section>
+      <div className="playlists">
+        {renderPlaylists}
+      </div> 
     </div>
   );
 };

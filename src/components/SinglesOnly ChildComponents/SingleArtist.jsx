@@ -1,20 +1,26 @@
 export const SingleArtist = ({artists, album_type}) => {
 
-    //    Jag lyckas inte kombinera den kommenderade funktionen med att sortera på singles
-    //const renderArtistNames = () => artists.map(
-     //   ({name}) => name + ", "
-    //  );
-      
-    //  const artistNames = renderArtistNames();
+    const selectArtist = album_type === "single" ? artists : [];
+   
     
-    const selectArtist = artists
-    if (album_type === "single")
+      
+    const artistNames = selectArtist.map(({name}) => name).join(", ");
+    
 
+   
     
         
     return (
         <div>
-            <p>{selectArtist}</p>
+            <p>{artistNames}</p>
         </div>
     )
 }
+
+
+//const renderArtistNames = () => artists.map(
+    //({name}) => name + ", "
+    //);
+
+    // const selectArtist = artists
+    //if (album_type === "single")

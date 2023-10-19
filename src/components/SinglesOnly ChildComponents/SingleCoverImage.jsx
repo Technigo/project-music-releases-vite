@@ -14,11 +14,7 @@ export const SingleCoverImage = ({ images, albumUrl, album_type }) => {
             </div>
         );
 
-    } else {
-        console.warn("No image with height 300 found for the single album.");
-        return null;
-    }
-
+    } 
 };
 
 SingleCoverImage.defaultProps = {

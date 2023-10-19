@@ -9,7 +9,7 @@ export const SinglesOnly = ({name, album_type, albumUrl, images, artists}) => {
         <div className="singles">
             <SingleCoverImage  images={images} albumUrl={albumUrl} album_type={album_type}/>
             <SingleName name={name} album_type={album_type}/>
-            <SingleArtist artists={artists} />
+            <SingleArtist artists={artists} album_type={album_type}/>
              
         </div>
        
@@ -22,4 +22,3 @@ SinglesOnly.defaultProps = {
     images: "Cover image is missing",
 };
 
-//<CoverImage images={images} albumUrl={albumUrl} /> 
