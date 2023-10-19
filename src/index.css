@@ -62,10 +62,6 @@ header h1 {
   height: auto;
 }
 
-.playcontroll__flex_container {
-  position: absolute;
-}
-
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
