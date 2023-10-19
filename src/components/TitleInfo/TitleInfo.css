@@ -1,0 +1,35 @@
+a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.title_span {
+  color: white;
+}
+
+.title_span:hover {
+  text-decoration: underline;
+}
+
+.artist_span span {
+  color: #a0a0a0;
+}
+
+.artist_span span:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.artist_span a:not(:first-child, :last-child)::before {
+  content: ", ";
+}
+
+.artist_span a:last-child::before {
+  content: " & ";
+}
+
+.artist_span a:only-child::before {
+  content: "";
+}

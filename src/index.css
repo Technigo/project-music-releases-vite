@@ -58,6 +58,37 @@ header h1 {
 
 /* MAIN */
 
+/* BRANCH Albums/singles change */
+.main__albums_singles {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.main__albums_singles_column {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.main__albums_singles_column:first-of-type::after {
+  content: "";
+  border-right: 1px solid #a0a0a0;
+  position: absolute;
+  height: 100%;
+  right: -15px;
+  top: 0;
+}
+
+.main__albums_singles_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(50% - 30px);
+  gap: 30px;
+}
+
+/* // BRANCH Albums/singles change */
+
 .albumOuter {
   display: flex;
   flex-direction: row;
@@ -67,10 +98,14 @@ header h1 {
   gap: 30px;
 }
 
+/* BRANCH Albums/singles change */
+
 .album-item {
-  flex-basis: 20%;
+  flex-basis: calc(50% - 15px);
   position: relative;
 }
+
+/* // BRANCH Albums/singles change */
 
 .albumCoverImage {
   width: 100%;
@@ -105,3 +140,33 @@ Album title - 14px Helvetica #ffffff
 
 Artist name - 14px Helvetica #a0a0a0When 
 hovering over album covers or artist names, you should implement the following hover styles: */
+
+/* BRANCH Albums/singles change */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 767px) {
+  /* MAIN CONTAINER */
+  .main__albums_singles {
+    flex-direction: column;
+  }
+  .main__albums_singles_column {
+    flex-basis: 100%;
+  }
+
+  .album-item {
+    flex-basis: 100%;
+  }
+
+  .main__albums_singles_column:first-of-type::after {
+    border: 0px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .album-item {
+    flex-basis: 100%;
+  }
+}
+
+/* // BRANCH Albums/singles change */

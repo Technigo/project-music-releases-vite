@@ -18,8 +18,11 @@ export const App = () => {
   const albums = albumData.albums.items;
   const playlists = playlistData.playlists.items;
 
-  const renderAlbums = () =>
-    albums.map(({ id, name, artists, external_urls, images }) => {
+  const onlyAlbums = albums.filter((album) => album.album_type === "album");
+  const onlySingles = albums.filter((album) => album.album_type === "single");
+
+  const renderAlbumComponent = (albumOrSingleArray) =>
+    albumOrSingleArray.map(({ id, name, artists, external_urls, images }) => {
       return (
         <Album
           key={id}
@@ -31,7 +34,8 @@ export const App = () => {
       );
     });
 
-  const renderAlbumContent = renderAlbums();
+  const renderedAlbums = renderAlbumComponent(onlyAlbums);
+  const renderedSingles = renderAlbumComponent(onlySingles);
 
   return (
     <>
@@ -39,7 +43,19 @@ export const App = () => {
       <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
       {/* Show sidebar if isSidebarOpen is true and add playlist data as a prompt */}
       {isSidebarOpen && <Sidebar playlists={playlists} />}
-      <section className="albumOuter">{renderAlbumContent}</section>
+      <section className="main__albums_singles">
+        <section className="main__albums_singles_column">
+          <h2>Albums</h2>
+          <div className="main__albums_singles_container">{renderedAlbums}</div>
+        </section>
+        <section className="main__albums_singles_column">
+          <h2>Singles</h2>
+          <div className="main__albums_singles_container">
+            {renderedSingles}
+          </div>
+        </section>
+      </section>
+      <section className="albumOuter"></section>
     </>
   );
 };

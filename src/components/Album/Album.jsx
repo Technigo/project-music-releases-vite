@@ -5,8 +5,10 @@ import { PlayControll } from "../Controller/PlayControll";
 export const Album = ({ name, artists, external_urls, images }) => {
   return (
     <div className="album-item">
-      <PlayControll />
-      <img className="albumCoverImage" src={images.url} alt="album image" />
+      <div className="album_cover">
+        <PlayControll />
+        <img className="albumCoverImage" src={images.url} alt="album image" />
+      </div>
       <TitleInfo name={name} artists={artists} external_urls={external_urls} />
     </div>
   );
