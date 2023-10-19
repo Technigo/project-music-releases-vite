@@ -2,9 +2,10 @@ import data from "./data.json";
 import moreData from "./stretched-goal.json";
 import { Album } from "./components/Album";
 import { Header } from "./components/Header";
-import { Playlists } from "./components/playlists";
+import { Playlists } from "./components/Playlists";
 import { SinglesOnly } from "./components/SinglesOnly";
 import { AlbumsOnly } from "./components/AlbumsOnly";
+import { NavBar } from "./components/NavBar";
 
 console.log(data);
 
@@ -83,18 +84,23 @@ export const App = () => {
   return (
     <div className="App">
       <div><Header /></div>
-      <div className="singles">
-        <h2>Singles</h2>
-          {renderSingles}
+      <div><NavBar /></div>
+      <div className="musicOuter">
+        <div className="playlistOuter">
+          <h2 id="playlists">Playlists</h2>
+          {renderPlaylists}
+        </div> 
+        <div className="singles">
+          <h2 id="singles">Singles</h2>
+            {renderSingles}
+        </div>
+        <div className="albums">
+          <h2 id="albums">Albums</h2>
+            {renderAlbums}
+        </div>
+        
+        
       </div>
-      <div className="albums">
-        <h2>Albums</h2>
-          {renderAlbums}
-      </div>
-      <section className="musicOuter">{renderContent}</section>
-      <div className="playlists">
-        {renderPlaylists}
-      </div> 
     </div>
   );
 };

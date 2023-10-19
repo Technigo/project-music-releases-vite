@@ -9,7 +9,7 @@ export const SingleCoverImage = ({ images, albumUrl, album_type }) => {
 
 
         return (
-            <div className="singleAlbumCover">
+            <div className="singlesCover">
                 <a href={albumUrl}><img src={selectedUrl} alt="Album cover" /></a>
             </div>
         );

@@ -3,7 +3,7 @@ export const AlbumsName = ({name, album_type}) => {
     if (album_type === "album")
         
     return (
-        <div>
+        <div className="albumName">
             {selectAlbum}
         </div>
     )

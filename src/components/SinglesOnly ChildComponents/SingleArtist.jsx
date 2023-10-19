@@ -11,7 +11,7 @@ export const SingleArtist = ({artists, album_type}) => {
     
         
     return (
-        <div>
+        <div className="singleArtist">
             <p>{artistNames}</p>
         </div>
     )
