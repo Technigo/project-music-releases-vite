@@ -1,11 +1,25 @@
 a {
-  text-decoration: none;
   font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.title_span {
   color: white;
 }
 
-.artist_span a {
+.title_span:hover {
+  text-decoration: underline;
+}
+
+.artist_span span {
   color: #a0a0a0;
+}
+
+.artist_span span:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .artist_span a:not(:first-child, :last-child)::before {
