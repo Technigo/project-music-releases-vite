@@ -7,6 +7,7 @@ import { SinglesOnly } from "./components/SinglesOnly";
 import { AlbumsOnly } from "./components/AlbumsOnly";
 import { NavBar } from "./components/NavBar";
 
+
 console.log(data);
 
 export const App = () => {
