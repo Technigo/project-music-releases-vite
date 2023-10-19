@@ -6,7 +6,7 @@ export const Album = ({ name, artists, external_urls, images }) => {
   return (
     <div className="album-item">
       <PlayControll />
-      <img src={images.url} alt="" />
+      <img className="albumCoverImage" src={images.url} alt="album image" />
       <TitleInfo name={name} artists={artists} external_urls={external_urls} />
     </div>
   );
