@@ -35,10 +35,13 @@ p {
 header {
   background: #06061b;
   display: flex;
+  /* Same as albums */
+  padding: 15px;
 }
 
 header h1 {
   color: white;
+  padding: 0 20px;
 }
 
 /* MAIN */
