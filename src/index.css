@@ -53,13 +53,22 @@ header h1 {
 
 .main__albums_singles_column {
   flex-basis: 50%;
+  position: relative;
+}
+
+.main__albums_singles_column:first-of-type::after {
+  content: "";
+  border-right: 1px solid white;
+  position: absolute;
+  height: 100%;
+  right: -15px;
+  top: 0;
 }
 
 .main__albums_singles_container {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(50% - 30px);
-  justify-content: space-evenly;
   gap: 30px;
 }
 
@@ -122,6 +131,7 @@ hovering over album covers or artist names, you should implement the following h
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
+  /* MAIN CONTAINER */
   .main__albums_singles {
     flex-direction: column;
   }
@@ -132,6 +142,10 @@ hovering over album covers or artist names, you should implement the following h
   .album-item {
     flex-basis: 100%;
     position: relative;
+  }
+
+  .main__albums_singles_column:first-of-type::after {
+    border: 0px;
   }
 }
 
