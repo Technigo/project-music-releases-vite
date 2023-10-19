@@ -1,6 +1,7 @@
 import "./index.css";
 import { Header } from "./components/Header";
 import { Album } from "./components/Album/Album";
+import { Sidebar } from "./components/Sidebar/Sidebar";
 import data from "./data.json";
 
 export const App = () => {
@@ -23,9 +24,8 @@ export const App = () => {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
+      <Sidebar />
       <section className="albumOuter">{renderContent}</section>
     </>
   );
