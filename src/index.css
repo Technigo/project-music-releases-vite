@@ -58,7 +58,7 @@ header h1 {
 
 .main__albums_singles_column:first-of-type::after {
   content: "";
-  border-right: 1px solid white;
+  border-right: 1px solid #a0a0a0;
   position: absolute;
   height: 100%;
   right: -15px;
@@ -141,11 +141,16 @@ hovering over album covers or artist names, you should implement the following h
 
   .album-item {
     flex-basis: 100%;
-    position: relative;
   }
 
   .main__albums_singles_column:first-of-type::after {
     border: 0px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .album-item {
+    flex-basis: 100%;
   }
 }
 
