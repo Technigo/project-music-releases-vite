@@ -13,7 +13,7 @@ export const App = () => {
     <>
     <Header />
     <div className="albumList">
-      {albumData.map((album) => (<Album key={album.id} {...album}></Album>))}
+      {albumData.map((album) => (<Album key={album.id} {...album} />))}
     </div>
     </>
   );

@@ -1,12 +1,13 @@
 .albumList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .album {
   flex: 20%;
+  max-width: 20%;
   padding: 2%;
-  background-color: aqua;
 }
 
 .coverImage {
@@ -57,11 +58,16 @@
 @media screen and (max-width: 992px) {
   .album {
     flex: 40%;
+    max-width: 40%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .albumList {
     flex-direction: column;
+  }
+
+  .album {
+    max-width: 100%;
   }
 }
