@@ -11,7 +11,7 @@ export const AlbumsArtist = ({artists, album_type}) => {
     
         
     return (
-        <div>
+        <div className="albumArtist">
             <p>{artistNames}</p>
         </div>
     )

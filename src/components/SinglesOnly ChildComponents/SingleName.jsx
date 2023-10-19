@@ -3,7 +3,7 @@ export const SingleName = ({name, album_type}) => {
     if (album_type === "single")
         
     return (
-        <div>
+        <div className="singleName">
             {selectSingle}
         </div>
     )

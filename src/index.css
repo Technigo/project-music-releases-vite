@@ -11,23 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.musicOuter {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+body {
+  background-color: #080808;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
 }
-.album {
-  padding: 2rem;
-  background-color: black;
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.albumCover {
+.navBar li {
+  display: inline;
+  margin: 10px;
+  
+}
+.navBar a {
+  text-decoration: none;
+  color: #ffffff;
+  list-style: none;
+}
+h1 {
   color: #ffffff;
 }
-.albumName {
+h2 {
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
+}
+
+.musicOuter {
+  background-color: #080808;
+}
+
+/* Playlist styling */
+#playlistImg {
+  display: block;
+  max-width: 70px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+.playlistInner a {
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Albums & Singles */
+.singlesOnly, .albumsOnly {
+  background-color: black;
+}
+.singlesCover, .albumsCover {
+  color: #ffffff;
+}
+.albumName, .singleName {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #ffffff;
 }
-.artistName {
+.albumArtist, .singleArtist {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
@@ -47,11 +91,37 @@ code {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   }
+  
 }
 
 @media (min-width: 1024px) {
   .musicOuter {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  align-content: center;
+  text-align: center;
+  }
+  .playlistOuter {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    
+  }
+  .playlistInner {
+    display: inline-flex;
+    padding: 5px;
+    align-items: center;
+    margin-left: 5px;
+    gap: 5px;
+  }
+  .singles {
+    grid-column: 2/3;
+  }
+  .albums {
+    grid-column: 3/6;
   }
 }
+
