@@ -1,12 +1,11 @@
 import { Album } from "./components/Album";
+import { Header } from './components/Header';
 import data from "./data.json";
 
 export const App = () => {
   return (
     <div className="main-body">
-      {/* 
-      // Call Header component here
-       */}
+      <Header />
       <div className="album-collection">
         {data.albums.items.map((album) => {
           return (
