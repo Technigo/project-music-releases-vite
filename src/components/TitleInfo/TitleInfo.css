@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.artist_span a {
+  color: #a0a0a0;
+}
+
+.artist_span a:not(:first-child, :last-child)::before {
+  content: ", ";
+}
+
+.artist_span a:last-child::before {
+  content: " & ";
+}
+
+.artist_span a:only-child::before {
+  content: "";
+}
