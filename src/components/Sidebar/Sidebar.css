@@ -1,0 +1,67 @@
+.sidebar {
+  position: absolute;
+  top: 95px;
+  z-index: 9999;
+  padding: 0 15px;
+  background: #090a25;
+  padding-top: 3rem;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+}
+
+.sidebar .playlist-item ul {
+  margin: 1em 0 5em;
+}
+.sidebar .playitem-container {
+  display: flex;
+}
+
+.sidebar .playlist-items {
+  background: #eb5f70;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar .playlist-items img {
+  border-radius: 10px;
+}
+
+.sidebar .album-info {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3.5em 0 1.5em;
+}
+
+.sidebar .artist-name {
+  font-weight: 700;
+}
+
+.sidebar .album-artist {
+  font-size: 0.7rem;
+}
+
+.sidebar .playcontroll__flex_container {
+  display: flex;
+  align-items: center;
+}
+
+.playcontroll__image_div {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar .playcontroll__image_div img {
+  width: 30px;
+  height: 30px;
+}
