@@ -1,6 +1,7 @@
 import { CoverImage } from "./CoverImage";
 import { ArtistName } from "./ArtistName";
 import { AlbumName } from "./AlbumName";
+import "./album.css";
 
 // added some extra props for stretch goals
 export const Album = ({
@@ -13,8 +14,8 @@ export const Album = ({
   total_tracks
 }) => {
   return (
-    <div>
-      <CoverImage images={images} external_urls={external_urls.spotify}/>
+    <div className="album">
+      <CoverImage name={name} image={images[0].url} spotify={external_urls.spotify}/>
       <AlbumName name={name} />
       <ArtistName artists={artists} />
     </div>

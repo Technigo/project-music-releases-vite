@@ -12,7 +12,9 @@ export const App = () => {
   return (
     <>
     <Header />
-    {albumData.map((album) => (<Album key={album.id} {...album}></Album>))}
+    <div className="albumList">
+      {albumData.map((album) => (<Album key={album.id} {...album}></Album>))}
+    </div>
     </>
   );
 };

@@ -1,0 +1,67 @@
+.albumList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album {
+  flex: 20%;
+  padding: 2%;
+  background-color: aqua;
+}
+
+.coverImage {
+  position: relative;
+}
+
+.coverImage > img {
+  max-width: 100%;
+}
+
+.coverOverlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity:0;
+  transition: .5s ease;
+}
+
+.coverOverlay:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.coverButton {
+  text-align: center;
+}
+
+.coverButton > svg {
+  fill: white;
+  width: 40%;
+  opacity: 0.7;
+  transition: .3s ease;
+}
+
+.coverButton > svg:hover {
+  width: 60%;
+  opacity: 1;
+  transition: .3s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .album {
+    flex: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .albumList {
+    flex-direction: column;
+  }
+}
