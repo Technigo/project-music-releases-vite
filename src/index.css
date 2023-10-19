@@ -1,0 +1,57 @@
+:root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.musicOuter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.album {
+  padding: 2rem;
+  background-color: black;
+}
+.albumCover {
+  color: #ffffff;
+}
+.albumName {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+.artistName {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+/* Mobile */
+@media (min-width: 400px) {
+  .musicOuter {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Tablet */
+@media (min-width: 750px) {
+  .musicOuter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .musicOuter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  }
+}
