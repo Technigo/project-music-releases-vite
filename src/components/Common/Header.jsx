@@ -1,8 +1,9 @@
-export const Header = () => {
-  const header = " New Albums & Singles ";
+import "./Header.css";
+
+export const Header = ({ title }) => {
   return (
-    <header>
-      <h1>{header}</h1>
+    <header className="header">
+      <p>{title}</p>
     </header>
   );
 };

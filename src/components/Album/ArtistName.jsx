@@ -1,21 +1,16 @@
-import "../index.css";
-
-export const ArtistName = ({ name, type }) => {
+const ArtistName = ({ name, url }) => {
   return (
-    <div className="artistname">
-      <p>
-        <span>Name:</span>
-        {name}
-      </p>
-      <p>
-        <span>Type:</span>
-        {type}
-      </p>
+    <div className="artistName">
+      <h3>
+        <a href={url}>{name}</a>
+      </h3>
     </div>
   );
 };
 
+export default ArtistName;
+
 ArtistName.defaultProps = {
   name: "Usha",
-  type: "Programmer",
+  url: "Programmer",
 };

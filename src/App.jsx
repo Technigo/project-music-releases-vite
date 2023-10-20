@@ -1,31 +1,30 @@
 import data from "./data.json";
-import { CoverImage } from "./design/CoverImage.jsx";
-import { Header } from "./design/Header.jsx";
-import { ArtistName } from "./design/ArtistName";
+import { Header } from "./components/Common/Header";
+import Album from "./components/Album/Album";
 
 export const App = () => {
-  const albums = data.albums;
+  const albumItems = data.albums.items;
 
-  const renderAlbums = () => {
-    albums.items[0].artists[0].name;
-    albums.items[0].artists[0].type;
-  };
+  const albums = albumItems.map((albumObj) => {
+    const album = {
+      key: albumObj.id,
+      name: albumObj.name,
+      url: albumObj.external_urls.spotify,
+      type: albumObj.type,
+      imageUrl: albumObj.images[0].url,
+      artists: albumObj.artists.map((artist) => ({
+        name: artist.name,
+        url: artist.external_urls.spotify,
+      })),
+    };
+
+    return <Album key={album.key} album={album} />;
+  });
+
   return (
     <div>
-      <h1>
-        <Header />
-        <CoverImage />
-        <ArtistName />
-      </h1>
+      <Header title="New Albums & Singles" />
+      <div className="albumOuter">{albums}</div>
     </div>
   );
 };
-export default App;
-
-/*import data from "./data.json";
-
-console.log(data);
-
-export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};*/
