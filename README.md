@@ -25,7 +25,7 @@ npm i && code . && npm run dev
 ### The Problem
 
 #### Planning and pair programming
-We started by looking at all the specific problems to solve in this weeks assignment. Once we did that, we split the problems into smaller tasks. Then we started out pair programming to get the data from tge json-object as well as building our first React Component. We had a few challenges in this stage of development, like:
+We started by looking at all the specific problems to solve in this weeks assignment. Once we did that, we split the problems into smaller tasks. Then we started out pair programming to get the data from the json-object as well as building our first React Component. We had a few challenges in this stage of development, like:
 
 * Finding the right folder structure for the project, like diving the files into folders, componentes and child-components
 * Understanding how to use React Properties and how they are inherited from parent to children.
@@ -40,6 +40,8 @@ We had a deadline for the project and on that day, we did pair programming to te
 #### Some possible impreovements
 If we were to spend more time on the project, we would probably try to structure the files in the project in a different way. Maybe into parent components in a separate folder, with all it's child components in the same folder as the parent.
 
+Further we would implement Sass to get a cleaner CSS code and to be able to style the applications more efficiently with less conflicts.
+
 ### View it live
 
 [https://technigo-music-release-app.netlify.app/]
@@ -48,4 +50,4 @@ If we were to spend more time on the project, we would probably try to structure
 
 <a href="instructions.md">
    See instructions of this project
-  </a>
+</a>
