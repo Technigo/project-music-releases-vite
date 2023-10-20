@@ -3,7 +3,7 @@
   margin-bottom: 14px;
 }
 
-.playcontroll__flex_container {
+.album_cover .playcontroll__flex_container {
   position: absolute;
   display: flex;
   flex: 1;
@@ -16,23 +16,23 @@
   transition: ease-in-out 0.5s;
 }
 
-.playcontroll__flex_container:hover {
+.album_cover .playcontroll__flex_container:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.playcontroll__image_div {
+.album_cover .playcontroll__image_div {
   filter: invert();
 }
 
-.playcontroll__image_div_heart {
+.album_cover .playcontroll__image_div_heart {
   flex-basis: 9%;
 }
-.playcontroll__image_div_play {
+.album_cover .playcontroll__image_div_play {
   flex-basis: 23%;
   transition: transform 0.5s;
 }
-.playcontroll__image_div_play:after {
+.album_cover .playcontroll__image_div_play:after {
   content: "";
   position: absolute;
   inset: 6% 6% 6% 6%;
@@ -41,10 +41,10 @@
   z-index: -1;
 }
 
-.playcontroll__image_div_play:hover {
+.album_cover .playcontroll__image_div_play:hover {
   transform: scale(1.2);
 }
 
-.playcontroll__image_div_dots {
+.album_cover .playcontroll__image_div_dots {
   flex-basis: 9%;
 }
