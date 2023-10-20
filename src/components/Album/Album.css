@@ -68,6 +68,7 @@
   width: auto;
   position: absolute;
   top: 45%;
+  left: 25%;
   display: flex;
   justify-content: center;
   gap: 25px;
