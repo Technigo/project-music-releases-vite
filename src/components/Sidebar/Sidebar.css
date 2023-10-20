@@ -4,6 +4,9 @@
   z-index: 9999;
   padding: 0 15px;
   background: #11112f;
+  height: 100vh;
+  overflow-y: scroll;
+  max-width: 768px;
 }
 
 .sidebar .playlist-item {
