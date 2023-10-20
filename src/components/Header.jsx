@@ -12,8 +12,8 @@ export const Header = ({ toggleSidebar, isSidebarOpen }) => {
             className="menu-icon"
             src={MenuIcon}
             alt="Menu-Icon"
-            width="40"
-            height="40"
+            width="30"
+            height="30"
             onClick={toggleSidebar}
           />
         ) : (
@@ -22,8 +22,8 @@ export const Header = ({ toggleSidebar, isSidebarOpen }) => {
             className="close-icon"
             src={CloseIcon}
             alt="Close-Icon"
-            width="40"
-            height="40"
+            width="30"
+            height="30"
             onClick={toggleSidebar}
           />
         )}
@@ -32,8 +32,8 @@ export const Header = ({ toggleSidebar, isSidebarOpen }) => {
           className="spotify-icon"
           src={SpotifyIcon}
           alt="Spotify-Icon"
-          width="40"
-          height="40"
+          width="30"
+          height="30"
         />
       </header>
     </>

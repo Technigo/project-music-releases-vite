@@ -4,7 +4,6 @@
   z-index: 9999;
   padding: 0 15px;
   background: #090a25;
-  height: 100vh;
 }
 
 .sidebar .playlist-item {
@@ -35,6 +34,11 @@
   align-items: center;
 }
 
+.sidebar .playlist-items:hover,
+.sidebar .playlist-items:active {
+  background: #eb5f70;
+}
+
 .sidebar .playlist-items img {
   border-radius: 10px;
 }
@@ -49,6 +53,7 @@
 
 .sidebar .artist-name {
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .sidebar .album-artist {
@@ -58,6 +63,7 @@
 .sidebar .playcontroll__flex_container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .playcontroll__image_div {
@@ -65,10 +71,21 @@
   display: flex;
   justify-content: space-between;
 }
-
+.sidebar .playcontroll__image_div {
+  filter: invert();
+}
 .sidebar .playcontroll__image_div img {
   width: 30px;
   height: 30px;
+}
+
+.sidebar .playcontroll__image_div_heart,
+.sidebar .playcontroll__image_div_dots {
+  flex-basis: 15%;
+}
+
+.sidebar .playcontroll__image_div_play {
+  flex-basis: 25%;
 }
 
 /* Använd mediaförfrågningar för att ändra storleken på playikonerna beroende på skärmbredden. */
