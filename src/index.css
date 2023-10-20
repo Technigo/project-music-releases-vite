@@ -37,11 +37,6 @@ img {
   scroll-behavior: smooth;
 }
 
-a,
-p {
-  color: white;
-}
-
 /* HEADER */
 header {
   background: #06061b;

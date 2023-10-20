@@ -1,10 +1,14 @@
 .sidebar {
   position: absolute;
-  top: 95px;
+  top: 0;
   z-index: 9999;
   padding: 0 15px;
   background: #090a25;
-  padding-top: 3rem;
+  height: 100vh;
+}
+
+.sidebar .playlist-item {
+  margin-top: 120px;
 }
 
 .sidebar h2 {
@@ -12,8 +16,9 @@
 }
 
 .sidebar .playlist-item ul {
-  margin: 1em 0 5em;
+  margin: 2em 0 5em;
 }
+
 .sidebar .playitem-container {
   display: flex;
 }

@@ -1,4 +1,5 @@
-a {
+.title_span a,
+.artist_span a {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
