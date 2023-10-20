@@ -48,6 +48,8 @@ header {
   display: flex;
   /* Same as albums */
   padding: 15px;
+  position: relative;
+  z-index: 99999;
 }
 
 header h1 {
