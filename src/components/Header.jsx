@@ -1,3 +1,7 @@
+import MenuIcon from "../assets/icons/menu-icon.svg";
+import CloseIcon from "../assets/icons/close-icon.svg";
+import SpotifyIcon from "../assets/icons/spotify-icon.svg";
+
 export const Header = ({ toggleSidebar, isSidebarOpen }) => {
   return (
     <>
@@ -6,7 +10,7 @@ export const Header = ({ toggleSidebar, isSidebarOpen }) => {
           <img
             id="menu-icon"
             className="menu-icon"
-            src="./src/assets/icons/menu-icon.svg"
+            src={MenuIcon}
             alt="Menu-Icon"
             width="40"
             height="40"
@@ -16,7 +20,7 @@ export const Header = ({ toggleSidebar, isSidebarOpen }) => {
           <img
             id="close-icon"
             className="close-icon"
-            src="./src/assets/icons/close-icon.svg"
+            src={CloseIcon}
             alt="Close-Icon"
             width="40"
             height="40"
@@ -26,7 +30,7 @@ export const Header = ({ toggleSidebar, isSidebarOpen }) => {
         <h1>Music Releases from </h1>
         <img
           className="spotify-icon"
-          src="./src/assets/icons/spotify-icon.svg"
+          src={SpotifyIcon}
           alt="Spotify-Icon"
           width="40"
           height="40"
