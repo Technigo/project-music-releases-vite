@@ -6,11 +6,10 @@
 
 .albumName a {
   text-decoration: none;
-  color: #aaaaaa;
+  color: black;
 }
 
 .albumName a:hover {
-  color: #a0a0a0;
   text-decoration: underline;
 }
 
@@ -42,7 +41,6 @@
 
 .artistName a:hover {
   text-decoration: underline;
-  color: #a0a0a0;
 }
 
 /*Cover image*/
