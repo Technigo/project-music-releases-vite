@@ -87,7 +87,7 @@ So you’ve completed the requirements? Great job! Make sure you've committed an
 - Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&":
   - *Teyana Taylor & Kehlani*
   - *Y2K, bbno$ & Enrique Iglesias*
-- Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity
+- Lower the opacity of the button icons and then when you hover over each of them, it should have full opacity
 
 ### Advanced stretch goals
 - We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.
