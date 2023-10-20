@@ -54,6 +54,11 @@ header h1 {
   font-size: 2.2rem;
 }
 
+header .spotify-icon {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(119%);
+}
+
 /* MAIN */
 
 /* BRANCH Albums/singles change */
