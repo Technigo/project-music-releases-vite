@@ -41,6 +41,7 @@ img {
 header {
   background: #06061b;
   display: flex;
+  align-items: center;
   /* Same as albums */
   padding: 15px;
   position: relative;
@@ -120,6 +121,10 @@ header .spotify-icon {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
+  /* HEADER */
+  header h1 {
+    font-size: 1.5rem;
+  }
   /* MAIN CONTAINER */
   .main__albums_singles {
     flex-direction: column;
