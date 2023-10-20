@@ -95,6 +95,9 @@
 
 /* Använd mediaförfrågningar för att ändra storleken på playikonerna beroende på skärmbredden. */
 @media screen and (max-width: 768px) {
+  .sidebar .playlist-items {
+    margin: 15px 0;
+  }
   .sidebar .description {
     display: none;
   }
