@@ -12,8 +12,8 @@ export const Header = ({ toggleSidebar, isSidebarOpen }) => {
             className="menu-icon"
             src={MenuIcon}
             alt="Menu-Icon"
-            width="30"
-            height="30"
+            width="25"
+            height="25"
             onClick={toggleSidebar}
           />
         ) : (
