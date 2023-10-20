@@ -3,15 +3,16 @@
   top: 0;
   z-index: 9999;
   padding: 0 15px;
-  background: #090a25;
+  background: #11112f;
 }
 
 .sidebar .playlist-item {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .sidebar h2 {
   font-size: 1.2rem;
+  color: #fff;
 }
 
 .sidebar .playlist-item ul {
@@ -23,7 +24,7 @@
 }
 
 .sidebar .playlist-items {
-  background: #eb5f70;
+  background: #020222;
   display: flex;
   margin: 20px 0;
   border-radius: 10px;
@@ -34,9 +35,12 @@
   align-items: center;
 }
 
-.sidebar .playlist-items:hover,
-.sidebar .playlist-items:active {
+.sidebar .playlist-items:hover {
   background: #eb5f70;
+}
+
+.sidebar .playlist-items:hover .description {
+  color: #fff;
 }
 
 .sidebar .playlist-items img {
@@ -54,10 +58,11 @@
 .sidebar .artist-name {
   font-weight: 700;
   text-transform: capitalize;
+  line-height: 1.5em;
 }
 
-.sidebar .album-artist {
-  font-size: 0.7rem;
+.sidebar .description {
+  color: #9b9bbf;
 }
 
 .sidebar .playcontroll__flex_container {

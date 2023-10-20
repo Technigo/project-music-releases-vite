@@ -32,7 +32,7 @@ export const Sidebar = ({ playlists }) => {
                     >
                       {playlist.name}
                     </a>
-                    <p>{playlist.description}</p>
+                    <p className="description">{playlist.description}</p>
                   </div>
                 </div>
                 <PlayControll />
