@@ -25,7 +25,8 @@ body {
 .header-text {
   font-family: Helvetica;
   font-size: 40px;
-  color: #ffffff;    
+  color: #ffffff;
+  text-align: center;    
 }
 /* CoverImage*/
 .cover-image {
