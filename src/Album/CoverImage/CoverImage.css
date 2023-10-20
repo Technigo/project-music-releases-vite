@@ -1,0 +1,46 @@
+.cover-image {
+  position: relative;
+  padding: 0;
+}
+
+.cover-image:hover img {
+  opacity: 0.5;
+  transition: all 0, 3s ease-in-out;
+}
+
+.cover-image:hover .icon-wrapper {
+  opacity: 1;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 0;
+  opacity: 0;
+}
+
+.icon-wrapper button {
+  background: transparent;
+  gap: 22px;
+  border-style: none;
+}
+
+.icon-wrapper img {
+  width: 35px;
+  filter: brightness(0) invert(1);
+}
+
+.icon-wrapper:hover {
+  opacity: 1;
+}
+
+.icon-play {
+  width: 45px;
+}
+
+.icon-play:hover {
+  width: 60px;
+}
