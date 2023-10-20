@@ -1,7 +1,19 @@
-import React from "react";
+import { PropTypes } from "prop-types";
+export const ArtistName = ({ artists }) => {
+  let name = "";
+  let uri = "";
 
-const ArtistName = () => {
-  return <div>ArtistName</div>;
+  artists.map((val) => ((name = val.name), (uri = val.uri)));
+  return (
+    <div>
+      Artistname: {name},<div></div>
+      <div>
+        <a href={uri}>ARTIST LINK</a>
+      </div>
+    </div>
+  );
 };
 
-export default ArtistName;
+ArtistName.propTypes = {
+  artists: PropTypes.array.isRequired,
+};

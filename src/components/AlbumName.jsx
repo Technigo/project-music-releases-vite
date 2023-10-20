@@ -1,7 +1,17 @@
-import React from "react";
+import { PropTypes } from "prop-types";
 
-const AlbumName = () => {
-  return <div>AlbumName</div>;
+export const AlbumName = ({ albumName, uri }) => {
+  return (
+    <div>
+      <div>Album name: {albumName}</div>
+      <div>
+        <a href={uri}>ALBUM LINK</a>
+      </div>
+    </div>
+  );
 };
 
-export default AlbumName;
+AlbumName.propTypes = {
+  albumName: PropTypes.string.isRequired,
+  uri: PropTypes.string.isRequired,
+};
