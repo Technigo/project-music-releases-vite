@@ -5,5 +5,5 @@ export const TracksInfo = ({ trackCount }) => {
 };
 
 TracksInfo.propTypes = {
-  trackCount: PropTypes.number.isRequired,
+  trackCount: PropTypes.string.isRequired,
 };
