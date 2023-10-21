@@ -11,4 +11,3 @@ export const CoverImage = (album) => {
 CoverImage.propTypes = {
     album: PropTypes.object.isRequired,
   };
-  
