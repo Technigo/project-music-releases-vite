@@ -1,5 +1,5 @@
 .artist-name-link:not(:first-of-type)::before {
-  content: " , ";
+  content: ", ";
   color: #a0a0a0;
 }
 
