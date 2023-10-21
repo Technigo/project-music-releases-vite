@@ -6,7 +6,7 @@ export const ArtistName = ({ artists }) => {
     <div className="artist-container">
       {artists.map((artist) => (
         <span key={artist.id} className="artist-name-link">
-          <a href={artist.external_urls.spotify}>{artist.name} </a>
+          <a href={artist.external_urls.spotify}>{artist.name}</a>
         </span>
       ))}
     </div>
