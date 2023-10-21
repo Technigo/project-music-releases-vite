@@ -11,11 +11,7 @@ export const Album = ({ album }) => {
   return (
     <div className="album-container">
       <CoverImage img={album.images[1].url} alt={album.name} />
-      {
-        <div>
-          <AlbumName albumName={album.name} uri={album.uri} />
-        </div>
-      }
+      {<AlbumName albumName={album.name} uri={album.uri} />}
     </div>
   );
 };
