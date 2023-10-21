@@ -3,7 +3,7 @@ import "./ArtistName.css";
 
 export const ArtistName = ({ artists }) => {
   return (
-    <div>
+    <div className="artist-container">
       {artists.map((artist) => (
         <span key={artist.id} className="artist-name-link">
           <a href={artist.external_urls.spotify}>{artist.name} </a>
