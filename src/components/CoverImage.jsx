@@ -1,7 +1,7 @@
-import { PropTypes } from 'prop-types';
-import { HoverOverlay } from './HoverOverlay';
+import { PropTypes } from "prop-types";
+import { HoverOverlay } from "./HoverOverlay";
 
-export const CoverImage = album => {
+export const CoverImage = (album) => {
   return (
     <div className="image-container">
       <HoverOverlay />
