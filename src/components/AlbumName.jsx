@@ -2,11 +2,8 @@ import { PropTypes } from "prop-types";
 
 export const AlbumName = ({ albumName, uri }) => {
   return (
-    <div>
-      <div>Album name: {albumName}</div>
-      <div>
-        <a href={uri}>ALBUM LINK</a>
-      </div>
+    <div className="album-name">
+      <a href={uri}>{albumName}</a>
     </div>
   );
 };

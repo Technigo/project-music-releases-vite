@@ -10,6 +10,17 @@ body {
   grid-template-columns: 1fr;
 }
 
+@media (min-width: 667px) {
+  .album-collection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) {
+  .album-collection {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .header-container {
   margin: 30px 10px 5px;
   border-bottom: 1px solid rgba(130, 130, 130, 0.374);
@@ -20,75 +31,66 @@ h3 {
   margin-bottom: 8px;
 }
 
-.album-container {
+.image-container {
   max-width: 600px;
   aspect-ratio: 1 / 1;
   position: relative;
   width: 100%;
 }
 
-.album-container img {
+.image-container img {
   max-width: 600px;
   width: 100%;
 }
 
 .overlay {
+  top: 0;
   position: absolute;
-  width: 300px;
-  height: 300px;
+  height: 99.5%;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-container {
-  display: none;
-  position: absolute;
-  justify-content: center;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.album-container:hover .icon-container {
-  display: flex;
-  background: rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-}
-
-.icon {
   filter: brightness(0) invert(1);
-  padding: 15px;
+  position: absolute;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
 }
 
-.play {
-  width: 40px;
-}
-.dots,
-.heart {
-  width: 25px;
+.image-container:hover .overlay {
+  background: rgba(83, 82, 82, 0.8);
+  transition: 0.4s ease;
 }
 
-.play:hover {
-  width: 55px;
-  transition: 0.2s;
-  padding: 10px;
+.overlay .play-icon {
+  transform: scale(1.8);
+  transition: 0.3s ease;
+}
+
+.image-container:hover .icon-container {
+  display: flex;
+}
+
+.icon-container img {
+  height: 35px;
+  margin: 0 15px;
+  opacity: 0.6;
+}
+
+.heart-icon:hover,
+.dots-icon:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
   opacity: 1;
 }
 
-.dots:hover,
-.heart:hover {
-  width: 35px;
-  transition: 0.2s;
-  padding: 10px;
+.play-icon:hover {
+  transform: scale(2.4);
+  transition: 0.3s ease;
   opacity: 1;
-}
-
-@media (min-width: 667px) {
-  .album-collection {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 1025px) {
-  .album-collection {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 }
