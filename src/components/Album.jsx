@@ -9,7 +9,6 @@ export const Album = ({ album }) => {
     <div className="album-container">
       <CoverImage img={album.images[1].url} alt={album.name} />
       {/* 
-        // CoverImage component here
         // AlbumName component here
         // ArtistName component here
       */}
