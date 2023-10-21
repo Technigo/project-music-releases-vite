@@ -1,0 +1,18 @@
+.artist-name-link:not(:first-of-type)::before {
+  content: " , ";
+  color: #a0a0a0;
+}
+
+.artist-name-link:last-child::before {
+  content: " & ";
+  white-space: pre;
+  color: #a0a0a0;
+}
+
+.artist-name-link:first-of-type::before {
+  content: "";
+  color: #a0a0a0;
+}
+.artist-name-link {
+  color: #a0a0a0;
+}
