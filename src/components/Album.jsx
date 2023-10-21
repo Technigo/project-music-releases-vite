@@ -1,6 +1,5 @@
 import { PropTypes } from "prop-types";
 import { AlbumName } from "./AlbumName";
-import { ArtistName } from "./ArtistName";
 import { CoverImage } from "./CoverImage";
 
 export const Album = ({ album }) => {
