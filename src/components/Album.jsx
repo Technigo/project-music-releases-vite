@@ -1,14 +1,17 @@
 import { PropTypes } from 'prop-types';
 
 import { AlbumName } from './AlbumName';
+import { ArtistName } from './ArtistName';
 import { CoverImage } from './CoverImage';
 
 export const Album = ({ album }) => {
   const image = album.images.find(image => image.height === 640);
+
   return (
     <div className="album-container">
       <CoverImage withHover img={image.url} name={album.name} />
       <AlbumName albumName={album.name} uri={album.uri} />
+      <ArtistName className="artist-name" artists={album.artists} />
     </div>
   );
 };
