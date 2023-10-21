@@ -12,7 +12,7 @@ export const Album = ({ album }) => {
   return (
     <div className="album-container">
       <CoverImage img={image.url} alt={album.name} />
-      <AlbumName albumName={album.name} uri={album.uri} />
+      <AlbumName albumName={album.name} uri={album.external_urls.spotify} />
       <ArtistName className="artist-name" artists={album.artists} />
     </div>
   );
