@@ -1,6 +1,9 @@
 import { PropTypes } from 'prop-types';
 
-export const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
+import { Header } from './Header';
+import { Playlist } from './Sidebar/Playlist';
+
+export const Sidebar = ({ isNavOpen, setIsNavOpen, playlists }) => {
   return (
     <>
       <button
@@ -12,7 +15,12 @@ export const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
         <span className="material-symbols-outlined">menu</span>
       </button>
       <nav className={`nav ${isNavOpen ? 'nav-open' : 'nav-closed'}`}>
-        <div className="nav-content"></div>
+        <div className="nav-content">
+          <Header text={'Playlists'} />
+          {playlists.map(playlist => (
+            <Playlist key={playlist.id} playlist={playlist} />
+          ))}
+        </div>
       </nav>
     </>
   );
@@ -21,4 +29,5 @@ export const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
 Sidebar.propTypes = {
   isNavOpen: PropTypes.bool.isRequired,
   setIsNavOpen: PropTypes.func.isRequired,
+  playlists: PropTypes.array.isRequired,
 };

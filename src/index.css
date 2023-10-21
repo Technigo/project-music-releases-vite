@@ -37,7 +37,7 @@ body {
 }
 
 .header-container {
-  margin: 30px 10px 30px 0px;
+  margin: 30px 10px 15px 0px;
   border-bottom: 1px solid rgba(130, 130, 130, 0.374);
 }
 
@@ -168,4 +168,31 @@ h3 {
 
 .nav-closed .nav-content {
   visibility: hidden;
+}
+
+.playlist-container {
+  max-width: 300px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.playlist-container .image-container {
+  width: 100px;
+  display: inline-block;
+}
+
+.playlist-text {
+  width: 190px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.tracks-info {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+.pl .tracks-info .album-name {
+  display: inline-block;
 }
