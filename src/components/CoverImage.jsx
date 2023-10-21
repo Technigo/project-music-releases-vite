@@ -10,6 +10,6 @@ export const CoverImage = (album) => {
   );
 };
 
-// CoverImage.propTypes = {
-//   album: PropTypes.object.isRequired,
-// };
+CoverImage.propTypes = {
+  album: PropTypes.object.isRequired,
+};
