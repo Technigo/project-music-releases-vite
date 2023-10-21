@@ -1,15 +1,13 @@
-import { PropTypes } from "prop-types";
+import { PropTypes } from 'prop-types';
 
 export const Header = ({ text }) => {
   return (
- 		<div className="header-container">
- 			<h4 className="header-text">
-                { text }
-            </h4>
- 		</div>
- 	);
- };
+    <div className="header-container">
+      <h3 className="header-text">{text}</h3>
+    </div>
+  );
+};
 
- Header.propTypes = {
-	text: PropTypes.string.isRequired,
-  };
+Header.propTypes = {
+  text: PropTypes.string.isRequired,
+};

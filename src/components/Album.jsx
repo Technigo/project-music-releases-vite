@@ -1,11 +1,12 @@
 import { PropTypes } from "prop-types";
 import { AlbumName } from "./AlbumName";
-import { ArtistName } from "./ArtistName";
 import { CoverImage } from "./CoverImage";
 
 export const Album = ({ album }) => {
   // TODO: remove this later on
   // console.log(album);
+
+  const image = album.images.find((image) => image.height === 640);
 
   return (
     <div className="album-container">
@@ -13,8 +14,6 @@ export const Album = ({ album }) => {
       {
         <div>
           <AlbumName albumName={album.name} uri={album.uri} />
-
-          <ArtistName artists={album.artists} />
         </div>
       }
     </div>
