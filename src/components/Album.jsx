@@ -1,4 +1,5 @@
 import { PropTypes } from "prop-types";
+import { CoverImage } from './CoverImage';
 
 export const Album = ({ album }) => {
   // TODO: remove this later on
@@ -6,8 +7,7 @@ export const Album = ({ album }) => {
 
   return (
     <div className="album-container">
-
-      ll
+      <CoverImage img={album.images[1].url} alt={album.name} />
       {/* 
         // CoverImage component here
         // AlbumName component here
