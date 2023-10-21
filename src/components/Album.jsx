@@ -13,8 +13,6 @@ export const Album = ({ album }) => {
       {
         <div>
           <AlbumName albumName={album.name} uri={album.uri} />
-
-          <ArtistName artists={album.artists} />
         </div>
       }
     </div>
