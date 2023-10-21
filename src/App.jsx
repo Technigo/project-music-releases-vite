@@ -4,12 +4,17 @@ import { Album } from './components/Album';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import data from './data.json';
+import { playlists } from './stretched-goal.json';
 
 export const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <div>
-      <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+      <Sidebar
+        isNavOpen={isNavOpen}
+        setIsNavOpen={setIsNavOpen}
+        playlists={playlists.items}
+      />
       <div className="main-body">
         <div
           className={`${isNavOpen ? 'main-container-open' : 'main-container'}`}
