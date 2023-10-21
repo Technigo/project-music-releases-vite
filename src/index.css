@@ -10,6 +10,10 @@ body {
   grid-template-columns: 1fr;
 }
 
+.header-container {
+  margin-top: 15px;
+}
+
 @media (min-width: 667px) {
   .album-collection {
     grid-template-columns: 1fr 1fr;
