@@ -1,12 +1,13 @@
-export const CoverImage = (props) => {
+import { PropTypes } from 'prop-types';
+//import { HoverImage } from './HoverImage';
+
+export const CoverImage = (album) => {
     return (
-      <div className="overlay">
-        <div className="icon-container">
-          <img src="./icons/heart.svg" className="heart icon" alt="heart"></img>
-          <img src="./icons/play.svg" className="play icon" alt="play"></img>
-          <img src="./icons/dots.svg" className="dots icon" alt="dots"></img>
-        </div>
-      <img src={props.img} className="album-image" alt="album cover" />
-   </div>
-  )
-}
+        //HoverImage goes here
+            <img src={album.img} className="album-image" alt={album.name} />
+  );
+};
+
+CoverImage.propTypes = {
+    album: PropTypes.object.isRequired,
+  };

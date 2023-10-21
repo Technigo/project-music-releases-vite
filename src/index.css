@@ -14,6 +14,59 @@ body {
   margin-top: 15px;
 }
 
+.album-container {
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.icon-container {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.album-container:hover .icon-container {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.icon {
+  filter: brightness(0) invert(1);
+  padding: 15px; 
+}
+
+.play {
+  width: 40px;
+}
+.dots, .heart {
+  width: 25px;
+}
+
+.play:hover {
+  width: 55px;
+  transition: 0.2s;
+  padding: 10px;
+  opacity: 1;
+}
+
+.dots:hover, .heart:hover {
+  width: 35px;
+  transition: 0.2s;
+  padding: 10px;
+  opacity: 1;
+}
+
 @media (min-width: 667px) {
   .album-collection {
     grid-template-columns: 1fr 1fr;
