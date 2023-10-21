@@ -49,10 +49,7 @@ body {
 .play {
   width: 40px;
 }
-.dots {
-  width: 25px;
-}
-.heart {
+.dots, .heart {
   width: 25px;
 }
 
@@ -63,14 +60,7 @@ body {
   opacity: 1;
 }
 
-.dots:hover {
-  width: 35px;
-  transition: 0.2s;
-  padding: 10px;
-  opacity: 1;
-}
-
-.heart:hover {
+.dots:hover, .heart:hover {
   width: 35px;
   transition: 0.2s;
   padding: 10px;
