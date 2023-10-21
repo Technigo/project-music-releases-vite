@@ -1,6 +1,6 @@
-import { AlbumName } from "./AlbumName/AlbumName"
-import { ArtistName } from "./ArtistName/ArtistName"
-import { CoverImage } from "./CoverImage/CoverImage"
+import { AlbumName } from "../AlbumName/AlbumName"
+import { ArtistName } from "../ArtistName/ArtistName"
+import { CoverImage } from "../CoverImage/CoverImage"
 
 export const Album = ({ data }) => {
 
