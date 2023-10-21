@@ -1,3 +1,5 @@
+import { PropTypes } from 'prop-types';
+
 export const CoverImage = (album) => {
     return (
       <div className="overlay">
@@ -8,5 +10,10 @@ export const CoverImage = (album) => {
         </div>
       <img src={album.img} className="album-image" alt={album.name} />
    </div>
-  )
-}
+  );
+};
+
+CoverImage.propTypes = {
+    album: PropTypes.object.isRequired,
+  };
+  
