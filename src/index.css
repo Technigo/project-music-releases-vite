@@ -11,12 +11,25 @@ body {
 }
 
 .header-container {
-  margin-top: 15px;
+  margin: 30px 10px 5px;
+  border-bottom: 1px solid rgba(130, 130, 130, 0.374);
+}
+
+h3 {
+  padding: 0px;
+  margin-bottom: 8px;
 }
 
 .album-container {
   max-width: 600px;
   aspect-ratio: 1 / 1;
+  position: relative;
+  width: 100%;
+}
+
+.album-container img {
+  max-width: 600px;
+  width: 100%;
 }
 
 .overlay {
@@ -42,13 +55,14 @@ body {
 
 .icon {
   filter: brightness(0) invert(1);
-  padding: 15px; 
+  padding: 15px;
 }
 
 .play {
   width: 40px;
 }
-.dots, .heart {
+.dots,
+.heart {
   width: 25px;
 }
 
@@ -59,7 +73,8 @@ body {
   opacity: 1;
 }
 
-.dots:hover, .heart:hover {
+.dots:hover,
+.heart:hover {
   width: 35px;
   transition: 0.2s;
   padding: 10px;
