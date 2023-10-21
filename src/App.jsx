@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Album } from './components/Album';
 import { Header } from './components/Header';
-import { Sidebar } from './components/sidebar';
+import { Sidebar } from './components/Sidebar';
 import data from './data.json';
 
 export const App = () => {
