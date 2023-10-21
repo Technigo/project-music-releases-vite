@@ -66,4 +66,8 @@ Sidebar.propTypes = {
   isNavOpen: PropTypes.bool.isRequired,
   setIsNavOpen: PropTypes.func.isRequired,
   playlists: PropTypes.array.isRequired,
+  albumData: PropTypes.array.isRequired,
+  setAlbumData: PropTypes.func.isRequired,
+  setHeaderName: PropTypes.func.isRequired,
+  headerName: PropTypes.string.isRequired,
 };

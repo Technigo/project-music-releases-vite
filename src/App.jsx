@@ -26,7 +26,7 @@ export const App = () => {
         <div
           className={`${isNavOpen ? 'main-container-open' : 'main-container'}`}
         >
-          <Header text="New Albums & Singles" />
+          <Header text={headerName} />
           <div className="album-collection">
             {albumData.map(album => {
               return (
