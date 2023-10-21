@@ -1,10 +1,12 @@
 import { PropTypes } from 'prop-types';
-//import { HoverImage } from './HoverImage';
+import { HoverImage } from './HoverImage';
 
 export const CoverImage = (album) => {
     return (
-        //HoverImage goes here
+        <>
+            <HoverImage />
             <img src={album.img} className="album-image" alt={album.name} />
+        </>
   );
 };
 

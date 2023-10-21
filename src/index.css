@@ -21,13 +21,12 @@ body {
 
 .overlay {
   position: absolute;
-  width: 300px;
-  height: 300px;
 }
 
 .icon-container {
   display: none;
-  position: absolute;
+  width: 300px;
+  height: 300px;
   justify-content: center;
   top: 0;
   right: 0;
