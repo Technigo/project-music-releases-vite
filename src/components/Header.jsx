@@ -1,9 +1,9 @@
-import React from 'react';
-
-export const Header = () => {
+export const Header = ({ text }) => {
   return (
  		<header className="header-container">
- 			<h1 className="header-text">New albums & singles</h1>
+ 			<h3 className="header-text">
+                { text }
+            </h3>
  		</header>
  	);
  };

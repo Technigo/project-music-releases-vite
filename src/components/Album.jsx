@@ -6,6 +6,8 @@ export const Album = ({ album }) => {
 
   return (
     <div className="album-container">
+
+      ll
       {/* 
         // CoverImage component here
         // AlbumName component here

@@ -5,7 +5,7 @@ import data from "./data.json";
 export const App = () => {
   return (
     <div className="main-body">
-      <Header />
+      <Header text="New albums & singles"/>
       <div className="album-collection">
         {data.albums.items.map((album) => {
           return (
