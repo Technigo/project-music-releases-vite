@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.albumSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 667px) {
+  .albumSection {
+    flex-direction: row;
+  }
+}
