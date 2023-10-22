@@ -1,3 +1,4 @@
+ /* Defining global css variables and fonts for the whole document */
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,7 +8,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* this is the specific styling for displaying code snippets */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* the whole document's styling */
+body {
+  background-color: black;
+  margin: 25px 50px 25px 50px;
+}
+
+/* this one styles with grid the album layout */
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; /* initially, one column */
+  grid-gap: 50px; /* this defines the gap between grid items */
+}
+
+/* On screens wider than 667px, only two columns shows (for tablets)*/
+@media (min-width: 667px) {
+  .album-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* On screens wider than 1025px, four columns shows (for desktop) */
+@media (min-width: 1025px) {
+  .album-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
