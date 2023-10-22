@@ -1,0 +1,15 @@
+.album-name-link {
+  margin-top: 11px;
+  margin-bottom: 14px;
+}
+
+.album-name-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.album-name-link a:hover {
+  text-decoration: underline;
+}
