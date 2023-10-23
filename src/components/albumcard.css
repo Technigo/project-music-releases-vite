@@ -1,0 +1,37 @@
+.album-card {
+    margin: 0 10px 30px 10px;
+    color: #fff;
+    padding: 0;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .album-name h2 {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .album-name a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .album-name a:hover {
+    text-decoration: underline;
+  }
+  
+  .artist-name a {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+    text-decoration: none;
+  }
+  
+  .artist-name a:hover {
+    color: grey;
+    text-decoration: underline;
+  }
