@@ -6,29 +6,18 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This weeks project was to build a page with React that shows new albums and single releases.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started by creating the structure and then passing the data between the different jsx files
+Once the information I needed was printed as it should be, I began the styling. That was the part of the project that took the most time.
+
+If you had more time, I would have fixed the transition on the cover image so the icons and the darker color fades in. And also rendered a list of playlists in a sidebar.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://spotify-music-releases.netlify.app/
 
 ## Instructions
 
