@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+header h1, header p {
+    font-size: 20px;
+}

@@ -1,7 +1,26 @@
 import data from "./data.json";
-
-console.log(data);
+import { Header } from "./Components/Header";
+import { AlbumCover } from "./Components/AlbumInfo/AlbumCover";
+import { AlbumName } from "./Components/AlbumInfo/AlbumName.jsx";
+import { Artist } from "./Components/AlbumInfo/Artist.jsx";
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  const albumList = data.albums.items;
+  console.log(albumList);
+  return (
+    <>
+      <Header />
+      <div className="container">
+        {albumList.map((album) => {
+          return (
+            <div key={album.id} className="album-container">
+              <AlbumCover className="album-cover" album={album} />         
+              <AlbumName className="album" album={album} />
+              <Artist className="artist-container" album={album} />
+            </div>
+          )
+        })}
+      </div>
+    </>
+  );  
 };
