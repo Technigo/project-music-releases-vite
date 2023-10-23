@@ -1,0 +1,15 @@
+.albumName h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    /* color: #ffffff; */
+  }
+  
+  .albumName a {
+    text-decoration: none;
+  }
+  
+  .albumName a:hover {
+    color: #a0a0a0;
+    text-decoration: underline;
+  }
+  
