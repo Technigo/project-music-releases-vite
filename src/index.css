@@ -1,13 +1,35 @@
-:root {
-  margin: 0;
+/* Styling for body, setting the grid and media queries. */
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+  margin: 25px 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.album-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
