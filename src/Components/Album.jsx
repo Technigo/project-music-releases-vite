@@ -5,7 +5,7 @@ import "./Album.css";
 
 export const Album = ({ albumName, imgSrc, albumUrl, artists }) => {
   return (
-    <div className="albumContainer">
+    <div className="album-container">
       <div className="album">
         <CoverImage imgSrc={imgSrc} alt={albumName} albumUrl={albumUrl} />
         <AlbumName albumUrl={albumUrl} albumName={albumName} />

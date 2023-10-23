@@ -5,11 +5,11 @@ import Dots from "../assets/icons/dots.svg";
 
 export const CoverImage = ({ imgSrc, albumName, albumUrl }) => {
   return (
-    <div className="coverImageContainer">
-      <img className="coverImage" src={imgSrc} alt={albumName} />
-      <div className="iconContainer">
+    <div className="cover-image-container">
+      <img className="cover-image" src={imgSrc} alt={albumName} />
+      <div className="icon-container">
         <Icon icon={Heart} />
-        <a className="playIcon" href={albumUrl}>
+        <a className="play-icon" href={albumUrl}>
           <Icon icon={Play} />
         </a>
         <Icon icon={Dots} />

@@ -21,7 +21,7 @@ export const App = () => {
   return (
     <div className="app">
       <Header />
-      <section className="albumSection">{renderContent}</section>
+      <section className="album-section">{renderContent}</section>
     </div>
   );
 };

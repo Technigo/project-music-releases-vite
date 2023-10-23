@@ -7,14 +7,14 @@ a:hover {
   cursor: pointer;
 }
 
-.albumSection {
+.album-section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 @media (min-width: 667px) {
-  .albumSection {
+  .album-section {
     flex-direction: row;
   }
 }
