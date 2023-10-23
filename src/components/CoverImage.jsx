@@ -11,8 +11,8 @@ export const CoverImage = ({ image }) => {
             alt="Heart"
             className="Heart"
           />
-          <Icon src="/src/assets/icons/play.svg" alt="Play" className="Play" />
-          <Icon src="/src/assets/icons/dots.svg" alt="Dots" className="Dots" />
+          <Icon src="./src/assets/icons/play.svg" alt="Play" className="Play" />
+          <Icon src="./src/assets/icons/dots.svg" alt="Dots" className="Dots" />
         </div>
       </div>
     </>
