@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This weeks project was to display album data from the Spotify API using React Components.
 
 ## Getting Started with the Project
 
@@ -24,11 +22,11 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with building the albume component after finalizing the design I broke the album component down into several smaller components. I have been using the console a lot to figure out how to solve the problems I encountered. If I had more time I would have been focusing a bit more on the styling part.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://music-realeases-week5-amanda.netlify.app/
 
 ## Instructions
 
