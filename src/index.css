@@ -1,13 +1,304 @@
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: greyscale;
+  -webkit-text-size-adjust: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* APP Component CSS */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.album a {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.artists a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a0a0a0;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.album a {
+  text-decoration: none;
+}
+
+.album-title:hover,
+.artist:hover {
+  text-decoration: underline;
+}
+
+/* CSS for Album Container */
+.album a {
+  position: relative;
+  transition: filter 0.3s;
+}
+
+.album:hover {
+  filter: brightness(0.6);
+  /* Darken the album on hover */
+}
+
+.album::before,
+.album::after,
+.album .ellipsis {
+  content: '';
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.25s, opacity 0.25s;
+  opacity: 0;
+  /* Changed opacity here so they are not shown once you hover */
+  top: 50%;
+}
+
+.album::before {
+  left: 50%;
+  border: 2px solid white;
+  content: '\25B6';
+}
+
+.album::after {
+  content: '\2665';
+  left: calc(50% - 40px);
+}
+
+.album .ellipsis {
+  left: calc(50% + 40px);
+}
+
+.album-container {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.album {
+  position: relative;
+  transition: filter 1s;
+}
+
+/* Show the icons when the album is hovered */
+.album:hover::before,
+.album:hover::after,
+.album:hover .ellipsis {
+  opacity: 1;
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 1025px) {
+  .album-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    /* Add some gap between albums */
+  }
+
+  .album {
+    width: 100%;
+    /* Make each album container take up the full width of its grid cell */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .album img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  /* Common styles for ellipsis, heart, and play button */
+  .album::before,
+  .album::after,
+  .album .ellipsis {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.25s, border-color 0.25s;
+  }
+
+  .album::before {
+    left: 50%;
+    top: 50%;
+    border: 2px solid white;
+  }
+
+  .album::after {
+    content: '\2665';
+    top: 50%;
+    left: calc(50% - 40px);
+  }
+
+  .album .ellipsis {
+    bottom: 10px;
+    right: 80px;
+  }
+
+  /* Adjust the font size for desktop screens */
+  .album:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+    border-color: white;
+  }
+}
+
+/*For tablet devices*/
+@media (max-width: 768px) {
+  .album {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .album img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  /* Common styles for ellipsis, heart, and play button */
+  .album::before,
+  .album::after,
+  .album .ellipsis {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.25s, border-color 0.25s;
+  }
+
+  .album::before {
+    left: 50%;
+    top: 50%;
+    border: 2px solid white;
+  }
+
+  .album::after {
+    top: 50%;
+    left: calc(50% - 40px);
+  }
+
+  .album .ellipsis {
+    bottom: 10px;
+    right: 80px;
+  }
+
+
+  .album:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+    border-color: white;
+  }
+
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .album {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .album img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  /* Common styles for ellipsis, heart, and play button */
+  .album::before,
+  .album::after,
+  .album .ellipsis {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.25s, border-color 0.25s;
+  }
+
+  .album::before {
+    left: 50%;
+    top: 50%;
+    border: 2px solid white;
+  }
+
+  .album::after {
+    top: 50%;
+    left: calc(50% - 40px);
+  }
+
+  .album .ellipsis {
+    bottom: 10px;
+    right: 120px;
+    /* Adjust the left position here */
+  }
+
+  /* Adjust the font size for mobile screens */
+  .album:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+    border-color: white;
+  }
 }
