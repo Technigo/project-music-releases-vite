@@ -1,0 +1,45 @@
+.btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.cover-btn svg {
+  fill: white;
+}
+
+.cover-btn {
+  background-color: transparent;
+  border-width: 0;
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.cover-btn:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+/* Width on each button */
+.heart-btn {
+  width: 2rem;
+}
+
+.play-btn {
+  width: 4rem;
+}
+
+.dots-btn {
+  width: 1.5rem;
+}
+
+/* Hover effects shows the buttons */
+.cover:hover > .btn-container {
+  opacity: 1;
+}

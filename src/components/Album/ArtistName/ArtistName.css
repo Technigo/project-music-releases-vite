@@ -1,0 +1,8 @@
+.artist-name p {
+  display: inline;
+}
+
+.artist-name a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

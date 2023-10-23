@@ -11,3 +11,149 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin, padding, list styles and built-in form typography styles */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Workflow with images */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Page layout */
+.page-wrapper {
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.big-wrapper {
+  background-color: #121212;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  height: max-content;
+}
+
+.small-card-wrapper {
+  background-color: #181818;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 2rem;
+  transition-duration: 1s;
+}
+
+.small-card-wrapper:hover {
+  background-color: #282828;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.cover {
+  position: relative; /* Parent container needs to be relative so the children (button icons) can be displayed on top of it. */
+  overflow: hidden; /* So overlay won't spill outside the div */
+  border-radius: 0.5rem;
+  box-shadow: rgba(24, 24, 24, 0.5) 0px 2px 8px 2px,
+    rgba(24, 24, 24, 0.5) 0px 2px 16px 0px;
+}
+
+.cover img {
+  transition: filter 0.3s ease; /* Adds smooth transition effect */
+  max-width: 600px;
+  width: 100%;
+}
+
+.cover:hover img {
+  filter: brightness(50%);
+}
+
+.title-card {
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 1rem 0 0.8rem;
+}
+
+.title-card a:hover {
+  text-decoration: underline;
+}
+
+.p-card {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+/* TABLET */
+@media (min-width: 667px) {
+  .page-wrapper {
+    margin: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-areas:
+      "header header header"
+      "main main aside"
+      "footer footer footer";
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .big-wrapper {
+    padding: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
