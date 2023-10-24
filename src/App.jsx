@@ -22,8 +22,9 @@ export const App = () => {
   });
 
   return (
-    <div>
+    <div className="albumPage">
       <Header title="New Albums & Singles" />
+      <p className="header1">Technigo Education Team</p>
       <div className="albumOuter">{albums}</div>
     </div>
   );

@@ -17,6 +17,10 @@ code {
   gap: 25px;
 }
 
+.albumPage {
+  background-color: #000;
+}
+
 /*https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile*/
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */

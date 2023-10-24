@@ -18,7 +18,7 @@ const getArtistContents = (artists) => {
     return last;
   }
 
-  artistContents.push(<p key="and">&</p>);
+  // artistContents.push(<p key="and">&</p>);
   artistContents.push(last);
 
   return artistContents;
@@ -30,7 +30,7 @@ const Album = ({ album }) => {
       <CoverImage url={album.imageUrl} albumName={album.name} />
       <AlbumName name={album.name} url={album.url} />
       <section className="artistWrapper">
-        <p>Artist: </p>
+        {/* <p>Artist: </p> */}
         {getArtistContents(album.artists)}
       </section>
     </div>

@@ -6,7 +6,7 @@
 
 .albumName a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .albumName a:hover {
@@ -19,28 +19,56 @@
   font-family: Helvetica, sans-serif;
   font-size: 14px;
 }
-
+/* 
 .artistWrapper > * {
   display: block;
-  margin-right: 5px;
-}
+  margin-right: 4px;
+} */
 
 .artistWrapper p {
   font-weight: bold;
+  color: #a0a0a0;
 }
 
 .artistName h3 {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+  position: relative;
 }
 
 .artistName a {
   text-decoration: none;
   color: #a0a0a0;
+  position: relative;
 }
 
 .artistName a:hover {
   text-decoration: underline;
+}
+
+.artistName:not(:first-of-type)::before {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  content: " , ";
+  color: #a0a0a0;
+  position: relative;
+}
+
+.artistName:last-child::before {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  content: " & ";
+  /* white-space: pre; */
+  color: #a0a0a0;
+  position: relative;
+}
+
+.artistName:first-of-type::before {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  content: "";
+  color: #a0a0a0;
+  position: relative;
 }
 
 /*Cover image*/

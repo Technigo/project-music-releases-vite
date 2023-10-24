@@ -3,7 +3,7 @@ const ArtistName = ({ name, url }) => {
     <div className="artistName">
       <h3>
         <a href={url} target="_blank">
-          {name}
+          {name}{" "}
         </a>
       </h3>
     </div>

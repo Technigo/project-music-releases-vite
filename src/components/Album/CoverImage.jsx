@@ -1,6 +1,7 @@
 import heartLogo from "../../assets/icons/heart.svg";
 import playLogo from "../../assets/icons/play.svg";
 import dotsLogo from "../../assets/icons/dots.svg";
+// import "./CoverImage.css";
 
 const CoverImage = ({ albumName, url }) => {
   return (
@@ -8,7 +9,7 @@ const CoverImage = ({ albumName, url }) => {
       <img className="coverImage" src={url} alt={albumName} />
       <span className="iconWrapper">
         <button type="button" className="heartIcon">
-          <img src={heartLogo} />
+          <img src={heartLogo} color="white" />
         </button>
         <button type="button" className="playIcon">
           <img src={playLogo} />

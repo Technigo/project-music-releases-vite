@@ -2,7 +2,7 @@ const AlbumName = ({ name, url }) => {
   return (
     <div className="albumName">
       <h2>
-        <span>Album: </span>
+        {/* <span>Album: </span> */}
         <a href={url} target="_blank">
           {name}{" "}
         </a>
