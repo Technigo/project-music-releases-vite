@@ -13,6 +13,7 @@ export const App = () => {
       type: albumObj.type,
       imageUrl: albumObj.images[0].url,
       artists: albumObj.artists.map((artist) => ({
+        key: artist.id,
         name: artist.name,
         url: artist.external_urls.spotify,
       })),

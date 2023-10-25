@@ -4,22 +4,37 @@ import CoverImage from "./CoverImage";
 import "./Album.css";
 
 const getArtistContents = (artists) => {
-  const artistContents = artists.map((artist) => (
-    <ArtistName key={artist.name} name={artist.name} url={artist.url} />
-  ));
-
-  const last = artistContents.pop();
+  const artistArray = [...artists];
+  const last = artistArray.pop();
 
   if (last === undefined) {
     return <></>;
   }
 
-  if (artistContents.length === 0) {
-    return last;
+  const lastContent = (
+    <ArtistName key={last.id} name={last.name} url={last.url} />
+  );
+
+  if (artistArray.length === 0) {
+    return lastContent;
   }
 
-  // artistContents.push(<p key="and">&</p>);
-  artistContents.push(last);
+  const artistContents = [];
+  for (let index = 0; index < artistArray.length; index++) {
+    const artist = artistArray[index];
+    let artistName = artist.name;
+
+    if (index !== artistArray.length - 1) {
+      artistName = artist.name + ",";
+    }
+
+    artistContents.push(
+      <ArtistName key={artist.id} name={artistName} url={artist.url} />
+    );
+  }
+
+  artistContents.push(<p key="and">&</p>);
+  artistContents.push(lastContent);
 
   return artistContents;
 };

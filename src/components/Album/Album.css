@@ -19,11 +19,11 @@
   font-family: Helvetica, sans-serif;
   font-size: 14px;
 }
-/* 
+
 .artistWrapper > * {
   display: block;
   margin-right: 4px;
-} */
+}
 
 .artistWrapper p {
   font-weight: bold;
@@ -44,31 +44,6 @@
 
 .artistName a:hover {
   text-decoration: underline;
-}
-
-.artistName:not(:first-of-type)::before {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  content: " , ";
-  color: #a0a0a0;
-  position: relative;
-}
-
-.artistName:last-child::before {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  content: " & ";
-  /* white-space: pre; */
-  color: #a0a0a0;
-  position: relative;
-}
-
-.artistName:first-of-type::before {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  content: "";
-  color: #a0a0a0;
-  position: relative;
 }
 
 /*Cover image*/
