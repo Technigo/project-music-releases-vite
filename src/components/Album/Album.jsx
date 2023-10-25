@@ -18,7 +18,7 @@ const getArtistContents = (artists) => {
     return last;
   }
 
-  // artistContents.push(<p key="and">&</p>);
+  artistContents.push(<p key="and">&</p>);
   artistContents.push(last);
 
   return artistContents;
