@@ -15,7 +15,7 @@ code {
 
 .albumOuter {
   display: grid;
-  gap: 25px;
+  gap: 0px;
 }
 
 .albumPage {
