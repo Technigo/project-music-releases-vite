@@ -10,7 +10,7 @@ export const Album = ({ albumData }) => {
             <CoverImage images={albumData.images[1].url} />
             <div className="content">
                 <AlbumName albumName={albumData.name} externalUrl={albumData.external_urls.spotify} />
-                <ArtistName artistName={artists} externalUrl={albumData.artists[0].external_urls.spotify} />
+                <ArtistName artists={albumData.artists} externalUrl={albumData.artists[0].external_urls.spotify} />
             </div>
         </div>
     );
