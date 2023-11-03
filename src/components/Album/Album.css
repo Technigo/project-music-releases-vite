@@ -54,7 +54,8 @@
 .coverImage {
   width: auto;
   height: auto;
-  max-width: 350px;
+  max-width: 320px;
+  max-height: 300px;
 }
 
 .coverImageWrapper:hover > .iconWrapper {
@@ -74,22 +75,27 @@
   left: 25%;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 10px;
   opacity: 0;
 }
 
 .iconWrapper > button {
-  width: 35px;
+  width: 45px;
   background: transparent;
   border: none;
 }
-
+/* 
+.heartIcon {
+  width: 45px;
+  height: 35px;
+} */
+/* 
 .playIcon > img {
-  width: 40px;
-}
+  width: 35px;
+} */
 
 .iconWrapper > button:hover {
-  scale: 1.5;
+  scale: 1.2;
 }
 
 /* Album */
