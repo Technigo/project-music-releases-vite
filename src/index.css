@@ -1,7 +1,6 @@
 :root {
   margin: 0;
-  font-family: -apple-system,
-    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +29,6 @@ span {
   color: #1dd05d;
   font-size: 24px;
   font-weight: 700;
-  ;
 }
 
 header img {
@@ -57,7 +55,7 @@ header img {
   transition: opacity 0.3s ease-in-out;
 }
 
-.album-cover:hover>.three-hover-buttons {
+.album-cover:hover > .three-hover-buttons {
   display: flex;
   opacity: 1;
 }
@@ -112,6 +110,11 @@ header img {
   text-align: center;
   padding: 1em;
   border-radius: 10px;
+}
+
+.album-info a {
+  text-decoration: none;
+  color: white;
 }
 
 .artists-names,

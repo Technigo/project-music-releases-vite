@@ -11,7 +11,7 @@ export const Artists = ({ artists }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {(index ? " , " : "") + art.name}
+              {(index ? ", " : "") + art.name}
             </a>
           </span>
         );
