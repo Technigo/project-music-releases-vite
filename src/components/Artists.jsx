@@ -1,24 +1,40 @@
+export const Artists = ({ artists }) => {
+  console.log(artists);
 
-export const Artists = ({ name, artistURL, id }) => {
-
-    // I think the fact that name is a string is why I can't work our how to add a comma
-    console.log(typeof name);
-    console.log(name);
-    return (
-        <a
-            target="_blank"
-            className="artists-names"
-            href={artistURL}
-            key={id}
-            rel="noreferrer noopener"
-        >
-            <p className="artist-name">
-            </p>
-            {name}
-        </a>
-    )
-}
-Artists.defaultProps = {
-    name: "No name information available",
-    artistUrl: "No Url available",
+  return (
+    <p className="test">
+      {artists.map((art, index) => {
+        return (
+          <span key={index}>
+            <a
+              href={art.external_urls.spotify}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {(index ? " , " : "") + art.name}
+            </a>
+          </span>
+        );
+      })}
+    </p>
+  );
 };
+
+//   return (
+//     <p className="test">
+
+//     </p>
+//     {artists.map((art, index) => {
+//       return (
+//         <div>
+//           <a
+//             href={art.external_urls.spotify}
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             {(index ? "& " : "") + art.name}
+//           </a>
+//         </div>
+//       );
+//     });
+//   })
