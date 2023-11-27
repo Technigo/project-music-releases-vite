@@ -3,16 +3,23 @@ import React from 'react';
 const ArtistName = ({ artists }) => {
   return (
     <div className="artists">
-      {artists.map((artist, index) => (
-        <div className="artist" key={index}>
-          <a
-            href={artist.externalUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="artist-link"
-          >
-            {artist.name}
-          </a>
+      {artists.map((artist) => (
+        <div className="artist" key={artist.id || artist.name}>
+          {artist.external_urls && artist.external_urls.spotify ? (
+            <a
+              href={artist.external_urls.spotify}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="artist-link"
+            >
+              {artist.name}
+            </a>
+          ) : (
+            <div>
+              <p>{artist.name}</p>
+              <p>Spotify URL not available</p>
+            </div>
+          )}
         </div>
       ))}
     </div>
@@ -20,4 +27,6 @@ const ArtistName = ({ artists }) => {
 };
 
 export default ArtistName;
+
+
 
