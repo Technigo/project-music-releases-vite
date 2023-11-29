@@ -1,26 +1,25 @@
-import { Header } from './Header.jsx'
+
 import { ArtistName } from './ArtistName.jsx'
 import { CoverImage } from './CoverImage.jsx'
 import { AlbumName } from './AlbumName.jsx'
 
-export const Album = ({ dataProp }) => {
-    const albumData = dataProp.albums.items
+
+
+export const Album = ({ albumProp }) => {
+    console.log(albumProp);
     return (
+        <div>
+            {albumProp.items.map((album) => (
 
-        <div className="album">
-            <Header />
-            {albumData.map((album) => {
-                return (
+                <div key={album.id}>
+                    <a href={album.external_urls.spotify}>
+                        <ArtistName artistProp={album.artists} />
+                    </a>
+                    <CoverImage key={album.id} images={album.images} />
+                    <AlbumName key={album.id} nameProp={album.name} />
+                </div>
 
-                    <div className="album-wrapper" key={album.id}>
-
-                        <ArtistName artistNameProp={album} />
-                        <AlbumName albumNameProp={album} />
-                        <CoverImage coverProp={album} />
-                    </div>
-                )
-            })}
+            ))}
         </div>
-
-    )
+    );
 }

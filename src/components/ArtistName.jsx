@@ -1,8 +1,15 @@
 
 
-export const ArtistName = () => {
+export const ArtistName = ({ artistProp }) => {
+    console.log(artistProp);
+
     return (
-        <div>ArtistName</div>
-    )
+        <div>
+            {artistProp.map((artists) => (
+                <p key={artists.id}>{artists.name}</p>
+            ))}
+        </div>
+
+    );
 }
 
