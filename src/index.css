@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  font-size: 21px;
+}
+
+.albumName {
+  color: white;
+}
+
+.artistWrap p {
+  color: white;
+  text-decoration: none;
+
+}
+
+.albumWrap a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}

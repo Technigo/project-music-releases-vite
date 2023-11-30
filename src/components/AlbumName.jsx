@@ -2,6 +2,6 @@
 
 export const AlbumName = ({ nameProp }) => {
     return (
-        <div>{nameProp}</div>
+        <div className="albumName">{nameProp}</div>
     )
 }

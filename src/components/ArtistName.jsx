@@ -4,7 +4,7 @@ export const ArtistName = ({ artistProp }) => {
     console.log(artistProp);
 
     return (
-        <div>
+        <div className="artistWrap">
             {artistProp.map((artists) => (
                 <p key={artists.id}>{artists.name}</p>
             ))}
