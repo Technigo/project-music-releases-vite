@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <div>
       <Header />
-      <Album albumProp={data.albums} />
+      <Album albumProp={data.albums.items} />
     </div>
   );
 }

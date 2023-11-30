@@ -1,6 +1,6 @@
 
 
-export const AlbumName = (nameProp) => {
+export const AlbumName = ({ nameProp }) => {
     return (
         <div>{nameProp}</div>
     )

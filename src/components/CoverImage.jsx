@@ -2,8 +2,8 @@
 
 export const CoverImage = ({ images }) => {
     return (
-        <div>CoverImage
-            <div>{images[1].url}</div>
+        <div>
+            <img src={images[1].url} alt="album cover image" />
         </div>
 
     )
