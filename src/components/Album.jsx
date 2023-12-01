@@ -8,10 +8,10 @@ import { AlbumName } from './AlbumName.jsx'
 export const Album = ({ albumProp }) => {
     console.log(albumProp);
     return (
-        <div >
+        <div className="albumWrap">
             {albumProp.map((album) => (
 
-                <div className="albumWrap" key={album.id}>
+                <div className="card" key={album.id}>
                     <CoverImage images={album.images} />
                     <a href={album.external_urls.spotify}>
                         <AlbumName nameProp={album.name} />

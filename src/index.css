@@ -26,9 +26,19 @@ body {
   margin-bottom: 2em;
 }
 
+.albumWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
 .albumName {
   color: white;
   font-size: 14px;
+}
+
+.albumName:hover {
+  text-decoration: underline;
 }
 
 .artistWrap h3 {
@@ -38,25 +48,38 @@ body {
   margin: 14px 0px;
 }
 
+.artistWrap h3:hover {
+  text-decoration: underline;
+}
 
-.albumWrap a {
+
+.card a {
   text-decoration: none;
   font-weight: bold;
 }
 
-img {
+#albumCoverImage {
   height: auto;
   max-width: 600px;
   width: 100%;
+  transition: filter 0.3s ease;
 }
 
-/*
-.iconContainer {
-  transform:scale(0);
-}
-.iconContainer:hover{
-transform: scale(1);
+#albumCoverImage:hover {
+  filter: brightness(0.4);
 }
 
 
-*/
+.iconWrapper {
+  /*transform: scale(0);*/
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+}
+
+.iconWrapper:hover {
+  transform: scale(1);
+}
