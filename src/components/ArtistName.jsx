@@ -6,7 +6,7 @@ export const ArtistName = ({ artistProp }) => {
     return (
         <div className="artistWrap">
             {artistProp.map((artists) => (
-                <p key={artists.id}>{artists.name}</p>
+                <h3 key={artists.id}>{artists.name}</h3>
             ))}
         </div>
 

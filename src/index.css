@@ -15,25 +15,48 @@ code {
 body {
   background-color: black;
   color: white;
+  margin: 25px 50px;
 }
 
 .header {
+  display: flex;
   text-align: center;
-  font-size: 21px;
+  font-size: 20px;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
 .albumName {
   color: white;
+  font-size: 14px;
 }
 
-.artistWrap p {
-  color: white;
+.artistWrap h3 {
+  color: #a0a0a0;
   text-decoration: none;
-
+  font-size: 14px;
+  margin: 14px 0px;
 }
+
 
 .albumWrap a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 15px;
 }
+
+img {
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+/*
+.iconContainer {
+  transform:scale(0);
+}
+.iconContainer:hover{
+transform: scale(1);
+}
+
+
+*/
