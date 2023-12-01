@@ -16,7 +16,7 @@ export const Album = ({ albumProp }) => {
                     <a href={album.external_urls.spotify}>
                         <AlbumName nameProp={album.name} />
                     </a>
-                    <a href={album.external_urls.spotify}>
+                    <a href={album.artists[0].external_urls.spotify}>
                         <ArtistName artistProp={album.artists} />
                     </a>
                 </div>

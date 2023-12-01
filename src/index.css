@@ -41,6 +41,10 @@ body {
   text-decoration: underline;
 }
 
+.artistWrap {
+  display: flex;
+}
+
 .artistWrap h3 {
   color: #a0a0a0;
   text-decoration: none;
