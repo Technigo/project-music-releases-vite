@@ -28,12 +28,10 @@ p {
 
 /* App.css */
 
-.album-wrapper {
+.app-container {
   display: grid;
-  grid-template-columns: 1fr;
-  /* One column by default (mobile-first) */
-  gap: 25px;
-  /* Add spacing between album covers */
+  grid-template-rows: auto; /* Adjust row sizes based on content */
+  gap: 20px; /* Add spacing between sections */
 }
 
 /* Header */
@@ -185,8 +183,11 @@ p {
 @media (min-width: 768px) {
 
   /* Two columns on tablet */
-  .album-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+  .app-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: auto auto; /* Adjust row sizes based on content */
+    gap: 20px; /* Add spacing between sections */
   }
 
   .icon-container {
@@ -213,8 +214,11 @@ p {
 @media (min-width: 1024px) {
 
   /* Four columns on desktop */
-  .album-wrapper {
-    grid-template-columns: repeat(4, 1fr);
+  .app-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* Five columns */
+    grid-template-rows: auto; /* Adjust row sizes based on content */
+    gap: 20px; /* Add spacing between sections */
   }
 
   .icon-container {

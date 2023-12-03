@@ -14,9 +14,14 @@ export const App = () => {
   return (
     <div className="app-container">
       {/* Header */}
-      <Header />
+      <header className="header">
+        <Header />
+      </header>
       {/* Explore Album */}
-      <ExploreAlbum allAlbums={albumItems} />
+      <h2 className="explore-heading">Explore</h2>
+      <section className="explore-album">
+        <ExploreAlbum allAlbums={albumItems} />
+      </section>
       {/* Albums */}
       <h2 className="album-heading">New albums</h2>
       <div className="album-wrapper">
