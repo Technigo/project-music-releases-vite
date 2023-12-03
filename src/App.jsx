@@ -8,11 +8,8 @@ import { ExploreAlbum } from "./components/ExploreAlbum";
 export const App = () => {
   const albumItems = data.albums.items; // Store the array in a variable
 
-  // Separates albums and singles
-  const albums = albumItems.filter((item) => item.album_type === "album");
-  console.log(albums);
+  // Separate singles from albums
   const singles = albumItems.filter((item) => item.album_type === "single");
-  console.log(singles);
 
   return (
     <div className="app">
