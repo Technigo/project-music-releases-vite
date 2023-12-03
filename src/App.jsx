@@ -18,8 +18,8 @@ export const App = () => {
         <Header />
       </header>
       {/* Explore Album */}
-      <h2 className="explore-heading">Explore</h2>
       <section className="explore-album">
+        <h2 className="explore-heading">Explore</h2>
         <ExploreAlbum allAlbums={albumItems} />
       </section>
       {/* Albums */}
@@ -31,7 +31,7 @@ export const App = () => {
       </div>
       {/* Singles */}
       <h2 className="singles-heading">New singles</h2>
-      <div className="singles-cards">
+      <div className="singles-wrapper">
         {singles.map((single) => (
           <Album key={single.id} albumData={single} />
         ))}

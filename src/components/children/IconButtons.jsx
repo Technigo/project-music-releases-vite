@@ -73,6 +73,36 @@ const Buttons = styled.div`
     opacity: 1;
   }
 }
+
+/**** TABLET ****/
+@media (min-width: 768px) {
+  .icon-container {
+    gap: 20px;
+  }
+
+  /* Increase the size of the heart and dots icons without affecting the gap */
+  .icon-container .heart-icon img,
+  .icon-container .dots-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Icon styling for play icon (if needed) */
+  .icon-container .play-icon img {
+    width: 35px;
+    height: 35px;
+  }
+
+}
+
+/**** DESKTOP ****/
+@media (min-width: 1024px) {
+  .icon-container {
+    gap: 10px;
+  }
+
+}
+
 `;
 
 export const IconButtons = () => {

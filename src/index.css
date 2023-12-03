@@ -28,201 +28,163 @@ p {
 
 /* App.css */
 
+/*---------- GRID LAYOUT ----------*/
+
 .app-container {
-  display: grid;
-  grid-template-rows: auto; /* Adjust row sizes based on content */
-  gap: 20px; /* Add spacing between sections */
+  grid-template-rows: repeat(6, auto);
+  /* 8 rows for mobile layout */
 }
 
-/* Header */
 .header {
-  display: flex;
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  background-color: black;
+  grid-row: 1;
 }
 
-/* Album */
-.album-cover {
-  margin: 10px;
+.explore-album {
+  grid-row: 2;
 }
 
-/* AlbumName */
-.album-name a {
-  text-decoration: none;
+.album-heading {
+  grid-row: 3;
 }
 
-.album-name h2 {
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-
-  &:hover {
-    text-decoration: underline;
-  }
+.album-wrapper {
+  grid-row: 4;
 }
 
-/* ArtistName */
-.artist-name a {
-  text-decoration: none;
-  color: #a0a0a0;
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-
-  /* Add underline when the h3 is hovered */
-  &:hover {
-    text-decoration: underline;
-  }
+.singles-heading {
+  grid-row: 5;
 }
 
-.artist-name {
-  color: #a0a0a0;
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+.singles-wrapper {
+  grid-row: 6;
 }
 
-
-/* CoverImage.css */
-.cover-image-wrapper {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+.sidebar-heading {
+  grid-row: 7;
 }
 
-.cover-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  filter: brightness(1);
-  transition: filter 0.3s ease;
-  /* Add transition for filter property */
+.sidebar-container {
+  grid-row: 8;
 }
-
-.cover-image-wrapper:hover .cover-image {
-  filter: brightness(0.4);
-}
-
-/* Button container */
-.icon-container {
-  display: flex;
-  justify-content: center;
-  /* Center the icons with equal space between them */
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  transition: opacity 0.3s ease;
-  gap: 30px;
-  /* This gap will be used between icons */
-}
-
-
-/* Show the icons when the wrapper is hovered */
-.cover-image-wrapper:hover .icon-container {
-  opacity: 1;
-}
-
-/* Button styling */
-.icon-button {
-  background: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  width: 35px;
-}
-
-/* Icon styling */
-.icon {
-  transition: transform 0.3s ease;
-  filter: invert(1);
-}
-
-/* Increase the size of the icon on hover */
-.icon:hover {
-  transform: scale(1.3);
-}
-
-/* Increase the size of the heart and dots icons without affecting the gap */
-.icon-container .heart-icon img,
-.icon-container .dots-icon img {
-  width: 35px;
-  /* Adjust the width as needed */
-  height: 35px;
-  /* Adjust the height as needed */
-  /* Set the initial opacity */
-  opacity: 0.6;
-  margin: 0;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-/* Icon styling for play icon (if needed) */
-.icon-container .play-icon img {
-  width: 45px;
-  height: 45px;
-  /* Set the initial opacity */
-  opacity: 0.6;
-  margin: 0px;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
 
 /**** TABLET ****/
 @media (min-width: 768px) {
-
-  /* Two columns on tablet */
   .app-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on tablet */
+  }
+
+  .header {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .explore-album {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .album-heading,
+  .singles-heading {
+    grid-column: span 2;
+  }
+
+  .album-heading {
+    grid-row: 2;
+  }
+
+  .singles-heading {
+    grid-row: 4;
+  }
+
+  .album-wrapper,
+  .singles-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    grid-template-rows: auto auto; /* Adjust row sizes based on content */
-    gap: 20px; /* Add spacing between sections */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    overflow: scroll;
+    grid-row: 3;
+    grid-column: span 2;
   }
 
-  .icon-container {
-    gap: 20px;
+  .sidebar-heading {
+    grid-row: 6;
   }
 
-  /* Increase the size of the heart and dots icons without affecting the gap */
-  .icon-container .heart-icon img,
-  .icon-container .dots-icon img {
-    width: 24px;
-    height: 24px;
+  .sidebar-container {
+    grid-row: 7;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
-
-  /* Icon styling for play icon (if needed) */
-  .icon-container .play-icon img {
-    width: 35px;
-    height: 35px;
-  }
-
 }
-
 
 /**** DESKTOP ****/
 @media (min-width: 1024px) {
-
-  /* Four columns on desktop */
   .app-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* Five columns */
-    grid-template-rows: auto; /* Adjust row sizes based on content */
-    gap: 20px; /* Add spacing between sections */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 0.5rem 3rem;
   }
 
-  .icon-container {
-    gap: 10px;
+  .header {
+    grid-column: 2 / 5;
+    grid-row: 1;
   }
 
+  .explore-album {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .album-heading {
+    grid-column: 2 / 5;
+    grid-row: 2;
+  }
+
+  .album-wrapper {
+    grid-column: 2 / 5;
+    grid-row: 3;
+  }
+
+  .singles-wrapper {
+    grid-column: 2 / 5;
+    grid-row: 5;
+  }
+
+  .singles-heading {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .album-wrapper,
+  .singles-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    overflow: scroll;
+  }
+
+  .sidebar-heading {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .sidebar-container {
+    grid-row: 3;
+    /* Placing the element in the 7th row */
+    grid-column: span 1;
+    /* Spanning 1 columns */
+    display: grid;
+    /* Making the container a grid */
+    grid-template-columns: repeat(1, 1fr);
+    /* Keeping 1 column */
+    gap: 0.5rem;
+    /* Adding a gap of 1rem between grid items */
+  }
 }
