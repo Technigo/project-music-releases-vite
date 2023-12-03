@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const AlbumCover = styled.div`
  
-margin: 10px;
+margin: 0px;
 `;
 
 

@@ -23,6 +23,10 @@ const SideBarContainer = styled.div`
 }
 
 a {
+  text-decoration: none;
+}
+
+h2 {
   color: white;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
@@ -43,7 +47,7 @@ export const Sidebar = ({ playlistData }) => {
             <IconButtons />
             <a href={playlist.external_urls.spotify}><img className="cover-image" src={playlist.images[0].url} alt={playlist.name} /></a>
           </span>
-          <a href={playlist.external_urls.spotify} className="playlist-name">{playlist.name}</a>
+          <a href={playlist.external_urls.spotify} className="playlist-name"><h2>{playlist.name}</h2></a>
         </div>
       ))}
     </SideBarContainer>
