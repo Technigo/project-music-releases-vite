@@ -1,8 +1,3 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
@@ -22,7 +17,20 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-I started the project by really understanding the concepts of how React works. Then I defined the UI and created components from the design. I started with the top component and created props to passa data to child components. Finally I focused on the CSS to try to make the site look as much as possible to the design request provided. 
+This project began by diving into the fundamentals of React and progressively building the UI by creating components based on a provided design. Starting from the top-level component, the structure was defined, props were utilized to pass data to child components, and CSS was focused on to match the design requirements.
+
+### Project Structure
+#### CSS and Styling
+The project's styling is divided into various CSS files to manage different components and layouts, catering to mobile, tablet, and desktop viewports.
+
+#### Code Files
+- App.js: Renders components for the header, album exploration, albums, singles, and playlists sidebar.
+- Sidebar.js: Displays playlists using provided data and manages their appearance.
+- Header.js: Displays a header with the project's name and creator.
+- ExploreAlbum.js: Randomly showcases two albums from the provided album data.
+- Album.js: Handles the rendering of individual albums with cover images and related details.
+- IconButtons.js: Renders interactive icons for albums.
+- CoverImage.js, ArtistName.js, AlbumName.js: Components managing cover images, artist names, and album names.
 
 ### View it live
 
