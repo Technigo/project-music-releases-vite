@@ -211,19 +211,15 @@ p {
 
   .sidebar-container {
     grid-row: 3;
-    /* Placing the element in the 7th row */
     grid-column: span 1;
     /* Spanning 1 columns */
     display: grid;
     /* Making the container a grid */
     grid-template-columns: repeat(1, 1fr);
     /* Keeping 1 column */
-    gap: 2rem;
-    /* Adding a gap of 1rem between grid items */
+    gap: 0;
   }
 }
-
-
 
 /* Button container */
 .icon-container {
