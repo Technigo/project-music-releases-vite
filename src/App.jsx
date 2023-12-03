@@ -12,32 +12,27 @@ export const App = () => {
   const singles = albumItems.filter((item) => item.album_type === "single");
 
   return (
-    <div className="app">
-      <header className="header">
-        <Header />
-      </header>
+    <div className="app-container">
+      {/* Header */}
+      <Header />
+      {/* Explore Album */}
+      <ExploreAlbum allAlbums={albumItems} />
+      {/* Albums */}
       <h2 className="album-heading">New albums</h2>
       <div className="album-wrapper">
-        {albumItems.map((album) => (//map over album data in json
-          <Album
-            key={album.id}
-            albumData={album} // Pass the entire album object as a prop
-          />
+        {albumItems.map((album) => (
+          <Album key={album.id} albumData={album} />
         ))}
       </div>
+      {/* Singles */}
       <h2 className="singles-heading">New singles</h2>
       <div className="singles-cards">
-        {/* Generates singles */}
-        {singles.map((single) => (//map to find singles in album json data
-          <Album albumData={single} key={single.id} />
+        {singles.map((single) => (
+          <Album key={single.id} albumData={single} />
         ))}
       </div>
-      {/* Generates random album on each reload */}
-      <section className="explore-album">
-        <h2 className="explore-heading">Explore</h2>
-        <ExploreAlbum allAlbums={albumItems} />
-      </section>
-      <h2 className="sidebar-heading">Editor's picks</h2>
+      {/* Sidebar */}
+      <h2 className="sidebar-heading">Playlists</h2>
       <Sidebar playlistData={playlistData.playlists.items} />
     </div>
   );

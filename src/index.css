@@ -13,9 +13,10 @@ code {
 }
 
 body {
-  background-color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #1F1F1F;
+  margin: 2rem;
   color: white;
-  margin: 25px 50px;
 }
 
 p {
@@ -44,6 +45,7 @@ p {
   justify-content: center;
   margin-bottom: 2em;
   margin-top: 2em;
+  background-color: black;
 }
 
 /* Album */
