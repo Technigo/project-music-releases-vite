@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const AlbumNameContainer = styled.div`
+
 a {
   text-decoration: none;
 }
@@ -9,7 +10,8 @@ a {
 h2 {
   color: white;
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  margin: 0;
 
   &:hover {
     text-decoration: underline;

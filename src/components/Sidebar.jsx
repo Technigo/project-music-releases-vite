@@ -1,8 +1,14 @@
 import { IconButtons } from './children/IconButtons';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const SideBarContainer = styled.div`
-  /* CoverImage.css */
+
+.playlists {
+  margin: 0;
+  height: fit-content;
+}
+
 .cover-image-wrapper {
   position: relative;
   display: inline-block;
@@ -15,7 +21,6 @@ const SideBarContainer = styled.div`
   display: block;
   filter: brightness(1);
   transition: filter 0.3s ease;
-  /* Add transition for filter property */
 }
 
 .cover-image-wrapper:hover .cover-image {
@@ -29,7 +34,9 @@ a {
 h2 {
   color: white;
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  text-align: left;
 
   &:hover {
     text-decoration: underline;
@@ -44,8 +51,8 @@ export const Sidebar = ({ playlistData }) => {
       {playlistData.map((playlist) => ( // Maps over the playlists array and adds the correct url and name for each condition.
         <div className="playlists" key={playlist.id}>
           <span className="cover-image-wrapper">
-            <IconButtons />
             <a href={playlist.external_urls.spotify}><img className="cover-image" src={playlist.images[0].url} alt={playlist.name} /></a>
+            <IconButtons />
           </span>
           <a href={playlist.external_urls.spotify} className="playlist-name"><h2>{playlist.name}</h2></a>
         </div>
@@ -53,3 +60,7 @@ export const Sidebar = ({ playlistData }) => {
     </SideBarContainer>
   )
 }
+
+Sidebar.propTypes = {
+  playlistData: PropTypes.array.isRequired,
+};

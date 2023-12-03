@@ -11,8 +11,16 @@ const HeaderContainer = styled.div`
   text-align: center;
   background-size: cover; /* Adjust the background size */
   background-position: center center; /* Center the background */
-  height: 60vh;
+  height: 50vh;
   margin-top: 30px;
+
+  @media (min-width: 768px) {
+    height: 95vh;
+  }
+
+  @media (min-width: 1024px) {
+    height: 80vh;
+  }
 `;
 
 

@@ -7,6 +7,11 @@ import styled from 'styled-components';
 const AlbumCover = styled.div`
  
 margin: 0px;
+
+.names {
+    margin: 16px 0;
+}
+
 `;
 
 
@@ -15,8 +20,10 @@ export const Album = ({ albumData }) => {
     return (
         <AlbumCover>
             <CoverImage coverImageUrl={albumData.images[0].url} />
-            <AlbumName albumName={albumData.name} externalUrl={albumData.external_urls.spotify} />
-            <ArtistName artistName={albumData.artists} />
+            <div className="names">
+                <AlbumName albumName={albumData.name} externalUrl={albumData.external_urls.spotify} />
+                <ArtistName artistName={albumData.artists} />
+            </div>
         </AlbumCover>
     );
 };

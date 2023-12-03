@@ -32,16 +32,18 @@ p {
 /*---------- GRID LAYOUT ----------*/
 
 .app-container {
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: repeat(8, auto);
   /* 8 rows for mobile layout */
 }
 
 .header {
   grid-row: 1;
+  gap: 30;
 }
 
 .explore-album {
   grid-row: 2;
+  gap: 30;
 }
 
 .album-heading {
@@ -71,30 +73,37 @@ p {
 /**** TABLET ****/
 @media (min-width: 768px) {
   .app-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* 2 columns on tablet */
+    grid-template-rows: repeat(7, auto);
+    /* 7 rows for tablet layout */
+    gap: 2rem;
   }
 
   .header {
-    grid-column: 1 / span 2; /* Update grid-column property */
-    grid-row: 1; /* Maintain the same row position */
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .explore-album {
-    grid-column: 1 / span 2; /* Update grid-column property */
-    grid-row: 2; /* Maintain the same row position */
-  }
-
-  .album-heading,
-  .singles-heading {
-    grid-column: span 2;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
   }
 
   .album-heading {
+    grid-column: 1 / 2;
     grid-row: 2;
   }
 
-  .singles-heading {
+  .singles-wrapper {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
+
+  .singles-wrapper {
+    grid-column: 1 / 2;
     grid-row: 4;
   }
 
@@ -104,20 +113,45 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     overflow: scroll;
+  }
+
+  .album-wrapper {
     grid-row: 3;
-    grid-column: span 2;
+    grid-column: 1 / span 2;
+    display: grid;
+    /* Using grid to correctly position the cards on each device width */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .singles-heading {
+    grid-column: 1 / span 2;
+    /* Span across both columns */
+    grid-row: 4;
+    /* Adjust row position if needed */
+  }
+
+  .singles-wrapper {
+    grid-column: 1 / span 2;
+    /* Span across both columns */
+    grid-row: 5;
+    /* Adjust row position if needed */
   }
 
   .sidebar-heading {
+    grid-column: 1 / span 2;
+    /* Span across both columns */
     grid-row: 6;
+    /* Adjust row position if needed */
   }
 
   .sidebar-container {
+    grid-column: 1 / span 2;
+    /* Span across both columns */
     grid-row: 7;
-    grid-column: span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -184,7 +218,108 @@ p {
     /* Making the container a grid */
     grid-template-columns: repeat(1, 1fr);
     /* Keeping 1 column */
-    gap: 0.5rem;
+    gap: 2rem;
     /* Adding a gap of 1rem between grid items */
   }
+}
+
+
+
+/* Button container */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  /* Center the icons with equal space between them */
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  gap: 30px;
+  /* This gap will be used between icons */
+}
+
+
+/* Show the icons when the wrapper is hovered */
+.cover-image-wrapper:hover .icon-container {
+  opacity: 1;
+}
+
+/* Button styling */
+.icon-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 35px;
+}
+
+/* Icon styling */
+.icon {
+  transition: transform 0.3s ease;
+  filter: invert(1);
+}
+
+/* Increase the size of the icon on hover */
+.icon:hover {
+  transform: scale(1.3);
+}
+
+/* Increase the size of the heart and dots icons without affecting the gap */
+.icon-container .heart-icon img,
+.icon-container .dots-icon img {
+  width: 35px;
+  /* Adjust the width as needed */
+  height: 35px;
+  /* Adjust the height as needed */
+  /* Set the initial opacity */
+  opacity: 0.6;
+  margin: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* Icon styling for play icon (if needed) */
+.icon-container .play-icon img {
+  width: 45px;
+  height: 45px;
+  /* Set the initial opacity */
+  opacity: 0.6;
+  margin: 0px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/**** TABLET ****/
+@media (min-width: 768px) {
+  .icon-container {
+    gap: 20px;
+  }
+
+  /* Increase the size of the heart and dots icons without affecting the gap */
+  .icon-container .heart-icon img,
+  .icon-container .dots-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Icon styling for play icon (if needed) */
+  .icon-container .play-icon img {
+    width: 35px;
+    height: 35px;
+  }
+
+}
+
+/**** DESKTOP ****/
+@media (min-width: 1024px) {
+  .icon-container {
+    gap: 10px;
+  }
+
 }

@@ -7,7 +7,7 @@ const ArtistContainer = styled.div`
   text-decoration: none;
   color: #a0a0a0;
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 
   /* Add underline when the h3 is hovered */
@@ -19,7 +19,7 @@ const ArtistContainer = styled.div`
 .artist-name {
   color: #a0a0a0;
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 `;
