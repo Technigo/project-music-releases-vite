@@ -77,6 +77,10 @@ body {
   filter: brightness(0.4);
 }
 
+.coverImageWrapper {
+  position: relative;
+}
+
 
 .iconWrapper {
   /*transform: scale(0);*/
@@ -87,15 +91,23 @@ body {
   left: 0;
   top: 40%;
   width: 100%;
+
 }
 
+button {
+  width: 50px;
 
+}
 
-/*
-.iconWrapper:hover {
+/*.iconWrapper:hover {
   transform: scale(1);
 }
 */
+
+button {
+  background: transparent;
+  border: none;
+}
 
 /*tablet response*/
 @media (min-width: 667px) and (max-width: 1023px) {
@@ -104,10 +116,23 @@ body {
   }
 }
 
+/*desktop response*/
 @media (min-width: 1024px) {
   .albumWrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
+
+  }
+
+  .iconWrapper {
+    display: none;
+  }
+
+  .coverImageWrapper:hover {
+    .iconWrapper {
+      display: block;
+    }
+
   }
 }

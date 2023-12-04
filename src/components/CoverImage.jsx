@@ -1,8 +1,8 @@
-
+import dotsIcon from '../assets/icons/dots.svg';
 import heartIcon from '../assets/icons/heart.svg';
 import playIcon from '../assets/icons/play.svg';
 
-export const CoverImage = ({ images, dotsIcon }) => {
+export const CoverImage = ({ images }) => {
     return (
         <div className="coverImageWrapper">
             <img id="albumCoverImage" src={images[1].url} alt="album cover image" />
