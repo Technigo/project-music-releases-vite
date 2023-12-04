@@ -28,8 +28,8 @@ body {
 
 .albumWrap {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 25px;
+  grid-template-columns: 1fr;
+
 }
 
 .albumName {
@@ -81,6 +81,7 @@ body {
 .iconWrapper {
   /*transform: scale(0);*/
   display: flex;
+  gap: 8px;
   justify-content: center;
   position: absolute;
   left: 0;
@@ -88,6 +89,23 @@ body {
   width: 100%;
 }
 
+/*
 .iconWrapper:hover {
   transform: scale(1);
+}
+*/
+
+/*tablet response*/
+@media (min-width: 667px) and (max-width: 1023px) {
+  .albumWrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .albumWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+  }
 }
