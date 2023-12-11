@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment is to learn the basics of react and build a music site using API and links to artits and albums. Try to make the design as closely as possible to the design that was provided
 
 ## Getting Started with the Project
 
@@ -24,11 +22,19 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I've been using links and video that's provided. Googeling, using stack overflow and going throu the videos to solve problems that came up.
+I've been using java script react with Vite for the first time to build this project.
+
+I'm missing some part of the requrements:
+Icons: when hovering the icons do not change scale and they are not white. Couldn't manage to change the color or scale to them.
+
+Link on artist name: when clicking the artist name I dont get the link to the artist open in a new tab. I get this to work on the Album name but not on artist.
+
+Commas: the commas in it's own line between the artists and the artists is in their own lines.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://splendid-kitsune-03293f.netlify.app/
 
 ## Instructions
 
