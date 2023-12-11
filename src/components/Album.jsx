@@ -23,16 +23,18 @@ const Album = ({ albumData }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="cover-image-container">
-        <CoverImage imageUrl={albumData.images[0].url} />
+        <div className="cover-image">
+          <CoverImage imageUrl={albumData.images[0].url} />
+        </div>
         {isHovered && (
           <div className="buttons">
-            <button className="play-icon">
+            <button type="button" className="play-icon">
               <PlayIcon />
             </button>
-            <button className="heart-icon">
+            <button type="button" className="heart-icon">
               <HeartIcon />
             </button>
-            <button className="dot-icon">
+            <button type="button" className="dot-icon">
               <DotIcon />
             </button>
           </div>
@@ -44,10 +46,8 @@ const Album = ({ albumData }) => {
       <div className="artists">
         {albumData.artists.map((artist, index) => (
           <React.Fragment key={artist.id}>
-            <ArtistName name={[artist.name]} />
-            {/* name={[artist[0].external_urls.spotify]} ------tried with this as path, dosen't work */}
-            {index < albumData.artists.length - 1 && <span>, </span>}
-            {/* the comma is in it's own line and the artists are in seperate lines - this is wrong */}
+            <ArtistName name={[artist.name, artist.external_urls.spotify]} />
+            {index < albumData.artists.length - 1 && <span>&nbsp;&amp; </span>}
           </React.Fragment>
         ))}
       </div>
