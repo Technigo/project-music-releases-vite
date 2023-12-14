@@ -9,15 +9,29 @@ export const Album = ({ albumInfo }) => {
 
   // Variables for each component prop, extracting necessary information from the passed albumInfo
   const buttonIconParent = "";
-  const externalArtistHref = albumInfo.artists[0].external_urls.spotify;
   const albumNameParent = albumInfo.name;
-  const artistNameParent = albumInfo.artists
-    .map((artist) => artist.name)
-    .join(", ");
   const externalAlbumHref = albumInfo.external_urls.spotify;
   const imageRefParent = {
     urlLinkFromApi: albumInfo.images[0].url,
     altText: albumInfo.name,
+  };
+
+  const formatArtistLinks = (artists) => {
+    return artists.map((artist, index) => {
+      const isLastArtist = index === artists.length - 1;
+      const isSecondLastArtist = index === artists.length - 2;
+      return (
+        <span key={artist.id} className="artist-link">
+          <a
+            href={artist.external_urls.spotify}
+            target="_blank"
+            rel="noopener noreferrer">
+            <ArtistName artistNameProp={artist.name} />
+          </a>
+          {isLastArtist ? "" : isSecondLastArtist ? " & " : ", "}
+        </span>
+      );
+    });
   };
 
   // Return the JSX for the Album component
@@ -34,9 +48,7 @@ export const Album = ({ albumInfo }) => {
         <AlbumName albumNameProp={albumNameParent} />
       </a>
 
-      <a href={externalArtistHref} target="_blank" rel="noopener noreferrer">
-        <ArtistName artistNameProp={artistNameParent} />
-      </a>
+      <div className="artists">{formatArtistLinks(albumInfo.artists)}</div>
     </div>
   );
 };
