@@ -1,17 +1,18 @@
-export const ArtistName = ({ artists, artistUrl }) => {
+export const ArtistName = ({ artists }) => {
   return (
-    <div className={`{artists} ${artists.length > 1 ? "," : ""}`}>
-      {artists.map((artist) => (
-        <p key={artist.id}>
+    <div>
+      {artists.map((artist, index) => (
+        <span key={artist.id}>
           <a
-            href={artistUrl}
+            href={artist.external_urls.spotify}
             className="a-artist"
             target="_blank"
             rel="noreferrer"
           >
             {artist.name}
           </a>
-        </p>
+          {index < artists.length - 1 && <span className="comma">, </span>}
+        </span>
       ))}
     </div>
   );

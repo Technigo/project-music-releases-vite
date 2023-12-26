@@ -13,16 +13,22 @@ console.log(data);
 export const App = () => {
   const albums = data.albums.items;
   const renderAlbums = () => {
-    return albums.map((album) => (
-      <Album
-        key={album.id}
-        artists={album.artists}
-        albums={album.name}
-        albumUrl={album.external_urls.spotify}
-        artistUrl={album.artists[0].external_urls.spotify}
-        images={album.images[1].url}
-      />
-    ));
+    return albums.map(
+      (album) => (
+        console.log(album),
+        (
+          <div className="album-wrapper">
+            <Album
+              key={album.id}
+              artists={album.artists}
+              albums={album.name}
+              albumUrl={album.external_urls.spotify}
+              images={album.images[1].url}
+            />
+          </div>
+        )
+      )
+    );
   };
 
   return (

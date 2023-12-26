@@ -28,8 +28,10 @@ body {
   transform: scale(1.5);
 }
 
-.coverImage {
+.album-wrapper {
   position: relative;
+  width: 300px;
+  margin-bottom: 1rem;
 }
 
 .iconContainer {
@@ -46,23 +48,31 @@ body {
   transition: opacity 0.3s ease;
 }
 
+.album-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .coverImage:hover > .iconContainer {
   opacity: 1;
   transition: 0.4s;
 }
 
-.artist-list::after {
+/* .artist-list:not(:last-child)::before {
+  color: white;
   content: ", ";
 }
 
 .artist-list:last-child::after {
   content: "";
-}
+  color: white;
+} */
 
 a {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  flex-wrap: wrap;
 }
 
 a:link {
@@ -80,11 +90,8 @@ a:hover {
   color: white;
 }
 
-.album-name {
-  color: white;
-}
-
-.a-artist {
+.a-artist,
+.comma {
   color: rgb(159, 159, 159);
 }
 
@@ -120,6 +127,8 @@ a:hover {
   }
 
   .content {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
