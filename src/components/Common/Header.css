@@ -1,0 +1,10 @@
+.header {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  margin: 30px;
+  justify-content: center;
+  padding: 2em;
+}
