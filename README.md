@@ -1,14 +1,7 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A React app template to display albums. Features include a structured component hierarchy, design fidelity, hover effects, and responsive layouts. Clicking on albums or artists links to external URLs. Components provided; focus on data flow and UI interactions.
 
 ## Getting Started with the Project
 
@@ -24,11 +17,21 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+<ins>Structure:</ins> Main.jsx > App.jsx > Album.jsx. Album.jsx has 3 children: AlbumImage.jsx, Artists.jsx, Header.jsx
+
+<ins>Main problem</ins>: My main problem was getting a comma to separate artists, when an album has multiple artists. I tried several approaches, even tried to restructure my code, but was not successful. At this time, artists are listed on separate lines and artist name is passed to the module from its parent (Album.jsx) as a string (I think this needs to be an array, but I wasnt able to fix it.
+
+I think if I was to do this project again I would rethink my module hierachy, I need a separate module for Album name and need to pass different props to my Artist module as this is probably the issue regarding my comma problem.
+
+<ins>If I had more time</ins>: I would fix the comma problem and restructure all modules. My project works but I can see the structure and what props I have chosen to pass on are not done efficiently.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://wk5-project-music-releases-vite-6e0.netlify.app/
+
+### Screenshots
+
+![Screenshot of Home page](/public/assets/screenshot1.png?raw=true "Screenshot of Home page")
 
 ## Instructions
 
