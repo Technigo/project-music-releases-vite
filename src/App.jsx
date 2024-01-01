@@ -1,5 +1,5 @@
 import data from "./data.json";
-import { Album } from "./components/Album/Album";
+import { Album } from "./Components/Album/Album";
 import { Header } from "./Components/Header/Header";
 
 console.log(data);
