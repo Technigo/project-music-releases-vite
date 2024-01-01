@@ -1,0 +1,21 @@
+.artistNames {
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #a0a0a0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .artitstWrapper {
+    display: flex;
+  }
+  
+  p,
+  a,
+  span {
+    color: #a0a0a0;
+  }
+  
+  .artistNames a:hover {
+    text-decoration: underline;
+  }
