@@ -1,91 +1,129 @@
+/* Tablet */
+@media (min-width: 768px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-  /* Main-container */
-  .main-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-  
-  /* Mobile, larger font for increased readability*/
-  @media (max-width: 768px) {
-    .header-container {
-      width: auto;
-    }
-  
-    .album-name, .artists > a:link{
-      font-size: 18px;
-    }
-  }
-  
-  /* Tablet */
-  @media (min-width: 768px) {
-  .main-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
   .header-container {
     width: 100%;
   }
-  
+
   .header-title {
     width: 100%;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Sora', sans-serif;
+    text-align: center;
   }
-  
+
   .header-line {
     width: 86%;
     margin: 0;
+    text-align: center;
   }
-  
+
   .album-container {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  
+
   .album-card {
-    width: 40%;
+    width: 48%;
+    margin-bottom: 20px;
+    position: relative;
+    transition: filter 0.4s ease;
   }
   
+  .album-card:hover {
+    filter: grayscale(70%);
+  }
+
   .icons-container {
-    top: 45%;
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  
+
   .icons-container img {
     width: 50px;
     margin: 0 10px;
   }
+  
+  .heart-icon,
+  .dots-icon,
+  .play-icon {
+  filter: brightness(0) invert(1);
+  }
+
+  .heart-icon:hover,
+  .dots-icon:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease;
+  opacity: 1;
+  }
+
+  .play-icon:hover {
+  transform: scale(2);
+  transition: 0.3s ease;
+  opacity: 1;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+.album-card {
+  width: 23.5%;
+  margin-bottom: 20px;
+  position: relative;
+  transition: filter 0.4s ease;
+  }
+  .album-card:hover {
+    filter: grayscale(90%);
+  }
+  .header-title {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  
+  .icons-container {
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .icons-container img {
+    width: 50px;
+    margin: 0 10px;
   }
   
-  /* Desktop */
-  @media (min-width: 992px) {
-  
-    .album-card {
-      width: 19.5%;
-    }
-  
-    .icons-container {
-      top: 45%;
-    }
-  
-    .icons-container img {
-      width: 40px;
-      margin: 0 10px;
-    }
-  
-    .header-title {
-      width: 100%;
-      margin: 0 auto;
-      color: #fff;
-      font-size: 24px;
-      font-family: Helvetica,sans-serif;
-      font-weight: 700;
-      text-align: center;
-    }
+  .heart-icon,
+  .dots-icon,
+  .play-icon {
+  filter: brightness(0) invert(1);
   }
+
+  .heart-icon:hover,
+  .dots-icon:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease;
+  opacity: 1;
+  }
+
+  .play-icon:hover {
+  transform: scale(2);
+  transition: 0.3s ease;
+  opacity: 1;
+  }
+}

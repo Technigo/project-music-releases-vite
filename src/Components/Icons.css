@@ -1,36 +1,45 @@
-.icons-container {
-position: absolute;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 17rem;
-}
-
-.icons-container img {
-height: 35px;
-margin: 0 10px;
-opacity: 0.4;
-}
-
-.heart-icon,
-.dots-icon,
-.play-icon {
-filter: brightness(0) invert(1);
-}
-
-.heart-icon:hover,
-.dots-icon:hover {
-transform: scale(1.3);
-transition: 0.3s ease;
-opacity: 1;
-}
-
-.play-icon:hover {
-transform: scale(2);
-transition: 0.3s ease;
-opacity: 1;
-}
-
-
-/* Tablet och desktop */
+.album-card {
+    width: 48%;
+    margin-bottom: 20px;
+    position: relative;
+    transition: filter 0.4s ease;
+  }
+  
+  .album-card:hover {
+    filter: grayscale(100%);
+  }
+  
+  .icons-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17rem;
+  }
+  
+  .icons-container img {
+    height: 35px;
+    margin: 0 10px;
+    opacity: 0.6;
+  }
+  
+  .heart-icon,
+  .dots-icon,
+  .play-icon {
+    filter: brightness(0) invert(1);
+  }
+  
+  .heart-icon:hover,
+  .dots-icon:hover {
+    transform: scale(1.3);
+    transition: 0.3s ease;
+    opacity: 1;
+  }
+  
+  .play-icon:hover {
+    transform: scale(2);
+    transition: 0.3s ease;
+    opacity: 1;
+  }
+  

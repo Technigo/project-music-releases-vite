@@ -3,6 +3,7 @@ import data from "./data.json";
 import { Header } from "./Components/Header";
 import { Album } from "./Components/Album";
 import { Footer } from "./Components/Footer";
+import "../src/Components/styles.css"
 
 // Data from Json file stored in albumsArray variable.
 const albumsArray = data.albums.items;
