@@ -1,3 +1,5 @@
+import "./ArtistName.css"
+
 export const ArtistName = (mappedoutArtistName) => {
 const { albumsArray } = mappedoutArtistName;
 
