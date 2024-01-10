@@ -44,7 +44,7 @@
 
   .icons-container {
     position: absolute;
-    bottom: 8rem;
+    bottom: 14rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -98,14 +98,15 @@
   
   .icons-container {
     position: absolute;
-    bottom: 8rem;
+    bottom: 15rem;
     left: 50%;
     transform: translateX(-50%);
   }
-
-  .icons-container img {
-    width: 50px;
+  .icons-container svg {
+    width: 10%;
+    height: 10%;
     margin: 0 10px;
+    opacity: 0.6;
   }
   
   .heart-icon,
