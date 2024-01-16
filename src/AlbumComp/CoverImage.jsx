@@ -1,7 +1,7 @@
 import "../style.css";
 export const CoverImage = ({ images }) => {
   return (
-    <div>
+    <div className="coverImage">
       <img className="img" src={images} alt="album images" />
       <div className="iconContainer">
         <img className="icon" src="./icon/heart.svg" alt="favourite-icon" />
