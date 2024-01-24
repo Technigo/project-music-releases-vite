@@ -1,8 +1,3 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
@@ -33,3 +28,6 @@ https://cocofnasspotify.netlify.app/
 <a href="instructions.md">
    See instructions of this project
   </a>
+
+###Links
+My portfolio https://alexandrameijaportfolio.netlify.app/
