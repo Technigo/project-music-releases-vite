@@ -1,7 +1,44 @@
 import data from "./data.json";
-
-console.log(data);
+import playlistData from "./stretched-goal.json"
+import { Album } from './components/Album';
+import { Header } from './components/Header';
+import { Sidebar } from "./components/Sidebar";
+import { ExploreAlbum } from "./components/ExploreAlbum";
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  const albumItems = data.albums.items; // Store the array in a variable
+
+  // Separate singles from albums
+  const singles = albumItems.filter((item) => item.album_type === "single");
+
+  return (
+    <div className="app-container">
+      {/* Header */}
+      <header className="header">
+        <Header />
+      </header>
+      {/* Explore Album */}
+      <section className="explore-album">
+        <h2 className="explore-heading">Explore</h2>
+        <ExploreAlbum allAlbums={albumItems} />
+      </section>
+      {/* Albums */}
+      <h2 className="album-heading">New albums</h2>
+      <div className="album-wrapper">
+        {albumItems.map((album) => (
+          <Album key={album.id} albumData={album} />
+        ))}
+      </div>
+      {/* Singles */}
+      <h2 className="singles-heading">New singles</h2>
+      <div className="singles-wrapper">
+        {singles.map((single) => (
+          <Album key={single.id} albumData={single} />
+        ))}
+      </div>
+      {/* Sidebar */}
+      <h2 className="sidebar-heading">Playlists</h2>
+      <Sidebar playlistData={playlistData.playlists.items} />
+    </div>
+  );
 };

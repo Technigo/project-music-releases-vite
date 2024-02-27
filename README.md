@@ -1,14 +1,7 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+React app showcasing 50 album releases via spotify's API.
 
 ## Getting Started with the Project
 
@@ -24,11 +17,24 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This project began by diving into the fundamentals of React and progressively building the UI by creating components based on a provided design. Starting from the top-level component, the structure was defined, props were utilized to pass data to child components, and CSS was focused on to match the design requirements.
+
+### Project Structure
+#### CSS and Styling
+The project's styling is divided into various CSS files to manage different components and layouts, catering to mobile, tablet, and desktop viewports.
+
+#### Code Files
+- App.js: Renders components for the header, album exploration, albums, singles, and playlists sidebar.
+- Sidebar.js: Displays playlists using provided data and manages their appearance.
+- Header.js: Displays a header with the project's name and creator.
+- ExploreAlbum.js: Randomly showcases two albums from the provided album data.
+- Album.js: Handles the rendering of individual albums with cover images and related details.
+- IconButtons.js: Renders interactive icons for albums.
+- CoverImage.js, ArtistName.js, AlbumName.js: Components managing cover images, artist names, and album names.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://stay-tuned-music-releases.netlify.app/
 
 ## Instructions
 
