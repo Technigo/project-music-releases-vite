@@ -84,7 +84,7 @@ This is just a suggestion - how you decide to structure your components is compl
 So you’ve completed the requirements? Great job! Make sure you've committed and pushed a version of your project before starting on the stretch goals. Remember that the stretch goals are optional.
 
 ### Intermediate stretch goals
-- Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&":
+- Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&" (if the data don't have any multiple artists, you can modify it like you prefer to implement this feature):
   - *Teyana Taylor & Kehlani*
   - *Y2K, bbno$ & Enrique Iglesias*
 - Lower the opacity of the button icons and then when you hover over each of them, it should have full opacity
