@@ -1,0 +1,120 @@
+/* Updated CSS for AlbumStyle with Grid Layout */
+
+.FlexContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Album {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* Ensure images don't overflow album cards */
+}
+
+.Album img {
+    width: 100%;
+    /* Make the album images cover the entire card */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.HeaderText {
+    text-align: center;
+}
+
+.AlbumName a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    /* Ensure the entire card area is clickable */
+    color: rgb(255, 255, 255);
+
+}
+
+.ArtistName a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    display: inline;
+    /* Ensure the entire card area is clickable */
+    color: rgb(110, 109, 109);
+}
+
+.AlbumName a:hover,
+.ArtistName a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+
+}
+
+.AlbumImage {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.container:hover .AlbumImage {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.middle img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform .2s;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 35px;
+
+}
+
+.middle img:last-child {
+    margin-right: 0;
+
+}
+
+.middle img:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width:1024px) {
+    .FlexContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 667px) {
+    .FlexContainer {
+        /* Change the number of columns to one for screens up to 667px */
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
