@@ -5,9 +5,109 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+  padding: 3rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.grid {
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.album-cover {
+  max-width: 100%;
+}
+
+.album-wrapper:hover>.album-cover {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+.album-name {
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.artist-name:hover,
+.album-name:hover {
+  text-decoration: underline;
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-top {
+  margin-bottom: 1rem;
+}
+
+.header-bottom {
+  margin-bottom: 3rem;
+}
+
+.album-wrapper {
+  position: relative;
+}
+
+.icon-wrapper {
+  position: absolute;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+}
+
+.album-wrapper:hover>.icon-wrapper {
+  display: flex;
+}
+
+.icon {
+  margin: 0 0.5rem;
+  fill: white;
+  height: 40px;
+}
+
+.play-icon:hover,
+.dots-icon:hover,
+.heart-icon:hover {
+  scale: 1.3;
+}
+
+
+@media only screen and (min-width: 668px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
