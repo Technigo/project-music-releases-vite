@@ -1,0 +1,23 @@
+//STYLING FOR ICON BUTTONS//
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    /* Center the icons with equal space between them */
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+    gap: 30px;
+    /* This gap will be used between icons */
+  }
+  
+  .icon-button {
+    border: none; 
+    width: 45px; 
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    filter: invert(1);
+  }

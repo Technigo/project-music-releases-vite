@@ -1,6 +1,6 @@
 import data from "./data.json";
 import { Album } from "./Components/Album";
-import "./App.css";
+import { Header } from "./Components/Header";
 
 console.log(data);
 
@@ -9,7 +9,8 @@ console.log(data);
 export const App = () => {
   return (
     <div className="App">
+      <Header/>
       <Album albums={data.albums.items}/>
     </div>
   )
-};
+}

@@ -10,4 +10,35 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    font-family: helvetica, Arial, Helvetica, sans-serif;
 }
+
+body {
+  background-color: black;
+  margin-left: 40px; 
+  margin-right: 40px; 
+}
+
+.header {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  color: white; 
+  font-size: 12px; 
+}
+
+.album-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 18px; 
+  
+}
+
+.albumcover-wrapper img {
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+
+

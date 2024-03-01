@@ -1,12 +1,10 @@
-// import Play from "src/assets/icons/play.svg";
+import { IconButton } from "../Buttons/IconButton";
 
 export const CoverImage = ({coverImage}) => {
     return (
-        <div className="album-wrapper">
+        <div className="albumcover-wrapper">
             <img src={coverImage} className="album-cover" alt="album cover image"/>
-            {/* <span className="icon-wrapper">
-                <Play className="play-icon"/>
-            </span> */}
+            <IconButton/>
         </div>
     )
 }
