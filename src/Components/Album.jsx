@@ -7,7 +7,7 @@ export const Album = ({albums}) => {
         <section className="album-section">
             {albums.map((album) => (
              <div className="album" key={album.id}>
-                <CoverImage coverImage={album.images?.[0]?.url ?? 'defaultImageUrl'}/>
+                <CoverImage coverImage={album.images?.[0]?.url ?? "defaultImageUrl"}/>
                 <div className="album-info">
                     <AlbumName albumName={album.name} albumURL={album.external_urls.spotify}/>
                     <ArtistName artistName={album.artists.map((artist) => artist.name)}
