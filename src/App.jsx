@@ -1,4 +1,5 @@
 import data from "./data.json";
+import { Album } from "./Components/Album";
 import "./App.css";
 
 console.log(data);
@@ -6,5 +7,9 @@ console.log(data);
 
 
 export const App = () => {
-  return <div> src/app.jsx!</div>;
+  return (
+    <div className="App">
+      <Album albums={data.albums.items}/>
+    </div>
+  )
 };
