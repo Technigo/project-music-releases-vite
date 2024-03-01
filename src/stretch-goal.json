@@ -1,3 +1,4 @@
+{
   "message": "Editor's picks",
   "playlists": {
     "href": "https://api.spotify.com/v1/browse/featured-playlists?country=CH&timestamp=2023-02-22T14%3A42%3A20&offset=0&limit=20",
