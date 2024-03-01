@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body{
+  background-color: black;
+  margin-left: 40px; 
+  margin-right: 40px; 
+}
+
+
+.header {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  color: white; 
+  font-size: 12px; 
+}
+
+.header h3{
+ font-weight: 200;
+}
+
+
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 18px; 
+  
+}
+
+.album h2 {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.album h3 {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.cover-image img {
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+
+}
+
+/*---------HOVER EFFECTS FOR ALBUM -----------*/
+
+
+.cover-image:hover > img {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.cover-image:hover > .icon-wrapper {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.cover-image {
+  position: relative;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image:hover .icon-wrapper {
+  display:block; 
+}
+
+
+
+/*-------------STYLING TO LINKS-------------*/
+
+.album-link {
+  text-decoration: none; 
+  transition: text-decoration 0.2s ease-in-out; 
+}
+
+.album-link:hover {
+  text-decoration: underline; 
+  text-decoration-color: #ffffff;
+}
+
+.artist-link {
+  text-decoration: none; 
+  transition: text-decoration 0.2s ease-in-out; 
+}
+
+.artist-link:hover {
+  text-decoration: underline; 
+  text-decoration-color: #a0a0a0; 
+}
+
+/*-------MEDIA QUERIES---------------*/
+
+/*For tablets*/
+@media (min-width: 667px) {
+  .album-wrapper {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/*For desktops*/
+@media (min-width: 1025px) {
+  .album-wrapper {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+
+}

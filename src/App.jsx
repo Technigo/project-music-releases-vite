@@ -1,7 +1,15 @@
 import data from "./data.json";
+import {Album} from "./components/Album"
+import {Header} from "./components/Header"
 
-console.log(data);
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+  return (
+    <div className="App">
+      <Header />
+      <Album albums={data.albums.items} />
+    </div>
+  )
+}
+
+
