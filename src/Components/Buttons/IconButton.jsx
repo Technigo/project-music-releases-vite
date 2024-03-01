@@ -1,7 +1,6 @@
 import Heart from "../../assets/icons/heart.svg";
 import Play from "../../assets/icons/play.svg";
 import Dots from "../../assets/icons/dots.svg";
-import "./iconbutton.css";
 
 export const IconButton = () => {
     return (

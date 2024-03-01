@@ -1,6 +1,7 @@
 import data from "./data.json";
 import { Album } from "./Components/Album";
 import { Header } from "./Components/Header";
+import "./index.css";
 
 console.log(data);
 

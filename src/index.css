@@ -27,18 +27,93 @@ body {
   font-size: 12px; 
 }
 
+// ALBUM SECTION//
+
 .album-section {
   display: grid;
-  grid-template-columns: 1fr; 
-  gap: 18px; 
-  
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 20px; 
 }
 
-.albumcover-wrapper img {
-  height: auto;
-  max-width: 600px;
+.album h2 {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.album h3 {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.album-cover-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 600px; /* Maximum width to control the image size */
+  width: 100%; /* Ensure it's responsive */
+}
+
+.album-cover-image img {
+  transition: opacity 0.4s ease;
   width: 100%;
+  height: auto;
 }
 
+/* Hover effect for the image */
+.album-cover-image:hover img {
+  opacity: 0.4;
+}
 
+/* Centering and revealing icons on hover */
+.icon-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  gap: 30px;
+}
 
+.album-cover-image:hover .icon-container {
+  opacity: 1;
+}
+
+.icon-button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+  filter: invert(1) brightness(300%);
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  transform: scale(1.3); /* Slightly increase the scale on hover for emphasis */
+  filter: invert(1) brightness(300%); /* Optional: Increase brightness on hover for extra emphasis */
+}
+
+/*-------MEDIA QUERIES---------------*/
+
+/*For tablets*/
+@media (min-width: 667px) {
+  .album-section {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/*For desktops*/
+@media (min-width: 1025px) {
+  .album-section {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
