@@ -27,96 +27,95 @@ body {
   font-size: 12px; 
 }
 
-// ALBUM SECTION//
+/* Root, code, body, and header styles remain unchanged */
 
+/* ALBUM SECTION */
 .album-section {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust '200px' based on your preferred minimum width */
+  gap: 20px;
+  justify-content: center; /* Center grid items if they don't fill the entire width */
 }
 
-.album h2 {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
+.album {
+  /* Adjustments might not be necessary unless specific styles are required */
 }
-
-.album h3 {
-  color: #a0a0a0;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
-
 
 .album-cover-image {
   position: relative;
-  display: inline-block;
-  overflow: hidden;
-  max-width: 600px; /* Maximum width to control the image size */
-  width: 100%; /* Ensure it's responsive */
+  overflow: hidden; /* Keeps everything neat */
+  /* No need for 'display: flex' here unless you're centering something else within */
 }
 
-//jag måste kolla på.album och .album-cover-image hur allt är strukturerad//
-
-.album-cover-image img {
-  transition: opacity 0.4s ease;
-  width: 100%;
-  height: auto;
-}
-
-/* Hover effect for the image */
-.album-cover-image:hover img {
-  opacity: 0.4;
-}
-
-/* Centering and revealing icons on hover */
 .icon-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  gap: 30px;
+  transition: opacity 0.5s ease-in-out;
+  display: flex; /* To ensure icons are laid out in a row */
+  gap: 10px; /* Adjust based on desired spacing */
 }
 
 .album-cover-image:hover .icon-container {
   opacity: 1;
 }
 
-.icon-button {
-  border: none;
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
-  filter: invert(1) brightness(500%);
-  cursor: pointer;
+.album-cover-image img {
+  width: 100%; /* Responsive image */
+  height: auto;
+  transition: opacity 0.4s ease;
 }
 
-.icon-button:hover {
-  transform: scale(1.3); /* Slightly increase the scale on hover for emphasis */
-  filter: invert(1) brightness(500%); /* Optional: Increase brightness on hover for extra emphasis */
+.album-cover-image:hover > img {
+  opacity: 0.4;
 }
 
-/*-------MEDIA QUERIES---------------*/
+//TEXT SECTION, COLOR ETC//
 
-/*For tablets*/
+.album-name .album-link {
+  text-decoration: none !important;
+}
+
+
+.album-name h2 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.artist-name a {
+  text-decoration: none;
+}
+
+.artist-name h3 {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: bold
+  font-size: 14px;
+}
+
+
+ 
+/* .album h2 a:hover, .album h3 a:hover {
+  text-decoration: underline;
+} */
+
+
+
+/* MEDIA QUERIES */
 @media (min-width: 768px) {
   .album-section {
-    grid-template-columns: repeat(2, 1fr); 
-
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/*For desktops*/
 @media (min-width: 1024px) {
   .album-section {
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
+
