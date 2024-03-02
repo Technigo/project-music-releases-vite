@@ -19,11 +19,11 @@ This is just a suggestion - how you decide to structure your components is compl
 ## Folder Structure
 
 - App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
+- Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
 - Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
   - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
   - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
   - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - Header.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
 
 ### Extra Files
 
@@ -43,8 +43,8 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ## External Routing:
 
-- When you click on the album, it should link to the album's external URL in the data
-- When you click on an artist, it should link to the artist's external URL in the data
+- When you click on the album name, it should link to the album's external URL in the data
+- When you click on an artist name, it should link to the artist's external URL in the data
 
 ### Your page should be responsive:
 
@@ -60,7 +60,7 @@ This is just a suggestion - how you decide to structure your components is compl
 - Artist name - 14px Helvetica #a0a0a0
 
   When hovering over album covers or artist names, you should implement the following hover styles:
-   <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/hover-styles.png" alt="Project Banner Image">
+   <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/music-releases.png" alt="Design">
 
 ## Requirements
 - Your app should have components
@@ -84,10 +84,10 @@ This is just a suggestion - how you decide to structure your components is compl
 So you’ve completed the requirements? Great job! Make sure you've committed and pushed a version of your project before starting on the stretch goals. Remember that the stretch goals are optional.
 
 ### Intermediate stretch goals
-- Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&":
+- Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&" (if the data don't have any multiple artists, you can modify it like you prefer to implement this feature):
   - *Teyana Taylor & Kehlani*
   - *Y2K, bbno$ & Enrique Iglesias*
-- Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity
+- Lower the opacity of the button icons and then when you hover over each of them, it should have full opacity
 
 ### Advanced stretch goals
 - We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.

@@ -242,26 +242,6 @@
             "name": "102 Boyz",
             "type": "artist",
             "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/78TTCmh2koperK5NBn7DgR"
-            },
-            "href": "https://api.spotify.com/v1/artists/78TTCmh2koperK5NBn7DgR",
-            "id": "78TTCmh2koperK5NBn7DgR2",
-            "name": "102 Boyz",
-            "type": "artist",
-            "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/78TTCmh2koperK5NBn7DgR"
-            },
-            "href": "https://api.spotify.com/v1/artists/78TTCmh2koperK5NBn7DgR",
-            "id": "78TTCmh2koperK5NBn7DgR3",
-            "name": "102 Boyz",
-            "type": "artist",
-            "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
           }
         ],
         "available_markets": [
