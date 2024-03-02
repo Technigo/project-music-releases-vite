@@ -10,8 +10,8 @@
 
 .icon-button {
     border: none;
-    width: 45px;
-    height: 45px; /* Added height for consistency */
+    width: 40px;
+    height: 40px; /* Added height for consistency */
     background-color: transparent;
     cursor: pointer; /* To indicate it's clickable */
     padding: 0; /* Remove any default padding */
@@ -36,8 +36,8 @@
     /* Increase brightness on hover for a "whiter" appearance */
 }
 
-/* New style for when an icon-button is clicked/active */
-.icon-button:active {
+
+.icon-button:hover {
     transform: scale(1.3); /* Slightly reduce the button size to give a pressed effect */
 }
 
