@@ -3,19 +3,12 @@ import { AlbumName } from "./AlbumName";
 import { ArtistName } from "./ArtistName";
 import { CoverImage } from "./CoverImage";
 
-export const Album = (data) => {
-  const albums = data.data.albums.items;
-  console.log(albums);
+export const Album = ({ id, name, artists, external_urls, images }) => {
   return (
-    <section className="section__album">
-      {albums &&
-        albums.map((album) => (
-          <div className="album__list" key={album.id}>
-            <CoverImage album={album} />
-            <AlbumName album={album} />
-            <ArtistName artists={album.artists} />
-          </div>
-        ))}
-    </section>
+    <div className="album__list" key={id}>
+      <CoverImage images={images} name={name} />
+      <AlbumName name={name} external_urls={external_urls} />
+      <ArtistName artists={artists} />
+    </div>
   );
 };
