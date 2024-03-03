@@ -1,6 +1,6 @@
-import { CoverImage } from "./ChildComponent/AlbumComponents/CoverImage"
-import { AlbumName } from "./ChildComponent/AlbumComponents/AlbumName"
-import { ArtistName } from "./ChildComponent/AlbumComponents/ArtistName"
+import { CoverImage } from "./ChildComponent/AlbumComponents/CoverImage";
+import { AlbumName } from "./ChildComponent/AlbumComponents/AlbumName";
+import { ArtistName } from "./ChildComponent/AlbumComponents/ArtistName";
 
 
 console.log(CoverImage);

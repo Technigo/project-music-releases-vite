@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 import { Album } from "./ChildComponent/Album";
 
 export const Section = ({filter, data}) => {

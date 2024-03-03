@@ -1,7 +1,7 @@
-import PropTypes from "prop-types"
-import dots from "./assets/icons/dots.svg"
-import heart from "./assets/icons/heart.svg"
-import play from "./assets/icons/play.svg"
+import PropTypes from "prop-types";
+import dots from "./assets/icons/dots.svg";
+import heart from "./assets/icons/heart.svg";
+import play from "./assets/icons/play.svg";
 
 
 // eslint-disable-next-line react/prop-types
