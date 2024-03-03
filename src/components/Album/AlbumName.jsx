@@ -1,3 +1,3 @@
-export const AlbumName = () => {
-  return <div className="album__list">AlbumName</div>;
+export const AlbumName = (title) => {
+  return <p className="album-title">{title.title}</p>;
 };

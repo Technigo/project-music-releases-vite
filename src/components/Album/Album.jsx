@@ -12,19 +12,10 @@ export const Album = (data) => {
         albums.map((album) => (
           <div className="album__list" key={album.id}>
             <AlbumName title={album.name} />
-            {/* <ArtistName artists={album.artists} />
-          <CoverImage images={album.images} /> */}
+            <ArtistName artists={album.artists} />
+            {/* <CoverImage images={album.images} /> */}
           </div>
         ))}
     </section>
   );
 };
-
-{
-  /* <Avatar
-person={person}
-size={size}
-isSepia={isSepia}
-thickBorder={thickBorder}
-/> */
-}

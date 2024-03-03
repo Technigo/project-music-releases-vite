@@ -1,4 +1,10 @@
 .album-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--clr-white);
+}
+
+.artist-name {
   font-size: 14px;
   color: var(--clr-artist-title);
 }
