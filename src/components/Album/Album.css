@@ -1,3 +1,15 @@
+.album-title,
+.artist-name {
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+  display: block;
+  margin: 10px 0;
+}
+
 .album-title {
   font-weight: 600;
   font-size: 14px;
@@ -7,6 +19,12 @@
 .artist-name {
   font-size: 14px;
   color: var(--clr-artist-title);
+}
+
+.artist-name:hover,
+.album-title:hover {
+  border-bottom: 1px solid var(--clr-white);
+  color: var(--clr-white);
 }
 
 .coverImage {
