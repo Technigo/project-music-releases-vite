@@ -1,7 +1,6 @@
 :root {
   margin: 0;
-  font-family: Helvetica,
-    sans-serif;
+  font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-size: 14px;
@@ -28,14 +27,29 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
+header {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background: radial-gradient(circle, #673147 0%, #a0a0a0 100%);
+  background-clip: text;
+}
+
+h1 {
+  color: transparent;
+  font-size: 2.5rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .album {
-margin: 2%;
-width: 90%;
+  margin: 2%;
+  width: 90%;
 }
 
 .cover-img {
@@ -67,9 +81,9 @@ width: 90%;
 }
 
 .hover img {
-  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(14deg) brightness(109%) contrast(90%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(14deg)
+    brightness(109%) contrast(90%);
   padding: 2px;
-
 }
 
 .hover-play {
@@ -94,9 +108,18 @@ width: 90%;
 }
 
 .artist {
-  display: block;
+  display: inline-block;
   color: #a0a0a0;
   font-size: var(--font-size);
+}
+
+.artist:not(:last-of-type):after {
+  content: ", ";
+  letter-spacing: 0.2rem;
+}
+
+.artist:nth-last-of-type(2):after {
+  content: " & ";
 }
 
 .artist:hover {
@@ -104,12 +127,13 @@ width: 90%;
 }
 
 @media all and (min-width: 668px) {
-  .album {
-    width: 40%;
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media all and (min-width: 1024px) {
-  .album {
-    width: 20%;
+  .wrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
-} 
+}
