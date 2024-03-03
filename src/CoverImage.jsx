@@ -5,9 +5,9 @@ export const CoverImage = ({src}) => {
     <div className="cover-img">
       <img src={src} alt=""  />
       <div className="hover">
-        <img className="hover-heart" src="./assets/icons/heart.svg"/>
-        <img className="hover-play" src="./assets/icons/play.svg"/>
-        <img className="hover-dots" src="./assets/icons/dots.svg"/>
+        <img className="hover-heart" src="./src/assets/icons/heart.svg"/>
+        <img className="hover-play" src="./src/assets/icons/play.svg"/>
+        <img className="hover-dots" src="./src/assets/icons/dots.svg"/>
       </div>
     </div>
   )
