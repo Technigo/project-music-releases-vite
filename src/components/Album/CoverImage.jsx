@@ -8,15 +8,11 @@ export const CoverImage = (album) => {
   const imgUrl = albumName.images[1].url;
 
   return (
-    <>
-      <a href={albumName.external_urls.spotify} target="_blank">
-        <div className="coverImage">
-          <img className="play-icon play" src={play} alt="" />
-          <img className="play-icon heart" src={heart} alt="" />
-          <img className="play-icon dots" src={dots} alt="" />
-          <img src={imgUrl} alt={albumName.name} />
-        </div>
-      </a>
-    </>
+    <div className="coverImage">
+      <img className="play-icon play" src={play} alt="" />
+      <img className="play-icon heart" src={heart} alt="" />
+      <img className="play-icon dots" src={dots} alt="" />
+      <img src={imgUrl} alt={albumName.name} />
+    </div>
   );
 };
