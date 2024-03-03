@@ -11,9 +11,9 @@ export const Album = (data) => {
       {albums &&
         albums.map((album) => (
           <div className="album__list" key={album.id}>
+            <CoverImage images={album.images} imageAlt={album.name} />
             <AlbumName title={album.name} />
             <ArtistName artists={album.artists} />
-            {/* <CoverImage images={album.images} /> */}
           </div>
         ))}
     </section>
