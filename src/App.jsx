@@ -1,4 +1,4 @@
-import { Album } from "./components/Album";
+import { Album } from "./components/Album/Album";
 import { Header } from "./components/Header/Header";
 import data from "./data.json";
 

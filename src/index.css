@@ -9,6 +9,8 @@
 :root {
   --clr-primary: #090a25;
   --clr-secondary: #d45bff;
+
+  --clr-artist-title: #a0a0a0;
   --clr-primary-dark: #101115;
   --clr-primary-light: #262a35;
   --clr-grey-1: #102a42;
@@ -36,7 +38,7 @@ body {
   background: var(--clr-primary);
   color: var(--clr-white);
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: Helvetica, "Montserrat", sans-serif;
   max-width: 100vw;
   min-height: 100vh;
 }
