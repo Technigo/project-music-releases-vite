@@ -1,0 +1,104 @@
+/*Album name*/
+.albumName h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.albumName a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.albumName a:hover {
+  text-decoration: underline;
+}
+
+/*Artist name*/
+.artistWrapper {
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.artistWrapper > * {
+  display: block;
+  margin-right: 4px;
+}
+
+.artistWrapper p {
+  font-weight: bold;
+  color: #a0a0a0;
+}
+
+.artistName h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+.artistName a {
+  text-decoration: none;
+  color: #a0a0a0;
+  position: relative;
+}
+
+.artistName a:hover {
+  text-decoration: underline;
+}
+
+/*Cover image*/
+.coverImageWrapper {
+  position: relative;
+}
+
+.coverImage {
+  width: auto;
+  height: auto;
+  max-width: 320px;
+  max-height: 300px;
+}
+
+.coverImageWrapper:hover > .iconWrapper {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.coverImageWrapper:hover > img {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.iconWrapper {
+  width: auto;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+}
+
+.iconWrapper > button {
+  width: 45px;
+  background: transparent;
+  border: none;
+}
+/* 
+.heartIcon {
+  width: 45px;
+  height: 35px;
+} */
+/* 
+.playIcon > img {
+  width: 35px;
+} */
+
+.iconWrapper > button:hover {
+  scale: 1.2;
+}
+
+/* Album */
+.album {
+  margin: 5px;
+}
