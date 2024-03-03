@@ -11,7 +11,7 @@
   position: relative;
   transition: color 0.3s ease-in-out;
   padding-bottom: 1px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   display: block;
   margin: 10px 0;
 }
@@ -28,9 +28,13 @@
   display: inline;
 }
 
+.separator {
+  color: var(--clr-artist-title);
+}
+
 .artist-name:hover,
 .album-title:hover {
-  border-bottom: 1px solid var(--clr-white);
+  border-bottom: 2px solid var(--clr-white);
   color: var(--clr-white);
 }
 
