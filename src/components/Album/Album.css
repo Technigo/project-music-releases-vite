@@ -1,3 +1,9 @@
+.section__album {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 .album-title,
 .artist-name {
   cursor: pointer;
@@ -19,6 +25,7 @@
 .artist-name {
   font-size: 14px;
   color: var(--clr-artist-title);
+  display: inline;
 }
 
 .artist-name:hover,
@@ -28,7 +35,7 @@
 }
 
 .coverImage {
-  width: 300px;
+  /* min-width: 300px; */
   position: relative;
   display: flex;
   justify-content: center;

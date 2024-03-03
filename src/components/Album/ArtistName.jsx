@@ -1,17 +1,16 @@
 export const ArtistName = (artists) => {
-  const artistName = artists.artists;
-
   return (
     <>
-      {artistName && (
+      {artists && (
         <>
-          {artistName.map((artist, index) => (
+          {artists.artists.map((artist, index) => (
             <a
               key={index}
-              href={artist.external_urls.spotify}
               className="artist-name"
               target="_blank"
+              href={artist.external_urls.spotify}
             >
+              {index > 0 && ", "}
               {artist.name}
             </a>
           ))}
