@@ -1,7 +1,7 @@
-import data from "./data.json";
+import data from './data.json'
 
-console.log(data);
+console.log(data)
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+  return <div>Find me in src/app.jsx!</div>
+}
