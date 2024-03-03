@@ -1,0 +1,10 @@
+/* The CSS styles are applied to format the album with specific styling. */
+.album-card {
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}

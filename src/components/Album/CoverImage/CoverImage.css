@@ -1,0 +1,51 @@
+/* The CSS styles are applied to format the cover image with specific styling, including hover effects. */
+.cover-image {
+  position: relative;
+  padding: 0; 
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 0;
+  opacity: 0;
+}
+
+.icon-wrapper button {
+  background: transparent;
+  border: none;
+  gap: 20px;
+}
+
+.icon-wrapper img {
+  width: 35px;
+}
+  
+/* Adjust the opacity when hovering over .cover-image */
+.cover-image:hover img {
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+}
+  
+.cover-image:hover .icon-wrapper {
+  opacity: 1;
+}
+
+/* Turns the svg icons from black to white by inverting their colors */
+.white-icon {
+  filter: brightness(0) invert(1);
+}
+  
+.custom-play-button img {
+  width: 45px;
+}
+  
+/* Adjust the scale and opacity of the play button image when hovering */
+.custom-play-button:hover img {
+  scale: 1.2;
+  opacity: 1;
+  transition: 0.1s;
+}
