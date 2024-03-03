@@ -27,6 +27,20 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background: radial-gradient(circle, #673147 0%, #a0a0a0 100%);
+  background-clip: text;
+}
+
+h1 {
+  color: transparent;
+  font-size: 2.5rem;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
