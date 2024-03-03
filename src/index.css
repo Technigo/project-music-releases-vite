@@ -78,6 +78,10 @@ nav li:hover {
   color: var(--extra-color);
 }
 
+aside {
+  color: var(--font-color);
+}
+
 main {
   margin: 1rem;
   max-width: var(--max-width);
@@ -210,6 +214,27 @@ h2 {
 
 .artist:nth-last-of-type(2):after {
   content: " & ";
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  width: max-content;
+  min-width: 60px;
+  border-radius: 10px ;
+  background-color: var(--extra-color);
+}
+
+.hidden {
+  display: none;
 }
 
 @media all and (min-width: 668px) {
