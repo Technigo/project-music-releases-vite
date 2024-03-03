@@ -5,7 +5,7 @@ import { CoverImage } from "./CoverImage";
 
 export const Album = (data) => {
   const albums = data.data.albums.items;
-
+  console.log(albums);
   return (
     <section className="section__album">
       {albums &&
