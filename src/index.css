@@ -1,13 +1,115 @@
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: Helvetica,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-size: 14px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #181818;
+}
+
+a {
+  appearance: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album {
+margin: 2%;
+width: 90%;
+}
+
+.cover-img {
+  position: relative;
+}
+
+.cover-img > img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease-in;
+}
+
+.hover:hover {
+  background-color: black;
+  opacity: 0.6;
+}
+
+.hover img {
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(14deg) brightness(109%) contrast(90%);
+  padding: 2px;
+
+}
+
+.hover-play {
+  width: 64px;
+}
+.hover-play:hover {
+  width: 72px;
+}
+
+.hover-heart,
+.hover-dots {
+  width: 32px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: var(--font-size);
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.artist {
+  display: block;
+  color: #a0a0a0;
+  font-size: var(--font-size);
+}
+
+.artist:hover {
+  text-decoration: underline;
+}
+
+@media all and (min-width: 668px) {
+  .album {
+    width: 40%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .album {
+    width: 20%;
+  }
+} 

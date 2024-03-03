@@ -1,11 +1,12 @@
+import PropTypes from "prop-types";
 import { ArtistName } from "./ArtistName.jsx";
 import { AlbumName } from "./AlbumName.jsx";
 import { CoverImage } from "./CoverImage.jsx";
-import PropTypes from "prop-types";
+
 
 export const Album = ({ src, albumTitle, albumUrl, artists }) => {
   return (
-    <div>
+    <div className="album">
       <CoverImage src={src} />
       <AlbumName
         albumTitle={albumTitle}
