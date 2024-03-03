@@ -1,0 +1,118 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+h2:hover,
+.Artist:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Artist {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-family: Helvetica;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.CoverImage {
+  position: relative;
+}
+
+.CoverImage img {
+  max-width: 90%;
+  height: auto;
+}
+
+.CoverImage:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.CoverImage:hover .icons {
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+.albumicon {
+  padding: 10px;
+}
+
+.albumicon:hover {
+  transform: scale(1.4);
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  margin: 10px;
+  top: 50%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1;
+}
+
+/* För desktop: 4 album per rad */
+@media (min-width: 1024px) {
+  .albums {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* För tablet: 2 album per rad */
+@media (max-width: 1023px) {
+  .albums {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icons {
+    left: 30%;
+  }
+}
+
+/* För mobil: 1 album per rad */
+@media (max-width: 700px) {
+  .albums {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .icons {
+    left: 35%;
+  }
+}
