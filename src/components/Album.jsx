@@ -1,10 +1,12 @@
+import { AlbumName } from "./AlbumName.jsx";
 import { ArtistName } from "./ArtistName.jsx";
+import { CoverImage } from "./CoverImage.jsx";
 
-export const Album = ({ name, releaseDate, artists }) => {
+export const Album = ({ albumImageUrl, name, releaseDate, artists }) => {
   return (
     <div>
-      <p>Album name: {name}</p>
-      <p>Release date: {releaseDate} </p>
+      <CoverImage imageUrl={albumImageUrl} />
+      <AlbumName name={name} />
       <ArtistName artists={artists} />
     </div>
   );

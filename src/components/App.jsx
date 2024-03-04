@@ -8,10 +8,18 @@ export const App = () => {
   const albums = data.albums.items;
 
   return (
-    <div id="hello-hello">
+    <div id="app">  {/* why do we need this id? */}
       <Header />
+      {/* Below explaination again */}
       {albums.map((album) => {
-        return <Album key={album.id} name={album.name} releaseDate={album.release_date} artists={album.artists} />;
+        return (
+          <Album
+            key={album.id}
+            name={album.name}
+            artists={album.artists}
+            albumImageUrl={album.images[1].url}
+          />
+        );
       })}
     </div>
   );
