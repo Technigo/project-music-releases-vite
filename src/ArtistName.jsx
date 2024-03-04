@@ -1,11 +1,7 @@
-import PropTypes from 'prop-types'
-
-export const ArtistName = (props) => {
+export const ArtistName = (album) => {
   return (
     <div>
-      <p>
-        Artist: <a href={`/artist/${props.artist}`}>{props.artist}</a>
-      </p>
+      <p>Artists: {album.artists.map((artist) => artist.name).join(', ')}</p>
     </div>
   )
 }
