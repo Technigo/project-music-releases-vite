@@ -1,0 +1,8 @@
+.footer {
+  color: antiquewhite;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-style: dotted;
+}

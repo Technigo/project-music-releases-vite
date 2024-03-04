@@ -24,11 +24,13 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Life - handing this in late, it's not perfect but I'm very happy to get it done.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Ulrika Gålnander's Music releases vite - https://splendid-paprenjak-6e94ea.netlify.app/
+
+Treble-Clef from Icons8
 
 ## Instructions
 
