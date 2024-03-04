@@ -18,6 +18,7 @@ export const App = () => {
   console.log(albumDatas)
   console.log(albumDatas[0].name)
   console.log(albumDatas[2].id)
+  console.log(albumDatas[3].external_urls.spotify)
   
 
 

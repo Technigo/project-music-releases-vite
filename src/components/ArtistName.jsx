@@ -1,3 +1,10 @@
 export const ArtistName = ({name,external_url})=>{
-    return <a className = "artist-name-link" href = {external_url}>{name}</a>
+    const clickArtistName = ()=>{
+        window.location.href=external_url
+    }
+    return (
+        <div className = "artist-name-link">
+           <p onClick = {clickArtistName}>{name}</p>
+        </div>
+    )
 }

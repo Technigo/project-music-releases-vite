@@ -11,9 +11,9 @@ export const Album =({albumData}) =>{
     return (
         <div>
             <CoverImage coverImage={albumData.images[1].url} /> 
-            <AlbumName albumName={albumData.name} />
-            {artistDatas.map ((name,external_url,index)=>(
-                <ArtistName key = {index} artistName={name} artistLink={external_url} />
+            <AlbumName albumName={albumData.name} albumLink={albumData.external_urls.spotify} />
+            {artistDatas.map ((name,external_url)=>(
+                <ArtistName key = {artistDatas.id} artistName={name} artistLink={external_url} />
             ))}
         </div>
 

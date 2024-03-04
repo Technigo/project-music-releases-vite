@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: rgb(74, 2, 2);
+}
+.album-name p{
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
