@@ -1,7 +1,43 @@
 import data from "./data.json";
-
-console.log(data);
+import { Header } from "./components/Header";
+import { Album } from "./components/Album";
+// console.log(data);
+// console.log(data.albums.items[0].name)//album name
+// console.log(data.albums.items[0].artists[0].name)
+// console.log(data.albums.items[0].images[1].url)
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+  // const {name} = data;
+  // console.log(name);
+  const albumDatas = data.albums.items;
+  
+  
+  
+  
+  // const albumName = albumData.albums.items.name //items is an array
+  console.log(albumDatas)
+  console.log(albumDatas[0].name)
+  console.log(albumDatas[2].id)
+  
+
+
+  return (
+    <>
+      <Header />
+      <div>Find me in src/app.jsx!</div>
+      <div className="album-card"> 
+      {albumDatas.map ((albumData) =>(
+        <Album key={albumData.id} albumData={albumData} /> //it map() the items array, artist and images need to be map in Album component. key?
+        
+        // console.log(albumData.name) -> all the album name
+        // console.log(albumData.images[1].url) -> all cover image src, no need to map because already know the index. we dont need all of the url
+        // console.log(albumData.artists) -> need artist's name and link. use map(). can hold 
+        // **console.log(albumData.artists[0].name) -> artists is an arry, need map() to print the name and link**
+        //console.log(albumData.artists[0].external_urls) -> artist's link
+        
+      ))}
+    
+    </div>
+    </>    
+  );
+  }
