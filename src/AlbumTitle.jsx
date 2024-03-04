@@ -1,3 +1,3 @@
-export const AlbumTitle = ({ album }) => {
-  return <h3 className="albumName">{album.name}</h3>
+export const AlbumTitle = ({ title }) => {
+  return <h3 className="albumName">{title}</h3>
 }

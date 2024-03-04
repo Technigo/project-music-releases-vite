@@ -1,12 +1,15 @@
-export const CoverImage = ({ album }) => {
+import heartIcon from './assets/icons/heart.svg'
+import playIcon from './assets/icons/play.svg'
+import dotsIcon from './assets/icons/dots.svg'
+export const CoverImage = ({ image, alt }) => {
   return (
     <div>
-      <img src={album.images[0].url} alt={album.name} />
-      <>
-        <img src="./assets/icons/heart.svg" alt="heart-icon" />
-        <img src="./assets/icons/play.svg" alt="play-icon" />
-        <img src="./assets/icons/dots.svg" alt="dots-icon" />
-      </>
+      <img src={image} alt={alt} />
+      <div className="icons">
+        <img src={heartIcon} alt="heart-icon" />
+        <img src={playIcon} alt="play-icon" />
+        <img src={dotsIcon} alt="dots-icon" />
+      </div>
     </div>
   )
 }
