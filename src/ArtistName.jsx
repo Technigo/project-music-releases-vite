@@ -1,3 +1,9 @@
+import "./ArtistName.css";
+
 export const ArtistName = ({ artists }) => {
-  return <span>{artists.map((artist) => artist.name).join(', ')}</span>
-}
+  return (
+    <span className="artistName">
+      {artists.map((artist) => artist.name).join(", ")}
+    </span>
+  );
+};

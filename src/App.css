@@ -1,0 +1,6 @@
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #191b1b;
+}

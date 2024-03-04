@@ -1,3 +1,11 @@
-export const AlbumTitle = ({ title }) => {
-  return <h3 className="albumName">{title}</h3>
-}
+import "./AlbumTitle.css";
+
+export const AlbumTitle = ({ title, externalUrl }) => {
+  return (
+    <span className="albumName">
+      <a href={externalUrl} rel="link-spotify">
+        {title}
+      </a>
+    </span>
+  );
+};

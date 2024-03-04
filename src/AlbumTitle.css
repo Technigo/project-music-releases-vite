@@ -1,0 +1,11 @@
+.albumName a {
+  text-decoration: none; /*remove underline by default*/
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.albumName a:hover {
+  text-decoration: underline;
+}
