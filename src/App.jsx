@@ -1,9 +1,13 @@
 import data from "./data.json";
-import Header from "./Header";
-import Album from "./Album";
+import { Header } from "./src/Header";
+import { Album } from "./Album";
 
 console.log(data);
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <div>
+      <h1>Find me in src/app.jsx!</h1>
+    </div>
+  );
 };
