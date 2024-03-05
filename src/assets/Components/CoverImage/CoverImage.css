@@ -7,13 +7,6 @@
   height: auto;
 }
 
-/* .icons {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-} */
 .icons {
   display: flex;
   justify-content: center;
@@ -28,37 +21,39 @@
   width: 100%;
   opacity: 0;
   transition: 0.3s ease;
-  background-color: rgba(245, 245, 245, 0.274);
+  z-index: 2;
 }
 
 #icon-small {
   width: 35px;
-  padding: 5px;
+  padding: 10px;
 }
 
 #icon-big {
   width: 60px;
+  padding: 10px;
 }
 
 .container:hover .icons {
   opacity: 1;
 }
 
-#icon-small {
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; /* Initially hidden */
+  transition: 0.3s ease;
 }
+
+.container:hover .overlay {
+  z-index: 1; /* Bring overlay to front on hover */
+}
+
+#icon-small,
 #icon-big {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-/* to change color because are black , color property doesn't work */
-#icon-big:hover {
-  filter: invert(100%);
-}
-#icon-small:hover {
-  filter: invert(100%);
+  filter: brightness(0) invert(1);
 }
