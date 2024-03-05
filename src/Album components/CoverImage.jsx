@@ -6,6 +6,6 @@ export const CoverImage = (props) => {
     )
 }
 
-CoverImage.PropTypes = {
-    name: PropTypes.string.isRequired,
+CoverImage.propTypes = {
+    image: PropTypes.string.isRequired,
   };
