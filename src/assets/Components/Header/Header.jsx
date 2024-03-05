@@ -1,7 +1,9 @@
+import "./Header.css";
+
 export const Header = () => {
   return (
     <div>
-      <h1>New Releases</h1>
+      <h1 className="header">New Releases</h1>
     </div>
-  )
-}
+  );
+};
