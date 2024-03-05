@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-export const AlbumName = (props) => {
-  return <div>This album is called: {props.name}</div>;
+export const AlbumName = (name) => {
+  return <div>This album is called: {name}</div>;
 };
 
 AlbumName.propTypes = {

@@ -8,7 +8,9 @@ export const App = () => {
   return (
     <div>
       <Header />
-      <Album albumType={data.albums.items[0].album_type} />
+      <Album />
     </div>
   );
 };
+
+//albumType={data.albums.items[0].album_type}
