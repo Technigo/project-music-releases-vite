@@ -1,6 +1,5 @@
 export const AlbumName = ({ title, externalUrl }) => {
   return (
-   
       <a
         href={externalUrl}
         target="_blank"
@@ -9,6 +8,5 @@ export const AlbumName = ({ title, externalUrl }) => {
       >
         {title}
       </a>
-    
   );
 };
