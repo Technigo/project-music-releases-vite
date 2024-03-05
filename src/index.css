@@ -5,9 +5,75 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.album-collection {
+  margin: 2rem auto;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: fit-content(360px);
+  width: 100%;
+  justify-content: center;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica";
+  font-size: 14px;
+  width: fit-content;
+}
+
+p {
+  margin: 0;
+}
+
+.album-name {
+  color: #ffffff;
+  font-weight: 700;
+  margin: 15px 0 8px 0;
+}
+
+.artist-name {
+  color: #a0a0a0;
+}
+
+.cover-image {
+  height: 320px;
+  width: 320px;
+  /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px)
+    60; */
+  /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px)
+    60; */
+  border-style: groove;
+  border-width: 20px;
+  border-color: #ffffff;
+}
+
+img {
+  height: inherit;
+  width: inherit;
+  object-fit: contain;
+}
+
+@media (min-width: 641px) {
+  .album-collection {
+    grid-template-columns: repeat(2, fit-content(360px));
+    gap: 3rem;
+    margin: 3rem auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-collection {
+    grid-template-columns: repeat(4, fit-content(360px));
+    gap: 3.5rem;
+    margin: 4rem auto;
+  }
 }
