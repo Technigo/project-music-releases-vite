@@ -1,8 +1,19 @@
+body {
+  background-color: #181818;
+}
+
 .album-name {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+  align-self: flex-start;
+}
+
+.album-name:hover {
+  text-decoration: underline;
 }
 
 .artist-name {
@@ -12,59 +23,74 @@
   text-decoration: none;
 }
 
+.artist-name-list {
+  color: #a0a0a0;
+  align-self: flex-start;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+}
+
 .album-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  width: 200px;
+  align-items: center;
   margin: 10px;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
-.album-container img {
-  width: 100%;
-  display: block;
-  transition: filter 0.3s ease;
+.album-cover-container {
+  position: relative;
+  margin-bottom: 8px;
 }
 
-.album-cover-container:hover img {
-  filter: brightness(50%);
+.album-cover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .overlay,
 .overlay-icons {
-  display: none; /* デフォルトでは非表示 */
+  display: none;
 }
 
-.album-container:hover .overlay {
-  display: flex; /* ホバー時に表示 */
+.album-cover-container:hover .overlay {
   position: absolute;
+  gap: 1.2rem;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* 半透明の黒色のオーバーレイ */
-  color: #ffffff;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* ボタン間の間隔 */
-  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.play-icon > svg {
-  fill: white;
+.icon {
+  transition: transform 0.3s ease;
+  opacity: 75%;
 }
 
-.play:hover,
-.favorite:hover,
-.more-info:hover {
-  transform: scale(1.2); /* ホバー時に各アイコンを大きく表示 */
+.icon:hover {
+  opacity: 100%;
 }
 
-/* Responsive Design */
+.play:hover .play-icon {
+  transform: scale(1.2);
+}
+
+/* Responsive */
 .albums-container {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 2rem;
 }
 
 @media (max-width: 768px) {
