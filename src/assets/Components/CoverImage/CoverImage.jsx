@@ -1,11 +1,12 @@
-import "./CoverImage.css";
+import './CoverImage.css'
 
-import heartIcon from "./assets/icons/heart.svg";
-import playIcon from "./assets/icons/play.svg";
-import dotsIcon from "./assets/icons/dots.svg";
+import heartIcon from './icons/heart.svg'
+import playIcon from './icons/play.svg'
+import dotsIcon from './icons/dots.svg'
 export const CoverImage = ({ image, alt }) => {
   return (
-    <div>
+    // added classname
+    <div className="container">
       <img className="cover-image" src={image} alt={alt} />
       <div className="icons">
         <img id="icon-small" src={heartIcon} alt="heart-icon" />
@@ -13,5 +14,5 @@ export const CoverImage = ({ image, alt }) => {
         <img id="icon-small" src={dotsIcon} alt="dots-icon" />
       </div>
     </div>
-  );
-};
+  )
+}

@@ -1,9 +1,9 @@
-import data from "./data.json";
-import { Header } from "./Header.jsx";
-import { Album } from "./Album.jsx";
-import "./App.css";
+import data from './data.json'
+import { Header } from './assets/Components/Header/Header.jsx'
+import { Album } from './assets/Components/Album/Album.jsx'
+import './App.css'
 
-console.log(data);
+console.log(data)
 
 export const App = () => {
   return (
@@ -15,5 +15,5 @@ export const App = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}

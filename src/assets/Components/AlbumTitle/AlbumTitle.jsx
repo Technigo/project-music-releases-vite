@@ -1,4 +1,4 @@
-import "./AlbumTitle.css";
+import './AlbumTitle.css'
 
 export const AlbumTitle = ({ title, externalUrl }) => {
   return (
@@ -7,5 +7,5 @@ export const AlbumTitle = ({ title, externalUrl }) => {
         {title}
       </a>
     </span>
-  );
-};
+  )
+}
