@@ -1,7 +1,11 @@
 import PropTypes from "prop-types";
 
 export const AlbumName = ({ name }) => {
-  return <p>Name: {name}</p>;
+    return (
+      <div className="album-name">
+        <p>{name}</p>
+      </div>
+    );
 };
 
 AlbumName.propTypes = {
