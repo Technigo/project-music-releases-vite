@@ -26,12 +26,17 @@
 
 #icon-small {
   width: 35px;
+  height: 35px;
+  align-self: center;
   padding: 10px;
 }
 
 #icon-big {
   width: 60px;
+  height: 60px;
+  align-self: center;
   padding: 10px;
+  transition: transform 0.3s ease;
 }
 
 .container:hover .icons {
@@ -56,4 +61,8 @@
 #icon-small,
 #icon-big {
   filter: brightness(0) invert(1);
+}
+
+#icon-big:hover {
+  transform: scale(1.2); /*grow on hover*/
 }
