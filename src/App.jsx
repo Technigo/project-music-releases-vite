@@ -1,4 +1,6 @@
 import data from "./data.json";
+import Header from "./Header";
+import Album from "./Album";
 
 console.log(data);
 
