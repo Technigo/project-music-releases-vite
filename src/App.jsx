@@ -6,7 +6,7 @@ console.log(data);
 
 export const App = () => {
   const { albums } = data;
-  const renderAlbum = albums.items.map(({ name, artists, id }) => <Album name={name} key={id} artists={artists} />)
+  const renderAlbum = albums.items.map(({ name, artists, id, images }) => <Album name={name} key={id} artists={artists} images={images} />)
   console.log(albums)
   return <div>Find me in src/app.jsx!
     {renderAlbum}
