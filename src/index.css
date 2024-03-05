@@ -1,21 +1,80 @@
-:root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.album-name {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.artist-name {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
 }
 
-#hello-hello {
-  color: red;
+.album-container {
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-/* MAI CSS HERE */
+.album-container img {
+  width: 100%;
+  display: block;
+  transition: filter 0.3s ease;
+}
 
-/* ETNA CSS HERE */
+.album-cover-container:hover img {
+  filter: brightness(50%);
+}
+
+.overlay,
+.overlay-icons {
+  display: none; /* デフォルトでは非表示 */
+}
+
+.album-container:hover .overlay {
+  display: flex; /* ホバー時に表示 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* 半透明の黒色のオーバーレイ */
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* ボタン間の間隔 */
+  transition: opacity 0.3s ease;
+}
+
+.play-icon > svg {
+  fill: white;
+}
+
+.play:hover,
+.favorite:hover,
+.more-info:hover {
+  transform: scale(1.2); /* ホバー時に各アイコンを大きく表示 */
+}
+
+/* Responsive Design */
+.albums-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .albums-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .albums-container {
+    grid-template-columns: 1fr;
+  }
+}
