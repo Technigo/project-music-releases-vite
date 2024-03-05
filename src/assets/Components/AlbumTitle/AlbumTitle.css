@@ -9,3 +9,7 @@
 .albumName a:hover {
   text-decoration: underline;
 }
+
+.albumName {
+  padding-top: 10px;
+}

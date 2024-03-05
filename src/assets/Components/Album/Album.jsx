@@ -1,9 +1,9 @@
-import './Album.css'
-import { CoverImage } from '../CoverImage/CoverImage.jsx'
-import { AlbumTitle } from '../AlbumTitle/AlbumTitle.jsx'
-import { ArtistName } from '../ArtistName/ArtistName.jsx'
-import { ReleaseDate } from '../ReleaseDate/ReleaseDate.jsx'
-import { TotalTracks } from '../TotalTracks/TotalTracks.jsx'
+import "./Album.css";
+import { CoverImage } from "../CoverImage/CoverImage.jsx";
+import { AlbumTitle } from "../AlbumTitle/AlbumTitle.jsx";
+import { ArtistName } from "../ArtistName/ArtistName.jsx";
+import { ReleaseDate } from "../ReleaseDate/ReleaseDate.jsx";
+import { TotalTracks } from "../TotalTracks/TotalTracks.jsx";
 
 export const Album = ({ album }) => {
   return (
@@ -16,8 +16,9 @@ export const Album = ({ album }) => {
 
       <ArtistName artists={album.artists} />
 
-      <ReleaseDate releaseDate={album.release_date} />
+      <ReleaseDate album={album} />
+
       <TotalTracks totalTracks={album.total_tracks} />
     </div>
-  )
-}
+  );
+};
