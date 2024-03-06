@@ -6,7 +6,7 @@ import {CoverImage} from "./components/CoverImage"
 
 export const Album = () =>{
 return (
-    <main>
+    <section className="album-section">  
         {
             data.albums.items.map((album)=>(
                 <div className="album-card" key={album.id}>
@@ -19,6 +19,6 @@ return (
                </div>
             ))
         }
-   </main> 
+   </section>
 )
 }

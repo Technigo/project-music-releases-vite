@@ -10,7 +10,9 @@ export const CoverImage = ({album}) =>{
         <img src={album.images[1].url} alt={album.name} />
         <ul className="hover-menu">
             <li className="icon"><HeartIcon/></li>
-            <li className="icon heart-icon"><PlayIcon/></li>
+            <li className="icon heart-icon">
+                <a href={album.external_urls.spotify}><PlayIcon/></a>
+            </li>
             <li className="icon"><DotsIcon/></li>
         </ul>
         </div>
