@@ -1,13 +1,66 @@
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.albumSection {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.album {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.album:hover {
+  opacity: 0.4;
+}
+
+.albumName a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.albumName a:hover {
+  text-decoration: underline;
+}
+
+.artistName p {
+  color: #a0a0a0;
+}
+
+.artistName p:hover {
+  text-decoration: underline;
+}
+
+.coverImage {
+  display: flex;
+}
+
+.icons {
+  position: relative;
+  z-index: 1;
+  right: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  height: 40px;
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .albumSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .albumSection {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

@@ -4,8 +4,21 @@ import data from "./data.json";
 
 export const App = () => {
   const { albums } = data;
-  const renderAlbums = albums.items.map(({ id, name, artists, images }) => (
-    <Album  key={id} name={name} artists={artists} image={images[1].url}  />
-  ));
-  return <div>Albums:{renderAlbums}</div>;
+  const renderAlbums = albums.items.map(
+    ({ id, name, external_urls, artists, images }) => (
+      <Album
+        key={id}
+        name={name}
+        albumUrl={external_urls.spotify}
+        artists={artists}
+        image={images[1].url}
+      />
+    )
+  );
+  return (
+  <div>
+  <Header />
+  <div className="albumSection">{renderAlbums}</div>
+  </div>
+  )
 };
