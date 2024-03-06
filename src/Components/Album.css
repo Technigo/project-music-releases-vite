@@ -12,7 +12,13 @@ body {
 	gap: 20px;
 }
 
+.album-card{
+    display: grid
+
+}
+
 .cover-img {
+    display: grid;
     height: auto;
     max-width: 600px;
     width: 100%;
