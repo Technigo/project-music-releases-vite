@@ -1,24 +1,30 @@
 import data from "./data.json";
-import { Main } from "./main.jsx"
-import { Album} from ".//AlbumName.jsx";
+import { Header } from "./Components/Header";
+import { Album } from "./Components/Album";
 
+//This is where we get the data from json
+export const App = () => {
+  const albums = data.albums.items;
 
+//Map over albums and retrieve id, name (of album), image and artists
+  const renderAlbums = () =>
+      albums.map(({ id, name, images, artists }) => (
+        <Album
+        key={id}
+        albumName={name}
+        imgSrc={images[0].url}
+        artists={artists}
+        />
+      ));
 
+    //Display header and music content on the page...I think
+      const renderAlbumContent = renderAlbums()
+      return (
+        <div className="app">
+          <Header/>
+          <div className="main-section">{renderAlbumContent}</div>
+        </div>
+      )
 
-// const App = ({ data }) => {
-//   const { items } = data.albums;
+  }
 
-//   return (
-//     <div>
-//       {items.map(album => (
-//         <div key={album.id}>
-//           <h2>{album.name}</h2>
-//           <p>Artist: {album.artists[0].name}</p>
-//           <img src={album.images[0].url} alt={album.name} />
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default App;
