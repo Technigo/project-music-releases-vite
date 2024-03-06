@@ -13,13 +13,17 @@ code {
     monospace;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+}
+
 .album-collection {
   margin: 2rem auto;
   display: grid;
-  gap: 2.5rem;
-  grid-template-columns: fit-content(360px);
-  width: 100%;
+  grid-template-columns: fit-content(300px);
   justify-content: center;
+  align-items: center;
 }
 
 .album {
@@ -27,7 +31,8 @@ code {
   flex-direction: column;
   font-family: "Helvetica";
   font-size: 14px;
-  width: fit-content;
+  width: inherit;
+  padding: 20px;
 }
 
 p {
@@ -45,8 +50,8 @@ p {
 }
 
 .cover-image {
-  height: 320px;
-  width: 320px;
+  height: inherit;
+  width: inherit;
   /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px)
     60; */
   /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px)
@@ -57,23 +62,22 @@ p {
 }
 
 img {
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
 }
 
 @media (min-width: 641px) {
   .album-collection {
-    grid-template-columns: repeat(2, fit-content(360px));
-    gap: 3rem;
-    margin: 3rem auto;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 0;
+    margin: 3rem 20px;
   }
 }
 
 @media (min-width: 1025px) {
   .album-collection {
-    grid-template-columns: repeat(4, fit-content(360px));
-    gap: 3.5rem;
-    margin: 4rem auto;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    margin: 4rem 40px;
   }
 }
