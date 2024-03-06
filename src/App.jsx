@@ -1,6 +1,7 @@
 import { Header } from "./Album components/common/Header.jsx"
 import { Album } from "./Album components/Album.jsx"
 import data from "./data.json"
+import "./App.css"
 
 console.log(data)
 
@@ -19,9 +20,8 @@ export const App = () => {
   return (
     <div className="wrapper">
       <Header />
-      <div className="container">
-        <p className="title">Releases</p>
-        <section className="album-container">{renderAlbums}</section>
+      <div className="outer-container">
+        <section className="main-container">{renderAlbums}</section>
       </div>
     </div>
   )

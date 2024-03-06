@@ -1,0 +1,10 @@
+.album-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .album-container{
+    width: 20%;
+}}
