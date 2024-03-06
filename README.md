@@ -24,13 +24,9 @@ npm i && code . && npm run dev
 
 I followed the instructions closely untill the basic requirements were met. Due to warnings in vsc I descided to add propTypes; don't know if this is acctually necessary or done correctly.
 
-For the stretch with separating singles from albums, i wanted to add a navigation with anchored links. This does not seem to work in react, so those links arfe currently not working.
-
 #### Next step
 
-- I will try to make the navigation work, or remove it.
-- Will take on the stretch of using the popular playlists.
-- Look at the stretch for icons' opacity
+- Further styling
 
 ### View it live
 
