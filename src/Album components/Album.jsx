@@ -1,14 +1,16 @@
 import data from "../data.json";
 import { AlbumName } from "./AlbumName";
-import PropTypes from "prop-types";
-/*import { CoverImage } from "./CoverImage";*/
+
 
 export const Album = () => {
   const { albums } = data;
-  const { items } = albums.items;
-  const renderItems = items.map(({ name, id }) => (
+  const { eachAlbum } = albums.items;
+  console.log(albums.items)
+
+  const renderItems = eachAlbum?.map(({ name, id }) => (
     <AlbumName name={name} key={id} />
   ));
+  
   return (
     <div>
       <section>{renderItems}</section>
@@ -16,9 +18,17 @@ export const Album = () => {
   );
 };
 
-Album.propTypes = {
-  albumType: PropTypes.string.isRequired,
-};
+
+
+
+
+
+
+
+
+
+
+
 /*
 CoverImage.propTypes = {
   name: PropTypes.string.isRequired,

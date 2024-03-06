@@ -1,16 +1,15 @@
 import data from "./data.json";
-import { Header } from "./Header.jsx";
+import { Header } from "./Album components/common/Header.jsx";
 import { Album } from "./Album components/Album.jsx";
 
 console.log(data);
 
 export const App = () => {
   return (
-    <div>
+    <div className="header">
       <Header />
-      <Album />
+    <Album />
     </div>
   );
 };
 
-//albumType={data.albums.items[0].album_type}
