@@ -21,7 +21,7 @@ body {
 .header {
   background-color: #fedb5a;
 }
-h1{
+h1 {
   margin: 0;
   padding: 1rem;
   text-align: center;
@@ -56,9 +56,13 @@ h1{
   filter: invert(1);
 }
 
-.play-image:hover {
-  transform: scale(1.2);
+.play-image {
   transition: 0.1s;
+}
+
+.play-image:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
 }
 
 .album-name a:hover {
