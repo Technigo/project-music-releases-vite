@@ -2,6 +2,7 @@
 
 :root {
   --backgroung-color: #181818;
+  --hover-menu-background: #181818c2;
   --main-text-color: #fcfcfc;
   --sub-text-color: #a5a5a5;
 }
@@ -36,15 +37,83 @@ main {
   grid-auto-rows: minmax(100px, auto);
 }
 
+li {
+  list-style-type: none;
+}
+
 .album-card {
   font-size: 14px;
   font-weight: 400;
   margin: 40px auto;
 }
 
+.album-cover {
+  position: relative; /*for hover-menu'position*/
+}
+
+.hover-menu {
+  background-color: var(--hover-menu-background);
+  width: 100%;
+  height: 101%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*take away hovermenu's own width and height*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.album-cover:hover .hover-menu {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  fill: var(--sub-text-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  fill: var(--main-text-color);
+  transform: scale(1.2);
+}
+
+.heart-icon {
+  height: 60px;
+  width: 60px;
+  fill: var(--sub-text-color);
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .album-name,
 .artist-name {
-  margin: 10px 0 5px;
+  margin-top: 10px;
+  border: transparent solid 1.5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.album-name:hover,
+.artist-name:hover {
+  cursor: pointer;
+  color: var(--main-text-color);
+  border-bottom: var(--main-text-color) solid 1.5px;
 }
 
 .artist-name {

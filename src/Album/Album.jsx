@@ -11,9 +11,11 @@ return (
             data.albums.items.map((album)=>(
                 <div className="album-card" key={album.id}>
                     <CoverImage album={album}/>
-                    <AlbumName album={album} />
-                    <ArtistName artists={album.artists}/>
+                    <ul className="album-info">
+                        <li><AlbumName album={album} /></li>
+                        <li><ArtistName artists={album.artists}/></li>
                     
+                    </ul>
                </div>
             ))
         }
