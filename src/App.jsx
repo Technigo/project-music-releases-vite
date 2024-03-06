@@ -20,9 +20,7 @@ export const App = () => {
   return (
     <div className="wrapper">
       <Header />
-      <div className="outer-container">
         <section className="main-container">{renderAlbums}</section>
-      </div>
     </div>
   )
 }

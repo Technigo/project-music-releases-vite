@@ -1,4 +1,4 @@
-import imgUrl from "../../assets/music-releases.svg"
+import imgUrl from "../../assets/music-release.svg"
 import "./Header.css"
 
 export const Header = () => {
