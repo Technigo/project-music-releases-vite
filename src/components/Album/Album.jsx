@@ -18,7 +18,6 @@ Album.propTypes = {
   image: PropTypes.object.isRequired,
   artists: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
