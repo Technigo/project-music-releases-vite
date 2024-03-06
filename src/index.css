@@ -52,10 +52,6 @@ p {
 .cover-image {
   height: inherit;
   width: inherit;
-  /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px)
-    60; */
-  /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px)
-    60; */
   border-style: groove;
   border-width: 20px;
   border-color: #ffffff;
@@ -70,7 +66,6 @@ img {
 @media (min-width: 641px) {
   .album-collection {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
-    gap: 0;
     margin: 3rem 20px;
   }
 }
