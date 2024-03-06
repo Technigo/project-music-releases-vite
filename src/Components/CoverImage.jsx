@@ -2,7 +2,9 @@ import PropTypes from "prop-types"
 
 export const CoverImage = ({coverImg}) => {
     return (
-        <h2>{coverImg}</h2>
+        <div className="cover-image">
+            <img src={coverImg} alt="album cover"/>
+            </div>
     )
 }
 
