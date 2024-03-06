@@ -6,26 +6,9 @@
     justify-items: center;
 }
 
-@media (min-width: 600px) AND (max-width: 1299px){
-.album-section {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: auto;
-    margin-right: auto;
-}
-}
-
-@media (min-width: 1300px){
-.album-section {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
-
 .album-cards {
     max-width: 300px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .cover-image {
@@ -135,5 +118,31 @@ h3:hover {
 
 a {
     text-decoration: none;
+}
+
+
+@media (min-width: 600px) AND (max-width: 1299px){
+.album-section {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+
+.album-cards {
+    padding: 20px;
+}
+}
+}
+
+@media (min-width: 1300px){
+.album-section {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+.album-cards {
+    padding: 20px;
+}
+}
 }
 
