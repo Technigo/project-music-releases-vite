@@ -7,12 +7,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 body {
-  background-color: rgb(14, 12, 15);
+  background-color: rgb(24, 24, 24);
   color: white;
 }
+
+
