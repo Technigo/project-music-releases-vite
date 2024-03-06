@@ -16,7 +16,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 
   "hd hd hd hd"
-  "as ma ma ma";
+  "ma ma ma ma"
+  "as as as as";
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -30,6 +31,7 @@ code {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: clip;
 }
 
 body {
@@ -47,6 +49,7 @@ a:hover {
 }
 
 header {
+  order: 1;
   grid-area: hd;
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +70,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 100%;
 }
@@ -89,6 +93,7 @@ nav li:hover {
 }
 
 aside {
+  order: 3;
   grid-area: as;
   color: var(--font-color);
   margin: 1rem;
@@ -98,6 +103,7 @@ aside {
 }
 
 main {
+  order: 2;
   grid-area: ma;
   margin: 1rem;
   max-width: var(--max-width);
@@ -259,6 +265,12 @@ margin: 0 0.5rem;
 }
 
 @media all and (min-width: 668px) {
+  #root {
+    grid-template-areas: 
+    "hd hd hd hd"
+    "as ma ma ma";
+  }
+
   h1 {
     max-width: 50%;
   }
@@ -281,8 +293,6 @@ margin: 0 0.5rem;
   h1>span{
     font-size: 8rem;
   }
-
-
 
   .wrapper {
     grid-template-columns: repeat(4, 1fr);
