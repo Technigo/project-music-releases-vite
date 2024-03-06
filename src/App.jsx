@@ -1,7 +1,12 @@
-import data from "./data.json";
+import { Header } from "./components/commons/Header";
+import albums from "./albums.json";
 
-console.log(data);
+console.log(albums);
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
