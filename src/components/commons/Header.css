@@ -1,6 +1,5 @@
 /* All styling kopplad till header */
-
-header { 
-    background-color:aqua; 
-    
+header {
+  min-height: 80px;
+  display: flex;
 }
