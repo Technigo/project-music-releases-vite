@@ -1,7 +1,8 @@
 nn<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
+<a href="">
+<img src="/src/assets/music-releases.svg" alt="Project Banner Image">
+</a>
+
 </h1>
 
 # Music Releases
@@ -28,7 +29,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+[View Music Release App LIVE](https://project-music-release-vite.netlify.app/)
 
 ## Instructions
 
