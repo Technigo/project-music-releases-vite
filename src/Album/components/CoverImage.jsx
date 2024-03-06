@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export const CoverImage = ({album}) =>{
     return(
-        <img src={album.images[0].url} alt={album.name} />
+        <img src={album.images[1].url} alt={album.name} />
     )
 }
 

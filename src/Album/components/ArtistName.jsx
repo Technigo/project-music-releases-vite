@@ -5,7 +5,7 @@ export const ArtistName = ({ artists }) =>{
     return (
         <Fragment>
         {artists.map((artist)=>(
-            <p key={artist.id}>{artist.name}</p>
+            <p key={artist.id} className="artist-name">{artist.name}</p>
         ))}
         </Fragment>
     )
