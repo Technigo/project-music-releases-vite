@@ -5,7 +5,7 @@ export const Header = () => {
        headerText: "Music Releases Project",
     }
     return(
-        <header>
+        <header className="header">
             <h1>{headerObject.headerText}</h1>
         </header>
         
