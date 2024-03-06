@@ -1,18 +1,3 @@
-// import PropTypes from "prop-types";
-
-// export const CoverImage = ({ images }) => {
-//   return (
-//     <div className="coverImage">
-//       CoverImage:
-//       {images}
-//     </div>
-//   );
-// };
-
-// CoverImage.propTypes = {
-//   images: PropTypes.array,
-// };
-
 import PropTypes from "prop-types";
 
 export const CoverImage = ({ image, name }) => {

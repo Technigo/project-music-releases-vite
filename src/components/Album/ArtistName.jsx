@@ -1,7 +1,20 @@
+import PropTypes from "prop-types";
 
-
-export const ArtistName = () => {
+export const ArtistName = ({ artists }) => {
   return (
-    <div>ArtistName</div>
-  )
-}
+    <div className="artist-names">
+      {artists.map((artist) => (
+        <span key={artist.id}>{artist.name}</span>
+      ))}
+    </div>
+  );
+};
+
+ArtistName.propTypes = {
+  artists: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
