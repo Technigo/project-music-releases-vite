@@ -18,4 +18,10 @@ body {
   color: white;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
 
