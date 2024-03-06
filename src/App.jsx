@@ -13,5 +13,18 @@ export const App = () => {
   );
 };
 
-
-//test
+// export const App = () => {
+// const { album } = data.albums.items;
+//   console.log(album)
+// return (
+//     <>
+//       <Header />
+//       <main>
+//         <div>
+//           {albums.map ((albumData) => (
+//           <Albums key={album.id} album={album} />
+//           )) }
+//           </div>
+//       </main>
+//     </>
+//     )}
