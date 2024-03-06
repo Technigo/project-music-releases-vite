@@ -1,0 +1,11 @@
+.artist-name-link p {
+  color: #a0a0a0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.artist-name-link p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
