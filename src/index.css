@@ -15,23 +15,26 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-
   background-color: var(--backgroung-color);
   color: var(--main-text-color);
+  margin: 60px auto;
 }
 
 header {
-  font-size: 2.5rem;
+  font-size: 1rem;
   text-align: center;
-  margin: 30px auto;
 }
 
 main {
-  margin: 60px 40px;
+  margin: 70px 40px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 li {
@@ -106,7 +109,8 @@ a {
 
 .album-name,
 .artist-name {
-  margin-top: 10px;
+  max-width: 220px;
+  margin: 10px auto 0;
   border: transparent solid 1.5px;
   transition: all 0.2s ease-in-out;
 }
@@ -121,5 +125,18 @@ a {
 .artist-name {
   color: var(--sub-text-color);
   font-weight: 600;
-  display: inline-block;
+  display: inline;
+}
+
+@media screen and (min-width: 475px) and (max-width: 990px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 991px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
 }
