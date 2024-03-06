@@ -1,7 +1,11 @@
+import { Header } from "./Header.jsx";
+import { Album } from "./Album/Album.jsx";
 import data from "./data.json";
 
-console.log(data);
-
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  const { albums } = data;
+  const renderAlbums = albums.items.map(({ id, name, artists, images }) => (
+    <Album  key={id} name={name} artists={artists} image={images[1].url}  />
+  ));
+  return <div>Albums:{renderAlbums}</div>;
 };

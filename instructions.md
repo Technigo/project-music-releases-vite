@@ -18,12 +18,12 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ## Folder Structure
 
-- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
-- Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-- Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿  ✅
+- Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓 ✅
+- Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓 ✅
+  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓 ✅
+  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓✅
+  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓✅
 
 ### Extra Files
 
@@ -31,9 +31,9 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ## You should display the following for each album:
 
-- album cover image
-- album name
-- the name of each artist involved with a comma between
+- album cover image ✅
+- album name ✅
+- the name of each artist involved with a comma between ✅ (comma last?)
 
 ## Hover effects:
 
