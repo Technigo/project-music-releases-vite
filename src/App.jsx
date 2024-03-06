@@ -8,6 +8,10 @@ export const App = () => {
       <main>
         <Albums />
       </main>
+      <footer></footer>
     </>
   );
 };
+
+
+//test
