@@ -1,16 +1,17 @@
 import data from "./data.json";
+import { Album } from "./components/Album/Album";
 
 console.log(data);
 
 export const App = () => {
-  const { albums } = data.albums;
+  const { albums } = data;
   const renderAlbums = albums.items.map(({ name, id }) => (
     <Album name={name} key={id} />
   ));
 
   return (
     <div>
-      <section className="albumNameList">console.log({renderAlbums})</section>
+      <section className="albumNameList">{renderAlbums}</section>
     </div>
   );
 };
