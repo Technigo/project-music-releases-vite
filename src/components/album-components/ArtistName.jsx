@@ -9,7 +9,6 @@ export const ArtistName = ({ artists }) => {
         </span>
       );
     });
-    console.log(artistInfo);
     const startLength = artistInfo.length;
     let index = 1;
     switch (startLength) {

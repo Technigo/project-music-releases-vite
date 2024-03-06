@@ -5,8 +5,8 @@ console.log(data);
 
 export const App = () => {
   const { albums } = data;
-  const renderAlbum = albums.items.map(({ name, artists, id, images }) => (
-    <Album name={name} key={id} artists={artists} images={images} />
+  const renderAlbum = albums.items.map(({ name, artists, id, images, external_urls }) => (
+    <Album name={name} key={id} artists={artists} images={images} external_urls={external_urls}/>
   ));
   console.log(albums);
   return (

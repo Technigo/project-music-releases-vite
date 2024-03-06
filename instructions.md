@@ -99,15 +99,20 @@ So you’ve completed the requirements? Great job! Make sure you've committed an
 
 
 ### Roadmap
-- Url for Artist CHECK!
-- Url for Album
-- Style the hover-buttons
-- Create header
-- Style header
+- Url for Artist            CHECK!
+- Url for Album             CHECK!
+- Style the hover-buttons   CHECK!
+- Create header             CHECK!
+- Style header              CHECK ~~
 
 ### Roadmap Stretch goals
 - Sort
-- Artist logic, (X & Y or X, Y & Z)
+- Artist logic, (X & Y or X, Y & Z)   CHECK!!!
 - Sidebar with playlists.
 - Opacity on hover-buttons
+
+
+### Indiviudal tasks
+- Wen: Opacity on hover-buttons!
+- Martin: Style Header with sort (Toggle button "Separate albums and singles")
 
