@@ -4,7 +4,7 @@ export const ArtistName = ({ artistName, artistURL }) => {
       <a href={artistURL}
       target="_blank"
       className="artist-link">
-          <h2>{artistName}</h2>
+          <h3>{artistName}</h3>
       </a>
     </div>
   )
