@@ -1,7 +1,12 @@
-import data from "./data.json";
+import data from "./data.json"
+import Album from "./Components/Album.jsx"
+//remember to import css from album
 
-console.log(data);
+console.log(data)
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+  return (
+    <div>
+      <Album data={data.albums.items} />
+    </div>)
+}

@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project was about displaying spotify albums with album name and artists, following a specific design. In addition, the page should be responsive, have hover effects and icon-buttons.
 
 ## Getting Started with the Project
 
@@ -24,11 +22,17 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This project was really challenging. A lot of the time went on trying and adapting others codes, and asking Chat GTP. Some of it I was able to do with no help. The most challenging parts were the components and the icons. 
+
+Do I understand how it works and what I have been doing? Kind of. Could I build this again? Not likely. (unless I did it with the same sources of help)
+
+Two unsolved challenges:
+The icons go darker along with the album hover - they should be on top on stay white
+The albums should have a smaller size and space on the sides - did not have time for this
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://app.netlify.com/sites/mc-spotify-albums/overview
 
 ## Instructions
 
