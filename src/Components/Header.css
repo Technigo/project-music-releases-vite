@@ -1,3 +1,6 @@
-.header{
-    color: red;
+.header {
+	color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }

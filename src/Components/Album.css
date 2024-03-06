@@ -1,0 +1,46 @@
+body {
+	background-color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.album-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-right: 20px;
+	margin-left: 20px;
+	gap: 20px;
+}
+
+.cover-img {
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.album-container h2 {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.album-container h3 {
+	color: #a0a0a0;
+	font-size: 14px;
+}
+
+/* Media queries */
+
+/* tablet */
+@media (min-width: 668px) {
+	.album-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+	.album-wrapper {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
