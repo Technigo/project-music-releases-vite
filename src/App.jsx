@@ -1,7 +1,10 @@
 import data from "./data.json";
+import { Header } from "./Header.jsx"
 
-console.log(data);
+console.log(Header);
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return <div> <Header  />
+  
+  </div>;
 };
