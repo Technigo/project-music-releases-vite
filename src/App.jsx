@@ -5,11 +5,13 @@ import data from "./data.json"
 console.log(data)
 
 export const App = () => {
-  const renderAlbums = data.albums.items.map(
-    ({ id, name }) => (
+  const albums = data.albums.items
+  const renderAlbums = albums.map(
+    ({ id, name, images }) => (
       <Album
-        name={name}
+        albumName={name}
         key={id}
+        coverImage={images[0].url}
       />
     )
   )

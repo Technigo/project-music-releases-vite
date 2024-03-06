@@ -1,13 +1,13 @@
 import PropTypes from "prop-types"
 
-export const AlbumName = ({ name }) => {
+export const AlbumName = ({ albumName }) => {
   return (
     <p>
-      <span>{name}</span>
+      <span>{albumName}</span>
     </p>
   )
 }
 
 AlbumName.propTypes = {
-  name: PropTypes.number.isRequired,
+  albumName: PropTypes.string.isRequired,
 }
