@@ -1,13 +1,19 @@
-/*export const AlbumName = (albumName, albumURL) => {
-    return(
-      <div className="album-name">
+import PropTypes from "prop-types";
 
-        <a href={albumURL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="album-link">
-            <h2>{albumName}</h2>
-        </a>
-      </div>
-    )
-  }*/
+
+export const AlbumName = ({albumName,albumURL}) => {
+    return (
+        <div>
+            <a href={albumURL}>
+                <h3>{albumName}</h3>
+            </a>
+        </div>
+    );
+}
+
+AlbumName.propTypes = {
+    albumName: PropTypes.string.isRequired,
+    albumURL: PropTypes.string.isRequired
+};
+
+export default AlbumName
