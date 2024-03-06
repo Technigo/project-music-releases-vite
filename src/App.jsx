@@ -8,9 +8,11 @@ export const App = () => {
     <Album key={index} coverImages={images} albumName={name} artists={artists} />
   ));
   return (
-    <div className="container">
+    <div>
       <Header />
-      <section className="album-grid">{renderAlbums}</section>;
+      <div>
+        <section className="album-grid">{renderAlbums}</section>;
+      </div>
     </div>
   );
 };
