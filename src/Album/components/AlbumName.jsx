@@ -2,7 +2,9 @@ import PropTypes from "prop-types";
 
 export const AlbumName = ({ album }) =>{
   return (
-    <h3 className="album-name">{album.name}</h3>
+    <a href={album.external_urls.spotify}>
+      <h3 className="album-name">{album.name}</h3>
+    </a>
   )
 }
 
