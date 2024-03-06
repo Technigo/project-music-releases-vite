@@ -1,15 +1,26 @@
-import data from "./data.json";
-import { Header } from "./Album components/common/Header.jsx";
-import { Album } from "./Album components/Album.jsx";
+import { Header } from "./Album components/common/Header.jsx"
+import { Album } from "./Album components/Album.jsx"
+import data from "./data.json"
 
-console.log(data);
+console.log(data)
 
 export const App = () => {
-  return (
-    <div className="header">
-      <Header />
-    <Album />
-    </div>
-  );
-};
+  const renderAlbums = data.albums.items.map(
+    ({ id, name }) => (
+      <Album
+        name={name}
+        key={id}
+      />
+    )
+  )
 
+  return (
+    <div className="wrapper">
+      <Header />
+      <div className="container">
+        <p className="title">Releases</p>
+        <section className="album-container">{renderAlbums}</section>
+      </div>
+    </div>
+  )
+}

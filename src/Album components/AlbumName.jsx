@@ -1,11 +1,13 @@
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 
-export const AlbumName = (name) => {
-  return <div>This album is called: {name}</div>;
-};
+export const AlbumName = ({ name }) => {
+  return (
+    <p>
+      <span>{name}</span>
+    </p>
+  )
+}
 
 AlbumName.propTypes = {
-  name: PropTypes.string.isRequired,
-};
-
-// Added this and also had to add a bunch of code in Album.jsx for it to work.
+  name: PropTypes.number.isRequired,
+}

@@ -1,39 +1,15 @@
-import data from "../data.json";
-import { AlbumName } from "./AlbumName";
+import PropTypes from "prop-types"
+import { AlbumName } from "./AlbumName.jsx"
 
-
-export const Album = () => {
-  const { albums } = data;
-  const { eachAlbum } = albums.items;
-  console.log(albums.items)
-
-  const renderItems = eachAlbum?.map(({ name, id }) => (
-    <AlbumName name={name} key={id} />
-  ));
-  
+export const Album = ({name}) => {
   return (
-    <div>
-      <section>{renderItems}</section>
+    <div className="title">
+      <AlbumName title={name} />
     </div>
-  );
-};
+  )
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-CoverImage.propTypes = {
+Album.propTypes = {
   name: PropTypes.string.isRequired,
-};*/
-
-/*<This album is a: {props.albumType}!
-<AlbumName name={data.albums.items[0].name} />
-<CoverImage image={data.albums.items[0].images[1].url} />*/
+ 
+}
