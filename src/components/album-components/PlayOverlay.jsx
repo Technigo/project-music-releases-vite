@@ -4,7 +4,7 @@ import heart from "../../assets/icons/heart.svg";
 
 export const PlayOverlay = () => {
   return (
-      <div className="overlay">
+    <div className="overlay">
       <div className="heart-image child-overlay">
         <img src={heart} alt="Heart image"></img>
       </div>
@@ -13,8 +13,7 @@ export const PlayOverlay = () => {
       </div>
       <div className="dots-image child-overlay">
         <img src={dots} alt="Dots button"></img>
-          </div>
-
+      </div>
     </div>
   );
 };

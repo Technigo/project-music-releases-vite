@@ -51,8 +51,8 @@ h1 {
 }
 
 /* Change the color of the svgs */
-.overlay img {
-  width: clamp(1rem, 10vw, 4rem);
+.child-overlay {
+  width: 15%;
   filter: invert(1);
 }
 
