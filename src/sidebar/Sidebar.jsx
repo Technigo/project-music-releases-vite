@@ -12,6 +12,7 @@ export const Sidebar = () => {
         return (         
           <Playlist
             key={i}
+            img={list.images[0].url}
             name={list.name}
             url={list.external_urls.spotify}
             desc={list.description}
