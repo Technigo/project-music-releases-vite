@@ -1,21 +1,15 @@
 import data from "./data.json";
 import { Header } from "./components/common/Header";
-import { Album } from "./components/album/Album";
+import { Album } from "./components/Album";
+import "./index.css"
 console.log(data)
 
 
 export const App = () => {
- const { albums } = data
- const renderAlbums = albums.items.map((album) => (
-  <Album album={album.name} artist={album.artists.name} key={album.name} />
-))
-
   return ( 
-  <div>
+    <div className="container">
     <Header />
-  <div className="container">
-    <section> {renderAlbums}</section>
-  </div>
+    <Album album={data.albums.items}/>
   </div>
   )
 };

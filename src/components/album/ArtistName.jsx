@@ -1,19 +1,13 @@
-import PropTypes from "prop-types"
+export const ArtistName = ({artistName, artistURL}) => {
+  return(
+    <div className="artist-name">
 
-export const Artists = ({ artists }) => {
-  return (
-    <div>
-        <span>Artist:</span>
-    {artists{0}.map((art, key) => (
-    <ul key={key}>
-      {" "}
-      <li key={art}>{art}</li>
-    </ul>
-    ))}
+      <a href={artistURL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="artist-link">
+          <h2>{artistName}</h2>
+      </a>
     </div>
   )
-}
-
-Artists.propTypes = {
-  artists: PropTypes.array.isRequired,
 }
