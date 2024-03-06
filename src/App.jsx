@@ -4,9 +4,11 @@ import { Album } from "./assets/Components/Album/Album.jsx";
 
 export const App = () => {
   return ( 
-    <div className="container">
+    <section className="container">
     <Header />
-    <Album albums={data.albums.items}/>
-  </div>
+      <div>
+      <Album albums={data.albums.items}/>
+      </div>
+  </section>
   )
 };
