@@ -1,11 +1,14 @@
 import { AlbumName } from "./AlbumName.jsx";
-// import { ArtistName } from "./ArtistName.jsx";
-//import //coverimage
+import { ArtistName } from "./ArtistName.jsx";
+import { CoverImage } from "./CoverImage.jsx";
+//import //
 // this component takes in the data from app.jsx and we use props which include all of the arguments passed when calling the Album component in App.jsx. We can alsi use the varibale names instead if we want to.
 export const Album = (props) => {
   return (
     <div>
       <AlbumName albumName={props.albumName} />
+      <ArtistName artists={props.artists} />
+      <CoverImage coverImages={props.coverImages} />
     </div>
   );
 };
