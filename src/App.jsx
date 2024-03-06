@@ -1,12 +1,13 @@
 import { Header } from "./components/commons/Header";
-import albums from "./albums.json";
-
-console.log(albums);
+import { Albums } from "./components/Albums";
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <main>
+        <Albums />
+      </main>
+    </>
   );
 };
