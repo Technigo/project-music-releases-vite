@@ -7,7 +7,7 @@ console.log("Playlists", data);
 export const Sidebar = () => {
   return (
     <Fragment>
-      <p>{data.message}</p>
+      <h2>{data.message}</h2>
       {data.playlists.items.map((list, i) => {
         return (         
           <Playlist

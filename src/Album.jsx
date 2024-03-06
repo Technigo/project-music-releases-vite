@@ -7,7 +7,7 @@ import { CoverImage } from "./CoverImage.jsx";
 export const Album = ({ src, albumTitle, albumUrl, artists }) => {
   return (
     <div className="album">
-      <CoverImage src={src} />
+      <CoverImage src={src} albumUrl={albumUrl} />
       <AlbumName
         albumTitle={albumTitle}
         albumUrl={albumUrl}

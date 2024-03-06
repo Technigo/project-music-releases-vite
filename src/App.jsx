@@ -12,7 +12,7 @@ export const App = () => {
       <header>
         <Header />
       </header>
-      <aside className="hidden">
+      <aside>
         <Sidebar />
       </aside>
       <main>

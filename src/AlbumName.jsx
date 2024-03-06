@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export const AlbumName = ({albumUrl, albumTitle}) => {
   return (
-    <h3 className="title"><a href={albumUrl}>{albumTitle}</a></h3>
+    <h3 className="title"><a href={albumUrl} alt="to album on spotify" target="_blank" rel="noreferrer">{albumTitle}</a></h3>
   )
 };
 

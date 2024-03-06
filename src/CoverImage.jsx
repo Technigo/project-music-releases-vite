@@ -3,7 +3,7 @@ import heart from "./assets/icons/heart.svg";
 import dots from "./assets/icons/dots.svg";
 import play from "./assets/icons/play.svg";
 
-export const CoverImage = ({src}) => {
+export const CoverImage = ({src, albumUrl}) => {
   return (
     <div className="cover-img">
       <img src={src} alt=""  />
@@ -11,7 +11,7 @@ export const CoverImage = ({src}) => {
         <div className="overlay"></div>
         <div className="icons">
           <img className="hover-heart" src={heart}/>
-          <img className="hover-play" src={play}/>
+          <a href={albumUrl} alt="to album on spotify" target="_blank" rel="noreferrer"><img className="hover-play" src={play}/></a>
           <img className="hover-dots" src={dots}/>
         </div>
       </div>
