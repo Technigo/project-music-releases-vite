@@ -12,7 +12,7 @@ export const App = () => {
         <Album
         key={id}
         albumName={name}
-        imgSrc={images[0].url}
+        coverImg={images[0].url}
         artists={artists}
         />
       ));
@@ -28,3 +28,4 @@ export const App = () => {
 
   }
 
+  export default App
