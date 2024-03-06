@@ -5,9 +5,74 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.album-collection {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: fit-content(300px);
+  justify-content: center;
+  align-items: center;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica";
+  font-size: 14px;
+  width: inherit;
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.album-name {
+  color: #ffffff;
+  font-weight: 700;
+  margin: 15px 0 8px 0;
+}
+
+.artist-name {
+  color: #a0a0a0;
+}
+
+.cover-image {
+  height: inherit;
+  width: inherit;
+  border-style: groove;
+  border-width: 20px;
+  border-color: #ffffff;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 641px) {
+  .album-collection {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    margin: 3rem 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-collection {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    margin: 4rem 40px;
+  }
 }
