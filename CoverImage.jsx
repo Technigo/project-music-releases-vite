@@ -1,53 +1,35 @@
-/* Added css file to CoverImage.jsx - 05-03-24 */
-/* Added the hover affect over album covers - 05-03-24 */
-/* Smooth transition for the hover */
-.album-cover {
-  transition: filter 0.3s ease; /* Smooth transition for the filter property */
-}
+import dotsIcon from "../assets/icons/dots.svg";
+import heartIcon from "../assets/icons/heart.svg";
+import playIcon from "../assets/icons/play.svg";
+import { useState } from "react"; //react hook
+import "./CoverImage.css";
 
-/* Reduce brightness to 50% on hover */
-.album-cover:hover {
-  filter: brightness(50%);
-}
+export const CoverImage = ({ coverImage }) => {
+  const [isHovered, setIsHovered] = useState(false); //use onMouseOver or onMouseEnter?
+  //  const [isPressed, setIsPressed] = useState(false);
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
-/* Positioning icons over album cover */
-.cover-img {
-  position: relative;
-  display: inline-block;
-}
-
-.album-cover {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Styling for icons */
-.hoverIcon img {
-  margin-right: 25px;
-}
-
-.dots-icon {
-  width: 12px;
-  height: 12px;
-}
-
-.favorite-icon {
-  width: 23px;
-  height: 23px;
-}
-
-.play-icon {
-  width: 55px;
-  height: 55px;
-}
-
-/* Keeping the hover to 50% brightness as you hover over the icons */
-.cover-img:hover .album-cover {
-  filter: brightness(50%);
-}
-
-/* Change fill color on hover */
-.hoverIcon img:hover {
-  filter: brightness(30%); /* Darken the icon on hover */
-}
+  return (
+    <div
+      className="cover-img"
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+    >
+      {/* // <div className="cover-img"> */}
+      <img className="album-cover" src={coverImage} alt="album cover image" />
+      {isHovered && (
+        // Had to change from just "icon" to add favorite, play and dots before to target them in css
+        <div className="hoverIcon">
+          <img src={heartIcon} alt="favorite" className="favorite-icon" />
+          <img src={playIcon} alt="play" className="play-icon" />
+          <img src={dotsIcon} alt="more" className="dots-icon" />
+        </div>
+      )}
+    </div>
+  );
+};
