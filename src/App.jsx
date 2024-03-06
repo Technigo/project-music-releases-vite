@@ -1,13 +1,16 @@
 import data from "./data.json";
-// import {Header} from "./Header.jsx";
-import { Album } from "./Album.jsx";
-
-//console.log(data);
+import { Header } from "./Components/Header.jsx";
+import { Album } from "./Components/Album.jsx";
 
 export const App = () => {
   const albums = data.albums.items;
   const renderAlbums = albums.map(({ artists, images, name }, index) => (
     <Album key={index} coverImages={images} albumName={name} artists={artists} />
   ));
-  return <div>{renderAlbums}</div>;
+  return (
+    <div className="container">
+      <Header />
+      <section className="album-grid">{renderAlbums}</section>;
+    </div>
+  );
 };
