@@ -1,0 +1,62 @@
+.album-cover {
+  position: relative;
+  display: inline-block;
+}
+
+.album-cover img {
+  max-width: 100%;
+}
+
+.album-cover:hover > img {
+  opacity: 0.4;
+  transition: 0.3s ease-out;
+}
+
+svg {
+  fill: #fff;
+}
+
+.album-cover img:hover + .button-icons {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+button {
+  border: none;
+}
+
+.button-icons {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  justify-content: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 8px;
+}
+
+.button-icons:hover {
+  opacity: 1;
+  display: flex;
+}
+
+.icon {
+  width: 35px;
+  color: white;
+  background: transparent;
+}
+
+.icon:hover {
+  scale: 1.3;
+}
+
+@media (min-width: 667px) {
+  .icon {
+    width: 40px;
+  }
+
+  .icon-wrapper {
+    gap: 20px;
+  }
+}
