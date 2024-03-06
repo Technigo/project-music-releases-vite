@@ -1,12 +1,23 @@
-import { CoverImage } from "./ChildComponent/AlbumComponents/CoverImage";
-import { AlbumName } from "./ChildComponent/AlbumComponents/AlbumName";
-import { ArtistName } from "./ChildComponent/AlbumComponents/ArtistName";
+/*import { CoverImage } from "./AlbumComponents/CoverImage";
+import { AlbumName } from "./AlbumComponents/AlbumName";*/
+import { ArtistName } from "./AlbumComponents/ArtistName";
+import { AlbumName } from "./AlbumComponents/AlbumName"
 
 
-console.log(CoverImage);
-console.log(AlbumName)
-console.log(ArtistName)
 
-export const Album = () => {
-  return <div>Album Cover</div>
+
+
+
+export const Album = ({album}) => {
+	return (
+		<div className="album">
+			<AlbumName />
+			<ArtistName  artists={album.artists} />
+		</div>
+
+	)
+
+
 }
+
+

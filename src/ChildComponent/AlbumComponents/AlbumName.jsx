@@ -1,5 +1,10 @@
+import { Album } from "../Album"
+
 export const AlbumName = () => {
   return (
-    <h2>Album Name</h2>
+    <div>
+    <h2> Albumname</h2>
+< Album />
+</div>
   )
 }
