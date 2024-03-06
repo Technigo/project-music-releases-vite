@@ -1,13 +1,9 @@
 import PropTypes from "prop-types";
 
 export const ArtistName = ({ artists }) => {
-  return (
-    <div className="artist-names">
-      {artists.map((artist) => (
-        <span key={artist.id}>{artist.name}</span>
-      ))}
-    </div>
-  );
+  const artistNames = artists.map((artist) => artist.name).join(", ");
+
+  return <div className="artist-names">{artistNames}</div>;
 };
 
 ArtistName.propTypes = {
