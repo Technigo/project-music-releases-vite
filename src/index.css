@@ -41,16 +41,22 @@
 }
 
 .icons {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  right: 300px;
+  right: left 10px;
+  top: 200px;
+  width: 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .icon {
-  height: 40px;
+  height: 30px;
+}
+
+.play {
+  height: 75px;
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {

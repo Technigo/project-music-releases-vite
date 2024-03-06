@@ -8,9 +8,9 @@ export const CoverImage = ({ image }) => {
     <div className="coverImage">
       <img src={image} alt="Album cover image" />
       <div className="icons">
-        <img src={dots} alt="Three dots" className="dot icon" />
         <img src={heart} alt="Heart" className="heart icon" />
         <img src={playIcon} alt="Play button" className="play icon"/>
+        <img src={dots} alt="Three dots" className="dot icon" />
       </div>
     </div>
   );
