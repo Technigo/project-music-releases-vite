@@ -1,4 +1,5 @@
 .header {
+  --transition-speed: 0.3s;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -31,12 +32,12 @@
   right: 0;
   bottom: 0;
   background-color: #181818;
-  animation-name: colorshift;
+  animation-name: blink;
   animation-iteration-count: 3;
-  animation-delay: 12s;
+  animation-delay: 6s;
   animation-duration: 2s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: var(--transition-speed);
+  transition: var(--transition-speed);
 }
 
 .slider:before {
@@ -47,8 +48,8 @@
   bottom: 4px;
   left: 4px;
   background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: var(--transition-speed);
+  transition: var(--transition-speed);
 }
 
 .slider:after {
@@ -60,8 +61,8 @@
   right: 4px;
   border-radius: 26px;
   background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: var(--transition-speed);
+  transition: var(--transition-speed);
 }
 
 input:checked + .slider {
@@ -92,7 +93,7 @@ input:checked + .slider:after {
   border-radius: 20px;
 }
 
-@keyframes colorshift {
+@keyframes blink {
   0% {
     background-color: #181818;
   }
