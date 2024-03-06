@@ -1,13 +1,14 @@
 import data from "./data.json";
-import { Header } from "./src/Header";
-import { Album } from "./Album";
+// import {Header} from "./Header.jsx";
+import { Album } from "./Album.jsx";
 
-console.log(data);
+//console.log(data);
 
 export const App = () => {
-  return (
-    <div>
-      <h1>Find me in src/app.jsx!</h1>
-    </div>
-  );
+  const albums = data.albums.items;
+  console.log(albums);
+  const renderAlbums = albums.map(({ artists, images, name }) => (
+    <Album coverImages={images} albumName={name} artists={artists} />
+  ));
+  return <div>{renderAlbums}</div>;
 };

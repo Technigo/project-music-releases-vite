@@ -1,5 +1,5 @@
-import data from "./data.json";
+// import data from "./data.json";
 
-export const Header = () => {
-  return <div> New Albums and Singles</div>;
-};
+// export const Header = () => {
+//   return <div> New Albums and Singles</div>;
+// };
