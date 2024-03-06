@@ -121,4 +121,5 @@ a {
 .artist-name {
   color: var(--sub-text-color);
   font-weight: 600;
+  display: inline-block;
 }
