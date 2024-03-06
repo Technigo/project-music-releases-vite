@@ -1,4 +1,4 @@
-export const AlbumName = ({albumName, albumURL}) => {
+/*export const AlbumName = (albumName, albumURL) => {
     return(
       <div className="album-name">
 
@@ -10,4 +10,4 @@ export const AlbumName = ({albumName, albumURL}) => {
         </a>
       </div>
     )
-  }
+  }*/

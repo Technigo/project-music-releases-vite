@@ -1,4 +1,11 @@
-export const ArtistName = ({artistName, artistURL}) => {
+
+
+
+
+
+
+/*export const ArtistName = (artistName, artistURL) => {
+  
   return(
     <div className="artist-name">
 
@@ -10,4 +17,4 @@ export const ArtistName = ({artistName, artistURL}) => {
       </a>
     </div>
   )
-}
+}*/
