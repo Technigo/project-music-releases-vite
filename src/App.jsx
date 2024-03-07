@@ -20,7 +20,7 @@ export const App = () => {
         />
       ));
 
-    //Display header and music content on the page...I think
+    //Display header and music content on the page
       const renderAlbumContent = renderAlbums()
       return (
         <div className="app">
