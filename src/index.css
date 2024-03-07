@@ -50,10 +50,15 @@ h1 {
   transition: 0.2s;
 }
 
+.child-overlay:hover {
+  opacity: 1;
+}
+
 /* Change the color of the svgs */
 .child-overlay {
   width: 15%;
   filter: invert(1);
+  opacity: 0.7;
 }
 
 .play-image {
