@@ -6,13 +6,18 @@ console.log(data);
 const { items  } = data.albums
 
 export const App = () => {
+
   const renderAlbum=items.map(
-    ({id, name, release_date})=>(
-    <Album
+    ({id, name, release_date,artists,images})=>(
+    <><Album
         name={name}
         key={id}
         date={release_date}
-    />  
+        artists={artists}
+        images={images}
+         />
+      
+    </>
     )
   )  
   
@@ -21,7 +26,9 @@ export const App = () => {
     <div className="wrapper">
       <Header />
       <div className="container">
-        <section className="albumLibrary">{renderAlbum}</section>  
+        <section className="albumLibrary">
+          {renderAlbum}
+        </section>  
       </div>
     </div>
 

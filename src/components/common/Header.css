@@ -1,7 +1,7 @@
 header {
     width: 100%;
     background-color: red;
-    height: 120px;
+    height: 60px;
     display: flex;
     text-align: center;
     box-sizing: border-box;
@@ -13,7 +13,7 @@ header {
 .titleName{
     background-color: green;
     height: 2em;
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 600;
     color: white;
     margin: 0;
@@ -23,7 +23,13 @@ header {
 }
 
 @media (min-width:667px) and (max-width:1024px) {
-    
+    header{
+        height: 100px;
+    }
+    .titleName{
+        font-size: 40px;
+        font-weight: 800;
+    }
 }
 
 @media (min-width:1025px) {

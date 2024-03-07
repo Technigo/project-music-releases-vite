@@ -1,20 +1,20 @@
 .album{
     color: white;
-    border: 1px white solid;
-    padding: 20px;
-    align-items: center;
+    
+    padding: 10px;
     justify-content: center;
-    height: 320px;
-    margin: 0 20px 20px 20px;
+    align-items: center;
+    height: 360px;
+    margin: 0;
     width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
-.albumName{
-    font-size: 18px;
-    font-weight: 700;
+.albumContainer{
+    border: 1px green solid;
+    width: 90%;
 }
-
-
 
 @media (min-width:667px) and (max-width:1024px){
 
@@ -22,13 +22,8 @@
 
 @media (min-width:1025px){
     .album{
-        height: 320px;
-        margin: 20px;
+        height: auto;
+        margin: 0;
+        width: auto;
     }
-    
-    .albumName{
-        font-size: 18px;
-        font-weight: 700;
-    }
-
 }
