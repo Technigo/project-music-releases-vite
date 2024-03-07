@@ -1,7 +1,3 @@
-a{
-  text-decoration: none;
-}
-
 body {
   background-color: black;
   margin-left: 40px;
@@ -23,11 +19,11 @@ body {
   font-size: 14px;
 }
 
-.artist-names {
-  display: flex;
-  /*Här borde vi istället rada upp artisterna separerade med ", "*/
+.album-link {
+  text-decoration: none;
 }
 
-/* Media queries */
-
-/* tablet */
+.album-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
