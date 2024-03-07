@@ -12,7 +12,7 @@
 
 .cover:hover{
     cursor: pointer;
-    .overlay-icons{
+    .overlay-icons {
         display: flex;
     }
 }

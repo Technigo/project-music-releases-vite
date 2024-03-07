@@ -1,13 +1,16 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-export const AlbumName = ({ albumName }) => {
+export const AlbumName = ({ albumName, albumURL }) => {
   return (
-    <h4>
-      <span>{albumName}</span>
-    </h4>
-  )
-}
+    <div className="album-name">
+      <a href={albumURL} target="_blank" rel="noopener noreferrer">
+        {albumName}
+      </a>
+    </div>
+  );
+};
 
 AlbumName.propTypes = {
   albumName: PropTypes.string.isRequired,
-}
+  albumURL: PropTypes.any.isRequired,
+};
