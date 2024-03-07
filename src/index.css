@@ -18,6 +18,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  color: #181818;
+}
+
 .header {
   background-color: #fedb5a;
 }
@@ -181,6 +185,25 @@ img {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+.all-items {
+  display: none;
+}
+
+.only-singles {
+  display: grid;
+}
+
+.only-albums {
+  display: grid;
+}
+
+.album-type {
+  background-color: #fedb5a;
+  height: 100%;
+  padding: 0px;
+  margin: 0;
 }
 
 @media (min-width: 641px) {
