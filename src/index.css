@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +15,69 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.AlbumCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+  letter-spacing: 1px;
+}
+
+.ArtistName {
+  width: 100%;
+  max-width: 240px;
+}
+
+.AlbumName {
+  width: 100%;
+  max-width: 240px;
+  margin: 10px 0 5px 0;
+}
+
+.AlbumName a {
+  color: white;
+  font-weight: 600;
+}
+
+/*****Tablet*****/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/***** Desktop *****/
+@media (min-width: 1024px) {
+  .Container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  img {
+    width: 80%;
+  }
 }

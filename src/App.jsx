@@ -3,16 +3,18 @@ import data from "./data.json";
 
 export const App = () => {
   const { albums } = data;
-  
+
   const renderAlbums = albums.items.map(
-    ({ name, artists, images, external_urls }) => (
-      <Album
-        albumName={name}
-        artists={artists}
-        coverImage={images}
-        albumUrl={external_urls}
-      />
+    ({ name, artists, images, external_urls, id }) => (
+      <div className="wrapper" key={id}>
+        <Album
+          albumName={name}
+          artists={artists}
+          coverImage={images}
+          albumUrl={external_urls}
+        />
+      </div>
     )
   );
-  return <section>{renderAlbums}</section>;
+  return <section className="Container">{renderAlbums}</section>;
 };
