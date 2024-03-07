@@ -4,11 +4,12 @@ import { CoverImage } from "./CoverImage.jsx"
 import { ArtistName } from "./ArtistName.jsx"
 import "./Album.css"
 
+
 export const Album = ({albumName, coverImage, artistName}) => {
   return (
     <div className="album-container">
     <div className="image-container">
-      <CoverImage coverImage={coverImage} /></div>
+      <CoverImage coverImage={coverImage} alt={albumName} /></div>
       <div className="album-name">
       <AlbumName albumName={albumName} /></div>
       <div className="artist">
