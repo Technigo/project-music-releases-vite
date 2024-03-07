@@ -11,3 +11,23 @@
   margin-top: 20px;
   align-items: center;
 }
+
+
+
+@media (min-width: 668px) {
+  .album-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center
+  }
+
+  .ArtistName {}
+}

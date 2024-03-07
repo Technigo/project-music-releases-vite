@@ -12,5 +12,14 @@
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
-  margin-bottom: 5px;;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  ;
+}
+
+@media (min-width: 668px) {
+  .AlbumName h3 {
+    max-width: 200px;
+  }
+
 }

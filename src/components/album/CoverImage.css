@@ -1,6 +1,7 @@
 img {
   height: 300px;
   filter: brightness(100%);
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 img:hover {
@@ -19,11 +20,11 @@ img:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0%;
+  opacity: 0;
   transition: opacity 0.5s ease;
 }
 
-img:hover+.icon-container {
+.cover-image-container:hover .icon-container {
   opacity: 1;
 }
 
@@ -32,4 +33,13 @@ img:hover+.icon-container {
   height: 30px;
   fill: #ffffff;
   transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+
+.icon:hover {
+  transform: scale(2);
+}
+
+@media (min-width: 668px) {
+  
 }

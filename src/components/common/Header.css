@@ -1,1 +1,17 @@
-header {}
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+@media (min-width: 668px) {
+  h1 {
+    margin: 20px;
+  }
+
+}
