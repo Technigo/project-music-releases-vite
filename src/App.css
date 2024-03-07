@@ -1,9 +1,11 @@
 .main-container{
-    width: 100%;
+    width: 98%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    padding: 1em;
+    padding: 1%;
+    gap: 1em;
+
 
 }
 

@@ -1,14 +1,17 @@
 .album-container{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 2em;
 }
 
+.image-container{
+    width: 100%;
+}
+
 .album-name{
-    width: 300px;
+    width: 100%;
     text-align: left;
     line-height: 0;
 }
@@ -19,7 +22,7 @@
 }
 
 .artist{    
-    width: 300px;
+    width: 100%;
     text-align: left;
     line-height: 0;
     padding-bottom: 2em;
@@ -29,8 +32,3 @@
     text-decoration: underline;
     cursor: pointer;
 }
-
-@media screen and (min-width: 768px){
-    .album-container{
-    width: 20%;
-}}
