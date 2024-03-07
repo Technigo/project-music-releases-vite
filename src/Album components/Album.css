@@ -3,11 +3,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2em;
 }
 
 .name{
     width: 300px;
     text-align: left;
+    line-height: 0;
+}
+
+.artist{    
+    width: 300px;
+    text-align: left;
+    line-height: 0;
+    padding-bottom: 2em;
 }
 
 @media screen and (min-width: 768px){
