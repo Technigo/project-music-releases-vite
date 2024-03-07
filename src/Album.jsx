@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// Album.jsx
 import AlbumName from './AlbumName';
 import ArtistName from './ArtistName';
 import CoverImage from './CoverImage';
@@ -16,8 +15,8 @@ const Album = ({ albumData }) => {
         <CoverImage coverUrl={albumData.images[0].url} />
         <div className="overlay">
           <div className="buttons">
-            <img src={PlayIcon} className="play-button" alt="Play" /> {}
             <img src={HeartIcon} className="favorite-button" alt="Favorite" /> {}
+            <img src={PlayIcon} className="play-button" alt="Play" /> {}
             <img src={DotsIcon} className="more-button" alt="More options" /> {}
           </div>
         </div>
