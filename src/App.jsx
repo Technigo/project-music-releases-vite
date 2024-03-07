@@ -4,8 +4,8 @@ import { Album } from "./Components/Album.jsx";
 
 export const App = () => {
   const albums = data.albums.items;
-  const renderAlbums = albums.map(({ artists, images, name }, index) => (
-    <Album key={index} coverImages={images} albumName={name} artists={artists} />
+  const renderAlbums = albums.map(({ artists, images, name }, index, external_urls) => (
+    <Album key={index} coverImages={images} albumName={name} artists={artists} href={external_urls} />
   ));
   return (
     <div>

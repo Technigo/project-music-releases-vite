@@ -1,3 +1,8 @@
 export const AlbumName = (props) => {
-  return <p className="album-name"> {props.albumName}</p>;
+  return (
+    <a href={props.href} className="album-name">
+      {" "}
+      {props.albumName}
+    </a>
+  );
 };
