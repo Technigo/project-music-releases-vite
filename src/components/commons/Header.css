@@ -1,0 +1,5 @@
+/* All styling kopplad till header */
+header {
+  min-height: 80px;
+  display: flex;
+}
