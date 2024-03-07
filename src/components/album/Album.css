@@ -1,0 +1,34 @@
+.album{
+    color: white;
+    border: 1px white solid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    margin: 0 20px 20px 20px;
+    width: 300px;
+}
+
+.albumName{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+@media (min-width:667px) and (max-width:1024px){
+
+}
+
+@media (min-width:1025px){
+    .album{
+        height: 320px;
+        margin: 20px;
+    }
+    
+    .albumName{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+}

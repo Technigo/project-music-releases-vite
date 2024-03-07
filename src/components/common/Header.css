@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    background-color: red;
+    height: 120px;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.titleName{
+    background-color: green;
+    height: 2em;
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width:667px) and (max-width:1024px) {
+    
+}
+
+@media (min-width:1025px) {
+    header{
+        height: 160px;
+    }
+    .titleName{
+        font-size: 48px;
+        font-weight: 800;
+    }
+    
+}

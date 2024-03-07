@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+*{
+  margin: 0;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.albumLibrary{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 20px;
+}
+
+@media (min-width:667px) and (max-width:1024px) {
+  .albumLibrary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 100px;
+    justify-content: center;
+  }
+    
+}
+
+@media (min-width:1025px){
+  .albumLibrary{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 100px;
+  }
+} 
+
+
