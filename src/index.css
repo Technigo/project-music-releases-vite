@@ -8,7 +8,7 @@
 
 :root {
   --clr-primary: #090a25;
-  --clr-secondary: #d45bff;
+  --clr-secondary: #06061b;
 
   --clr-artist-title: #a0a0a0;
   --clr-primary-dark: #101115;
@@ -44,7 +44,7 @@ body {
 }
 
 main {
-  max-width: 1600px;
+  max-width: 2000px;
   margin: 0 auto;
   letter-spacing: 0.01em;
   padding: 0 3em;
@@ -69,7 +69,7 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 18px;
 }
 h3 {
   font-size: 1rem;

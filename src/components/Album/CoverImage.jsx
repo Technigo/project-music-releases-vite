@@ -1,14 +1,21 @@
-import play from "../../assets/icons/play.svg";
-import heart from "../../assets/icons/heart.svg";
-import dots from "../../assets/icons/dots.svg";
+import { PlayIcons } from "./PlayIcons";
+import PropTypes from "prop-types";
 
-export const CoverImage = ({ images, name }) => {
+export const CoverImage = ({ images }) => {
+  const coverImage = {
+    imgUrl: images,
+    imgAlt: "Cover album image",
+  };
+
   return (
     <div className="coverImage">
-      <img className="play-icon play" src={play} alt="" />
-      <img className="play-icon heart" src={heart} alt="" />
-      <img className="play-icon dots" src={dots} alt="" />
-      <img src={images[1].url} alt={name} />
+      <PlayIcons />
+      <img src={coverImage.imgUrl} alt="Cover album image" />
     </div>
   );
+};
+
+// Expected data type.
+CoverImage.propTypes = {
+  images: PropTypes.string.isRequired,
 };

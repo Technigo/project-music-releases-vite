@@ -1,7 +1,14 @@
 ## Netlify link
-Add your Netlify link here.
-PS. Don't forget to add it in your readme as well.
+
+https://technigo-music-release-app.netlify.app/
 
 ## Collaborators
-Add your collaborators here. Write their GitHub usernames in square brackets. If there's more than one, separate them with a comma, like this:
-[github-username-1, github-username-2]
+
+- **Solo Project:**
+
+  - This repository was developed by [pernillasterner].
+
+- **Team Project:**
+  - For the project [Music Release](https://github.com/idsab/project-music-releases-vite), I collaborated with the following team members:
+    - [Xikitita](https://github.com/Xikitita)
+    - [idsab](https://github.com/idsab)

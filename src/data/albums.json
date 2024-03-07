@@ -3,6 +3,50 @@
     "href": "https://api.spotify.com/v1/browse/new-releases?country=CH&offset=50&limit=50",
     "items": [
       {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS"
+            },
+            "href": "https://api.spotify.com/v1/artists/1yxSLGMDHlW21z4YXirZDS",
+            "id": "1yxSLGMDHlW21z4YXirZDS",
+            "name": "Black Eyed Peas",
+            "type": "artist",
+            "uri": "spotify:artist:1yxSLGMDHlW21z4YXirZDS"
+          }
+        ],
+        "available_markets": ["AD", "FR", "MC"],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4vW6X4rHIDxQiIr0rwMVuX"
+        },
+        "href": "https://api.spotify.com/v1/albums/4vW6X4rHIDxQiIr0rwMVuX",
+        "id": "4vW6X4rHIDxQiIr0rwMVuX",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2734b04c0f4a47a0ff7958332a6",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e024b04c0f4a47a0ff7958332a6",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048514b04c0f4a47a0ff7958332a6",
+            "width": 64
+          }
+        ],
+        "name": "Elevation",
+        "release_date": "2022-11-10",
+        "release_date_precision": "day",
+        "total_tracks": 15,
+        "type": "album",
+        "uri": "spotify:album:4vW6X4rHIDxQiIr0rwMVuX"
+      },
+      {
         "album_type": "single",
         "artists": [
           {
@@ -3933,50 +3977,7 @@
         "type": "album",
         "uri": "spotify:album:2lVpgsdtPiXE01gL5mApyn"
       },
-      {
-        "album_type": "album",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS"
-            },
-            "href": "https://api.spotify.com/v1/artists/1yxSLGMDHlW21z4YXirZDS",
-            "id": "1yxSLGMDHlW21z4YXirZDS",
-            "name": "Black Eyed Peas",
-            "type": "artist",
-            "uri": "spotify:artist:1yxSLGMDHlW21z4YXirZDS"
-          }
-        ],
-        "available_markets": ["AD", "FR", "MC"],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/4vW6X4rHIDxQiIr0rwMVuX"
-        },
-        "href": "https://api.spotify.com/v1/albums/4vW6X4rHIDxQiIr0rwMVuX",
-        "id": "4vW6X4rHIDxQiIr0rwMVuX",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b2734b04c0f4a47a0ff7958332a6",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e024b04c0f4a47a0ff7958332a6",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d000048514b04c0f4a47a0ff7958332a6",
-            "width": 64
-          }
-        ],
-        "name": "Elevation",
-        "release_date": "2022-11-10",
-        "release_date_precision": "day",
-        "total_tracks": 15,
-        "type": "album",
-        "uri": "spotify:album:4vW6X4rHIDxQiIr0rwMVuX"
-      },
+
       {
         "album_type": "album",
         "artists": [

@@ -1,0 +1,106 @@
+.section__album {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.section__album .album-title,
+.section__album .artist-name {
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  display: block;
+  margin-top: 10px;
+}
+
+.section__album .album-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--clr-white);
+}
+
+.section__album .artist-name {
+  font-size: 14px;
+  color: var(--clr-artist-title);
+  display: inline;
+}
+
+.separator {
+  color: var(--clr-artist-title);
+}
+
+.section__album .artist-name:hover,
+.section__album .album-title:hover {
+  border-bottom: 2px solid var(--clr-white);
+  color: var(--clr-white);
+}
+
+.section__album .coverImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__album .coverImage::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out 100ms;
+}
+
+.section__album .coverImage:hover::before {
+  opacity: 1;
+}
+
+.section__album .coverImage:hover .play-icon {
+  display: block;
+}
+
+.section__album .coverImage .play-icon {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  filter: invert(80%);
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.section__album .coverImage .play-icon:hover {
+  scale: 1.2;
+  filter: invert(100%);
+}
+
+.section__album .coverImage .play {
+  width: 70px;
+  z-index: 100;
+}
+
+.section__album .coverImage .dots {
+  right: 100px;
+}
+
+.section__album .coverImage .heart {
+  left: 100px;
+}
+
+/* Tablet: Adjust grid to have 2 columns */
+@media (max-width: 1600px) {
+  .section__album {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+/* Mobile: Adjust grid to have 1 column */
+@media (max-width: 640px) {
+  .section__album {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}

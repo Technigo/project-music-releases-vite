@@ -1,0 +1,131 @@
+.section__playlist {
+  background-color: var(--clr-primary);
+}
+
+.section__playlist h2 {
+  font-size: 18px;
+}
+
+.playlist-container {
+  display: flex;
+  max-height: 600px;
+}
+
+.playlist-items,
+.new-release {
+  width: 50%;
+}
+
+.playlist-items {
+  overflow: scroll;
+  margin-right: 10px;
+}
+
+.new-release {
+  overflow: hidden;
+  margin-left: 10px;
+  position: relative;
+}
+
+.new-release::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  z-index: 50;
+}
+
+.new-release .artist-name,
+.new-release .new-music {
+  left: 30px;
+  z-index: 100;
+  font-weight: 900;
+  position: absolute;
+}
+
+.new-release .artist-name {
+  font-size: 60px;
+  bottom: 0;
+}
+
+.new-release .new-music {
+  font-size: 18px;
+  bottom: 100px;
+}
+
+.playlist-item {
+  display: flex;
+  background-color: var(--clr-secondary);
+  position: relative;
+  padding: var(--general-mini-padding);
+  margin: 10px 0;
+  margin-right: 20px;
+}
+.playlist-item img {
+  width: 90px;
+}
+
+.playlist-item .coverImage {
+  display: flex;
+  align-items: center;
+}
+
+.playlist-item .play-icon {
+  cursor: pointer;
+  width: 30px;
+  filter: invert(80%);
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.playlist-item .play-icon:hover {
+  scale: 1.2;
+  filter: invert(100%);
+}
+
+.playlist-item .play-icon {
+  width: 30px;
+  right: 100px;
+  z-index: 200;
+}
+
+.playlist-item .dots {
+  width: 20px;
+  right: 50px;
+}
+
+.playlist-item .heart {
+  width: 20px;
+  right: 160px;
+}
+
+.playlist-item .description {
+  font-size: 13px;
+}
+
+.playlist-info {
+  padding-left: var(--general-mini-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playlist-info .album-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.playlist-info .description {
+  font-size: 14px;
+  color: var(--clr-artist-title);
+}
+
+.playlist-items a {
+  font-size: 14px;
+}
+
+.playlist-icons {
+  display: flex;
+  align-items: center;
+}
