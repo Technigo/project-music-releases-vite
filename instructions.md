@@ -8,17 +8,17 @@ DONE!!! Since the focus of this assignment is to practice with React, we've down
 
 DONE!! In the `/src/data.json`, we've included an API response from Spotify which contains data for 50 recent releases. You can `import` this JSON file into a component using `import data from './data.json'` (which we've already done for you in the App component).
 
-The result of importing the JSON is a variable called `data` which includes the full JSON response. Your task is to use this, along with `.map()` to mount an 'Album' component for each album. Within those components, you could then break things up further. For example, your app could have a structure like this:
+DONE!! The result of importing the JSON is a variable called `data` which includes the full JSON response. Your task is to use this, along with `.map()` to mount an 'Album' component for each album. Within those components, you could then break things up further. For example, your app could have a structure like this:
 
-- `App` component which has the `data`
-  - `Album` component which is rendered using `.map()` and which you pass the album data into using props.
-    - `ArtistName` component which is rendered using `.map()` using each item in the `artists` array. The `Album` component to show the artist name and a link.
+- DONE!!`App` component which has the `data`
+  - DONE!!`Album` component which is rendered using `.map()` and which you pass the album data into using props.
+    - DONE!!`ArtistName` component which is rendered using `.map()` using each item in the `artists` array. The DONE!!`Album` component to show the artist name and a link.
 
 This is just a suggestion - how you decide to structure your components is completely up to you.
 
 ## Folder Structure
 
-- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
+- DONE!! App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
 - Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
 - Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
   - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
