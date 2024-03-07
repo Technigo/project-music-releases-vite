@@ -21,11 +21,65 @@ body {
 .header {
   background-color: #fedb5a;
 }
+
+/* Sidebar */
+.sidebar-btn {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  position: fixed;
+  left: 20px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background-color: inherit;
+  border: none;
+  margin: 8px;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.sidebar-menu {
+  z-index: 1;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #2f2e2e;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+li {
+  list-style-type: none;
+  /* font-size: 20px; */
+  padding: 10px 0;
+}
+
+.sidebar-menu > * {
+  color: #ffffff;
+  transition: 0.5s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.playlist {
+  align-self: center;
+  padding: 0 2rem;
+}
+
 h1 {
   margin: 0;
   padding: 1rem;
   text-align: center;
 }
+
+/* Overlay */
 
 .overlay {
   position: absolute;
@@ -125,11 +179,20 @@ img {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     margin: 3rem 20px;
   }
+
+  .playlist {
+    padding: 1rem 3rem;
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1025px) {
   .album-collection {
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     margin: 4rem 40px;
+  }
+
+  .playlist {
+    padding: 2rem 5rem;
   }
 }
