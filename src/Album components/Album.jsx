@@ -4,7 +4,13 @@ import { CoverImage } from "./CoverImage.jsx";
 import { ArtistName } from "./ArtistName.jsx";
 import "./Album.css";
 
-export const Album = ({ albumName, coverImage, artistName, albumURL}) => {
+export const Album = ({
+  albumName,
+  coverImage,
+  artistName,
+  albumURL,
+  artistURL,
+}) => {
   return (
     <div className="album-container">
       <div className="image-container">
@@ -14,7 +20,7 @@ export const Album = ({ albumName, coverImage, artistName, albumURL}) => {
         <AlbumName albumName={albumName} albumURL={albumURL} />
       </div>
       <div className="artist">
-        <ArtistName artistName={artistName} />
+        <ArtistName artistName={artistName} artistURL={artistURL} />
       </div>
     </div>
   );
@@ -25,4 +31,5 @@ Album.propTypes = {
   coverImage: PropTypes.string.isRequired,
   artistName: PropTypes.string.isRequired,
   albumURL: PropTypes.any.isRequired,
+  artistURL: PropTypes.any.isRequired,
 };

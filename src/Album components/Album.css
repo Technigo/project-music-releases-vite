@@ -15,6 +15,7 @@
   width: 100%;
   text-align: left;
   line-height: 0;
+  color: white;
 }
 
 .album-name a:hover {
@@ -22,14 +23,16 @@
   cursor: pointer;
 }
 
-.artist {
+.artist-name a {
+  text-decoration: none;
   width: 100%;
   text-align: left;
   line-height: 0;
   padding-bottom: 2em;
+  color: white;
 }
 
-.artist p:hover {
+.artist-name a:hover {
   text-decoration: underline;
   cursor: pointer;
 }

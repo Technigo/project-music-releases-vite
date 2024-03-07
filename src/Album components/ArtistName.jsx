@@ -1,13 +1,16 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-export const ArtistName = ({ artistName }) => {
+export const ArtistName = ({ artistName, artistURL }) => {
   return (
-    <p>
-      <span>{artistName}</span>
-    </p>
-  )
-}
+    <div className="artist-name">
+      <a href={artistURL} target="_blank" rel="noopener noreferrer">
+        {artistName}
+      </a>
+    </div>
+  );
+};
 
 ArtistName.propTypes = {
   artistName: PropTypes.string.isRequired,
-}
+  artistURL: PropTypes.any.isRequired,
+};

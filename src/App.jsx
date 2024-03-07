@@ -15,6 +15,7 @@ export const App = () => {
         coverImage={images[0].url}
         artistName={artists[0].name}
         albumURL={external_urls.spotify}
+        artistURL={artists[0].external_urls.spotify}
       />
     )
   );
