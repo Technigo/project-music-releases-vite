@@ -1,7 +1,3 @@
 export const Header = () => {
-  return (
-    <div>
-      <span> Header </span>
-    </div>
-  );
+  return <h1>Music for the masses</h1>;
 };

@@ -14,26 +14,6 @@
             "name": "Capo",
             "type": "artist",
             "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/5y9wg9qkGBl0n9v9RzaPKu"
-            },
-            "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
-            "id": "5y9wg9qkGBl0n9v9RzaPKu",
-            "name": "Capo2",
-            "type": "artist",
-            "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/5y9wg9qkGBl0n9v9RzaPKu"
-            },
-            "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
-            "id": "5y9wg9qkGBl0n9v9RzaPKu",
-            "name": "Capo3",
-            "type": "artist",
-            "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
           }
         ],
         "available_markets": [
@@ -253,16 +233,6 @@
       {
         "album_type": "album",
         "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/78TTCmh2koperK5NBn7DgR"
-            },
-            "href": "https://api.spotify.com/v1/artists/78TTCmh2koperK5NBn7DgR",
-            "id": "78TTCmh2koperK5NBn7DgR",
-            "name": "102 Boyz",
-            "type": "artist",
-            "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
-          },
           {
             "external_urls": {
               "spotify": "https://open.spotify.com/artist/78TTCmh2koperK5NBn7DgR"

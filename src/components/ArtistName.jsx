@@ -1,6 +1,6 @@
 export const ArtistName = ({ artistList }) => {
   return (
-    <dev className="artist-name-list">
+    <div className="artist-name-list">
       {artistList
         .map((artist) => (
           <a
@@ -18,6 +18,6 @@ export const ArtistName = ({ artistList }) => {
           currentIndex === artistList.length - 1 ? " & " : ", ",
           artist,
         ])}
-    </dev>
+    </div>
   );
 };
