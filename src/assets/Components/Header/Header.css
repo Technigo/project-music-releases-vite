@@ -1,7 +1,9 @@
-h1.header {
+/* I fixed this,the style was not applied👇🏻*/
+.header {
   color: #191b1b;
   text-align: center;
-  font-family: Helvetica Neue;
+  font-family: Helvetica;
   font-weight: 700;
   font-size: 2em;
+  text-align: center;
 }

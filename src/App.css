@@ -4,3 +4,8 @@
   justify-content: center;
   background: #191b1b;
 }
+/* addind margin to avoid content to go under sidebar */
+.App {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
