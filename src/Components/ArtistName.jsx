@@ -1,8 +1,9 @@
 import PropTypes from "prop-types"
+import './Album.css'
 
 export const ArtistName = ({artists}) => {
     return  (
-        <div>
+        <div className="artist-names">
             {artists.map(({ id, name}) => {
                 return <h3 key={id}>{name}</h3>
             })}

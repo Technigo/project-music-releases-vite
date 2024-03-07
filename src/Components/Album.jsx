@@ -6,17 +6,17 @@ import './Album.css'
 
 export const Album = ({ albumName, coverImg, artists }) => {
 	return (
-		<section className='album-wrapper'>
-			{/* <div className="album-card"> */}
-				<div className="album-container">
-					{/* Accessing album cover */}
+		<section className="album-wrapper">
+			<div className="album-container">
+				{/* Accessing album cover */}
+				<div className="cover-img">
 					<CoverImage coverImg={coverImg} />
-					{/* Accessing album name */}
-					<AlbumName albumName={albumName} />
-					{/* Accessing artist name */}
-					<ArtistName artists={artists} />
 				</div>
-			{/* </div> */}
+				{/* Accessing album name */}
+				<AlbumName albumName={albumName} />
+				{/* Accessing artist name */}
+				<ArtistName artists={artists} />
+			</div>
 		</section>
 	)
 }

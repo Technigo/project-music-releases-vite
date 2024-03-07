@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import './Album.css'
 
 export const CoverImage = ({coverImg}) => {
     return (
