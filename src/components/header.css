@@ -94,9 +94,13 @@ input:checked + .slider:after {
 }
 
 @keyframes blink {
-  0% {
+  0%,
+  20%,
+  40% {
     background-color: #181818;
   }
+  10%,
+  30%,
   50% {
     background-color: #ccc;
   }
