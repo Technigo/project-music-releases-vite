@@ -1,3 +1,4 @@
+import './TotalTracks.css'
 export const TotalTracks = ({ totalTracks }) => {
   return (
     <>
