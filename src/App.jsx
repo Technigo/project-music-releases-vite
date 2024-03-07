@@ -1,22 +1,16 @@
+
+import { Header } from "./components/Header.jsx";
+import { Album } from "./components/Album.jsx";
 import data from "./data.json";
-import { Header } from "./ChildComponent/Header";
-import { Album } from "./ChildComponent/Album";
 
-
-
-//console.log(data);
-
-
+console.log("json ;", data);
+//pass json data to  *mArray* in Album
 export const App = () => {
 	return (
-		<div className="App">
+		<div className="app-wrap">
 			<Header />
-			<div className="album-wrapper">
-			{data.albums.items.map((album, index)=>{
-				<Album key={index} album = {album}/>
-				console.log("can you see me", index, album)
-			})}
-			</div>
+			<Album mArray={data} />
 		</div>
-	);
-};
+	)
+}
+
