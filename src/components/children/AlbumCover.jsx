@@ -1,3 +1,10 @@
+import { PlayIcons } from "./PlayIcons";
+
 export const AlbumCover = ({ images }) => {
-  return <img className="album-cover" src={images} alt="album-cover-image" />;
+  return (
+    <div className="album-cover-container">
+      <PlayIcons />
+      <img className="album-cover" src={images} alt="album-cover-image" />;
+    </div>
+  );
 };
