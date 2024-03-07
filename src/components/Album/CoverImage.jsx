@@ -8,9 +8,10 @@ export const CoverImage = ({ image, name }) => {
   }
 
   return (
-    <div className="coverImage">
-      <div className="image">
+    <div className="ImageContainer">
+      <div className="coverImage">
         <img src={image.url} alt={name} />
+        </div>
         <div className="icons">
           <div className="heart-icon">
             <img src="/src/assets/icons/heart.svg" alt="hearticon" />
@@ -23,7 +24,6 @@ export const CoverImage = ({ image, name }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

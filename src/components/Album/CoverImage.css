@@ -14,16 +14,17 @@ position : absolute;
   z-index:100
 } */
 
-/*  <div class="itemsContainer">
-<div class="image"> <a href="#">  <img src="#" /> </a></div>
-<div class="heart-icon" >
-<div class="play"><img src="#" /> </div>
-<div class=ellipsis"
-</div> */
-
-
-.image img:hover {
-    /* Dark overlay on hover */
-    filter: brightness(50%);  
+.icons {
+  max-width: 40px;
 }
 
+.heart-icon img,
+.play-icon img,
+.dots-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.image img:hover {
+  /* Dark overlay on hover */
+  filter: brightness(50%);
+}
