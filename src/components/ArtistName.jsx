@@ -1,12 +1,12 @@
 import './ArtistName.css'; 
 
-export const ArtistName = ({name,external_url})=>{
+export const ArtistName = ({artistName,artistLink})=>{
     const clickArtistName = ()=>{
-        window.location.href=external_url
+        window.location.href=artistLink
     }
     return (
         <div className = "artist-name-link">
-           <p onClick = {clickArtistName}>{name}</p>
+           <p onClick = {clickArtistName}>{artistName}</p>
         </div>
     )
 }
