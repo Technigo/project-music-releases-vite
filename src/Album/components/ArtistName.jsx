@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Fragment } from "react";
+
 
 export const ArtistName = ({ artists }) =>
 { 
@@ -18,18 +18,18 @@ export const ArtistName = ({ artists }) =>
                 
         //oh no! there are more than one artists
         const moreThenOneArtists = artists.map((artist, index) => (
-            <Fragment key={artist.id}>
-                <a href={artist.external_urls.spotify}>
+            < >
+                <a href={artist.external_urls.spotify} key={artist.id}>
                     <p className="artist-name">{artist.name}</p>
                 </a>
                 {index < artists.length - 2 ? ", " : index === artists.length - 2 ? " & " : ""}
-            </Fragment>
+            </>
         ));
 
             return (
-                <Fragment>
+                <>
                     {moreThenOneArtists}
-                </Fragment>
+                </>
             )
 
              }else{
@@ -39,9 +39,9 @@ export const ArtistName = ({ artists }) =>
     // 
     //Return the check result       
     return (
-        <Fragment>
+        <>
             {checkArtistNames()}
-        </Fragment>
+        </>
         )
 
         };
