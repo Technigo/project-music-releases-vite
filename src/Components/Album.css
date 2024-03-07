@@ -19,11 +19,17 @@ body {
   font-size: 14px;
 }
 
-.album-link {
+.album-link,
+.artist-link {
   text-decoration: none;
 }
 
 .album-link:hover {
   color: #ffffff;
+  text-decoration: underline;
+}
+
+.artist-link:hover {
+  color: #a0a0a0;
   text-decoration: underline;
 }

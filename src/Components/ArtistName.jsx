@@ -2,15 +2,13 @@ import PropTypes from "prop-types"
 import './Album.css'
 
 export const ArtistName = ({artists}) => {
-    const artistNames = artists.map(object => object.name).join(", ");
-
     return  (
         <div className="artist-names">
-            <h3>{artistNames}</h3>
-            {/* tog bort detta för att lägga dit join() för att separera artister med , - men vet inte om "id" behövs?
-             {artists.map(({ id, name}) => {
-                return <h3 key={id}>{artistNames}</h3>
-            })} */}
+            {artists.map (({ id, name, external_urls}) => (
+                <a key={id} href={external_urls.spotify} className="artist-link">
+                    <h3>{name}</h3>
+                </a>
+            ))}
         </div>
 
     )
@@ -20,7 +18,7 @@ ArtistName.propTypes = {
     artists: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
-            name: PropTypes.string.isRequired
+            name: PropTypes.string.isRequired,
         })
     ).isRequired
 };
