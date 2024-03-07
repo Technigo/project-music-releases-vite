@@ -1,23 +1,21 @@
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
+import "./ArtistName.css"
 
 
-export const ArtistName = ({artistName,artistURL}) => {
-    return (
-        <div>
-            <a href={artistURL}>
-                <h3>{artistName}</h3>
-            </a>
-        </div>
-    );
+
+export const ArtistName = ({ artistName, artistURL }) => {
+  return (
+    <div className="ArtistName">
+      <a href={artistURL}>
+        <h3>{artistName}</h3>
+      </a>
+    </div>
+  )
 }
 
 ArtistName.propTypes = {
-    artistName: PropTypes.string.isRequired,
-    artistURL: PropTypes.string.isRequired
-};
+  artistName: PropTypes.string.isRequired,
+  artistURL: PropTypes.string.isRequired,
+}
 
-export default ArtistName;
-
-
-
-
+export default ArtistName

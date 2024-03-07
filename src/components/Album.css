@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
