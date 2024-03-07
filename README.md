@@ -1,9 +1,3 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
 Replace this readme with your own information about your project.
@@ -27,11 +21,4 @@ npm i && code . && npm run dev
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
 ### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/584cae14-6586-4edd-86ad-2456b8243767/deploy-status)](https://app.netlify.com/sites/yifans-music-release-site/deploys)

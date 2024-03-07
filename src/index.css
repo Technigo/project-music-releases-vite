@@ -1,13 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --backgroung-color: linear-gradient(#031f11, black);
+  --hover-menu-background: #181818c2;
+  --main-text-color: #fcfcfc;
+  --sub-text-color: #809384;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--backgroung-color);
+  color: var(--main-text-color);
+  margin: 60px auto;
+}
+
+header {
+  font-size: 1rem;
+  margin-left: 60px;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  fill: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+.sidebar-section {
+  margin-top: 85px;
+  margin-left: 30px;
+}
+
+.playlist-card {
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  left: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--backgroung-color);
+  border-radius: 40px;
+}
+
+.playlist-item {
+  position: relative;
+  display: inline-block;
+}
+
+.playlist-img {
+  max-width: 80px;
+}
+
+.playlist-description {
+  position: absolute;
+  display: inline-block;
+
+  top: 20px;
+  left: 110%;
+
+  text-align: center;
+  text-wrap: nowrap;
+  line-height: 50px;
+
+  color: var(--main-text-color);
+  background-color: var(--hover-menu-background);
+  border-radius: 10px;
+  height: 50px;
+  padding: 0 10px;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.playlist-item:hover .playlist-description {
+  opacity: 1;
+}
+
+.album-section {
+  position: relative;
+  margin: 70px 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.album-card {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 40px auto;
+}
+
+.album-cover {
+  position: relative; /*for hover-menu'position*/
+}
+
+.hover-menu {
+  background-color: var(--hover-menu-background);
+  width: 100%;
+  height: 105%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*take away hovermenu's own width and height*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.album-cover:hover .hover-menu {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  fill: var(--sub-text-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  fill: var(--main-text-color);
+  transform: scale(1.2);
+}
+
+.heart-icon {
+  height: 60px;
+  width: 60px;
+  fill: var(--sub-text-color);
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.album-name,
+.artist-name {
+  max-width: 220px;
+  margin: 10px auto 0;
+  border: transparent solid 1.5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.album-name:hover,
+.artist-name:hover {
+  cursor: pointer;
+  color: var(--main-text-color);
+  border-bottom: var(--main-text-color) solid 1.5px;
+}
+
+.artist-name {
+  color: var(--sub-text-color);
+  font-weight: 600;
+  display: inline;
+}
+
+@media screen and (min-width: 475px) and (max-width: 990px) {
+  .album-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 70px 80px;
+  }
+
+  header {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 991px) {
+  .album-section {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 70px 120px;
+  }
+
+  header {
+    font-size: 3rem;
+    font-weight: 900;
+  }
 }
