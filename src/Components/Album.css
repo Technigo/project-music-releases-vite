@@ -1,0 +1,35 @@
+.album {
+    background-color: #121212;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0,1), 0 1px 3px rgba(0, 0, 0, 0.08) ;
+    
+}
+
+.album h3 {
+    margin-top: 0;
+  }
+  
+  .album img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .album a {
+    text-decoration: none;
+    color: #1DB954; /* Spotify green color */
+  }
+  
+  .album a:hover {
+    text-decoration: underline;
+  }
+
+.icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    transition: all 0.3s ease-in-out;
+}

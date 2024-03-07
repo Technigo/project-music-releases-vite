@@ -1,0 +1,13 @@
+body {
+    margin: 0 auto;
+    color: white;
+    align-self : center;
+    text-align: center;
+}
+.album-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    color: white;
+}
