@@ -9,3 +9,10 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+/* Media query for phone and tablets */
+@media screen and (max-width: 980px) {
+  .artist-name-link p {
+    font-size: 10px;
+  }
+}
