@@ -103,6 +103,11 @@ h1 {
   margin: 15px 0 8px 0;
 }
 
+.artist-name {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
 .artist-name a {
   text-decoration: none;
   color: #a0a0a0;
