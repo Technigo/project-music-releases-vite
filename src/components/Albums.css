@@ -7,6 +7,8 @@
 .album-items {
   width: 300px;
   height: 300px;
+  background-color: Black;
+  border-radius:20px;
 }
 
 /* Cover Image & Play icons */
@@ -37,11 +39,25 @@
   transform: scale(1.2);
 }
 
-
 .album-cover {
 
   border-radius: 20px;
 }
+
+
+.album-cover {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.album-cover:hover {
+	opacity: .5;
+}
+
+
+
+
+
 
 .a-links:hover {
   text-decoration: underline;
