@@ -29,6 +29,8 @@
   height: 35px;
   align-self: center;
   padding: 10px;
+  /* lowered opacity👇🏻 */
+  opacity: 50%;
 }
 
 #icon-big {
@@ -37,6 +39,8 @@
   align-self: center;
   padding: 10px;
   transition: transform 0.3s ease;
+  /* lowered opacity👇🏻 */
+  opacity: 50%;
 }
 
 .container:hover .icons {
@@ -62,7 +66,13 @@
 #icon-big {
   filter: brightness(0) invert(1);
 }
-
+/* full opacity on hover👇🏻 */
 #icon-big:hover {
   transform: scale(1.2); /*grow on hover*/
+  opacity: 100%;
+}
+
+/* full opacity on hover👇🏻 */
+#icon-small:hover {
+  opacity: 100%;
 }
