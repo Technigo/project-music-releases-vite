@@ -6,7 +6,7 @@ import Dots from "../assets/icons/dots.svg"
 
 import "./Album.css"
 
-export const CoverImage = ({ coverImg, albumUrl }) => {
+export const CoverImage = ({ coverImg }) => {
   return (
     <div className="cover-image-container">
       <div className="cover-image">
@@ -14,13 +14,9 @@ export const CoverImage = ({ coverImg, albumUrl }) => {
       </div>
       <div className="icon-container">
         <Icon icon={Heart} />
-        <a
-          className="play-icon"
-          href={albumUrl}
-          target="_blank"
-          rel="noopener noreferrer">
+        <div className="play-icon">
           <Icon icon={Play} />
-        </a>
+        </div>
         <Icon icon={Dots} />
       </div>
     </div>
@@ -29,7 +25,6 @@ export const CoverImage = ({ coverImg, albumUrl }) => {
 
 CoverImage.propTypes = {
   coverImg: PropTypes.string.isRequired,
-  albumUrl: PropTypes.string.isRequired,
 }
 
 export default CoverImage

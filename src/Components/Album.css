@@ -44,9 +44,9 @@ body {
 /* Styling for the icons */
 
 .album-icon {
-  width: 30px;
-  height: 30px;
-  filter: invert(100%);
+  width: 40px;
+  height: 40px;
+  filter: invert(100%); /*This is to invert the color to white since the icons are initially black*/
   transition: all 0.3s ease-in-out;
 }
 
@@ -69,18 +69,7 @@ body {
 
 /*Styling for play-icon when hovering*/
 
-.icon {
-  width: 30px;
-  height: 30px;
-  filter: invert(100%);
-}
-
-.play-icon .icon {
-  width: 50px;
-  height: 50px;
-}
-
 .play-icon:hover {
-  transform: scale(1.5);
-  transition: all 0.3s ease-in-out;
+  transform: scale(2);
+  transition: all 0.5s ease-in-out;
 }
