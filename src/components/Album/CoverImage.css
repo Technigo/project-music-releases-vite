@@ -1,21 +1,22 @@
-/* .itemsContainer {
-  background:red; 
-  float:left;
-  position:relative
+.image-container {
+  /* display: flex;
+  flex-direction: row; */
+  position: relative;
+  border: 2px solid white;
+  width: 300px;
+  height: 300px;
 }
-.itemsContainer:hover .play{display:block}
-.play{
-position : absolute;
-  display:none;
-  top:20%; 
-  width:40px;
-  margin:0 auto; left:0px;
-  right:0px;
-  z-index:100
-} */
 
 .icons {
-  max-width: 40px;
+  position: absolute;
+  display: flex;
+  /* justify-content: space-between;
+  z-index: 100; */
+  top: 50%;
+  left: 50%;
+  /* border: 2px solid white; */
+  transform: translate(-50%, -50%);
+  gap: 30px;
 }
 
 .heart-icon img,
@@ -24,7 +25,37 @@ position : absolute;
   filter: brightness(0) invert(1);
 }
 
-.image img:hover {
+.heart-icon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.dots-icon {
+  width: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.play-icon {
+  width: 60px;
+}
+
+.cover-image {
+  border: 2px solid white;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cover-image img:hover {
   /* Dark overlay on hover */
   filter: brightness(50%);
 }

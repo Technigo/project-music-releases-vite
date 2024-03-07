@@ -15,7 +15,7 @@ export const ArtistName = ({ artists }) => {
     </h2>
   ));
 
-  return <div className="artistNames">{artistNames}</div>;
+  return <div className="artist-name">{artistNames}</div>;
 };
 
 ArtistName.propTypes = {

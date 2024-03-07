@@ -8,22 +8,22 @@ export const CoverImage = ({ image, name }) => {
   }
 
   return (
-    <div className="ImageContainer">
-      <div className="coverImage">
+    <div className="image-container">
+      <div className="cover-image">
         <img src={image.url} alt={name} />
         </div>
-        <div className="icons">
-          <div className="heart-icon">
-            <img src="/src/assets/icons/heart.svg" alt="hearticon" />
-          </div>
-          <div className="play-icon">
-            <img src="/src/assets/icons/play.svg" alt="playicon" />
-          </div>
-          <div className="dots-icon">
-            <img src="/src/assets/icons/dots.svg" alt="dotsicon" />
-          </div>
+      <div className="icons">
+        <div className="heart-icon">
+          <img src="/src/assets/icons/heart.svg" alt="hearticon" />
+        </div>
+        <div className="play-icon">
+          <img src="/src/assets/icons/play.svg" alt="playicon" />
+        </div>
+        <div className="dots-icon">
+          <img src="/src/assets/icons/dots.svg" alt="dotsicon" />
         </div>
       </div>
+    </div>
   );
 };
 
