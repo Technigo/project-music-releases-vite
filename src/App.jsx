@@ -20,11 +20,10 @@ export const App = () => {
   return (
     <>
       <Header />
-      <div>Find me in src/app.jsx!</div>
       <div className="album-card">
         {albumDatas.map((albumData) => (
           <Album key={albumData.id} albumData={albumData} />
-          
+
           // Album key - This code renders an album component with data passed as prop.
           // Inside that component it maps through the list of artis associated with the album.
           // For each artist, creates a <div> with a link (<a>) to the artist's spotify page.

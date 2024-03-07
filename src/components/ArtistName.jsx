@@ -7,7 +7,7 @@ export const ArtistName = ({artistName,artistLink})=>{
 
     return (
         <div className = "artist-name-link">
-           <p className="artist-name" onClick = {clickArtistName}>{artistName}</p>
+           <p onClick = {clickArtistName}>{artistName}</p>
         </div>
         
     )
