@@ -1,47 +1,43 @@
-import data from "./data.json";
-import { Album } from "./components/Album";
 import { Header } from "./components/Header.jsx";
-import { SortAlbums } from "./components/Sort.jsx";
-import { SortSingles } from "./components/Sort.jsx";
+import {
+  AllAlbums,
+  SortAlbums,
+  SortSingles,
+} from "./components/album-components/RenderAlbum.jsx";
+import { useState } from "react";
 import "./components/header.css";
 
 export const App = () => {
-  const { albums } = data;
+  const [isSorted, setSorted] = useState("false");
 
-  const renderAlbum = (arr) => {
-    const renderedAlbum = arr.map(
-      ({ name, artists, id, images, external_urls }) => {
-        return (
-          <Album
-            name={name}
-            key={id}
-            artists={artists}
-            images={images}
-            external_urls={external_urls}
-          />
-        );
-      }
-    );
-    return renderedAlbum;
+  const sortOnClick = () => {
+    setSorted(!isSorted);
+    console.log(isSorted);
   };
 
   return (
     <>
-      <Header />
-      <div className="all-items album-collection">
-        {renderAlbum(albums.items)}
+      <Header sortOnClick={sortOnClick} />
+      <div
+        className={isSorted ? "show album-collection" : "hide album-collection"}
+      >
+        {AllAlbums()}
       </div>
-      <div className="only-albums album-collection">
+      <div
+        className={isSorted ? "hide album-collection" : "show album-collection"}
+      >
         <div className="album album-type">
           <h2>Albums</h2>
         </div>
-        {renderAlbum(SortAlbums())}
+        {SortAlbums()}
       </div>
-      <div className="only-singles album-collection">
+      <div
+        className={isSorted ? "hide album-collection" : "show album-collection"}
+      >
         <div className="album album-type">
           <h2>Singles</h2>
         </div>
-        {renderAlbum(SortSingles())}
+        {SortSingles()}
       </div>
     </>
   );
