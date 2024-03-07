@@ -1,49 +1,51 @@
 body {
-	background-color: black;
-	margin-left: 40px;
-	margin-right: 40px;
+  background-color: black;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
+/* Tog bort denna för den gjorde att det blev in grid i varje bild
 .album-wrapper {
-	display: grid;
-	grid-template-columns: 1fr;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+}*/
 
+.cover-image img {
+  width: 200px;
+  height: 200px;
+}
 
 .album-container h2 {
-	color: #ffffff;
-	font-size: 14px;
+  color: #ffffff;
+  font-size: 14px;
 }
 
 .album-container h3 {
-	color: #a0a0a0;
-	font-size: 14px;
+  color: #a0a0a0;
+  font-size: 14px;
 }
 
-.cover-image img {
-	display: grid;
-	height: auto;
-	max-width: 100%;
-	width: 100%;
+.artist-names {
+  display: flex;
+  /*Här borde vi istället rada upp artisterna separerade med ", "*/
 }
-
-.artist-names{
-    display: flex;
-}
-
 
 /* Media queries */
 
 /* tablet */
 @media (min-width: 668px) {
-	.album-wrapper {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  .album-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* desktop */
 @media (min-width: 1025px) {
-	.album-wrapper {
-		grid-template-columns: repeat(4, 1fr);
-	}
+  .album-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cover-image img {
+    width: 230px;
+    height: 230px;
+  }
 }

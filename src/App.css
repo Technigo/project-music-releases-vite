@@ -1,22 +1,25 @@
-
-.main-section{
-    display: grid;
-	grid-template-columns: 1fr;
-	gap: 20px;
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
+.album img {
+  width: 100px;
+  height: 100px;
+}
 /* Media queries */
 
 /* tablet */
 @media (min-width: 668px) {
-	.main-section {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  .main-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* desktop */
 @media (min-width: 1025px) {
-	.main-section {
-		grid-template-columns: repeat(4, 1fr);
-	}
+  .main-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
