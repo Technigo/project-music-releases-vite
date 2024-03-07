@@ -4,16 +4,14 @@ import { ArtistName } from './ArtistName'
 import { CoverImage } from './CoverImage'
 import './Album.css'
 
-export const Album = ({ albumName, coverImg, artists }) => {
+export const Album = ({ albumName, coverImg, artists, albumUrl }) => {
 	return (
 		<section className="album-wrapper">
 			<div className="album-container">
 				{/* Accessing album cover */}
-				<div className="cover-img">
-					<CoverImage coverImg={coverImg} />
-				</div>
+				<CoverImage coverImg={coverImg} />
 				{/* Accessing album name */}
-				<AlbumName albumName={albumName} />
+				<AlbumName albumUrl={albumUrl} albumName={albumName} />
 				{/* Accessing artist name */}
 				<ArtistName artists={artists} />
 			</div>
@@ -26,4 +24,5 @@ Album.propTypes = {
 	albumName: PropTypes.string.isRequired,
 	coverImg: PropTypes.string.isRequired,
 	artists: PropTypes.arrayOf(PropTypes.string).isRequired,
+	albumUrl: PropTypes.string.isRequired,
 }

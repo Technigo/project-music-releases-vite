@@ -10,10 +10,11 @@ export const App = () => {
 
 //Map over albums and retrieve id, name (of album), image and artists
   const renderAlbums = () =>
-      albums.map(({ id, name, images, artists }) => (
+      albums.map(({ id, name, images, artists, external_urls}) => (
         <Album
         key={id}
         albumName={name}
+        albumUrl={external_urls.spotify}
         coverImg={images[0].url}
         artists={artists}
         />

@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import './Album.css'
 
 export const ArtistName = ({artists}) => {
-    const artistNames = artists.map(artist => artist.name).join(", ");
+    const artistNames = artists.map(object => object.name).join(", ");
 
     return  (
         <div className="artist-names">
@@ -26,3 +26,5 @@ ArtistName.propTypes = {
 };
 
 export default ArtistName;
+
+

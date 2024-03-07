@@ -1,18 +1,16 @@
+a{
+  text-decoration: none;
+}
+
 body {
   background-color: black;
   margin-left: 40px;
   margin-right: 40px;
 }
 
-/* Tog bort denna för den gjorde att det blev in grid i varje bild
-.album-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-}*/
-
 .cover-image img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 .album-container h2 {
@@ -33,19 +31,3 @@ body {
 /* Media queries */
 
 /* tablet */
-@media (min-width: 668px) {
-  .album-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* desktop */
-@media (min-width: 1025px) {
-  .album-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .cover-image img {
-    width: 230px;
-    height: 230px;
-  }
-}
