@@ -6,11 +6,11 @@ import PropTypes from "prop-types";
 export const CoverImage = ({ image }) => {
   return (
     <div className="coverImage">
-      <img src={image} alt="Album cover image" />
+      <img src={image} alt="Album cover image" className="albumCoverImage"/>
       <div className="icons">
-        <img src={heart} alt="Heart" className="heart icon" />
+        <img src={heart} alt="Heart" className="heart icon"/>
         <img src={playIcon} alt="Play button" className="play icon"/>
-        <img src={dots} alt="Three dots" className="dot icon" />
+        <img src={dots} alt="Three dots" className="dot icon"/>
       </div>
     </div>
   );

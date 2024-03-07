@@ -33,18 +33,18 @@ This is just a suggestion - how you decide to structure your components is compl
 
 - album cover image ✅
 - album name ✅
-- the name of each artist involved with a comma between ✅ (comma last?)
+- the name of each artist involved with a comma between ✅
 
 ## Hover effects:
 
-- When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
+- When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch) ✅
 - When you hover over the play button, it should grow (see the design sketch)
 - Hovering an artist name or an album name should match the design sketch
 
 ## External Routing:
 
 - When you click on the album name, it should link to the album's external URL in the data  ✅
-- When you click on an artist name, it should link to the artist's external URL in the data
+- When you click on an artist name, it should link to the artist's external URL in the data  ✅
 
 ### Your page should be responsive:
 
