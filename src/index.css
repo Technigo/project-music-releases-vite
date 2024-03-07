@@ -4,20 +4,28 @@
   color: #ffffff;
   font-family: Helvetica, sans-serif;
 }
+
 /*Header-styling*/
 .header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 2rem;
 }
+
 h1 {
   margin-bottom: 0;
+  font-size: 36px;
 }
+
 /*Album section-styling*/
 .albumSection {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
+
 /*Album-styling*/
 .album {
   font-size: 14px;
@@ -25,11 +33,8 @@ h1 {
   position: relative;
   top: 1px;
 }
-/*Styling for cover image and icons*/
-.coverImage:hover {
-  opacity: 0.4;
-}
 
+/*Styling for cover image and icons*/
 .icons {
   opacity: 0;
   position: absolute;
@@ -41,67 +46,84 @@ h1 {
   width: 300px;
   filter: invert(100%);
 }
+
 .coverImage:hover .icons {
-  opacity: 1;
+  opacity: 0.4;
 }
+
+.coverImage:hover .albumCoverImage {
+  opacity: 0.4;
+}
+
 /*Styling for all icons*/
 .icon {
   height: 30px;
 }
+
 /*Styling for play-icon*/
 .play {
   height: 75px;
 }
+
 .play:hover {
-  height: 100px;
-  opacity: 1;
+  height: 85px;
 }
+
 /*Album name-styling*/
 .albumName {
-  margin-bottom: 0;
+  margin-bottom: 6px;
 }
+
 .albumName a {
   text-decoration: none;
   color: #ffffff;
 }
+
 .albumName a:hover {
   text-decoration: underline;
 }
+
 /*Artists-styling*/
 .artistName {
   display: flex;
 }
+
 .artistName p {
   margin-top: 5px;
 }
+
 .artistName a {
   color: #a0a0a0;
   text-decoration: none;
 }
+
 .artistName a:hover {
   text-decoration: underline;
 }
+
 .artistName p:not(:first-child, :last-child)::before {
   color: #a0a0a0;
   content: ", ";
 }
+
 .artistName p:last-child::before {
   content: " , ";
   color: #a0a0a0;
 }
+
 .artistName p:only-child::before {
   content: "";
 }
 
 /*Change how many albums are displayed for different screens*/
 @media (min-width: 668px) and (max-width: 1024px) {
-  .albumSection {
+  /* .albumSection {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 }
 
 @media (min-width: 1025px) {
-  .albumSection {
+  /* .albumSection {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+  } */
 }
