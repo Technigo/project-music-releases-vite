@@ -1,5 +1,5 @@
-import data from "../../data.json";
-import { Album } from "../Album";
+import data from "../data.json";
+import { Album } from "./Album";
 
 const { albums } = data;
 

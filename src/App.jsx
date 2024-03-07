@@ -3,28 +3,27 @@ import {
   AllAlbums,
   SortAlbums,
   SortSingles,
-} from "./components/album-components/RenderAlbum.jsx";
+} from "./components/RenderAlbum.jsx";
 import { useState } from "react";
 import "./components/header.css";
 
 export const App = () => {
-  const [isSorted, setSorted] = useState("false");
+  const [isSorted, setSorted] = useState(false);
 
   const sortOnClick = () => {
     setSorted(!isSorted);
-    console.log(isSorted);
   };
 
   return (
     <>
       <Header sortOnClick={sortOnClick} />
       <div
-        className={isSorted ? "show album-collection" : "hide album-collection"}
+        className={isSorted ? "hide album-collection" : "show album-collection"}
       >
         {AllAlbums()}
       </div>
       <div
-        className={isSorted ? "hide album-collection" : "show album-collection"}
+        className={isSorted ? "show album-collection" : "hide album-collection"}
       >
         <div className="album album-type">
           <h2>Albums</h2>
@@ -32,7 +31,7 @@ export const App = () => {
         {SortAlbums()}
       </div>
       <div
-        className={isSorted ? "hide album-collection" : "show album-collection"}
+        className={isSorted ? "show album-collection" : "hide album-collection"}
       >
         <div className="album album-type">
           <h2>Singles</h2>
