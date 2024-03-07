@@ -2,9 +2,9 @@ import PropTypes from "prop-types"
 
 export const AlbumName = ({ albumName }) => {
   return (
-    <p>
+    <h4>
       <span>{albumName}</span>
-    </p>
+    </h4>
   )
 }
 
