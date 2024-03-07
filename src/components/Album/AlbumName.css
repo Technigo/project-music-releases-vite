@@ -1,0 +1,13 @@
+h1 {
+  font-family: "Helvetica", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+h1:hover {
+  text-decoration: underline;
+}

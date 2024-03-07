@@ -1,0 +1,29 @@
+/* .itemsContainer {
+  background:red; 
+  float:left;
+  position:relative
+}
+.itemsContainer:hover .play{display:block}
+.play{
+position : absolute;
+  display:none;
+  top:20%; 
+  width:40px;
+  margin:0 auto; left:0px;
+  right:0px;
+  z-index:100
+} */
+
+/*  <div class="itemsContainer">
+<div class="image"> <a href="#">  <img src="#" /> </a></div>
+<div class="heart-icon" >
+<div class="play"><img src="#" /> </div>
+<div class=ellipsis"
+</div> */
+
+
+.image img:hover {
+    /* Dark overlay on hover */
+    filter: brightness(50%);  
+}
+

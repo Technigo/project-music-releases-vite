@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
+import './AlbumName.css'
 
 export const AlbumName = ({ albumName, url }) => {
   return (
     <div className="albumName">
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <h1><a href={url} target="_blank" rel="noopener noreferrer">
         {albumName}
-      </a>
+      </a></h1>
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import './ArtistName.css'
 
 export const ArtistName = ({ artists }) => {
   const artistNames = artists.map((artist, index) => (
-    <span key={artist.id}>
+    <h2 key={artist.id}>
       <a
         href={artist.external_urls.spotify}
         target="_blank"
@@ -11,7 +12,7 @@ export const ArtistName = ({ artists }) => {
         {artist.name}
       </a>
       {index < artists.length - 1 && ", "}
-    </span>
+    </h2>
   ));
 
   return <div className="artistNames">{artistNames}</div>;

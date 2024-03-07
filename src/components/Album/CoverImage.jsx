@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./CoverImage.css";
 
 export const CoverImage = ({ image, name }) => {
   // Check if images array exists and has at least one element
@@ -8,8 +9,20 @@ export const CoverImage = ({ image, name }) => {
 
   return (
     <div className="coverImage">
-      {/* Display the URL of the second image */}
-      <img src={image.url} alt={name} />
+      <div className="image">
+        <img src={image.url} alt={name} />
+        <div className="icons">
+          <div className="heart-icon">
+            <img src="/src/assets/icons/heart.svg" alt="hearticon" />
+          </div>
+          <div className="play-icon">
+            <img src="/src/assets/icons/play.svg" alt="playicon" />
+          </div>
+          <div className="dots-icon">
+            <img src="/src/assets/icons/dots.svg" alt="dotsicon" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
@@ -18,3 +31,12 @@ CoverImage.propTypes = {
   image: PropTypes.object,
   name: PropTypes.string,
 };
+
+// div CoverImage
+//   div image
+//    div Icons
+//      div heart
+//      div play
+//      div ellipsis
+// /div
+// /div
