@@ -1,9 +1,7 @@
-
-//import PropTypes from "prop-types"
-import { ArtistName } from "./ArtistName";
-import { CoverImage } from "./CoverImage"
+import "./Album.css";
 import { AlbumName } from "./AlbumName"
-//import "./Album.css";
+import { ArtistName } from "./ArtistName"
+import { CoverImage } from "./CoverImage"
 
 export const Album = ({ albumName, imgSrc, albumUrl, artistName }) => {
   return (
@@ -17,14 +15,3 @@ export const Album = ({ albumName, imgSrc, albumUrl, artistName }) => {
   );
 };
 
-
-/*Album.propTypes = {
-  data: PropTypes.shape({
-    albumName: PropTypes.string.isRequired,
-    imgSrc: PropTypes.array.isRequired,
-    artists: PropTypes.string.isRequired,
-    albumUrl: PropTypes.string.isRequired
-  }).isRequired, 
-};*/
-
-export default Album;

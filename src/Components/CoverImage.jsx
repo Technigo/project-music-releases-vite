@@ -1,9 +1,8 @@
-/* eslint-disable react/prop-types */
 import { Icon } from "./Icon"
-//import PropTypes from 'prop-types';
 import Heart from "../assets/icons/heart.svg";
 import Play from "../assets/icons/play.svg";
 import Dots from "../assets/icons/dots.svg";
+
 
 export const CoverImage = ({ imgSrc, albumName, albumUrl }) => {
  return (
@@ -19,11 +18,3 @@ export const CoverImage = ({ imgSrc, albumName, albumUrl }) => {
         </div>
     );
 };
-             
-/*CoverImage.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
-  albumName: PropTypes.string.isRequired,
-  albumUrl: PropTypes.string.isRequired,
-};*/
-
-//export default CoverImage;

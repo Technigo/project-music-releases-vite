@@ -1,9 +1,8 @@
-import data from "./data.json";
-import { Header } from "./components/Header"
-import { Album } from "./Components/Album";
 import "./App.css";
+import { Album } from "./Components/Album";
+import { Header } from "./components/Common/Header";
+import data from "./data.json";
 
-//console.log(data);
 
 export const App = () => {
   const albums = data.albums.items;
@@ -24,5 +23,5 @@ const renderContent = renderAlbums();
     <Header />
     <section className="album-section">{renderContent}</section>
   </div>
-)
+ )
 }

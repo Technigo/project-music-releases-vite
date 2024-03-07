@@ -1,7 +1,20 @@
-/* eslint-disable react/prop-types */
-//import PropTypes from "prop-types";
 
 export const AlbumName = ({ albumUrl, albumName }) => {
+  return (
+    <a href={albumUrl}>
+    <h2>{albumName}</h2>
+    </a>
+  )
+}
+
+AlbumName.defaultProps = {
+  albumName: "Name is missing"
+};
+
+
+
+
+/*export const AlbumName = ({ albumUrl, albumName }) => {
   return (
     <a href={albumUrl}>
       <h2>{albumName}</h2>
@@ -9,12 +22,6 @@ export const AlbumName = ({ albumUrl, albumName }) => {
   );
 };
 
-/*AlbumName.propTypes = {
-  albumName: PropTypes.string.isRequired,
-  albumUrl: PropTypes.string.isRequired
-};*/
 
-AlbumName.defaultProps = {
-  albumName: "Name is missing"
-};
 
+*/
