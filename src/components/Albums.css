@@ -36,3 +36,16 @@
 .play-icons .icon:hover {
   transform: scale(1.2);
 }
+
+
+.album-cover {
+
+  border-radius: 20px;
+}
+
+.a-links:hover {
+  text-decoration: underline;
+  
+}
+
+
