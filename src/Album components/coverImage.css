@@ -1,3 +1,9 @@
 .cover img{
     width: 300px;
 }
+
+.cover img:hover{
+    cursor: pointer;
+    filter: brightness(70%);
+    transition: .2s;
+}
