@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 
-export const ArtistName = ({ artists }) => {
+export const ArtistName = ({ artists, }) => {
   return (
     <div className="artistName">
       <p>
-        {" "}
-        {artists.map(({ id, name }) => (
-          <span key={id}> {name},</span>
+        {artists.map(({ id, name, external_urls }) => (
+          <a key={id} href={external_urls.spotify}>
+            {name},
+          </a>
         ))}
       </p>
     </div>
@@ -14,7 +15,7 @@ export const ArtistName = ({ artists }) => {
 };
 
 ArtistName.propTypes = {
-    artists: PropTypes.array.isRequired,
+  artists: PropTypes.array.isRequired,
 };
 
 ArtistName.defaultProps = {
