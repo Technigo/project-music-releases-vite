@@ -88,6 +88,7 @@ header {
   transform: translate(-50%, -50%); /* centers the icons relative to their own sizes */
   z-index: 1;
   filter: invert(100%); /* change the original color (black) to white */
+  opacity: 0.8;
 }
 
 .heart-icon {
@@ -109,6 +110,19 @@ header {
 .cover-image-container:hover .play-icon,
 .cover-image-container:hover .dots-icon {
   display: block;
+}
+
+.cover-image-container .play-icon:hover {
+  width: 32%;
+  opacity: 1;
+}
+
+.cover-image-container .heart-icon:hover {
+  opacity: 1;
+}
+
+.cover-image-container .dots-icon:hover {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
