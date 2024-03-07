@@ -3,18 +3,18 @@ import { AlbumName } from "./AlbumName";
 import { CoverImage } from "./CoverImage";
 import { ArtistName } from "./ArtistName";
 
-export const Album = ({ name, image, artists, url }) => {
+export const Album = ({ albumName, image, artists, url }) => {
   return (
     <div className="album">
       <CoverImage image={image} />
-      <AlbumName name={name} url={url}/>
+      <AlbumName albumName={albumName} url={url}/>
       <ArtistName artists={artists} />
     </div>
   );
 };
 
 Album.propTypes = {
-  name: PropTypes.string.isRequired,
+  albumName: PropTypes.string.isRequired,
   image: PropTypes.object.isRequired,
   artists: PropTypes.arrayOf(
     PropTypes.shape({

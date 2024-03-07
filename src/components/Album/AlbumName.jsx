@@ -1,18 +1,20 @@
 import PropTypes from "prop-types";
 
-export const AlbumName = ({ name, url }) => {
+export const AlbumName = ({ albumName, url }) => {
   return (
     <div className="albumName">
-      <a href={url}>{name}</a>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {albumName}
+      </a>
     </div>
   );
 };
 
 AlbumName.propTypes = {
-  name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  albumName: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 AlbumName.defaultProps = {
-  name: "Name is missing",
+  albumName: "Name is missing",
 };
