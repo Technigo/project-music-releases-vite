@@ -7,5 +7,32 @@
 .album-items {
   width: 300px;
   height: 300px;
-  background-color: blueviolet;
+}
+
+/* Cover Image & Play icons */
+.album-cover-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-icons {
+  position: absolute;
+  display: flex;
+  filter: invert(100);
+}
+
+.play-icons .icon {
+  width: 70px;
+  margin: 0 10px;
+  transition: all 1s ease-in-out;
+}
+
+.play-icons .heart,
+.play-icons .dots {
+  width: 40px;
+}
+
+.play-icons .icon:hover {
+  transform: scale(1.2);
 }
