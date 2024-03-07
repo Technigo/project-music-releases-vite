@@ -50,5 +50,5 @@ export const ArtistName = ({ artists }) =>
    
 
 ArtistName.propTypes ={
-    artists:PropTypes.array.isRequired
+    artists:PropTypes.array
 }

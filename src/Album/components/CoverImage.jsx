@@ -20,5 +20,5 @@ export const CoverImage = ({album}) =>{
 }
 
 CoverImage.propTypes ={
-    album:PropTypes.object.isRequired
+    album:PropTypes.object
 }

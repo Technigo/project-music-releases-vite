@@ -1,4 +1,3 @@
-
 import data from "../data.json"
 import {AlbumName} from "./components/AlbumName"
 import {ArtistName} from "./components/ArtistName"
