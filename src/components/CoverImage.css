@@ -53,6 +53,7 @@
 .favorite-icon:hover,
 .play-icon:hover {
   transform: scale(1.1); /* Increases in size by 10% */
+ 
 }
 
 /* Keeping the hover over album to 50% brightness as you hover over the icons */
