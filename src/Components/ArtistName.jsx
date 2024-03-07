@@ -11,6 +11,7 @@ export const ArtistName = ({artists}) => {
 
     )
 }
+
 ArtistName.propTypes = {
     artists: PropTypes.arrayOf(
         PropTypes.shape({
