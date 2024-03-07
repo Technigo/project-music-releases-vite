@@ -14,7 +14,6 @@ return (
                     <ul className="album-info">
                         <li><AlbumName album={album} /></li>
                         <li><ArtistName artists={album.artists}/></li>
-                    
                     </ul>
                </div>
             ))
