@@ -19,8 +19,8 @@ This is just a suggestion - how you decide to structure your components is compl
 ## Folder Structure
 
 - DONE!! App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
-- Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-- Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
+- DONE!! Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
+- DONE!! Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
   - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
   - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
   - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
