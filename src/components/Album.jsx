@@ -19,4 +19,4 @@ export const Album =({albumData}) =>{
 
     )
 }
-//key = {albumData.images} for images?
+//artistName={artistData.name} -- artistName is a prop, from my understanding, prop is a connection between parent comp and child comp. {artistData.name}is the value
