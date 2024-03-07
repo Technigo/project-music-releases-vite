@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Playlist } from "./Playlist.jsx"
 
 export const Sidebar = () => {
   const [style, setStyle] = useState({
@@ -26,11 +27,7 @@ export const Sidebar = () => {
         <button className="close-btn" onClick={closeNav}>
           <i className="fa-solid fa-xmark fa-xl"></i>
         </button>
-        <ul className="playlist">
-          <li className="platlist-item">Playlist 1</li>
-          <li className="platlist-item">Playlist 2</li>
-          <li className="platlist-item">Playlist 3</li>
-        </ul>
+        <Playlist />
       </nav>
     </div>
   );

@@ -28,7 +28,7 @@ body {
   border: none;
   padding: 0;
   position: fixed;
-  left: 20px;
+  left: 10px;
   top: 30px;
   cursor: pointer;
 }
@@ -42,8 +42,7 @@ body {
 }
 
 .sidebar-menu {
-  z-index: 1;
-  width: 0;
+  z-index: 2;
   height: 100%;
   position: fixed;
   top: 0;
@@ -57,7 +56,6 @@ body {
 
 li {
   list-style-type: none;
-  /* font-size: 20px; */
   padding: 10px 0;
 }
 
@@ -86,12 +84,8 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  /* width: inherit; */
   height: 100%;
   display: flex;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  /* grid-gap: 20px; */
-  /* padding: 0 20px; */
   align-items: center;
   justify-content: space-around;
   opacity: 0;
