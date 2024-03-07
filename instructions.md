@@ -108,8 +108,8 @@ So you’ve completed the requirements? Great job! Make sure you've committed an
 ### Roadmap Stretch goals
 - Sort
 - Artist logic, (X & Y or X, Y & Z)   CHECK!!!
-- Sidebar with playlists.
-- Opacity on hover-buttons
+- Sidebar with playlists.             CHECK!
+- Opacity on hover-buttons            CHECK!
 
 
 ### Indiviudal tasks

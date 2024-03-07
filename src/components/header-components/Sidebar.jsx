@@ -1,7 +1,14 @@
 import { useState } from "react";
-import { Playlist } from "./Playlist.jsx"
+import { Playlist } from "./Playlist.jsx";
+import playlistData from "../../stretch-goal.json";
 
 export const Sidebar = () => {
+  const { playlists } = playlistData;
+  console.log(playlists);
+  const renderPlaylist = playlists.items.map(({name, external_urls, id}) => (
+    <Playlist key={id} name={name} external_urls={external_urls} />
+  ))
+
   const [style, setStyle] = useState({
     width: "0",
   });
@@ -27,7 +34,9 @@ export const Sidebar = () => {
         <button className="close-btn" onClick={closeNav}>
           <i className="fa-solid fa-xmark fa-xl"></i>
         </button>
-        <Playlist />
+        <ul className="playlist">
+          {renderPlaylist}
+        </ul>
       </nav>
     </div>
   );

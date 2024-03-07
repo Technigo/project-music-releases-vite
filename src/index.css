@@ -53,6 +53,14 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 li {
   list-style-type: none;
@@ -147,8 +155,6 @@ h1 {
 }
 
 .album-name a {
-  text-decoration: none;
-  color: #ffffff;
   font-weight: 700;
 }
 
@@ -162,7 +168,6 @@ h1 {
 }
 
 .artist-name a {
-  text-decoration: none;
   color: #a0a0a0;
 }
 

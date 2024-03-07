@@ -1,13 +1,13 @@
+import PropTypes from "prop-types"
 
-export const Playlist = () => {
+export const Playlist = ({name, external_urls}) => {
 
   return (
-    <ul className="playlist">
-      <li className="platlist-item">Playlist 1</li>
-      <li className="platlist-item">Playlist 2</li>
-      <li className="platlist-item">Playlist 3</li>
-    </ul>
+      <li className="platlist-item"><a href={external_urls.spotify}>{name}</a></li>
   )
 }
 
-
+Playlist.propTypes = {
+  name: PropTypes.string.isRequired,
+  external_urls: PropTypes.object.isRequired,
+}
