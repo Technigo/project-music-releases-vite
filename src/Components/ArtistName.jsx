@@ -6,5 +6,5 @@ export const ArtistName = (props) => {
     </a>
   ));
 
-  return <>{renderArtists}</>;
+  return <div className="artist-container">{renderArtists}</div>;
 };

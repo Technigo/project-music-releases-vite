@@ -7,7 +7,7 @@ export const Album = (props) => {
     <div className="album">
       <CoverImage coverImages={props.coverImages} />
       <AlbumName albumName={props.albumName} href={props.href} />
-      <ArtistName artists={props.artists} />
+      <ArtistName artists={props.artists} />;
     </div>
   );
 };
