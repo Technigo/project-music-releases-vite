@@ -15,6 +15,9 @@
 }
 
 .hoverIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,8 +28,9 @@
 .dots-icon,
 .favorite-icon,
 .play-icon {
-  color: white; 
   margin-right: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .dots-icon {
@@ -42,6 +46,13 @@
 .play-icon {
   width: 55px;
   height: 55px;
+}
+
+/* Increase size on hover for the play icon */
+.dots-icon:hover,
+.favorite-icon:hover,
+.play-icon:hover {
+  transform: scale(1.1); /* Increases in size by 10% */
 }
 
 /* Keeping the hover over album to 50% brightness as you hover over the icons */
