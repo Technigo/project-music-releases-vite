@@ -201,15 +201,11 @@ img {
   object-fit: contain;
 }
 
-.all-items {
+.hide {
   display: none;
 }
 
-.only-singles {
-  display: grid;
-}
-
-.only-albums {
+.show {
   display: grid;
 }
 
