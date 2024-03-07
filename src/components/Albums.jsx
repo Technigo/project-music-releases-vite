@@ -19,6 +19,7 @@ export const Albums = () => {
     ({ id, name, external_urls, images, artists }) => (
       // Vi behöver omsluta alla dessa element i en div med ett unikt id
       <div className="album-items" key={id}>
+        <AlbumCover images={images[1].url} />
         <AlbumName name={name} external_urls={external_urls.spotify} />
         <AlbumCover images={images[1].url} />
         <ArtistName name={artists[0].name} />
