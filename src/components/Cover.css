@@ -1,0 +1,32 @@
+.cover-image-element {
+  position: relative;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate (-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heart-icon, 
+.dots-icon {
+width: 30px;
+height: 30px;
+filter: invert(1);
+}
+
+.play-icon {
+  width: 45px;
+  height: 45px;
+  filter: invert(1);
+}
