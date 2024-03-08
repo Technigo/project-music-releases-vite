@@ -24,11 +24,13 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Even if many people say it's rather easy this week, I still struggled a bit with using map() on the album component. But luckily, by talking with my teammate we solved the issue together. We didn't really work on the same project together because I don't have as much time as her this week. But we still tried to work together and that makes me feel good and rewarding.
+
+If I have more time, I would work on the stretch goals. 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://yia-music-library.netlify.app/
 
 ## Instructions
 
