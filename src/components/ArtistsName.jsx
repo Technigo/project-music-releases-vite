@@ -9,6 +9,7 @@ export const ArtistsName = ({ artists }) => {
           rel="noopener noreferrer"
         >
           {artist.name}
+          {artistIndex < artists.length - 1 && ", "}
         </a>
       ))}
     </div>
