@@ -13,12 +13,12 @@ export const App = () => {
       albumName={name}
       imgSrc={images[0].url}
       albumUrl={external_urls.spotify}
-      artists={artists.name}
+      artists={artists}
     />
   ));
 
 const renderContent = renderAlbums();
- return (
+return (
   <div className="app">
     <Header />
     <section className="album-section">{renderContent}</section>
