@@ -1,30 +1,33 @@
 import "./Footer.css";
+import instagram from "../../assets/social/instagram.svg";
+import github from "../../assets/social/github.svg";
+import linkedin from "../../assets/social/linkedIn.svg";
 
 export const Footer = () => {
   const socialInfo = [
     {
       id: "linkedin",
       link: "https://www.linkedin.com/in/pernilla-sterner/",
-      icon: "./assets/social-icons/linkedIn.svg",
+      icon: linkedin,
       alt: "Linkedin",
     },
     {
       id: "github",
       link: "https://github.com/pernillasterner",
-      icon: "./assets/social-icons/github.svg",
+      icon: github,
       alt: "GitHub",
     },
     {
       id: "instagram",
       link: "https://www.instagram.com/pernillasterner.se/",
-      icon: "./assets/social-icons/instagram.svg",
+      icon: instagram,
       alt: "Instagram",
     },
   ];
 
   const renderFooter = socialInfo.map((social) => (
-    <a key={social.id} href={social.link}>
-      <img src={social} alt={social.alt} />
+    <a key={social.id} href={social.link} target="__blank">
+      <img src={social.icon} alt={social.alt} />
     </a>
   ));
 

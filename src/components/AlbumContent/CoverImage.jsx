@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
 import { PlayIcons } from "../AlbumContent/PlayIcons";
 
-export const CoverImage = ({ images, typeOfList = "" }) => {
-  console.log(typeOfList);
+export const CoverImage = ({ images, typeOfList }) => {
   const coverImage = {
     imgUrl: images,
     imgAlt: "Cover album image",
@@ -19,5 +18,5 @@ export const CoverImage = ({ images, typeOfList = "" }) => {
 // Expected data type.
 CoverImage.propTypes = {
   images: PropTypes.string.isRequired,
-  typeOfList: PropTypes.string.isRequired,
+  typeOfList: PropTypes.string,
 };
