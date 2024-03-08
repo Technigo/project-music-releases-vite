@@ -15,6 +15,10 @@
     margin: 0 10px 0 10px;
   } */
 
+  .albums {
+    width: 700px;
+  }
+
   .album {
     margin: 0 10px 0 10px;
   }

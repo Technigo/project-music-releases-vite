@@ -12,10 +12,10 @@
   object-fit: scale-down;
 }
 
- .image-container:hover .cover-image img {
+.image-container:hover .cover-image img {
   filter: brightness(50%);
- }
- 
+}
+
 .image-container:hover .icons {
   opacity: 1;
 }
@@ -42,9 +42,13 @@
   display: flex;
 }
 
+/* Play button gets bigger on hover */
+.play-icon img:hover {
+  transform: scale(1.1);
+}
+
 .heart-icon img,
 .play-icon img,
 .dots-icon img {
   filter: brightness(0) invert(1);
 }
-

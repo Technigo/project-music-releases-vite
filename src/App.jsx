@@ -1,5 +1,6 @@
 import data from "./data.json";
 import { Album } from "./components/Album/Album";
+import { Header } from "./components/Common/Header"
 
 console.log(data);
 
@@ -10,6 +11,7 @@ export const App = () => {
   ));
 
   return (
+   /*  <Header /> */
     <div>
       <section className="albums">{renderAlbums}</section>
     </div>

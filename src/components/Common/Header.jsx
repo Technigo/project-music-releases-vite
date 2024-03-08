@@ -1,3 +1,9 @@
+import "./Header.css";
+
 export const Header = () => {
-  return <div>Header</div>;
+  return (
+    <header>
+      <h1> Music Library </h1>
+    </header>
+  )
 };
