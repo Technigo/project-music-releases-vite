@@ -1,5 +1,6 @@
 import { Artist } from "./Artist"
 import { AlbumName } from "./AlbumName"
+import { Cover } from "./Cover";
 
 //get the data *mArray* and "filter" it further down (albums)
 
@@ -15,6 +16,7 @@ export const Album = ({ mArray }) => {
 			{albums.map((newAlbum) => {
 				return (
 					<article className="album" key={newAlbum.id}>
+						<Cover coverInfo={newAlbum}/>
 						<AlbumName albumInfo={newAlbum} />
 						<Artist artistInfo={newAlbum} />
 					</article>
