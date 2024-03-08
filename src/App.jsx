@@ -1,6 +1,6 @@
 import data from "./data.json";
-import { Header } from "./Components/Header.jsx";
-import { Album } from "./Components/Album.jsx";
+import { Header } from "./components/Header.jsx";
+import { Album } from "./components/Album.jsx";
 
 export const App = () => {
   const albums = data.albums.items;

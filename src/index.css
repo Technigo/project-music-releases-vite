@@ -1,15 +1,3 @@
-:root {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: Helvetica;
-}
-
-code {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
-}
-
 body {
   background-color: #000;
   font-family: "Helvetica", Arial, sans-serif;
@@ -54,17 +42,87 @@ header {
   text-decoration: none;
 }
 
+/* adds an underline when the album name is hovered over */
 .album-name:hover {
   text-decoration: underline;
 }
-
+/* adds an underline when the artist name is hovered over */
 .artist-name:hover {
   text-decoration: underline;
   color: #ffffff;
 }
 
-.album .cover-image:hover {
-  filter: brightness(0.4);
+.cover-image {
+  width: 100%;
+}
+
+.cover-image-container {
+  position: relative; /* makes it possible to move around the icons inside the container */
+  display: inline-block;
+}
+
+/* a darker overlay that is invisible until cover-image-container is hovered */
+.cover-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* sets the how dark it is */
+  opacity: 0; /* makes it invisible */
+  transition: opacity 0.3s ease;
+}
+
+/* makes the cover image darker and the overlay visible when the cover-image-container is hovered */
+.cover-image-container:hover::before {
+  opacity: 1;
+}
+
+.heart-icon,
+.play-icon,
+.dots-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); /* centers the icons relative to their own sizes */
+  z-index: 1;
+  filter: invert(100%); /* change the original color (black) to white */
+  opacity: 0.8;
+}
+
+.heart-icon {
+  left: 20%;
+  width: 10%;
+}
+
+.play-icon {
+  left: 50%;
+  width: 25%;
+}
+
+.dots-icon {
+  left: 80%;
+  width: 10%;
+}
+
+.cover-image-container:hover .heart-icon,
+.cover-image-container:hover .play-icon,
+.cover-image-container:hover .dots-icon {
+  display: block;
+}
+
+.cover-image-container .play-icon:hover {
+  width: 32%;
+  opacity: 1;
+}
+
+.cover-image-container .heart-icon:hover {
+  opacity: 1;
+}
+
+.cover-image-container .dots-icon:hover {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
