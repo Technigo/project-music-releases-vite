@@ -135,6 +135,7 @@
 @media (max-width: 1200px) {
   .section__playlist .playlist-items {
     width: 100%;
+    margin-right: 0;
   }
 
   .section__playlist .new-release {
@@ -145,6 +146,7 @@
 @media (max-width: 550px) {
   .section__playlist .playlist-item {
     flex-direction: column;
+    margin-right: 0;
   }
 
   .section__playlist .play-icons-container {
@@ -159,13 +161,18 @@
     margin-top: 20px;
   }
 
+  .section__playlist .playlist-item .play {
+    top: -16px;
+    position: relative;
+  }
+
   .section__playlist .playlist-item .dots,
   .section__playlist .playlist-item .heart {
     position: relative;
-    bottom: 10px;
+    top: -30px;
   }
 
   .section__playlist .playlist-item .dots {
-    bottom: -10px;
+    top: -5px;
   }
 }
