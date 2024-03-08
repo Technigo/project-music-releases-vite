@@ -4,6 +4,7 @@ import play from "../assets/icons/play.svg"
 import dots from "../assets/icons/dots.svg"
 
 export const Cover = ({ coverInfo }) => {
+
     let coverInfoObj = {
         image: coverInfo.images[1].url,  
     }    
@@ -16,5 +17,5 @@ export const Cover = ({ coverInfo }) => {
             <img className="dots-icon" src={dots} alt="dots-icon" />
           </div>
     </div>
-    )
+  )
 }
