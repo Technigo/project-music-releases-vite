@@ -1,37 +1,18 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This weeks assignment was to create a responsive site displaying new album and single releases using React.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We first connected all the files and components and to understand how everything was connected we created a flow-chart in Figma. Then we the components and connected them to the parent. 
+
+Our main problem was understanding the connections between the components and what to import/export/where to use PropType. 
+
+We also experienced som trouble inserting the comma (,) between our artists.
+
+We used pair-programming and also did some asynchronous work partly in branches.
+
+If we had more time we would look into the stretch goals.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
