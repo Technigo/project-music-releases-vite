@@ -9,8 +9,10 @@ export const Cover = ({ coverInfo }) => {
         image: coverInfo.images[1].url,  
     }    
     return (
-        <div className="cover-image-element">
-          <img className="cover" src={coverInfoObj.image} alt="Cover" />
+        <div className="cover-image-wrapper">
+          <div className="cover-image-element">
+            <img className="cover" src={coverInfoObj.image} alt="Cover" />
+          </div>
           <div className="icon-wrapper">
             <img className="heart-icon" src={heart} alt="heart-icon" />
             <img className="play-icon" src={play} alt="play-icon" />
