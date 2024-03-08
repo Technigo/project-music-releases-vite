@@ -1,22 +1,20 @@
 
 export const ArtistName = ({ artists }) => {
- // Check if artists is provided and is an array
- if (!artists || !Array.isArray(artists)) {
-  return <div>No artists found</div>;
+
+return (
+  <div>
+    {artists && artists.length > 0 ? (
+      artists.map((artist) => (
+        <a key={artist.id} className="artist" href={artist.external_urls?.spotify}>
+          <h3>By: {artist.name}</h3>
+        </a>
+      ))
+    ) : (
+      <p>No artists listed for this album.</p>
+    )}
+  </div>
+);
 }
 
-  return (
-    <div>
-     {artists.map(({ external_urls, id, name }) => (
-      <a key={id} className="artist" href={external_urls.spotify}>
-          <h3>By: {name}</h3>
-      </a>
-     ))}
-     </div>
-  );
-};
 
-ArtistName.defaultProps = {
-  albumName :"Name is missing",
-
-}
+//ArtistName component rendered using 'map()' that passes the artists array
