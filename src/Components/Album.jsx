@@ -19,6 +19,10 @@ export const Album = ({ albumName, coverImg, artists, albumUrl }) => {
 	)
 }
 
+//const artistNames = albumData.artists.map((artist) => artist.name).join(', ')
+
+//<h3 key={index}>{name}{index < artistName.length -1 && ", "}</h3>
+
 //Define proptypes
 Album.propTypes = {
 	albumName: PropTypes.string.isRequired,
