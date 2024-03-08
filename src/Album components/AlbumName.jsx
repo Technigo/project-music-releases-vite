@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export const AlbumName = ({ albumName, albumURL }) => {
   return (
-    <div className="album-name">
+    <div className>
       <a href={albumURL} target="_blank" rel="noopener noreferrer">
         {albumName}
       </a>

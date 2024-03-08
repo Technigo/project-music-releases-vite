@@ -7,20 +7,19 @@ import "./Album.css";
 export const Album = ({
   albumName,
   coverImage,
-  artistName,
+  artists,
   albumURL,
-  artistURL,
 }) => {
   return (
     <div className="album-container">
       <div className="image-container">
-        <CoverImage coverImage={coverImage} alt={albumName} />
+        <CoverImage coverImage={coverImage} alt={albumName} albumURL={albumURL}/>
       </div>
       <div className="album-name">
         <AlbumName albumName={albumName} albumURL={albumURL} />
       </div>
-      <div className="artist">
-        <ArtistName artistName={artistName} artistURL={artistURL} />
+      <div className="artist-name">
+        <ArtistName artists={artists} />
       </div>
     </div>
   );
@@ -29,7 +28,7 @@ export const Album = ({
 Album.propTypes = {
   albumName: PropTypes.string.isRequired,
   coverImage: PropTypes.string.isRequired,
-  artistName: PropTypes.string.isRequired,
+  artists: PropTypes.string.isRequired,
   albumURL: PropTypes.any.isRequired,
-  artistURL: PropTypes.any.isRequired,
+
 };

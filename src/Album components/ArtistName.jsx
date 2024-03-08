@@ -1,16 +1,23 @@
 import PropTypes from "prop-types";
 
-export const ArtistName = ({ artistName, artistURL }) => {
+export const ArtistName = ({ artists }) => {
   return (
-    <div className="artist-name">
-      <a href={artistURL} target="_blank" rel="noopener noreferrer">
-        {artistName}
-      </a>
+    <div>
+      {artists.map((artist, index) => (
+        <span className="separator" key={artist.id}>
+          <a href={artist.external_urls.spotify}>{artist.name}</a>
+          {index === artists.length - 2
+            ? " , "
+            : index !== artists.length - 1
+            ? ", "
+            : ""}
+        </span>
+      ))}
     </div>
   );
 };
 
 ArtistName.propTypes = {
-  artistName: PropTypes.string.isRequired,
-  artistURL: PropTypes.any.isRequired,
+  artists: PropTypes.string.isRequired,
+
 };

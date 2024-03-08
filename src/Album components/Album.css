@@ -10,11 +10,17 @@
   width: 100%;
 }
 
+.album-name{
+  font-weight: 700;
+  padding-top: 0.7em;
+}
+
 .album-name a {
+  font-size: 14px;
+  padding: 1em 0;
   text-decoration: none;
   width: 100%;
   text-align: left;
-  line-height: 0;
   color: white;
 }
 
@@ -23,13 +29,16 @@
   cursor: pointer;
 }
 
+.artist-name{
+  padding: 0.4em 0;
+}
+
 .artist-name a {
+  font-size: 14px;
   text-decoration: none;
   width: 100%;
   text-align: left;
-  line-height: 0;
-  padding-bottom: 2em;
-  color: white;
+  color: #a0a0a0;
 }
 
 .artist-name a:hover {
