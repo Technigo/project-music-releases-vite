@@ -102,6 +102,7 @@
 
 .playlist-item .dots,
 .playlist-item .heart {
+  position: relative;
   width: 20px;
 }
 
@@ -138,5 +139,33 @@
 
   .new-release {
     display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .playlist-item {
+    flex-direction: column;
+  }
+
+  .play-icons-container {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playlist-info {
+    margin-top: 20px;
+  }
+
+  .playlist-item .dots,
+  .playlist-item .heart {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .playlist-item .dots {
+    bottom: -10px;
   }
 }
