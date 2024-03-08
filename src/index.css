@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   background-color: #000;
-  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,8 +29,9 @@ body {
 
 .album, .music-card {
   position: relative;
-  width: calc(33.333% - 20px);
+  width: calc(25% - 20px);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .cover-image img {
@@ -43,6 +43,8 @@ body {
 .album-name, .artist-name {
   text-align: center;
   margin: 5px 0;
+  color: #ffffff;
+
 }
 
 .album-name a, .artist-name a {
