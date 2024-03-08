@@ -1,13 +1,135 @@
-:root {
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Helvetica, sans-serif;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Header */
+.header {
+  font-size: 30px;
+  margin: 0 20px 5px;
+  text-align: center;
+  color: white;
+}
+
+/* Album */
+.album-list, .music-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.album, .music-card {
+  position: relative;
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.album-name, .artist-name {
+  text-align: center;
+  margin: 5px 0;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+.album-name, .album-name a {
+  text-align: center;
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.artist-name, .artist-name a {
+  text-align: center;
+  margin: 5px 0;
+  color: #a0a0a0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.album-name a, .artist-name a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.album-name a:hover, .artist-name a:hover {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.album:hover .buttons, .music-card:hover .buttons {
+  opacity: 1;
+}
+
+.play-button, .favorite-button, .more-button {
+  width: 48px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.play-button {
+  background-image: url('./assets/icons/play.svg');
+}
+
+.favorite-button {
+  background-image: url('./assets/icons/heart.svg');
+}
+
+.more-button {
+  background-image: url('./assets/icons/dots.svg');
+}
+
+.play-button:hover {
+  transform: scale(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .album, .music-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .album, .music-card {
+    width: 100%;
+  }
 }
