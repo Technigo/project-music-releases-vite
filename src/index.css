@@ -19,8 +19,8 @@ body {
 .album {
   display: flex;
   flex-direction: column;
-  /* width: 390px;
-  margin: 15px; */
+  width: 100%;
+  margin: 15px;
   box-sizing: border-box;
 }
 .album-container {
@@ -73,12 +73,34 @@ h2 {
   color: white;
   padding-left: 2%;
 }
-/* here our code for tablet 👇🏻 */
+
 /* here our code for desktop 👇🏻 */
 @media (min-width: 1025px) {
   .album {
-    width: 390px;
+    width: 20%;
     margin: 15px;
+  }
+  .albumName a {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .artistName a {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 2em;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+/* here our code for tablet 👇🏻 */
+@media (min-width: 669px) and (max-width: 1024px) {
+  .album {
+    width: 40%;
+    margin: 5px;
   }
   .albumName a {
     font-weight: 700;
