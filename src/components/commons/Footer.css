@@ -1,12 +1,12 @@
 footer {
   max-width: 2000px;
   margin: 0 auto;
-  height: 200px;
+  padding: var(--general-padding);
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--clr-primary);
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 footer a {
@@ -18,4 +18,8 @@ footer a {
 footer a:hover {
   opacity: 1;
   scale: calc(1.1);
+}
+
+footer img {
+  width: 50px;
 }
