@@ -1,10 +1,14 @@
 /* Header styling */
-/* header {
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  text-align: center;
-} */
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(to right, #09f1b8, #00a2ff,#ff00d2,  #fed90f);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
 
 /* Header div styling  */
 .content {
@@ -20,10 +24,14 @@ body {
   background-color: #242424;
 }
 
-/* main{
-  display: grin;
-  grid-template-columns: 1fr 4fr;
-} */
+/*layout of main (sidebar and album-card)*/
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content:center;
+}
+
 /* App layout */
 .album-card {
   display: grid;
@@ -31,7 +39,13 @@ body {
   gap: 1rem;
   max-width: 1300px; /* Might have to remove, find another solution */
   margin: auto; /* Might have to remove, find another solution */
+  margin-right: 40px;
+  padding-right: 40px;
 } 
+
+
+
+
 
 /* Media query for phone and tablets */
 /* This will automatically show 1 column for smaller screens like phones */

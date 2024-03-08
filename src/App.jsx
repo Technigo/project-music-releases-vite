@@ -27,6 +27,9 @@ export const App = () => {
     <>
       <Header />
       <main>
+        <div className="side-bar">
+        <Sidebar />
+      </div>
         <div className="album-card">
         {albumDatas.map((albumData) => (
           <Album key={albumData.id} albumData={albumData} />
@@ -43,9 +46,7 @@ export const App = () => {
           //console.log(albumData.artists[0].external_urls) -> artist's link
         ))}
       </div>
-      <div className="side-bar">
-        <Sidebar />
-      </div>
+      
       </main>
       
     </>
