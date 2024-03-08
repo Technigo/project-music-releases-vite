@@ -14,17 +14,21 @@ export const Header = ({ sortOnClick }) => {
   return (
     <div className="header">
       <Sidebar />
-      <h1>Moon Music</h1>
-      <label className="switch">
-        <input
-          type="checkbox"
-          onChange={() => {
-            ToggleClass();
-            sortOnClick();
-          }}
-        ></input>
-        <span className={isActive ? "slider round animate" : "slider round"}></span>
-      </label>
+      <div className="title-and-button">
+        <h1>Moon Music</h1>
+        <label className="switch">
+          <input
+            type="checkbox"
+            onChange={() => {
+              ToggleClass();
+              sortOnClick();
+            }}
+          ></input>
+          <span
+            className={isActive ? "slider round animate" : "slider round"}
+          ></span>
+        </label>
+      </div>
     </div>
   );
 };

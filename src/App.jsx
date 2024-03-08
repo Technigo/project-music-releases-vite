@@ -25,7 +25,7 @@ export const App = () => {
       <div
         className={isSorted ? "show album-collection" : "hide album-collection"}
       >
-        <div className="album album-type">
+        <div className="album-type">
           <h2>Albums</h2>
         </div>
         {SortAlbums()}
@@ -33,7 +33,7 @@ export const App = () => {
       <div
         className={isSorted ? "show album-collection" : "hide album-collection"}
       >
-        <div className="album album-type">
+        <div className="album-type">
           <h2>Singles</h2>
         </div>
         {SortSingles()}

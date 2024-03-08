@@ -31,16 +31,15 @@ h2 {
 .sidebar-btn {
   background-color: inherit;
   border: none;
-  padding: 0;
   font-size: 20px;
-  position: fixed;
+  /* position: fixed;
   top: 21px;
-  left: 40px;
+  left: 3px; */
   cursor: pointer;
 }
 
 .animate-sidebar {
-  color:#181818;
+  color: #181818;
   animation-name: blink-music;
   animation-iteration-count: infinite;
   animation-delay: 7s;
@@ -104,6 +103,7 @@ h1 {
   margin: 0;
   padding: 1rem;
   text-align: center;
+  font-size: 30px;
 }
 
 /* Overlay */
@@ -216,10 +216,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-self: center;
   background-color: #fedb5a;
   border-radius: 100px;
-  width: 100%;
   padding: 20px;
   margin: 0;
 }
@@ -238,8 +236,7 @@ img {
   .album-type {
     border-radius: 100px 0 0 100px;
     width: 100%;
-    padding: 20px;
-    margin: 0;
+    justify-content: none;
   }
 }
 
