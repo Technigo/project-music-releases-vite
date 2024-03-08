@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { AlbumName } from "./AlbumName";
 import { CoverImage } from "./CoverImage";
 import { ArtistName } from "./ArtistName";
+import "./Album.css";
 
 export const Album = ({ albumName, image, artists, url }) => {
   return (

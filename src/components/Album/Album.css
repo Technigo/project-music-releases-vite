@@ -1,0 +1,32 @@
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 70px; */
+  justify-content: center;
+}
+
+.album {
+  margin: 0 20px 0 20px;
+}
+
+/* Media Queries for tablet */
+@media screen and (min-width: 667px) {
+  /* .albums {
+    margin: 0 10px 0 10px;
+  } */
+
+  .album {
+    margin: 0 10px 0 10px;
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1024px) {
+  /* .albums {
+      margin: 0 10px 0 10px;
+    } */
+
+  .album {
+    margin: 0;
+  }
+}
