@@ -1,15 +1,21 @@
 import data from "./data.json";
 import { Header } from "./components/Header";
 import { Album } from "./components/Album";
+import {Sidebar} from "./components/Sidebar";
+
+
 // console.log(data);
 // console.log(data.albums.items[0].name)//album name
 // console.log(data.albums.items[0].artists[0].name)
 // console.log(data.albums.items[0].images[1].url)
 
+
 export const App = () => {
   // const {name} = data;
   // console.log(name);
   const albumDatas = data.albums.items;
+
+  
 
   // const albumName = albumData.albums.items.name //items is an array
   console.log(albumDatas);
@@ -20,7 +26,11 @@ export const App = () => {
   return (
     <>
       <Header />
-      <div className="album-card">
+      <main>
+        <div className="side-bar">
+        <Sidebar />
+      </div>
+        <div className="album-card">
         {albumDatas.map((albumData) => (
           <Album key={albumData.id} albumData={albumData} />
 
@@ -36,6 +46,9 @@ export const App = () => {
           //console.log(albumData.artists[0].external_urls) -> artist's link
         ))}
       </div>
+      
+      </main>
+      
     </>
   );
 };
