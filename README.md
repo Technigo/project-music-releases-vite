@@ -16,3 +16,4 @@ If we had more time we would look into the stretch goals.
 
 ### View it live
 
+https://musicreleaseproject-react.netlify.app/
