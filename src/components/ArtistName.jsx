@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export const ArtistName = ({ artistList }) => {
   return (
     <div className="artist-name-list">
@@ -20,4 +21,8 @@ export const ArtistName = ({ artistList }) => {
         ])}
     </div>
   );
+};
+
+ArtistName.propTypes = {
+  artistList: PropTypes.array.isRequired,
 };
