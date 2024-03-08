@@ -22,7 +22,9 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+No bigger issues during this week's project, but I encountered a few challenges in keeping the code DRY. I am really pleased with the outcome and the overall appearance of the app.
+
+If I had more time, I would try fetching data from the Spotify API to make the app even more dynamic.
 
 ### View it live
 

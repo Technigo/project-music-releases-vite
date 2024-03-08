@@ -7,8 +7,8 @@
 }
 
 :root {
-  --clr-primary: #090a25;
-  --clr-secondary: #06061b;
+  --clr-primary: #000;
+  --clr-secondary: #111;
 
   --clr-artist-title: #a0a0a0;
   --clr-primary-dark: #101115;
@@ -22,7 +22,7 @@
   --clr-text: #333;
   --clr-red-light: hsl(360, 71%, 66%);
 
-  --radius: 1.5rem;
+  --radius: 0.5rem;
   --general-large-padding: 100px;
   --general-padding: 35px;
   --general-smaller-padding: 20px;
@@ -99,4 +99,10 @@ a {
 img {
   width: 100%;
   display: block;
+}
+
+@media (max-width: 1400px) {
+  main {
+    padding: 0 1.5em;
+  }
 }

@@ -1,8 +1,21 @@
 .section__album {
   margin-top: 50px;
+}
+
+.single-container,
+.album-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 20px;
+}
+
+.single-wrapper,
+.album-wrapper {
+  margin-top: 100px;
+}
+
+.album__list .coverImage img {
+  border-radius: var(--radius);
 }
 
 .section__album .album-title,
@@ -14,7 +27,7 @@
   padding-bottom: 1px;
   border-bottom: 2px solid transparent;
   display: block;
-  margin-top: 10px;
+  margin: 10px 0 5px;
 }
 
 .section__album .album-title {
@@ -23,14 +36,11 @@
   color: var(--clr-white);
 }
 
-.section__album .artist-name {
+.section__album .artist-name,
+.section__album .separator {
   font-size: 14px;
   color: var(--clr-artist-title);
   display: inline;
-}
-
-.separator {
-  color: var(--clr-artist-title);
 }
 
 .section__album .artist-name:hover,
@@ -50,6 +60,7 @@
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius);
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -60,17 +71,20 @@
   opacity: 1;
 }
 
-.section__album .coverImage:hover .play-icon {
-  display: block;
+.section__album .coverImage:hover .play-icons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.section__album .coverImage .play-icons-container {
+  display: none;
+  position: absolute;
 }
 
 .section__album .coverImage .play-icon {
-  display: none;
-  cursor: pointer;
-  width: 30px;
   filter: invert(80%);
-  position: absolute;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .section__album .coverImage .play-icon:hover {
@@ -78,29 +92,32 @@
   filter: invert(100%);
 }
 
-.section__album .coverImage .play {
-  width: 70px;
-  z-index: 100;
+.section__album .coverImage .play-icon {
+  margin: 0 20px;
+  width: 60px;
 }
 
-.section__album .coverImage .dots {
-  right: 100px;
-}
-
+.section__album .coverImage .dots,
 .section__album .coverImage .heart {
-  left: 100px;
+  width: 30px;
 }
 
 /* Tablet: Adjust grid to have 2 columns */
-@media (max-width: 1600px) {
-  .section__album {
+@media (max-width: 1400px) {
+  .album-container,
+  .single-container {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  .section__album .coverImage .play-icon {
+    margin: 0 15px;
   }
 }
 
 /* Mobile: Adjust grid to have 1 column */
-@media (max-width: 640px) {
-  .section__album {
+@media (max-width: 740px) {
+  .album-container,
+  .single-container {
     grid-template-columns: repeat(1, minmax(100px, 1fr));
   }
 }

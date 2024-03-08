@@ -1,13 +1,17 @@
-import { Album } from "./components/Album";
+import { AlbumList } from "./components/AlbumList/AlbumList";
 import { Hero } from "./components/Hero/Hero";
-import { Playlist } from "./components/Playlist";
+import { PlayList } from "./components/PlayList/PlayList";
+import { Footer } from "./components/commons/Footer";
 
 export const App = () => {
   return (
-    <main>
-      <Hero />
-      <Playlist />
-      <Album />
-    </main>
+    <>
+      <main>
+        <Hero />
+        <PlayList />
+        <AlbumList />
+      </main>
+      <Footer />
+    </>
   );
 };

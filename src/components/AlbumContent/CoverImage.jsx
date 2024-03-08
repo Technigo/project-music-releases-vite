@@ -1,7 +1,8 @@
-import { PlayIcons } from "./PlayIcons";
 import PropTypes from "prop-types";
+import { PlayIcons } from "../AlbumContent/PlayIcons";
 
-export const CoverImage = ({ images }) => {
+export const CoverImage = ({ images, typeOfList = "" }) => {
+  console.log(typeOfList);
   const coverImage = {
     imgUrl: images,
     imgAlt: "Cover album image",
@@ -9,8 +10,8 @@ export const CoverImage = ({ images }) => {
 
   return (
     <div className="coverImage">
-      <PlayIcons />
       <img src={coverImage.imgUrl} alt="Cover album image" />
+      {typeOfList && typeOfList === "album" && <PlayIcons />}
     </div>
   );
 };
@@ -18,4 +19,5 @@ export const CoverImage = ({ images }) => {
 // Expected data type.
 CoverImage.propTypes = {
   images: PropTypes.string.isRequired,
+  typeOfList: PropTypes.string.isRequired,
 };
