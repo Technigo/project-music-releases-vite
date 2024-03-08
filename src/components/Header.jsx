@@ -3,10 +3,10 @@ import { Sidebar } from "./header-components/Sidebar";
 import PropTypes from "prop-types";
 
 export const Header = ({ sortOnClick }) => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState("unclicked");
   // Makes a one-time toggle. To turn of animations when the user has noticed button.
   const ToggleClass = () => {
-    if (isActive === "false") {
+    if (isActive === "unclicked") {
       setActive(!isActive);
     }
   };

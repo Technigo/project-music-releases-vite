@@ -24,10 +24,10 @@ export const Sidebar = () => {
     });
   };
 
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState("unclicked");
   // Makes a one-time toggle. To turn of animations when the user has noticed button.
   const ToggleClass = () => {
-    if (isActive === "false") {
+    if (isActive === "unclicked") {
       setActive(!isActive);
     }
   };
@@ -37,8 +37,8 @@ export const Sidebar = () => {
       <button
         className={isActive ? "sidebar-btn animate-sidebar" : "sidebar-btn"}
         onClick={() => {
-          openNav()
-          ToggleClass()
+          openNav();
+          ToggleClass();
         }}
       >
         <i className="fa-solid fa-music fa-xl"></i>
@@ -47,7 +47,11 @@ export const Sidebar = () => {
         <button className="close-btn" onClick={closeNav}>
           <i className="fa-solid fa-xmark fa-xl"></i>
         </button>
-        <ul className="playlist">{renderPlaylist}</ul>
+
+        <ul className="playlist">
+          <h2>Editor&apos;s Choice</h2>
+          {renderPlaylist}
+        </ul>
       </nav>
     </div>
   );
