@@ -16,56 +16,55 @@ code {
 body {
   margin: 0;
 }
-
-/* here our code 👇🏻 */
 .album {
   display: flex;
   flex-direction: column;
-  width: 390px;
-  margin: 15px;
+  /* width: 390px;
+  margin: 15px; */
   box-sizing: border-box;
+}
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #191b1b;
 }
 .albumName a {
   text-decoration: none; /*remove underline by default*/
   font-family: Helvetica;
-  font-weight: 700;
-  font-size: 14px;
+  /* font-weight: 700;
+  font-size: 14px; */
   color: white;
 }
-
 .albumName a:hover {
   text-decoration: underline;
 }
-
 .albumName {
   padding-top: 10px;
 }
 .artistName a {
   text-decoration: none; /*remove underline by default*/
-  font-family: Helvetica Neue;
-  font-size: 14px;
+  font-family: Helvetica;
+  /* font-size: 14px; */
   color: #a0a0a0;
 }
-
 .artistName a:hover {
   text-decoration: underline;
 }
-
 .artistName {
   padding-top: 10px;
 }
-
 .header {
   color: white;
   text-align: center;
   font-family: Helvetica;
   font-weight: 700;
-  font-size: 2em;
+  /* font-size: 2em; */
   text-align: center;
 }
 p {
   font-family: Helvetica;
-  font-size: 12px;
+  /* font-size: 12px; */
   color: #a0a0a0;
   margin: 0;
   padding: 10px 0 0;
@@ -73,4 +72,27 @@ p {
 h2 {
   color: white;
   padding-left: 2%;
+}
+/* here our code for tablet 👇🏻 */
+/* here our code for desktop 👇🏻 */
+@media (min-width: 1025px) {
+  .album {
+    width: 390px;
+    margin: 15px;
+  }
+  .albumName a {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .artistName a {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 2em;
+  }
+  p {
+    font-size: 12px;
+  }
 }
