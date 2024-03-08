@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Here we fixed the comma, and space for the two artist on one album. https://markheath.net/post/css-comma-separated-list*/
+
+.artist::after {
+  content: ", ";
+}
+
+.artist:last-child::after {
+  content: "";
+}
