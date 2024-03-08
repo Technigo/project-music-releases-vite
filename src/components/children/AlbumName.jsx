@@ -5,4 +5,6 @@ export const AlbumName = ({ name, external_urls }) => {
       {name} 
     </a></div>
   );
-};
+ 
+  }
+

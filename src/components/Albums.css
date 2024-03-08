@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  
 }
 
 .album-items {
@@ -9,6 +10,19 @@
   height: 300px;
   background-color: Black;
   border-radius:20px;
+  position: relative;
+  margin-bottom:40px;
+}
+
+.album-items:hover::before {
+content:"";
+width:100%;
+height:100%;
+background-color:black;
+position: absolute;
+z-index:100;
+border-radius:20px;
+opacity: .5;
 }
 
 /* Cover Image & Play icons */
@@ -23,6 +37,8 @@
   position: absolute;
   display: flex;
   filter: invert(100);
+  z-index:200;
+  opacity: .5;
 }
 
 .play-icons .icon {
@@ -41,28 +57,19 @@
 }
 
 .album-cover {
-
   border-radius: 20px;
 }
-/* Darken opacity when hovering*/
-.album-cover {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+
+.a-links {
+  margin-top:10px;
+  margin-bottom:4px;
+  font-weight: 700;
+  font-stretch:semi-condensed
+  /*-webkit-transform: scaleX(0.9);
+  transform: scaleX(0.9);*/ 
 
 }
-.album-cover:hover {
-	opacity: .5;
-}
-
-
-
-
-
 
 .a-links:hover {
   text-decoration: underline;
-  
-}
-
-
+ }

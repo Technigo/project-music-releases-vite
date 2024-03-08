@@ -2,7 +2,6 @@ import "./Albums.css";
 import data from "../data/albums.json";
 import { AlbumName } from "./children/AlbumName";
 import { ArtistName } from "./children/ArtistName";
-
 import { AlbumCover } from "./children/AlbumCover";
 
 export const Albums = () => {
