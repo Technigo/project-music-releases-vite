@@ -23,7 +23,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  margin: 2rem;
 }
 
 /*Album-styling*/
@@ -31,38 +31,47 @@ h1 {
   font-size: 14px;
   color: #ffffff;
   position: relative;
-  top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Styling for cover image and icons*/
 .icons {
-  opacity: 0;
   position: absolute;
   z-index: 1;
-  bottom: 200px;
-  display: flex;
+  bottom: 170px;
   justify-content: space-evenly;
   align-items: center;
   width: 300px;
+  height: 100px;
   filter: invert(100%);
+  cursor: pointer;
+  display: none;
 }
 
 .coverImage:hover .icons {
-  opacity: 0.4;
+  display: flex;
 }
 
 .coverImage:hover .albumCoverImage {
-  opacity: 0.4;
+  filter: brightness(0.4);
 }
 
 /*Styling for all icons*/
 .icon {
   height: 30px;
+  opacity: 0.4;
+}
+
+.icon:hover {
+  opacity: 1;
 }
 
 /*Styling for play-icon*/
 .play {
-  height: 75px;
+  height: 80px;
 }
 
 .play:hover {
@@ -72,6 +81,7 @@ h1 {
 /*Album name-styling*/
 .albumName {
   margin-bottom: 6px;
+  width: 300px;
 }
 
 .albumName a {
@@ -86,6 +96,7 @@ h1 {
 /*Artists-styling*/
 .artistName {
   display: flex;
+  width: 300px;
 }
 
 .artistName p {
@@ -117,13 +128,25 @@ h1 {
 
 /*Change how many albums are displayed for different screens*/
 @media (min-width: 668px) and (max-width: 1024px) {
-  /* .albumSection {
+  .albumSection {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-  } */
+    margin: 15px;
+  }
+
+  .album {
+    margin: 15px;
+  }
 }
 
 @media (min-width: 1025px) {
-  /* .albumSection {
+  .albumSection {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  } */
+    margin: 10px;
+  }
+  
+  .album {
+    margin: 10px;
+  }
 }

@@ -3,14 +3,13 @@ import PropTypes from "prop-types";
 export const ArtistName = ({ artists, }) => {
   return ( 
     <div className="artistName">
-    {artists.map(({ id, name, external_urls }) => (
-      <p key={id}>
+      {artists.map(({ id, name, external_urls }) => (
+        <p key={id}>
           <a  href={external_urls.spotify}>
-             {name} 
+            {name} 
           </a> 
-      </p>
-    ))
-    }
+        </p>
+      ))}
     </div>
   );
 };
