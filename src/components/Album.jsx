@@ -17,7 +17,7 @@ export const Album = ({ mArray }) => {
 			{albums.map((newAlbum) => {
 				return (
 					<article className="album" key={newAlbum.id}>
-						<Cover coverInfo={newAlbum}/>
+						<Cover coverInfo={newAlbum} />
 						<AlbumName albumInfo={newAlbum} />
 						<Artist artistInfo={newAlbum} />
 					</article>
