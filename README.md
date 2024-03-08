@@ -1,37 +1,11 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
-Replace this readme with your own information about your project.
+This project entails building a responsive React web application that displays music album releases, mimicking a user experience similar to browsing on Spotify. It focuses on component-based architecture, utilizing React for UI development, and includes features like hover effects and external routing to album and artist pages.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The challenge was to efficiently structure and style the application to match provided design sketches closely, ensuring responsiveness across devices. It involved handling data from a JSON file, implementing React components and state management, and creating interactive UI elements.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
