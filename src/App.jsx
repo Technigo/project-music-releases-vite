@@ -1,4 +1,5 @@
 import { Album } from "./components/Album";
+import { Header } from "./components/Header";
 import data from "./data.json";
 
 export const App = () => {
@@ -6,7 +7,7 @@ export const App = () => {
 
   const renderAlbums = albums.items.map(
     ({ name, artists, images, external_urls, id }) => (
-      <div className="wrapper" key={id}>
+      <div key={id}>
         <Album
           albumName={name}
           artists={artists}
@@ -16,5 +17,10 @@ export const App = () => {
       </div>
     )
   );
-  return <section className="Container">{renderAlbums}</section>;
+  return (
+    <>
+      <Header />
+      <section className="Container">{renderAlbums}</section>;
+    </>
+  );
 };

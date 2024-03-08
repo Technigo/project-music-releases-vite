@@ -1,3 +1,5 @@
+import { CoverButtons } from "./CoverButtons";
+
 export const CoverImage = ({ coverImage }) => {
   const largeImage = coverImage[0];
   const mediumImage = coverImage[1];
@@ -8,9 +10,9 @@ export const CoverImage = ({ coverImage }) => {
         sizes="(max-width: 1024px) 300px,
          640px"
         src={mediumImage.url}
-        alt="Cover image"
+        alt="album cover image"
       />
-      <div className="CoverButtons fade">Test test test</div>
+      <CoverButtons />
     </div>
   );
 };

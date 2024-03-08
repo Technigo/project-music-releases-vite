@@ -5,8 +5,8 @@ export const ArtistsName = ({ artists }) => {
         <a
           key={artistIndex}
           href={artist.external_urls.spotify}
-          target="_blank"
-          rel="noopener noreferrer"
+          target="_blank" // Opens in new tab
+          rel="noopener noreferrer" // Provides more safety
         >
           {artist.name}
           {artistIndex < artists.length - 1 && ", "}

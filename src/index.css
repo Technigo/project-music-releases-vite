@@ -16,11 +16,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/*
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}*/
+
+h1 {
+  font-size: 25px;
+}
+
+header {
+  color: #1db954;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-family: "Signika";
+}
+
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .ImageWrapper {
   margin: 0;
@@ -39,8 +55,7 @@ code {
   transition: 200ms ease-in-out;
 }
 
-.CoverButtons {
-  color: aqua;
+.CoverButtonsDiv {
   position: absolute;
   inset: 0;
   background: rgb(0, 0, 0, 0.4);
@@ -48,6 +63,25 @@ code {
   justify-content: center;
   align-items: center;
   transition: 200ms ease-in-out;
+  gap: 50px;
+}
+
+.CoverButton {
+  background: 0;
+  filter: invert(80%);
+  height: 30px;
+}
+
+.CoverButton:hover {
+  filter: invert(1);
+}
+
+.PlayButton {
+  height: 90px;
+}
+
+.PlayButton:hover {
+  height: 105px;
 }
 
 .fade {
@@ -57,12 +91,7 @@ code {
 .Container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem 1rem;
-}
-
-img {
-  padding: 0;
-  margin: 0;
+  gap: 3rem;
 }
 
 .AlbumCard {
@@ -70,20 +99,20 @@ img {
   flex-direction: column;
 }
 
-a {
-  text-decoration: none;
-  color: #d9d9d9;
-  letter-spacing: 1px;
-}
-
 .ArtistName {
   width: 100%;
-  max-width: 240px;
+}
+
+.ArtistName a {
+  color: #6c757d;
+}
+
+.ArtistName a:hover {
+  color: white;
 }
 
 .AlbumName {
   width: 100%;
-  max-width: 240px;
   margin: 10px 0 5px 0;
 }
 
@@ -92,7 +121,7 @@ a {
   font-weight: 600;
 }
 
-/*****Tablet*****/
+/***** Tablet *****/
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .Container {
@@ -106,8 +135,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 50px 0 50px;
   }
-
-  img {
-    width: 100%;
+  h1 {
+    font-size: 30px;
   }
 }
