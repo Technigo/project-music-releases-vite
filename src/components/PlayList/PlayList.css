@@ -133,21 +133,21 @@
 }
 
 @media (max-width: 1200px) {
-  .playlist-items {
+  .section__playlist .playlist-items {
     width: 100%;
   }
 
-  .new-release {
+  .section__playlist .new-release {
     display: none;
   }
 }
 
 @media (max-width: 550px) {
-  .playlist-item {
+  .section__playlist .playlist-item {
     flex-direction: column;
   }
 
-  .play-icons-container {
+  .section__playlist .play-icons-container {
     position: absolute;
     right: 0px;
     top: 40px;
@@ -155,17 +155,17 @@
     align-items: center;
   }
 
-  .playlist-info {
+  .section__playlist .playlist-info {
     margin-top: 20px;
   }
 
-  .playlist-item .dots,
-  .playlist-item .heart {
+  .section__playlist .playlist-item .dots,
+  .section__playlist .playlist-item .heart {
     position: relative;
     bottom: 10px;
   }
 
-  .playlist-item .dots {
+  .section__playlist .playlist-item .dots {
     bottom: -10px;
   }
 }
