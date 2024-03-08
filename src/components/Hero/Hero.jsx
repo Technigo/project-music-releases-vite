@@ -2,7 +2,7 @@ import "./Hero.css";
 import { albums } from "../../data/albums.json";
 
 export const Hero = () => {
-  const { id, images, artists } = albums.items[10];
+  const { id, images, artists } = albums.items[7];
 
   return (
     <div className="hero-container" key={id}>
