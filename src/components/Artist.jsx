@@ -18,7 +18,7 @@ export const Artist = ({ artistInfo }) => {
         target={artistInfoObj.target}
         rel={artistInfoObj.rel}
       >
-        <h1>{artistInfoObj.name}</h1>
+        <h3>{artistInfoObj.name}</h3>
       </a>
     </div>
   )

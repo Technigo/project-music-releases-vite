@@ -1,5 +1,6 @@
 export const AlbumName = ({ albumInfo }) => {
   let albumInfoObj = {
+    type: albumInfo.album_type,
     title: albumInfo.name,
     url: albumInfo.external_urls.spotify,
     target: "_blank", //open url i new window
@@ -8,9 +9,10 @@ export const AlbumName = ({ albumInfo }) => {
   }
 
   // Take note of us using albumInfo for getting the data for Albumname - who we use to add all info for album in an album object, and then pass the properties to elements as div, a, h2 etc
-  console.log("newAlbum ", albumInfoObj);
   console.log("newAlbum ", albumInfoObj.url);
+  console.log("TYPE", albumInfoObj.type)
   return (
+
     <div className={albumInfoObj.class}>
       <a
         href={albumInfoObj.url}

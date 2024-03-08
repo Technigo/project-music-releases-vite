@@ -9,14 +9,17 @@
 	padding: 10px;
 }
 
-h2{
+h3{
 	margin:10px 0 0 0;
-	color: #fff;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 200;
 }
 
-h1 {
+h2 {
 	margin:3px 0 0 0;
-	color: #a0a0a0;
+	color: #fff;
+	font-size: 14px;
 }
 
 /* links */
@@ -34,11 +37,11 @@ a:focus-visible {
 }
 
 .albumTitle a:hover {
-	text-decoration: underline 1.5px #fff;
+	text-decoration: underline 1.3px #fff;
 	}
 
 .artistTitle a:hover {
-	text-decoration: underline 1.5px #696969;
+	text-decoration: underline 1.3px #696969;
 }
 
 

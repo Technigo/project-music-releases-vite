@@ -41,19 +41,20 @@ filter: invert(0.8);
 
 .heart-icon:hover,
 .dots-icon:hover {
+  transform: scale(1.1);
   filter: invert(1.2);
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
 
 .play-icon {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   filter: invert(0.8);
 }
 
 .play-icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   filter: invert(1.2);
   transition: all 0.2s ease-in;
   cursor: pointer;
