@@ -4,14 +4,6 @@
   align-items: center;
 }
 
-.cover-image {
-  max-width: 280px;
-}
-.cover-image img {
-  width: 270px;
-  object-fit: scale-down;
-}
-
 .image-container:hover .cover-image img {
   filter: brightness(50%);
 }
