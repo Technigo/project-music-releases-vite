@@ -32,12 +32,16 @@
   right: 0;
   bottom: 0;
   background-color: #181818;
-  animation-name: blink;
-  animation-iteration-count: infinite;
-  animation-delay: 6s;
-  animation-duration: 20s;
   -webkit-transition: var(--transition-speed);
   transition: var(--transition-speed);
+}
+
+.animate {
+  background-color: #181818;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 20s;
 }
 
 .slider:before {
