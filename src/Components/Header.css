@@ -1,8 +1,4 @@
 .header {
   color: #ffffff;
-  /*Tror inte vi behöver flex column här eftersom vi bara har 1 sak i headern :)*/
-
-  display: flex;
-  flex-direction: column;
   text-align: center;
 }
