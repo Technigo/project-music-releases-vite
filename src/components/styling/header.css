@@ -1,0 +1,41 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  padding: 2rem;
+  font-size: 48px;
+  color: beige;
+}
+
+.nav-wrapper{
+  padding-left: 2rem;
+}
+
+
+.type-btn {
+  font-size: 14px;
+  position: relative;
+  top: 50%;
+  background-color: rgba(44, 41, 41, 0.6);
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  margin: 5px;
+  min-height: 30px;
+  min-width: 40px;
+}
+
+.type-btn:hover {
+  background-color: rgba(44, 41, 41);
+  cursor: pointer;
+}
+
+.type-btn:focus {
+  background-color: #ffffff;
+  color: rgba(44, 41, 41);
+}
+
+
