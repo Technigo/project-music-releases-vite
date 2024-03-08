@@ -24,9 +24,23 @@ export const Sidebar = () => {
     });
   };
 
+  const [isActive, setActive] = useState("false");
+  // Makes a one-time toggle. To turn of animations when the user has noticed button.
+  const ToggleClass = () => {
+    if (isActive === "false") {
+      setActive(!isActive);
+    }
+  };
+
   return (
     <div className="sidebar">
-      <button className="sidebar-btn" onClick={openNav}>
+      <button
+        className={isActive ? "sidebar-btn animate-sidebar" : "sidebar-btn"}
+        onClick={() => {
+          openNav()
+          ToggleClass()
+        }}
+      >
         <i className="fa-solid fa-music fa-xl"></i>
       </button>
       <nav style={style} className="sidebar-menu">

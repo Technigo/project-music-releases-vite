@@ -37,12 +37,15 @@ h2 {
   top: 21px;
   left: 40px;
   cursor: pointer;
+}
 
+.animate-sidebar {
+  color:#181818;
   animation-name: blink-music;
   animation-iteration-count: infinite;
-  animation-delay: 10s;
-  animation-direction: alternate;
-  animation-duration: 10s;
+  animation-delay: 7s;
+  animation-direction: alternate-reverse;
+  animation-duration: 5s;
 }
 
 .sidebar-btn:hover {
