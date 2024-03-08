@@ -1,0 +1,57 @@
+h1.albumTitle {
+	color: #fff;
+}
+
+h2.artistTitle {
+	color: #a0a0a0;
+
+}
+
+
+/* interaction and transitions */
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #a0a0a0;
+}
+
+a:active {
+	text-decoration: none;
+	color: #a0a0a0;
+}
+
+a:focus-visible {
+	outline: 3px solid #a0a0a0;
+	color: #fff;
+
+}
+
+a:hover {
+	text-decoration: solid 3px #696969;
+}
+
+.artistTitle:hover {
+	text-decoration: solid 3px #696969;
+}
+
+.artistTitle h1 {
+	color: #a0a0a0;
+}
+
+ß
+/*
+h2.albumTitle.text :link, visited{
+	color:#fff;
+}
+
+*/
+/*
+albumTitle a:hover{
+	text-decoration: solid 3px #696969;
+}
+*/
