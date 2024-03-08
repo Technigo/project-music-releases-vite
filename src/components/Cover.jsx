@@ -1,4 +1,4 @@
-import "./cover.css"
+import "./styling/cover.css"
 import heart from "../assets/icons/heart.svg"
 import play from "../assets/icons/play.svg"
 import dots from "../assets/icons/dots.svg"

@@ -1,7 +1,7 @@
 import { Header } from "./components/Header.jsx";
 import { Album } from "./components/Album.jsx";
 import data from "./data.json";
-import "./app.css"
+import "./components/styling/app.css"
 
 console.log("json ;", data);
 //pass json data to  *mArray* in Album
