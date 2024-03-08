@@ -15,9 +15,11 @@ export const ArtistName = ({ artists }) => {
             target="_blank"
             rel="noreferrer noopener">
             <h3>
-              {artist.name}
-              {index < artists.length - 2 && (multipleArtists ? " & " : "")}
-              {index === artists.length - 2 && (multipleArtists ? ", " : "")}
+              <span>
+                {artist.name}
+                {index <= artists.length - 2 && (multipleArtists ? "," : "")}
+                &nbsp;
+              </span>
             </h3>
           </a>
         </div>
