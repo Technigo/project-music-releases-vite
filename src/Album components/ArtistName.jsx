@@ -5,7 +5,7 @@ export const ArtistName = ({ artists }) => {
     <div>
       {artists.map((artist, index) => (
         <span className="separator" key={artist.id}>
-          <a href={artist.external_urls.spotify}>{artist.name}</a>
+          <a href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">{artist.name}</a>
           {index === artists.length - 2
             ? " , "
             : index !== artists.length - 1
