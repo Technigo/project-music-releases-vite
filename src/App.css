@@ -1,0 +1,24 @@
+.main-container{
+    width: 98%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 1%;
+    gap: 1em;
+
+
+}
+
+@media screen and (min-width: 768px){
+    .main-container{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 70%;
+    padding: 1% 15%;
+    }
+}

@@ -1,0 +1,47 @@
+.album-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.album-name{
+  font-weight: 700;
+  padding-top: 0.7em;
+}
+
+.album-name a {
+  font-size: 14px;
+  padding: 1em 0;
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.album-name a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.artist-name{
+  padding: 0.4em 0;
+}
+
+.artist-name a {
+  font-size: 14px;
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+  color: #a0a0a0;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
