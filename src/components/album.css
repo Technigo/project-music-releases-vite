@@ -1,10 +1,24 @@
+
+/* album styles */
+.album {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0px;
+	place-items: flex-start;
+	width: 300px;
+	border: solid 3px green;
+	line-height: 1.5;
+	text-wrap: pretty;
+	padding: 10px;
+}
+
+
 h1.albumTitle {
 	color: #fff;
 }
 
 h2.artistTitle {
 	color: #a0a0a0;
-
 }
 
 
@@ -43,7 +57,7 @@ a:hover {
 	color: #a0a0a0;
 }
 
-ß
+
 /*
 h2.albumTitle.text :link, visited{
 	color:#fff;

@@ -7,7 +7,6 @@ body {
 }
 
 .app-wrap {
-
 	font-family: Helvetica, arial sans-serif;
 	font-size: 14px;
 	background-color: #181818;
@@ -20,17 +19,15 @@ body {
 	place-items: center;
 }
 
-/* album styles */
-.album {
-	display: flex;
-	flex-direction: column;
-	row-gap: 0px;
-	place-items: flex-start;
-	width: 300px;
-	border: solid 3px green;
-	line-height: 1.5;
-	text-wrap: pretty;
-	padding: 10px;
-}
+@media(min-width: 667px){
+	.album-wrap{
+		grid-template-columns: 1fr 1fr;
+	}
+	}
 
+	@media(min-width: 1025px){
+	.album-wrap{
+		grid-template-columns:1fr 1fr 1fr 1fr;
+	}
 
+	}
