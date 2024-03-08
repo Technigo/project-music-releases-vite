@@ -32,6 +32,7 @@ body {
   width: calc(25% - 20px);
   margin-bottom: 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 .cover-image img {
@@ -44,7 +45,23 @@ body {
   text-align: center;
   margin: 5px 0;
   color: #ffffff;
+  text-decoration: none;
 
+}
+.album-name, .album-name a {
+  text-align: center;
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.artist-name, .artist-name a {
+  text-align: center;
+  margin: 5px 0;
+  color: #a0a0a0;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .album-name a, .artist-name a {
@@ -55,6 +72,10 @@ body {
 .album-name a:hover, .artist-name a:hover {
   text-decoration: underline;
 }
+a:hover {
+  text-decoration: underline;
+}
+
 
 /* Buttons */
 .buttons {

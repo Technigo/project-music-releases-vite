@@ -6,13 +6,13 @@ import HeartIcon from './assets/icons/heart.svg';
 import PlayIcon from './assets/icons/play.svg';
 
 const Album = ({ albumData }) => {
-    // Skapar en länk för varje artist
+
     const artistLinks = albumData.artists.map((artist, index) => (
         <React.Fragment key={artist.id}>
             <a href={artist.external_urls.spotify} className="artist-name">
                 {artist.name}
             </a>
-            {/* Lägger till kommatecken mellan artistnamnen, men inte efter sista namnet */}
+            {}
             {index < albumData.artists.length - 1 ? ', ' : ''}
         </React.Fragment>
     ));
@@ -28,7 +28,7 @@ const Album = ({ albumData }) => {
           </div>
         </div>
         <AlbumName title={albumData.name} externalUrl={albumData.external_urls.spotify} />
-        {/* Renderar artistlänkarna här */}
+        {}
         <div className="artist-names">
             {artistLinks}
         </div>
