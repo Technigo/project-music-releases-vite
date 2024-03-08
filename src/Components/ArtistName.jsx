@@ -2,8 +2,6 @@ import PropTypes from "prop-types"
 import "./Album.css"
 
 export const ArtistName = ({ artists }) => {
-  console.log(artists)
-
   //Variable for more than 1 artists
   const multipleArtists = artists.length > 1
 
@@ -16,10 +14,12 @@ export const ArtistName = ({ artists }) => {
             href={artist.external_urls.spotify}
             target="_blank"
             rel="noreferrer noopener">
-            <h3>{artist.name}</h3>
+            <h3>
+              {artist.name}
+              {index < artists.length - 2 && (multipleArtists ? " & " : "")}
+              {index === artists.length - 2 && (multipleArtists ? ", " : "")}
+            </h3>
           </a>
-          {index < artists.length - 2 && (multipleArtists ? ", " : "")}
-          {index === artists.length - 2 && (multipleArtists ? " & " : "")}
         </div>
       ))}
     </div>

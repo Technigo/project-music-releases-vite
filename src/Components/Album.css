@@ -14,11 +14,13 @@ body {
 .album-container h2 {
   color: #ffffff;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .album-container h3 {
   color: #a0a0a0;
   font-size: 14px;
+  margin-top: 0;
 }
 
 /* Styling for the links */
@@ -37,6 +39,14 @@ body {
   text-decoration: underline;
 }
 
+.artist-names {
+  display: flex;
+}
+
+.artist-names a {
+  text-decoration: none;
+}
+
 .cover-image-container {
   position: relative;
 }
@@ -46,7 +56,9 @@ body {
 .album-icon {
   width: 40px;
   height: 40px;
-  filter: invert(100%); /*This is to invert the color to white since the icons are initially black*/
+  filter: invert(
+    100%
+  ); /*This is to invert the color to white since the icons are initially black*/
   transition: all 0.3s ease-in-out;
 }
 
