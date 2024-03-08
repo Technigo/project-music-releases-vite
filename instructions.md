@@ -18,12 +18,12 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ## Folder Structure
 
-- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
-- Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-- Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿  ✅
+- Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓 ✅
+- Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓 ✅
+  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓 ✅
+  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓✅
+  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓✅
 
 ### Extra Files
 
@@ -31,51 +31,51 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ## You should display the following for each album:
 
-- album cover image
-- album name
-- the name of each artist involved with a comma between
+- album cover image ✅
+- album name ✅
+- the name of each artist involved with a comma between ✅
 
 ## Hover effects:
 
-- When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
-- When you hover over the play button, it should grow (see the design sketch)
-- Hovering an artist name or an album name should match the design sketch
+- When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch) ✅
+- When you hover over the play button, it should grow (see the design sketch) ✅
+- Hovering an artist name or an album name should match the design sketch ✅
 
 ## External Routing:
 
-- When you click on the album name, it should link to the album's external URL in the data
-- When you click on an artist name, it should link to the artist's external URL in the data
+- When you click on the album name, it should link to the album's external URL in the data  ✅
+- When you click on an artist name, it should link to the artist's external URL in the data  ✅
 
 ### Your page should be responsive:
 
-- showing 4 albums per row on desktop
-- 2 per row on tablet
-- 1 per row on mobile.
+- showing 4 albums per row on desktop ✅
+- 2 per row on tablet ✅
+- 1 per row on mobile. ✅
 
 ## Design
 
 🎶 You should follow the design screenshots as closely as possible. We've provided icons for the play, heart and more info icons when hovering on an album. Use the following for fonts:
 
-- Album title - 14px Helvetica #ffffff
-- Artist name - 14px Helvetica #a0a0a0
+- Album title - 14px Helvetica #ffffff ✅
+- Artist name - 14px Helvetica #a0a0a0 ✅
 
   When hovering over album covers or artist names, you should implement the following hover styles:
    <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/music-releases.png" alt="Design">
 
 ## Requirements
-- Your app should have components
-- Your page should look as close as possible to the design provided.
+- Your app should have components ✅
+- Your page should look as close as possible to the design provided. ✅
 - You should display the following for each album:
-  -   album cover image
-  -   album name
-  -   the name of each artist involved with a comma between
+  -   album cover image ✅
+  -   album name ✅
+  -   the name of each artist involved with a comma between ✅
 - Hover effects:
-  - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
-  - When you hover over the play button, it should grow (see the design sketch)
-  - Hovering an artist name or an album name should match the design sketch
-- When you click on the album, it should link to the album's external url in the data
-- When you click on an artist, it should link to the artist's external url in the data
-- Your page should be responsive:
+  - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch) ✅
+  - When you hover over the play button, it should grow (see the design sketch) ✅
+  - Hovering an artist name or an album name should match the design sketch ✅
+- When you click on the album, it should link to the album's external url in the data ✅
+- When you click on an artist, it should link to the artist's external url in the data ✅
+- Your page should be responsive: ✅
   - showing 4 albums per row on desktop
   - 2 per row on tablet
   - 1 per row on mobile.
@@ -87,7 +87,7 @@ So you’ve completed the requirements? Great job! Make sure you've committed an
 - Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&" (if the data don't have any multiple artists, you can modify it like you prefer to implement this feature):
   - *Teyana Taylor & Kehlani*
   - *Y2K, bbno$ & Enrique Iglesias*
-- Lower the opacity of the button icons and then when you hover over each of them, it should have full opacity
+- Lower the opacity of the button icons and then when you hover over each of them, it should have full opacity ✅
 
 ### Advanced stretch goals
 - We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.
