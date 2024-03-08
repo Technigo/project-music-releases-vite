@@ -1,6 +1,7 @@
 import { Artist } from "./Artist"
 import { AlbumName } from "./AlbumName"
 import { Cover } from "./Cover";
+import "./album.css"
 
 //get the data *mArray* and "filter" it further down (albums)
 
