@@ -4,9 +4,9 @@ import './AlbumName.css'
 export const AlbumName = ({ albumName, url }) => {
   return (
     <div className="album-name">
-      <h1><a href={url} target="_blank" rel="noopener noreferrer">
+      <h2><a href={url} target="_blank" rel="noopener noreferrer">
         {albumName}
-      </a></h1>
+      </a></h2>
     </div>
   );
 };
