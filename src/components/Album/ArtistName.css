@@ -1,12 +1,9 @@
-h2 {
-  font-family: "Helvetica", sans-serif;
+h3 {
   color: #a0a0a0;
   font-size: 14px;
 }
 
-h2:hover {
-    text-decoration: underline;
-    color: white;
-  }
-  
-
+h3:hover {
+  text-decoration: underline;
+  color: white;
+}
