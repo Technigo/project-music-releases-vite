@@ -20,6 +20,10 @@ body {
   background-color: #242424;
 }
 
+/* main{
+  display: grin;
+  grid-template-columns: 1fr 4fr;
+} */
 /* App layout */
 .album-card {
   display: grid;
@@ -27,7 +31,7 @@ body {
   gap: 1rem;
   max-width: 1300px; /* Might have to remove, find another solution */
   margin: auto; /* Might have to remove, find another solution */
-}
+} 
 
 /* Media query for phone and tablets */
 /* This will automatically show 1 column for smaller screens like phones */
