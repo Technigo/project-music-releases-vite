@@ -1,5 +1,5 @@
 export const Header = () => {
-	return(
-		<div>Music collection header</div>
-	)
+  return (
+    <div>Music collection header</div>
+  )
 }

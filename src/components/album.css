@@ -1,60 +1,59 @@
-
 /* album styles */
 .album {
-	display: flex;
-	flex-direction: column;
-	row-gap: 0px;
-	place-items: flex-start;
-	width: 300px;
-	border: solid 3px green;
-	line-height: 1.5;
-	text-wrap: pretty;
-	padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+  place-items: flex-start;
+  width: 300px;
+  border: solid 3px green;
+  line-height: 1.5;
+  text-wrap: pretty;
+  padding: 10px;
 }
 
 
 h1.albumTitle {
-	color: #fff;
+  color: #fff;
 }
 
 h2.artistTitle {
-	color: #a0a0a0;
+  color: #a0a0a0;
 }
 
 
 /* interaction and transitions */
 
 a {
-	text-decoration: none;
-	color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 a:visited {
-	text-decoration: none;
-	color: #a0a0a0;
+  text-decoration: none;
+  color: #a0a0a0;
 }
 
 a:active {
-	text-decoration: none;
-	color: #a0a0a0;
+  text-decoration: none;
+  color: #a0a0a0;
 }
 
 a:focus-visible {
-	outline: 3px solid #a0a0a0;
-	color: #fff;
+  outline: 3px solid #a0a0a0;
+  color: #fff;
 
 }
 
 a:hover {
-	text-decoration: solid 3px #696969;
+  text-decoration: solid 3px #696969;
 }
 
 .artistTitle:hover {
-	text-decoration: solid 3px #696969;
+  text-decoration: solid 3px #696969;
 }
 
 .artistTitle h1 {
-	color: #a0a0a0;
+  color: #a0a0a0;
 }
 
 

@@ -2,32 +2,32 @@
 
 /* GRID */
 body {
-	border: 0;
-	margin: 0;
+  border: 0;
+  margin: 0;
 }
 
 .app-wrap {
-	font-family: Helvetica, arial sans-serif;
-	font-size: 14px;
-	background-color: #181818;
+  font-family: Helvetica, arial sans-serif;
+  font-size: 14px;
+  background-color: #181818;
 }
 
 .album-wrap {
-	display: grid;
-	grid-template: auto, 1fr;
-	grid-gap: 1.5em;
-	place-items: center;
+  display: grid;
+  grid-template: auto, 1fr;
+  grid-gap: 1.5em;
+  place-items: center;
 }
 
-@media(min-width: 667px){
-	.album-wrap{
-		grid-template-columns: 1fr 1fr;
-	}
-	}
+@media(min-width: 667px) {
+  .album-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
-	@media(min-width: 1025px){
-	.album-wrap{
-		grid-template-columns:1fr 1fr 1fr 1fr;
-	}
+@media(min-width: 1025px) {
+  .album-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
-	}
+}
