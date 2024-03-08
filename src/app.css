@@ -7,12 +7,8 @@ body {
 	overflow:none;
 	height: auto;
 	background-color: #181818;
-}
-
-.app-wrap {
 	font-family: Helvetica, arial sans-serif;
 	font-size: 14px;
-
 }
 
 .album-wrap {
