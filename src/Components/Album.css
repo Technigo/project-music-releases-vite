@@ -6,6 +6,18 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0,1), 0 1px 3px rgba(0, 0, 0, 0.08) ;
     
 }
+.album-container {
+    width: 100%;
+  }
+
+  .album {
+    padding: 15px;
+    padding-bottom: 40px;
+  }
+
+  .cover-image-container {
+    position: relative;
+  }
 
 .album h3 {
     margin-top: 0;
