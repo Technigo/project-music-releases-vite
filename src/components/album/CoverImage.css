@@ -19,13 +19,12 @@ img{
     opacity: 0;
     background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s ease;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     z-index: 1;
 }
 
 .imgContainer:hover .imgFunction{
-    opacity: 1;
-    
+    opacity: 0.8;
 }
 
 button{
@@ -57,4 +56,8 @@ button{
     width: 30px;
     height: 30px;
     -webkit-filter: invert(100%);
+}
+
+.play:hover {
+    transform: scale(1.3);
 }
