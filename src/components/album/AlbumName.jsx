@@ -1,10 +1,10 @@
 import "./AlbumName.css"
 import PropTypes from 'prop-types'
 
-export const AlbumName=({name, key})=> {
+export const AlbumName=({name, key,external_urls})=> { const albumUrls = external_urls.spotify 
   return (
-    <div id={key}>
-            <p className='albumName'>{name}</p>
+    <div id={key} className="albumInfo">
+            <a href={albumUrls} className='albumName'>{name}</a>
     </div>
   )
 }

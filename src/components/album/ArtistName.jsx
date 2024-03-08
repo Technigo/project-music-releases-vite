@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 export const ArtistName=({artists}) => {
     const names = artists.map(a => a.name).join(',');
+    const artistUrl  = artists.map(a => a.external_urls.spotify)
+
     return (
-        <p className='artist'>
-            Artists: {names}
-        </p>
+        <a href={artistUrl} className='artist'>Artists: {names}</a>
      )
 }
 

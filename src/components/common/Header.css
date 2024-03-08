@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background-color: red;
+    
     height: 60px;
     display: flex;
     text-align: center;
@@ -8,10 +8,10 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0;
+    flex-direction: column;
 }
 
 .titleName{
-    background-color: green;
     height: 2em;
     font-size: 24px;
     font-weight: 600;
@@ -20,6 +20,13 @@ header {
     text-align: center;
     display: flex;
     align-items: center;
+}
+
+.subTitle{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
 }
 
 @media (min-width:667px) and (max-width:1024px) {

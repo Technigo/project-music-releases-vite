@@ -5,7 +5,7 @@ import { AlbumName } from './AlbumName'
 import { CoverImage } from './CoverImage'
 
 export const Album=(
-    {images, name, id, artists
+    {images, name, id, artists,external_urls
     }
 )=>{
     return (
@@ -18,9 +18,11 @@ export const Album=(
             <AlbumName
             name={name}
             key={id}
+            external_urls={external_urls}
             />
             <ArtistName
-            artists={artists} />
+            artists={artists}
+             />
         </div>
     </div>
   )

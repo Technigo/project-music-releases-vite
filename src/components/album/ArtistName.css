@@ -6,6 +6,7 @@
     border: 1px white sold;
     font-family: Helvetica;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .artist:hover{
@@ -13,13 +14,10 @@
     color: #ffffff;
 }
 
-
 @media (min-width:667px) and (max-width:1024px){
 
 }
 
 @media (min-width:1025px){
-    .artist{
     
-    }
 }
