@@ -16,6 +16,8 @@ We had some issues creating the comma between two artists but managed to make it
 
 ### View it live
 
+https://heroic-crisp-8a05fa.netlify.app/
+
 ## Instructions
 
 <a href="instructions.md">
