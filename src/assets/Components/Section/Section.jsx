@@ -1,5 +1,4 @@
 import { Album } from '../Album/Album'
-import './Section.css'
 
 // mapped the data.json here instead that on App.jsx and created 2 sections
 export const Section = ({ name, filter, data }) => {

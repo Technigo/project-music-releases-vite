@@ -1,6 +1,6 @@
 .sideBar {
   height: 100%;
-  width: 200px;
+  width: 50px;
   position: fixed; /* Fixed Sidebar  */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -15,7 +15,7 @@
   color: #a0a0a0;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 8px;
   display: block;
   text-align: center;
   text-transform: capitalize;
@@ -23,4 +23,21 @@
 .sideBar img {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 669px) and (max-width: 1024px) {
+  .sideBar {
+    width: 100px;
+  }
+  .sideBar a {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  .sideBar {
+    width: 200px;
+  }
+  .sideBar a {
+    font-size: 18px;
+  }
 }

@@ -1,5 +1,3 @@
-import './ArtistName.css'
-
 export const ArtistName = ({ artists }) => {
   const displayArtists = () => {
     const artistLength = artists.artistLength

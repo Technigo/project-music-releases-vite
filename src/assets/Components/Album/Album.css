@@ -1,7 +1,0 @@
-.album {
-  display: flex;
-  flex-direction: column;
-  width: 390px;
-  margin: 15px;
-  /* border: 1px solid #ccc; Example border, delete later, for now showing the card */
-}

@@ -1,5 +1,3 @@
-import './AlbumTitle.css'
-
 export const AlbumTitle = ({ title, externalUrl }) => {
   return (
     <span className="albumName">
