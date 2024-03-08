@@ -8,7 +8,10 @@ export const CoverImage = (props) => {
     <div className="cover-image-container">
       <img className="cover-image" src={albumImage.url} alt="Music album cover image" />
       <img src={HeartIcon} className="heart-icon" alt="Heart icon" />
-      <img src={PlayIcon} className="play-icon" alt="Play icon" />
+      <a href={props.href} target="_blank">
+        <img src={PlayIcon} className="play-icon" alt="Play icon" />
+      </a>
+
       <img src={Dots} className="dots-icon" alt="Dots icon" />
     </div>
   );
