@@ -37,7 +37,7 @@ export const PlayList = () => {
             target="__blank"
             rel="noopener noreferrer"
           >
-            <img src={imageUrl} alt="Playlist Image" />
+            <img src={imageUrl} alt="Playlist Image" width={300} height={300} />
           </a>
         </div>
       </div>
