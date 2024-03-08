@@ -6,8 +6,8 @@ import { Footer } from "./components/commons/Footer";
 export const App = () => {
   return (
     <>
+      <Hero />
       <main>
-        <Hero />
         <PlayList />
         <AlbumList />
       </main>

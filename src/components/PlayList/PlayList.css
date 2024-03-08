@@ -9,6 +9,7 @@
 .playlist-container {
   display: flex;
   max-height: 600px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 }
 
 .playlist-items,
@@ -51,6 +52,11 @@
   bottom: 0;
 }
 
+.new-release img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .new-release .new-music {
   font-size: 18px;
   bottom: 100px;
@@ -64,6 +70,11 @@
   margin: 10px 0;
   margin-right: 20px;
 }
+
+.playlist-item:first-child {
+  margin-top: 0;
+}
+
 .playlist-item img {
   width: 90px;
 }
