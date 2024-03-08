@@ -46,6 +46,9 @@ body {
 .artist-names a {
   text-decoration: none;
 }
+.artist-link {
+  padding-right: 3px;
+}
 
 .cover-image-container {
   position: relative;

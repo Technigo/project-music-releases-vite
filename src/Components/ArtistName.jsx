@@ -18,7 +18,7 @@ export const ArtistName = ({ artists }) => {
               <span>
                 {artist.name}
                 {index <= artists.length - 2 && (multipleArtists ? "," : "")}
-                &nbsp;
+                {/* &nbsp; */}
               </span>
             </h3>
           </a>
