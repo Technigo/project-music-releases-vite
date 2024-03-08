@@ -7,16 +7,14 @@ export const AlbumName = ({ name, external_urls }) => {
   };
 
   return (
-    <>
-      <a
-        href={albumInfo.url}
-        className="album-title"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {albumInfo.name}
-      </a>
-    </>
+    <a
+      href={albumInfo.url}
+      className="album-title"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {albumInfo.name}
+    </a>
   );
 };
 

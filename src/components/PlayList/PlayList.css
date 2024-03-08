@@ -52,6 +52,11 @@
   bottom: 0;
 }
 
+.new-release a {
+  position: relative;
+  z-index: 100;
+}
+
 .new-release img {
   object-fit: cover;
   height: 100%;

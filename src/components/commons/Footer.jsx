@@ -26,7 +26,12 @@ export const Footer = () => {
   ];
 
   const renderFooter = socialInfo.map((social) => (
-    <a key={social.id} href={social.link} target="__blank">
+    <a
+      key={social.id}
+      href={social.link}
+      target="__blank"
+      rel="noopener noreferrer"
+    >
       <img src={social.icon} alt={social.alt} />
     </a>
   ));

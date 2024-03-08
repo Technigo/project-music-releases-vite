@@ -7,6 +7,7 @@ import { PlayIcons } from "../AlbumContent/PlayIcons";
 
 export const PlayList = () => {
   const imageUrl = playlists.items[7].images[0].url;
+  const artistLink = playlists.items[7].external_urls.spotify;
   const artistName = playlists.items[7].name;
 
   // Mapping playlists to send data to child components
@@ -30,9 +31,14 @@ export const PlayList = () => {
         <div className="playlist-items">{renderPlaylists}</div>
 
         <div className="new-release">
-          {/* <p className="new-music">🎧 New Music Released</p>
-          <p className="artist-name">{artistName}</p> */}
-          <img src={imageUrl} alt="Playlist Image" />
+          <a
+            href={artistLink}
+            alt={artistName}
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            <img src={imageUrl} alt="Playlist Image" />
+          </a>
         </div>
       </div>
     </section>
