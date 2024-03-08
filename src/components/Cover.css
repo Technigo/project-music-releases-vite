@@ -1,0 +1,54 @@
+.cover-image-element {
+  position: relative;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+}
+
+.cover:hover {
+  filter: brightness(50%);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.heart-icon, 
+.dots-icon {
+width: 30px;
+height: 30px;
+filter: invert(0.8);
+}
+
+.heart-icon:hover,
+.dots-icon:hover {
+  filter: invert(1.2);
+  transition: all 0.3s ease-in;
+}
+
+.play-icon {
+  width: 45px;
+  height: 45px;
+  filter: invert(0.8);
+}
+
+.play-icon:hover {
+  transform: scale(1.5);
+  filter: invert(1.2);
+  transition: all 0.3s ease-in;
+}
+

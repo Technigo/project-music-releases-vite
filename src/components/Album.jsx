@@ -11,7 +11,6 @@ export const Album = ({ mArray }) => {
 
 
   return (
-
     // use map to make a new array newAlbum, also set the key for each - and pass it to AlbumName *in* albumInfo and *in* artistInfo for Artist
     <section className="album-wrap">
       {albums.map((newAlbum) => {
@@ -21,6 +20,7 @@ export const Album = ({ mArray }) => {
             <AlbumName albumInfo={newAlbum} />
             <Artist artistInfo={newAlbum} />
           </article>
+
 
         );
       })
