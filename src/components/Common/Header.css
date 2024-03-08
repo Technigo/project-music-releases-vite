@@ -6,3 +6,19 @@ header {
 h1 {
   color: white;
 }
+
+/* Media Queries for tablet */
+@media screen and (min-width: 667px) {
+  header {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1024px) {
+  header {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}

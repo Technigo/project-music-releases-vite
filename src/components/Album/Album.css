@@ -1,30 +1,24 @@
-/* .albums {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 45px;
-  justify-content: center;
-  margin: 33px;
-} */
-
-.album {
-  /* width: 300px; */
-}
-
 .albums {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 20px;
-  /* align-content: center; */
 }
 
 /* Media Queries for tablet */
 @media screen and (min-width: 667px) {
   .albums {
-    width: 700px;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    margin: 0 auto;
   }
 }
 
 /* Media Queries for desktop */
 @media screen and (min-width: 1024px) {
+  .albums {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
