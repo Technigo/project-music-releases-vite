@@ -6,29 +6,17 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+Our first project practising basic React by creating a site that shows releases from Spotify using an API.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We first created a layout sketch using FigJam, to get an overview of the structure of the project componets. We looked at various resrouces, including Technigo exercises, alumni code, youtube videos, and got some help from ChatGPT explaining things.
+
+We had some issues creating the comma between two artists but managed to make it after some research on different methods. If we had more time we would have also done the advanced strech goals.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://heroic-crisp-8a05fa.netlify.app/
 
 ## Instructions
 

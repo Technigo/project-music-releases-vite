@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +15,127 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+header {
+  color: #1db954;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-family: "Signika";
+}
+
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ImageWrapper {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ImageWrapper:hover > .fade {
+  opacity: 1;
+}
+
+.ImageWrapper > img {
+  display: block;
+  width: 100%;
+  transition: 200ms ease-in-out;
+}
+
+.CoverButtonsDiv {
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease-in-out;
+  gap: 50px;
+}
+
+.CoverButton {
+  background: 0;
+  filter: invert(80%);
+  height: 30px;
+}
+
+.CoverButton:hover {
+  filter: invert(1);
+}
+
+.PlayButton {
+  height: 90px;
+}
+
+.PlayButton:hover {
+  height: 105px;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.AlbumCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.ArtistName {
+  width: 100%;
+}
+
+.ArtistName a {
+  color: #6c757d;
+}
+
+.ArtistName a:hover {
+  color: white;
+}
+
+.AlbumName {
+  width: 100%;
+  margin: 10px 0 5px 0;
+}
+
+.AlbumName a {
+  color: white;
+  font-weight: 600;
+}
+
+/***** Tablet *****/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/***** Desktop *****/
+@media (min-width: 1024px) {
+  .Container {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 50px 0 50px;
+  }
+  h1 {
+    font-size: 30px;
+  }
 }
