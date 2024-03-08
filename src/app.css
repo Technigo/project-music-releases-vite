@@ -1,36 +1,30 @@
-/*variables */
-
 /* GRID */
 body {
 	border: 0;
 	margin: 0;
-}
-
-.app-wrap {
-
+	overflow: none;
+	height: auto;
+	background-color: #181818;
 	font-family: Helvetica, arial sans-serif;
 	font-size: 14px;
-	background-color: #181818;
 }
 
 .album-wrap {
+	padding-top: 2em;
 	display: grid;
 	grid-template: auto, 1fr;
 	grid-gap: 1.5em;
 	place-items: center;
 }
 
-/* album styles */
-.album {
-	display: flex;
-	flex-direction: column;
-	row-gap: 0px;
-	place-items: flex-start;
-	width: 300px;
-	border: solid 3px green;
-	line-height: 1.5;
-	text-wrap: pretty;
-	padding: 10px;
+@media(min-width: 667px) {
+	.album-wrap {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
-
+@media(min-width: 1025px) {
+	.album-wrap {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
