@@ -14,9 +14,9 @@ h1 {
   padding-left: 2rem;
 }
 
-
 .type-btn {
   font-size: 14px;
+  font-weight: 300;
   position: relative;
   top: 50%;
   background-color: rgba(44, 41, 41, 0.6);

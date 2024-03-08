@@ -1,5 +1,5 @@
-//need to add a CSS to style that poor header
 import "./styling/header.css"
+
 export const Header = () => {
   return (
     <div className="header-wrapper">
