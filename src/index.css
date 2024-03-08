@@ -7,7 +7,7 @@ header {
     padding-bottom: 20px;
     background: linear-gradient(to right, #09f1b8, #00a2ff,#ff00d2,  #fed90f);
     -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text; 
+    background-clip: text; 
 }
 
 /* Header div styling  */
