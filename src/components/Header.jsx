@@ -2,6 +2,6 @@
 
 export const Header = () => {
   return (
-    <h1 className="header">Music Playlist</h1>
+    <h1 className="header">New Releases</h1>
   )
 }
