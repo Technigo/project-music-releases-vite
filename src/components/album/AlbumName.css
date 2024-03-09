@@ -1,0 +1,18 @@
+.album-name a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.album-name a:hover {
+  text-decoration: underline;
+}
+
+.album-name h3 {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 200px;
+}
