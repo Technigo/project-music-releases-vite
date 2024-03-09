@@ -1,37 +1,13 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+A music website of new releases. artist profiles. 
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This is the first time we work on React.js. During the project, we had a deeper understanding of relationship between parent comp and child comp. We struggled with prop and key. We read materials for learning the concept. Also searched similar quesions and posted quesions on stack over flow. It was very helpful and saved out time. We also used google and chatGPT to search how to write the hover, especially to change the icons' color. CSS and responsive design were quite challenge this week. 
+We made the sidebar works, however we didn't have enough time to make the layout looks better, so we had to delete. 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://cornelia-trista-music-releases-vite.netlify.app/
 
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
