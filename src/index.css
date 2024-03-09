@@ -24,14 +24,6 @@ body {
   background-color: #242424;
 }
 
-/*layout of main (sidebar and album-card)*/
-main{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content:center;
-}
-
 /* App layout */
 .album-card {
   display: grid;
@@ -39,13 +31,7 @@ main{
   gap: 1rem;
   max-width: 1300px; /* Might have to remove, find another solution */
   margin: auto; /* Might have to remove, find another solution */
-  margin-right: 40px;
-  padding-right: 40px;
-} 
-
-
-
-
+}
 
 /* Media query for phone and tablets */
 /* This will automatically show 1 column for smaller screens like phones */

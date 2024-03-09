@@ -1,7 +1,3 @@
-//import
-// import { ArtistName } from "./ArtistName";
-// import { CoverImage } from "./CoverImage";
-
 import { AlbumName } from "./AlbumName"
 import { ArtistName } from "./ArtistName";
 import { CoverImage } from "./CoverImage"
@@ -16,7 +12,5 @@ export const Album =({albumData}) =>{
                 <ArtistName key = {artistData.id} artistName={artistData.name} artistLink={artistData.external_urls.spotify} index={index} length= {artistDatas.length} />
             ))}
         </div>
-
     )
 }
-//artistName={artistData.name} -- artistName is a prop, from my understanding, prop is a connection between parent comp and child comp. {artistData.name}is the value
