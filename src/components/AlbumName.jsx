@@ -21,7 +21,7 @@ export const AlbumName = ({ albumInfo }) => {
       >
         <h2>{albumInfoObj.title}</h2>
       </a>
-
+      <div className="album-type">{albumInfoObj.type}</div>
     </div >
   )
 }

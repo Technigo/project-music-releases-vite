@@ -44,6 +44,10 @@ a:focus-visible {
 	text-decoration: underline 1.3px #696969;
 }
 
+/* album type */
+.album-type {
+	display: none
+}
 
 
 
