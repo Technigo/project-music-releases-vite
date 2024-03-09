@@ -1,4 +1,4 @@
-import data from "../stretch-goal.json"
+import data from "../Data/stretch-goal.json"
 
 export const SideBar = ()=>{
     return(

@@ -1,4 +1,4 @@
-import data from "../data.json"
+import data from "../Data/data.json"
 import {AlbumName} from "./components/AlbumName"
 import {ArtistName} from "./components/ArtistName"
 import {CoverImage} from "./components/CoverImage"
