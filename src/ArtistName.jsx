@@ -2,6 +2,8 @@
 export const ArtistName = (props) => {
   return (
     // Span is like a div, but it is inline, not a block
-    <span className="artist">{props.artist.name}</span>
+    <span className="artist">
+      <a href={props.artist.external_urls.spotify}>{props.artist.name}</a>
+    </span>
   );
 };
