@@ -1,11 +1,9 @@
 import PropTypes from "prop-types"
 import "./ArtistName.css"
 
-
-
 export const ArtistName = ({ artistName, artistURL }) => {
   return (
-    <div className="ArtistName">
+    <div className="artist-name">
       <a href={artistURL}>
         <h3>{artistName}</h3>
       </a>

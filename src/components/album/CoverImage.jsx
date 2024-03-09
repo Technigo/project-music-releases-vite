@@ -4,7 +4,7 @@ import "./CoverImage.css"
 export const CoverImage = ({ coverImage }) => {
   return (
     <div className="cover-image-container">
-      <img src={coverImage} />
+      <img className="coverImage" src={coverImage} />
       <div className="icon-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"

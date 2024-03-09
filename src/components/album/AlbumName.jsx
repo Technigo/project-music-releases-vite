@@ -3,7 +3,7 @@ import "./AlbumName.css"
 
 export const AlbumName = ({ albumName, albumURL }) => {
   return (
-    <div className="AlbumName">
+    <div className="album-name">
       <a href={albumURL}>
         <h3>{albumName}</h3>
       </a>

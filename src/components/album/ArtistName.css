@@ -1,4 +1,4 @@
-.ArtistName a {
+.artist-name a {
   text-decoration: none;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -6,18 +6,15 @@
   transition: color 0.3s ease;
 }
 
-.ArtistName a:hover {
+.artist-name a:hover {
   text-decoration: underline;
 
 }
 
-.ArtistName h3 {
+.artist-name h3 {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   color: #a0a0a0;
 }
 
-@media (min-width: 668px) {
-
-  
-}
+@media (min-width: 668px) {}
