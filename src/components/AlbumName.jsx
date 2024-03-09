@@ -1,7 +1,7 @@
-export const AlbumName = () => {
+export const AlbumName = ({albumName}) => {
   return (
     <>
-      Album Name
+      Album: {albumName}
     </>
   )
 }

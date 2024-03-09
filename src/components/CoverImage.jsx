@@ -1,7 +1,7 @@
-export const CoverImage = () => {
+export const CoverImage = ({coverImage}) => {
   return (
     <>
-      Cover Image
+      <img src={coverImage} alt="Album Cover"/>
     </>
   )
 }

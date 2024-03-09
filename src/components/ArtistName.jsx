@@ -1,7 +1,7 @@
 export const ArtistName = ({artistName}) => {
   return (
     <>
-      {artistName}
+      By: {artistName}
     </>
   )
 }

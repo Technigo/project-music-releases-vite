@@ -1,0 +1,6 @@
+.album{
+  display: flex;
+  flex-direction: column;
+  height: 200px; 
+  border: 2px solid rgba(128, 128, 128, 0.841);
+}
