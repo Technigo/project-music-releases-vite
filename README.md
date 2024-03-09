@@ -13,7 +13,5 @@ A React+Vite app to display newly released music. Features include
 * clicking on album&playlist covers, play icons and playlist covers links to external URLs to Spotifu.
 * UI design for smooth user interactions. 
 
-### The Problem
-
 ### View it live
-[![Netlify Status](https://api.netlify.com/api/v1/badges/584cae14-6586-4edd-86ad-2456b8243767/deploy-status)](https://app.netlify.com/sites/yifans-music-release-site/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/584cae14-6586-4edd-86ad-2456b8243767/deploy-status)](https://app.netlify.com/sites/week05-music-release-site/deploys)
