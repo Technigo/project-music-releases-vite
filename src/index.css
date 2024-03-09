@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body{
+  background-color: black;
+  margin: 15px;
+}
+.albums{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin:10px;
+  height: 300px;
+  width: 300px;
+  border: 2px solid rgba(128, 128, 128, 0.841);
+  
+}
+
+.album{
+  color: aliceblue;
+}
+
+.cover-image img{
+  height: 100%;
+  width: 100%;  
+}
+
+.artist-name, .album-name{
+  margin:5px;
+}
+
+
+
+/* -----------------------------------------------MEDIA QUERIES--------------------------------------- */
+/* -----------------------------------MOBILE SCREENS 360px to 670xp 1column--------------------------- */
+
+@media (min-width: 360px) and (max-width:670px){
+
+}
+
+
+/* -----------------------------------TABLET SCREENS 671px to 1024xp 1 colums-------------------------- */
+@media (min-width:671px) and (max-width:1024px) {
+
+}
+
+
+/* -----------------------------------PC SCREENS >1024px 3 columns ------------------------------------- */
+@media (min-width: 1024px){
+  .albums{
+     height: 100%;
+     display: grid;
+     gap: 30px;
+     max-width: 80%;
+     grid-template-columns: 1fr 1fr 1fr; 
+     grid-template-rows: auto 1fr auto   
+   }  
+ }

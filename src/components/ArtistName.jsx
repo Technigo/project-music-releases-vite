@@ -1,7 +1,7 @@
 export const ArtistName = ({artistName}) => {
   return (
-    <>
-      By: {artistName}
-    </>
+    <h2 className="artist-name">
+      {artistName}
+    </h2>
   )
 }
