@@ -78,9 +78,10 @@ h3:hover {
   cursor: pointer;
 }
 /* Add comma and umpersand when there are more than one artists */
-.artist:not:(last-child):not(:nth-last-child(2))::after {
+.artist:not(:last-child):not(:nth-last-child(2))::after {
   content: ", ";
 }
+
 
 .artist:not(:first-child):last-child::before {
   content: " & ";
