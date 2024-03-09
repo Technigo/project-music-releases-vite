@@ -1,43 +1,55 @@
-.album {
-    background-color: #121212;
-    color: #FFFFFF;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0,1), 0 1px 3px rgba(0, 0, 0, 0.08) ;
-    
-}
-.album-container {
-    width: 100%;
-  }
 
-  .album {
-    padding: 15px;
-    padding-bottom: 40px;
-  }
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album {
+ width: 300px;
+ margin: 20px;
+}
 
   .cover-image-container {
     position: relative;
   }
 
-.album h3 {
-    margin-top: 0;
+  .cover-image {
+    width: 100%;
   }
+
+
+  .icon-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* When you hover over an album, it should go darker */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .album:hover .icon-container {
+    opacity: 1;
+  }
+
+  /* icons over the album when hovering
   
-  .album img {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .album a {
-    text-decoration: none;
-    color: #1DB954; /* Spotify green color */
-  }
-  
-  .album a:hover {
-    text-decoration: underline;
-  }
+  .cover-image-container:hover .icon-container {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0,6);
+  } */
 
 .icon {
     width: 30px;
@@ -45,3 +57,67 @@
     filter: invert(100%);
     transition: all 0.3s ease-in-out;
 }
+
+/* scale icons when hovering 
+height: 30px;
+  filter: invert(100%);
+  transition: all 0.3s ease-in-out;*/ 
+.play-icon .icon {
+  width: 50px;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
+/* Album name */ 
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Artist name */
+h3 {
+display: inline;
+font-family: Helvetica, sans-serif;
+font-size: 14px;
+color: #a0a0a0;
+}
+
+
+h2:hover,
+h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Add comma and umpersand when there are more than one artists */
+.artist:not:(last-child):not(:nth-last-child(2))::after {
+  content: ", ";
+}
+
+.artist:not(:first-child):last-child::before {
+  content: " & ";
+}
+
+.artist {
+  font-size: 14px;
+  font-weight: bold;
+  color:#a0a0a0;
+}
+
+
+/*
+@media (min-width: 667px) {
+  .album-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-container {
+    width: 25%;
+  }
+}
+*/

@@ -1,13 +1,34 @@
 body {
-    margin: 0 auto;
-    color: white;
-    align-self : center;
-    text-align: center;
+  background-color: #121212;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/*
 .album-section {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
     border-radius: 4px;
-    color: white;
 }
+*/
+
+/*
+@media (min-width: 667px) {
+    .album-section {
+      flex-direction: row;
+    }
+    .album-section .album {
+      width: calc(50% - 10px);
+    }
+  }
+  */
+
+ 
