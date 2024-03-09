@@ -16,14 +16,14 @@ body{
   background-color: rgb(23, 23, 23);
   margin: 15px;
 }
+
 .albums{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
-  
+  gap: 15px;  
 }
 
 .album{
@@ -31,8 +31,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: left;
-  max-width: 300px;
-  
+  max-width: 300px;  
 }
 
 .container-image{
@@ -46,7 +45,16 @@ body{
 
 .cover-image {
   width: 300px;
-  position: absolute;  
+  position: absolute;
+}
+
+.container-image:hover::after{
+  content:"";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .buttons-image{
@@ -56,7 +64,7 @@ body{
   align-items: center;
   gap: 20px;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 15;
   filter: invert();
 }
 
@@ -65,12 +73,28 @@ body{
 }
 
 .buttons-image img{
- width: 50px;
+  display: none;
+  width: 30px;
 }
 
+/*This is like magic, and will make things to apear */
+.container-image:hover .buttons-image img {
+  display: flex;
+}
+
+.buttons-image img:hover {
+  transform: scale(1.1); 
+}
 
 .artist-name, .album-name{
-  margin:5px;  
+  display: inline;
+  position: relative;   
+  margin: 3px;
+  cursor: pointer;
+}
+
+.artist-name{
+  margin-top: 15px;
 }
 
 .album-name{
@@ -78,18 +102,27 @@ body{
   color: rgb(161, 161, 161);
 }
 
-
+.artist-name:hover::after, .album-name:hover::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.636);
+  left: 0;
+  bottom:-2px;
+  width: 100%;
+  height: 2px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
 
 /* -----------------------------------------------MEDIA QUERIES--------------------------------------- */
-/* -----------------------------------MOBILE SCREENS 360px to 670xp 1column--------------------------- */
+/* -----------------------------------MOBILE SCREENS 360px to 700xp 1column--------------------------- */
 
-@media (min-width: 360px) and (max-width:670px){
+@media (min-width: 360px) and (max-width:700px){
 
 }
 
-
-/* -----------------------------------TABLET SCREENS 671px to 1024xp 1 colums-------------------------- */
-@media (min-width:671px) and (max-width:1499px) {
+/* -----------------------------------TABLET SCREENS 700px to 1399p 2 colums-------------------------- */
+@media (min-width:700px) and (max-width:1399px) {
   .albums{
     display: grid;
     gap: 50px;
@@ -103,8 +136,8 @@ body{
 
 
 
-/* -----------------------------------PC SCREENS >1500px 3 columns ------------------------------------- */
-@media (min-width: 1500px){
+/* -----------------------------------PC SCREENS >1500px 4 columns ------------------------------------- */
+@media (min-width: 1400px){
   .albums{
      display: grid;
      gap: 50px;
