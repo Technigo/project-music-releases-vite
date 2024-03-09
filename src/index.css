@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  color: white; 
 }
 
 :root {
@@ -11,9 +12,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
 }
 
 /* Here we fixed the comma, and space for the two artist on one album. https://markheath.net/post/css-comma-separated-list*/
@@ -98,3 +108,18 @@ code {
 }
 
 
+@media (min-width: 668px) {
+  /* 1 fr means fractional unite, in this case it means two columns of equal width. */
+  .albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
+}

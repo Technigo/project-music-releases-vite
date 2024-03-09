@@ -39,12 +39,12 @@ This is just a suggestion - how you decide to structure your components is compl
 
 - DONE!! When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
 - DONE!! When you hover over the play button, it should grow (see the design sketch)
-- Hovering an artist name or an album name should match the design sketch
+- DONE!! Hovering an artist name or an album name should match the design sketch
 
 ## External Routing:
 
 - DONE!! When you click on the album name, it should link to the album's external URL in the data
-- When you click on an artist name, it should link to the artist's external URL in the data
+- DONE!! When you click on an artist name, it should link to the artist's external URL in the data
 
 ### Your page should be responsive:
 
@@ -54,12 +54,12 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ## Design
 
-🎶 You should follow the design screenshots as closely as possible. We've provided icons for the play, heart and more info icons when hovering on an album. Use the following for fonts:
+🎶 DONE!! You should follow the design screenshots as closely as possible. We've provided icons for the play, heart and more info icons when hovering on an album. Use the following for fonts:
 
-- Album title - 14px Helvetica #ffffff
-- Artist name - 14px Helvetica #a0a0a0
+- DONE!! Album title - 14px Helvetica #ffffff
+- DONE!! Artist name - 14px Helvetica #a0a0a0
 
-  When hovering over album covers or artist names, you should implement the following hover styles:
+  DONE!! When hovering over album covers or artist names, you should implement the following hover styles:
   <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/music-releases.png" alt="Design">
 
 ## Requirements
