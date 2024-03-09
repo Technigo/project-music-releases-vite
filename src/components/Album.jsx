@@ -15,10 +15,11 @@ export const Album = ({ album }) => {
             albumName={album.name}
             albumURL={album.external_urls.spotify}
           />
-          {album.artists.map((artist) => (
+          {album.artists.map((artist, index) => (
             <ArtistName
               artistName={artist.name}
               artistURL={artist.external_urls.spotify}
+              addComma={index < album.artists.length - 1}
               key={artist.id}
             />
           ))}

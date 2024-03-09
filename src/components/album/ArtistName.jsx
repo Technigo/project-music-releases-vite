@@ -1,11 +1,14 @@
 import PropTypes from "prop-types"
 import "./ArtistName.css"
 
-export const ArtistName = ({ artistName, artistURL }) => {
+export const ArtistName = ({ artistName, artistURL, addComma = false }) => {
   return (
     <div className="artist-name">
       <a href={artistURL}>
-        <h3>{artistName}</h3>
+        <h3>
+          {artistName}
+          {addComma && ","}
+        </h3>
       </a>
     </div>
   )
@@ -14,6 +17,7 @@ export const ArtistName = ({ artistName, artistURL }) => {
 ArtistName.propTypes = {
   artistName: PropTypes.string.isRequired,
   artistURL: PropTypes.string.isRequired,
+  addComma: PropTypes.bool,
 }
 
 export default ArtistName
