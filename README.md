@@ -1,9 +1,3 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
 The week 5 project was to create a music release website by using react framework. The API was already provided for us.
@@ -16,4 +10,4 @@ We had some difficulties in the beginning that cost us a lot of time figuring ou
 
 ### View it live
 
-Link will follow after deployment.
+[Our website for the project](https://kathinka-nathalie-music-release.netlify.app/)
