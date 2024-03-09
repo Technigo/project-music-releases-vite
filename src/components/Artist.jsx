@@ -17,10 +17,6 @@ export const Artist = ({ artistInfo }) => {
     class: "artistTitle"
   }
 
-  // Take note of us using artistInfo for getting the data for Artist - who we use to add all info for album in an album object, and then pass the properties to elements as div, a, h2 etc
-  console.log("artistinfo", artistInfo)
-  console.log("artistinfo", artistInfo.name)
-
   return (
     <div className={artistInfoObj.class}>
       <a

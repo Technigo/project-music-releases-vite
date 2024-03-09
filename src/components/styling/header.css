@@ -5,8 +5,9 @@
 }
 
 h1 {
-  padding: 2rem;
+  padding: 10px;
   font-size: 48px;
+  font-weight: 700;
   color: beige;
 }
 

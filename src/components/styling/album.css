@@ -4,9 +4,8 @@
 	flex-direction: column;
 	row-gap: 0px;
 	place-items: flex-start;
-	width: 300px;
+	max-width: 100%;
 	text-wrap: pretty;
-	padding: 10px;
 }
 
 h3{
@@ -48,6 +47,8 @@ a:focus-visible {
 .album-type {
 	display: none
 }
+
+
 
 
 
