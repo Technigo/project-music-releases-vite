@@ -38,7 +38,7 @@ This is just a suggestion - how you decide to structure your components is compl
 ## Hover effects:
 
 - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
-- When you hover over the play button, it should grow (see the design sketch)
+- DONE!! When you hover over the play button, it should grow (see the design sketch)
 - Hovering an artist name or an album name should match the design sketch
 
 ## External Routing:

@@ -45,6 +45,7 @@ code {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  display: none;
 }
 
 .overlay button {
@@ -58,4 +59,10 @@ code {
   &:hover {
     scale: 1.2;
   }
+}
+
+
+/* Here we make the hover effect on the image */
+.coverImage:hover .overlay {
+  display: flex;
 }
