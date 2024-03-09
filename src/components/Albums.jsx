@@ -22,8 +22,7 @@ export const Albums = () => {
       <div className="album-items" key={id}>
         <AlbumCover images={images[1].url} />
         <AlbumName name={name} external_urls={external_urls.spotify} />
-
-        <ArtistName name={artists[0].name} />
+        <ArtistName name={artists[0].name} external_urls={artists[0].external_urls.spotify} />
       </div>
     )
   );
