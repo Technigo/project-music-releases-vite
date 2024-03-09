@@ -1,13 +1,12 @@
 
 .album-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+ width: 100%;
 }
 
 .album {
- width: 300px;
+padding: 15px;
  margin: 20px;
+ padding-bottom: 30px;
 }
 
   .cover-image-container {
@@ -37,19 +36,7 @@
     opacity: 1;
   }
 
-  /* icons over the album when hovering
-  
-  .cover-image-container:hover .icon-container {
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom:0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0,6);
-  } */
+  /* icons over the album when hovering*/
 
 .icon {
     width: 30px;
@@ -58,12 +45,10 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* scale icons when hovering 
-height: 30px;
-  filter: invert(100%);
-  transition: all 0.3s ease-in-out;*/ 
+/* scale icons when hovering */ 
 .play-icon .icon {
   width: 50px;
+  height: 50px;
 }
 
 .icon:hover {
@@ -108,7 +93,7 @@ h3:hover {
 }
 
 
-/*
+
 @media (min-width: 667px) {
   .album-container {
     width: 50%;
@@ -120,4 +105,3 @@ h3:hover {
     width: 25%;
   }
 }
-*/

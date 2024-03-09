@@ -11,14 +11,15 @@ a:hover {
   cursor: pointer;
 }
 
-/*
+
 .album-section {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     border-radius: 4px;
 }
-*/
+
 
 /*
 @media (min-width: 667px) {

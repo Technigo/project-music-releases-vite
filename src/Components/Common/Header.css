@@ -1,3 +1,13 @@
 header {
+    padding: 20px;
+    justify-content:center; /* Distributes space between elements */
+    align-items: center; /* Aligns elements vertically */
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
     text-align: center;
-}
+  }
+  
+ 
