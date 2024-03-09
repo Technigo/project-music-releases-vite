@@ -12,7 +12,8 @@ const consoleLog = (albums) => {
   const filteredItems = albums.map(album =>({
     artistName: album.artists[0].name,
     albumName: album.name,
-    image: album.images[0].url
+    image: album.images[0].url,
+    id: album.id
   }
   )) 
   console.log(filteredItems)
@@ -23,7 +24,7 @@ consoleLog(albums)
 
 
 
-export const App = () =>{
+export const App = (data) =>{
 return(
   <div className="albums">
     {data.albums.items.map(album => (
