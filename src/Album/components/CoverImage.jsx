@@ -7,7 +7,7 @@ import {DotsIcon} from "./DotsIcon"
 export const CoverImage = ({album}) =>{
     return(
         <div className="album-cover">
-        <img src={album.images[1].url} alt={album.name} />
+        <img src={album.images[1].url} alt={album.name} loading="lazy" />
         <ul className="hover-menu">
             <li className="icon"><HeartIcon/></li>
             <li className="icon heart-icon">

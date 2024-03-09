@@ -8,7 +8,7 @@ export const SideBar = ()=>{
             data.playlists.items.map((item)=>(
                
                 <a className="playlist-item" key={item.id} href={item.external_urls.spotify}>
-                     <img className="playlist-img" src={item.images[0].url} alt={item.name} />
+                     <img className="playlist-img" src={item.images[0].url} alt={item.name} loading="lazy"/>
                      <p className="playlist-description">Playlist • {item.name}</p>
                 </a> 
                
