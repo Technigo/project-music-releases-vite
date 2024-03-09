@@ -15,7 +15,7 @@ body {
 	padding-top: 2em;
 	display: grid;
 	grid-template: auto, 1fr;
-	grid-gap: 1em;
+	grid-gap: 2em 1em;
 	place-items: center;
 }
 
