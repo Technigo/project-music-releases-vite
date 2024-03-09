@@ -3,14 +3,12 @@ import { Album } from "./components/Album.jsx";
 import data from "./data.json";
 import "./components/styling/app.css"
 
-console.log("json ;", data);
 //pass json data to  *mArray* in Album
 export const App = () => {
 	return (
 		<div className="app-wrap">
-			<Header />
+			<Header albumList={data}/>
 			<Album mArray={data} />
 		</div>
 	)
 }
-

@@ -4,9 +4,8 @@
 	flex-direction: column;
 	row-gap: 0px;
 	place-items: flex-start;
-	width: 300px;
+	max-width: 100%;
 	text-wrap: pretty;
-	padding: 10px;
 }
 
 h3{
@@ -43,6 +42,12 @@ a:focus-visible {
 .artistTitle a:hover {
 	text-decoration: underline 1.3px #696969;
 }
+
+/* album type */
+.album-type {
+	display: none
+}
+
 
 
 

@@ -1,5 +1,6 @@
 .cover-image-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .cover-image-element {
@@ -58,5 +59,9 @@ filter: invert(0.8);
   filter: invert(1.2);
   transition: all 0.2s ease-in;
   cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+
 }
 

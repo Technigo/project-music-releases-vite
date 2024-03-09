@@ -5,8 +5,9 @@
 }
 
 h1 {
-  padding: 2rem;
+  padding: 10px;
   font-size: 48px;
+  font-weight: 700;
   color: beige;
 }
 
@@ -16,7 +17,7 @@ h1 {
 
 .type-btn {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
   top: 50%;
   background-color: rgba(44, 41, 41, 0.6);
@@ -37,5 +38,6 @@ h1 {
   background-color: #ffffff;
   color: rgba(44, 41, 41);
 }
+
 
 

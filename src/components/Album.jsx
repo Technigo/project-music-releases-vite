@@ -7,7 +7,6 @@ import "./styling/album.css"
 
 export const Album = ({ mArray }) => {
   let albums = mArray.albums.items;
-  console.log("this should be the array for albums: ", albums);
 
   return (
     // use map to make a new array newAlbum, also set the key for each - and pass it to AlbumName *in* albumInfo and *in* artistInfo for Artist
