@@ -16,14 +16,14 @@ export const ArtistName = ({ artists }) =>
                 ))
             )}else if(artists.length >= 2){
                 
-        //oh no! there are more than one artists
+        //there are more than one artists
         const moreThenOneArtists = artists.map((artist, index) => (
-            < >
-                <a href={artist.external_urls.spotify} key={artist.id}>
+            <span key={artist.id}>
+                <a href={artist.external_urls.spotify}>
                     <p className="artist-name">{artist.name}</p>
                 </a>
                 {index < artists.length - 2 ? ", " : index === artists.length - 2 ? " & " : ""}
-            </>
+            </span>
         ));
 
             return (
