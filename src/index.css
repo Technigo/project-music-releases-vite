@@ -43,11 +43,19 @@ code {
   transition: opacity 1s;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
 }
 
 .overlay button {
   background-color: transparent;
   border: none;
   color: white;
+  width: 50px;
+
+/* We use the nesting operator to not repeat the selector. with the Ampersand we make the buttons grow a tiny bit when hover over them  */
+
+  &:hover {
+    scale: 1.2;
+  }
 }
