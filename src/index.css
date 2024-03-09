@@ -21,3 +21,33 @@ code {
 .artist:last-child::after {
   content: "";
 }
+
+.coverImage {
+  position: relative;
+}
+
+/* This is so the overlay does not go outside the album image. */
+.coverImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* This is where we create the foundation for the hover affect.  */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  transition: opacity 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.overlay button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}

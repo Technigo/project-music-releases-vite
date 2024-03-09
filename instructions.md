@@ -33,7 +33,7 @@ This is just a suggestion - how you decide to structure your components is compl
 
 - DONE!! album cover image
 - DONE!! album name
-- the name of each artist involved with a comma between
+- DONE!! the name of each artist involved with a comma between
 
 ## Hover effects:
 
