@@ -13,33 +13,69 @@ code {
 }
 
 body{
-  background-color: black;
+  background-color: rgb(23, 23, 23);
   margin: 15px;
 }
 .albums{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin:10px;
-  height: 300px;
-  width: 300px;
-  border: 2px solid rgba(128, 128, 128, 0.841);
+  flex-wrap: wrap;
+  gap: 15px;
   
 }
 
 .album{
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  max-width: 300px;
+  
 }
 
-.cover-image img{
-  height: 100%;
-  width: 100%;  
+.container-image{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.cover-image {
+  width: 300px;
+  position: absolute;  
+}
+
+.buttons-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  filter: invert();
+}
+
+#heart{
+  width: 80px;
+}
+
+.buttons-image img{
+ width: 50px;
+}
+
 
 .artist-name, .album-name{
-  margin:5px;
+  margin:5px;  
+}
+
+.album-name{
+  font-weight: normal;
+  color: rgb(161, 161, 161);
 }
 
 
@@ -53,19 +89,30 @@ body{
 
 
 /* -----------------------------------TABLET SCREENS 671px to 1024xp 1 colums-------------------------- */
-@media (min-width:671px) and (max-width:1024px) {
-
+@media (min-width:671px) and (max-width:1499px) {
+  .albums{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    justify-items: center;
+   
+  }  
 }
 
 
-/* -----------------------------------PC SCREENS >1024px 3 columns ------------------------------------- */
-@media (min-width: 1024px){
+
+/* -----------------------------------PC SCREENS >1500px 3 columns ------------------------------------- */
+@media (min-width: 1500px){
   .albums{
-     height: 100%;
      display: grid;
-     gap: 30px;
-     max-width: 80%;
-     grid-template-columns: 1fr 1fr 1fr; 
-     grid-template-rows: auto 1fr auto   
+     gap: 50px;
+     grid-template-columns: 1fr 1fr 1fr 1fr; 
+     grid-template-rows: auto;
+     box-sizing: border-box;
+     justify-items: center;
+    
    }  
  }
+

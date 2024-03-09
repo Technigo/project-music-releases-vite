@@ -8,7 +8,6 @@ export const Album = ({artistName, albumName, coverImage}) => {
       <CoverImage coverImage={coverImage}/>
       <ArtistName artistName={artistName}/>
       <AlbumName albumName={albumName}/>
-      <br />
     </div>
   )
 }

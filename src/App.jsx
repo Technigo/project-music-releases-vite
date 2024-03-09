@@ -5,16 +5,16 @@ const selectAlbums = data.albums.items
 
 export const App = () =>{
 return(
-  < >
+  <div className="albums">
     {selectAlbums.map(album => (
-      <Album className="albums"
+      <Album 
         key={album.id}
         artistName={album.artists[0].name}
         coverImage={album.images[0].url}
         albumName={album.name}
       />
     ))}
-  </>
+  </div>
 )
 }
 
