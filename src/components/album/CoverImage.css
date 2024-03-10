@@ -1,4 +1,4 @@
-img{
+.coverImg{
   width: 100%;
   /* border: 1px red solid;     */
 }
@@ -27,12 +27,15 @@ img{
   opacity: 0.8;
 }
 
-button{
+button,
+.play{
   z-index: 2;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
+
+
 
 .heart{
   background-image: url("src/assets/icons/heart.svg");
@@ -43,7 +46,6 @@ button{
 }
 
 .play{
-  background-image: url("src/assets/icons/play.svg");
   margin-right: 40px;
   width: 60px;
   height: 60px;

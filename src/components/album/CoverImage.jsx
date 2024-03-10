@@ -8,10 +8,10 @@ export const CoverImage=({images,name})=> {
   
   return (
     <div className='imgContainer'>
-      <img src={imgUrl} alt={imgAlt} />
+      <img src={imgUrl} alt={imgAlt} className='coverImg' />
       <div className='imgFunction'> 
         <button className='heart'></button>
-        <button className='play'></button>
+        <img src="src/assets/icons/play.svg" className='play'></img>
         <button className='dots'></button>
       </div>
     </div>
