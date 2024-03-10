@@ -1,7 +1,7 @@
 export const ArtistName = ({name, external_urls}) => {
   console.log(external_urls)
   return (
-    <div className="a-links">
+    <div className="artist-link">
       <a href={external_urls}>
        { name } 
       
