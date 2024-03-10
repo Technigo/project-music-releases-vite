@@ -1,3 +1,7 @@
+import 'src/assets/icons/dots.svg'
+import 'src/assets/icons/heart.svg'
+import 'src/assets/icons/play.svg'
+
 .coverImg{
   width: 100%;
   /* border: 1px red solid;     */
@@ -27,15 +31,14 @@
   opacity: 0.8;
 }
 
-button,
-.play{
+.heart,
+.play,
+.dots{
   z-index: 2;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-
-
 
 .heart{
   background-image: url("src/assets/icons/heart.svg");

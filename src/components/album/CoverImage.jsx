@@ -1,7 +1,6 @@
 import './CoverImage.css'
 import PropTypes from 'prop-types'
 
-
 export const CoverImage=({images,name})=> {  
   const imgUrl = images[1].url  
   const imgAlt = name
@@ -10,9 +9,11 @@ export const CoverImage=({images,name})=> {
     <div className='imgContainer'>
       <img src={imgUrl} alt={imgAlt} className='coverImg' />
       <div className='imgFunction'> 
-        <button className='heart'></button>
+        
+        <img src="src/assets/icons/heart.svg" className='heart'></img>
         <img src="src/assets/icons/play.svg" className='play'></img>
-        <button className='dots'></button>
+        <img src="src/assets/icons/dots.svg" className='dots'></img>
+        
       </div>
     </div>
   )
