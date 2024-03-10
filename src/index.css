@@ -137,6 +137,26 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* -----------------------------------------------FOOTER--------------------------------------- */
+footer {
+  bottom: 0;
+  height: 40px;
+  color: #fff;
+  background-color: rgb(67, 18, 119);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-size: .6em;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+
+
 
 /* -----------------------------------------------MEDIA QUERIES--------------------------------------- */
 /* -----------------------------------MOBILE SCREENS 360px to 700xp 1column--------------------------- */
@@ -154,7 +174,8 @@ a {
     grid-template-rows: auto;
     box-sizing: border-box;
     justify-items: center;
-   
+    max-width: 750px;
+    margin: auto;
   }  
 }
 
@@ -163,13 +184,15 @@ a {
 /* -----------------------------------PC SCREENS >1500px 4 columns ------------------------------------- */
 @media (min-width: 1400px){
   .albums{
+     max-width: 1550px;
      display: grid;
      gap: 50px;
      grid-template-columns: 1fr 1fr 1fr 1fr; 
      grid-template-rows: auto;
      box-sizing: border-box;
      justify-items: center;
-     align-items: self-start;   
+     align-items: self-start;
+     margin: auto;
    }  
  }
 

@@ -5,20 +5,26 @@ const selectAlbums = data.albums.items
 
 export const App = () =>{
 return(
-  <div className="albums">
-    {selectAlbums.map(album => (
-      <Album 
-        key={album.id}
-        artistName={album.artists[0].name}
-        artistUrl={album.artists[0].external_urls.spotify}
-        coverImage={album.images[0].url}
-        albumName={album.name}
-        albumUrl= {album.external_urls.spotify}
-      />
-    ))}
-  </div>
-)
-}
+  <div>
+      <div className="albums">
+        {selectAlbums.map(album => (
+          <Album 
+            key={album.id}
+            artistName={album.artists[0].name}
+            artistUrl={album.artists[0].external_urls.spotify}
+            coverImage={album.images[0].url}
+            albumName={album.name}
+            albumUrl={album.external_urls.spotify}
+          />
+        ))}
+      </div>
+      <footer>
+        <p>2024 by Arnau Vidal</p>
+        <img src="src/assets/icons/technigo-logo.svg" alt="Technigo" className="logo" />
+      </footer>
+    </div>
+  );
+};
 
 
 
