@@ -10,10 +10,10 @@ return(
       <Album 
         key={album.id}
         artistName={album.artists[0].name}
-        artistUrl={album.external_urls.spotify}
+        artistUrl={album.artists[0].external_urls.spotify}
         coverImage={album.images[0].url}
         albumName={album.name}
-        albumUrl= {album.artists[0].external_urls.spotify}
+        albumUrl= {album.external_urls.spotify}
       />
     ))}
   </div>

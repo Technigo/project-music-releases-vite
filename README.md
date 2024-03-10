@@ -1,37 +1,12 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This weeks project have been the most challenging by far since I started the bootcamp. I had problems showing up the data in the browser up till fraiday.
+I'm really happy with how it looks like and how the the learning process went.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This week I had read all the documentation, going down down the deep dive. I have used, npm and vite to create my first react App:D
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+[here](https://my-music-releases.netlify.app/)

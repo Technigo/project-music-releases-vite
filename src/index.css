@@ -33,6 +33,11 @@ body{
   justify-content: left;
   align-items: baseline;
   max-width: 300px;  
+  margin-bottom: 15px;
+}
+
+.album div{
+  margin:5px;
 }
 
 .container-image{
@@ -90,19 +95,21 @@ body{
 }
 
 .artist-name, .album-name{
+  font-family: 14px Helvetica;
   display: inline;
   position: relative;   
   margin: 3px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .artist-name{
-  margin-top: 15px;
+  color: #ffffff;
 }
 
 .album-name{
   font-weight: normal;
-  color: rgb(161, 161, 161);
+  color: #a0a0a0;
 }
 
 .artist-name::after, .album-name::after{
@@ -124,6 +131,11 @@ body{
 
   transform: scaleX(1);
   transform-origin: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* -----------------------------------------------MEDIA QUERIES--------------------------------------- */
