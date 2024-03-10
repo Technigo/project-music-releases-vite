@@ -1,3 +1,8 @@
+body {
+  background-color: black;
+  color: white;
+}
+
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +15,107 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Here we fixed the comma, and space for the two artist on one album. https://markheath.net/post/css-comma-separated-list*/
+
+.artist::after {
+  content: ", ";
+}
+
+.artist:last-child::after {
+  content: "";
+}
+
+.coverImage {
+  position: relative;
+}
+
+/* This is so the overlay does not go outside the album image. */
+.coverImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* This is where we create the foundation for the hover affect.  */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  transition: opacity 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  display: none;
+}
+
+.overlay button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 50px;
+
+  /* We use the nesting operator to not repeat the selector. with the Ampersand we make the buttons grow a tiny bit when hover over them  */
+
+  &:hover {
+    scale: 1.2;
+  }
+}
+
+/* Here we make the hover effect on the image */
+.coverImage:hover .overlay {
+  display: flex;
+}
+
+/* Need to add this selector again because the comma on the two artist album is outside the anchor tag.  */
+.artist {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.artist a {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.album a {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 668px) {
+  /* 1 fr means fractional unite, in this case it means two columns of equal width. */
+  .albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
