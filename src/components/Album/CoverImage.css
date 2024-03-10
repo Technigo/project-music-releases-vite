@@ -24,23 +24,21 @@
 .icons {
   position: absolute;
   display: flex;
+  align-items: center;
   gap: 30px;
   opacity: 0;
 }
 
-.heart-icon {
+.heart-icon img {
   width: 20px;
-  display: flex;
 }
 
-.dots-icon {
+.dots-icon img {
   width: 20px;
-  display: flex;
 }
 
-.play-icon {
+.play-icon img {
   width: 60px;
-  display: flex;
 }
 
 /* Play button gets bigger on hover */

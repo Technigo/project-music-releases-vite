@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import "./CoverImage.css";
-import dotsSvg from '../../assets/icons/dots.svg'
-import heartSvg from '../../assets/icons/heart.svg'
-import playSvg from '../../assets/icons/play.svg'
+import dotsSvg from "../../assets/icons/dots.svg";
+import heartSvg from "../../assets/icons/heart.svg";
+import playSvg from "../../assets/icons/play.svg";
 
 export const CoverImage = ({ image, name }) => {
   // Check if images array exists and has at least one element
