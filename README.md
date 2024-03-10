@@ -8,4 +8,4 @@ I was stuch on map the artists name and map the external links. How to map and s
 
 ### View it live
 
-https://jingmusicrelease.netlify.app/
+https://playful-baklava-6aa255.netlify.app/
