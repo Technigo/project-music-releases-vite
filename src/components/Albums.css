@@ -38,18 +38,17 @@ opacity: .5;
   display: flex;
   filter: invert(100);
   z-index:200;
-  opacity: .5;
 }
 
 .play-icons .icon {
-  width: 70px;
+  width: 62px;
   margin: 0 10px;
   transition: all 1s ease-in-out;
 }
 
 .play-icons .heart,
 .play-icons .dots {
-  width: 40px;
+  width: 30px;
 }
 
 .play-icons .icon:hover {
@@ -60,16 +59,28 @@ opacity: .5;
   border-radius: 20px;
 }
 
-.a-links {
+.album-link a {
   margin-top:10px;
   margin-bottom:4px;
   font-weight: 700;
-  font-stretch:semi-condensed
-  /*-webkit-transform: scaleX(0.9);
-  transform: scaleX(0.9);*/ 
-
+  font-size: 14px;
+  text-decoration: none;
 }
 
-.a-links:hover {
+.artist-link a {
+  margin-top:1px;
+  margin-bottom:4px;
+  font-weight: 700;
+  font-size: 14px;
+  color:#a0a0a0;
+  text-decoration:none;
+}
+
+.artist-link:hover{
   text-decoration: underline;
+  color:#a0a0a0;
+}
+
+.album-link:hover {
+  text-decoration: underline; 
  }
