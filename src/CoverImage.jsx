@@ -9,18 +9,16 @@ export const CoverImage = (props) => {
       {/* [0] This means first image. alt text for screen readers is set to an empty string otherwise it will repeat "album, album " */}
       <img src={props.album.images[0].url} alt="" />
       <div className="overlay">
-     
-      <button>
-
-          <img src={heart} alt="like"/>
-      </button>
+        <button>
+          <img src={heart} alt="like" />
+        </button>
 
         <button>
-          <img src={play} alt="play"/>
-          </button>
-       
+          <img src={play} alt="play" />
+        </button>
+
         <button>
-          <img src={dots} alt="menu"/>
+          <img src={dots} alt="menu" />
         </button>
       </div>
     </div>

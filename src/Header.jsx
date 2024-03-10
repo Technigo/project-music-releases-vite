@@ -6,4 +6,4 @@ export const Header = () => {
       <h1>Fresh, brand new, latest music!</h1>
     </header>
   );
-}
+};

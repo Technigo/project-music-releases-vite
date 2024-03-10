@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  color: white; 
+  color: white;
 }
 
 :root {
@@ -11,8 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -107,7 +105,6 @@ code {
   }
 }
 
-
 @media (min-width: 668px) {
   /* 1 fr means fractional unite, in this case it means two columns of equal width. */
   .albums {
@@ -116,10 +113,9 @@ code {
   }
 }
 
-
 @media (min-width: 1024px) {
   .albums {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
