@@ -79,7 +79,7 @@ This is just a suggestion - how you decide to structure your components is compl
   - showing 4 albums per row on desktop
   - 2 per row on tablet
   - 1 per row on mobile.
-
+F
 ## Stretch goals
 So you’ve completed the requirements? Great job! Make sure you've committed and pushed a version of your project before starting on the stretch goals. Remember that the stretch goals are optional.
 

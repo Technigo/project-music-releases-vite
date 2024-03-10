@@ -1,7 +1,9 @@
-export const ArtistName = ({artistName}) => {
+export const ArtistName = ({artistName, artistUrl}) => {
   return (
-    <h2 className="artist-name">
-      {artistName}
-    </h2>
+    <div>
+      <a href={artistUrl} className="artist-name">
+        {artistName}
+      </a>
+    </div>
   )
 }
