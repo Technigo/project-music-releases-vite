@@ -1,37 +1,12 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+The mission was to start a Vite Development Server and try to emulate a page that shows new album releases with links to both albums and artists.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Early on I watched an introduction to React from Traversy Media on YouTube. He talked about the beauty of UseEffect. So I started a project and tested it out, before discovering that it is a hook and a topic for future projects. And a little too advanced for this week. So I decided to rework with "simpler" code. Trying to understand concepts like props etc. has been very challenging and something I'm still struggling to grasp. After an incredible amount of googling, messing with chatGPT, struggling with css, and some tips from demo sessions, I have a reasonably well-functioning project.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://sparkling-naiad-5c7bb9.netlify.app/
