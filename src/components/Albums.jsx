@@ -7,12 +7,6 @@ import { AlbumCover } from "./children/AlbumCover";
 export const Albums = () => {
   // Save data in a variabel
   const { albums } = data;
-  // This is an arrow function that iterates all album items and passing them down to child components
-  // Parentheses around the JSX element act as an implicit return
-  /**
-   * AlbumName -> name & external_urls.spotify
-   * ArtistName -> artist.name, artist
-   */
   const renderAlbums = albums.items.map(
     ({ id, name, external_urls, images, artists }) => (
       <div className="album-items" key={id}>

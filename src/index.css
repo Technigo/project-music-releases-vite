@@ -31,3 +31,16 @@ footer {
 a {
   color: white;
 }
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 740px) {
+  main,
+  header,
+  footer {
+    padding: 0 1.5em;
+  }
+}
