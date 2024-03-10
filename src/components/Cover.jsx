@@ -8,7 +8,7 @@ export const Cover = ({ coverInfo }) => {
   let coverInfoObj = {
     image: coverInfo.images[1].url,
     url: coverInfo.external_urls.spotify,
-  }    
+  }
   return (
     <div className="cover-image-wrapper">
       <div className="cover-image-element">

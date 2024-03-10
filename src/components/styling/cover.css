@@ -33,11 +33,11 @@
   transition: all 0.2s ease-in-out;
 }
 
-.heart-icon, 
+.heart-icon,
 .dots-icon {
-width: 30px;
-height: 30px;
-filter: invert(0.8);
+  width: 30px;
+  height: 30px;
+  filter: invert(0.8);
 }
 
 .heart-icon:hover,
@@ -61,7 +61,4 @@ filter: invert(0.8);
   cursor: pointer;
 }
 
-@media (min-width: 1025px) {
-
-}
-
+@media (min-width: 1025px) {}

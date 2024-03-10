@@ -10,7 +10,7 @@ We had some difficulties in the beginning that cost us a lot of time figuring ou
 
 As soon as we managed to connect the components, the styling got extremly fast.
 
-If we could change something, we probably would make sure that our equiptment is up to date. Because this cost us too much time. We also wanted to add buttons to display the albums and singles separatly. But were running out of time, therefore we deleted the idea from our code.
+If we could change something, we probably would make sure that our equipment is up to date. Because this cost us too much time. 
 
 ### View it live
 

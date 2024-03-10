@@ -1,33 +1,33 @@
 /* GRID */
 body {
-	max-width: 100%;
-	padding: 10px;
-	border: 0;
-	margin: 0;
-	overflow: none;
-	height: auto;
-	background-color: #181818;
-	font-family: Helvetica, arial sans-serif;
-	font-size: 14px;
+  max-width: 100%;
+  padding: 10px;
+  border: 0;
+  margin: 0;
+  overflow: none;
+  height: auto;
+  background-color: #181818;
+  font-family: Helvetica, arial sans-serif;
+  font-size: 14px;
 }
 
 .album-wrap {
-	padding-top: 2em;
-	display: grid;
-	grid-template: auto, 1fr;
-	grid-gap: 2em 1em;
-	place-items: center;
+  padding-top: 2em;
+  display: grid;
+  grid-template: auto, 1fr;
+  grid-gap: 2em 1em;
+  place-items: center;
 }
 
 @media(min-width: 667px) {
-	.album-wrap {
-		grid-template-columns: 1fr 1fr;
-	}
+  .album-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media(min-width: 1025px) {
-	.album-wrap {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		max-width: 100%;
-	}
+  .album-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+  }
 }

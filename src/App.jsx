@@ -6,11 +6,11 @@ import "./components/styling/app.css"
 //pass json data to  *mArray* in Album
 export const App = () => {
 
-	return (
-		<div className="app-wrap">
-			<Header albumList={data}/>
-			<Album mArray={data} />
+  return (
+    <div className="app-wrap">
+      <Header albumList={data} />
+      <Album mArray={data} />
 
-		</div>
-	)
+    </div>
+  )
 }

@@ -1,57 +1,52 @@
 /* album styles */
 .album {
-	display: flex;
-	flex-direction: column;
-	row-gap: 0px;
-	place-items: flex-start;
-	max-width: 100%;
-	text-wrap: pretty;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+  place-items: flex-start;
+  max-width: 100%;
+  text-wrap: pretty;
 }
 
-h3{
-	margin:10px 0 0 0;
-	color: #a0a0a0;
-	font-size: 14px;
-	font-weight: 200;
+h3 {
+  margin: 10px 0 0 0;
+  color: #a0a0a0;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 h2 {
-	margin:3px 0 0 0;
-	color: #fff;
-	font-size: 14px;
+  margin: 3px 0 0 0;
+  color: #fff;
+  font-size: 14px;
 }
 
-.albumTitle{
-	max-width:300px;
+.albumTitle {
+  max-width: 300px;
 }
+
 /* links */
 
 a:link,
 visited,
-active
-	{
-	text-decoration: none;
+active {
+  text-decoration: none;
 }
 
 a:focus-visible {
-	outline: 3px solid #a0a0a0;
-	color: #fff;
+  outline: 3px solid #a0a0a0;
+  color: #fff;
 }
 
 .albumTitle a:hover {
-	text-decoration: underline 1.3px #fff;
-	}
+  text-decoration: underline 1.3px #fff;
+}
 
 .artistTitle a:hover {
-	text-decoration: underline 1.3px #696969;
+  text-decoration: underline 1.3px #696969;
 }
 
 /* album type */
 .album-type {
-	display: none
+  display: none
 }
-
-
-
-
-
