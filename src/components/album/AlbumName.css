@@ -1,32 +1,28 @@
 *{
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .albumInfo{
-    margin-bottom: 2px;
-    margin-top: 6px;
+  margin-bottom: 2px;
+  margin-top: 6px;
 }
 
 .albumName{
-    font-weight: 700;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: "Helvetica";
-    text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Helvetica";
+  text-decoration: none;
 }
 
 .albumName:hover{
-    text-decoration: underline;
-}
-
-@media (min-width:667px) and (max-width:1024px){
-
+  text-decoration: underline;
 }
 
 @media (min-width:1025px){
-    .albumInfo{
-        margin-bottom: 4px;
-        margin-top: 6px;
-    }
+  .albumInfo{
+    margin-bottom: 4px;
+    margin-top: 6px;
+  }
 }
 

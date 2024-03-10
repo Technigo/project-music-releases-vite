@@ -1,23 +1,24 @@
 .artist{
-    color:#a0a0a0;
-    font-size: 14px;
-    margin-top: 1px;
-    height: auto;
-    border: 1px white sold;
-    font-family: Helvetica;
-    cursor: pointer;
-    text-decoration: none;
+  color:#a0a0a0;
+  font-size: 14px;
+  margin-top: 1px;
+  height: auto;
+  border: 1px white sold;
+  font-family: Helvetica;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .artist:hover{
-    text-decoration: underline;
-    color: #ffffff;
+  text-decoration: underline;
+  color: #ffffff;
 }
 
-@media (min-width:667px) and (max-width:1024px){
-
+.artist:not(:last-of-type):after {
+  content: ", ";
+  
 }
 
-@media (min-width:1025px){
-    
+.artist:nth-last-of-type(2):after {
+  content: " & ";
 }
