@@ -12,6 +12,15 @@
   opacity: 1;
 }
 
+.cover-image {
+  width: 100%;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+}
+
 .icons {
   position: absolute;
   display: flex;
