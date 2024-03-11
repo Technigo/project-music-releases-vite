@@ -97,6 +97,9 @@ body{
 .buttons-image img{
   display: none;
   width: 30px;
+
+  transform: scale(1);
+  transition: transform 250ms ease-in;
 }
 
 /*This is like magic, and will make things to apear */
@@ -105,7 +108,7 @@ body{
 }
 
 .buttons-image img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.2); 
 }
 
 .artist-name, .album-name{
