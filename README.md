@@ -1,7 +1,7 @@
 
 # Music Releases
 
-This weeks project was a new releases music album library made in React. It was the first project we've worked on with React.
+This weeks project was a new releases music album library made in React that should connect to Spotify. It was the first project we've worked on with React.
 
 ### The Problem
 
