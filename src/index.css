@@ -1,13 +1,266 @@
 :root {
+  --transition-speed: 0.3s;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+h2 {
+  color: #181818;
+}
+
+.header {
+  background-color: #fedb5a;
+}
+
+/* Sidebar */
+.sidebar-btn {
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.animate-sidebar {
+  color: #181818;
+  animation-name: blink-music;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  animation-direction: alternate-reverse;
+  animation-duration: 5s;
+}
+
+.sidebar-btn:hover {
+  animation-name: none;
+  color: #2f2e2e;
+}
+
+.close-btn {
+  background-color: inherit;
+  border: none;
+  margin: 1rem;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.sidebar-menu {
+  z-index: 2;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #2f2e2e;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-menu h2 {
+  cursor: default;
+  align-self: center;
+  text-align: left;
+  color:#fedb5a;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.sidebar-menu > * {
+  color: #ffffff;
+  transition: 0.5s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.playlist {
+  align-self: center;
+  padding: 0 2rem;
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.overlay:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.child-overlay:hover {
+  opacity: 1;
+}
+
+/* Change the color of the svgs */
+.child-overlay {
+  width: 15%;
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+.play-image {
+  transition: 0.1s;
+}
+
+.play-image:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+}
+
+.album-name a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
+
+.album-collection {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: fit-content(300px);
+  justify-content: center;
+  align-items: center;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica";
+  font-size: 14px;
+  text-decoration: none;
+  width: inherit;
+  padding: 20px;
+}
+
+.album-name a {
+  font-weight: 700;
+}
+
+.album-name {
+  margin: 15px 0 8px 0;
+}
+
+.artist-name {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.artist-name a {
+  color: #a0a0a0;
+}
+
+.cover-image {
+  position: relative;
+  width: inherit;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: grid;
+}
+
+.album-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fedb5a;
+  border-radius: 100px;
+  padding: 20px;
+  margin: 0;
+}
+
+@media (min-width: 641px) {
+  .album-collection {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    margin: 3rem 20px;
+  }
+
+  .playlist {
+    padding: 1rem 3rem;
+    font-size: 24px;
+  }
+
+  .album-type {
+    border-radius: 100px 0 0 100px;
+    width: 100%;
+    justify-content: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-collection {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    margin: 4rem 40px;
+  }
+
+  .playlist {
+    padding: 2rem 5rem;
+  }
+}
+
+@keyframes blink-music {
+  0%,
+  10% {
+    color: #181818;
+  }
+  5% {
+    color: #eee;
+  }
 }
