@@ -22,18 +22,18 @@
     padding-left: 20px;
     padding-right: 20px;
     position: absolute;
-    margin-top: -165px; 
+    margin-top: -165px;
     opacity: 0%;
 }
 
-.cover-icons:hover > .icons{
-   opacity: 100%;
-   transition: 0.3s ease;
+.cover-icons:hover>.icons {
+    opacity: 100%;
+    transition: 0.3s ease;
 }
 
-.cover-icons:hover > .cover-image{
-   opacity: 30%;
-   transition: 0.3s ease;
+.cover-icons:hover>.cover-image {
+    opacity: 30%;
+    transition: 0.3s ease;
 }
 
 .heart:hover {
@@ -54,7 +54,7 @@
     width: 60px;
     transition: 0.5s ease;
     margin-top: -12px;
-} 
+}
 
 
 .album-info {
@@ -81,9 +81,9 @@ h2::after {
     transition: 0.3s ease;
 }
 
-h2:hover::after{
-    width: 100%; 
-    left: 0;  
+h2:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 h3 {
@@ -102,12 +102,12 @@ h3::after {
     left: 0;
     position: absolute;
     background: #fff;
-    transition: 0.3s ease; 
+    transition: 0.3s ease;
 }
 
-h3:hover::after{
-    width: 100%; 
-    left: 0; 
+h3:hover::after {
+    width: 100%;
+    left: 0;
     color: #ffffff;
 }
 
@@ -121,28 +121,27 @@ a {
 }
 
 
-@media (min-width: 600px) AND (max-width: 1299px){
-.album-section {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: auto;
-    margin-right: auto;
+@media (min-width: 600px) AND (max-width: 1299px) {
+    .album-section {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .album-info {
+        padding-bottom: 60px;
+    }
 }
 
-.album-info {
-    padding-bottom: 60px;
-}
-}
+@media (min-width: 1300px) {
+    .album-section {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-@media (min-width: 1300px){
-.album-section {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    .album-info {
+        padding-bottom: 60px;
+    }
 }
-    
-.album-info {
-    padding-bottom: 60px;
-}
-}
-

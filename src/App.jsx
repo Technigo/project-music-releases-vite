@@ -3,12 +3,12 @@ import { Header } from "./Header.jsx";
 import { Album } from "./assets/Components/Album/Album.jsx";
 
 export const App = () => {
-  return ( 
+  return (
     <section className="container">
-    <Header />
+      <Header />
       <div>
-      <Album albums={data.albums.items}/>
+        <Album albums={data.albums.items} />
       </div>
-  </section>
-  )
+    </section>
+  );
 };
