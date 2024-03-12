@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Artist } from "./Artist"
 import { AlbumName } from "./AlbumName"
 import { Cover } from "./Cover";
@@ -31,10 +31,10 @@ export const Album = ({ mArray }) => {
 	return (
 		//get user input from button - pass til handlePreview function with correct parameter
 		<div className="nav-wrapper">
-			<button id="single" className="type-btn" onClick={() => handlePreview("single")}>Singles</button>
-			<button id="album" className="type-btn" onClick={() => handlePreview("album")}>Albums</button>
 			<button id="all" className="type-btn" onClick={() => handlePreview("all")}>All</button>
-
+			<button id="album" className="type-btn" onClick={() => handlePreview("album")}>Albums</button>
+			<button id="single" className="type-btn" onClick={() => handlePreview("single")}>Singles</button>
+		
 			<section className="album-wrap">
 				{selected.map((newAlbum, index) => {
 					return (
