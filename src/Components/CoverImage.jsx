@@ -1,9 +1,8 @@
 import PropTypes from "prop-types"
-import Icon from "./Icon"
 import Heart from "../assets/icons/heart.svg"
 import Play from "../assets/icons/play.svg"
 import Dots from "../assets/icons/dots.svg"
-
+import Icon from "./Icon"
 import "./Album.css"
 
 export const CoverImage = ({ coverImg }) => {
@@ -26,5 +25,3 @@ export const CoverImage = ({ coverImg }) => {
 CoverImage.propTypes = {
   coverImg: PropTypes.string.isRequired,
 }
-
-export default CoverImage

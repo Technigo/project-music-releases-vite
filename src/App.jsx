@@ -1,7 +1,9 @@
-import data from "./data.json"
 import { Header } from "./Components/Header"
 import { Album } from "./Components/Album"
 import { Footer } from "./Components/Footer"
+
+import data from "./data.json"
+
 import "./App.css"
 
 //This is where we get the data from json
@@ -30,5 +32,3 @@ export const App = () => {
     </div>
   )
 }
-
-export default App

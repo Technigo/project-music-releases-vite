@@ -18,7 +18,6 @@ export const ArtistName = ({ artists }) => {
               <span>
                 {artist.name}
                 {index <= artists.length - 2 && (multipleArtists ? "," : "")}
-                {/* &nbsp; */}
               </span>
             </h3>
           </a>
@@ -36,5 +35,3 @@ ArtistName.propTypes = {
     })
   ).isRequired,
 }
-
-export default ArtistName
