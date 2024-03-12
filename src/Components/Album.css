@@ -1,0 +1,90 @@
+/* General styling */
+body {
+  background-color: black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Styling for the album */
+.cover-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.album-container h2 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.album-container h3 {
+  color: #a0a0a0;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+/* Styling for the links */
+.album-link,
+.artist-link {
+  text-decoration: none;
+}
+
+.album-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.artist-link:hover {
+  color: #a0a0a0;
+  text-decoration: underline;
+}
+
+.artist-names {
+  display: flex;
+}
+
+.artist-names a {
+  text-decoration: none;
+}
+.artist-link {
+  padding-right: 3px;
+}
+
+.cover-image-container {
+  position: relative;
+}
+
+/* Styling for the icons */
+
+.album-icon {
+  width: 40px;
+  height: 40px;
+  filter: invert(
+    100%
+  ); /*This is to invert the color to white since the icons are initially black*/
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cover-image-container:hover .icon-container {
+  display: flex;
+}
+
+/*Styling for play-icon when hovering*/
+
+.play-icon:hover {
+  transform: scale(2);
+  transition: all 0.5s ease-in-out;
+}
