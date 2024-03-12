@@ -1,0 +1,13 @@
+h2 {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+h2:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}

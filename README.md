@@ -1,37 +1,13 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+The project this week was to build a music library that shows new albums and single releases, using Spotify data. To get more familiar with React, we practiced creating components and transferring data.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We mostly worked together doing mob programming, through the entire project. Setting up the structure and connecting the elements together. Later in the project, some features and bug fixes were worked on independently. 
+Creating the structure, components, it's children's components and transferring data was pretty straight forward. The main part of the encountered problems this week had to do with the styling. We managed though to refresh our css skills and are pleased with the result. 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://curious-melba-03c2b4.netlify.app/
 
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
