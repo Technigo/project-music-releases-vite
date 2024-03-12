@@ -1,6 +1,3 @@
-import PropTypes from "prop-types";
-
-
 export const ArtistName = ({ artists }) =>
 { 
     //
@@ -48,7 +45,3 @@ export const ArtistName = ({ artists }) =>
 
     
    
-
-ArtistName.propTypes ={
-    artists:PropTypes.array
-}

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import {HeartIcon} from "./HeartIcon"
 import {PlayIcon} from "./PlayIcon"
 import {DotsIcon} from "./DotsIcon"
@@ -19,6 +18,3 @@ export const CoverImage = ({album}) =>{
     )
 }
 
-CoverImage.propTypes ={
-    album:PropTypes.object
-}

@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 export const AlbumName = ({ album }) =>{
   return (
     <a href={album.external_urls.spotify}>
@@ -8,6 +6,3 @@ export const AlbumName = ({ album }) =>{
   )
 }
 
-AlbumName.propTypes = {
-  album: PropTypes.object
-}
