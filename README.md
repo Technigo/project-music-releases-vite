@@ -1,7 +1,7 @@
 # Music Releases
 
 This weeks project have been the most challenging by far since I started the bootcamp. I had problems showing up the data in the browser up till fraiday.
-I'm really happy with how it looks like and how the the learning process went.
+I'm really happy with how it finally looks and how the learning process went.
 
 ### The Problem
 

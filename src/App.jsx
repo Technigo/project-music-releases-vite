@@ -27,7 +27,7 @@ return(
 
 // I keep it for personal pourposes
 //CONSOLE.LOG HERO HERE: 
-// console.log(data.albums.items)
+console.log(data.albums.items)
 console.log(data.albums.items.slice(0, 2)) 
 // console.log("Artist name: ", data.albums.items[0].artists[0].name)
 // console.log("Cover image: ", data.albums.items[0].images[0].url)
