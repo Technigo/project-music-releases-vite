@@ -11,5 +11,3 @@ export const Album = ({artistName, albumName, coverImage, artistUrl, albumUrl}) 
     </div>
   )
 }
-
-
