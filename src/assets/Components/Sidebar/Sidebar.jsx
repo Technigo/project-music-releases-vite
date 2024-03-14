@@ -1,6 +1,6 @@
-import './sidebar.css'
-import { CoverPlaylistImg } from '../CoverPlaylistImg/CoverPlaylistImg.jsx'
-import { PlaylistName } from '../PlaylistName/PlaylistName.jsx'
+import "./Sidebar.css";
+import { CoverPlaylistImg } from "../CoverPlaylistImg/CoverPlaylistImg.jsx";
+import { PlaylistName } from "../PlaylistName/PlaylistName.jsx";
 export const Sidebar = ({ playlists }) => {
   return (
     <div className="playlistContainer">
@@ -10,5 +10,5 @@ export const Sidebar = ({ playlists }) => {
         playlistsUrls={playlists.external_urls.spotify}
       />
     </div>
-  )
-}
+  );
+};
