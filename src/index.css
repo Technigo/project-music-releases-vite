@@ -127,17 +127,24 @@ header h1{
   transform: scale(1.2); 
 }
 
-.artist-name, .album-name{
-  font-family: 14px Helvetica;
-  display: inline;
-  position: relative;   
-  margin: 3px;
-  cursor: pointer;
+.artist-name,
+.album-name,
+.artist-name:hover,
+.album-name:hover {
   text-decoration: none;
-  color: inherit; /* Inherit color from parent */
 }
 
-.artist-name:hover::after, 
+.artist-name,
+.album-name {
+  font-family: 14px Helvetica;
+  display: inline;
+  position: relative;
+  margin: 3px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.artist-name:hover::after,
 .album-name:hover::after {
   content: "";
   position: absolute;
@@ -150,6 +157,8 @@ header h1{
   transform-origin: left;
   transition: transform 250ms ease-in;
 }
+
+
 
 @media (min-width: 360px) and (max-width: 699px){
   .albums {

@@ -1,8 +1,8 @@
-import { Album } from "./components/Album"
-import data from "./data.json"
-import Header from "./components/Header"
+import { Album } from "./components/Album";
+import data from "./data.json";
+import Header from "./components/Header";
 
-const selectAlbums = data.albums.items
+const selectAlbums = data.albums.items;
 
 export const App = () => {
   return (
@@ -12,10 +12,16 @@ export const App = () => {
         {selectAlbums.map(album => (
           <Album
             key={album.id}
-            artistName={album.artists[0].name}
+            artistName={
+              <a href={album.artists[0].external_urls.spotify} style={{ textDecoration: 'none', color: 'inherit' }}>
+                {album.artists[0].name}
+              </a>
+            }
             artistUrl={album.artists[0].external_urls.spotify}
             coverImage={album.images[0].url}
-            albumName={album.name}
+            albumName={
+              <a href={album.external_urls.spotify} style={{ textDecoration: 'none', color: 'inherit' }}>{album.name}</a>
+            }
             albumUrl={album.external_urls.spotify}
           />
         ))}
