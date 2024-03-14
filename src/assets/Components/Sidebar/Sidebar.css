@@ -1,14 +1,9 @@
 .sideBar {
-  height: 100%;
-  width: 50px;
-  position: fixed; /* Fixed Sidebar  */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
+  display: grid;
+  flex-direction: column-reverse;
   background: #191b1b;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 15px;
   box-sizing: border-box;
+  grid-template-columns: auto auto auto auto;
 }
 .sideBar a {
   font-family: Helvetica;

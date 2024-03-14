@@ -54,6 +54,9 @@ body {
 .artistName {
   padding-top: 10px;
 }
+span {
+  color: #a0a0a0;
+}
 .header {
   color: white;
   text-align: center;
