@@ -22,11 +22,11 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Initially, I structured React components such as App, Header, and Album, striving to grasp the fundamentals of component-based development. I utilized .map() to iterate through the album data, a concept I had recently learned, to dynamically render each album's details. As I delved deeper, I encountered challenges in implementing hover effects and ensuring the app's responsiveness across various devices. However, through research and experimentation with CSS, I managed to overcome these hurdles. Reflecting on this experience, I recognize the value of hands-on learning and am eager to continue honing my skills as a web developer.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://musichology.netlify.app/
 
 ## Instructions
 
