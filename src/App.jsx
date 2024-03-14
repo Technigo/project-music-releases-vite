@@ -1,10 +1,10 @@
-import data from './data.json'
-import moreData from './stretch-goal.json'
-import { Header } from './assets/Components/Header/Header.jsx'
-import { Sidebar } from './assets/Components/Sidebar/Sidebar.jsx'
+import data from "./data.json";
+import moreData from "./stretch-goal.json";
+import { Header } from "./assets/Components/Header/Header.jsx";
+import { Sidebar } from "./assets/Components/Sidebar/Sidebar.jsx";
 
-import { Section } from './assets/Components/Section/Section.jsx'
-import './app.css'
+import { Section } from "./assets/Components/Section/Section.jsx";
+import "./App.css";
 
 export const App = () => {
   return (
@@ -21,5 +21,5 @@ export const App = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
