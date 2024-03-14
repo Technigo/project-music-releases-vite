@@ -1,4 +1,4 @@
-import './Sidebar.css'
+import './sidebar.css'
 import { CoverPlaylistImg } from '../CoverPlaylistImg/CoverPlaylistImg.jsx'
 import { PlaylistName } from '../PlaylistName/PlaylistName.jsx'
 export const Sidebar = ({ playlists }) => {

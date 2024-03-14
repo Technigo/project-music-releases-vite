@@ -1,33 +1,21 @@
 export const ArtistName = ({ artists }) => {
   const displayArtists = () => {
-    const artistLength = artists.artistLength
+    const artistLength = artists.length
     if (artistLength === 0) return ''
     // if only one print the name
-    if (artistLength === 1) return artists[0].name
-    // take the last 2 artists names
-    const lastTwoArtists = artists.slice(-2).map((artist) => artist.name)
-    // take the other artists which are not the last two and add comma in between
-    const otherArtists = artists
-      .slice(0, -2)
-      .map((artist) => artist.name)
-      .join(',')
-    // finally print only a comma for the artists before the last 2 and and & between last 2
-    return `${
-      otherArtists.length ? otherArtists + ',' : ''
-    }${lastTwoArtists.join(' & ')}`
+    if (artistLength === 1)
+      return <a href={artists[0].external_urls.spotify}>{artists[0].name}</a>
+    // if 2 print an & between
+    if (artistLength === 2) {
+      return (
+        <span>
+          <a href={artists[0].external_urls.spotify}>{artists[0].name}</a> &{' '}
+          <a href={artists[1].external_urls.spotify}>{artists[1].name}</a>
+        </span>
+      )
+    }
+    return '' // if more than 2, return empty string
   }
   // Print it into the Album
-  return (
-    <span className="artistName">
-      <a
-        /* linked the spotify-link to artist  */
-        href={artists.map((artist) => artist.external_urls.spotify)}
-        rel="link-spotify"
-      >
-        {displayArtists()}
-      </a>
-    </span>
-  )
+  return <span className="artistName">{displayArtists()}</span>
 }
-// this was the old artistName value 👇🏻
-// {artists.map((artist) => artist.name).join(', ')}

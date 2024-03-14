@@ -4,14 +4,11 @@ import { Header } from './assets/Components/Header/Header.jsx'
 import { Sidebar } from './assets/Components/Sidebar/Sidebar.jsx'
 
 import { Section } from './assets/Components/Section/Section.jsx'
-import './App.css'
-
-console.log(data)
-console.log(moreData)
+import './app.css'
 
 export const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
 
       <div id="albumContainer" className="album-container">

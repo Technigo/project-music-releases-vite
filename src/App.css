@@ -1,15 +1,15 @@
 /* addind margin to avoid content to go under sidebar */
-.App {
+.app {
   margin-left: 50px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 @media (min-width: 669px) and (max-width: 1024px) {
-  .App {
+  .app {
     margin-left: 100px;
   }
 }
 @media (min-width: 1025px) {
-  .App {
+  .app {
     margin-left: 200px;
   }
 }
