@@ -6,9 +6,7 @@ export const App = () => {
   return (
     <>
       <Header />
-      <main>
-        <Albums />
-      </main>
+      <Albums />
       <Footer />
     </>
   );

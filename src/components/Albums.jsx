@@ -19,5 +19,9 @@ export const Albums = () => {
       </div>
     )
   );
-  return <section className="album-container">{renderAlbums}</section>;
+  return (
+    <main>
+      <section className="album-container">{renderAlbums}</section>
+    </main>
+  );
 };
