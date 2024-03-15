@@ -94,6 +94,10 @@
   text-decoration: underline;
 }
 
+.artist-link span {
+  color: #a0a0a0;
+}
+
 /*  Two column grid on tablet  */
 @media (max-width: 1400px) {
   .album-container {

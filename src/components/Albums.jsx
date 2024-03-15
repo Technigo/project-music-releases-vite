@@ -15,6 +15,7 @@ export const Albums = () => {
         <ArtistName
           name={artists[0].name}
           external_urls={artists[0].external_urls.spotify}
+          artists={artists}
         />
       </div>
     )
