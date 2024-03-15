@@ -1,7 +1,17 @@
 import data from "./data.json";
-
-console.log(data);
+import { Header } from "./components/Header";
+import { Album } from "./components/Album";
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  const albumDatas = data.albums.items;
+  return (
+    <>
+      <Header />
+      <div className="album-card">
+        {albumDatas.map((albumData) => (
+          <Album key={albumData.id} albumData={albumData} />
+        ))}
+      </div>
+    </>
+  );
 };

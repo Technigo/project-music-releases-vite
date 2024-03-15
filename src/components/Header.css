@@ -1,0 +1,18 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 auto;
+  }
+  
+  /* Media query for phone and tablets */
+  @media screen and (max-width: 940px) {
+    header {
+      font-size: 40px;
+    }
+  }

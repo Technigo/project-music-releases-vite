@@ -1,0 +1,20 @@
+.artist-name-link a,
+.comma{
+  color: #a0a0a0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-top: -10px;
+  text-decoration: none;
+}
+
+.artist-name-link a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Media query for phone and tablets */
+@media screen and (max-width: 980px) {
+  .artist-name-link p {
+    font-size: 10px;
+  }
+}
