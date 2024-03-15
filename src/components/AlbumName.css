@@ -1,18 +1,22 @@
-.album-name p {
+.album-name a {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-top: 5px;
+  text-decoration: none;
 }
 
-.album-name p:hover {
+.album-name a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
+.artist-name-link {
+  display: inline-block;
+}
 /* Media query for phone and tablets */
 @media screen and (max-width: 940px) {
-  .album-name p {
+  .album-name a {
     font-size: 10px;
   }
 }
