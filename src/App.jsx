@@ -1,7 +1,17 @@
 import data from "./data.json";
-
-console.log(data);
+import { Album } from "./Components/Album";
+import { Header } from "./Components/Header";
+import "./App.css";
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <div>
+      <Header />
+      <div className="albumGrid">
+        {data.albums.items.map((album, index) => (
+          <Album key={index} album={album} />
+        ))}
+      </div>
+    </div>
+  );
 };
