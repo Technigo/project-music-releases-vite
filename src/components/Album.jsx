@@ -14,7 +14,7 @@ export const Album = ({ mArray }) => {
 
 	//Handle the different states - use filter to get new results
 	const handlePreview = (state) => {
-		if (state === "single") {
+    if (state === "single") {
 			const single = all.filter(artist => artist.album_type === "single")
 			setSelected(single)
 			return single
