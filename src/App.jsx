@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <div className="app-wrap">
       <Header albumList={data} />
-      <Album mArray={data} />
+      <Album musicArray={data} />
 
     </div>
   )

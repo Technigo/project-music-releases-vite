@@ -7,8 +7,8 @@ import "./styling/album.css"
 
 //get the data *mArray* and "filter" it further down (albums)
 
-export const Album = ({ mArray }) => {
-	let all = mArray.albums.items;
+export const Album = ({ musicArray }) => {
+	let all = musicArray.albums.items;
 	//set default state
 	const [selected, setSelected] = useState(all);
 
