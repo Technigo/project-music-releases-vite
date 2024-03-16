@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.cover-image-element {
+.cover-image-element > img {
   width: 100%;
   height: auto;
 }
