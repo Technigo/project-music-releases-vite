@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import { Artist } from "./Artist"
 import { AlbumName } from "./AlbumName"
-import { Cover } from "./Cover";
+import { Cover } from "./Cover"
 import "./styling/album.css"
 
 
@@ -15,16 +15,16 @@ export const Album = ({ mArray }) => {
 	//Handle the different states - use filter to get new results
 	const handlePreview = (state) => {
 		if (state === "single") {
-			const single = all.filter(artist => artist.album_type === "single");
-			setSelected(single);
-			return single;
+			const single = all.filter(artist => artist.album_type === "single")
+			setSelected(single)
+			return single
 		} else if (state === "album") {
-			const album = all.filter(artist => artist.album_type === "album");
-			setSelected(album);
-			return album;
+			const album = all.filter(artist => artist.album_type === "album")
+			setSelected(album)
+			return album
 		} else if (state === "all") {
-			setSelected(all);
-			return all;
+			setSelected(all)
+			return all
 		}
 
 	}
@@ -43,13 +43,10 @@ export const Album = ({ mArray }) => {
 							<AlbumName albumInfo={newAlbum} />
 							<Artist artistInfo={newAlbum} />
 						</article>
-
-
-					);
+					)
 				})
 				}
-
 			</section>
 		</div>
 	)
-};
+}

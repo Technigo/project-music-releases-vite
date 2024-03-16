@@ -1,5 +1,5 @@
-import { Header } from "./components/Header.jsx";
-import { Album } from "./components/Album.jsx";
+import { Header } from "./components/Header.jsx"
+import { Album } from "./components/Album.jsx"
 import data from "./data.json";
 import "./components/styling/app.css"
 
