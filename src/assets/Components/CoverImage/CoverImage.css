@@ -1,0 +1,78 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+.cover-image {
+  width: 100%;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+#icon-small {
+  width: 35px;
+  height: 35px;
+  align-self: center;
+  padding: 10px;
+  /* lowered opacity👇🏻 */
+  opacity: 50%;
+}
+
+#icon-big {
+  width: 60px;
+  height: 60px;
+  align-self: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  /* lowered opacity👇🏻 */
+  opacity: 50%;
+}
+
+.container:hover .icons {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; /* Initially hidden */
+  transition: 0.3s ease;
+}
+
+.container:hover .overlay {
+  z-index: 1; /* Bring overlay to front on hover */
+}
+
+#icon-small,
+#icon-big {
+  filter: brightness(0) invert(1);
+}
+/* full opacity on hover👇🏻 */
+#icon-big:hover {
+  transform: scale(1.2); /*grow on hover*/
+  opacity: 100%;
+}
+
+/* full opacity on hover👇🏻 */
+#icon-small:hover {
+  opacity: 100%;
+}

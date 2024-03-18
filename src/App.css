@@ -1,0 +1,14 @@
+.app {
+  margin: 10 px;
+  padding: 0px 10px;
+}
+@media (min-width: 669px) and (max-width: 1024px) {
+  .app {
+    margin-left: 100px;
+  }
+}
+@media (min-width: 1025px) {
+  .app {
+    margin-left: 200px;
+  }
+}

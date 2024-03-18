@@ -1,0 +1,38 @@
+.sideBar {
+  display: grid;
+  flex-direction: column-reverse;
+  background: #191b1b;
+  box-sizing: border-box;
+  grid-template-columns: auto auto auto auto;
+}
+.sideBar a {
+  font-family: Helvetica;
+  color: #a0a0a0;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 8px;
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+}
+.sideBar img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 669px) and (max-width: 1024px) {
+  .sideBar {
+    width: 100px;
+  }
+  .sideBar a {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  .sideBar {
+    width: 200px;
+  }
+  .sideBar a {
+    font-size: 18px;
+  }
+}
