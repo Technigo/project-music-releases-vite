@@ -16,18 +16,13 @@ body {
 	display: grid;
 	grid-template: auto, 1fr;
 	grid-gap: 3em 2em;
-	justify-content: start;
+	justify-content: center;
+	place-items: start center;
 }
 
 @media(min-width: 667px) {
 	.album-wrap {
 		grid-template-columns: 1fr 1fr;
-	}
-	.album-wrap {
-		padding-top: 2em;
-		grid-gap: 2em 1em;
-		justify-content: center;
-		place-items: center;
 	}
 }
 
@@ -35,5 +30,6 @@ body {
 	.album-wrap {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		max-width: 100%;
+
 	}
 }
