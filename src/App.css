@@ -11,15 +11,7 @@ a:hover {
   cursor: pointer;
 }
 
-
 .album-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 4px;
-}
-
-
-
- 
+  display: flex;
+  flex-wrap: wrap;
+} 

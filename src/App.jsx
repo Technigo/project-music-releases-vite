@@ -3,7 +3,6 @@ import { Album } from "./Components/Album";
 import { Header } from "./components/Common/Header";
 import data from "./data.json";
 
-
 export const App = () => {
   const albums = data.albums.items;
 
@@ -18,6 +17,7 @@ export const App = () => {
   ));
 
 const renderContent = renderAlbums();
+
 return (
   <div className="app">
     <Header />

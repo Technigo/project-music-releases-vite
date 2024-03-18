@@ -1,8 +1,7 @@
-
 export const AlbumName = ({ albumUrl, albumName }) => {
   return (
     <a href={albumUrl}>
-    <h2>{albumName}</h2>
+      <h2>{albumName}</h2>
     </a>
   )
 }
@@ -10,4 +9,3 @@ export const AlbumName = ({ albumUrl, albumName }) => {
 AlbumName.defaultProps = {
   albumName: "Name is missing"
 };
-

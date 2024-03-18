@@ -1,51 +1,49 @@
-
 .album-container {
  width: 100%;
 }
 
 .album {
-padding: 15px;
- margin: 20px;
- padding-bottom: 30px;
+  padding: 15px;
+  margin: 20px;
+  padding-bottom: 30px;
 }
 
-  .cover-image-container {
-    position: relative;
-  }
+.cover-image-container {
+  position: relative;
+}
 
-  .cover-image {
-    width: 100%;
-  }
+.cover-image {
+  width: 100%;
+}
 
+.icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom:0;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* When you hover over an album, it should go darker */
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
-  .icon-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom:0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* When you hover over an album, it should go darker */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
+.album:hover .icon-container {
+  opacity: 1;
+}
 
-  .album:hover .icon-container {
-    opacity: 1;
-  }
-
-  /* icons over the album when hovering*/
+/* icons over the album when hovering*/
 
 .icon {
-    width: 30px;
-    height: 30px;
-    filter: invert(100%);
-    transition: all 0.3s ease-in-out;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+  transition: all 0.3s ease-in-out;
 }
 
 /* scale icons when hovering */ 
+
 .play-icon .icon {
   width: 50px;
   height: 50px;
@@ -64,25 +62,25 @@ h2 {
 }
 
 /* Artist name */
-h3 {
-display: inline;
-font-family: Helvetica, sans-serif;
-font-size: 14px;
-color: #a0a0a0;
-}
 
+h3 {
+  display: inline;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+}
 
 h2:hover,
 h3:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 /* Add comma and umpersand when there are more than one artist */
 
 .artist:not(:last-child):not(:nth-last-child(2))::after {
   content: ", ";
 }
-
 
 .artist:not(:first-child):last-child::before {
   content: " & ";
@@ -93,8 +91,6 @@ h3:hover {
   font-weight: bold;
   color:#a0a0a0;
 }
-
-
 
 @media (min-width: 667px) {
   .album-container {
