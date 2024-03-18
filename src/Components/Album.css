@@ -21,9 +21,10 @@
   top: 0;
   right: 0;
   bottom:0;
-  width: auto;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.6); /* When you hover over an album, it should go darker */
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
