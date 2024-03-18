@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.cover-image-element > img {
+.cover-image-element>img {
   width: 100%;
   height: auto;
 }
@@ -39,6 +39,7 @@
   height: 30px;
   filter: invert(0.8);
 }
+
 .play-icon:hover,
 .heart-icon:hover,
 .dots-icon:hover {
