@@ -1,32 +1,33 @@
 export const Artist = ({ artistInfo }) => {
 	const isMultipleArtists = artistInfo.artists.length > 1
 
-	// for multiple artists in an album or single
-	let artistName
+	let artistNames
 	if (isMultipleArtists) {
-		artistName = artistInfo.artists
-			.map((artist) => artist.name || "Unknown")
-			.join(", ")
+		artistNames = artistInfo.artists.map((artist) => ({
+			name: artist.name || "Unknown",
+			url: artist.external_urls.spotify,
+		}))
 	} else {
-		artistName = artistInfo.artists[0].name || "Unknown"
-	}
-
-	const artistInfoObj = {
-		name: artistName,
-		url: artistInfo.artists[0].external_urls.spotify,
-		target: "_blank", //open url i new window
-		rel: "noreferrer noopener", //required
-		class: "artistTitle",
+		artistNames = [
+			{
+				name: artistInfo.artists[0].name || "Unknown",
+				url: artistInfo.artists[0].external_urls.spotify,
+			},
+		]
 	}
 
 	return (
-		<div className={artistInfoObj.class}>
-			<a
-				href={artistInfoObj.url}
-				target={artistInfoObj.target}
-				rel={artistInfoObj.rel}>
-				<h3>{artistInfoObj.name}</h3>
-			</a>
-		</div>
+		<h3 className='artist-name-link'>
+			{artistNames.map((artist, index) => (
+				<>
+					<a href={artist.url}>{artist.name}</a>
+					{index < artistNames.length - 1 && (
+						<span className='comma'>
+							{index === artistNames.length - 2 ? ", " : " "}
+						</span>
+					)}
+				</>
+			))}
+		</h3>
 	)
 }
