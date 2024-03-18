@@ -1,6 +1,6 @@
 import { Header } from "./Header";
 import { Album } from "./Album/Album";
-import { SideBar } from "./SideBar/SideBar";
+import { SideBar } from "./side-bar/SideBar";
 
 export const App = () => {
   return (

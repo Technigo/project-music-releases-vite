@@ -22,7 +22,7 @@ body {
 
 header {
   font-size: 1rem;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 img {
@@ -48,16 +48,16 @@ main {
 
 .sidebar-section {
   margin-top: 85px;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .playlist-card {
   position: sticky;
   z-index: 2;
-  top: 0px;
+  top: 195px;
   left: 10px;
 
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,12 +65,14 @@ main {
   gap: 10px;
 
   background: var(--backgroung-color);
-  border-radius: 40px;
+  border-radius: 15px;
+
+  height: 600px;
+  overflow-y: auto;
 }
 
-.playlist-item {
-  position: relative;
-  display: inline-block;
+.playlist-item:nth-child(1) {
+  margin-top: 150px;
 }
 
 .playlist-img {
@@ -85,7 +87,7 @@ main {
   left: 110%;
 
   text-align: center;
-  text-wrap: nowrap;
+  white-space: nowrap;
   line-height: 50px;
 
   color: var(--main-text-color);
@@ -201,17 +203,41 @@ main {
 
   header {
     font-size: 1.5rem;
+    margin-left: 60px;
+  }
+
+  .playlist-card {
+    top: 215px;
+    padding: 30px;
+  }
+
+  .playlist-item:nth-child(1) {
+    margin-top: 150px;
   }
 }
 @media screen and (min-width: 991px) {
+  header {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 60px;
+  }
   .album-section {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin: 70px 120px;
   }
+  .playlist-card {
+    top: 0px;
+    padding: 30px;
+    height: auto;
+    overflow-y: auto;
+  }
 
-  header {
-    font-size: 3rem;
-    font-weight: 900;
+  .playlist-item:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  .sidebar-section {
+    margin-left: 30px;
   }
 }
