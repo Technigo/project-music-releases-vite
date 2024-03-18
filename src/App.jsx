@@ -1,7 +1,15 @@
-import data from "./data.json";
-
-console.log(data);
+import { Header } from "./Header";
+import { Album } from "./Album/Album";
+import { SideBar } from "./side-bar/SideBar";
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+      <Header />
+      <main>
+        <SideBar />
+        <Album />
+      </main>
+    </>
+  );
 };
