@@ -1,0 +1,56 @@
+.cover-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.cover-image-element>img {
+  width: 100%;
+  height: auto;
+}
+
+
+.cover-image-wrapper:hover .cover-image-element {
+  filter: brightness(50%);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  display: none;
+}
+
+.cover-image-wrapper:hover .icon-wrapper {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.heart-icon,
+.dots-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(0.8);
+}
+
+.play-icon:hover,
+.heart-icon:hover,
+.dots-icon:hover {
+  transform: scale(1.1);
+  filter: invert(1.2);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.play-icon {
+  width: 50px;
+  height: 50px;
+  filter: invert(0.8);
+}
