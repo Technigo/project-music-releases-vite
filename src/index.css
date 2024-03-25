@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  margin: 20px;
+}
+
+.header {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  color: white; 
+  font-size: 30px; 
+}
+
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+h3 {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.album-link {
+  text-decoration: none; 
+}
+
+.album-link:hover {
+  text-decoration: underline; 
+  text-decoration-color: #ffffff;
+}
+
+.artist-link {
+  text-decoration: none; 
+}
+
+.artist-link:hover {
+  text-decoration: underline; 
+  text-decoration-color: #a0a0a0; 
+}
+
+.cover-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image img {
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+.icon {
+  width: 50px;
+  background-color: transparent;
+  opacity: 1;
+  margin-right: 20px;
+}
+
+.icon:hover {
+  scale: 1.4;
+}
+
+.play {
+  width: 70px;
+}
+
+svg {
+  fill:white;
+}
+
+.btn-wrapper {
+  position: absolute;
+  display: none;
+  opacity: 1;
+}
+
+.cover-image:hover > img {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.cover-image:hover .btn-wrapper {
+  display: block;
+  transition: 0.3s;
+}
+
+@media (min-width: 667px) {
+  .album-wrapper {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-wrapper {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}

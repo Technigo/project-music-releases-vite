@@ -4,12 +4,12 @@ import { CoverImage } from "./CoverImage"
 
 export const Album = ({ albumData }) => {
   return (
-    <div>
+    <section>
         <CoverImage coverImage={albumData.images[0].url} />
         <div>
-            <AlbumName albumName={albumData.name} albumUrl={albumData.external_urls.spotify} />
-            <ArtistName artistName={albumData.artists} />
+          <AlbumName albumName={albumData.name} albumUrl={albumData.external_urls.spotify} />
+          <ArtistName artistName={albumData.artists} />
         </div>
-    </div>
+    </section>
   )
 }
