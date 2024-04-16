@@ -1,3 +1,17 @@
+/* _____   _    _   ______     _____    ______               _____   _______   _____   _   _    _____ 
+|__   __| | |  | | |  ____|   |  __ \  |  ____|     /\      / ____| |__   __| |_   _| | \ | |  / ____|
+   | |    | |__| | | |__      | |__) | | |__       /  \    | |         | |      | |   |  \| | | |  __ 
+   | |    |  __  | |  __|     |  _  /  |  __|     / /\ \   | |         | |      | |   | . ` | | | |_ |
+   | |    | |  | | | |____    | | \ \  | |____   / ____ \  | |____     | |     _| |_  | |\  | | |__| |
+   |_|    |_|__|_| |______|  _|_|_ \_\_|______| /_/____\_\__\_____|__  |_|__  |_____| |_|_\_|  \_____|
+           / ____|  / __ \  |  __ \  |  ____|    / ____| |__   __| \ \   / / | |      |  ____|        
+          | |      | |  | | | |  | | | |__      | (___      | |     \ \_/ /  | |      | |__           
+          | |      | |  | | | |  | | |  __|      \___ \     | |      \   /   | |      |  __|          
+          | |____  | |__| | | |__| | | |____     ____) |    | |       | |    | |____  | |____         
+           \_____|  \____/  |_____/  |______|   |_____/     |_|       |_|    |______| |______|  
+
+ https://patorjk.com/software/taag/#p=display&h=0&f=Big&t=THE%20REACTING%0A%20%20%20%20%20CODE%20STYLE*/
+
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -11,3 +25,191 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body{
+  background-color: rgb(23, 23, 23);
+  margin: 15px;
+}
+
+.albums{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;    
+}
+
+.album{
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: baseline;
+  max-width: 300px;  
+  margin-bottom: 15px;
+}
+
+.album div{
+  margin:5px;
+}
+
+.container-image{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-image {
+  width: 300px;
+  position: absolute;
+}
+
+.container-image:hover::after{
+  content:"";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttons-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+  z-index: 15;
+  filter: invert();
+  cursor: pointer;
+
+}
+
+#heart{
+  width: 80px;
+}
+
+.buttons-image img{
+  display: none;
+  width: 30px;
+
+  transform: scale(1);
+  transition: transform 250ms ease-in;
+}
+
+/*This is like magic, and will make things to apear */
+.container-image:hover .buttons-image img {
+  display: flex;
+}
+
+.buttons-image img:hover {
+  transform: scale(1.2); 
+}
+
+.artist-name, .album-name{
+  font-family: 14px Helvetica;
+  display: inline;
+  position: relative;   
+  margin: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.artist-name{
+  color: #ffffff;
+}
+
+.album-name{
+  font-weight: normal;
+  color: #a0a0a0;
+}
+
+.artist-name::after, .album-name::after{
+  content: "";
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 2px;
+  bottom:-2px;
+  background-color: rgba(255, 255, 255, 0.636);
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.artist-name:hover::after, .album-name:hover::after{
+  cursor: pointer;
+
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* -----------------------------------------------FOOTER--------------------------------------- */
+footer {
+  bottom: 0;
+  height: 40px;
+  color: #fff;
+  background-color: rgb(67, 18, 119);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-size: .6em;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+
+
+
+/* -----------------------------------------------MEDIA QUERIES--------------------------------------- */
+/* -----------------------------------MOBILE SCREENS 360px to 700xp 1column--------------------------- */
+
+@media (min-width: 360px) and (max-width:700px){
+
+}
+
+/* -----------------------------------TABLET SCREENS 700px to 1399p 2 colums-------------------------- */
+@media (min-width:700px) and (max-width:1399px) {
+  .albums{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    justify-items: center;
+    max-width: 750px;
+    margin: auto;
+  }  
+}
+
+
+
+/* -----------------------------------PC SCREENS >1500px 4 columns ------------------------------------- */
+@media (min-width: 1400px){
+  .albums{
+     max-width: 1550px;
+     display: grid;
+     gap: 50px;
+     grid-template-columns: 1fr 1fr 1fr 1fr; 
+     grid-template-rows: auto;
+     box-sizing: border-box;
+     justify-items: center;
+     align-items: self-start;
+     margin: auto;
+   }  
+ }
+
