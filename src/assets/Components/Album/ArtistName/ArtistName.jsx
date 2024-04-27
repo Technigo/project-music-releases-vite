@@ -12,7 +12,7 @@ export const ArtistName = ({ artists }) => {
           <h3>
             <span>
               {artist.name}
-              {index < artists.length - 1 && " & "}
+              {index < artists.length - 1 && ", "}
             </span>
           </h3>
         </a>
