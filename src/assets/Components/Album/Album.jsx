@@ -12,13 +12,9 @@ export const Album = ({ albums }) => {
           <div className="album-info">
             <AlbumName
               albumName={album.name}
-              albumURL={album.external_urls.spotify}/>
-            <ArtistName
-              artistName={album.artists.map((artist) => artist.name)}
-              artistURL={album.artists.map(
-                (artist) => artist.external_urls.spotify
-              )}
+              albumURL={album.external_urls.spotify}
             />
+            <ArtistName artists={album.artists} />
           </div>
         </div>
       ))}
