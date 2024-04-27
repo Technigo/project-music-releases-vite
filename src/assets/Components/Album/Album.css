@@ -1,0 +1,147 @@
+.album-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: auto;
+    padding-right: auto;
+    justify-items: center;
+}
+
+.album-cards {
+    max-width: 300px;
+    margin: 20px;
+}
+
+.cover-image {
+    max-width: 280px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    margin-top: -165px;
+    opacity: 0%;
+}
+
+.cover-icons:hover>.icons {
+    opacity: 100%;
+    transition: 0.3s ease;
+}
+
+.cover-icons:hover>.cover-image {
+    opacity: 30%;
+    transition: 0.3s ease;
+}
+
+.heart:hover {
+    width: 40px;
+    transition: 0.4s ease;
+    margin-top: -4px;
+    padding-left: 20px;
+}
+
+.dots:hover {
+    width: 40px;
+    transition: 0.4s ease;
+    margin-top: -4px;
+    padding-right: 20px;
+}
+
+.play:hover {
+    width: 60px;
+    transition: 0.5s ease;
+    margin-top: -12px;
+}
+
+
+.album-info {
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+h2::after {
+    bottom: 0;
+    content: "";
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+h2:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+h3 {
+    font-size: 14px;
+    color: #a0a0a0;
+    display: inline;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+h3::after {
+    bottom: 0;
+    content: "";
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+h3:hover::after {
+    width: 100%;
+    left: 0;
+    color: #ffffff;
+}
+
+h3:hover {
+    color: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+@media (min-width: 600px) AND (max-width: 1299px) {
+    .album-section {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .album-info {
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .album-section {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .album-info {
+        padding-bottom: 60px;
+    }
+}
