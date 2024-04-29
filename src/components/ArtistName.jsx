@@ -1,18 +1,15 @@
-/* eslint-disable react/react-in-jsx-scope */
-// eslint-disable-next-line react/prop-types
-const ArtistName = ({ name }) => {
-  const openArtistUrl = () => {
-    window.open(name[1]);
-  };
+/* eslint-disable react/prop-types */
+import React from "react";
 
-  return (
-    <div
-      className="artistName"
-      onClick={openArtistUrl}
-      style={{ cursor: "pointer" }}>
-      <h3>{name[0]}</h3>
-    </div>
-  );
-};
+const ArtistName = ({ name }) => (
+  <a
+    href={name[1]}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="artistName"
+    style={{ cursor: "pointer", color: "inherit", textDecoration: "none" }}>
+    <h3>{name[0]}</h3>
+  </a>
+);
 
 export default ArtistName;

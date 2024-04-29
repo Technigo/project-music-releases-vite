@@ -1,19 +1,15 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/react-in-jsx-scope */
-const AlbumName = ({ name }) => {
-  console.log(name);
-  const openAlbumUrl = () => {
-    window.open(name[1]);
-  };
+import React from "react";
 
-  return (
-    <div
-      className="albumName"
-      onClick={openAlbumUrl}
-      style={{ cursor: "pointer" }}>
-      <h2>{name[0]}</h2>
-    </div>
-  );
-};
+// eslint-disable-next-line react/prop-types
+const AlbumName = ({ name }) => (
+  <a
+    href={name[1]}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="albumName"
+    style={{ cursor: "pointer", color: "inherit", textDecoration: "none" }}>
+    <h2>{name[0]}</h2>
+  </a>
+);
 
 export default AlbumName;

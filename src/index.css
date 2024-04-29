@@ -103,6 +103,15 @@ button {
   transform: scale(1.2);
 }
 
+.cover-image-container .cover-image img,
+.buttons button {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.2);
+}
+
 .album-name:hover {
   text-decoration: underline;
 }
