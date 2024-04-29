@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
-import playIcon from "../../public/icons/play.svg";
-import heartIcon from "../../public/icons/heart.svg";
-import dotIcon from "../../public/icons/dots.svg";
+import playIcon from "../assets/icons/play.svg";
+import heartIcon from "../assets/icons/heart.svg";
+import dotIcon from "../assets/icons/dots.svg";
 
 export const PlayIcon = () => {
   // eslint-disable-next-line react/react-in-jsx-scope
