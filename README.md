@@ -18,4 +18,4 @@ If I had more time, I would have delved deeper into the data to pass additional 
 
 ### View it live
 
-kaleidoscopic-meerkat-f9131c.netlify.app
+https://musiclibrary-bmm.netlify.app/
