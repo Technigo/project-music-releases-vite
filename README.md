@@ -1,7 +1,7 @@
 # Music Releases
 
 Week 5
-Practice with React with Spodify API.
+Practice with React with Spotify API.
 Music Releases Project
 
 ## Getting Started with the Project
