@@ -1,0 +1,17 @@
+/* syling for the <h2> elements inside elements with the class .album-name */
+.album-name h2 {
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* styling for anchor (<a>) elements inside elements with the class .album-name */
+.album-name a {
+    text-decoration: none; /* this remove the default underline decoration for links */
+}
+
+/* styling for anchor elements when album name is hovered over */
+.album-name a:hover{
+    color: #ffffff;
+    text-decoration: underline; /* adding an underline decoration on hover */
+}

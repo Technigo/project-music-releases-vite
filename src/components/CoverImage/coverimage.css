@@ -1,0 +1,57 @@
+/* styling for the container with class .cover-image */
+.cover-image {
+    color: white;
+    position: relative; /* this allows positioning of child elements relative to this container */
+    display: flex;
+    align-items: center; /* centers child elements vertically */
+    justify-content: center; /* centers child elements horizontally */
+}
+
+/* styleing for the images inside .cover-image */
+.cover-image img {
+    width: 100%; /* sets the image width to 100% of the container */
+}
+
+/* this styles all buttons in the document */
+button {
+    border: none; /* removing borders */
+}
+
+/* this styles elements with class .icon */
+.icon {
+    width: 45px;
+    background-color: transparent;
+    opacity: 1; /* this sets opacity to no transparency */
+}
+
+/* this styles the class .icon (the icons) when they are hovered over */
+.icon:hover {
+    scale: 1.3; /* enlarges the icons*/
+}
+
+/* this turns the icons from the svg files to white */
+svg {
+    fill:white;
+}
+
+/* this controls the all the icons position  */
+.button-wrapper {
+    position: absolute; /* this allows absolute positioning within the container */
+    display: none; /* hides the icons */
+    opacity: 1; /* this sets opacity to no transparency*/
+}
+
+.play {
+    width: 50px; /* this sets a width of 50 pixels for icons with this class */
+}
+
+/* this is the styling for the album cover on hover */
+.cover-image:hover > img {
+    opacity: 0.5; /* reduces the album cover's opacity */
+    transition: 0.4s; /* this adds a 0.4-second transition effect for smoothness */
+}
+
+.cover-image:hover .button-wrapper {
+    display: block; /* this makes the button wrapper (the icons) visible on hover */
+    transition: 0.4s;
+}

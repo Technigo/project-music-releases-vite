@@ -1,7 +1,15 @@
 import data from "./data.json";
+import { Album } from "./components/Album";
+import { Header } from "./components/Header/Header";
 
-console.log(data);
-
+//here we pass the components from children album and header.
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+  return (
+    <div>
+      <Header />
+      <Album data={data} />
+    </div>
+  );
+  };
+
+ 
