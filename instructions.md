@@ -4,7 +4,7 @@
 
 Since the focus of this assignment is to practice with React, we've downloaded a response from the Spotify API which you can use, rather than calling the API yourself.
 
-## 🎶 How to use the Spotify data & construct your components 🤓
+## How to use the Spotify data & construct your components
 
 In the `/src/data.json`, we've included an API response from Spotify which contains data for 50 recent releases. You can `import` this JSON file into a component using `import data from './data.json'` (which we've already done for you in the App component).
 
@@ -15,19 +15,6 @@ The result of importing the JSON is a variable called `data` which includes the 
     - `ArtistName` component which is rendered using `.map()` using each item in the `artists` array. The `Album` component to show the artist name and a link.
 
 This is just a suggestion - how you decide to structure your components is completely up to you.
-
-## Folder Structure
-
-- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
-- Header.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-- Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-
-### Extra Files
-
-- data.json - JSON file containing 1 key called `"albums"` containing keys mimiquing a Spotify API object endpoint.
 
 ## You should display the following for each album:
 
