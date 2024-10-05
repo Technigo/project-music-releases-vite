@@ -1,0 +1,62 @@
+/* Smooth transition for the hover */
+.album-cover {
+  transition: filter 0.3s ease;
+}
+
+/* Reduce brightness to 50% on hover */
+.album-cover:hover {
+  filter: brightness(50%);
+}
+
+/* Positioning icons over album cover */
+.cover-img {
+  position: relative;
+  display: inline-block;
+}
+
+.hoverIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Styling for icons */
+.dots-icon,
+.favorite-icon,
+.play-icon {
+  margin-right: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dots-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.favorite-icon {
+  width: 23px;
+  height: 23px;
+}
+
+.play-icon {
+  width: 55px;
+  height: 55px;
+}
+
+/* Increase size on hover by 10% for all of the icons */
+.dots-icon:hover,
+.favorite-icon:hover,
+.play-icon:hover {
+  transform: scale(1.1);
+ 
+}
+
+/* Keeping the hover over album to 50% brightness as you hover over the icons */
+.cover-img:hover .album-cover {
+  filter: brightness(50%);
+}

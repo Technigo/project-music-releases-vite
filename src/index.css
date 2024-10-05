@@ -1,13 +1,24 @@
-:root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Background-color of app */
+body {
+  background-color: #242424;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* App layout */
+.album-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 1300px;
+  margin: auto; 
+}
+
+/* Media query for phone and tablets */
+/* This will automatically show 1 column for smaller screens like phones */
+/* ... and show 2 columns for tablet screens up to 940px */
+@media screen and (max-width: 940px) {
+  .album-card {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
 }
