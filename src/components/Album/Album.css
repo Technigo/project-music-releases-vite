@@ -1,0 +1,30 @@
+.albums {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.album {
+  width: 100%;
+}
+
+/* Media Queries for tablet */
+@media screen and (min-width: 667px) {
+  .albums {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1024px) {
+  .albums {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1400px;
+    margin: auto;
+  }
+}

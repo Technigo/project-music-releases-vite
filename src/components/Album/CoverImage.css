@@ -1,0 +1,53 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .cover-image img {
+  filter: brightness(50%);
+}
+
+.image-container:hover .icons {
+  opacity: 1;
+}
+
+.cover-image {
+  width: 100%;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  opacity: 0;
+}
+
+.heart-icon img {
+  width: 20px;
+}
+
+.dots-icon img {
+  width: 20px;
+}
+
+.play-icon img {
+  width: 60px;
+}
+
+/* Play button gets bigger on hover */
+.play-icon img:hover {
+  transform: scale(1.1);
+}
+
+.heart-icon img,
+.play-icon img,
+.dots-icon img {
+  filter: brightness(0) invert(1);
+}
