@@ -1,7 +1,16 @@
 import data from "./data.json";
-
-console.log(data);
+import { Album } from "./components/Album";
+import { Header } from "./components/Header";
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  const showAlbums = data.albums.items.map((album) => {
+    return <Album key={album.id} albumData={album} />;
+  });
+
+  return (
+    <div>
+      <Header />
+      <div className="albums-container"> {showAlbums} </div>
+    </div>
+  );
 };

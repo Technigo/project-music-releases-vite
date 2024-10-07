@@ -1,13 +1,115 @@
-:root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background-color: #181818;
+  font-family: Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  color: white;
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+.album-name {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+  align-self: flex-start;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.artist-name {
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artist-name-list {
+  color: #a0a0a0;
+  align-self: flex-start;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.album-cover-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.album-cover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay,
+.overlay-icons {
+  display: none;
+}
+
+.album-cover-container:hover .overlay {
+  position: absolute;
+  gap: 1.2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  opacity: 75%;
+}
+
+.icon:hover {
+  opacity: 100%;
+}
+
+.play:hover .play-icon {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+.albums-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .albums-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .albums-container {
+    grid-template-columns: 1fr;
+  }
 }

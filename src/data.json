@@ -11,7 +11,27 @@
             },
             "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
             "id": "5y9wg9qkGBl0n9v9RzaPKu",
-            "name": "Capo",
+            "name": "Capo1",
+            "type": "artist",
+            "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5y9wg9qkGBl0n9v9RzaPKu"
+            },
+            "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
+            "id": "5y9wg9qkGBl0dafdsafjcjxzan9v9RzaPKu",
+            "name": "Capo2",
+            "type": "artist",
+            "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5y9wg9qkGBl0n9v9RzaPKu"
+            },
+            "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
+            "id": "5y9wg9qkGBl0n9vdfajlae9RzaPKu",
+            "name": "Capo3",
             "type": "artist",
             "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
           }
