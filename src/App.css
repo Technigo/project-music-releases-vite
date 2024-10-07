@@ -1,0 +1,151 @@
+body {
+  background-color: black;
+  color: rgb(193, 59, 157);
+}
+
+/* This styles the header section*/
+.header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* ALBUM STYLES */
+
+/* This sets up the grid where the albums will show */
+.albumGrid {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* This is a style for the box for each album */
+.albumComponent {
+  margin: 10px;
+}
+
+/* This styles the individual album boxes in the grid */
+.albumGrid > div {
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* This styles the cover pictures of all albums */
+.albumGrid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* This styles the album and artist names */
+.album-name,
+.artist-name {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Style for the albums name */
+.album-name {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* Style for the artists name */
+.artist-name {
+  color: grey;
+}
+
+/* These styles change the text colors when you've clicked on them or hover over them */
+.album-name:link,
+.album-name:visited {
+  color: #ffffff;
+}
+.artist-name:link,
+.artist-name:visited {
+  color: #a0a0a0;
+}
+.artist-name:hover,
+.album-name:hover {
+  text-decoration: underline;
+}
+
+/* ALBUM COVER AND ICONS */
+
+/* This styles the box of the album cover */
+.coverImageWrapper {
+  position: relative;
+}
+
+/* This styles the actual album cover image */
+.coverImage {
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* This makes a dark layer on top of the album cover when hovered */
+.coverImageWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* When you hover over the album cover, there will be a dark layer on top */
+.coverImageWrapper:hover::before {
+  opacity: 1;
+}
+
+/* These styles are for the play buttons and other icons on top of the album cover */
+.iconGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* This styles each individual icon */
+.icon {
+  max-width: 25px;
+  max-height: 25px;
+  margin: 0 15px;
+}
+
+/* Makes the icons bigger when you hover over them */
+.iconGroup img.icon:hover {
+  transform: scale(1.7);
+}
+
+/* Shows the icons when you hover over the album cover */
+.coverImageWrapper:hover .iconGroup {
+  opacity: 1;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .albumGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .albumGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
