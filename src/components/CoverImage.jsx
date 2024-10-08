@@ -9,13 +9,13 @@ export const CoverImage = ({ imageUrl }) => {
       <img src={imageUrl} alt="Album cover" className="cover-image" />
       <div className="hover-buttons">
         <button className="hover-button">
-          <img src={playIcon} alt="Play" className="icon" />
+          <img src={heartIcon} alt="Favorite" className="heartIcon" />
         </button>
         <button className="hover-button">
-          <img src={heartIcon} alt="Favorite" className="icon" />
+          <img src={playIcon} alt="Play" className="playIcon" />
         </button>
         <button className="hover-button">
-          <img src={dotsIcon} alt="More options" className="icon" />
+          <img src={dotsIcon} alt="More options" className="dotsIcon" />
         </button>
       </div>
     </div>
