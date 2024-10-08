@@ -33,7 +33,7 @@ header, footer {
 }
 
 .album-info {
-  margin-top: 15px;
+  margin: 16px 8px;
   display: flex;
   flex-direction: column;
 }
@@ -76,7 +76,7 @@ header, footer {
 
 /* Darkening effect on hover */
 .cover-image-wrapper:hover .cover-image {
-  filter: brightness(0.5); /* Darkens the image when hovered */
+  filter: brightness(0.5);
 }
 
 /* Hover buttons setup */
@@ -92,6 +92,7 @@ header, footer {
 .cover-image-wrapper:hover .hover-buttons {
   display: flex; /* Show icons when hovering over the album cover */
 }
+
 
 .hover-button {
   background-color: transparent;
@@ -117,7 +118,6 @@ header, footer {
 .playIcon, .heartIcon, .dotsIcon {
   width: 40px;
   height: 40px;
-  color: #ffffff; /* This will now control the color of the SVG icons */
   z-index: 0;
 }
 
