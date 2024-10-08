@@ -8,8 +8,10 @@ export const Album = ({ album }) => {
     <div className="album-card">
       <CoverImage imageUrl={album.images[0].url} />
       <div className="album-info">
-        <AlbumName name={album.name} url={album.external_urls.spotify} />
-        <div className="artist-names">
+        <div className="album-name">
+          <AlbumName name={album.name} url={album.external_urls.spotify} />
+        </div>
+        <div className="artist-name">
           {album.artists.map((artist, index) => (
             <ArtistName
               key={artist.id}
