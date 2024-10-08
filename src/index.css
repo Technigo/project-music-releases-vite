@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Album Container Styles */
+.album-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 20px;
+}
+
+/* Album Card Styles */
+.album-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+}
+
+.album-info {
+  padding: 10px;
+}
+
+/* Cover Image Hover Effect */
+.cover-image {
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.album-card:hover .cover-image {
+  filter: brightness(0.7); /* Darkens the image */
+}
+
+/* Play, Favorite, and Ellipsis Buttons */
+.album-card:hover .hover-buttons {
+  display: flex;
+}
+
+.hover-buttons {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+}
+
+.hover-button {
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hover-button:hover {
+  transform: scale(1.2); /* Enlarges the play button on hover */
+}
+
+/* Album and Artist Name Styles */
+.album-name,
+.artist-name {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.album-name:hover,
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 1024px) {
+  .album-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .album-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
