@@ -1,0 +1,41 @@
+/* Set the icon container so it takes up the whole width of the image and center the icons, so they stay in center despite the change in the size of the image */
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute; /* so that it stays within the image */
+    top: 45%;
+    width: 100%;
+    gap: 20px;
+    opacity: 0;
+}
+
+.icon {
+    filter: invert(1); /* Change color of the icons to the opposite color */
+    padding: 1px 6px;
+    width: 40px;
+}
+
+.album-cover:hover>.icon-container {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.icon:hover {
+    scale: 1.4; /* makes the icons bigger when hovered over */
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .icon-container {
+        gap: 10px;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    .icon:hover {
+        scale: 1.6;
+    }
+}

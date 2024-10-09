@@ -1,0 +1,37 @@
+.artist-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.artist {
+    display: flex;
+    align-content: center;
+}
+
+.artist h3 {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+}
+  
+/* If more than one artist names in one album, add "," before each artist name, except for the first and the last one, and "&" before the last one */
+.artist:not(:first-child, :last-child)::before {
+    color: #ffffff;
+    content: ",";
+    margin: auto 5px auto 0;
+}
+
+.artist:last-child::before {
+    content: "&";
+    color: #ffffff;
+    margin: auto 5px auto 0;
+}
+
+/* If only one artist, add nothing before the artist name */
+.artist:only-child::before {
+    content: "";
+    margin: 0;
+}
+
+  

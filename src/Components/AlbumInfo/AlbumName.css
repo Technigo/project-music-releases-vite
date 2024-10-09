@@ -1,0 +1,18 @@
+.album h2 {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+/* Styling the a element in both album name and artist name */
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
