@@ -1,37 +1,21 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Week 5
+Practice with React with Spotify API.
+Music Releases Project
 
 ## Getting Started with the Project
 
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+Started by creating the necessary components for this project, then attempted to render them within the Album element and pass them to the parent component, App.jsx
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+During the project, I faced some hurdles in getting the right data to flow between different parts of the app. This was particularly tricky when passing data from parent components to their children. Another headache was getting the styling to look consistent across all components.
+
+It took some trial and error to make sure the styles were applied correctly to each part of the app. Overall, it taught me the importance of careful testing and keeping things tidy in the code to avoid these issues.
+
+If I had more time, I would have delved deeper into the data to pass additional information and explore more styling options. There's always room for experimentation and refinement, and given the chance, I would have enjoyed exploring different possibilities to enhance the app further.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://musiclibrary-bmm.netlify.app/

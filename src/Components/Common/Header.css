@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center; /* Aligns elements vertically */
+}
+  
+h1 {
+  font-size: 2em;
+  margin: 0;
+  color: whitesmoke;
+}
+
+.header-logo {
+  width: 70px;
+  height: auto;
+  border: 2px solid rgb(28, 51, 28);
+  border-radius: 50%;
+  padding: 5px;
+}

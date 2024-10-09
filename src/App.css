@@ -1,0 +1,17 @@
+body {
+  background-color: #121212;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.album-section {
+  display: flex;
+  flex-wrap: wrap;
+} 
