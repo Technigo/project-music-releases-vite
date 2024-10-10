@@ -1,0 +1,95 @@
+/*Album name*/
+.albumName h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.albumName a {
+  text-decoration: none;
+  color: black;
+}
+
+.albumName a:hover {
+  text-decoration: underline;
+}
+
+/*Artist name*/
+.artistWrapper {
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.artistWrapper > * {
+  display: block;
+  margin-right: 5px;
+}
+
+.artistWrapper p {
+  font-weight: bold;
+}
+
+.artistName h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.artistName a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.artistName a:hover {
+  text-decoration: underline;
+}
+
+/*Cover image*/
+.coverImageWrapper {
+  position: relative;
+}
+
+.coverImage {
+  width: auto;
+  height: auto;
+  max-width: 350px;
+}
+
+.coverImageWrapper:hover > .iconWrapper {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.coverImageWrapper:hover > img {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.iconWrapper {
+  width: auto;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  opacity: 0;
+}
+
+.iconWrapper > button {
+  width: 35px;
+  background: transparent;
+  border: none;
+}
+
+.playIcon > img {
+  width: 40px;
+}
+
+.iconWrapper > button:hover {
+  scale: 1.5;
+}
+
+/* Album */
+.album {
+  margin: 10px;
+}
