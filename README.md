@@ -6,11 +6,12 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week, we will practice React and creating components that will use data from Spotify, which then transfer to its children's components using props. The task is to build a page that shows new albums and single releases.
 
 ## Getting Started with the Project
+Step 1: Install Node.js
+Step 2: Verify Node.js Installation Path on Windows
+Step 3: Restart Git Bash in VS Code and then the setup is done
 
 ### Dependency Installation & Startup Development Server
 
@@ -24,7 +25,9 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The #1 problem is how to get start with npm which took me some effort to identify the install of Node.js and set the right "Environment Variables" on my PC of the windows system.
+
+
 
 ### View it live
 
