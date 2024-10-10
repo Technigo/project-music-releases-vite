@@ -1,37 +1,13 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+An application showing recent album and singles releases created using React. Props and working with components was in focus during the creation of the application. Working with Spotifys API to display the latest album and singles. 
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+A fun project, the thing I was struggling most with was the responsive design - I solved it by researching and talking to ChatGPT. I have added some comments in the code for me to understand and go back for a reminder use.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-music-release-evelyndelcarmen.netlify.app/
 
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
