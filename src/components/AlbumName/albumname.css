@@ -1,0 +1,17 @@
+.albumName {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Helvetica;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
