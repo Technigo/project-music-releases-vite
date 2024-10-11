@@ -1,3 +1,9 @@
+body {
+  margin: 2%;
+  background-color: #181818;
+  color: white;
+}
+
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +16,146 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header {
+  font-family: "Madimi One", sans-serif;
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
+.log-out-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  margin: 40px 0;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.log-out-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.album-card-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.album-card {
+  margin: 6% 6% 10% 6%;
+  grid-column: span 3;
+}
+
+.album-cover-container {
+  position: relative;
+}
+
+.album-cover {
+  margin: 0;
+}
+
+.album-cover img {
+  width: 100%;
+}
+
+.album-cover-buttons {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* buttons not visible on album cover */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.album-cover-container:hover .album-cover-buttons {
+  /* buttons visible on album cover if hovering */
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a0a0a0;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  /* Change text to white */
+  text-decoration-color: #ffffff;
+}
+
+h2 {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+button img {
+  width: 30%;
+  height: auto;
+  filter: grayscale(100%) brightness(0.5);
+  /* Make button darker when not hovering */
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+button img[alt="Play button"] {
+  width: 80%;
+  height: auto;
+}
+
+button:hover img {
+  transform: scale(1.1);
+  /* Bigger size if hovering */
+  filter: none;
+  /* Remove darker color if hovering */
+}
+
+/* For tablet */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .album-card {
+    grid-column: span 6;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 667px) {
+  .album-card {
+    grid-column: span 12;
+  }
+
+  header {
+    font-size: 90%;
+  }
 }
