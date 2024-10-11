@@ -1,0 +1,71 @@
+.icons-container {
+    opacity: 0;
+    width: 100%;
+    top: 110px;
+    right: 5px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    filter: invert(1) brightness(2);
+    transition: opacity 0.4s ease;
+}
+
+.album-content:hover .icons-container {
+    opacity: 1;
+}
+
+.icon-1 {
+    width: 25px;
+    height: 25px;
+
+}
+
+.icon-2 {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-2:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in, filter 0.2s ease-in;
+
+}
+
+.icon-3 {
+    width: 25px;
+    width: 25px;
+}
+
+@media (max-width: 490px) {
+    .icons-container {
+        top: 120px;
+    }
+}
+
+
+@media (min-width: 490px) and (max-width: 620px) {
+    .icons-container {
+        top: 100px;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 1023px) {
+    .icons-container {
+        top: 150px;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 1200px) {
+    .icons-container {
+        top: 120px;
+    }
+}
+
+
+@media (min-width: 1023px) and (max-width: 1250px) {
+    .icons-container {
+        top: 100px;
+    }
+}

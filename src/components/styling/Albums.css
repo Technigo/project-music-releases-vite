@@ -1,0 +1,89 @@
+.albums-container {
+    max-width: 100%;
+    text-align: left;
+    margin: 40px;
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1490px;
+    gap: 40px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.albums-card {
+    position: relative;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    color: #ffffff
+}
+
+.album-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 90%;
+}
+
+.album-content:hover .album-cover {
+    filter: brightness(0.4);
+}
+
+.artist-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+@media (max-width: 490px) {
+    .albums-grid {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .albums-card {
+        margin: 0 auto;
+        max-width: 285px;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 620px) {
+    .albums-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .albums-card {
+        height: 280px;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 1023px) {
+    .albums-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    .albums-card {
+        height: 320px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1250px) {
+    .albums-card {
+        height: 280px;
+    }
+
+}

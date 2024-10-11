@@ -1,0 +1,17 @@
+.album-name {
+    font-family: Helvetica;
+    font-family: 14px;
+}
+
+.album-name p {
+    margin: 0;
+}
+
+.album-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.album-link:hover {
+    text-decoration: underline;
+}

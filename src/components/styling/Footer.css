@@ -1,0 +1,15 @@
+.footer {
+    height: 50px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(222, 200, 217);
+    font-size: 13px;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        font-size: 16px;
+    }
+
+}

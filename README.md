@@ -5,30 +5,20 @@
 </h1>
 
 # Music Releases
+Project Name: Release Radar
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+The goal of this project was to build a Spotify mockup library that displays the latest albums from various artists. Each album entry includes the album cover, album name, and artist name. 
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The first challenge was to separate the code into different components and correctly import them into the relevant JSX files. After that, I mapped the data from the JSON file to extract the necessary information and display it on the page. I used the errors in the console to guide me through debugging and making corrections as needed.
 
-### View it live
+The main challenge for me was styling the page. Since the styles were in separate files, it was difficult to navigate the hierarchy of different classes.
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+If I had more time, I would have added the "stretch-goal.json" file to the project. It would also have been fun to add a filter and sort menu. My primary focus with extra time would be to improve the styling and responsiveness for a better user experience.
+
+### View it live here:
+https://releaseradar.netlify.app
 
 ## Instructions
 
