@@ -1,0 +1,30 @@
+.App {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    text-align: left;
+
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .App {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+/* Ipads */
+
+@media (max-width: 1024px) and (min-width: 767px) {
+    .App {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}

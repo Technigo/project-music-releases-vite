@@ -6,32 +6,19 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
+This task involved building a React app that displays music releases using data from a Spotify API response. The app features album covers, artist names, and various hover effects, such as showing icons (play, heart, dots) when hovering over an album cover.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I encountered several challenges during the project, including:
+
+Positioning icons correctly: Initially, the icons were hidden behind the overlay. I resolved this by adjusting the z-index so that the icons appear above the overlay on hover.
+Handling commas between artist names: I needed to dynamically add commas between artist names. I solved this by using conditional logic in the ArtistName component.
+Styling issues: I encountered problems with unwanted spaces and default underlines on links. I fixed these by adjusting margins and using text-decoration: none for the default state and underline for the hover state.
+These changes allowed the app to function as expected and match the project requirements.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://jonas-music-releases.netlify.app/
 
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>

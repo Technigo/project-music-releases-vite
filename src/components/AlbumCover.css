@@ -1,0 +1,84 @@
+.cover-container {
+    position: relative;
+    width: 100%;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    z-index: 1;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+    z-index: 4;
+
+}
+
+.cover-container:hover .icons {
+    opacity: 1;
+
+}
+
+.icon-small {
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    filter: brightness(0) invert(1);
+
+    padding: 10px;
+    opacity: 50%;
+}
+
+.icon-big {
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+
+    opacity: 50%;
+}
+
+.icon-big:hover {
+    transform: scale(1.2);
+    opacity: 100%;
+
+}
+
+.icon-small:hover {
+    opacity: 100%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+
+}
+
+.cover-container:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+}
