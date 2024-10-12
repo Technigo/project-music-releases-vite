@@ -1,37 +1,8 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Music Releases
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+The assignment this week was to create a music platform site importing data from spotify using an API. 
 
 ### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This week was a bit overwhelming at first for me. I was a bit confused with all the files already existing in the project and how to grasp everything. I started with making a folder including all the components that I wanted. Then I created the first component and made sure it was working. Then followed along with the rest of the components. Once that was settled I moved on to styling in CSS and applied the hover effect etc. I used google, stack overflow and chatgbpt to help me when I approached problems. If I had more time I would continue with the stretch goals and add a header/title to the site. 
 
 ### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://elinasmusicreleases.netlify.app/
