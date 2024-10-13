@@ -242,6 +242,16 @@
             "name": "102 Boyz",
             "type": "artist",
             "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/78TTCmh2koperK5NBn7DgR"
+            },
+            "href": "https://api.spotify.com/v1/artists/78TTCmh2koperK5NBn7DgR",
+            "id": "78TTCmh2koperK5NBn7DgQ",
+            "name": "Rihanna",
+            "type": "artist",
+            "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
           }
         ],
         "available_markets": [
@@ -1698,6 +1708,16 @@
             "href": "https://api.spotify.com/v1/artists/4sVieJlKgpZ2k9ESNS5IdN",
             "id": "4sVieJlKgpZ2k9ESNS5IdN",
             "name": "Jamule",
+            "type": "artist",
+            "uri": "spotify:artist:4sVieJlKgpZ2k9ESNS5IdN"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4sVieJlKgpZ2k9ESNS5IdN"
+            },
+            "href": "https://api.spotify.com/v1/artists/4sVieJlKgpZ2k9ESNS5IdN",
+            "id": "4sVieJlKgpZ2k9ESNS5IdA",
+            "name": "Leo",
             "type": "artist",
             "uri": "spotify:artist:4sVieJlKgpZ2k9ESNS5IdN"
           },
