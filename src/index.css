@@ -11,3 +11,144 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+h1 {
+  color: #ffffff; 
+  text-align: center; 
+  font-size: 2.5rem;  
+  margin-top: 20px; 
+}
+
+h1:hover {
+  color: rgb(9, 53, 155);
+}
+
+
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  gap: 20px;
+  padding: 20px;
+}
+
+.album-card {
+  position: relative;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* New wrapper for image and controls */
+.image-container {
+  position: relative;
+}
+
+/* Controls centered relative to the image now */
+.album-card .controls {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 40%;
+  right: 15%;
+  bottom: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between; /* Add spacing between icons */
+  width: 140px; /* Adjust width for better spacing */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+  gap: 15px;
+}
+
+.album-card .controls > * {
+  margin: 0 5px; /* Adjust as needed */
+}
+
+/* Show controls ONLY when hovering on the image */
+.image-container:hover .controls {
+  opacity: 1;
+  pointer-events: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Icon styling and hover effect */
+.controls img {
+  width: 40px; /* General icon size */
+  height: 40px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 0 8px; /* Space between icons */
+}
+
+.controls .dots-btn {
+  width: 38px; /* Dots icon slightly smaller */
+}
+
+.controls img:hover {
+  transform: scale(1.4); /* Grow on hover */
+  filter: brightness(0) invert(1);
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 5px;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.album-card img:hover {
+  filter: brightness(0.7);
+}
+
+.album-card h3 a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.album-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.artists {
+  margin-top: 10px;
+}
+
+.artist a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.artist a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.separator {
+  color: #a0a0a0; /* Change the color of the separators */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .album-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .album-list {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+  }
+  
+}
+
