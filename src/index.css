@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: #161616;
+  box-sizing: border-box;
+}
+
+header {
+  color: rgb(9, 213, 9);
+  text-align: center;
+  font-size: 24px;
+}
+
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #161616;
+  padding: 5%;
+}
+
+.album-title {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: -5px;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.artist-name:hover a {
+  text-decoration: underline;
+  color: white;
+}
+
+.separator {
+  color: #a0a0a0;
+}
+
+.artist-name:hover .separator {
+  color: #a0a0a0;
+}
+
+footer {
+  color: rgb(159, 236, 17);
+  font-size: 16px;
+  text-align: center;
+  margin: 5%;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .album-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+
+  header {
+    font-size: 18px;
+  }
+
+  .album-list {
+    grid-template-columns: 1fr;
+  }
+}
