@@ -1,0 +1,106 @@
+.album {
+  background-color: #181818;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.album-name {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.album:hover .album-cover {
+  transform: scale(1.05);
+  opacity: 0.7;
+}
+
+.album-cover-container {
+  position: relative;
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  align-items: center; /* Center icons vertically */
+  justify-content: center; /* Center icons horizontally */
+}
+
+.album:hover .icons {
+  opacity: 1;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  filter: invert(1); /* Makes the SVG icons white */
+  display: flex;
+  align-items: center; /* Ensures icon contents are centered within */
+  justify-content: center;
+}
+
+.play-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.album-name {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.album-name a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.album-name a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Hide the checkbox */
+.heart-checkbox {
+  display: none;
+}
+
+/* Default heart icon style */
+.heart-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/icons/heart.svg");
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Change heart icon color to green when checkbox is checked */
+.heart-checkbox:checked + .heart-icon {
+  filter: invert(41%) sepia(73%) saturate(1500%) hue-rotate(90deg)
+    brightness(85%) contrast(95%);
+  transform: scale(1.1);
+}

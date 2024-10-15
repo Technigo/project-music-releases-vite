@@ -1,0 +1,22 @@
+.artist-names a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.artist-names {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.artist-names a {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #a0a0a0;
+  text-decoration: none; /* Remove underline by default */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Style for the & symbol to match artist names */
+.artist-names .ampersand {
+  color: #a0a0a0; /* Same color as artist names */
+  font-family: Helvetica, Arial, sans-serif; /* Match font */
+}

@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: #181818; /* Sets the background to black */
+  color: white; /* Sets the default text color to white for readability */
+  margin: 0; /* Removes default body margin */
+  padding: 0;
+  font-family: Arial, sans-serif; /* Optional: sets a default font */
+}

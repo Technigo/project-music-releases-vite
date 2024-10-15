@@ -1,0 +1,26 @@
+.album-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 4 albums per row on desktop */
+@media (min-width: 1024px) {
+  .album-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 2 albums per row on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 album per row on mobile */
+@media (max-width: 767px) {
+  .album-grid {
+    grid-template-columns: 1fr;
+  }
+}
