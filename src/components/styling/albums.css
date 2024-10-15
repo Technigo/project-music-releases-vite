@@ -1,0 +1,106 @@
+.album {
+  width: 18%;  /* Adjust to fit 5 albums per row on desktop */
+  position: relative;
+}
+
+.album-cover {
+  position: relative;
+  width: 100%;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.album-hover {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.album:hover .album-hover {
+  opacity: 1;
+}
+
+/* Styling for buttons/icons */
+.play-image,
+.heart-image,
+.dots-image {
+  cursor: pointer;
+  background-color: transparent;
+  filter: invert(100%);
+}
+
+.play-image img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.play-image img:hover {
+  transform: scale(1.3);  /* Enlarges the play button on hover */
+}
+
+.album-hover img {
+  width: 40px;
+  height: 40px;
+}
+
+.heart-image img,
+.dots-image img {
+  width: 25px;
+  height: 25px;
+}
+
+.album-name {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+}
+
+.artist-name {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: #a0a0a0;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.artist-name a {
+  color: inherit;  
+  text-decoration: underline; 
+}
+
+.artist-name a:hover {
+  text-decoration: underline;  
+}
+
+@media (max-width: 768px) {
+  .album {
+    width: 30%;  /* 3 albums per row on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .album {
+    width: 45%;  /* 2 albums per row on mobile */
+  }
+}

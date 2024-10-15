@@ -1,0 +1,119 @@
+/* General Sidebar Container */
+.sidebar-container {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: width 0.3s ease; /* Smooth transition when resizing */
+}
+
+/* Playlist Header */
+.playlist-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.playlist-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    color: white;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow-icon {
+    width: 18px;
+    height: 12px;
+    transition: transform 0.3s ease;
+    margin-left: 80px;
+}
+
+.arrow-icon.closed {
+    transform: rotate(180deg);
+}
+
+.arrow-icon.open {
+    transform: rotate(0deg);
+}
+
+/* Playlist Items */
+.playlist-list {
+    margin-top: 10px;
+}
+
+.playlist-item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: none;  
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playlist-item:hover {
+    background-color: #3A3A3A;  /* Darker background only on hover */
+}
+
+.playlist-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.playlist-item span {
+    font-size: 0.9rem;
+    color: #FFFFFF;  
+}
+
+.playlist-item span:hover {
+    background: none; 
+    color: #FFFFFF;  
+}
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1020px) {
+    .sidebar-container {
+        width: 100%; 
+        height: auto; 
+        display: block;
+    }
+
+    .playlist-header {
+        justify-content: center;  
+    }
+
+    .arrow-icon {
+        margin-left: 80px; 
+    }
+
+    .playlist-item {
+        width: 100%; 
+    }
+
+    .playlist-item img {
+        width: 40px; 
+        height: 40px;
+    }
+}
