@@ -1,13 +1,170 @@
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Body styling */
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+/* Album list styling */
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cover container */
+.cover-container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+/* Album cover */
+.album-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+/* Darken album cover on hover */
+.cover-container:hover .album-cover {
+  filter: brightness(50%);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+/* Show overlay on hover */
+.cover-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Icons container */
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 4;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Show icons on hover */
+.cover-container:hover .icons {
+  opacity: 1;
+}
+
+/* Style for the icons */
+.icon-small {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1);
+  opacity: 50%;
+}
+
+.icon-big {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
+  opacity: 50%;
+}
+
+/* Grow play icon on hover */
+.icon-big:hover {
+  transform: scale(1.2);
+  opacity: 100%;
+}
+
+.icon-small:hover {
+  opacity: 100%;
+}
+
+/* Album and artist name styling */
+.album-link {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 150px;
+  z-index: 5;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.artist-link {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for album and artist links */
+.album-link:hover,
+.artist-link:hover {
+  color: #1db954; /* Spotify green color for hover */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+  .album-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cover-container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .album-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cover-container {
+    width: 80%;
+    margin-bottom: 170px;
+  }
+}
+
+/* Desktop view: 4 albums per row */
+@media only screen and (min-width: 1024px) {
+  .album-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
