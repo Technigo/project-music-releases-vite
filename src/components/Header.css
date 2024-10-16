@@ -1,0 +1,27 @@
+.Header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+  /* Include padding in the element's total width */
+}
+
+img.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+}
+
+h1 {
+  font-size: 35px;
+  margin: 10px 0px;
+}
+
+header p {
+  font-size: 20px;
+  margin: 10px 0px;
+  padding-bottom: 15px;
+}

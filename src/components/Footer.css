@@ -1,0 +1,16 @@
+.Footer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #a0a0a0;
+  font-weight: 300;
+  text-align: center;
+  box-sizing: border-box;
+  /* Include padding in the element's total width */
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 30px 0px 30px;
+}

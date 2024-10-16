@@ -1,0 +1,55 @@
+.coverImage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.albumCoverImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.coverImage:hover .albumCoverImage {
+  filter: brightness(50%);
+  /* makes the album cover image darker when you hover over it.  */
+}
+
+.icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  /*Opacity 0, Icons not showing at all  */
+  transition: opacity 0.3s ease;
+  fill: #ffffff;
+}
+
+.coverImage:hover .icons {
+  opacity: 1;
+  /*Opacity 1, Icons showing on hoover. */
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.play.icon:hover {
+  transform: scale(1.2);
+  /* Makes play icon grow on hoover */
+}
+
+.play.icon {
+  width: 60px;
+  height: 60px;
+}

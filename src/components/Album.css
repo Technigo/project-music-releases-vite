@@ -1,0 +1,31 @@
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  position: relative;
+}
+
+.albumSection {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* ------------------------------------Media Queries--------------------------------------- */
+
+/* Media query for tablets (2 albums per row) */
+@media (max-width: 1024px) {
+  .albumSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Media query for mobile (1 album per row) */
+@media (max-width: 480px) {
+  .albumSection {
+    grid-template-columns: 1fr;
+  }
+}
