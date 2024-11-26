@@ -1,7 +1,9 @@
-import data from "./data.json";
-
-console.log(data);
+import { Album } from "./components/Album";
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+  return (
+    <>
+      <Album />
+    </>
+  )
+}
