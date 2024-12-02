@@ -1,0 +1,111 @@
+body{
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+}
+/* ----------- Style for header ------------  */
+.header{
+  text-align: center;
+  color: #fff;
+}
+.header h1{
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+/* ----------- Style for all albums ------------  */
+.allAlbums{
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr ;
+  padding: 30px;
+}
+.eachAlbum{
+  padding: 25px;
+}
+
+/* ----------- Style for pictures and icons ---------- */
+.cover-container {
+position: relative;
+display: grid;
+place-items: center;
+}
+.cover-image{
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+}
+.cover-container:hover .cover-image {
+  opacity: 0.5;
+  transition: all 0.35s ease-in-out; /* Makes the transition easier */
+
+}
+
+.icon{
+  width: 35px;
+}
+.icon-play{
+  width: 45px;
+}
+
+.icon:hover{
+  width: 40px;
+}
+.icon-play:hover{
+  width: 50px;
+}
+
+.icon-container {
+  position:absolute;
+  display: flex;
+  align-items: center;
+  gap:20px;
+  z-index: 1;
+  opacity: 0 ;
+}
+.cover-container:hover .icon-container {
+  opacity: 1; 
+}
+
+
+/* ----------- Style for text ---------- */
+
+.music-link{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.music-link a{
+  color: white;
+  text-decoration: none;
+}
+.music-link a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.album-link{
+  margin-top: 20px;
+  font-size: 14px;
+}
+.artist-link{
+  opacity: 0.7; /*  color: #a0a0a0;  doesn't  work for me any color and i don't know why :(*/
+  font-family: Helvetica,sans-serif;
+  font-size: 14px;
+  }
+  
+
+@media (min-width: 667px) and (max-width: 1024px){
+
+  .allAlbums{
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+@media (min-width: 1025px){
+  .allAlbums{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+
+
+}
