@@ -1,0 +1,36 @@
+.artists > a:link {
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  color:  whitesmoke;
+  opacity: 0.6;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.artists a:visited {
+  color:  rgb(243, 243, 243);
+  opacity: 0.9;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.artists > a:hover {
+  opacity: 0.5;
+  border-bottom: 1px solid;
+}
+
+.artists > :not(:last-child):not(:first-child):before {
+  content: ", ";
+  white-space: pre;
+}
+
+.artists > :last-child:before {
+  content: " & ";
+  white-space: pre;
+  color:  rgb(243, 243, 243);
+}
+
+.artists > :only-child:before {
+  content: "";
+}
