@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .header-subtext {
+    font-size: 20px;
+  }
