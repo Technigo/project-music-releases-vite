@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-# Music Releases
+# Music Releasess
 
 Replace this readme with your own information about your project.
 
