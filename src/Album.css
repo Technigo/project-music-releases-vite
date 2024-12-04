@@ -1,0 +1,80 @@
+//*Album.css*//
+.album-container {
+    position: relative;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.album-cover {
+    position: relative;
+}
+
+.album-cover img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.album-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.album-container:hover .album-hover {
+    opacity: 1;
+}
+
+.play-button,
+.heart-button,
+.ellipsis-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.play-button img:hover {
+    transform: scale(1.2);
+}
+
+.album-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.album-title {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.album-title:hover {
+    text-decoration: underline;
+}
+
+.artist-names {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.artist-name {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.artist-name:hover {
+    color: #fff;
+}

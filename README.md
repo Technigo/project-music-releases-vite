@@ -5,30 +5,24 @@
 </h1>
 
 # Music Releases
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+9th week's project. First time on React/Vite. Spotify's API. 
 
 ## Getting Started with the Project
 
 ### Dependency Installation & Startup Development Server
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+It was really challenging: new tools, new components, I had a lot of technical issues on npm and the server... but I get it! 
+React is challenging but its also the base to build amazing sites! 
+I find JSX a little difficult to cope but, with a little more time, I will get use to it, for sure!
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Netlify: https://cute-profiterole-7ddc46.netlify.app
+Host: http://localhost:5175/
 
 ## Instructions
 

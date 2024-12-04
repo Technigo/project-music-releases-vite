@@ -1,0 +1,20 @@
+//*ArtistName.css*//
+.artist-name {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.artist-name:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+//*Icon hover capacity*//
+button img {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+button img:hover {
+    opacity: 1;
+}
