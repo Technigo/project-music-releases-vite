@@ -3630,7 +3630,9 @@
             "uri": "spotify:artist:6deZN1bslXzeGvOLaLMOIF"
           }
         ],
-        "available_markets": ["IN"],
+        "available_markets": [
+          "IN"
+        ],
         "external_urls": {
           "spotify": "https://open.spotify.com/album/5uLm9XqpibzmIaFUz80jLb"
         },
@@ -3947,7 +3949,11 @@
             "uri": "spotify:artist:1yxSLGMDHlW21z4YXirZDS"
           }
         ],
-        "available_markets": ["AD", "FR", "MC"],
+        "available_markets": [
+          "AD",
+          "FR",
+          "MC"
+        ],
         "external_urls": {
           "spotify": "https://open.spotify.com/album/4vW6X4rHIDxQiIr0rwMVuX"
         },
@@ -9357,7 +9363,11 @@
             "uri": "spotify:artist:7xUZ4069zcyBM4Bn10NQ1c"
           }
         ],
-        "available_markets": ["AT", "CH", "DE"],
+        "available_markets": [
+          "AT",
+          "CH",
+          "DE"
+        ],
         "external_urls": {
           "spotify": "https://open.spotify.com/album/4z06CYa1H1BZdFiPQdwHQb"
         },

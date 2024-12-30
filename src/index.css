@@ -1,13 +1,140 @@
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.album-name a {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.artist-name a {
+  color: #a0a0a0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.album-name a:hover {
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+span {
+  color: #a0a0a0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.album-card-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 10px;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0e0e0e81;
+  padding: 20px;
+  width: 85%;
+  max-width: 300px;
+  position: relative;
+}
+
+.album-cover-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.album-cover img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.album-cover-box:hover figure {
+  filter: blur(4px) brightness(50%);
+  transform: scale(1.05);
+}
+
+.album-cover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.album-cover-box:hover .album-cover-buttons {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  transition: transform 0.2s ease;
+  margin: 0 8px;
+}
+
+.album-cover-buttons button:hover {
+  transform: scale(1.5);
+}
+
+.album-cover-buttons img {
+  width: 25px;
+  height: 25px;
+}
+
+
+
+@media (min-width: 768px) {
+  .album-card-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-card-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
