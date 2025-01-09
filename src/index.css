@@ -1,7 +1,22 @@
+/* ========== Reset Styles ========== */
+img {
+  display: block;
+  max-width: 100%;
+}
+* {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* ========== Global Styles ========== */
+
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  /*margin: 0;*/
+  font-family: "Helvetica", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +25,265 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  background-color: #1e1200;
+}
+main {
+  background-color: #1e1200;
+}
+h1 {
+  color: #FFA5A5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif; 
+  color: #a0a0a0;
+}
+p {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif; 
+  color: #a0a0a0;
+}
+
+/* ========== Header ========== */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 20px 20px 5px;
+  align-items: center;
+}
+
+.header-logo {
+  width: 50px; 
+  margin: 20px 20px 20px 5px;
+}
+
+/* ========== Album card ========== */
+
+.album-card {
+  display: inline-block;
+  width: 100%;
+  background-color: #2a1800;
+  text-align: center;
+  border-radius: 10px;
+}
+.album-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #1e1200;
+  justify-content: center;
+  gap: 10px;
+}
+
+.album-art-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* ========== Hover effect for Album art and icons ========== */
+/* Colors and default sizes are set in each Icon svg image, found in folder Asset */
+
+.album-art {
+  display: block;
+  width: 100%;
+  align-items: center;
+  opacity: 1; 
+  transition: opacity 0.3s ease;
+  margin-bottom: 5px;
+  z-index: 1; /* Position album art in the back */
+}
+
+.album-icons {
+  display: flex;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  gap: 40px;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Icons not visible */ 
+  z-index: 2; /* Position album icons art to the front */
+  transition: opacity 0.3s ease; /*Smooth transition to show icons on hover */
+  align-items: center;
+  justify-content: center;
+}
+
+.album-art-container:hover .album-art {
+  opacity: 0.5; /* Album gets darker on hover*/
+}
+.album-art-container:hover .album-icons {
+  opacity: 1; /* Make icons visible on hover */
+}
+.icon {
+  transition: fill 0.3s ease;
+  width: 80px;
+  height: 80px;
+}
+.play-icon {
+  background-color: transparent; 
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* Smooth transition to "pop out"*/
+  margin: left right 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.play-icon:hover {
+  border-radius: 50%;
+  transform: scale(1.4); /* Play icon pops out / enlarges on hover*/
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* ========== Styling for Album title and Album artist ========== */
+
+.album-title,
+.album-artist {
+  text-align: left; 
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 10px;
+}
+.album-title {
+  margin-bottom: 5px;
+}
+
+.album-artist {
+  margin-top: 0;
+}
+
+/* ========== Hover effect for Album title link ========== */
+
+.album-link {
+  text-decoration: none; /* Remove default underline */
+  color: #ffffff;
+  min-height: 44px;
+  min-width: 44px;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+.album-link:hover {
+  color: #ffffff;
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* ========== Hover effect for Album artist link ========== */
+
+.album-artist-link {
+  text-decoration: none;
+  color: #a0a0a0;
+  min-height: 44px;
+  min-width: 44px;
+  transition: all 0.2s ease; /* Smooth transition */
+  overflow: hidden;
+}
+.album-artist-link:hover {
+  color: #a0a0a0;
+  text-decoration: underline;
+}
+
+/* ========== Footer section ========== */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #FFA5A5; 
+}
+.footer-content {
+  display: flex; 
+  align-items: center; 
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.footer-logo {
+  width: 30px;
+  margin-right: 5px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #FFA5A5;
+}
+
+/* ========== Responsive layout ========== */
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+  }
+  
+  .header-logo {
+    width: 50px; 
+    margin: 10px 10px 10px 10px;
+  }
+  .album-card {
+    background-color: #2a1800;
+  }
+  .album-container {
+    display: grid;
+    grid-template-columns: 1fr;
+     /* 1 column for mobile */
+    gap: 30px;
+    max-width: 500px;
+  }
+  .play-icon:hover {
+    background-color: transparent; /* No darker background color  */
+    transform: scale(1.0);
+    transition: none;
+  }
+}
+
+/* TABLET */
+@media (min-width: 501px) and (max-width: 1024px) {
+  .album-card {
+    background-color: #2a1800;
+  }
+  .album-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+    gap: 20px;
+  }
+  .play-icon:hover {
+    background-color: transparent; /* No darker background color  */
+    transform: scale(1.0);
+    transition: none;
+  }
+}
+
+/* DESKTOP */ 
+@media (min-width: 1025px) {
+  .album-card {
+    background-color: #2a1800;
+  }
+  .album-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 3px;
+  } 
 }
