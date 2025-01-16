@@ -1,0 +1,44 @@
+ .coverImage {
+   height: 300px;
+   filter: brightness(100%);
+   box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.1);
+ }
+
+ .cover-image-container:hover .coverImage {
+   filter: brightness(50%);
+   transition: all .5s ease;
+ }
+
+ .cover-image-container {
+   position: relative;
+   width: 100%;
+   height: 100%;
+ }
+
+ .icon-container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: opacity 0.5s ease;
+ }
+
+ .cover-image-container:hover .icon-container {
+   opacity: 1;
+ }
+
+ .icon-container svg {
+   width: 30px;
+   height: 30px;
+   fill: #ffffff;
+   transition: transform 0.3s ease;
+   margin-right: 20px;
+ }
+
+ .icon:hover {
+   transform: scale(2);
+ }
+
+
+ @media (min-width: 668px) {}
