@@ -6,11 +6,11 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+50 new album releases that we are displaying on an landing page with a local json-file(API).
 
 ## Getting Started with the Project
+
+Got a good start and thought i understood it pretty well, but had difficultis displaying the API data and it took a long time before i got it to work. Which was my main problem and got me real stuck! But managed to solve it.
 
 ### Dependency Installation & Startup Development Server
 
@@ -24,11 +24,11 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I understood the principle of React pretty fast, how to work with components. But thought it was difficult to know how to divid everything up and how many components it should be. But it gets clearer! Have to few components in this project - but realised that to late and let it be, but next time i will divide it into more smaller components.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Music releases: https://boisterous-croissant-2d81bc.netlify.app/ 
 
 ## Instructions
 

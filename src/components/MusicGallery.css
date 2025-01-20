@@ -1,0 +1,92 @@
+
+/* Container for the album grid */
+.album-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    background-color: #333;
+}
+
+/* Individual album card styling */
+.album-card { 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* transition: transform 0.3s; */
+    position: relative;
+}
+
+
+/* Styling for the album image */
+.album-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: filter 0.3s ease; /* Smooth transition effect for the image darkening */
+}
+
+.album-cover-hover:hover .album-image {
+  filter: brightness(50%); /* Darkens the image when hovered */
+  cursor: pointer;
+}
+
+/* Album name styling */
+.album-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 7px 0 3px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+.album-name:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Album artist styling */
+.album-name-container {
+    margin: 5px 0 3px;
+}
+.album-artist {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.album-artist a {
+    text-decoration: none;
+    color: #a0a0a0;
+}
+.album-artist a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.album-cover-icons {
+    position: absolute;
+    top: 40%; /* Adjust this value to control how far from the top the icons are */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px; /* Adjust the space between the icons */
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0; /* Hide the icons by default */
+    transition: opacity 0.3s ease; /* Smooth transition when showing/hiding */
+}
+  
+.album-cover-hover:hover .album-cover-icons {
+    opacity: 1; /* Show the icons when hovering over the image */
+}
+.album-cover-icons img {
+    cursor: pointer;
+    filter: invert(1); /* makes the icons white */
+  }
+
+  .play-icon:hover {
+    width: 80px;
+    height: auto;
+  }

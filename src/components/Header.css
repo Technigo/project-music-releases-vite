@@ -1,0 +1,20 @@
+.header-container {
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem; 
+    font-weight: 700;
+    width: 300px;
+    height: auto;
+    border-bottom: #FFF solid 3px;
+    border-top: #FFF solid 3px;
+    padding: 20px 35px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin: 40px 10px;
+}

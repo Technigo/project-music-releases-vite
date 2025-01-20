@@ -35,10 +35,6 @@ This is just a suggestion - how you decide to structure your components is compl
 
 ### Your page should be responsive:
 
-- showing 4 albums per row on desktop
-- 2 per row on tablet
-- 1 per row on mobile.
-
 ## Design
 
 🎶 You should follow the design screenshots as closely as possible. We've provided icons for the play, heart and more info icons when hovering on an album. Use the following for fonts:
