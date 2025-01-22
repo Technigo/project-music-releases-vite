@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  animation: scroll-vertical 20s linear infinite;
+  min-width: fit-content;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+.title {
+  margin: 40px 0 40px 50px;
+  font-size: 30px;
+  font: Helvetica;
+  font-family: Helvetica, sans-serif;
+  opacity: 0.8;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+}
+
+@keyframes scroll-vertical {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.editors-picks {
+  margin: 40px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 14px;
+  color: #ffffff;
+  font: Helvetica;
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.album {
+  margin: 20px;
+  direction: flex;
+  max-width: 320px;
+}
+
+.album-cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+p {
+  font:
+    14px Helvetica,
+    sans-serif;
+  color: #a0a0a0;
+  padding: 0;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 320px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1:hover,
+p:hover {
+  text-decoration: underline;
+}
+
+.album-cover:hover img {
+  opacity: 0.5;
+}
+
+.album-cover:hover .icon-container {
+  opacity: 1;
+}
+
+.icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
+  background-color: transparent;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.6;
+}
+
+.icon:hover {
+  transform: scale(1.4);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .album {
+    max-width: 300px;
+    margin: 10px;
+  }
+  header {
+    animation: scroll-vertical 20s linear infinite;
+  }
+  .album {
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 628px) {
+  .album {
+    max-width: 250px;
+    margin: 10px;
+  }
+}
