@@ -1,34 +1,32 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
+Music Releases 🎵
+This project is a React-based music release page that displays a list of albums and artists. The goal was to practice component structure, props, and styling, while ensuring a responsive and interactive user experience.
 
-# Music Releases
+The Problem & Approach
+The main challenge was to create a visually appealing album grid that adapts to different screen sizes while implementing interactive hover effects on album covers and text elements.
 
-Replace this readme with your own information about your project.
+My Approach & Workflow
+I started by building all the JavaScript code in one file to clearly see the structure from parent to child. This helped me visualize how the data was passed through props and ensured that everything worked properly before breaking it into components. I found this approach more effective and time-saving compared to starting with separate files right away.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Once everything functioned correctly, I divided the logic into planned components (Albums, Album, AlbumCover, AlbumName, and ArtistName). After that, I continued making minor tweaks within each component to refine styling and functionality.
 
-## Getting Started with the Project
+Key Features & Solutions:
+✅ Component-Based Structure: The app is split into reusable components: Album, AlbumCover, AlbumName, and ArtistName.
+✅ Dynamic Hover Effects: Implemented overlays and icons that appear when hovering over an album, with smooth animations and scaling effects.
+✅ Responsive Design: Ensured the layout adjusts dynamically (4 albums per row on desktop, 2 per row on tablet, and 1 per row on mobile).
+✅ Accessible Links: Each album title and artist name links to their respective Spotify pages.
 
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Technologies Used
+🟢 React (Component-based architecture)
+🎨 CSS (Flexbox, Grid, transitions, hover effects)
+📡 Fetching Data (from a JSON file)
+Next Steps & Improvements
+🚀 Add more accessibility features (e.g., focus styles for keyboard navigation).
+📱 Improve animations for a more polished UX.
+🎶 Implement a real API instead of static JSON data.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://tunevault.netlify.app/
 
 ## Instructions
 

@@ -1,7 +1,6 @@
-import data from "./data.json";
+import { Albums } from "./components/Albums";
 
-console.log(data);
-
+// The main component that imports data.json and maps through it to render Album components.
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return <Albums />;
 };

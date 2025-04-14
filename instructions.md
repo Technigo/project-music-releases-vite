@@ -47,36 +47,42 @@ This is just a suggestion - how you decide to structure your components is compl
 - Artist name - 14px Helvetica #a0a0a0
 
   When hovering over album covers or artist names, you should implement the following hover styles:
-   <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/music-releases.png" alt="Design">
+  <img src="https://github.com/Technigo/project-music-releases-vite/blob/main/src/design/music-releases.png" alt="Design">
 
 ## Requirements
-- Your app should have components
+
+✅- Your app should have components
+
 - Your page should look as close as possible to the design provided.
-- You should display the following for each album:
-  -   album cover image
-  -   album name
-  -   the name of each artist involved with a comma between
+  You should display the following for each album:
+  ✅- album cover image
+  ✅- album name
+  ✅- the name of each artist involved with a comma between
 - Hover effects:
-  - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
-  - When you hover over the play button, it should grow (see the design sketch)
-  - Hovering an artist name or an album name should match the design sketch
-- When you click on the album, it should link to the album's external url in the data
-- When you click on an artist, it should link to the artist's external url in the data
+  ✅- When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
+  ✅- When you hover over the play button, it should grow (see the design sketch)
+  ✅- Hovering an artist name or an album name should match the design sketch
+  ✅- When you click on the album, it should link to the album's external url in the data
+  ✅- When you click on an artist, it should link to the artist's external url in the data
 - Your page should be responsive:
-  - showing 4 albums per row on desktop
-  - 2 per row on tablet
-  - 1 per row on mobile.
+  ✅- showing 4 albums per row on desktop
+  ✅- 2 per row on tablet
+  ✅- 1 per row on mobile.
 
 ## Stretch goals
+
 So you’ve completed the requirements? Great job! Make sure you've committed and pushed a version of your project before starting on the stretch goals. Remember that the stretch goals are optional.
 
 ### Intermediate stretch goals
+
 - Create CSS rules or Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&" (if the data don't have any multiple artists, you can modify it like you prefer to implement this feature):
-  - *Teyana Taylor & Kehlani*
-  - *Y2K, bbno$ & Enrique Iglesias*
-- Lower the opacity of the button icons and then when you hover over each of them, it should have full opacity
+
+- _Teyana Taylor & Kehlani_
+- _Y2K, bbno$ & Enrique Iglesias_
+  ✅- Lower the opacity of the button icons and then when you hover over each of them, it should have full opacity
 
 ### Advanced stretch goals
+
 - We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.
 - Sort the albums from the singles and create two different sections on your site
 - Incorporate more information from the API response to make your site richer
